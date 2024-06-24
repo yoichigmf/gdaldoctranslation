@@ -1,0 +1,5282 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/vector_api.rst:4
+msgid "Python Vector API"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:6
+msgid ""
+"This page contains classes, methods, functions that relate to the GDAL "
+":ref:`vector_data_model`. The :py:class:`Driver` and :py:class:`Dataset` "
+"classes, which applies to both vector and raster data, are documented "
+"with the :ref:`python_raster_api`."
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:8
+msgid "`Layer`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:9
+msgid "`Feature`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:10
+msgid "`Geometry`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:11
+msgid "`FeatureDefn`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:12
+msgid "`FieldDefn`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:13
+msgid "`GeomFieldDefn`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:14
+msgid "`FieldDomain`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:15
+msgid "`Relationship`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:16
+msgid "`StyleTable`_"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:19
+msgid "Layer"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:27
+msgid "Feature"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:35
+msgid "Geometry"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:93
+msgid "FeatureDefn"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:101
+msgid "FieldDefn"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:113
+msgid "GeomFieldDefn"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:121
+msgid "FieldDomain"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:135
+msgid "Relationship"
+msgstr ""
+
+#: ../../source/api/python/vector_api.rst:143
+msgid "StyleTable"
+msgstr ""
+
+#~ msgid "Proxy of C++ OGRLayerShadow class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_AlterFieldDefn(OGRLayerH hLayer, int"
+#~ " iField, OGRFieldDefnH hNewFieldDefn, int "
+#~ "nFlags)"
+#~ msgstr ""
+
+#~ msgid "Alter the definition of an existing field on a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You must use this to alter the "
+#~ "definition of an existing field of "
+#~ "a real layer. Internally the "
+#~ "OGRFeatureDefn for the layer will be "
+#~ "updated to reflect the altered field."
+#~ " Applications should never modify the "
+#~ "OGRFeatureDefn used by a layer directly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function should not be called "
+#~ "while there are feature objects in "
+#~ "existence that were obtained or created"
+#~ " with the previous layer definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not all drivers support this function."
+#~ " You can query a layer to check"
+#~ " if it supports it with the "
+#~ "OLCAlterFieldDefn capability. Some drivers may"
+#~ " only support this method while there"
+#~ " are still no features in the "
+#~ "layer. When it is supported, the "
+#~ "existing features of the backing "
+#~ "file/database should be updated accordingly."
+#~ " Some drivers might also not support"
+#~ " all update flags."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::AlterFieldDefn()."
+#~ msgstr ""
+
+#~ msgid "Parameters:"
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer."
+#~ msgstr ""
+
+#~ msgid "iField:  index of the field whose definition must be altered."
+#~ msgstr ""
+
+#~ msgid "hNewFieldDefn:  new field definition"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nFlags:  combination of ALTER_NAME_FLAG, "
+#~ "ALTER_TYPE_FLAG, ALTER_WIDTH_PRECISION_FLAG, "
+#~ "ALTER_NULLABLE_FLAG and ALTER_DEFAULT_FLAG to "
+#~ "indicate which of the name and/or "
+#~ "type and/or width and precision fields"
+#~ " and/or nullability from the new "
+#~ "field definition must be taken into "
+#~ "account."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE on success."
+#~ msgstr ""
+
+#~ msgid "OGR 1.9.0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Clip(OGRLayerH pLayerInput, OGRLayerH"
+#~ " pLayerMethod, OGRLayerH pLayerResult, char "
+#~ "**papszOptions, GDALProgressFunc pfnProgress, void"
+#~ " *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Clip off areas that are not covered by the method layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "in the input layer and in the "
+#~ "method layer. The features in the "
+#~ "result layer have the (possibly clipped)"
+#~ " areas of features in the input "
+#~ "layer and the attributes from the "
+#~ "same features. The schema of the "
+#~ "result layer can be set by the "
+#~ "user or, if it is empty, is "
+#~ "initialized to contain all fields in "
+#~ "the input layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For best performance use the minimum "
+#~ "amount of features in the method "
+#~ "layer and copy it into a memory"
+#~ " layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method relies on GEOS support. "
+#~ "Do not use unless the GEOS support"
+#~ " is compiled in.  The recognized list"
+#~ " of options is : SKIP_FAILURES=YES/NO. "
+#~ "Set it to YES to go on, even"
+#~ " when a feature could not be "
+#~ "inserted or a GEOS call failed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "PROMOTE_TO_MULTI=YES/NO. Set it to YES "
+#~ "to convert Polygons into MultiPolygons, "
+#~ "or LineStrings to MultiLineStrings."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "INPUT_PREFIX=string. Set a prefix for "
+#~ "the field names that will be "
+#~ "created from the fields of the "
+#~ "input layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "METHOD_PREFIX=string. Set a prefix for "
+#~ "the field names that will be "
+#~ "created from the fields of the "
+#~ "method layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Clip()."
+#~ msgstr ""
+
+#~ msgid "pLayerInput:  the input layer. Should not be NULL."
+#~ msgstr ""
+
+#~ msgid "pLayerMethod:  the method layer. Should not be NULL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pLayerResult:  the layer where the "
+#~ "features resulting from the operation "
+#~ "are inserted. Should not be NULL. "
+#~ "See above the note about the "
+#~ "schema."
+#~ msgstr ""
+
+#~ msgid "papszOptions:  NULL terminated list of options (may be NULL)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pfnProgress:  a GDALProgressFunc() compatible "
+#~ "callback function for reporting progress "
+#~ "or NULL."
+#~ msgstr ""
+
+#~ msgid "pProgressArg:  argument to be passed to pfnProgress. May be NULL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "an error code if there was an "
+#~ "error or the execution was interrupted,"
+#~ " OGRERR_NONE otherwise."
+#~ msgstr ""
+
+#~ msgid "The first geometry field is always used."
+#~ msgstr ""
+
+#~ msgid "OGR 1.10"
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_CommitTransaction(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For datasources which support transactions,"
+#~ " CommitTransaction commits a transaction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If no transaction is active, or "
+#~ "the commit fails, will return "
+#~ "OGRERR_FAILURE. Datasources which do not "
+#~ "support transactions will always return "
+#~ "OGRERR_NONE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRLayer::CommitTransaction()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer"
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_CreateFeature(OGRLayerH hLayer, OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Create and write a new feature within a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The passed feature is written to "
+#~ "the layer as a new feature, rather"
+#~ " than overwriting an existing one. If"
+#~ " the feature has a feature id "
+#~ "other than OGRNullFID, then the native"
+#~ " implementation may use that as the"
+#~ " feature id of the new feature, "
+#~ "but not necessarily. Upon successful "
+#~ "return the passed feature will have "
+#~ "been updated with the new feature "
+#~ "id."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::CreateFeature()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to write the feature to."
+#~ msgstr ""
+
+#~ msgid "hFeat:  the handle of the feature to write to disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_CreateField(OGRLayerH hLayer, "
+#~ "OGRFieldDefnH hField, int bApproxOK)"
+#~ msgstr ""
+
+#~ msgid "Create a new field on a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You must use this to create new"
+#~ " fields on a real layer. Internally"
+#~ " the OGRFeatureDefn for the layer "
+#~ "will be updated to reflect the new"
+#~ " field. Applications should never modify"
+#~ " the OGRFeatureDefn used by a layer"
+#~ " directly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not all drivers support this function."
+#~ " You can query a layer to check"
+#~ " if it supports it with the "
+#~ "OLCCreateField capability. Some drivers may"
+#~ " only support this method while there"
+#~ " are still no features in the "
+#~ "layer. When it is supported, the "
+#~ "existing features of the backing "
+#~ "file/database should be updated accordingly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Drivers may or may not support "
+#~ "not-null constraints. If they support "
+#~ "creating fields with not-null "
+#~ "constraints, this is generally before "
+#~ "creating any feature to the layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::CreateField()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to write the field definition."
+#~ msgstr ""
+
+#~ msgid "hField:  handle of the field definition to write to disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bApproxOK:  If TRUE, the field may "
+#~ "be created in a slightly different "
+#~ "form depending on the limitations of "
+#~ "the format driver."
+#~ msgstr ""
+
+#~ msgid "Create a list of fields on the Layer"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_CreateGeomField(OGRLayerH hLayer, "
+#~ "OGRGeomFieldDefnH hField, int bApproxOK)"
+#~ msgstr ""
+
+#~ msgid "Create a new geometry field on a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You must use this to create new"
+#~ " geometry fields on a real layer. "
+#~ "Internally the OGRFeatureDefn for the "
+#~ "layer will be updated to reflect "
+#~ "the new field. Applications should never"
+#~ " modify the OGRFeatureDefn used by a"
+#~ " layer directly."
+#~ msgstr ""
+
+#~ msgid "hField:  handle of the geometry field definition to write to disk."
+#~ msgstr ""
+
+#~ msgid "OGR 1.11"
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_DeleteFeature(OGRLayerH hLayer, GIntBig nFID)"
+#~ msgstr ""
+
+#~ msgid "Delete feature from layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The feature with the indicated feature"
+#~ " id is deleted from the layer "
+#~ "if supported by the driver. Most "
+#~ "drivers do not support feature deletion,"
+#~ " and will return OGRERR_UNSUPPORTED_OPERATION."
+#~ " The OGR_L_TestCapability() function may be"
+#~ " called with OLCDeleteFeature to check "
+#~ "if the driver supports feature deletion."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::DeleteFeature()."
+#~ msgstr ""
+
+#~ msgid "nFID:  the feature id to be deleted from the layer"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if the operation works, "
+#~ "otherwise an appropriate error code (e.g"
+#~ " OGRERR_NON_EXISTING_FEATURE if the feature "
+#~ "does not exist)."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_DeleteField(OGRLayerH hLayer, int iField)"
+#~ msgstr ""
+
+#~ msgid "Delete an existing field on a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You must use this to delete "
+#~ "existing fields on a real layer. "
+#~ "Internally the OGRFeatureDefn for the "
+#~ "layer will be updated to reflect "
+#~ "the deleted field. Applications should "
+#~ "never modify the OGRFeatureDefn used by"
+#~ " a layer directly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not all drivers support this function."
+#~ " You can query a layer to check"
+#~ " if it supports it with the "
+#~ "OLCDeleteField capability. Some drivers may"
+#~ " only support this method while there"
+#~ " are still no features in the "
+#~ "layer. When it is supported, the "
+#~ "existing features of the backing "
+#~ "file/database should be updated accordingly."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::DeleteField()."
+#~ msgstr ""
+
+#~ msgid "iField:  index of the field to delete."
+#~ msgstr ""
+
+#~ msgid "For backwards compatibility only."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Erase(OGRLayerH pLayerInput, OGRLayerH"
+#~ " pLayerMethod, OGRLayerH pLayerResult, char "
+#~ "**papszOptions, GDALProgressFunc pfnProgress, void"
+#~ " *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Remove areas that are covered by the method layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "in the input layer but not in "
+#~ "the method layer. The features in "
+#~ "the result layer have attributes from"
+#~ " the input layer. The schema of "
+#~ "the result layer can be set by "
+#~ "the user or, if it is empty, "
+#~ "is initialized to contain all fields "
+#~ "in the input layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Erase()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "int OGR_L_FindFieldIndex(OGRLayerH hLayer, const "
+#~ "char *pszFieldName, int bExactMatch)"
+#~ msgstr ""
+
+#~ msgid "Find the index of field in a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned number is the index "
+#~ "of the field in the layers, or "
+#~ "-1 if the field doesn't exist."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If bExactMatch is set to FALSE and"
+#~ " the field doesn't exists in the "
+#~ "given form the driver might apply "
+#~ "some changes to make it match, "
+#~ "like those it might do if the "
+#~ "layer was created (eg. like LAUNDER "
+#~ "in the OCI driver)."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::FindFieldIndex()."
+#~ msgstr ""
+
+#~ msgid "field index, or -1 if the field doesn't exist"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_GetExtent(OGRLayerH hLayer, OGREnvelope"
+#~ " *psExtent, int bForce)"
+#~ msgstr ""
+
+#~ msgid "Fetch the extent of this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns the extent (MBR) of the "
+#~ "data in the layer. If bForce is"
+#~ " FALSE, and it would be expensive "
+#~ "to establish the extent then "
+#~ "OGRERR_FAILURE will be returned indicating "
+#~ "that the extent isn't know. If "
+#~ "bForce is TRUE then some implementations"
+#~ " will actually scan the entire layer"
+#~ " once to compute the MBR of all"
+#~ " the features in the layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Depending on the drivers, the returned"
+#~ " extent may or may not take the"
+#~ " spatial filter into account. So it"
+#~ " is safer to call OGR_L_GetExtent() "
+#~ "without setting a spatial filter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Layers without any geometry may return"
+#~ " OGRERR_FAILURE just indicating that no "
+#~ "meaningful extents could be collected."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that some implementations of this"
+#~ " method may alter the read cursor "
+#~ "of the layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetExtent()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer from which to get extent."
+#~ msgstr ""
+
+#~ msgid "psExtent:  the structure in which the extent value will be returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bForce:  Flag indicating whether the "
+#~ "extent should be computed even if "
+#~ "it is expensive."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE on success, OGRERR_FAILURE if extent not known."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_L_GetFIDColumn(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns the name of "
+#~ "the underlying database column being "
+#~ "used as the FID column, or \"\""
+#~ " if not supported."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::GetFIDColumn()"
+#~ msgstr ""
+
+#~ msgid "fid column name."
+#~ msgstr ""
+
+#~ msgid "OGRFeatureH OGR_L_GetFeature(OGRLayerH hLayer, GIntBig nFeatureId)"
+#~ msgstr ""
+
+#~ msgid "Fetch a feature by its identifier."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function will attempt to read "
+#~ "the identified feature. The nFID value"
+#~ " cannot be OGRNullFID. Success or "
+#~ "failure of this operation is unaffected"
+#~ " by the spatial or attribute filters"
+#~ " (and specialized implementations in "
+#~ "drivers should make sure that they "
+#~ "do not take into account spatial "
+#~ "or attribute filters)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If this function returns a non-"
+#~ "NULL feature, it is guaranteed that "
+#~ "its feature id ( OGR_F_GetFID()) will"
+#~ " be the same as nFID."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use OGR_L_TestCapability(OLCRandomRead) to establish"
+#~ " if this layer supports efficient "
+#~ "random access reading via OGR_L_GetFeature();"
+#~ " however, the call should always work"
+#~ " if the feature exists as a "
+#~ "fallback implementation just scans all "
+#~ "the features in the layer looking "
+#~ "for the desired feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Sequential reads (with OGR_L_GetNextFeature()) "
+#~ "are generally considered interrupted by "
+#~ "a OGR_L_GetFeature() call."
+#~ msgstr ""
+
+#~ msgid "The returned feature should be free with OGR_F_Destroy()."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetFeature( )."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer that owned the feature."
+#~ msgstr ""
+
+#~ msgid "nFeatureId:  the feature id of the feature to read."
+#~ msgstr ""
+
+#~ msgid "a handle to a feature now owned by the caller, or NULL on failure."
+#~ msgstr ""
+
+#~ msgid "GIntBig OGR_L_GetFeatureCount(OGRLayerH hLayer, int bForce)"
+#~ msgstr ""
+
+#~ msgid "Fetch the feature count in this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns the number of features in "
+#~ "the layer. For dynamic databases the "
+#~ "count may not be exact. If bForce"
+#~ " is FALSE, and it would be "
+#~ "expensive to establish the feature count"
+#~ " a value of -1 may be returned"
+#~ " indicating that the count isn't "
+#~ "know. If bForce is TRUE some "
+#~ "implementations will actually scan the "
+#~ "entire layer once to count objects."
+#~ msgstr ""
+
+#~ msgid "The returned count takes the spatial filter into account."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP OGRLayer::GetFeatureCount()."
+#~ msgstr ""
+
+#~ msgid "Note: since GDAL 2.0, this method returns a GIntBig (previously a int)"
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer that owned the features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bForce:  Flag indicating whether the "
+#~ "count should be computed even if "
+#~ "it is expensive."
+#~ msgstr ""
+
+#~ msgid "feature count, -1 if count not known."
+#~ msgstr ""
+
+#~ msgid "GIntBig OGR_L_GetFeaturesRead(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "OGRwkbGeometryType OGR_L_GetGeomType(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Return the layer geometry type."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This returns the same result as "
+#~ "OGR_FD_GetGeomType(OGR_L_GetLayerDefn(hLayer)), but for"
+#~ " a few drivers, calling OGR_L_GetGeomType()"
+#~ " directly can avoid lengthy layer "
+#~ "definition initialization."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For layers with multiple geometry "
+#~ "fields, this method only returns the "
+#~ "geometry type of the first geometry "
+#~ "column. For other columns, use "
+#~ "OGR_GFld_GetType(OGR_FD_GetGeomFieldDefn(OGR_L_GetLayerDefn(hLayer),"
+#~ " i)). For layers without any geometry"
+#~ " field, this method returns wkbNone."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetGeomType()."
+#~ msgstr ""
+
+#~ msgid "the geometry type"
+#~ msgstr ""
+
+#~ msgid "OGR 1.8.0"
+#~ msgstr ""
+
+#~ msgid "const char* OGR_L_GetGeometryColumn(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method returns the name of "
+#~ "the underlying database column being "
+#~ "used as the geometry column, or "
+#~ "\"\" if not supported."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For layers with multiple geometry "
+#~ "fields, this method only returns the "
+#~ "geometry type of the first geometry "
+#~ "column. For other columns, use OGR "
+#~ "_GFld_GetNameRef(OGR_FD_GetGeomFieldDefn(OGR_L_GetLayerDefn(hLayer),"
+#~ " i))."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::GetGeometryColumn()"
+#~ msgstr ""
+
+#~ msgid "geometry column name."
+#~ msgstr ""
+
+#~ msgid "OGRFeatureDefnH OGR_L_GetLayerDefn(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Fetch the schema information for this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned handle to the "
+#~ "OGRFeatureDefn is owned by the OGRLayer,"
+#~ " and should not be modified or "
+#~ "freed by the application. It "
+#~ "encapsulates the attribute schema of the"
+#~ " features of the layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetLayerDefn()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to get the schema information."
+#~ msgstr ""
+
+#~ msgid "a handle to the feature definition."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_L_GetName(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Return the layer name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This returns the same content as "
+#~ "OGR_FD_GetName(OGR_L_GetLayerDefn(hLayer)), but for "
+#~ "a few drivers, calling OGR_L_GetName() "
+#~ "directly can avoid lengthy layer "
+#~ "definition initialization."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetName()."
+#~ msgstr ""
+
+#~ msgid "the layer name (must not been freed)"
+#~ msgstr ""
+
+#~ msgid "OGRFeatureH OGR_L_GetNextFeature(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Fetch the next available feature from this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned feature becomes the "
+#~ "responsibility of the caller to delete"
+#~ " with OGR_F_Destroy(). It is critical "
+#~ "that all features associated with an "
+#~ "OGRLayer (more specifically an OGRFeatureDefn)"
+#~ " be deleted before that layer/datasource"
+#~ " is deleted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only features matching the current "
+#~ "spatial filter (set with SetSpatialFilter())"
+#~ " will be returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function implements sequential access "
+#~ "to the features of a layer. The"
+#~ " OGR_L_ResetReading() function can be used"
+#~ " to start at the beginning again."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Features returned by OGR_GetNextFeature() may"
+#~ " or may not be affected by "
+#~ "concurrent modifications depending on drivers."
+#~ " A guaranteed way of seeing "
+#~ "modifications in effect is to call "
+#~ "OGR_L_ResetReading() on layers where "
+#~ "OGR_GetNextFeature() has been called, before"
+#~ " reading again. Structural changes in "
+#~ "layers (field addition, deletion, ...) "
+#~ "when a read is in progress may "
+#~ "or may not be possible depending "
+#~ "on drivers. If a transaction is "
+#~ "committed/aborted, the current sequential "
+#~ "reading may or may not be valid"
+#~ " after that operation and a call "
+#~ "to OGR_L_ResetReading() might be needed."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetNextFeature()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer from which feature are read."
+#~ msgstr ""
+
+#~ msgid "a handle to a feature, or NULL if no more features are available."
+#~ msgstr ""
+
+#~ msgid "int OGR_L_GetRefCount(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_L_GetSpatialFilter(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "This function returns the current spatial filter for this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned pointer is to an "
+#~ "internally owned object, and should not"
+#~ " be altered or deleted by the "
+#~ "caller."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRLayer::GetSpatialFilter()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to get the spatial filter from."
+#~ msgstr ""
+
+#~ msgid "a handle to the spatial filter geometry."
+#~ msgstr ""
+
+#~ msgid "OGRSpatialReferenceH OGR_L_GetSpatialRef(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Fetch the spatial reference system for this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned object is owned by "
+#~ "the OGRLayer and should not be "
+#~ "modified or freed by the application."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::GetSpatialRef()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to get the spatial reference from."
+#~ msgstr ""
+
+#~ msgid "spatial reference, or NULL if there isn't one."
+#~ msgstr ""
+
+#~ msgid "OGRStyleTableH OGR_L_GetStyleTable(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Get style table."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Identity(OGRLayerH pLayerInput, "
+#~ "OGRLayerH pLayerMethod, OGRLayerH pLayerResult, "
+#~ "char **papszOptions, GDALProgressFunc pfnProgress,"
+#~ " void *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Identify the features of this layer "
+#~ "with the ones from the identity "
+#~ "layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "in the input layer. The features "
+#~ "in the result layer have attributes "
+#~ "from both input and method layers. "
+#~ "The schema of the result layer can"
+#~ " be set by the user or, if "
+#~ "it is empty, is initialized to "
+#~ "contain all fields in input and "
+#~ "method layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the schema of the result is "
+#~ "set by user and contains fields "
+#~ "that have the same name as a "
+#~ "field in input and in method "
+#~ "layer, then the attribute in the "
+#~ "result feature will get the value "
+#~ "from the feature of the method "
+#~ "layer (even if it is undefined)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "USE_PREPARED_GEOMETRIES=YES/NO. Set to NO to"
+#~ " not use prepared geometries to "
+#~ "pretest intersection of features of "
+#~ "method layer with features of this "
+#~ "layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "KEEP_LOWER_DIMENSION_GEOMETRIES=YES/NO. Set to NO"
+#~ " to skip result features with lower"
+#~ " dimension geometry that would otherwise"
+#~ " be added to the result layer. "
+#~ "The default is to add but only "
+#~ "if the result layer has an unknown"
+#~ " geometry type."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Identity()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Intersection(OGRLayerH pLayerInput, "
+#~ "OGRLayerH pLayerMethod, OGRLayerH pLayerResult, "
+#~ "char **papszOptions, GDALProgressFunc pfnProgress,"
+#~ " void *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Intersection of two layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "common between features in the input "
+#~ "layer and in the method layer. The"
+#~ " features in the result layer have"
+#~ " attributes from both input and "
+#~ "method layers. The schema of the "
+#~ "result layer can be set by the "
+#~ "user or, if it is empty, is "
+#~ "initialized to contain all fields in "
+#~ "the input and method layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the schema of the result is "
+#~ "set by user and contains fields "
+#~ "that have the same name as a "
+#~ "field in input and in method "
+#~ "layer, then the attribute in the "
+#~ "result feature will get the value "
+#~ "from the feature of the method "
+#~ "layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "PRETEST_CONTAINMENT=YES/NO. Set to YES to "
+#~ "pretest the containment of features of"
+#~ " method layer within the features of"
+#~ " this layer. This will speed up "
+#~ "the method significantly in some cases."
+#~ " Requires that the prepared geometries "
+#~ "are in effect."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Intersection()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_ReorderField(OGRLayerH hLayer, int "
+#~ "iOldFieldPos, int iNewFieldPos)"
+#~ msgstr ""
+
+#~ msgid "Reorder an existing field on a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is a convenience wrapper"
+#~ " of OGR_L_ReorderFields() dedicated to move"
+#~ " a single field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "You must use this to reorder "
+#~ "existing fields on a real layer. "
+#~ "Internally the OGRFeatureDefn for the "
+#~ "layer will be updated to reflect "
+#~ "the reordering of the fields. "
+#~ "Applications should never modify the "
+#~ "OGRFeatureDefn used by a layer directly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The field definition that was at "
+#~ "initial position iOldFieldPos will be "
+#~ "moved at position iNewFieldPos, and "
+#~ "elements between will be shuffled "
+#~ "accordingly."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, let suppose the fields "
+#~ "were \"0\",\"1\",\"2\",\"3\",\"4\" initially. "
+#~ "ReorderField(1, 3) will reorder them as"
+#~ " \"0\",\"2\",\"3\",\"1\",\"4\"."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Not all drivers support this function."
+#~ " You can query a layer to check"
+#~ " if it supports it with the "
+#~ "OLCReorderFields capability. Some drivers may"
+#~ " only support this method while there"
+#~ " are still no features in the "
+#~ "layer. When it is supported, the "
+#~ "existing features of the backing "
+#~ "file/database should be updated accordingly."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::ReorderField()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "iOldFieldPos:  previous position of the "
+#~ "field to move. Must be in the "
+#~ "range [0,GetFieldCount()-1]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "iNewFieldPos:  new position of the field"
+#~ " to move. Must be in the range"
+#~ " [0,GetFieldCount()-1]."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_ReorderFields(OGRLayerH hLayer, int *panMap)"
+#~ msgstr ""
+
+#~ msgid "Reorder all the fields of a layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "panMap is such that,for each field "
+#~ "definition at position i after "
+#~ "reordering, its position before reordering "
+#~ "was panMap[i]."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example, let suppose the fields "
+#~ "were \"0\",\"1\",\"2\",\"3\",\"4\" initially. "
+#~ "ReorderFields([0,2,3,1,4]) will reorder them "
+#~ "as \"0\",\"2\",\"3\",\"1\",\"4\"."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::ReorderFields()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "panMap:  an array of GetLayerDefn()-> "
+#~ "OGRFeatureDefn::GetFieldCount() elements which is"
+#~ " a permutation of [0, GetLayerDefn()-> "
+#~ "OGRFeatureDefn::GetFieldCount()-1]."
+#~ msgstr ""
+
+#~ msgid "void OGR_L_ResetReading(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Reset feature reading to start on the first feature."
+#~ msgstr ""
+
+#~ msgid "This affects GetNextFeature()."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::ResetReading()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer on which features are read."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_RollbackTransaction(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For datasources which support transactions,"
+#~ " RollbackTransaction will roll back a "
+#~ "datasource to its state before the "
+#~ "start of the current transaction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If no transaction is active, or "
+#~ "the rollback fails, will return "
+#~ "OGRERR_FAILURE. Datasources which do not "
+#~ "support transactions will always return "
+#~ "OGRERR_NONE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRLayer::RollbackTransaction()."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_SetAttributeFilter(OGRLayerH hLayer, const char *pszQuery)"
+#~ msgstr ""
+
+#~ msgid "Set a new attribute query."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function sets the attribute query"
+#~ " string to be used when fetching "
+#~ "features via the OGR_L_GetNextFeature() "
+#~ "function. Only features for which the"
+#~ " query evaluates as true will be "
+#~ "returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The query string should be in the"
+#~ " format of an SQL WHERE clause. "
+#~ "For instance \"population > 1000000 and"
+#~ " population < 5000000\" where population"
+#~ " is an attribute in the layer. "
+#~ "The query format is a restricted "
+#~ "form of SQL WHERE clause as "
+#~ "defined \"eq_format=restricted_where\" about half"
+#~ " way through this document:"
+#~ msgstr ""
+
+#~ msgid "http://ogdi.sourceforge.net/prop/6.2.CapabilitiesMetadata.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that installing a query string "
+#~ "will generally result in resetting the"
+#~ " current reading position (ala "
+#~ "OGR_L_ResetReading())."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRLayer::SetAttributeFilter()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer on which attribute query will be executed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pszQuery:  query in restricted SQL WHERE"
+#~ " format, or NULL to clear the "
+#~ "current query."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if successfully installed, or "
+#~ "an error code if the query "
+#~ "expression is in error, or some "
+#~ "other failure occurs."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_SetFeature(OGRLayerH hLayer, OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Rewrite an existing feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function will write a feature "
+#~ "to the layer, based on the feature"
+#~ " id within the OGRFeature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Use OGR_L_TestCapability(OLCRandomWrite) to "
+#~ "establish if this layer supports random"
+#~ " access writing via OGR_L_SetFeature()."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::SetFeature()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to write the feature."
+#~ msgstr ""
+
+#~ msgid "hFeat:  the feature to write."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_SetIgnoredFields(OGRLayerH hLayer, "
+#~ "const char **papszFields)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set which fields can be omitted "
+#~ "when retrieving features from the layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the driver supports this "
+#~ "functionality (testable using OLCIgnoreFields "
+#~ "capability), it will not fetch the "
+#~ "specified fields in subsequent calls to"
+#~ " GetFeature() / GetNextFeature() and thus"
+#~ " save some processing time and/or "
+#~ "bandwidth."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Besides field names of the layers, "
+#~ "the following special fields can be "
+#~ "passed: \"OGR_GEOMETRY\" to ignore geometry"
+#~ " and \"OGR_STYLE\" to ignore layer "
+#~ "style."
+#~ msgstr ""
+
+#~ msgid "By default, no fields are ignored."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::SetIgnoredFields()"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "papszFields:  an array of field names"
+#~ " terminated by NULL item. If NULL "
+#~ "is passed, the ignored list is "
+#~ "cleared."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if all field names have "
+#~ "been resolved (even if the driver "
+#~ "does not support this method)"
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_SetNextByIndex(OGRLayerH hLayer, GIntBig nIndex)"
+#~ msgstr ""
+
+#~ msgid "Move read cursor to the nIndex'th feature in the current resultset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method allows positioning of a "
+#~ "layer such that the GetNextFeature() "
+#~ "call will read the requested feature,"
+#~ " where nIndex is an absolute index"
+#~ " into the current result set. So, "
+#~ "setting it to 3 would mean the "
+#~ "next feature read with GetNextFeature() "
+#~ "would have been the 4th feature to"
+#~ " have been read if sequential reading"
+#~ " took place from the beginning of "
+#~ "the layer, including accounting for "
+#~ "spatial and attribute filters."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Only in rare circumstances is "
+#~ "SetNextByIndex() efficiently implemented. In "
+#~ "all other cases the default "
+#~ "implementation which calls ResetReading() and"
+#~ " then calls GetNextFeature() nIndex times"
+#~ " is used. To determine if fast "
+#~ "seeking is available on the current "
+#~ "layer use the TestCapability() method "
+#~ "with a value of OLCFastSetNextByIndex."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::SetNextByIndex()"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nIndex:  the index indicating how many"
+#~ " steps into the result set to "
+#~ "seek."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE on success or an error code."
+#~ msgstr ""
+
+#~ msgid "void OGR_L_SetSpatialFilter(OGRLayerH hLayer, OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Set a new spatial filter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function set the geometry to "
+#~ "be used as a spatial filter when"
+#~ " fetching features via the "
+#~ "OGR_L_GetNextFeature() function. Only features "
+#~ "that geometrically intersect the filter "
+#~ "geometry will be returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Currently this test is may be "
+#~ "inaccurately implemented, but it is "
+#~ "guaranteed that all features whose "
+#~ "envelope (as returned by OGR_G_GetEnvelope())"
+#~ " overlaps the envelope of the spatial"
+#~ " filter will be returned. This can"
+#~ " result in more shapes being returned"
+#~ " that should strictly be the case."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 2.3, features with"
+#~ " null or empty geometries will never"
+#~ " be considered as matching a spatial"
+#~ " filter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function makes an internal copy "
+#~ "of the passed geometry. The passed "
+#~ "geometry remains the responsibility of "
+#~ "the caller, and may be safely "
+#~ "destroyed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the time being the passed "
+#~ "filter geometry should be in the "
+#~ "same SRS as the layer (as returned"
+#~ " by OGR_L_GetSpatialRef()). In the future"
+#~ " this may be generalized."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::SetSpatialFilter."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer on which to set the spatial filter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hGeom:  handle to the geometry to "
+#~ "use as a filtering region. NULL "
+#~ "may be passed indicating that the "
+#~ "current spatial filter should be "
+#~ "cleared, but no new one instituted."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_L_SetSpatialFilterRect(OGRLayerH hLayer, "
+#~ "double dfMinX, double dfMinY, double "
+#~ "dfMaxX, double dfMaxY)"
+#~ msgstr ""
+
+#~ msgid "Set a new rectangular spatial filter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method set rectangle to be "
+#~ "used as a spatial filter when "
+#~ "fetching features via the "
+#~ "OGR_L_GetNextFeature() method. Only features "
+#~ "that geometrically intersect the given "
+#~ "rectangle will be returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The x/y values should be in the"
+#~ " same coordinate system as the layer"
+#~ " as a whole (as returned by "
+#~ "OGRLayer::GetSpatialRef()). Internally this method"
+#~ " is normally implemented as creating "
+#~ "a 5 vertex closed rectangular polygon"
+#~ " and passing it to "
+#~ "OGRLayer::SetSpatialFilter(). It exists as a"
+#~ " convenience."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The only way to clear a spatial"
+#~ " filter set with this method is "
+#~ "to call OGRLayer::SetSpatialFilter(NULL)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method is the same as the "
+#~ "C++ method OGRLayer::SetSpatialFilterRect()."
+#~ msgstr ""
+
+#~ msgid "dfMinX:  the minimum X coordinate for the rectangular region."
+#~ msgstr ""
+
+#~ msgid "dfMinY:  the minimum Y coordinate for the rectangular region."
+#~ msgstr ""
+
+#~ msgid "dfMaxX:  the maximum X coordinate for the rectangular region."
+#~ msgstr ""
+
+#~ msgid "dfMaxY:  the maximum Y coordinate for the rectangular region."
+#~ msgstr ""
+
+#~ msgid "void OGR_L_SetStyleTable(OGRLayerH hLayer, OGRStyleTableH hStyleTable)"
+#~ msgstr ""
+
+#~ msgid "Set style table."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_StartTransaction(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For datasources which support transactions,"
+#~ " StartTransaction creates a transaction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If starting the transaction fails, will"
+#~ " return OGRERR_FAILURE. Datasources which "
+#~ "do not support transactions will always"
+#~ " return OGRERR_NONE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: as of GDAL 2.0, use of "
+#~ "this API is discouraged when the "
+#~ "dataset offers dataset level transaction "
+#~ "with GDALDataset::StartTransaction(). The reason "
+#~ "is that most drivers can only "
+#~ "offer transactions at dataset level, and"
+#~ " not layer level. Very few drivers"
+#~ " really support transactions at layer "
+#~ "scope."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRLayer::StartTransaction()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_SymDifference(OGRLayerH pLayerInput, "
+#~ "OGRLayerH pLayerMethod, OGRLayerH pLayerResult, "
+#~ "char **papszOptions, GDALProgressFunc pfnProgress,"
+#~ " void *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Symmetrical difference of two layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "in either in the input layer or"
+#~ " in the method layer but not in"
+#~ " both. The features in the result "
+#~ "layer have attributes from both input"
+#~ " and method layers. For features "
+#~ "which represent areas that are only "
+#~ "in the input or in the method "
+#~ "layer the respective attributes have "
+#~ "undefined values. The schema of the "
+#~ "result layer can be set by the "
+#~ "user or, if it is empty, is "
+#~ "initialized to contain all fields in "
+#~ "the input and method layers."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::SymDifference()."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_L_SyncToDisk(OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Flush pending changes to disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This call is intended to force the"
+#~ " layer to flush any pending writes"
+#~ " to disk, and leave the disk "
+#~ "file in a consistent state. It "
+#~ "would not normally have any effect "
+#~ "on read-only datasources."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some layers do not implement this "
+#~ "method, and will still return "
+#~ "OGRERR_NONE. The default implementation just"
+#~ " returns OGRERR_NONE. An error is "
+#~ "only returned if an error occurs "
+#~ "while attempting to flush to disk."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "In any event, you should always "
+#~ "close any opened datasource with "
+#~ "OGR_DS_Destroy() that will ensure all "
+#~ "data is correctly flushed."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRLayer::SyncToDisk()"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if no error occurs (even "
+#~ "if nothing is done) or an error"
+#~ " code."
+#~ msgstr ""
+
+#~ msgid "int OGR_L_TestCapability(OGRLayerH hLayer, const char *pszCap)"
+#~ msgstr ""
+
+#~ msgid "Test if this layer supported the named capability."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The capability codes that can be "
+#~ "tested are represented as strings, but"
+#~ " #defined constants exists to ensure "
+#~ "correct spelling. Specific layer types "
+#~ "may implement class specific capabilities, "
+#~ "but this can't generally be discovered"
+#~ " by the caller."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCRandomRead / \"RandomRead\": TRUE if "
+#~ "the GetFeature() method is implemented "
+#~ "in an optimized way for this "
+#~ "layer, as opposed to the default "
+#~ "implementation using ResetReading() and "
+#~ "GetNextFeature() to find the requested "
+#~ "feature id."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCSequentialWrite / \"SequentialWrite\": TRUE "
+#~ "if the CreateFeature() method works for"
+#~ " this layer. Note this means that "
+#~ "this particular layer is writable. The"
+#~ " same OGRLayer class may returned "
+#~ "FALSE for other layer instances that "
+#~ "are effectively read-only."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCRandomWrite / \"RandomWrite\": TRUE if "
+#~ "the SetFeature() method is operational "
+#~ "on this layer. Note this means "
+#~ "that this particular layer is writable."
+#~ " The same OGRLayer class may returned"
+#~ " FALSE for other layer instances that"
+#~ " are effectively read-only."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCFastSpatialFilter / \"FastSpatialFilter\": TRUE"
+#~ " if this layer implements spatial "
+#~ "filtering efficiently. Layers that effectively"
+#~ " read all features, and test them "
+#~ "with the OGRFeature intersection methods "
+#~ "should return FALSE. This can be "
+#~ "used as a clue by the application"
+#~ " whether it should build and maintain"
+#~ " its own spatial index for features"
+#~ " in this layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCFastFeatureCount / \"FastFeatureCount\": TRUE "
+#~ "if this layer can return a feature"
+#~ " count (via OGR_L_GetFeatureCount()) efficiently,"
+#~ " i.e. without counting the features. "
+#~ "In some cases this will return "
+#~ "TRUE until a spatial filter is "
+#~ "installed after which it will return "
+#~ "FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCFastGetExtent / \"FastGetExtent\": TRUE if"
+#~ " this layer can return its data "
+#~ "extent (via OGR_L_GetExtent()) efficiently, "
+#~ "i.e. without scanning all the features."
+#~ " In some cases this will return "
+#~ "TRUE until a spatial filter is "
+#~ "installed after which it will return "
+#~ "FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCFastSetNextByIndex / \"FastSetNextByIndex\": TRUE"
+#~ " if this layer can perform the "
+#~ "SetNextByIndex() call efficiently, otherwise "
+#~ "FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCCreateField / \"CreateField\": TRUE if "
+#~ "this layer can create new fields "
+#~ "on the current layer using "
+#~ "CreateField(), otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCCreateGeomField / \"CreateGeomField\": (GDAL "
+#~ ">= 1.11) TRUE if this layer can"
+#~ " create new geometry fields on the"
+#~ " current layer using CreateGeomField(), "
+#~ "otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCDeleteField / \"DeleteField\": TRUE if "
+#~ "this layer can delete existing fields"
+#~ " on the current layer using "
+#~ "DeleteField(), otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCReorderFields / \"ReorderFields\": TRUE if"
+#~ " this layer can reorder existing "
+#~ "fields on the current layer using "
+#~ "ReorderField() or ReorderFields(), otherwise "
+#~ "FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCAlterFieldDefn / \"AlterFieldDefn\": TRUE "
+#~ "if this layer can alter the "
+#~ "definition of an existing field on "
+#~ "the current layer using AlterFieldDefn(), "
+#~ "otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCDeleteFeature / \"DeleteFeature\": TRUE if"
+#~ " the DeleteFeature() method is supported"
+#~ " on this layer, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCStringsAsUTF8 / \"StringsAsUTF8\": TRUE if"
+#~ " values of OFTString fields are "
+#~ "assured to be in UTF-8 format. If"
+#~ " FALSE the encoding of fields is "
+#~ "uncertain, though it might still be "
+#~ "UTF-8."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCTransactions / \"Transactions\": TRUE if"
+#~ " the StartTransaction(), CommitTransaction() and"
+#~ " RollbackTransaction() methods work in a"
+#~ " meaningful way, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OLCCurveGeometries / \"CurveGeometries\": TRUE "
+#~ "if this layer supports writing curve "
+#~ "geometries or may return such "
+#~ "geometries. (GDAL 2.0)."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::TestCapability()."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the layer to get the capability from."
+#~ msgstr ""
+
+#~ msgid "pszCap:  the name of the capability to test."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "TRUE if the layer has the "
+#~ "requested capability, or FALSE otherwise. "
+#~ "OGRLayers will return FALSE for any "
+#~ "unrecognized capabilities."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Union(OGRLayerH pLayerInput, OGRLayerH"
+#~ " pLayerMethod, OGRLayerH pLayerResult, char "
+#~ "**papszOptions, GDALProgressFunc pfnProgress, void"
+#~ " *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Union of two layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "in either in the input layer, in"
+#~ " the method layer, or in both. "
+#~ "The features in the result layer "
+#~ "have attributes from both input and "
+#~ "method layers. For features which "
+#~ "represent areas that are only in "
+#~ "the input or in the method layer"
+#~ " the respective attributes have undefined"
+#~ " values. The schema of the result "
+#~ "layer can be set by the user "
+#~ "or, if it is empty, is initialized"
+#~ " to contain all fields in the "
+#~ "input and method layers."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Union()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_L_Update(OGRLayerH pLayerInput, OGRLayerH"
+#~ " pLayerMethod, OGRLayerH pLayerResult, char "
+#~ "**papszOptions, GDALProgressFunc pfnProgress, void"
+#~ " *pProgressArg)"
+#~ msgstr ""
+
+#~ msgid "Update this layer with features from the update layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result layer contains features whose"
+#~ " geometries represent areas that are "
+#~ "either in the input layer or in"
+#~ " the method layer. The features in"
+#~ " the result layer have areas of "
+#~ "the features of the method layer "
+#~ "or those ares of the features of"
+#~ " the input layer that are not "
+#~ "covered by the method layer. The "
+#~ "features of the result layer get "
+#~ "their attributes from the input layer."
+#~ " The schema of the result layer "
+#~ "can be set by the user or, "
+#~ "if it is empty, is initialized to"
+#~ " contain all fields in the input "
+#~ "layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If the schema of the result is "
+#~ "set by user and contains fields "
+#~ "that have the same name as a "
+#~ "field in the method layer, then "
+#~ "the attribute in the result feature "
+#~ "the originates from the method layer "
+#~ "will get the value from the "
+#~ "feature of the method layer."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRLayer::Update()."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRFeatureShadow class."
+#~ msgstr ""
+
+#~ msgid "OGRFeatureH OGR_F_Clone(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Duplicate feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The newly created feature is owned "
+#~ "by the caller, and will have its"
+#~ " own reference to the OGRFeatureDefn."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::Clone()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to clone."
+#~ msgstr ""
+
+#~ msgid "a handle to the new feature, exactly matching this feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once called, self has effectively been"
+#~ " destroyed.  Do not access. For "
+#~ "backwards compatibility only"
+#~ msgstr ""
+
+#~ msgid "void OGR_F_DumpReadable(OGRFeatureH hFeat, FILE *fpOut)"
+#~ msgstr ""
+
+#~ msgid "Dump this feature in a human readable form."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This dumps the attributes, and geometry;"
+#~ " however, it doesn't definition information"
+#~ " (other than field types and names),"
+#~ " nor does it report the geometry "
+#~ "spatial reference system."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::DumpReadable()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to dump."
+#~ msgstr ""
+
+#~ msgid "fpOut:  the stream to write to, such as strout."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_Equal(OGRFeatureH hFeat, OGRFeatureH hOtherFeat)"
+#~ msgstr ""
+
+#~ msgid "Test if two features are the same."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Two features are considered equal if "
+#~ "the share them (handle equality) same"
+#~ " OGRFeatureDefn, have the same field "
+#~ "values, and the same geometry (as "
+#~ "tested by OGR_G_Equal()) as well as "
+#~ "the same feature id."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::Equal()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to one of the feature."
+#~ msgstr ""
+
+#~ msgid "hOtherFeat:  handle to the other feature to test this one against."
+#~ msgstr ""
+
+#~ msgid "TRUE if they are equal, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Exports a GeoJSON object which "
+#~ "represents the Feature. The as_object "
+#~ "parameter determines whether the returned "
+#~ "value should be a Python object "
+#~ "instead of a string. Defaults to "
+#~ "False. The options parameter is passed"
+#~ " to Geometry.ExportToJson()"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_FillUnsetWithDefault(OGRFeatureH hFeat, "
+#~ "int bNotNullableOnly, char **papszOptions)"
+#~ msgstr ""
+
+#~ msgid "Fill unset fields with default values that might be defined."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::FillUnsetWithDefault()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bNotNullableOnly:  if we should fill "
+#~ "only unset fields with a not-null"
+#~ " constraint."
+#~ msgstr ""
+
+#~ msgid "papszOptions:  unused currently. Must be set to NULL."
+#~ msgstr ""
+
+#~ msgid "GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "OGRFeatureDefnH OGR_F_GetDefnRef(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Fetch feature definition."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::GetDefnRef()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to get the feature definition from."
+#~ msgstr ""
+
+#~ msgid "a handle to the feature definition object on which feature depends."
+#~ msgstr ""
+
+#~ msgid "GIntBig OGR_F_GetFID(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Get feature identifier."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFID(). Note: "
+#~ "since GDAL 2.0, this method returns "
+#~ "a GIntBig (previously a long)"
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature from which to get the feature identifier."
+#~ msgstr ""
+
+#~ msgid "feature id or OGRNullFID if none has been assigned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GByte* OGR_F_GetFieldAsBinary(OGRFeatureH hFeat, int"
+#~ " iField, int *pnBytes)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as binary."
+#~ msgstr ""
+
+#~ msgid "This method only works for OFTBinary and OFTString fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsBinary()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature that owned the field."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to fetch, from 0 to GetFieldCount()-1."
+#~ msgstr ""
+
+#~ msgid "pnBytes:  location to place count of bytes returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the field value. This list is "
+#~ "internal, and should not be modified,"
+#~ " or freed. Its lifetime may be "
+#~ "very brief."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "int OGR_F_GetFieldAsDateTime(OGRFeatureH hFeat, int"
+#~ " iField, int *pnYear, int *pnMonth, "
+#~ "int *pnDay, int *pnHour, int *pnMinute,"
+#~ " int *pnSecond, int *pnTZFlag)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as date and time."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Currently this method only works for "
+#~ "OFTDate, OFTTime and OFTDateTime fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsDateTime()."
+#~ msgstr ""
+
+#~ msgid "pnYear:  (including century)"
+#~ msgstr ""
+
+#~ msgid "pnMonth:  (1-12)"
+#~ msgstr ""
+
+#~ msgid "pnDay:  (1-31)"
+#~ msgstr ""
+
+#~ msgid "pnHour:  (0-23)"
+#~ msgstr ""
+
+#~ msgid "pnMinute:  (0-59)"
+#~ msgstr ""
+
+#~ msgid "pnSecond:  (0-59)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pnTZFlag:  (0=unknown, 1=localtime, 100=GMT, "
+#~ "see data model for details)"
+#~ msgstr ""
+
+#~ msgid "TRUE on success or FALSE on failure."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See:  Use OGR_F_GetFieldAsDateTimeEx() for "
+#~ "second with millisecond accuracy."
+#~ msgstr ""
+
+#~ msgid "double OGR_F_GetFieldAsDouble(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a double."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTString features will be translated "
+#~ "using CPLAtof(). OFTInteger fields will "
+#~ "be cast to double. Other field "
+#~ "types, or errors will result in a"
+#~ " return value of zero."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsDouble()."
+#~ msgstr ""
+
+#~ msgid "the field value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "const double* OGR_F_GetFieldAsDoubleList(OGRFeatureH "
+#~ "hFeat, int iField, int *pnCount)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a list of doubles."
+#~ msgstr ""
+
+#~ msgid "Currently this function only works for OFTRealList fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsDoubleList()."
+#~ msgstr ""
+
+#~ msgid "pnCount:  an integer to put the list count (number of doubles) into."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the field value. This list is "
+#~ "internal, and should not be modified,"
+#~ " or freed. Its lifetime may be "
+#~ "very brief. If *pnCount is zero on"
+#~ " return the returned pointer may be"
+#~ " NULL or non-NULL."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_GetFieldAsInteger(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as integer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTString features will be translated "
+#~ "using atoi(). OFTReal fields will be "
+#~ "cast to integer. Other field types, "
+#~ "or errors will result in a return"
+#~ " value of zero."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsInteger()."
+#~ msgstr ""
+
+#~ msgid "GIntBig OGR_F_GetFieldAsInteger64(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as integer 64 bit."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTInteger are promoted to 64 bit. "
+#~ "OFTString features will be translated "
+#~ "using CPLAtoGIntBig(). OFTReal fields will "
+#~ "be cast to integer. Other field "
+#~ "types, or errors will result in a"
+#~ " return value of zero."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsInteger64()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "const GIntBig* OGR_F_GetFieldAsInteger64List(OGRFeatureH"
+#~ " hFeat, int iField, int *pnCount)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a list of 64 bit integers."
+#~ msgstr ""
+
+#~ msgid "Currently this function only works for OFTInteger64List fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsInteger64List()."
+#~ msgstr ""
+
+#~ msgid "pnCount:  an integer to put the list count (number of integers) into."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "const int* OGR_F_GetFieldAsIntegerList(OGRFeatureH "
+#~ "hFeat, int iField, int *pnCount)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a list of integers."
+#~ msgstr ""
+
+#~ msgid "Currently this function only works for OFTIntegerList fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsIntegerList()."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_F_GetFieldAsString(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a string."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTReal and OFTInteger fields will be"
+#~ " translated to string using sprintf(), "
+#~ "but not necessarily using the "
+#~ "established formatting rules. Other field "
+#~ "types, or errors will result in a"
+#~ " return value of zero."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsString()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the field value. This string is "
+#~ "internal, and should not be modified,"
+#~ " or freed. Its lifetime may be "
+#~ "very brief."
+#~ msgstr ""
+
+#~ msgid "char** OGR_F_GetFieldAsStringList(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field value as a list of strings."
+#~ msgstr ""
+
+#~ msgid "Currently this method only works for OFTStringList fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned list is terminated by "
+#~ "a NULL pointer. The number of "
+#~ "elements can also be calculated using"
+#~ " CSLCount()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldAsStringList()."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_GetFieldCount(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fetch number of fields on this "
+#~ "feature This will always be the "
+#~ "same as the field count for the"
+#~ " OGRFeatureDefn."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldCount()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to get the fields count from."
+#~ msgstr ""
+
+#~ msgid "count of fields."
+#~ msgstr ""
+
+#~ msgid "OGRFieldDefnH OGR_F_GetFieldDefnRef(OGRFeatureH hFeat, int i)"
+#~ msgstr ""
+
+#~ msgid "Fetch definition for this field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldDefnRef()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature on which the field is found."
+#~ msgstr ""
+
+#~ msgid "i:  the field to fetch, from 0 to GetFieldCount()-1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to the field definition "
+#~ "(from the OGRFeatureDefn). This is an"
+#~ " internal reference, and should not "
+#~ "be deleted or modified."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_GetFieldIndex(OGRFeatureH hFeat, const char *pszName)"
+#~ msgstr ""
+
+#~ msgid "Fetch the field index given field name."
+#~ msgstr ""
+
+#~ msgid "This is a cover for the OGRFeatureDefn::GetFieldIndex() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetFieldIndex()."
+#~ msgstr ""
+
+#~ msgid "pszName:  the name of the field to search for."
+#~ msgstr ""
+
+#~ msgid "the field index, or -1 if no matching field is found."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_GetGeomFieldCount(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Fetch number of geometry fields on "
+#~ "this feature This will always be "
+#~ "the same as the geometry field "
+#~ "count for the OGRFeatureDefn."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetGeomFieldCount()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to get the geometry fields count from."
+#~ msgstr ""
+
+#~ msgid "count of geometry fields."
+#~ msgstr ""
+
+#~ msgid "GDAL 1.11"
+#~ msgstr ""
+
+#~ msgid "OGRGeomFieldDefnH OGR_F_GetGeomFieldDefnRef(OGRFeatureH hFeat, int i)"
+#~ msgstr ""
+
+#~ msgid "Fetch definition for this geometry field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetGeomFieldDefnRef()."
+#~ msgstr ""
+
+#~ msgid "i:  the field to fetch, from 0 to GetGeomFieldCount()-1."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_GetGeomFieldIndex(OGRFeatureH hFeat, const char *pszName)"
+#~ msgstr ""
+
+#~ msgid "Fetch the geometry field index given geometry field name."
+#~ msgstr ""
+
+#~ msgid "This is a cover for the OGRFeatureDefn::GetGeomFieldIndex() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetGeomFieldIndex()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature on which the geometry field is found."
+#~ msgstr ""
+
+#~ msgid "pszName:  the name of the geometry field to search for."
+#~ msgstr ""
+
+#~ msgid "the geometry field index, or -1 if no matching geometry field is found."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_F_GetGeomFieldRef(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch a handle to feature geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetGeomFieldRef()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to get geometry from."
+#~ msgstr ""
+
+#~ msgid "iField:  geometry field to get."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to internal feature geometry."
+#~ " This object should not be modified."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_F_GetGeometryRef(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is essentially the same"
+#~ " as the C++ method "
+#~ "OGRFeature::GetGeometryRef() (the only difference"
+#~ " is that this C function honours "
+#~ "OGRGetNonLinearGeometriesEnabledFlag())"
+#~ msgstr ""
+
+#~ msgid "const char* OGR_F_GetNativeData(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Returns the native data for the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The native data is the representation"
+#~ " in a \"natural\" form that comes "
+#~ "from the driver that created this "
+#~ "feature, or that is aimed at an"
+#~ " output driver. The native data may"
+#~ " be in different format, which is "
+#~ "indicated by OGR_F_GetNativeMediaType()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that most drivers do not "
+#~ "support storing the native data in "
+#~ "the feature object, and if they "
+#~ "do, generally the NATIVE_DATA open "
+#~ "option must be passed at dataset "
+#~ "opening."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The \"native data\" does not imply "
+#~ "it is something more performant or "
+#~ "powerful than what can be obtained "
+#~ "with the rest of the API, but "
+#~ "it may be useful in round-tripping"
+#~ " scenarios where some characteristics of"
+#~ " the underlying format are not "
+#~ "captured otherwise by the OGR "
+#~ "abstraction."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetNativeData()."
+#~ msgstr ""
+
+#~ msgid "a string with the native data, or NULL if there is none."
+#~ msgstr ""
+
+#~ msgid "GDAL 2.1"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "See: "
+#~ "https://trac.osgeo.org/gdal/wiki/rfc60_improved_roundtripping_in_ogr"
+#~ msgstr ""
+
+#~ msgid "const char* OGR_F_GetNativeMediaType(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Returns the native media type for the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The native media type is the "
+#~ "identifier for the format of the "
+#~ "native data. It follows the IANA "
+#~ "RFC 2045 (seehttps://en.wikipedia.org/wiki/Media_type),"
+#~ " e.g. \"application/vnd.geo+json\" for JSon."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C function OGR_F_GetNativeMediaType()."
+#~ msgstr ""
+
+#~ msgid "a string with the native media type, or NULL if there is none."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_F_GetStyleString(OGRFeatureH hFeat)"
+#~ msgstr ""
+
+#~ msgid "Fetch style string for this feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set the OGR Feature Style Specification"
+#~ " for details on the format of "
+#~ "this string, and ogr_featurestyle.h for "
+#~ "services available to parse it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::GetStyleString()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to get the style from."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a reference to a representation in "
+#~ "string format, or NULL if there "
+#~ "isn't one."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_IsFieldNull(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Test if a field is null."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::IsFieldNull()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature on which the field is."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to test."
+#~ msgstr ""
+
+#~ msgid "TRUE if the field is null, otherwise false."
+#~ msgstr ""
+
+#~ msgid "GDAL 2.2"
+#~ msgstr ""
+
+#~ msgid "int OGR_F_IsFieldSet(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Test if a field has ever been assigned a value or not."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::IsFieldSet()."
+#~ msgstr ""
+
+#~ msgid "TRUE if the field has been set, otherwise false."
+#~ msgstr ""
+
+#~ msgid "int OGR_F_IsFieldSetAndNotNull(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Test if a field is set and not null."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::IsFieldSetAndNotNull()."
+#~ msgstr ""
+
+#~ msgid "TRUE if the field is set and not null, otherwise false."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_F_SetFID(OGRFeatureH hFeat, GIntBig nFID)"
+#~ msgstr ""
+
+#~ msgid "Set the feature identifier."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For specific types of features this "
+#~ "operation may fail on illegal features"
+#~ " ids. Generally it always succeeds. "
+#~ "Feature ids should be greater than "
+#~ "or equal to zero, with the "
+#~ "exception of OGRNullFID (-1) indicating "
+#~ "that the feature id is unknown."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::SetFID()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to set the feature id to."
+#~ msgstr ""
+
+#~ msgid "nFID:  the new feature identifier value to assign."
+#~ msgstr ""
+
+#~ msgid "On success OGRERR_NONE, or on failure some other value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SetField(self, int id, int year, int "
+#~ "month, int day, int hour, int "
+#~ "minute,"
+#~ msgstr ""
+
+#~ msgid "int second, int tzflag)"
+#~ msgstr ""
+
+#~ msgid "SetField(self, char name, int year, int month, int day, int hour,"
+#~ msgstr ""
+
+#~ msgid "int minute, int second, int tzflag)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldDoubleList(OGRFeatureH hFeat, int"
+#~ " iField, int nCount, const double "
+#~ "*padfValues)"
+#~ msgstr ""
+
+#~ msgid "Set field to list of doubles value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function currently on has an "
+#~ "effect of OFTIntegerList, OFTInteger64List, "
+#~ "OFTRealList fields."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::SetField()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method has only an effect on"
+#~ " the in-memory feature object. If "
+#~ "this object comes from a layer and"
+#~ " the modifications must be serialized "
+#~ "back to the datasource, OGR_L_SetFeature() "
+#~ "must be used afterwards. Or if "
+#~ "this is a new feature, "
+#~ "OGR_L_CreateFeature() must be used afterwards."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to set, from 0 to GetFieldCount()-1."
+#~ msgstr ""
+
+#~ msgid "nCount:  the number of values in the list being assigned."
+#~ msgstr ""
+
+#~ msgid "padfValues:  the values to assign."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldInteger64(OGRFeatureH hFeat, int"
+#~ " iField, GIntBig nValue)"
+#~ msgstr ""
+
+#~ msgid "Set field to 64 bit integer value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTInteger, OFTInteger64 and OFTReal fields"
+#~ " will be set directly. OFTString "
+#~ "fields will be assigned a string "
+#~ "representation of the value, but not "
+#~ "necessarily taking into account formatting "
+#~ "constraints on this field. Other field"
+#~ " types may be unaffected."
+#~ msgstr ""
+
+#~ msgid "nValue:  the value to assign."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldInteger64List(OGRFeatureH hFeat, "
+#~ "int iField, int nCount, const GIntBig"
+#~ " *panValues)"
+#~ msgstr ""
+
+#~ msgid "Set field to list of 64 bit integers value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function currently on has an "
+#~ "effect of OFTIntegerList, OFTInteger64List and"
+#~ " OFTRealList fields."
+#~ msgstr ""
+
+#~ msgid "panValues:  the values to assign."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldIntegerList(OGRFeatureH hFeat, "
+#~ "int iField, int nCount, const int "
+#~ "*panValues)"
+#~ msgstr ""
+
+#~ msgid "Set field to list of integers value."
+#~ msgstr ""
+
+#~ msgid "void OGR_F_SetFieldNull(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Clear a field, marking it as null."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::SetFieldNull()."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to set to null."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldString(OGRFeatureH hFeat, int "
+#~ "iField, const char *pszValue)"
+#~ msgstr ""
+
+#~ msgid "Set field to string value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OFTInteger fields will be set based "
+#~ "on an atoi() conversion of the "
+#~ "string. OFTInteger64 fields will be set"
+#~ " based on an CPLAtoGIntBig() conversion "
+#~ "of the string. OFTReal fields will "
+#~ "be set based on an CPLAtof() "
+#~ "conversion of the string. Other field"
+#~ " types may be unaffected."
+#~ msgstr ""
+
+#~ msgid "pszValue:  the value to assign."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetFieldStringList(OGRFeatureH hFeat, int"
+#~ " iField, CSLConstList papszValues)"
+#~ msgstr ""
+
+#~ msgid "Set field to list of strings value."
+#~ msgstr ""
+
+#~ msgid "This function currently on has an effect of OFTStringList fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "papszValues:  the values to assign. List"
+#~ " of NUL-terminated string, ending "
+#~ "with a NULL pointer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_F_SetFrom(OGRFeatureH hFeat, OGRFeatureH"
+#~ " hOtherFeat, int bForgiving)"
+#~ msgstr ""
+
+#~ msgid "Set one feature from another."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Overwrite the contents of this feature"
+#~ " from the geometry and attributes of"
+#~ " another. The hOtherFeature does not "
+#~ "need to have the same OGRFeatureDefn."
+#~ " Field values are copied by "
+#~ "corresponding field names. Field types "
+#~ "do not have to exactly match. "
+#~ "OGR_F_SetField*() function conversion rules "
+#~ "will be applied as needed."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::SetFrom()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to set to."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hOtherFeat:  handle to the feature from"
+#~ " which geometry, and field values "
+#~ "will be copied."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bForgiving:  TRUE if the operation "
+#~ "should continue despite lacking output "
+#~ "fields matching some of the source "
+#~ "fields."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if the operation succeeds, "
+#~ "even if some values are not "
+#~ "transferred, otherwise an error code."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_F_SetFromWithMap(OGRFeatureH hFeat, "
+#~ "OGRFeatureH hOtherFeat, int bForgiving, const"
+#~ " int *panMap)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Overwrite the contents of this feature"
+#~ " from the geometry and attributes of"
+#~ " another. The hOtherFeature does not "
+#~ "need to have the same OGRFeatureDefn."
+#~ " Field values are copied according to"
+#~ " the provided indices map. Field "
+#~ "types do not have to exactly "
+#~ "match. OGR_F_SetField*() function conversion "
+#~ "rules will be applied as needed. "
+#~ "This is more efficient than "
+#~ "OGR_F_SetFrom() in that this doesn't "
+#~ "lookup the fields by their names. "
+#~ "Particularly useful when the field names"
+#~ " don't match."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "panMap:  Array of the indices of "
+#~ "the destination feature's fields stored "
+#~ "at the corresponding index of the "
+#~ "source feature's fields. A value of "
+#~ "-1 should be used to ignore the"
+#~ " source's field. The array should not"
+#~ " be NULL and be as long as "
+#~ "the number of fields in the source"
+#~ " feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_F_SetGeomField(OGRFeatureH hFeat, int "
+#~ "iField, OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Set feature geometry of a specified geometry field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function updates the features "
+#~ "geometry, and operate exactly as "
+#~ "SetGeometryDirectly(), except that this "
+#~ "function does not assume ownership of"
+#~ " the passed geometry, but instead "
+#~ "makes a copy of it."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ OGRFeature::SetGeomField()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature on which new geometry is applied to."
+#~ msgstr ""
+
+#~ msgid "iField:  geometry field to set."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle to the new geometry to apply to feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if successful, or "
+#~ "OGR_UNSUPPORTED_GEOMETRY_TYPE if the geometry "
+#~ "type is illegal for the OGRFeatureDefn"
+#~ " (checking not yet implemented)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_F_SetGeomFieldDirectly(OGRFeatureH hFeat, "
+#~ "int iField, OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function updates the features "
+#~ "geometry, and operate exactly as "
+#~ "SetGeomField(), except that this function "
+#~ "assumes ownership of the passed geometry"
+#~ " (even in case of failure of "
+#~ "that function)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::SetGeomFieldDirectly."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature on which to apply the geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRERR_NONE if successful, or OGRERR_FAILURE"
+#~ " if the index is invalid, or "
+#~ "OGR_UNSUPPORTED_GEOMETRY_TYPE if the geometry "
+#~ "type is illegal for the OGRFeatureDefn"
+#~ " (checking not yet implemented)."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_F_SetGeometry(OGRFeatureH hFeat, OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Set feature geometry."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ OGRFeature::SetGeometry()."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_F_SetGeometryDirectly(OGRFeatureH hFeat, OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function updates the features "
+#~ "geometry, and operate exactly as "
+#~ "SetGeometry(), except that this function "
+#~ "assumes ownership of the passed geometry"
+#~ " (even in case of failure of "
+#~ "that function)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::SetGeometryDirectly."
+#~ msgstr ""
+
+#~ msgid "void OGR_F_SetNativeData(OGRFeatureH hFeat, const char *pszNativeData)"
+#~ msgstr ""
+
+#~ msgid "Sets the native data for the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::SetNativeData()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pszNativeData:  a string with the native"
+#~ " data, or NULL if there is "
+#~ "none."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_F_SetNativeMediaType(OGRFeatureH hFeat, "
+#~ "const char *pszNativeMediaType)"
+#~ msgstr ""
+
+#~ msgid "Sets the native media type for the feature."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::SetNativeMediaType()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pszNativeMediaType:  a string with the "
+#~ "native media type, or NULL if "
+#~ "there is none."
+#~ msgstr ""
+
+#~ msgid "void OGR_F_SetStyleString(OGRFeatureH hFeat, const char *pszStyle)"
+#~ msgstr ""
+
+#~ msgid "Set feature style string."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method operate exactly as "
+#~ "OGR_F_SetStyleStringDirectly() except that it "
+#~ "does not assume ownership of the "
+#~ "passed string, but instead makes a "
+#~ "copy of it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeature::SetStyleString()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to set style to."
+#~ msgstr ""
+
+#~ msgid "pszStyle:  the style string to apply to this feature, cannot be NULL."
+#~ msgstr ""
+
+#~ msgid "void OGR_F_UnsetField(OGRFeatureH hFeat, int iField)"
+#~ msgstr ""
+
+#~ msgid "Clear a field, marking it as unset."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::UnsetField()."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to unset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "int OGR_F_Validate(OGRFeatureH hFeat, int "
+#~ "nValidateFlags, int bEmitError)"
+#~ msgstr ""
+
+#~ msgid "Validate that a feature meets constraints of its schema."
+#~ msgstr ""
+
+#~ msgid "The scope of test is specified with the nValidateFlags parameter."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Regarding OGR_F_VAL_WIDTH, the test is "
+#~ "done assuming the string width must "
+#~ "be interpreted as the number of "
+#~ "UTF-8 characters. Some drivers might "
+#~ "interpret the width as the number "
+#~ "of bytes instead. So this test is"
+#~ " rather conservative (if it fails, "
+#~ "then it will fail for all "
+#~ "interpretations)."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeature::Validate()."
+#~ msgstr ""
+
+#~ msgid "hFeat:  handle to the feature to validate."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nValidateFlags:  OGR_F_VAL_ALL or combination "
+#~ "of OGR_F_VAL_NULL, OGR_F_VAL_GEOM_TYPE, "
+#~ "OGR_F_VAL_WIDTH and OGR_F_VAL_ALLOW_NULL_WHEN_DEFAULT "
+#~ "with '|' operator"
+#~ msgstr ""
+
+#~ msgid "bEmitError:  TRUE if a CPLError() must be emitted when a check fails"
+#~ msgstr ""
+
+#~ msgid "TRUE if all enabled validation tests pass."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRGeometryShadow class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_G_AssignSpatialReference(OGRGeometryH hGeom, "
+#~ "OGRSpatialReferenceH hSRS)"
+#~ msgstr ""
+
+#~ msgid "Assign spatial reference to this object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Any existing spatial reference is "
+#~ "replaced, but under no circumstances "
+#~ "does this result in the object "
+#~ "being reprojected. It is just changing"
+#~ " the interpretation of the existing "
+#~ "geometry. Note that assigning a spatial"
+#~ " reference increments the reference count"
+#~ " on the OGRSpatialReference, but does "
+#~ "not copy it."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 2.3, this will "
+#~ "also assign the spatial reference to "
+#~ "potential sub-geometries of the geometry"
+#~ " ( OGRGeometryCollection, OGRCurvePolygon/OGRPolygon,"
+#~ " OGRCompoundCurve, OGRPolyhedralSurface and their"
+#~ " derived classes)."
+#~ msgstr ""
+
+#~ msgid "This is similar to the SFCOM IGeometry::put_SpatialReference() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::assignSpatialReference."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hGeom:  handle on the geometry to "
+#~ "apply the new spatial reference system."
+#~ msgstr ""
+
+#~ msgid "hSRS:  handle on the new spatial reference system to apply."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Boundary(OGRGeometryH hTarget)"
+#~ msgstr ""
+
+#~ msgid "Compute boundary."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A new geometry object is created "
+#~ "and returned containing the boundary of"
+#~ " the geometry on which the method "
+#~ "is invoked."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGR_G_Boundary()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is built on the GEOS"
+#~ " library, check it for the definition"
+#~ " of the geometry operation. If OGR"
+#~ " is built without the GEOS library,"
+#~ " this function will always fail, "
+#~ "issuing a CPLE_NotSupported error."
+#~ msgstr ""
+
+#~ msgid "hTarget:  The Geometry to calculate the boundary of."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to a newly allocated "
+#~ "geometry now owned by the caller, "
+#~ "or NULL on failure."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_Buffer(OGRGeometryH hTarget, "
+#~ "double dfDist, int nQuadSegs)"
+#~ msgstr ""
+
+#~ msgid "Compute buffer of geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Builds a new geometry containing the "
+#~ "buffer region around the geometry on "
+#~ "which it is invoked. The buffer is"
+#~ " a polygon containing the region "
+#~ "within the buffer distance of the "
+#~ "original geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Some buffer sections are properly "
+#~ "described as curves, but are converted"
+#~ " to approximate polygons. The nQuadSegs "
+#~ "parameter can be used to control "
+#~ "how many segments should be used "
+#~ "to define a 90 degree curve - "
+#~ "a quadrant of a circle. A value"
+#~ " of 30 is a reasonable default. "
+#~ "Large values result in large numbers "
+#~ "of vertices in the resulting buffer "
+#~ "geometry while small numbers reduce the"
+#~ " accuracy of the result."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Buffer()."
+#~ msgstr ""
+
+#~ msgid "hTarget:  the geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dfDist:  the buffer distance to be "
+#~ "applied. Should be expressed into the"
+#~ " same unit as the coordinates of "
+#~ "the geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "nQuadSegs:  the number of segments used"
+#~ " to approximate a 90 degree "
+#~ "(quadrant) of curvature."
+#~ msgstr ""
+
+#~ msgid "the newly created geometry, or NULL if an error occurs."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Centroid(OGRGeometryH hGeom, OGRGeometryH hCentroidPoint)"
+#~ msgstr ""
+
+#~ msgid "Compute the geometry centroid."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The centroid location is applied to "
+#~ "the passed in OGRPoint object. The "
+#~ "centroid is not necessarily within the"
+#~ " geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method relates to the SFCOM "
+#~ "ISurface::get_Centroid() method however the "
+#~ "current implementation based on GEOS can"
+#~ " operate on other geometry types such"
+#~ " as multipoint, linestring, geometrycollection"
+#~ " such as multipolygons. OGC SF SQL"
+#~ " 1.1 defines the operation for "
+#~ "surfaces (polygons). SQL/MM-Part 3 "
+#~ "defines the operation for surfaces and"
+#~ " multisurfaces (multipolygons)."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Centroid()."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE on success or OGRERR_FAILURE on error."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Clone(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Make a copy of this object."
+#~ msgstr ""
+
+#~ msgid "This function relates to the SFCOM IGeometry::clone() method."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::clone()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to clone from."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle on the copy of the "
+#~ "geometry with the spatial reference "
+#~ "system as the original."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_CloseRings(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Force rings to be closed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If this geometry, or any contained "
+#~ "geometries has polygon rings that are"
+#~ " not closed, they will be closed "
+#~ "by adding the starting point at "
+#~ "the end."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle to the geometry."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Contains(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Test for containment."
+#~ msgstr ""
+
+#~ msgid "Tests if this geometry contains the other geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Geometry validity is not checked. In "
+#~ "case you are unsure of the "
+#~ "validity of the input geometries, call"
+#~ " IsValid() before, otherwise the result "
+#~ "might be wrong."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Contains()."
+#~ msgstr ""
+
+#~ msgid "hThis:  the geometry to compare."
+#~ msgstr ""
+
+#~ msgid "hOther:  the other geometry to compare."
+#~ msgstr ""
+
+#~ msgid "TRUE if hThis contains hOther geometry, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_ConvexHull(OGRGeometryH hTarget)"
+#~ msgstr ""
+
+#~ msgid "Compute convex hull."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A new geometry object is created "
+#~ "and returned containing the convex hull"
+#~ " of the geometry on which the "
+#~ "method is invoked."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::ConvexHull()."
+#~ msgstr ""
+
+#~ msgid "hTarget:  The Geometry to calculate the convex hull of."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_CoordinateDimension(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Get the dimension of the coordinates in this geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::CoordinateDimension()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hGeom:  handle on the geometry to "
+#~ "get the dimension of the coordinates "
+#~ "from."
+#~ msgstr ""
+
+#~ msgid "this will return 2 for XY, 3 for XYZ and XYM, and 4 for XYZM data."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Crosses(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Test for crossing."
+#~ msgstr ""
+
+#~ msgid "Tests if this geometry and the other geometry are crossing."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Crosses()."
+#~ msgstr ""
+
+#~ msgid "TRUE if they are crossing, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_DelaunayTriangulation(OGRGeometryH "
+#~ "hThis, double dfTolerance, int bOnlyEdges)"
+#~ msgstr ""
+
+#~ msgid "Return a Delaunay triangulation of the vertices of the geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::DelaunayTriangulation()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is built on the GEOS"
+#~ " library, v3.4 or above. If OGR "
+#~ "is built without the GEOS library, "
+#~ "this function will always fail, issuing"
+#~ " a CPLE_NotSupported error."
+#~ msgstr ""
+
+#~ msgid "hThis:  the geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dfTolerance:  optional snapping tolerance to"
+#~ " use for improved robustness"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bOnlyEdges:  if TRUE, will return a "
+#~ "MULTILINESTRING, otherwise it will return "
+#~ "a GEOMETRYCOLLECTION containing triangular "
+#~ "POLYGONs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "the geometry resulting from the Delaunay"
+#~ " triangulation or NULL if an error"
+#~ " occurs."
+#~ msgstr ""
+
+#~ msgid "OGR 2.1"
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Difference(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute difference."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generates a new geometry which is "
+#~ "the region of this geometry with "
+#~ "the region of the other geometry "
+#~ "removed."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Difference()."
+#~ msgstr ""
+
+#~ msgid "hOther:  the other geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a new geometry representing the "
+#~ "difference or NULL if the difference "
+#~ "is empty or an error occurs."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Disjoint(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Test for disjointness."
+#~ msgstr ""
+
+#~ msgid "Tests if this geometry and the other geometry are disjoint."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Disjoint()."
+#~ msgstr ""
+
+#~ msgid "TRUE if they are disjoint, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "double OGR_G_Distance(OGRGeometryH hFirst, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute distance between two geometries."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns the shortest distance between "
+#~ "the two geometries. The distance is "
+#~ "expressed into the same unit as "
+#~ "the coordinates of the geometries."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Distance()."
+#~ msgstr ""
+
+#~ msgid "hFirst:  the first geometry to compare against."
+#~ msgstr ""
+
+#~ msgid "hOther:  the other geometry to compare against."
+#~ msgstr ""
+
+#~ msgid "the distance between the geometries or -1 if an error occurs."
+#~ msgstr ""
+
+#~ msgid "double OGR_G_Distance3D(OGRGeometryH hFirst, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Returns the 3D distance between two geometries."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The distance is expressed into the "
+#~ "same unit as the coordinates of "
+#~ "the geometries."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method is built on the SFCGAL"
+#~ " library, check it for the definition"
+#~ " of the geometry operation. If OGR"
+#~ " is built without the SFCGAL library,"
+#~ " this method will always return -1.0"
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Distance3D()."
+#~ msgstr ""
+
+#~ msgid "distance between the two geometries"
+#~ msgstr ""
+
+#~ msgid "void OGR_G_Empty(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Clear geometry information."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This restores the geometry to its "
+#~ "initial state after construction, and "
+#~ "before assignment of actual geometry."
+#~ msgstr ""
+
+#~ msgid "This function relates to the SFCOM IGeometry::Empty() method."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::empty()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to empty."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Equals(OGRGeometryH hGeom, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Returns TRUE if two geometries are equivalent."
+#~ msgstr ""
+
+#~ msgid "This operation implements the SQL/MM ST_OrderingEquals() operation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The comparison is done in a "
+#~ "structural way, that is to say "
+#~ "that the geometry types must be "
+#~ "identical, as well as the number "
+#~ "and ordering of sub-geometries and "
+#~ "vertices. Or equivalently, two geometries "
+#~ "are considered equal by this method "
+#~ "if their WKT/WKB representation is "
+#~ "equal. Note: this must be distinguished"
+#~ " for equality in a spatial way "
+#~ "(which is the purpose of the "
+#~ "ST_Equals() operation)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::Equals() method."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the first geometry."
+#~ msgstr ""
+
+#~ msgid "hOther:  handle on the other geometry to test against."
+#~ msgstr ""
+
+#~ msgid "TRUE if equivalent or FALSE otherwise."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_G_ExportToIsoWkb(OGRGeometryH hGeom, "
+#~ "OGRwkbByteOrder eOrder, unsigned char "
+#~ "*pabyDstBuffer)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Convert a geometry into SFSQL 1.2 "
+#~ "/ ISO SQL/MM Part 3 well known "
+#~ "binary format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function relates to the SFCOM "
+#~ "IWks::ExportToWKB() method. It exports the "
+#~ "SFSQL 1.2 and ISO SQL/MM Part 3"
+#~ " extended dimension (Z&M) WKB types."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::exportToWkb(OGRwkbByteOrder,"
+#~ " unsigned char *, OGRwkbVariant) with "
+#~ "eWkbVariant = wkbVariantIso."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hGeom:  handle on the geometry to "
+#~ "convert to a well know binary data"
+#~ " from."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "eOrder:  One of wkbXDR or wkbNDR "
+#~ "indicating MSB or LSB byte order "
+#~ "respectively."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pabyDstBuffer:  a buffer into which the"
+#~ " binary representation is written. This "
+#~ "buffer must be at least OGR_G_WkbSize()"
+#~ " byte in size."
+#~ msgstr ""
+
+#~ msgid "Currently OGRERR_NONE is always returned."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_G_ExportToIsoWkt(OGRGeometryH hGeom, char **ppszSrcText)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Convert a geometry into SFSQL 1.2 "
+#~ "/ ISO SQL/MM Part 3 well known "
+#~ "text format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function relates to the SFCOM "
+#~ "IWks::ExportToWKT() method. It exports the "
+#~ "SFSQL 1.2 and ISO SQL/MM Part 3"
+#~ " extended dimension (Z&M) WKB types."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::exportToWkt(wkbVariantIso)."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to convert to a text format from."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "ppszSrcText:  a text buffer is allocated"
+#~ " by the program, and assigned to "
+#~ "the passed pointer. After use, "
+#~ "*ppszDstText should be freed with "
+#~ "CPLFree()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_G_ExportToWkb(OGRGeometryH hGeom, "
+#~ "OGRwkbByteOrder eOrder, unsigned char "
+#~ "*pabyDstBuffer)"
+#~ msgstr ""
+
+#~ msgid "Convert a geometry well known binary format."
+#~ msgstr ""
+
+#~ msgid "This function relates to the SFCOM IWks::ExportToWKB() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For backward compatibility purposes, it "
+#~ "exports the Old-style 99-402 extended"
+#~ " dimension (Z) WKB types for types"
+#~ " Point, LineString, Polygon, MultiPoint, "
+#~ "MultiLineString, MultiPolygon and "
+#~ "GeometryCollection. For other geometry types,"
+#~ " it is equivalent to "
+#~ "OGR_G_ExportToIsoWkb()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::exportToWkb(OGRwkbByteOrder,"
+#~ " unsigned char *, OGRwkbVariant) with "
+#~ "eWkbVariant = wkbVariantOldOgc."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_G_ExportToWkt(OGRGeometryH hGeom, char **ppszSrcText)"
+#~ msgstr ""
+
+#~ msgid "Convert a geometry into well known text format."
+#~ msgstr ""
+
+#~ msgid "This function relates to the SFCOM IWks::ExportToWKT() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For backward compatibility purposes, it "
+#~ "exports the Old-style 99-402 extended"
+#~ " dimension (Z) WKB types for types"
+#~ " Point, LineString, Polygon, MultiPoint, "
+#~ "MultiLineString, MultiPolygon and "
+#~ "GeometryCollection. For other geometry types,"
+#~ " it is equivalent to "
+#~ "OGR_G_ExportToIsoWkt()."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::exportToWkt()."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_FlattenTo2D(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Convert geometry to strictly 2D."
+#~ msgstr ""
+
+#~ msgid "In a sense this converts all Z coordinates to 0.0."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::flattenTo2D()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to convert."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_GetBoundary(OGRGeometryH hTarget)"
+#~ msgstr ""
+
+#~ msgid "Compute boundary (deprecated)"
+#~ msgstr ""
+
+#~ msgid "Deprecated"
+#~ msgstr ""
+
+#~ msgid "See:   OGR_G_Boundary()"
+#~ msgstr ""
+
+#~ msgid "int OGR_G_GetCoordinateDimension(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::getCoordinateDimension()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Deprecated use OGR_G_CoordinateDimension(), "
+#~ "OGR_G_Is3D(), or OGR_G_IsMeasured()."
+#~ msgstr ""
+
+#~ msgid "this will return 2 or 3."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_GetDimension(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Get the dimension of this geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function corresponds to the SFCOM"
+#~ " IGeometry::GetDimension() method. It indicates"
+#~ " the dimension of the geometry, but"
+#~ " does not indicate the dimension of"
+#~ " the underlying space (as indicated "
+#~ "by OGR_G_GetCoordinateDimension() function)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::getDimension()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to get the dimension from."
+#~ msgstr ""
+
+#~ msgid "0 for points, 1 for lines and 2 for surfaces."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_GetEnvelope(OGRGeometryH hGeom, OGREnvelope *psEnvelope)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Computes and returns the bounding "
+#~ "envelope for this geometry in the "
+#~ "passed psEnvelope structure."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::getEnvelope()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle of the geometry to get envelope from."
+#~ msgstr ""
+
+#~ msgid "psEnvelope:  the structure in which to place the results."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_GetEnvelope3D(OGRGeometryH hGeom, OGREnvelope3D *psEnvelope)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Computes and returns the bounding "
+#~ "envelope (3D) for this geometry in "
+#~ "the passed psEnvelope structure."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_G_GetGeometryName(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Fetch WKT name for geometry type."
+#~ msgstr ""
+
+#~ msgid "There is no SFCOM analog to this function."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::getGeometryName()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to get name from."
+#~ msgstr ""
+
+#~ msgid "name used for this geometry type in well known text format."
+#~ msgstr ""
+
+#~ msgid "OGRwkbGeometryType OGR_G_GetGeometryType(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Fetch geometry type."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that the geometry type may "
+#~ "include the 2.5D flag. To get a"
+#~ " 2D flattened version of the geometry"
+#~ " type apply the wkbFlatten() macro to"
+#~ " the return result."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::getGeometryType()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to get type from."
+#~ msgstr ""
+
+#~ msgid "the geometry type code."
+#~ msgstr ""
+
+#~ msgid "OGRSpatialReferenceH OGR_G_GetSpatialReference(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Returns spatial reference system for geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function relates to the SFCOM "
+#~ "IGeometry::get_SpatialReference() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRGeometry::getSpatialReference()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to get spatial reference from."
+#~ msgstr ""
+
+#~ msgid "a reference to the spatial reference geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_Intersection(OGRGeometryH hThis, "
+#~ "OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute intersection."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generates a new geometry which is "
+#~ "the region of intersection of the "
+#~ "two geometries operated on. The "
+#~ "OGR_G_Intersects() function can be used "
+#~ "to test if two geometries intersect."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::Intersection()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a new geometry representing the "
+#~ "intersection or NULL if there is "
+#~ "no intersection or an error occurs."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Intersects(OGRGeometryH hGeom, OGRGeometryH hOtherGeom)"
+#~ msgstr ""
+
+#~ msgid "Do these features intersect?"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Determines whether two geometries intersect."
+#~ " If GEOS is enabled, then this "
+#~ "is done in rigorous fashion otherwise"
+#~ " TRUE is returned if the envelopes"
+#~ " (bounding boxes) of the two "
+#~ "geometries overlap."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::Intersects."
+#~ msgstr ""
+
+#~ msgid "hOtherGeom:  handle on the other geometry to test against."
+#~ msgstr ""
+
+#~ msgid "TRUE if the geometries intersect, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Is3D(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "See whether this geometry has Z coordinates."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::Is3D()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to check whether it has Z coordinates."
+#~ msgstr ""
+
+#~ msgid "TRUE if the geometry has Z coordinates."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_IsEmpty(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Test if the geometry is empty."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the CPP method OGRGeometry::IsEmpty()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  The Geometry to test."
+#~ msgstr ""
+
+#~ msgid "TRUE if the geometry has no points, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_IsMeasured(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "See whether this geometry is measured."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::IsMeasured()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to check whether it is measured."
+#~ msgstr ""
+
+#~ msgid "TRUE if the geometry has M coordinates."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_IsRing(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Test if the geometry is a ring."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::IsRing()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is built on the GEOS"
+#~ " library, check it for the definition"
+#~ " of the geometry operation. If OGR"
+#~ " is built without the GEOS library,"
+#~ " this function will always return "
+#~ "FALSE."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_IsSimple(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Returns TRUE if the geometry is simple."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Returns TRUE if the geometry has "
+#~ "no anomalous geometric points, such as"
+#~ " self intersection or self tangency. "
+#~ "The description of each instantiable "
+#~ "geometric class will include the "
+#~ "specific conditions that cause an "
+#~ "instance of that class to be "
+#~ "classified as not simple."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::IsSimple() method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If OGR is built without the GEOS"
+#~ " library, this function will always "
+#~ "return FALSE."
+#~ msgstr ""
+
+#~ msgid "TRUE if object is simple, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_IsValid(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Test if the geometry is valid."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::IsValid()."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_MakeValid(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Attempts to make an invalid geometry valid without losing vertices."
+#~ msgstr ""
+
+#~ msgid "Already-valid geometries are cloned without further intervention."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::MakeValid()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is built on the GEOS"
+#~ " >= 3.8 library, check it for "
+#~ "the definition of the geometry "
+#~ "operation. If OGR is built without "
+#~ "the GEOS >= 3.8 library, this "
+#~ "function will return a clone of "
+#~ "the input geometry if it is valid,"
+#~ " or NULL if it is invalid"
+#~ msgstr ""
+
+#~ msgid "hGeom:  The Geometry to make valid."
+#~ msgstr ""
+
+#~ msgid "a newly allocated geometry now owned by the caller, or NULL on failure."
+#~ msgstr ""
+
+#~ msgid "GDAL 3.0"
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Overlaps(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Test for overlap."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Tests if this geometry and the "
+#~ "other geometry overlap, that is their"
+#~ " intersection has a non-zero area."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Overlaps()."
+#~ msgstr ""
+
+#~ msgid "TRUE if they are overlapping, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_PointOnSurface(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Returns a point guaranteed to lie on the surface."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method relates to the SFCOM "
+#~ "ISurface::get_PointOnSurface() method however the"
+#~ " current implementation based on GEOS "
+#~ "can operate on other geometry types "
+#~ "than the types that are supported "
+#~ "by SQL/MM-Part 3 : surfaces "
+#~ "(polygons) and multisurfaces (multipolygons)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method is built on the GEOS"
+#~ " library, check it for the definition"
+#~ " of the geometry operation. If OGR"
+#~ " is built without the GEOS library,"
+#~ " this method will always fail, "
+#~ "issuing a CPLE_NotSupported error."
+#~ msgstr ""
+
+#~ msgid "hGeom:  the geometry to operate on."
+#~ msgstr ""
+
+#~ msgid "a point guaranteed to lie on the surface or NULL if an error occurred."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Polygonize(OGRGeometryH hTarget)"
+#~ msgstr ""
+
+#~ msgid "Polygonizes a set of sparse edges."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A new geometry object is created "
+#~ "and returned containing a collection of"
+#~ " reassembled Polygons: NULL will be "
+#~ "returned if the input collection doesn't"
+#~ " corresponds to a MultiLinestring, or "
+#~ "when reassembling Edges into Polygons is"
+#~ " impossible due to topological "
+#~ "inconsistencies."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Polygonize()."
+#~ msgstr ""
+
+#~ msgid "hTarget:  The Geometry to be polygonized."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_Segmentize(OGRGeometryH hGeom, double dfMaxLength)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Modify the geometry such it has no"
+#~ " segment longer then the given "
+#~ "distance."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Interpolated points will have Z and "
+#~ "M values (if needed) set to 0. "
+#~ "Distance computation is performed in 2d"
+#~ " only."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::segmentize()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to segmentize"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "dfMaxLength:  the maximum distance between "
+#~ "2 points after segmentization"
+#~ msgstr ""
+
+#~ msgid "void OGR_G_Set3D(OGRGeometryH hGeom, int bIs3D)"
+#~ msgstr ""
+
+#~ msgid "Add or remove the Z coordinate dimension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method adds or removes the "
+#~ "explicit Z coordinate dimension. Removing "
+#~ "the Z coordinate dimension of a "
+#~ "geometry will remove any existing Z "
+#~ "values. Adding the Z dimension to "
+#~ "a geometry collection, a compound curve,"
+#~ " a polygon, etc. will affect the "
+#~ "children geometries."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to set or unset the Z dimension."
+#~ msgstr ""
+
+#~ msgid "bIs3D:  Should the geometry have a Z dimension, either TRUE or FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_G_SetCoordinateDimension(OGRGeometryH hGeom, "
+#~ "int nNewDimension)"
+#~ msgstr ""
+
+#~ msgid "Set the coordinate dimension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method sets the explicit coordinate"
+#~ " dimension. Setting the coordinate "
+#~ "dimension of a geometry to 2 "
+#~ "should zero out any existing Z "
+#~ "values. Setting the dimension of a "
+#~ "geometry collection, a compound curve, a"
+#~ " polygon, etc. will affect the "
+#~ "children geometries. This will also "
+#~ "remove the M dimension if present "
+#~ "before this call."
+#~ msgstr ""
+
+#~ msgid "Deprecated use OGR_G_Set3D() or OGR_G_SetMeasured()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to set the dimension of the coordinates."
+#~ msgstr ""
+
+#~ msgid "nNewDimension:  New coordinate dimension value, either 2 or 3."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_SetMeasured(OGRGeometryH hGeom, int bIsMeasured)"
+#~ msgstr ""
+
+#~ msgid "Add or remove the M coordinate dimension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method adds or removes the "
+#~ "explicit M coordinate dimension. Removing "
+#~ "the M coordinate dimension of a "
+#~ "geometry will remove any existing M "
+#~ "values. Adding the M dimension to "
+#~ "a geometry collection, a compound curve,"
+#~ " a polygon, etc. will affect the "
+#~ "children geometries."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to set or unset the M dimension."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "bIsMeasured:  Should the geometry have a"
+#~ " M dimension, either TRUE or FALSE."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Simplify(OGRGeometryH hThis, double dTolerance)"
+#~ msgstr ""
+
+#~ msgid "Compute a simplified geometry."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Simplify()."
+#~ msgstr ""
+
+#~ msgid "dTolerance:  the distance tolerance for the simplification."
+#~ msgstr ""
+
+#~ msgid "the simplified geometry or NULL if an error occurs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_SimplifyPreserveTopology(OGRGeometryH "
+#~ "hThis, double dTolerance)"
+#~ msgstr ""
+
+#~ msgid "Simplify the geometry while preserving topology."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::SimplifyPreserveTopology()."
+#~ msgstr ""
+
+#~ msgid "void OGR_G_SwapXY(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Swap x and y coordinates."
+#~ msgstr ""
+
+#~ msgid "hGeom:  geometry."
+#~ msgstr ""
+
+#~ msgid "OGR 2.3.0"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_SymDifference(OGRGeometryH hThis, "
+#~ "OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute symmetric difference."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generates a new geometry which is "
+#~ "the symmetric difference of this "
+#~ "geometry and the other geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::SymmetricDifference()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a new geometry representing the "
+#~ "symmetric difference or NULL if the "
+#~ "difference is empty or an error "
+#~ "occurs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeometryH OGR_G_SymmetricDifference(OGRGeometryH hThis,"
+#~ " OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute symmetric difference (deprecated)"
+#~ msgstr ""
+
+#~ msgid "See:  OGR_G_SymmetricDifference()"
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Touches(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Test for touching."
+#~ msgstr ""
+
+#~ msgid "Tests if this geometry and the other geometry are touching."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Touches()."
+#~ msgstr ""
+
+#~ msgid "TRUE if they are touching, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_G_Transform(OGRGeometryH hGeom, "
+#~ "OGRCoordinateTransformationH hTransform)"
+#~ msgstr ""
+
+#~ msgid "Apply arbitrary coordinate transformation to geometry."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function will transform the "
+#~ "coordinates of a geometry from their "
+#~ "current spatial reference system to a"
+#~ " new target spatial reference system. "
+#~ "Normally this means reprojecting the "
+#~ "vectors, but it could include datum "
+#~ "shifts, and changes of units."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note that this function does not "
+#~ "require that the geometry already have"
+#~ " a spatial reference system. It will"
+#~ " be assumed that they can be "
+#~ "treated as having the source spatial "
+#~ "reference system of the "
+#~ "OGRCoordinateTransformation object, and the "
+#~ "actual SRS of the geometry will be"
+#~ " ignored. On successful completion the "
+#~ "output OGRSpatialReference of the "
+#~ "OGRCoordinateTransformation will be assigned "
+#~ "to the geometry."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::transform."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to apply the transform to."
+#~ msgstr ""
+
+#~ msgid "hTransform:  handle on the transformation to apply."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_G_TransformTo(OGRGeometryH hGeom, OGRSpatialReferenceH hSRS)"
+#~ msgstr ""
+
+#~ msgid "Transform geometry to new spatial reference system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function will only work if "
+#~ "the geometry already has an assigned "
+#~ "spatial reference system, and if it "
+#~ "is transformable to the target "
+#~ "coordinate system."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Because this function requires internal "
+#~ "creation and initialization of an "
+#~ "OGRCoordinateTransformation object it is "
+#~ "significantly more expensive to use this"
+#~ " function to transform many geometries "
+#~ "than it is to create the "
+#~ "OGRCoordinateTransformation in advance, and "
+#~ "call transform() with that transformation. "
+#~ "This function exists primarily for "
+#~ "convenience when only transforming a "
+#~ "single geometry."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::transformTo."
+#~ msgstr ""
+
+#~ msgid "hSRS:  handle on the spatial reference system to apply."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE on success, or an error code."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_Union(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Compute union."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Generates a new geometry which is "
+#~ "the region of union of the two "
+#~ "geometries operated on."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Union()."
+#~ msgstr ""
+
+#~ msgid "a new geometry representing the union or NULL if an error occurs."
+#~ msgstr ""
+
+#~ msgid "OGRGeometryH OGR_G_UnionCascaded(OGRGeometryH hThis)"
+#~ msgstr ""
+
+#~ msgid "Compute union using cascading."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRGeometry::UnionCascaded()."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_Within(OGRGeometryH hThis, OGRGeometryH hOther)"
+#~ msgstr ""
+
+#~ msgid "Tests if this geometry is within the other geometry."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRGeometry::Within()."
+#~ msgstr ""
+
+#~ msgid "TRUE if hThis is within hOther, otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "int OGR_G_WkbSize(OGRGeometryH hGeom)"
+#~ msgstr ""
+
+#~ msgid "Returns size of related binary representation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function returns the exact number"
+#~ " of bytes required to hold the "
+#~ "well known binary representation of this"
+#~ " geometry object. Its computation may "
+#~ "be slightly expensive for complex "
+#~ "geometries."
+#~ msgstr ""
+
+#~ msgid "This function relates to the SFCOM IWks::WkbSize() method."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRGeometry::WkbSize()."
+#~ msgstr ""
+
+#~ msgid "hGeom:  handle on the geometry to get the binary size from."
+#~ msgstr ""
+
+#~ msgid "size of binary representation in bytes."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRFeatureDefnShadow class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_FD_AddFieldDefn(OGRFeatureDefnH hDefn, "
+#~ "OGRFieldDefnH hNewField)"
+#~ msgstr ""
+
+#~ msgid "Add a new field definition to the passed feature definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To add a new field definition to"
+#~ " a layer definition, do not use "
+#~ "this function directly, but use "
+#~ "OGR_L_CreateField() instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function should only be called "
+#~ "while there are no OGRFeature objects"
+#~ " in existence based on this "
+#~ "OGRFeatureDefn. The OGRFieldDefn passed in "
+#~ "is copied, and remains the "
+#~ "responsibility of the caller."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::AddFieldDefn()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the feature definition"
+#~ " to add the field definition to."
+#~ msgstr ""
+
+#~ msgid "hNewField:  handle to the new field definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_FD_AddGeomFieldDefn(OGRFeatureDefnH hDefn, "
+#~ "OGRGeomFieldDefnH hNewGeomField)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To add a new field definition to"
+#~ " a layer definition, do not use "
+#~ "this function directly, but use "
+#~ "OGR_L_CreateGeomField() instead."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function should only be called "
+#~ "while there are no OGRFeature objects"
+#~ " in existence based on this "
+#~ "OGRFeatureDefn. The OGRGeomFieldDefn passed in"
+#~ " is copied, and remains the "
+#~ "responsibility of the caller."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::AddGeomFieldDefn()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the feature definition"
+#~ " to add the geometry field definition"
+#~ " to."
+#~ msgstr ""
+
+#~ msgid "hNewGeomField:  handle to the new field definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRErr OGR_FD_DeleteGeomFieldDefn(OGRFeatureDefnH hDefn,"
+#~ " int iGeomField)"
+#~ msgstr ""
+
+#~ msgid "Delete an existing geometry field definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To delete an existing geometry field "
+#~ "definition from a layer definition, do"
+#~ " not use this function directly, but"
+#~ " use OGR_L_DeleteGeomField() instead ( not"
+#~ " implemented yet)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method should only be called "
+#~ "while there are no OGRFeature objects"
+#~ " in existence based on this "
+#~ "OGRFeatureDefn."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This method is the same as the "
+#~ "C++ method OGRFeatureDefn::DeleteGeomFieldDefn()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the feature definition."
+#~ msgstr ""
+
+#~ msgid "iGeomField:  the index of the geometry field definition."
+#~ msgstr ""
+
+#~ msgid "OGRERR_NONE in case of success."
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_GetFieldCount(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch number of fields on the passed feature definition."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ OGRFeatureDefn::GetFieldCount()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the feature definition to get the fields count from."
+#~ msgstr ""
+
+#~ msgid "OGRFieldDefnH OGR_FD_GetFieldDefn(OGRFeatureDefnH hDefn, int iField)"
+#~ msgstr ""
+
+#~ msgid "Fetch field definition of the passed feature definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetFieldDefn()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the feature definition"
+#~ " to get the field definition from."
+#~ msgstr ""
+
+#~ msgid "iField:  the field to fetch, between 0 and GetFieldCount()-1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to an internal field "
+#~ "definition object or NULL if invalid "
+#~ "index. This object should not be "
+#~ "modified or freed by the application."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "int OGR_FD_GetFieldIndex(OGRFeatureDefnH hDefn, "
+#~ "const char *pszFieldName)"
+#~ msgstr ""
+
+#~ msgid "Find field by name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The field index of the first field"
+#~ " matching the passed field name (case"
+#~ " insensitively) is returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetFieldIndex."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the feature definition to get field index from."
+#~ msgstr ""
+
+#~ msgid "pszFieldName:  the field name to search for."
+#~ msgstr ""
+
+#~ msgid "the field index, or -1 if no match found."
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_GetGeomFieldCount(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch number of geometry fields on the passed feature definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ OGRFeatureDefn::GetGeomFieldCount()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRGeomFieldDefnH OGR_FD_GetGeomFieldDefn(OGRFeatureDefnH "
+#~ "hDefn, int iGeomField)"
+#~ msgstr ""
+
+#~ msgid "Fetch geometry field definition of the passed feature definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetGeomFieldDefn()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "iGeomField:  the geometry field to "
+#~ "fetch, between 0 and GetGeomFieldCount() "
+#~ "- 1."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "int OGR_FD_GetGeomFieldIndex(OGRFeatureDefnH hDefn, "
+#~ "const char *pszGeomFieldName)"
+#~ msgstr ""
+
+#~ msgid "Find geometry field by name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The geometry field index of the "
+#~ "first geometry field matching the passed"
+#~ " field name (case insensitively) is "
+#~ "returned."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetGeomFieldIndex."
+#~ msgstr ""
+
+#~ msgid "pszGeomFieldName:  the geometry field name to search for."
+#~ msgstr ""
+
+#~ msgid "the geometry field index, or -1 if no match found."
+#~ msgstr ""
+
+#~ msgid "OGRwkbGeometryType OGR_FD_GetGeomType(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch the geometry base type of the passed feature definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetGeomType()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 1.11, this method "
+#~ "returns GetGeomFieldDefn(0)->GetType()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the feature definition to get the geometry type from."
+#~ msgstr ""
+
+#~ msgid "the base type for all geometry related to this definition."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_FD_GetName(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Get name of the OGRFeatureDefn passed as an argument."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFeatureDefn::GetName()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the feature definition to get the name from."
+#~ msgstr ""
+
+#~ msgid "the name. This name is internal and should not be modified, or freed."
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_GetReferenceCount(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch current reference count."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::GetReferenceCount()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the feature definition"
+#~ " on witch OGRFeature are based on."
+#~ msgstr ""
+
+#~ msgid "the current reference count."
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_IsGeometryIgnored(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Determine whether the geometry can be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::IsGeometryIgnored()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 1.11, this method "
+#~ "returns GetGeomFieldDefn(0)->IsIgnored()."
+#~ msgstr ""
+
+#~ msgid "ignore state"
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_IsSame(OGRFeatureDefnH hFDefn, OGRFeatureDefnH hOtherFDefn)"
+#~ msgstr ""
+
+#~ msgid "Test if the feature definition is identical to the other one."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hFDefn:  handle to the feature "
+#~ "definition on witch OGRFeature are based"
+#~ " on."
+#~ msgstr ""
+
+#~ msgid "hOtherFDefn:  handle to the other feature definition to compare to."
+#~ msgstr ""
+
+#~ msgid "TRUE if the feature definition is identical to the other one."
+#~ msgstr ""
+
+#~ msgid "int OGR_FD_IsStyleIgnored(OGRFeatureDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Determine whether the style can be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::IsStyleIgnored()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the feature definition"
+#~ " on which OGRFeature are based on."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_FD_SetGeomType(OGRFeatureDefnH hDefn, "
+#~ "OGRwkbGeometryType eType)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Assign the base geometry type for "
+#~ "the passed layer (the same as the"
+#~ " feature definition)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "All geometry objects using this type "
+#~ "must be of the defined type or "
+#~ "a derived type. The default upon "
+#~ "creation is wkbUnknown which allows for"
+#~ " any geometry type. The geometry type"
+#~ " should generally not be changed "
+#~ "after any OGRFeatures have been created"
+#~ " against this definition."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::SetGeomType()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 1.11, this method "
+#~ "calls GetGeomFieldDefn(0)->SetType()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the layer or "
+#~ "feature definition to set the geometry"
+#~ " type to."
+#~ msgstr ""
+
+#~ msgid "eType:  the new type to assign."
+#~ msgstr ""
+
+#~ msgid "void OGR_FD_SetGeometryIgnored(OGRFeatureDefnH hDefn, int bIgnore)"
+#~ msgstr ""
+
+#~ msgid "Set whether the geometry can be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::SetGeometryIgnored()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 1.11, this method "
+#~ "calls GetGeomFieldDefn(0)->SetIgnored()."
+#~ msgstr ""
+
+#~ msgid "bIgnore:  ignore state"
+#~ msgstr ""
+
+#~ msgid "void OGR_FD_SetStyleIgnored(OGRFeatureDefnH hDefn, int bIgnore)"
+#~ msgstr ""
+
+#~ msgid "Set whether the style can be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFeatureDefn::SetStyleIgnored()."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRFieldDefnShadow class."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_Fld_GetAlternativeNameRef(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch the alternative name (or \"alias\") for this field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The alternative name is an optional "
+#~ "attribute for a field which can "
+#~ "provide a more user-friendly, "
+#~ "descriptive name of a field which "
+#~ "is not subject to the usual naming"
+#~ " constraints defined by the data "
+#~ "provider."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This is a metadata style attribute "
+#~ "only: the alternative name cannot be "
+#~ "used in place of the actual field"
+#~ " name during SQL queries or other "
+#~ "field name dependent API calls."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRFieldDefn::GetAlternativeNameRef()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition."
+#~ msgstr ""
+
+#~ msgid "the alternative name of the field definition."
+#~ msgstr ""
+
+#~ msgid "GDAL 3.2"
+#~ msgstr ""
+
+#~ msgid "const char* OGR_Fld_GetDefault(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Get default field value."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFieldDefn::GetDefault()."
+#~ msgstr ""
+
+#~ msgid "default field value or NULL."
+#~ msgstr ""
+
+#~ msgid "OGRJustification OGR_Fld_GetJustify(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Get the justification for this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::GetJustify()."
+#~ msgstr ""
+
+#~ msgid "Note: no driver is know to use the concept of field justification."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to get justification from."
+#~ msgstr ""
+
+#~ msgid "the justification."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_Fld_GetNameRef(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch name of this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::GetNameRef()."
+#~ msgstr ""
+
+#~ msgid "the name of the field definition."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_GetPrecision(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Get the formatting precision for this field."
+#~ msgstr ""
+
+#~ msgid "This should normally be zero for fields of types other than OFTReal."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRFieldDefn::GetPrecision()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to get precision from."
+#~ msgstr ""
+
+#~ msgid "the precision."
+#~ msgstr ""
+
+#~ msgid "OGRFieldSubType OGR_Fld_GetSubType(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch subtype of this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::GetSubType()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to get subtype from."
+#~ msgstr ""
+
+#~ msgid "field subtype."
+#~ msgstr ""
+
+#~ msgid "OGRFieldType OGR_Fld_GetType(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Fetch type of this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::GetType()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to get type from."
+#~ msgstr ""
+
+#~ msgid "field type."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_GetWidth(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Get the formatting width for this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::GetWidth()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to get width from."
+#~ msgstr ""
+
+#~ msgid "the width, zero means no specified width."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_IsDefaultDriverSpecific(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Returns whether the default value is driver specific."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Driver specific default values are those"
+#~ " that are not NULL, a numeric "
+#~ "value, a literal value enclosed between"
+#~ " single quote characters, CURRENT_TIMESTAMP, "
+#~ "CURRENT_TIME, CURRENT_DATE or datetime literal"
+#~ " value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " C++ method OGRFieldDefn::IsDefaultDriverSpecific()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition"
+#~ msgstr ""
+
+#~ msgid "TRUE if the default value is driver specific."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_IsIgnored(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Return whether this field should be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::IsIgnored()."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_IsNullable(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Return whether this field can receive null values."
+#~ msgstr ""
+
+#~ msgid "By default, fields are nullable."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Even if this method returns FALSE "
+#~ "(i.e not-nullable field), it doesn't "
+#~ "mean that OGRFeature::IsFieldSet() will "
+#~ "necessary return TRUE, as fields can "
+#~ "be temporary unset and null /not-"
+#~ "null validation is usually done when "
+#~ "OGRLayer::CreateFeature()/SetFeature() is called."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::IsNullable()."
+#~ msgstr ""
+
+#~ msgid "TRUE if the field is authorized to be null."
+#~ msgstr ""
+
+#~ msgid "int OGR_Fld_IsUnique(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Return whether this field has a unique constraint."
+#~ msgstr ""
+
+#~ msgid "By default, fields have no unique constraint."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::IsUnique()."
+#~ msgstr ""
+
+#~ msgid "TRUE if the field has a unique constraint."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_Fld_SetAlternativeName(OGRFieldDefnH hDefn, "
+#~ "const char *pszAlternativeName)"
+#~ msgstr ""
+
+#~ msgid "Reset the alternative name (or \"alias\") for this field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRFieldDefn::SetAlternativeName()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hDefn:  handle to the field definition"
+#~ " to apply the new alternative name"
+#~ " to."
+#~ msgstr ""
+
+#~ msgid "pszAlternativeName:  the new alternative name to apply."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetDefault(OGRFieldDefnH hDefn, const char *pszDefault)"
+#~ msgstr ""
+
+#~ msgid "Set default field value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The default field value is taken "
+#~ "into account by drivers (generally those"
+#~ " with a SQL interface) that support"
+#~ " it at field creation time. OGR "
+#~ "will generally not automatically set the"
+#~ " default field value to null fields"
+#~ " by itself when calling "
+#~ "OGRFeature::CreateFeature() / OGRFeature::SetFeature(),"
+#~ " but will let the low-level "
+#~ "layers to do the job. So "
+#~ "retrieving the feature from the layer"
+#~ " is recommended."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The accepted values are NULL, a "
+#~ "numeric value, a literal value enclosed"
+#~ " between single quote characters (and "
+#~ "inner single quote characters escaped by"
+#~ " repetition of the single quote "
+#~ "character), CURRENT_TIMESTAMP, CURRENT_TIME, "
+#~ "CURRENT_DATE or a driver specific "
+#~ "expression (that might be ignored by "
+#~ "other drivers). For a datetime literal"
+#~ " value, format should be 'YYYY/MM/DD "
+#~ "HH:MM:SS[.sss]' (considered as UTC time)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Drivers that support writing DEFAULT "
+#~ "clauses will advertise the "
+#~ "GDAL_DCAP_DEFAULT_FIELDS driver metadata item."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the C++ method OGRFieldDefn::SetDefault()."
+#~ msgstr ""
+
+#~ msgid "pszDefault:  new default field value or NULL pointer."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetIgnored(OGRFieldDefnH hDefn, int ignore)"
+#~ msgstr ""
+
+#~ msgid "Set whether this field should be omitted when fetching features."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::SetIgnored()."
+#~ msgstr ""
+
+#~ msgid "ignore:  ignore state"
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetJustify(OGRFieldDefnH hDefn, OGRJustification eJustify)"
+#~ msgstr ""
+
+#~ msgid "Set the justification for this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::SetJustify()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to set justification to."
+#~ msgstr ""
+
+#~ msgid "eJustify:  the new justification."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetName(OGRFieldDefnH hDefn, const char *pszName)"
+#~ msgstr ""
+
+#~ msgid "Reset the name of this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::SetName()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to apply the new name to."
+#~ msgstr ""
+
+#~ msgid "pszName:  the new name to apply."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetNullable(OGRFieldDefnH hDefn, int bNullableIn)"
+#~ msgstr ""
+
+#~ msgid "Set whether this field can receive null values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, fields are nullable, so "
+#~ "this method is generally called with "
+#~ "FALSE to set a not-null "
+#~ "constraint."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Drivers that support writing not-null"
+#~ " constraint will advertise the "
+#~ "GDAL_DCAP_NOTNULL_FIELDS driver metadata item."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::SetNullable()."
+#~ msgstr ""
+
+#~ msgid "bNullableIn:  FALSE if the field must have a not-null constraint."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetPrecision(OGRFieldDefnH hDefn, int nPrecision)"
+#~ msgstr ""
+
+#~ msgid "Set the formatting precision for this field in characters."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function is the same as the"
+#~ " CPP method OGRFieldDefn::SetPrecision()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to set precision to."
+#~ msgstr ""
+
+#~ msgid "nPrecision:  the new precision."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetSubType(OGRFieldDefnH hDefn, OGRFieldSubType eSubType)"
+#~ msgstr ""
+
+#~ msgid "Set the subtype of this field."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This should never be done to an"
+#~ " OGRFieldDefn that is already part of"
+#~ " an OGRFeatureDefn."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::SetSubType()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to set type to."
+#~ msgstr ""
+
+#~ msgid "eSubType:  the new field subtype."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetType(OGRFieldDefnH hDefn, OGRFieldType eType)"
+#~ msgstr ""
+
+#~ msgid "Set the type of this field."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::SetType()."
+#~ msgstr ""
+
+#~ msgid "eType:  the new field type."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetUnique(OGRFieldDefnH hDefn, int bUniqueIn)"
+#~ msgstr ""
+
+#~ msgid "Set whether this field has a unique constraint."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, fields have no unique "
+#~ "constraint, so this method is generally"
+#~ " called with TRUE to set a "
+#~ "unique constraint."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Drivers that support writing unique "
+#~ "constraint will advertise the "
+#~ "GDAL_DCAP_UNIQUE_FIELDS driver metadata item. "
+#~ "field can receive null values."
+#~ msgstr ""
+
+#~ msgid "This method is the same as the C++ method OGRFieldDefn::SetUnique()."
+#~ msgstr ""
+
+#~ msgid "bUniqueIn:  TRUE if the field must have a unique constraint."
+#~ msgstr ""
+
+#~ msgid "void OGR_Fld_SetWidth(OGRFieldDefnH hDefn, int nNewWidth)"
+#~ msgstr ""
+
+#~ msgid "Set the formatting width for this field in characters."
+#~ msgstr ""
+
+#~ msgid "This function is the same as the CPP method OGRFieldDefn::SetWidth()."
+#~ msgstr ""
+
+#~ msgid "hDefn:  handle to the field definition to set width to."
+#~ msgstr ""
+
+#~ msgid "nNewWidth:  the new width."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GetJustify(FieldDefn self) -> OGRJustification "
+#~ "OGRJustification OGR_Fld_GetJustify(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "GetName(FieldDefn self) -> char const *"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GetPrecision(FieldDefn self) -> int int "
+#~ "OGR_Fld_GetPrecision(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GetType(FieldDefn self) -> OGRFieldType "
+#~ "OGRFieldType OGR_Fld_GetType(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GetWidth(FieldDefn self) -> int int "
+#~ "OGR_Fld_GetWidth(OGRFieldDefnH hDefn)"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRGeomFieldDefnShadow class."
+#~ msgstr ""
+
+#~ msgid "GetName(GeomFieldDefn self) -> char const *"
+#~ msgstr ""
+
+#~ msgid "GetSpatialRef(GeomFieldDefn self) -> SpatialReference"
+#~ msgstr ""
+
+#~ msgid "GetType(GeomFieldDefn self) -> OGRwkbGeometryType"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRFieldDomainShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRStyleTableShadow class."
+#~ msgstr ""
+

@@ -1,0 +1,589 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/sentinel2.rst:5
+msgid "SENTINEL2 -- Sentinel-2 Products"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:11
+msgid ""
+"Driver for Sentinel-2 Level-1B, Level-1C and Level-2A products. Starting "
+"with GDAL 2.1.3, Level-1C with \"Safe Compact\" encoding are also "
+"supported."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:15
+msgid ""
+"The SENTINEL2 driver will be used if the main metadata .xml file at the "
+"root of a SENTINEL2 data product is opened (whose name is typically "
+"S2A_OPER_MTD_SAFL1C\\_....xml). It can also accept directly .zip files "
+"downloaded from the `Sentinels Scientific Data Hub "
+"<https://scihub.copernicus.eu/>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:21
+msgid ""
+"To be able to read the imagery, GDAL must be configured with at least one"
+" of the JPEG2000 capable drivers."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:24
+msgid ""
+"SENTINEL-2 data are acquired on 13 spectral bands in the visible and "
+"near-infrared (VNIR) and Short-wavelength infrared (SWIR) spectrum, as "
+"show in the below table:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:29
+msgid "Band name"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:29
+msgid "Resolution (m)"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:29
+msgid "Central wavelength (nm)"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:29
+msgid "Band width (nm)"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:29
+msgid "Purpose"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:31
+msgid "B01"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:31
+#: ../../source/drivers/raster/sentinel2.rst:40
+#: ../../source/drivers/raster/sentinel2.rst:41
+msgid "60"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:31
+msgid "443"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:31
+#: ../../source/drivers/raster/sentinel2.rst:35
+#: ../../source/drivers/raster/sentinel2.rst:36
+#: ../../source/drivers/raster/sentinel2.rst:37
+#: ../../source/drivers/raster/sentinel2.rst:39
+#: ../../source/drivers/raster/sentinel2.rst:40
+#: ../../source/drivers/raster/sentinel2.rst:42
+#: ../../source/drivers/raster/sentinel2.rst:43
+msgid "20"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:31
+msgid "Aerosol detection"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:32
+msgid "B02"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:32
+#: ../../source/drivers/raster/sentinel2.rst:33
+#: ../../source/drivers/raster/sentinel2.rst:34
+#: ../../source/drivers/raster/sentinel2.rst:38
+msgid "10"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:32
+msgid "490"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:32
+msgid "65"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:32
+msgid "Blue"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:33
+msgid "B03"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:33
+msgid "560"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:33
+msgid "35"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:33
+msgid "Green"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:34
+msgid "B04"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:34
+msgid "665"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:34
+#: ../../source/drivers/raster/sentinel2.rst:41
+msgid "30"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:34
+msgid "Red"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:35
+msgid "B05"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:35
+msgid "705"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:35
+#: ../../source/drivers/raster/sentinel2.rst:36
+msgid "15"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:35
+#: ../../source/drivers/raster/sentinel2.rst:36
+#: ../../source/drivers/raster/sentinel2.rst:37
+#: ../../source/drivers/raster/sentinel2.rst:39
+msgid "Vegetation classification"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:36
+msgid "B06"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:36
+msgid "740"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:37
+msgid "B07"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:37
+msgid "783"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:38
+msgid "B08"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:38
+msgid "842"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:38
+msgid "115"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:38
+msgid "Near infrared"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:39
+msgid "B08A"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:39
+msgid "865"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:40
+msgid "B09"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:40
+msgid "945"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:40
+msgid "Water vapour"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:41
+msgid "B10"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:41
+msgid "1375"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:41
+msgid "Cirrus"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:42
+msgid "B11"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:42
+msgid "1610"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:42
+msgid "90"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:42
+#: ../../source/drivers/raster/sentinel2.rst:43
+msgid "Snow / ice / cloud discrimination"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:43
+msgid "B12"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:43
+msgid "2190"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:43
+msgid "180"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:47
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:54
+msgid "Level-1B"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:56
+msgid ""
+"Level-1B products are composed of several \"granules\" of ~ 25 km across-"
+"track x ~ 23km along-track, in sensor geometry (i.e. non ortho-"
+"rectified). Each granule correspond to the imagery captured by one of the"
+" 12 detectors across-track (for a total 290 km swath width). The imagery "
+"of each band is put in a separate JPEG2000 file."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:62
+msgid "Level-1B products are aimed at advanced users."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:64
+msgid ""
+"When opening the main metadata .xml file, the driver will typically "
+"expose N \\* 3 sub-datasets, where N is the number of granules composing "
+"the user product, and 3 corresponds to the number of spatial resolutions."
+" There's one for the 4 10m bands, one for the 6 20m bands and one for the"
+" 3 60m bands. Caution: the number of such subdatasets can be typically of"
+" several hundreds or more."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:71
+msgid ""
+"It is also possible to open the metadata .xml of a given granule, in "
+"which case 3 subdatasets will be reported for each of the 3 spatial "
+"resolutions."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:75
+msgid ""
+"When opening a subdataset, the georeferencing is made of 5 ground control"
+" points for the 4 corner of the images and the center of image."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:79
+msgid "Level-1C"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:81
+msgid ""
+"Level-1C products are organized in ortho-rectified tiles of 100 km x 100 "
+"km in UTM WGS84 projections. The imagery of each band is put in a "
+"separate JPEG2000 file."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:85
+#: ../../source/drivers/raster/sentinel2.rst:120
+msgid ""
+"When opening the main metadata .xml file, the driver will typically "
+"expose 4 sub-datasets:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:88
+msgid "one for the 4 10m bands,"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:89
+msgid "one for the 6 20m bands,"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:90
+msgid "one for the 3 60m bands and,"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:91
+msgid "one for a preview of the R,G,B bands at a 320m resolution"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:93
+#: ../../source/drivers/raster/sentinel2.rst:134
+msgid ""
+"All tiles of same resolution and projection are mosaiced together. If a "
+"product spans over several UTM zones, they will be exposed as separate "
+"subdatasets."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:97
+msgid ""
+"It is also possible to open the metadata .xml file of each tile (only for"
+" original L1C encoding, not supported on \"Safe Compact\" encoding), in "
+"which case the driver will typically expose the 4 above mentioned types "
+"of sub-datasets."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:103
+msgid "Level-2A"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:105
+msgid ""
+"Similarly to Level-1C, Level-2A products are organized in ortho-rectified"
+" tiles of 100 km x 100 km in UTM WGS84 projections. The imagery of each "
+"band is put in a separate JPEG2000 file. The values are Bottom-Of-"
+"Atmosphere (BOA) reflectances. L2A specific bands are also computed:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:111
+msgid "AOT: Aerosol Optical Thickness map (at 550nm)"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:112
+msgid ""
+"CLD: Raster mask values range from 0 for high confidence clear sky to 100"
+" for high confidence cloudy"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:114
+msgid ""
+"SCL: Scene Classification. The meaning of the values is indicated in the "
+"Category Names of the band."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:116
+msgid ""
+"SNW: Raster mask values range from 0 for high confidence NO snow/ice to "
+"100 for high confidence snow/ice"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:118
+msgid "WVP: Scene-average Water Vapour map"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:123
+msgid "one for the 4 native 10m bands, and L2A specific bands (AOT and WVP)"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:124
+msgid ""
+"one for the 6 native 20m bands, and L2A specific bands (AOT, WVP, SCL, "
+"CLD and SNW),"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:126
+msgid ""
+"one for the B01 and B09 native 60m bands, and L2A specific bands (AOT, "
+"WVP, SCL, CLD and SNW),"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:128
+msgid ""
+"one for a true-color image (TCI) of the R,G,B bands at a 10m resolution, "
+"for the \"compact\" L2A product formulation (or a preview of the R,G,B "
+"bands at a 320m resolution for the older L2A product formulation). The "
+"TCI products at resolution 20m and 60m are not exposed, as they are just "
+"subsampled versions of the 10m product."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:139
+msgid "Metadata"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:141
+msgid ""
+"Metadata of the main metadata .xml file is available in the general "
+"metadata domain. The whole XML file is also accessible through the "
+"xml:SENTINEL2 metadata domain."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:145
+msgid ""
+"Subdatasets are based on the VRT format, so the definition of this VRT "
+"can be obtained by querying the xml:VRT metadata domain."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:149
+msgid "Performance issues for L1C and L2A"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:151
+msgid ""
+"Due to the way Sentinel-2 products are structured, in particular because "
+"of the number of JPEG2000 files involved, zoom-out operations can be very"
+" slow for products made of many tiles. For interactive display, it can be"
+" useful to generate overviews (can be a slow operation by itself). This "
+"can be done with the gdaladdo utility on the subdataset name. The "
+"overview file is created next to the main metadata .xml file, with the "
+"same name, but prefixed with \\_XX_EPSG_YYYYY.tif.ovr where "
+"XX=10m,20m,60m or PREVIEW and YYYYY is the EPSG code."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:160
+msgid ""
+"Trick: if the content of the zoom-out preview is not important for the "
+"use case, blank overviews can be created instantaneously by using the "
+"NONE resampling method ('-r none' as gdaladdo switch)."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:164
+msgid ""
+"When converting a subdataset to another format like tiled GeoTIFF, if "
+"using the JP2OpenJPEG driver, the recommended minimum value for the "
+":config:`GDAL_CACHEMAX` configuration option is (subdataset_width \\* "
+"2048 \\* 2 ) / 10000000 if generating a INTERLEAVE=BAND GeoTIFF, or that "
+"value multiplied by the number of bands for the default INTERLEAVE=PIXEL "
+"configuration. The current versions of the OpenJPEG libraries can also "
+"consume a lot of memory to decode a JPEG2000 tile (up to 600MB), so you "
+"might want to specify the :config:`GDAL_NUM_THREADS` configuration option"
+" to a reasonable number of threads if you are short of memory (the "
+"default value is the total number of virtual CPUs)."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:176
+msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:178
+msgid "The driver can be passed the following open options:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:192
+msgid ""
+"Note: above open options can also be specified as configuration options, "
+"by prefixing the open option name with SENTINEL2\\_ (e.g. "
+"SENTINEL2_ALPHA)."
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:197
+msgid "Examples"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:199
+msgid "Opening the main metadata file of a Sentinel2 product:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:256
+msgid "Opening the .zip file directly:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:262
+msgid "Opening the 10 meters resolution bands of a L1C subdataset:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:336
+msgid "Conversion of a L1C subdataset to tiled GeoTIFF"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:344
+msgid "Generating blank overviews for a L1C subdataset:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:350
+msgid ""
+"Creating a VRT file from the subdataset (can be convenient to have the "
+"subdatasets as files):"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:358
+msgid "Opening the 10 meters resolution bands of a L1B subdataset:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:454
+msgid "See Also"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:456
+msgid "`Sentinels Scientific Data Hub <https://scihub.esa.int/>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:457
+msgid ""
+"`Sentinel 2 User guide <https://sentinels.copernicus.eu/web/sentinel"
+"/user-guides/sentinel-2-msi>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:459
+msgid ""
+"`Sentinel 2 User Handbook <https://sentinels.copernicus.eu/web/sentinel"
+"/user-guides/document-"
+"library/-/asset_publisher/xlslt4309D5h/content/sentinel-2-user-"
+"handbook>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:463
+msgid "Credits"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:465
+msgid ""
+"This driver has been developed by `Spatialys <http://spatialys.com>`__ "
+"with funding from `Centre National d'Etudes Spatiales (CNES) "
+"<https://cnes.fr>`__"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "SENTINEL2"
+#~ msgstr ""
+
+#~ msgid "Driver built-in by default"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This driver is built-in by "
+#~ "default, but requires a JPEG2000 capable"
+#~ " driver to read the imagery"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "0 on areas with no tiles, or "
+#~ "when the tile data is set to "
+#~ "the NODATA or SATURATED special values,"
+#~ msgstr ""
+
+#~ msgid "4095 on areas with valid data."
+#~ msgstr ""
+

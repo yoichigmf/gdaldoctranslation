@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/general.rst:4
+msgid "Python General API"
+msgstr ""
+
+#: ../../source/api/python/general.rst:7
+msgid "Configuration Management"
+msgstr ""
+
+#: ../../source/api/python/general.rst:53
+msgid "Error Handling"
+msgstr ""
+
+#: ../../source/api/python/general.rst:91
+msgid "File Management"
+msgstr ""
+
+#~ msgid "Configure GDAL to use Python's logging framework"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ DirEntry class."
+#~ msgstr ""
+
+#~ msgid "p.p.char"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "extra"
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "mode"
+#~ msgstr ""
+
+#~ msgid "bool"
+#~ msgstr ""
+
+#~ msgid "modeKnown"
+#~ msgstr ""
+
+#~ msgid "GIntBig"
+#~ msgstr ""
+
+#~ msgid "mtime"
+#~ msgstr ""
+
+#~ msgid "mtimeKnown"
+#~ msgstr ""
+
+#~ msgid "p.char"
+#~ msgstr ""
+
+#~ msgid "name"
+#~ msgstr ""
+
+#~ msgid "size"
+#~ msgstr ""
+
+#~ msgid "sizeKnown"
+#~ msgstr ""
+
+#~ msgid "The membership flag"
+#~ msgstr ""
+

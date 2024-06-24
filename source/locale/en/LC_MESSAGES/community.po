@@ -1,0 +1,691 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-05-29 00:52+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/community/code_of_conduct.rst:5
+#: ../../source/community/index.rst:16
+msgid "Code of Conduct"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:7
+msgid ""
+"This code of conduct governs how we behave in any GDAL forum or event and"
+" whenever we will be judged by our actions. We expect it to be honored by"
+" everyone who participates in the GDAL community formally or informally, "
+"or claims any affiliation with the project."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:13
+msgid "Introduction"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:15
+msgid ""
+"This code of conduct governs how we behave in any GDAL forum or event and"
+" whenever we will be judged by our actions. We expect it to be honored by"
+" everyone who participates in the GDAL community formally or informally, "
+"or claims any affiliation with the GDAL project."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:20
+msgid ""
+"It applies to in-person events (such as conferences and related social "
+"events), IRC, public and private mailing lists, the issue tracker, the "
+"wiki, blogs, Twitter, and any other forums which the community uses for "
+"communication and interactions."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:25
+msgid ""
+"This code is not exhaustive or complete. It serves to distill our common "
+"understanding of a collaborative, shared environment and goals. We expect"
+" it to be followed in spirit as much as in the letter, so that it can "
+"enrich all of us and the technical communities in which we participate."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:31
+msgid "Diversity Statement"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:33
+msgid ""
+"GDAL welcomes and encourages participation by everyone. We are committed "
+"to being a community that everyone feels good about joining, and we will "
+"always work to treat everyone well. No matter how you identify yourself "
+"or how others perceive you: we welcome you. Specific Guidelines"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:39
+msgid "We strive to:"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:41
+msgid "Be open."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:43
+msgid ""
+"We invite anyone to participate in our community. We preferably use "
+"public methods of communication for project-related messages, unless "
+"discussing something sensitive. This applies to messages for help or "
+"project-related support, too; not only is a public support request much "
+"more likely to result in an answer to a question, it also makes sure that"
+" any inadvertent mistakes made by people answering will be more easily "
+"detected and corrected."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:50
+msgid "Be empathetic, welcoming, friendly, and patient."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:52
+msgid ""
+"We work together to resolve conflict, assume good intentions, and do our "
+"best to act in an empathetic fashion. We may all experience some "
+"frustration from time to time, but we do not allow frustration to turn "
+"into a personal attack. A community where people feel uncomfortable or "
+"threatened is not a productive one. Note that we have a multi-cultural, "
+"multi-lingual community and some of us are non-native speakers. We should"
+" be respectful when dealing with other community members as well as with "
+"people outside our community."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:60
+msgid "Be collaborative."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:62
+msgid ""
+"Our work will be used by other people, and in turn we will depend on the "
+"work of others. When we make something for the benefit of GDAL, we are "
+"willing to explain to others how it works, so that they can build on the "
+"work to make it even better. Any decision we make will affect users and "
+"colleagues, and we take those consequences seriously when making "
+"decisions."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:68
+msgid "Be inquisitive."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:70
+msgid ""
+"Nobody knows everything! Asking questions early avoids many problems "
+"later, so questions are encouraged, though they may be directed to the "
+"appropriate forum. Those who are asked should be responsive and helpful, "
+"within the context of our shared goal of improving GDAL."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:75
+msgid "Be careful in the words that we choose."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:77
+msgid ""
+"Whether we are participating as professionals or volunteers, we value "
+"professionalism in all interactions, and take responsibility for our own "
+"speech. Be kind to others. Do not insult or put down other participants."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:81
+msgid "Be concise."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:83
+msgid ""
+"Keep in mind that what you write once will be read by hundreds of "
+"persons. Writing a short email means people can understand the "
+"conversation as efficiently as possible. Short emails should always "
+"strive to be empathetic, welcoming, friendly and patient. When a long "
+"explanation is necessary, consider adding a summary."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:89
+msgid ""
+"Try to bring new ideas to a conversation so that each mail adds something"
+" unique to the thread, keeping in mind that the rest of the thread still "
+"contains the other messages with arguments that have already been made."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:93
+msgid ""
+"Try to stay on topic, especially in discussions that are already fairly "
+"large."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:95
+msgid "Step down considerately."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:97
+msgid ""
+"Members of every project come and go. When somebody leaves or disengages "
+"from the project they should tell people they are leaving and take the "
+"proper steps to ensure that others can pick up where they left off. In "
+"doing so, they should remain respectful of those who continue to "
+"participate in the project and should not misrepresent the project's "
+"goals or achievements. Likewise, community members should respect any "
+"individual's choice to leave the project."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:106
+msgid "Anti-Harassment"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:108
+msgid ""
+"Harassment and other exclusionary behavior are not acceptable. This "
+"includes, but is not limited to:"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:111
+msgid ""
+"Personal insults or discriminatory jokes and language, especially those "
+"using racist or sexist terms."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:112
+msgid "Offensive comments, excessive or unnecessary profanity."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:113
+msgid "Intimidation, violent threats or demands."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:114
+msgid "Sustained disruption of sessions or events."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:115
+msgid "Stalking, harassing photography or recording."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:116
+msgid "Unwelcome physical contact or sexual attention."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:117
+msgid ""
+"Repeated harassment of others. In general, if someone asks you to stop, "
+"then stop."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:118
+msgid ""
+"Posting (or threatening to post) other people's personally identifying "
+"information (\"doxing\")."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:119
+msgid ""
+"Sharing private content, such as emails sent privately or non-publicly, "
+"or unlogged forums such as IRC channel history."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:120
+msgid "Advocating for, or encouraging, any of the above behavior."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:123
+msgid "Reporting Guidelines"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:125
+msgid ""
+"If you believe someone is breaking this code of conduct, you may reply to"
+" them, and point to this code of conduct. Such messages may be in public "
+"or in private, whatever is most appropriate. Assume good faith; it is "
+"more likely that participants are unaware of their bad behavior than that"
+" they intentionally try to degrade the quality of the discussion. Should "
+"there be difficulties in dealing with the situation, you may report your "
+"concerns to event staff, a forum leader or the GDAL Board. Serious or "
+"persistent offenders may be expelled from the event or forum by event "
+"organizers or forum leaders."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:134
+msgid ""
+"To privately email the code of conduct committee leadership use "
+"coc@osgeo.org."
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:137
+msgid "Credits"
+msgstr ""
+
+#: ../../source/community/code_of_conduct.rst:139
+msgid ""
+"GDAL re-uses the `OSGeo Code of Conduct <https://www.osgeo.org/resources"
+"/osgeo-code-of-conduct/>`__"
+msgstr ""
+
+#: ../../source/community/index.rst:5
+msgid "Community"
+msgstr ""
+
+#: ../../source/community/index.rst:7
+msgid ""
+"GDAL's community interacts through `Mailing List`_, `GitHub`_, and "
+"`Chat`_.  Please feel welcome to ask questions and participate in all of "
+"the venues.  The `Mailing List`_ communication channel is for general "
+"questions, development discussion, and feedback. The `GitHub`_ "
+"communication channel is for development activities, bug reports, and "
+"testing. The `Chat`_ room is for real-time chat activities such as "
+"meetings and interactive debugging sessions."
+msgstr ""
+
+#: ../../source/community/index.rst:20
+msgid ""
+"GDAL uses a :ref:`code_of_conduct` which governs how we behave in any "
+"GDAL forum or event and whenever we will be judged by our actions. We "
+"expect it to be honored by everyone who participates in the GDAL "
+"community formally or informally, or claims any affiliation with the "
+"project."
+msgstr ""
+
+#: ../../source/community/index.rst:32
+msgid "Mailing List"
+msgstr ""
+
+#: ../../source/community/index.rst:34
+msgid ""
+"Developers and users of GDAL participate on the GDAL mailing list. It is "
+"OK to ask questions about how to use GDAL, how to integrate GDAL into "
+"your own software, and report issues that you might have."
+msgstr ""
+
+#: ../../source/community/index.rst:38
+msgid "http://lists.osgeo.org/mailman/listinfo/gdal-dev"
+msgstr ""
+
+#: ../../source/community/index.rst:42
+msgid "GitHub"
+msgstr ""
+
+#: ../../source/community/index.rst:44
+msgid ""
+"Visit http://github.com/OSGeo/GDAL to file issues you might be having "
+"with the software. GitHub is also where you can obtain a current "
+"development version of the software in the `git`_ revision control "
+"system. The GDAL project is eager to take contributions in all forms, and"
+" we welcome those who are willing to roll up their sleeves and start "
+"filing tickets, pushing code, generating builds, and answering questions."
+msgstr ""
+
+#: ../../source/community/index.rst:54
+msgid "Chat"
+msgstr ""
+
+#: ../../source/community/index.rst:56
+msgid ""
+"You can find some GDAL developers in the IRC channel #gdal on "
+"`Libera.Chat`_. This mechanism is usually reserved for active meetings "
+"and other outreach with the community. The `Mailing List`_ and `GitHub`_ "
+"avenues are going to be more productive communication channels in most "
+"situations."
+msgstr ""
+
+#: ../../source/community/index.rst:67
+msgid "Social media"
+msgstr ""
+
+#: ../../source/community/index.rst:69
+msgid ""
+"You can follow GDAL official news on Mastodon: "
+"https://mastodon.social/@gdal / @gdal@mastodon.social"
+msgstr ""
+
+#: ../../source/community/index.rst:73
+msgid "Conference"
+msgstr ""
+
+#: ../../source/community/index.rst:-1
+msgid "FOSS4G 2023"
+msgstr ""
+
+#: ../../source/community/index.rst:79
+msgid ""
+"`FOSS4G 2023 <https://2023.foss4g.org/>`_ is the leading annual "
+"conference for free and open source geospatial software. It will include "
+"presentations related to GDAL/OGR, and some of the GDAL/OGR development "
+"community will be attending. It is the event for those interested in "
+"GDAL/OGR, other FOSS geospatial technologies and the community around "
+"them. The conference will be held at Prizren, Kosovo from June 26th to "
+"July 2nd 2023."
+msgstr ""
+
+#: ../../source/community/index.rst:82
+msgid "Governance and Community Participation"
+msgstr ""
+
+#: ../../source/community/index.rst:85
+msgid "OSGeo Project Membership"
+msgstr ""
+
+#: ../../source/community/index.rst:87
+msgid ""
+"Originally, GDAL has been lead by Frank Warmerdam, the original author of"
+" much of GDAL/OGR, though with contributions and input from a variety of "
+"people. As of February 2006 GDAL/OGR became a founding project of the "
+"`Open Source Geospatial Foundation (OSGeo) <https://www.osgeo.org/>`_ and"
+" began a transition to a more community oriented governance model - in "
+"keeping with OSGeo expectations."
+msgstr ""
+
+#: ../../source/community/index.rst:94
+msgid ""
+"Membership as an OSGeo project provides assurances that a variety of best"
+" practices are being employed by the GDAL/OGR project, and that users and"
+" contributors can be assured of responsible project operation and "
+"continuity of the project. In particular:"
+msgstr ""
+
+#: ../../source/community/index.rst:98
+msgid ""
+"A consensus oriented Project Management Committee will be in charge of "
+"the project."
+msgstr ""
+
+#: ../../source/community/index.rst:99
+msgid ""
+"Project source code and contributions will be vetted to ensure code is "
+"properly made available, protecting contributors and users of GDAL/OGR."
+msgstr ""
+
+#: ../../source/community/index.rst:101
+msgid ""
+"Part of the systems infrastructure used by the project is provided by the"
+" foundation, with responsible backup and redundancy to minimize "
+"disruptions."
+msgstr ""
+
+#: ../../source/community/index.rst:107
+msgid "Project Steering Committee"
+msgstr ""
+
+#: ../../source/community/index.rst:109
+msgid ""
+"As of April 2006 (following the GDAL/OGR 1.3.2 release) the project has "
+"been placed in the hands of a Project Steering Committee. This project "
+"steering committee operates under the rules of :ref:`rfc-1`, and is "
+"overall responsible for decisions related to the GDAL/OGR project. The "
+"current members are (@github username):"
+msgstr ""
+
+#: ../../source/community/index.rst:114
+msgid "Frank Warmerdam      (@warmerdam)"
+msgstr ""
+
+#: ../../source/community/index.rst:115
+msgid "Daniel Morissette    (@dmorissette)"
+msgstr ""
+
+#: ../../source/community/index.rst:116
+msgid "Howard Butler        (@hobu)"
+msgstr ""
+
+#: ../../source/community/index.rst:117
+msgid "Tamas Szekeres       (@szekerest)"
+msgstr ""
+
+#: ../../source/community/index.rst:118
+msgid "Even Rouault (chair) (@rouault)"
+msgstr ""
+
+#: ../../source/community/index.rst:119
+msgid "Jukka Rahkonen       (@jratike80)"
+msgstr ""
+
+#: ../../source/community/index.rst:120
+msgid "Kurt Schwehr         (@schwehr)"
+msgstr ""
+
+#: ../../source/community/index.rst:121
+msgid "Norman Barker        (@normanb)"
+msgstr ""
+
+#: ../../source/community/index.rst:122
+msgid "Sean Gillies         (@sgillies)"
+msgstr ""
+
+#: ../../source/community/index.rst:123
+msgid "Javier Jimenez Shaw  (@jjimenezshaw)"
+msgstr ""
+
+#: ../../source/community/index.rst:125
+msgid "Past members:"
+msgstr ""
+
+#: ../../source/community/index.rst:127
+msgid "Andrey Kiselev       (@strezen) (retired in 2019)"
+msgstr ""
+
+#: ../../source/community/index.rst:128
+msgid "Mateusz Łoskot       (@mloskot) (retired in 2023)"
+msgstr ""
+
+#: ../../source/community/index.rst:130
+msgid ""
+"Note that discussion of proposals to the PSC take place on gdal-dev, and "
+"input from all subscribers is welcome. A :ref:`list of past RFC "
+"<rfclist>` is available for review."
+msgstr ""
+
+#: ../../source/community/index.rst:135
+#: ../../source/community/service_providers.rst:5
+msgid "GDAL Service Providers"
+msgstr ""
+
+#: ../../source/community/index.rst:139
+msgid ""
+"GDAL is developed and supported by a rich ecosystem of businesses and "
+"individuals around the world. You can consult a list of "
+":ref:`service_providers` who can assist you in getting the best out of "
+"your GDAL investment."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:7
+msgid ""
+"GDAL is developed and supported by a rich ecosystem of businesses and "
+"individuals around the world."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:10
+msgid ""
+"In this page we provide a list of service providers who can assist you in"
+" getting the best out of your GDAL investment. Their services can range "
+"from training and technical support to help you get started, all the way "
+"to specialized development and support services to advance the software "
+"and support your organization's mission-critical applications."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:20
+msgid ""
+"This list is non-exhaustive, and there are quite likely other service "
+"providers in your region of the world who are not listed here. If you "
+"think your organization should be listed here, please submit a pull "
+"request to add it to this page."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:26
+msgid ""
+"We take responsibility for the accuracy, reliability or completeness of "
+"the provided information for Core Contributors only."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:32
+msgid "Service Providers order is randomized on page load."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:35
+msgid "Core Contributors"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:37
+msgid ""
+"Core Contributor organizations have GDAL Committers and/or PSC members as"
+" part of their team and as such they are the closest to the core "
+"development of the software and are usually the best to go to for "
+"support."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:41
+msgid ""
+"They are close enough to the architecture to know what is possible, and "
+"to ensure that any improvement to be made to GDAL gets done in the right "
+"way and will be included in future releases of the software."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:45
+msgid ""
+"They wrote the software that you use, so you can trust them to help you "
+"get the most out of it."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:50
+msgid "|logo_spatialys|"
+msgstr ""
+
+#: ../../source/community/service_providers.rst
+msgid "logo_spatialys"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:54
+msgid ""
+"`Spatialys`_ (France) is a company founded by Even Rouault that is "
+"dedicated to providing to its clients the best of its expertise around "
+"Open Source geospatial software - such as GDAL/OGR, PROJ, MapServer, and "
+"QGIS - and Open standards."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:60
+msgid "|logo_hobu|"
+msgstr ""
+
+#: ../../source/community/service_providers.rst
+msgid "logo_hobu"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:64
+msgid ""
+"`Hobu, Inc.`_ (United States) is a `sam.gov "
+"<https://sam.gov>`__-registered company founded by Howard Butler with "
+"more than twenty years experience supporting the creation, enhancement, "
+"and management of geospatial open source geospatial software such as "
+"`PDAL <https://pdal.io>`__, GDAL/OGR, PROJ, and open standards such as "
+"`GeoJSON <https://datatracker.ietf.org/doc/html/rfc7946>`__, `PROJJSON "
+"<https://proj.org/en/latest/specifications/projjson.html>`__, and `Cloud "
+"Optimized Point Cloud <https://copc.io/>`__."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:74
+msgid "Contributors"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:76
+msgid ""
+"The Contributors listed here usually have power users and experienced "
+"integrators as part of their team who are recognized in the GDAL "
+"community for their contributions to various aspects of the software over"
+" the years and are very well positioned to assist you with GDAL."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:83
+msgid "None listed yet."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:87
+msgid "Other Service Providers"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:89
+msgid ""
+"The service providers in this category offer services around GDAL and "
+"related Open Source technologies."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:94
+msgid "|logo_faunalia|"
+msgstr ""
+
+#: ../../source/community/service_providers.rst
+msgid "logo_faunalia"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:98
+msgid ""
+"`Faunalia`_ (Italy) is a company that operates since more than 15 years "
+"in the field of Geographic Information Systems (GIS) based on free and "
+"open source software (chiefly QGIS, PostGIS, and more). Our main "
+"customers are public administrations, private companies, associations. "
+"Faunalia has its main branch in Italy, and operates worldwide. Faunalia "
+"provides training services on GDAL."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:102
+msgid "|logo_kartoza|"
+msgstr ""
+
+#: ../../source/community/service_providers.rst
+msgid "logo_kartoza"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:106
+msgid ""
+"`Kartoza`_ (South Africa) is a South Africa-based Free and Open Source "
+"GIS (FOSSGIS) service provider. We use GIS software to solve complex "
+"location-related problems for individuals, businesses and governments "
+"around the world. Kartoza provides training services on GDAL."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:110
+msgid "|logo_mundialis|"
+msgstr ""
+
+#: ../../source/community/service_providers.rst
+msgid "logo_mundialis"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:114
+msgid ""
+"`mundialis`_ (Germany) is specialized in the processing of massive "
+"geospatial and remote sensing data. Our services centered on the Open "
+"Source geospatial systems GRASS GIS, actinia and QGIS are incorporated "
+"into our process chains, projects and tailored solutions. We analyse "
+"satellite, aerial and drone imagery for land degradation and landuse "
+"change. We offer support and training for GRASS GIS and GDAL."
+msgstr ""
+
+#: ../../source/community/service_providers.rst:155
+msgid ""
+"Search for GDAL service providers with the `OSGeo Service Providers "
+"<https://www.osgeo.org/service-providers/>`__"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:158
+msgid "How to Add a Company"
+msgstr ""
+
+#: ../../source/community/service_providers.rst:160
+msgid ""
+"The steps to add a company to the service providers list are outlined in "
+"the :ref:`rfc-79` document."
+msgstr ""
+

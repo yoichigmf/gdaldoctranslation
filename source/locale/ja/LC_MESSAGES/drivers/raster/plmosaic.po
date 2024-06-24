@@ -1,0 +1,203 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/plmosaic.rst:5
+msgid "PLMosaic (Planet Labs Mosaics API)"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:11
+msgid ""
+"This driver can connect to Planet Labs Mosaics API. GDAL/OGR must be "
+"built with Curl support in order for the PLMosaic driver to be compiled."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:14
+msgid ""
+"The driver supports listing mosaics and reading them. Mosaics are "
+"accessed at their highest resolution. Mosaics are typically composed of "
+"quads of 4096x4096 pixels."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:18
+msgid ""
+"For mosaics of type Byte, overviews are available by using the tile API. "
+"For other data types, there is no support for overviews, so requests that"
+" involve downsampling may take a long time to complete."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:23
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:28
+msgid "Dataset name syntax"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:30
+msgid "The minimal syntax to open a datasource is :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:36
+msgid ""
+"Additional optional parameters can be specified after the ':' sign. "
+"Currently the following one is supported :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:39
+msgid ""
+"**api_key**\\ =value: To specify the Planet API key. It is mandatory, "
+"unless it is supplied through the open option API_KEY, or the "
+"configuration option PL_API_KEY."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:42
+msgid "**mosaic**\\ =mosaic_name: To specify the mosaic name."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:43
+msgid ""
+"**cache_path**\\ =path: To specify the path to a directory where cached "
+"quads (and tiles) are stored. A plmosaic_cache/{mosaic_name} subdirectory"
+" will be created under that path. The empty string can be used to disable"
+" any disk caching."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:47
+msgid ""
+"**trust_cache**\\ =YES/NO: Whether already cached quads should be reused "
+"directly, without prior checking if the server has a more recent version."
+" Note: this only applies to quads, and not tiles. Default is NO."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:51
+msgid ""
+"**use_tiles**\\ =YES/NO: Whether to use the tile API to access full "
+"resolution data, instead of downloading quads. Only apply for Byte "
+"mosaics. Default is NO."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:55
+msgid "If several parameters are specified, they must be separated by a comma."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:57
+msgid ""
+"If no mosaic parameter is supplied, the list of available mosaics will be"
+" returned as subdatasets. If only one mosaic is available, it will be "
+"directly opened."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:62
+msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:64
+msgid ""
+"The following open options are available : API_KEY, MOSAIC, CACHE_PATH, "
+"TRUST_CACHE and USE_TILES. They have the same semantics as the above "
+"describe parameters of same name."
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:69
+msgid "Configuration options"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:71
+msgid "The following configuration options are available :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:78
+msgid "Location information"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:80
+msgid ""
+"The special *Pixel_{x}_{y}* metadata item of the *LocationInfo* metadata "
+"domain, where x is the column and y is the line in the mosaic, can be "
+"queried to get information about the scenes that compose the underneath "
+"quad. This is the syntax used by the gdallocationinfo utility (see "
+":ref:`rfc-32`)"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:85
+msgid "Below an example of the return :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:107
+msgid "Examples"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:109
+msgid "Listing all mosaics available (with the rights of the account) :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:115
+#: ../../source/drivers/raster/plmosaic.rst:121
+msgid "or"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:127
+msgid "returns (in case of multiple mosaics):"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:148
+msgid "Open a particular mosaic :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:154
+msgid "returns:"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:214
+msgid "See Also"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:216
+msgid ""
+"`Documentation of Planet Mosaics API <https://docs.planet.com/reference"
+"#basemaps-and-mosaics>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:218
+msgid ""
+"`API Authentication <https://docs.planet.com/docs/api-mechanics#section-"
+"authentication>`__"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:220
+msgid ":ref:`Vector PLScenes / Planet Scenes API driver <vector.plscenes>`"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "PLMosaic"
+#~ msgstr ""
+
+#~ msgid "Build dependencies"
+#~ msgstr ""
+
+#~ msgid "libcurl"
+#~ msgstr ""
+
+#~ msgid "PL_API_KEY=value: To specify the Planet API key."
+#~ msgstr ""
+

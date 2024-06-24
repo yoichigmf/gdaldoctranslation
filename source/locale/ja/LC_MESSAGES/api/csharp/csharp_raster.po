@@ -1,0 +1,171 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/csharp/csharp_raster.rst:5
+msgid "C# Raster Interface"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:7
+msgid ""
+"The GDAL C# interface supports transferring raster data between the C# "
+"application and GDAL."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:9
+msgid ""
+"The various :file:`Band.ReadRaster`, :file:`Band.WriteRaster`, "
+":file:`Dataset.ReadRaster`, :file:`Dataset.WriteRaster` overloads are "
+"involved in transferring raster data between the managed and the "
+"unmanaged parts of the application."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:12
+msgid ""
+"This page will summarize the main aspects of raster data handling related"
+" exclusively to the C# interface."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:14
+msgid ""
+"The :file:`Band` class contains the following "
+":file:`ReadRaster`/:file:`WriteRaster` overloads:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:54
+msgid ""
+"The only difference between these functions is the actual type of the "
+"buffer parameter. The last 2 overloads are the generic overloads and the "
+"caller should write the proper marshaling code for the buffer holding the"
+" raster data. The overloads that have a C# array as the buffer parameter "
+"implement the proper marshaling code for the caller."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:60
+msgid "Reading the raster image"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:62
+msgid ""
+"When reading raster data from GDAL, the user will probably create a .NET "
+"image to hold C# representation of the data. The raster data can be read "
+"directly or in a buffered fashion."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:66
+msgid "Using the buffered read approach"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:68
+msgid ""
+"When reading the image this way the C# API will copy the image data "
+"between the C and the C# arrays:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:88
+msgid ""
+"In this case the interface implementation uses an internally created "
+"unmanaged array to transfer the data between the C and C++ part of the "
+"code, like:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:106
+msgid "Using the direct read approach"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:108
+msgid ""
+"Raster data can be read into the C# bitmap directly using the following "
+"approach:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:127
+msgid ""
+"This approach is more performant than the previous since there's no need "
+"to allocate an intermediary array for transferring the data."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:130
+msgid "Using /unsafe code and the fixed statement"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:132
+msgid ""
+"In the previous examples the programmer could ignore bothering with "
+"implementing the marshaling code for the raster arrays. Both of the "
+"examples prevent the garbage collector from relocating the array during "
+"the execution of the P/Invoke call. Without using an intermediary array "
+"the programmer can also use the following method to read the raster data:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:143
+msgid ""
+"When using this approach the application must be compiled using the "
+":program:`/unsafe` command line option."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:146
+msgid "Using indexed / grayscale images"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:148
+msgid ""
+"The :file:`PaletteInterp` enumeration can be used to distinguish between "
+"the various type of the image color interpretations."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:159
+msgid ""
+"When reading images with indexed color representations, the programmer "
+"might have to do some extra work copying the palette over:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:192
+msgid ""
+"When reading grayscale images, the programmer should create a sufficient "
+"palette for the .NET image."
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:220
+msgid "Related C# examples"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:222
+msgid ""
+"The following examples demonstrate the usage of the GDAL raster "
+"operations mentioned previously:"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:224
+msgid ":source_file:`swig/csharp/apps/GDALRead.cs`"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:225
+#: ../../source/api/csharp/csharp_raster.rst:226
+msgid ":source_file:`swig/csharp/apps/GDALReadDirect.cs`"
+msgstr ""
+
+#: ../../source/api/csharp/csharp_raster.rst:228
+msgid ""
+"This document was amended from the previous version at "
+"`https://trac.osgeo.org/gdal/wiki/GdalOgrCsharpRaster "
+"<https://trac.osgeo.org/gdal/wiki/GdalOgrCsharpRaster>`__"
+msgstr ""
+

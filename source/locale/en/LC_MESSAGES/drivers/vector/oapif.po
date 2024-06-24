@@ -1,0 +1,179 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/vector/oapif.rst:4
+msgid "OGC API - Features"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:12
+msgid ""
+"This driver can connect to a OGC API - Features service. It assumes that "
+"the service supports OpenAPI 3.0/JSON/GeoJSON encoding for respectively "
+"API description, feature collection metadata and feature collection data."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:18
+msgid ""
+"In versions prior to GDAL 3.1, this driver was called the WFS3 driver, "
+"and only supported draft versions of the specification."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:22
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:27
+msgid "Dataset name syntax"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:29
+msgid ""
+"The syntax to open a OGC API - Features datasource is : "
+"*OAPIF:http://path/to/OAPIF/endpoint*"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:32
+msgid "where endpoint is the landing page or a the path to collections/{id}."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:35
+msgid "Layer schema"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:37
+msgid ""
+"OGR needs a fixed schema per layer, but OGC API - Features Core doesn't "
+"impose fixed schema. The driver will use the XML schema or JSON schema "
+"pointed by the \"describedby\" relationship of a collection, if it "
+"exists. The driver will also retrieve the first page of features (using "
+"the selected page) and establish a schema from this."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:46
+msgid "Filtering"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:48
+msgid ""
+"The driver will forward any spatial filter set with SetSpatialFilter() to"
+" the server. In OGC API - Features Core, only a subset of attributes "
+"allowed by the server can be queried for equalities, potentially combined"
+" with a AND logical operator. More complex requests will be partly or "
+"completely evaluated on client-side."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:54
+msgid "Rectangular spatial filtering is forward to the server as well."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:57
+msgid "CRS support"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:59
+msgid ""
+"Starting with GDAL 3.7, the driver supports the `OGC API - Features - "
+"Part 2: Coordinate Reference Systems by Reference "
+"<https://docs.ogc.org/is/18-058/18-058.html>`__ extension. If a server "
+"reports a storageCRS property, that property will be used to set the CRS "
+"of the OGR layer. Otherwise the default will be OGC:CRS84 (WGS84 "
+"longitude, latitude). As most all OGR drivers, the OAPIF driver will "
+"report the SRS and geometries, and expect spatial filters, in the \"GIS-"
+"friendly\" order, with longitude/easting first (X component), "
+"latitude/northing second (Y component), potentially overriding the axis "
+"order of the authority."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:69
+msgid ""
+"The CRS of layers can also be controlled with the :oo:`CRS` or "
+":oo:`PREFERRED_CRS` open options documented below."
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:73
+msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:75
+msgid "The following options are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:139
+msgid "Examples"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:141
+msgid "Listing the types of a OGC API - Features server :"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:153
+msgid "Listing the summary information of a OGC API - Features layer :"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:191
+msgid ""
+"Filtering on a property (depending on if the server exposes filtering "
+"capabilities of the properties, part or totally of the filter might be "
+"evaluated on client side)"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:219
+msgid "Spatial filtering"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:247
+msgid "See Also"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:249
+msgid ""
+"`\"OGC API - Features - Part 1: Core\" Standard "
+"<http://docs.opengeospatial.org/is/17-069r3/17-069r3.html>`__"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:251
+msgid ""
+"`\"OGC API - Features - Part 2: Coordinate Reference Systems by "
+"Reference\" Standard <https://docs.ogc.org/is/18-058/18-058.html>`__"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:253
+msgid ":ref:`WFS (1.0,1.1,2.0) driver documentation <vector.wfs>`"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "OAPIF"
+#~ msgstr ""
+
+#~ msgid "Build dependencies"
+#~ msgstr ""
+
+#~ msgid "libcurl"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Set to YES to ignore the XML "
+#~ "Schema or JSON schema that may be"
+#~ " offered by the server."
+#~ msgstr ""
+

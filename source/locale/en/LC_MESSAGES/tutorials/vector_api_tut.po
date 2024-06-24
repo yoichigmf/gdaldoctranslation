@@ -1,0 +1,754 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/tutorials/vector_api_tut.rst:5
+msgid "Vector API tutorial"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:7
+msgid ""
+"This document is intended to document using the OGR C++ classes to read "
+"and write data from a file.  It is strongly advised that the reader first"
+" review the :ref:`vector_data_model` document describing the key classes "
+"and their roles in OGR."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:12
+msgid ""
+"It also includes code snippets for the corresponding functions in C and "
+"Python."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:15
+msgid "Reading From OGR"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:17
+msgid ""
+"For purposes of demonstrating reading with OGR, we will construct a small"
+" utility for dumping point layers from an OGR data source to stdout in "
+"comma-delimited format."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:21
+msgid ""
+"Initially it is necessary to register all the format drivers that are "
+"desired. This is normally accomplished by calling "
+":cpp:func:`GDALAllRegister` which registers all format drivers built into"
+" GDAL/OGR."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:25
+#: ../../source/tutorials/vector_api_tut.rst:57
+#: ../../source/tutorials/vector_api_tut.rst:88
+#: ../../source/tutorials/vector_api_tut.rst:287
+#: ../../source/tutorials/vector_api_tut.rst:335
+#: ../../source/tutorials/vector_api_tut.rst:431
+#: ../../source/tutorials/vector_api_tut.rst:537
+#: ../../source/tutorials/vector_api_tut.rst:1040
+#: ../../source/tutorials/vector_api_tut.rst:1121
+#: ../../source/tutorials/vector_api_tut.rst:1213
+#: ../../source/tutorials/vector_api_tut.rst:1237
+#: ../../source/tutorials/vector_api_tut.rst:1263
+#: ../../source/tutorials/vector_api_tut.rst:1303
+#: ../../source/tutorials/vector_api_tut.rst:1528
+#: ../../source/tutorials/vector_api_tut.rst:1598
+msgid "In C++ :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:37
+#: ../../source/tutorials/vector_api_tut.rst:70
+#: ../../source/tutorials/vector_api_tut.rst:96
+#: ../../source/tutorials/vector_api_tut.rst:234
+#: ../../source/tutorials/vector_api_tut.rst:310
+#: ../../source/tutorials/vector_api_tut.rst:365
+#: ../../source/tutorials/vector_api_tut.rst:438
+#: ../../source/tutorials/vector_api_tut.rst:615
+#: ../../source/tutorials/vector_api_tut.rst:1060
+#: ../../source/tutorials/vector_api_tut.rst:1103
+#: ../../source/tutorials/vector_api_tut.rst:1135
+#: ../../source/tutorials/vector_api_tut.rst:1222
+#: ../../source/tutorials/vector_api_tut.rst:1248
+#: ../../source/tutorials/vector_api_tut.rst:1276
+#: ../../source/tutorials/vector_api_tut.rst:1382
+#: ../../source/tutorials/vector_api_tut.rst:1557
+#: ../../source/tutorials/vector_api_tut.rst:1624
+msgid "In C :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:48
+msgid ""
+"Next we need to open the input OGR datasource.  Datasources can be files,"
+" RDBMSes, directories full of files, or even remote web services "
+"depending on the driver being used.  However, the datasource name is "
+"always a single string.  In this case we are hardcoded to open a "
+"particular shapefile. The second argument (GDAL_OF_VECTOR) tells the "
+":cpp:func:`OGROpen` method that we want a vector driver to be use and "
+"that don't require update access. On failure NULL is returned, and we "
+"report an error."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:83
+msgid ""
+"A GDALDataset can potentially have many layers associated with it.  The "
+"number of layers available can be queried with "
+":cpp:func:`GDALDataset::GetLayerCount` and individual layers fetched by "
+"index using :cpp:func:`GDALDataset::GetLayer`. However, we will just "
+"fetch the layer by name."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:105
+msgid ""
+"Now we want to start reading features from the layer.  Before we start we"
+" could assign an attribute or spatial filter to the layer to restrict the"
+" set of feature we get back, but for now we are interested in getting all"
+" features."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:109
+#: ../../source/tutorials/vector_api_tut.rst:155
+msgid "With GDAL 2.3 and C++11:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:116
+msgid "With GDAL 2.3 and C:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:123
+msgid ""
+"If using older GDAL versions, while it isn't strictly necessary in this "
+"circumstance since we are starting fresh with the layer, it is often wise"
+" to call :cpp:func:`OGRLayer::ResetReading` to ensure we are starting at "
+"the beginning of the layer.  We iterate through all the features in the "
+"layer using OGRLayer::GetNextFeature().  It will return NULL when we run "
+"out of features."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:129
+#: ../../source/tutorials/vector_api_tut.rst:195
+msgid "With GDAL < 2.3 and C++ :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:140
+msgid "With GDAL < 2.3 and C :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:150
+msgid ""
+"In order to dump all the attribute fields of the feature, it is helpful "
+"to get the :cpp:class:`OGRFeatureDefn`.  This is an object, associated "
+"with the layer, containing the definitions of all the fields.  We loop "
+"over all the fields, and fetch and report the attributes based on their "
+"type."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:276
+msgid ""
+"There are a few more field types than those explicitly handled above, but"
+" a reasonable representation of them can be fetched with the "
+":cpp:func:`OGRFeature::GetFieldAsString` method.  In fact we could "
+"shorten the above by using GetFieldAsString() for all the types."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:281
+msgid ""
+"Next we want to extract the geometry from the feature, and write out the "
+"point geometry x and y.   Geometries are returned as a generic "
+":cpp:class:`OGRGeometry` pointer. We then determine the specific geometry"
+" type, and if it is a point, we cast it to point and operate on it.  If "
+"it is something else we write placeholders."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:327
+msgid ""
+"The :cpp:func:`wkbFlatten` macro is used above to convert the type for a "
+"wkbPoint25D (a point with a z coordinate) into the base 2D geometry type "
+"code (wkbPoint). For each 2D geometry type there is a corresponding 2.5D "
+"type code.  The 2D and 2.5D geometry cases are handled by the same C++ "
+"class, so our code will handle 2D or 3D cases properly."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:333
+msgid "Several geometry fields can be associated to a feature."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:390
+#: ../../source/tutorials/vector_api_tut.rst:700
+msgid "In Python:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:402
+msgid ""
+"Note that :cpp:func:`OGRFeature::GetGeometryRef` and "
+":cpp:func:`OGRFeature::GetGeomFieldRef` return a pointer to the internal "
+"geometry owned by the OGRFeature.  There we don't actually delete the "
+"return geometry."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:408
+msgid ""
+"With GDAL 2.3 and C++11, the looping over features is simply terminated "
+"by a closing curly bracket."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:415
+msgid ""
+"With GDAL 2.3 and C, the looping over features is simply terminated by "
+"the following."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:424
+msgid ""
+"For GDAL < 2.3, as the :cpp:func:`OGRLayer::GetNextFeature` method "
+"returns a copy of the feature that is now owned by us.  So at the end of "
+"use we must free the feature.  We could just \"delete\" it, but this can "
+"cause problems in windows builds where the GDAL DLL has a different "
+"\"heap\" from the main program.  To be on the safe side we use a GDAL "
+"function to delete the feature."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:446
+msgid ""
+"The OGRLayer returned by :cpp:func:`GDALDataset::GetLayerByName` is also "
+"a reference to an internal layer owned by the GDALDataset so we don't "
+"need to delete it.  But we do need to delete the datasource in order to "
+"close the input file. Once again we do this with a custom delete method "
+"to avoid special win32 heap issues."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:452
+#: ../../source/tutorials/vector_api_tut.rst:1293
+msgid "In C/C++ :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:460
+msgid "All together our program looks like this."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:462
+msgid "With GDAL 2.3 and C++11 :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:744
+msgid "Reading From OGR using the Arrow C Stream data interface"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:748
+msgid ""
+"Instead of retrieving features one at a time, it is also possible to "
+"retrieve them by batches, with a column-oriented memory layout, using the"
+" :cpp:func:`OGRLayer::GetArrowStream` method. Note that this method is "
+"more difficult to use than the traditional "
+":cpp:func:`OGRLayer::GetNextFeature` approach, and is only advised when "
+"compatibility with the `Apache Arrow C Stream interface "
+"<https://arrow.apache.org/docs/format/CStreamInterface.html>`_ is needed,"
+" or when column-oriented consumption of layers is required."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:756
+msgid ""
+"Pending using an helper library, consumption of the Arrow C Stream "
+"interface requires reading of the following documents:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:759
+msgid ""
+"`Arrow C Stream interface "
+"<https://arrow.apache.org/docs/format/CStreamInterface.html>`_"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:760
+#: ../../source/tutorials/vector_api_tut.rst:1686
+msgid ""
+"`Arrow C data interface "
+"<https://arrow.apache.org/docs/format/CDataInterface.html>`_"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:761
+#: ../../source/tutorials/vector_api_tut.rst:1687
+msgid ""
+"`Arrow Columnar Format "
+"<https://arrow.apache.org/docs/format/Columnar.html>`_."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:763
+msgid ""
+"The Arrow C Stream interface interface consists of a set of C structures,"
+" ArrowArrayStream, that provides two main callbacks to get:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:766
+msgid ""
+"a ArrowSchema with the get_schema() callback. A ArrowSchema describes a "
+"set of field descriptions (name, type, metadata). All OGR data types have"
+" a corresponding Arrow data type."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:770
+msgid ""
+"a sequence of ArrowArray with the get_next() callback. A ArrowArray "
+"captures a set of values for a specific column/field in a subset of "
+"features. This is the equivalent of a `Series "
+"<https://arrow.apache.org/docs/python/pandas.html#series>`_ in a Pandas "
+"DataFrame. This is a potentially hiearchical structure that can aggregate"
+" sub arrays, and in OGR usage, the main array will be a StructArray which"
+" is the collection of OGR attribute and geometry fields. The layout of "
+"buffers and children arrays per data type is detailed in the `Arrow "
+"Columnar Format <https://arrow.apache.org/docs/format/Columnar.html>`_."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:780
+msgid ""
+"If a layer consists of 4 features with 2 fields (one of integer type, one"
+" of floating-point type), the representation as a ArrowArray is "
+"*conceptually* the following one:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:789
+msgid ""
+"The content of a whole layer can be seen as a sequence of record batches,"
+" each record batches being an ArrowArray of a subset of features. Instead"
+" of iterating over individual features, one iterates over a batch of "
+"several features at once."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:794
+msgid ""
+"The ArrowArrayStream, ArrowSchema, ArrowArray structures are defined in a"
+" ogr_recordbatch.h public header file, directly derived from "
+"https://github.com/apache/arrow/blob/main/cpp/src/arrow/c/abi.h to get "
+"API/ABI compatibility with Apache Arrow C++. This header file must be "
+"explicitly included when the related array batch API is used."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:800
+msgid "The GetArrowStream() method has the following signature:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:807
+msgid "It is also available in the C API as :cpp:func:`OGR_L_GetArrowStream`."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:809
+msgid ""
+"out_stream is a pointer to a ArrowArrayStream structure, that can be in a"
+" uninitialized state (the method will ignore any initial content)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:812
+msgid ""
+"On successful return, and when the stream interfaces is no longer needed,"
+" it must must be freed with out_stream->release(out_stream)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:815
+msgid ""
+"There are extra precautions to take into account in a OGR context. Unless"
+" otherwise specified by a particular driver implementation, the "
+"ArrowArrayStream structure, and the ArrowSchema or ArrowArray objects its"
+" callbacks have returned, should no longer be used (except for "
+"potentially being released) after the OGRLayer from which it was "
+"initialized has been destroyed (typically at dataset closing). "
+"Furthermore, unless otherwise specified by a particular driver "
+"implementation, only one ArrowArrayStream can be active at a time on a "
+"given layer (that is the last active one must be explicitly released "
+"before a next one is asked). Changing filter state, ignored columns, "
+"modifying the schema or using ResetReading()/GetNextFeature() while using"
+" a ArrowArrayStream is strongly discouraged and may lead to unexpected "
+"results. As a rule of thumb, no OGRLayer methods that affect the state of"
+" a layer should be called on a layer, while an ArrowArrayStream on it is "
+"active."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:829
+msgid ""
+"The papszOptions that may be provided is a NULL terminated list of "
+"key=value strings, that may be driver specific."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:832
+msgid "OGRLayer has a base implementation of GetArrowStream() that is such:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:834
+msgid ""
+"The get_schema() callback returns a schema whose top-level object "
+"returned is of type Struct, and whose children consist of the FID column,"
+" all OGR attribute fields and geometry fields to Arrow fields. The FID "
+"column may be omitted by providing the INCLUDE_FID=NO option."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:839
+msgid ""
+"When get_schema() returns 0, and the schema is no longer needed, it must "
+"be released with the following procedure, to take into account that it "
+"might have been released by other code, as documented in the Arrow C data"
+" interface:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:850
+msgid "The get_next() callback retrieve the next record batch over the layer."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:852
+msgid ""
+"out_array is a pointer to a ArrowArray structure, that can be in a "
+"uninitialized state (the method will ignore any initial content)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:855
+msgid ""
+"The default implementation uses GetNextFeature() internally to retrieve "
+"batches of up to 65,536 features (configurable with the "
+"MAX_FEATURES_IN_BATCH=num option). The starting address of buffers "
+"allocated by the default implementation is aligned on 64-byte boundaries."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:860
+msgid ""
+"The default implementation outputs geometries as WKB in a binary field, "
+"whose corresponding entry in the schema is marked with the metadata item "
+"``ARROW:extension:name`` set to ``ogc.wkb``. Specialized implementations "
+"may output by default other formats (particularly the Arrow driver that "
+"can return geometries encoded according to the GeoArrow specification "
+"(using a list of coordinates). The GEOMETRY_ENCODING=WKB option can be "
+"passed to force the use of WKB (through the default implementation)"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:868
+msgid ""
+"The method may take into account ignored fields set with "
+"SetIgnoredFields() (the default implementation does), and should take "
+"into account filters set with SetSpatialFilter() and "
+"SetAttributeFilter(). Note however that specialized implementations may "
+"fallback to the default (slower) implementation when filters are set."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:873
+msgid ""
+"Mixing calls to GetNextFeature() and get_next() is not recommended, as "
+"the behavior will be unspecified (but it should not crash)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:876
+msgid ""
+"When get_next() returns 0, and the array is no longer needed, it must be "
+"released with the following procedure, to take into account that it might"
+" have been released by other code, as documented in the Arrow C data "
+"interface:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:886
+msgid ""
+"Drivers that have a specialized implementation advertise the new "
+"OLCFastGetArrowStream layer capability."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:889
+msgid ""
+"Using directly (as a producer or a consumer) a ArrowArray is admittedly "
+"not trivial, and requires good intimacy with the Arrow C data interface "
+"and columnar array specifications, to know, in which buffer of an array, "
+"data is to be read, which data type void* buffers should be cast to, how "
+"to use buffers that contain null/not_null information, how to use offset "
+"buffers for data types of type List, etc. The study of the "
+"gdal_array._RecordBatchAsNumpy() method of the SWIG Python bindings "
+"(:source_file:`swig/include/gdal_array.i`) can give a good hint of how to"
+" use an ArrowArray object, in conjunction with the associated "
+"ArrowSchema."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:899
+msgid ""
+"The below example illustrates how to read the content of a layer that "
+"consists of a integer field and a geometry field:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1028
+msgid ""
+"To write features by batches using an ArrowArray, consult "
+":ref:`vector_api_tut_arrow_write`."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1031
+msgid "Writing To OGR"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1033
+msgid ""
+"As an example of writing through OGR, we will do roughly the opposite of "
+"the above.  A short program that reads comma separated values from input "
+"text will be written to a point shapefile via OGR."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1037
+msgid ""
+"As usual, we start by registering all the drivers, and then fetch the "
+"Shapefile driver as we will need it to create our output file."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1080
+msgid ""
+"Next we create the datasource.  The ESRI Shapefile driver allows us to "
+"create a directory full of shapefiles, or a single shapefile as a "
+"datasource.  In this case we will explicitly create a single file by "
+"including the extension in the name.  Other drivers behave differently. "
+"The second, third, fourth and fifth argument are related to raster "
+"dimensions (in case the driver has raster capabilities). The last "
+"argument to the call is a list of option values, but we will just be "
+"using defaults in this case.  Details of the options supported are also "
+"format specific."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1089
+msgid "In C ++ :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1116
+msgid ""
+"Now we create the output layer.  In this case since the datasource is a "
+"single file, we can only have one layer.  We pass wkbPoint to specify the"
+" type of geometry supported by this layer.  In this case we aren't "
+"passing any coordinate system information or other special layer creation"
+" options."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1149
+msgid ""
+"Now that the layer exists, we need to create any attribute fields that "
+"should appear on the layer.  Fields must be added to the layer before any"
+" features are written.  To create a field we initialize an "
+":cpp:union:`OGRField` object with the information about the field.  In "
+"the case of Shapefiles, the field width and precision is significant in "
+"the creation of the output .dbf file, so we set it specifically, though "
+"generally the defaults are OK.  For this example we will just have one "
+"attribute, a name string associated with the x,y point."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1157
+msgid ""
+"Note that the template OGRField we pass to "
+":cpp:func:`OGRLayer::CreateField` is copied internally. We retain "
+"ownership of the object."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1160
+msgid "In C++:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1175
+msgid "In C:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1194
+msgid ""
+"The following snipping loops reading lines of the form \"x,y,name\" from "
+"stdin, and parsing them."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1197
+msgid "In C++ and in C :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1208
+msgid ""
+"To write a feature to disk, we must create a local OGRFeature, set "
+"attributes and attach geometry before trying to write it to the layer.  "
+"It is imperative that this feature be instantiated from the "
+"OGRFeatureDefn associated with the layer it will be written to."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1231
+msgid ""
+"We create a local geometry object, and assign its copy (indirectly) to "
+"the feature. The :cpp:func:`OGRFeature::SetGeometryDirectly` differs from"
+" :cpp:func:`OGRFeature::SetGeometry` in that the direct method gives "
+"ownership of the geometry to the feature. This is generally more "
+"efficient as it avoids an extra deep object copy of the geometry."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1260
+msgid ""
+"Now we create a feature in the file.  The "
+":cpp:func:`OGRLayer::CreateFeature` does not take ownership of our "
+"feature so we clean it up when done with it."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1290
+msgid ""
+"Finally we need to close down the datasource in order to ensure headers "
+"are written out in an orderly way and all resources are recovered."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1301
+msgid "The same program all in one block looks like this:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1461
+#: ../../source/tutorials/vector_api_tut.rst:1653
+msgid "In Python :"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1522
+msgid ""
+"Several geometry fields can be associated to a feature. This capability "
+"is just available for a few file formats, such as PostGIS."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1525
+msgid ""
+"To create such datasources, geometry fields must be first created. "
+"Spatial reference system objects can be associated to each geometry "
+"field."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1593
+msgid ""
+"To write a feature to disk, we must create a local OGRFeature, set "
+"attributes and attach geometries before trying to write it to the layer."
+"  It is imperative that this feature be instantiated from the "
+"OGRFeatureDefn associated with the layer it will be written to."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1671
+msgid "Writing to OGR using the Arrow C Data interface"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1675
+msgid ""
+"Instead of writing features one at a time, it is also possible to write "
+"them by batches, with a column-oriented memory layout, using the "
+":cpp:func:`OGRLayer::WriteArrowBatch` method. Note that this method is "
+"more difficult to use than the traditional "
+":cpp:func:`OGRLayer::CreateFeature` approach, and is only advised when "
+"compatibility with the `Apache Arrow C Data interface "
+"<https://arrow.apache.org/docs/format/CDataInterface.html>`_ is needed, "
+"or when column-oriented writing of layers is required."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1683
+msgid ""
+"Pending using an helper library, generation of the Arrow C Data interface"
+" requires reading of the following documents:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1689
+msgid ""
+"Consult :ref:`vector_api_tut_arrow_stream` for introduction to the "
+"ArrowSchema and ArrowArray basic types involved for batch writing."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1692
+msgid "The WriteArrowBatch() method has the following signature:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1708
+msgid "It is also available in the C API as :cpp:func:`OGR_L_WriteArrowBatch`."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1710
+msgid ""
+"This is semantically close to calling "
+":cpp:func:`OGRLayer::CreateFeature()` with multiple features at once."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1713
+msgid ""
+"The ArrowArray must be of type struct (format=+s), and its children "
+"generally map to a OGR attribute or geometry field (unless they are "
+"struct themselves)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1716
+msgid ""
+"Method :cpp:func:`OGRLayer::IsArrowSchemaSupported` can be called to "
+"determine if the schema will be supported by WriteArrowBatch()."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1719
+msgid ""
+"OGR fields for the corresponding children arrays must exist and be of a "
+"compatible type. For attribute fields, they should be created with "
+":cpp:func:`OGRLayer::CreateFieldFromArrowSchema`."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1723
+msgid ""
+"Arrays for geometry columns should be of binary or large binary type and "
+"contain WKB geometry."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1726
+msgid ""
+"Note that the passed array may be set to a released state "
+"(array->release==NULL) after this call (not by the base implementation, "
+"but in specialized ones such as Parquet or Arrow for example)"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1730
+msgid "Supported options of the base implementation are:"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1732
+msgid ""
+"FID=name. Name of the FID column in the array. If not provided, "
+"GetFIDColumn() is used to determine it. The special name "
+"OGRLayer::DEFAULT_ARROW_FID_NAME is also recognized if neither FID nor "
+"GetFIDColumn() are set. The corresponding ArrowArray must be of type "
+"int32 (i) or int64 (l). On input, values of the FID column are used to "
+"create the feature. On output, the values of the FID column may be set "
+"with the FID of the created feature (if the array is not released)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1741
+msgid ""
+"GEOMETRY_NAME=name. Name of the geometry column. If not provided, "
+"GetGeometryColumn() is used. The special name "
+"OGRLayer::DEFAULT_ARROW_GEOMETRY_NAME is also recognized if neither "
+"GEOMETRY_NAME nor GetGeometryColumn() are set. Geometry columns are also "
+"identified if they have ARROW:extension:name=ogc.wkb as a field metadata."
+" The corresponding ArrowArray must be of type binary (w) or large binary "
+"(W)."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1750
+msgid ""
+"Drivers that have a specialized implementation (such as "
+":ref:`vector.parquet` and :ref:`vector.arrow`) advertise the "
+"OLCFastWriteArrowBatch layer capability."
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1753
+msgid ""
+"The following example in Python demonstrates how to copy a layer from one"
+" format to another one (assuming it has at most a single geometry "
+"column):"
+msgstr ""
+
+#: ../../source/tutorials/vector_api_tut.rst:1821
+msgid ""
+"For the Python bindings, in addition to the above "
+"ogr.Layer.IsArrowSchemaSupported(), "
+"ogr.Layer.CreateFieldFromArrowSchema() and ogr.Layer.WriteArrowBatch() "
+"methods, 3 similar methods exist using the `PyArrow "
+"<https://arrow.apache.org/docs/python/index.html>`__ data types:"
+msgstr ""
+

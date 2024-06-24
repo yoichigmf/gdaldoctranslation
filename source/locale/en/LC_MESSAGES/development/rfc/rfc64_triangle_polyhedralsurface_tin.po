@@ -1,0 +1,490 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:5
+msgid "RFC 64: Triangle, Polyhedral surface and TIN"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:7
+msgid "Authors: Avyav Kumar Singh, Even Rouault"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:9
+msgid "Contact: avyavkumar at gmail dot com, even.rouault at spatialys.com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:11
+msgid "Status: Adopted, implemented"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:13
+msgid "Implementation version: GDAL 2.2"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:18
+msgid ""
+"As of now, the :cpp:class:`OGRGeometry` class (the base class from which "
+"all the subtypes are derived) is limited to OGRCompoundCurve, "
+"OGRCircularString, OGRLinearRing, OGRMultiLineString, OGRMultiPoint, "
+"OGRMultiPolygon, OGRMultiCurve, OGRSimpleCurve, OGRCurvePolygon and "
+"OGRPolygon."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:24
+msgid ""
+"This RFC addresses the addition of the following new geometries in "
+"OGRGeometry:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:27
+msgid ""
+"Triangle - A subset of polygons, the fundamental difference is that it is"
+" made of 3 nodes only (actually 4, with the last one being the repetition"
+" of the first one) and ONLY ONE exterior boundary and NO interior "
+"polygons."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:31
+msgid "PolyhedralSurface - A 3D figure made exclusively of Polygons."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:32
+msgid ""
+"TriangulatedSurface - A subset of PolyhedralSurface; a 3D figure which "
+"consists exclusively of Triangles."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:36
+msgid "Reference documents"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:38
+msgid ""
+"`OpenGIS Simple Feature Access Part 1 : Common Architecture,v 1.2.1 "
+"<http://portal.opengeospatial.org/files/?artifact_id=25355>`__, a.k.a. "
+"SFA 1.2.1"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:41
+msgid ""
+"`BNF of WKT encoding <https://github.com/postgis/postgis/blob/master/doc"
+"/bnf-wkt.txt>`__: extracted from SQL/MM Part 3"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:44
+msgid ""
+"`BNF of WKB encoding <https://github.com/postgis/postgis/blob/master/doc"
+"/bnf-wkb.txt>`__: extracted from SQL/MM Part 3"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:49
+msgid "Core changes"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:51
+msgid ""
+"The new class hierarchy is the following and is mostly consistent with "
+"SQL/MM Part 3"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:56
+msgid ""
+"Some prelimenary work had already been done prior to this proposal, such "
+"as including the necessary WKB codes in <ogr_core.h>."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:59
+msgid ""
+"Additionally, the `SFCGAL <http://www.sfcgal.org/>`__ library is a new "
+"optional dependency of GDAL (build support only done for Unix for now). "
+"The minimum version tested to build is 1.2.2 (as found in Ubuntu 16.04). "
+"As mentioned in its home page, \"SFCGAL is a C++ wrapper library around "
+"CGAL with the aim of supporting ISO 19107:2013 and OGC Simple Features "
+"Access 1.2 for 3D operations.\" It is mostly used as a potential geometry"
+" backend by PostGIS. It has a C API, that is the one we use."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:67
+msgid ""
+"SFCGAL functions may be used by methods of OGRGeometry (currently "
+"IsValid(), Distance(), ConvexHull(), Intersection(), Union(), "
+"Difference(), SymDifference(), Crosses()), as soon as one of the geometry"
+" operands is a Triangle, PolyhedralSurface or TIN."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:72
+msgid ""
+"Two new OGRGeometry methods are used to convert SFCGAL geometries <-> OGR"
+" geometries."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:80
+msgid ""
+"Besides SFCGAL, GEOS methods are still used in some cases, but with the "
+"following limitations - a Triangle is converted to a Polygon with one "
+"exterior ring; Polyhedral Surfaces and Triangulated Surfaces are "
+"converted to geometry collection of polygons. (each Triangle in a "
+"Triangulated Surface is converted to a Polygon as described previously)"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:86
+msgid "The API for the new geometries introduced includes -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:88
+msgid ""
+"Overwriting existing methods for Polygon in the case of Triangle API. A "
+"complete API is provided below -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:129
+msgid ""
+"The PolyhedralSurface API is derived from OGRSurface. Internally, it uses"
+" an OGRMultiPolygon to store all the Polygons comprising the Polyhedral "
+"Surface. Most of the implementations of the methods just reference "
+"corresponding OGRMultiPolygon methods with checks to ensure that "
+"conditions are maintained."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:200
+msgid ""
+"The Triangulated Surface API is similar to Polyhedral Surface, and the "
+"MultiPolygon class was tweaked slightly to include methods to run which "
+"consisted of subgeometries of the form Triangle. (A MultiPolygon is "
+"strictly a collection of Polygons). These methods are internal to "
+"OGRMultiPolygon and cannot be accessed by a public user. For instance, "
+"the ``OGRMultiPolygon::addGeometryDirectly`` method has a check that the "
+"subgeometry added to it should be of the type POLYGON. Rather than mess "
+"around with the existing function, a new function has been written which "
+"does not implement this check -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:247
+msgid "The Triangulated Surface API is as follows -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:279
+msgid "Geometry types"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:281
+msgid "The new geometry WKB values can be seen as below -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:284
+msgid "Geometry Type"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:284
+msgid "2D"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:284
+msgid "Z"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:284
+msgid "M"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:284
+msgid "ZM"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:286
+msgid "PolyhedralSurface"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:286
+msgid "0015"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:286
+msgid "1015"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:286
+msgid "2015"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:286
+msgid "3015"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:287
+msgid "TIN"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:287
+msgid "0016"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:287
+msgid "1016"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:287
+msgid "2016"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:287
+msgid "3016"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:288
+msgid "Triangle"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:288
+msgid "0017"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:288
+msgid "1017"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:288
+msgid "2017"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:288
+msgid "3017"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:292
+msgid "Geometry conversions"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:294
+msgid ""
+"The OGRGeometryFactory::forceTo() and forceToMultiPolygon() methods have "
+"been enhanced to support conversions between the new geometry types, and "
+"towards multipolygon. Note that converting a TIN or a PolyhedralSurface "
+"into a MultiPolygon is semantically incorrect since a MultiPolygon is "
+"suppose to contain geometries in the same plane, but it might help when "
+"converting those new geometry types into a format that doesn't support "
+"them (and such conversion was for example implicitly done in the reading "
+"side of the shapefile driver previously)"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:304
+msgid "Changes in drivers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:307
+msgid "PostGIS"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:309
+msgid ""
+"No changes done to the driver explicitly, but it has been ensured that PG"
+" <-> OGR compatibility has been maintained. PostGIS 3D functions work on "
+"OGR, simple scripts work, for example from ``autotest/ogr/ogr_pg.py``, we"
+" have -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:324
+msgid "ShapeFile"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:326
+msgid ""
+"Shapefiles have the concept of a \"MultiPatch\" object. The MultiPatch "
+"can be made of several parts, which are"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:329
+msgid ""
+"A TriangleStrip is a linked strip of triangles, where every vertex (after"
+" the first two) completes a new triangle. A new triangle is always formed"
+" by connecting the new vertex with its two immediate predecessors."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:333
+msgid ""
+"A TriangleFan is a linked fan of triangles, where every vertex (after the"
+" first two) completes a new triangle. A new triangle is always formed by "
+"connecting the new vertex with its immediate predecessor and the first "
+"vertex of the part."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:337
+msgid ""
+"Rings (outer ring, inner ring, first ring, \"non-typed\" ring) Up to now "
+"multipatch were read as MultiPolygon. Now, in general, a "
+"GeometryCollection will be returned, with zero or several TIN "
+"corresponding to the TriangleStrip/TriangleFan and zero or one "
+"MultiPolygon with all the rings. If there's only one TIN or one "
+"MultiPolygon, it will be returned as a top-level geometry. The layer type"
+" will be Unknown On writing, the SHPT layer creation option is extended "
+"to recognize the MULTIPATCH value, and the current logic to guess the "
+"shape type from the layer geometry type or the geometry type of the first"
+" feature is extended to support MULTIPATCH. On a MULTIPATCH layer, "
+"geometries of type TIN, POLYHEDRALSURFACE, MULTIPOLYGON or "
+"GEOMETRYCOLLECTION (whose subgeometries are on of the 3 previous types) "
+"are accepted and converted to a MultiPatch object, trying to use "
+"TriangleStrip and TriangleFan if the triangles are in the expected order."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:354
+msgid "FileGDB, OpenFileGDB"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:356
+msgid ""
+"The FileGDB format support the MultiPatch object as well, with one "
+"extension. There is a new type of part, which is made of several "
+"triangles whose organization is not TriangleStrip or TriangleFan. Both "
+"drivers have been upgraded to work like the ShapeFile driver on the "
+"reading side. On the writing side, the FileGDB driver will automatically "
+"write a MultiPatch if the layer geometry type is TIN or "
+"PolyhedralSurface. The layer option that existed before "
+"CREATE_MULTIPATCH=YES can still be used to force writing as MultiPatch"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:366
+msgid "GML"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:368
+msgid ""
+"The GML driver has been modified for both input and output -> Triangle, "
+"PolyhedralSurface and TriangulatedSurface are capable of being "
+"read/written from/to a GML document. Sample examples include -"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:417
+msgid ""
+"Note that on the writing side those geometries are only generated for a "
+"GML 3 output."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:421
+msgid "DXF"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:423
+msgid ""
+"The changes in the DXF driver include converting a PolyFaceMesh (a "
+"subtype of PolyLine) to PolyhedralSurface. This is illustrated by a bug "
+"on the GDAL trac - `https://trac.osgeo.org/gdal/ticket/6246 "
+"<https://trac.osgeo.org/gdal/ticket/6246>`__. A PolyFace Mesh consists of"
+" points defined initially using specific codes, then these points are "
+"described as part of a polygon (a polygon can have four points at the "
+"maximum). Reading the PolyFace Mesh is supported in OGR as of now, but "
+"write support for it as well (though not implemented by me in this "
+"changeset) should be possible as well now."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:434
+msgid "GeoPackage"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:436
+msgid ""
+"The GeoPackage specification supports [Multi]Point, [Multi]LineString, "
+"[Multi]Polygon and GeometryCollection in its core. Curve geometry types "
+"are mentioned as a registered extension. But Triangle, PolyhedralSurface "
+"or TIN are not mentioned at all. However the GeoPackage geometry blob "
+"format being based on ISO WKB, support for the new geometry types did not"
+" really require new code. Hence we have kepts this possibility of "
+"reading/writing the 3 new geometry types, but with a warning emitted that"
+" a non-standard extension will be used on the writing side."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:447
+msgid "Other drivers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:449
+msgid ""
+"The CSV, VRT, PGDump, SQLite (but not Spatialite) drivers support the new"
+" geometry types. A couple of drivers have been modified, so as not to "
+"crash on the writing side when being provided with the new geometry "
+"types. Besides the previously mentioned drivers, the following drivers "
+"have been verified to not crash (but potentially error out, or skip "
+"unrecognized geometries): MySQL, OCI, KML, LIBKML, GeoJSON, MapInfo"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:457
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:459
+msgid "Using standard Doxygen documentation procedure."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:462
+msgid "Compatibility"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:464
+msgid ""
+"Many applications will not be able to properly deal with the new geometry"
+" types that may now be returned by some drivers. In GDAL 2.1, the new "
+"types were introduced mentioning that they might be returned by GDAL in "
+"the future. Code should either skip the new geometries, deal with them "
+"properly or use the OGR_G_ForceTo() function to convert to a geometry "
+"type it supports."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:472
+msgid "Testing"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:474
+msgid ""
+"Very few changes have been made so that the existing autotest suite still"
+" passes. New geometry classes and conversion methods has been added to "
+"ogr_geom.py and ogr_gml_geom.py. Updated drivers have received new tests "
+"also."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:480
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:482
+msgid ""
+"Done by Avyav Kumar Singh, under the Google Summer of Code 2016 program, "
+"and fine tuned / extended / integrated by Even Rouault."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:485
+msgid ""
+"The proposed implementation lies in the \"gsoc-triangle-ps-tin-rebased\" "
+"branch of the `https://github.com/rouault/gdal2/tree/gsoc-triangle-ps-"
+"tin-rebased <https://github.com/rouault/gdal2/tree/gsoc-triangle-ps-tin-"
+"rebased>`__ repository."
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:491
+msgid "Voting history"
+msgstr ""
+
+#: ../../source/development/rfc/rfc64_triangle_polyhedralsurface_tin.rst:493
+msgid "+1 from JukkaR, DanielM, HowardB and EvenR"
+msgstr ""
+

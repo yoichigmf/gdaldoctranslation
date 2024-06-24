@@ -1,0 +1,159 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/tutorials/gnm_api_tut.rst:5
+msgid "GNM API tutorial"
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:9
+msgid ""
+"This document is intended to describe using the GNM C++ classes to work "
+"with networks. It is advised to read the :ref:`gnm_data_model` before to "
+"understand the purpose and structure of GNM classes."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:12
+msgid "Managing networks"
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:14
+msgid ""
+"In the first example we will create a small water network on the base of "
+"the set of spatial data (two shapefiles: pipes and wells which are "
+"situated at the GDAL source tree: autotest\\\\gnm\\\\data). The use of "
+"the common network format - :cpp:class:`GNMGdalNetwork` class - will "
+"allow us to select one of the GDAL-supported vector formats for our "
+"network - ESRI Shapefile. After the creation we will build a topology and"
+" add some additional data: pumps layer, in order to manually edit network"
+" topology."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:16
+msgid ""
+"Initially we register GDAL drivers and create some options (string "
+"pairs), which will be passed as parameters during network creation. Here "
+"we create a network's name."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:33
+msgid ""
+"Some options are obligatory. The following parameters must be specified "
+"during the network creation: the path/name; format of network storage; "
+"spatial reference system (EPSG, WKT, etc.). The according dataset with "
+"the \"network part\" will be created and the resulting network will be "
+"returned."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:43
+msgid ""
+"For now we have a void network consisted of only \"system layers\". We "
+"need to populate it with \"class layers\" full of features, so we open a "
+"certain foreign dataset and copy layers from it to our network. Note, "
+"that we use GDALDataset:: methods for working with \"class layers\", "
+"because :cpp:class:`GNMNetwork` inherited from GDALDataset."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:58
+msgid ""
+"After the successful copying we have the network full of features, but "
+"with no topology. The features were added and registered in the network "
+"but they are still not connected with each other. Now it is time to build"
+" the network topology. There are two ways of doing this in GNM: manually "
+"or automatically. In the most cases automatic building is more "
+"convenient, while manual is useful for small editings. Automatic building"
+" requires some parameters: we must specify which \"class layers\" will "
+"participate in topology building (we select our two layers), a snap "
+"tolerance, direct and inverse cost, direction, which is equal 0.00005 in "
+"our case. If the building will be successful the network's graph will be "
+"filled with the according connections."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:81
+msgid ""
+"At this point we have a ready network with topological and spatial data, "
+"which can be used now for different purposes (analysis, converting into "
+"different formats, etc). But sometimes it is necessary to modify some "
+"network's data. For example we need to add additional features and attach"
+" them to our built topology (modify topology). We create a new \"class "
+"layer\" in the network and add one feature to it."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:114
+msgid ""
+"After the successful creation the feature will be registered in the "
+"network and we can connect it with others. There can be two possible ways"
+" to do this. In the first case we need a real feature which will be an "
+"edge in the connection, while in the second case we do not need such "
+"feature, and passing -1 into the "
+":cpp:func:`GNMGenericNetwork::ConnectFeatures` method means that the "
+"special system edge will be created for this connection and added to the "
+"graph automatically. In our case we had added only one point feature and "
+"we have not got the line one to be an edge, so we will use the "
+"\"virtual\" connection. We pass the GFID of our point as the source, the "
+"GFID of one of the existed features as the target and -1 as the "
+"connector. Note that we also set the costs (direct and inverse) and the "
+"direction of our edge manually and these values will be written to the "
+"graph. When we used the automatic connection (which also uses "
+"ConnectFeatures() internally) such vales were set automatically according"
+" to the rule which we also set before."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:124
+msgid ""
+"After all we correctly close the network which frees the allocated "
+"resources."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:131
+#: ../../source/tutorials/gnm_api_tut.rst:299
+msgid "All in one block:"
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:237
+msgid "Analysing networks"
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:239
+msgid ""
+"In the second example we will analyse the network which we have built in "
+"the first example. We will calculate the shortest path between two points"
+" via Dijkstra algorithm performing the feature blockings and saving the "
+"resulting path into the file."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:241
+msgid "Initially we open our network, passing the path to its Shapefile dataset."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:259
+msgid ""
+"Before any calculations we open the dataset which will hold the layer "
+"with the resulting path."
+msgstr ""
+
+#: ../../source/tutorials/gnm_api_tut.rst:275
+msgid ""
+"Finally we use the Dijkstra shortest path method to calculations. This "
+"path will be found passing over the blocked feature and saved into "
+"internal memory OGRLayer, which we copy to the real dataset. Now it can "
+"be visualized by GIS."
+msgstr ""
+

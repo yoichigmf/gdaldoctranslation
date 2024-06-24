@@ -1,0 +1,214 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:5
+msgid "RFC 35: Delete, reorder and alter field definitions of OGR layers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:7
+msgid "Authors: Even Rouault"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:9
+msgid "Contact: even dot rouault at spatialys.com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:11
+msgid "Status: Adopted"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:16
+msgid ""
+"This document proposes changes in OGR to add the capability to delete "
+"fields, reorder fields and alter field definitions, in OGR layer "
+"definitions."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:21
+msgid "Rationale"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:23
+msgid ""
+"Currently, an OGR layer definition can only be altered to add a new field"
+" definition with OGRLayer::CreateField()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:26
+msgid ""
+"It is desirable to extend OGR capabilities to be able to delete, reorder "
+"and alter field definitions of existing layers. Such wish has been "
+"expressed in ticket #2671 and comes back regularly on QGIS mailing list "
+"(e.g. `http://lists.osgeo.org/pipermail/qgis-user/2011-May/011935.html "
+"<http://lists.osgeo.org/pipermail/qgis-user/2011-May/011935.html>`__). "
+"QGIS currently has a \"Table Manager\" extension to work around the lack "
+"of DeleteField(), so a proper solution is clearly needed."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:35
+msgid "Planned Changes"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:37
+msgid "The OGRLayer class will be extended with the following methods :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:48
+msgid "The documentation of those new methods is :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:183
+msgid "Three new layer capabilities are added :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:196
+msgid "The new methods are mapped to the C API :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:205
+msgid ""
+"For the purpose of the implementation, new methods are also added to the "
+"OGRFeatureDefn class :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:213
+msgid ""
+"A OGRErr OGRCheckPermutation(int\\* panPermutation, int nSize) function "
+"is added to ogrutils.cpp to check that the array is a permutation of "
+"[0,nSize-1]. It is used by OGRFeatureDefn::ReorderFieldDefns() and can be"
+" used by all drivers implementing OGRLayer::ReorderFields() to validate "
+"the panMap argument."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:220
+msgid "Altering field types"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:222
+msgid ""
+"This RFC does not attempt to guarantee which type conversions will be "
+"possible. It will depend on the capabilities of the implementing drivers."
+" For example, for database drivers, the operation will be directly done "
+"on the server side (through a 'ALTER TABLE my_table ALTER COLUMN "
+"my_column TYPE new_type' command for the PG driver). So some conversions "
+"might be possible, others not..."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:229
+msgid ""
+"It is however expected that converting from any type to OFTString will be"
+" supported in most cases when AlterFieldDefn() is supported."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:232
+msgid ""
+"Drivers that don't support a conversion and that were required to do it "
+"(ALTER_TYPE_FLAG set and new_type != old_type) should emit an explicit "
+"error."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:237
+msgid "Compatibility Issues"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:239
+msgid "None"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:242
+msgid "Changed drivers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:244
+msgid ""
+"The shapefile driver will implement DeleteField(), ReorderFields() and "
+"AlterFieldDefn(). Shapelib will be extended with DBFReorderFields() and "
+"DBFAlterFieldDefn()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:248
+msgid ""
+"Note: The implementation of AlterFieldDefn() in the Shapefile driver does"
+" not support altering the field type, except when converting to "
+"OFTString. It will not reformat numeric values of existing features if "
+"width or precision are changed. However, appropriate field truncation or "
+"expansion will occur if the width is altered."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:254
+msgid ""
+"Other drivers, mainly database drivers (PG, MySQL, SQLite), could be "
+"easily extended to implement the new API by issuing the appropriate SQL "
+"command (ALTER TABLE foo DROP COLUMN bar, ALTER TABLE foo ALTER COLUMN "
+"bar, ...). The implementation of DeleteField() and AlterFieldDefn() in "
+"the PG driver is indeed planned, provided this RFC is adopted. The Memory"
+" driver will also updated to support DeleteField(), ReorderFields() and "
+"AlterFieldDefn()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:263
+msgid "SWIG bindings"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:265
+msgid ""
+"DeleteField(), ReorderField(), ReorderFields() and AlterFieldDefn() will "
+"be mapped to SWIG."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:269
+msgid "Test Suite"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:271
+msgid ""
+"The autotest suite will be extended to test the implementation of the new"
+" API for the Shapefile driver. An example of the use of the new API is "
+"attached to ticket #2671 (`rfc35_test.py "
+"<http://trac.osgeo.org/gdal/attachment/ticket/2671/rfc35_test.py>`__) and"
+" will be turned into unit tests."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:278
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:280
+msgid ""
+"Implementation will be done by Even Rouault in GDAL/OGR trunk. Changes in"
+" Shapelib will need to be pushed into upstream CVS by a Shapelib "
+"committer. The proposed implementation is attached as a patch in ticket "
+"#2671 (`rfc35_v3.patch "
+"<http://trac.osgeo.org/gdal/attachment/ticket/2671/rfc35_v3.patch>`__)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:287
+msgid "Voting history"
+msgstr ""
+
+#: ../../source/development/rfc/rfc35_deletereorderalterfielddefn.rst:289
+msgid "+1 from FrankW, DanielM, HowardB, TamasS and EvenR"
+msgstr ""
+

@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/osgeo.gdal_array.rst:2
+msgid "osgeo.gdal\\_array module"
+msgstr ""
+
+#~ msgid ""
+#~ "Pure python implementation of reading a"
+#~ " chunk of a GDAL file into a"
+#~ " numpy array.  Used by the "
+#~ "gdal.Band.ReadAsArray method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pure python implementation of writing a"
+#~ " chunk of a GDAL file from a"
+#~ " numpy array.  Used by the "
+#~ "gdal.Band.WriteArray method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Copy georeferencing information and metadata"
+#~ " from one dataset to another. src:"
+#~ " input dataset dst: output dataset -"
+#~ " It can be a ROI - xoff, "
+#~ "yoff:  dst's offset with respect to "
+#~ "src in pixel/line."
+#~ msgstr ""
+
+#~ msgid "Notes: Destination dataset must have update access.  Certain formats"
+#~ msgstr ""
+
+#~ msgid "do not support creation of geotransforms and/or gcps."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pure python implementation of reading a"
+#~ " chunk of a GDAL file into a"
+#~ " numpy array.  Used by the "
+#~ "gdal.Dataset.ReadAsArray method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pure python implementation of writing a"
+#~ " chunk of a GDAL file from a"
+#~ " numpy array.  Used by the "
+#~ "gdal.Dataset.WriteArray method."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pure Python implementation of reading a"
+#~ " chunk of the RAT into a numpy"
+#~ " array. Called from "
+#~ "RasterAttributeTable.ReadAsArray"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Pure Python implementation of writing a"
+#~ " chunk of the RAT from a numpy"
+#~ " array. Type of array is coerced "
+#~ "to one of the types (int, double,"
+#~ " string) supported. Called from "
+#~ "RasterAttributeTable.WriteArray"
+#~ msgstr ""
+
+#~ msgid "ベースクラス: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ CPLVirtualMemShadow class."
+#~ msgstr ""
+
+#~ msgid "The membership flag"
+#~ msgstr ""
+

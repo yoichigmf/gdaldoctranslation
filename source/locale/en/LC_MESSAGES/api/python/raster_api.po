@@ -1,0 +1,236 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/raster_api.rst:4
+msgid "Python Raster API"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:6
+msgid ""
+"This page contains classes, methods, functions that relate to the GDAL "
+":ref:`raster_data_model`:"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:8
+msgid "`Driver`_"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:9
+msgid "`Dataset`_"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:10
+msgid "`Band`_"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:11
+msgid "`Other`_"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:16
+msgid "Driver"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:36
+msgid "Dataset"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:50
+msgid "Band"
+msgstr ""
+
+#: ../../source/api/python/raster_api.rst:62
+msgid "Other"
+msgstr ""
+
+#~ msgid "Proxy of C++ GDALDriverShadow class."
+#~ msgstr ""
+
+#~ msgid "p.q(const).char"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "HelpTopic"
+#~ msgstr ""
+
+#~ msgid "LongName"
+#~ msgstr ""
+
+#~ msgid "ShortName"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALDatasetShadow class."
+#~ msgstr ""
+
+#~ msgid "Deletes the layer given an index or layer name"
+#~ msgstr ""
+
+#~ msgid "Return the layer given an index or a name"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Return a NumPy array for the "
+#~ "dataset, seen as a virtual memory "
+#~ "mapping with a tile organization. If "
+#~ "there are several bands and "
+#~ "tile_organization = gdal.GTO_TIP, an element"
+#~ " is accessed with "
+#~ "array[tiley][tilex][y][x][band]. If there are "
+#~ "several bands and tile_organization = "
+#~ "gdal.GTO_BIT, an element is accessed "
+#~ "with array[tiley][tilex][band][y][x]. If there "
+#~ "are several bands and tile_organization "
+#~ "= gdal.GTO_BSQ, an element is accessed"
+#~ " with array[band][tiley][tilex][y][x]. If there"
+#~ " is only one band, an element "
+#~ "is accessed with array[tiley][tilex][y][x]. "
+#~ "Any reference to the array must be"
+#~ " dropped before the last reference to"
+#~ " the related dataset is also dropped."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Return a NumPy array for the "
+#~ "dataset, seen as a virtual memory "
+#~ "mapping. If there are several bands "
+#~ "and band_sequential = True, an element"
+#~ " is accessed with array[band][y][x]. If "
+#~ "there are several bands and "
+#~ "band_sequential = False, an element is"
+#~ " accessed with array[y][x][band]. If there"
+#~ " is only one band, an element "
+#~ "is accessed with array[y][x]. Any "
+#~ "reference to the array must be "
+#~ "dropped before the last reference to "
+#~ "the related dataset is also dropped."
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "RasterCount"
+#~ msgstr ""
+
+#~ msgid "RasterXSize"
+#~ msgstr ""
+
+#~ msgid "RasterYSize"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Reading a chunk of a GDAL band "
+#~ "into a numpy array. The optional "
+#~ "(buf_xsize,buf_ysize,buf_type) parameters should "
+#~ "generally not be specified if buf_obj"
+#~ " is specified. The array is returned"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALRasterBandShadow class."
+#~ msgstr ""
+
+#~ msgid "GDALDataType"
+#~ msgstr ""
+
+#~ msgid "DataType"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Return a NumPy array for the band,"
+#~ " seen as a virtual memory mapping "
+#~ "with a tile organization. An element "
+#~ "is accessed with array[tiley][tilex][y][x]. "
+#~ "Any reference to the array must be"
+#~ " dropped before the last reference to"
+#~ " the related dataset is also dropped."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Return a NumPy array for the band,"
+#~ " seen as a virtual memory mapping."
+#~ " An element is accessed with "
+#~ "array[y][x]. Any reference to the array"
+#~ " must be dropped before the last "
+#~ "reference to the related dataset is "
+#~ "also dropped."
+#~ msgstr ""
+
+#~ msgid "XSize"
+#~ msgstr ""
+
+#~ msgid "YSize"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALRasterAttributeTableShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALColorTableShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALColorEntry class."
+#~ msgstr ""
+
+#~ msgid "short"
+#~ msgstr ""
+
+#~ msgid "c1"
+#~ msgstr ""
+
+#~ msgid "c2"
+#~ msgstr ""
+
+#~ msgid "c3"
+#~ msgstr ""
+
+#~ msgid "c4"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDAL_GCP class."
+#~ msgstr ""
+
+#~ msgid "double"
+#~ msgstr ""
+
+#~ msgid "GCPLine"
+#~ msgstr ""
+
+#~ msgid "GCPPixel"
+#~ msgstr ""
+
+#~ msgid "GCPX"
+#~ msgstr ""
+
+#~ msgid "GCPY"
+#~ msgstr ""
+
+#~ msgid "GCPZ"
+#~ msgstr ""
+
+#~ msgid "p.char"
+#~ msgstr ""
+
+#~ msgid "Id"
+#~ msgstr ""
+
+#~ msgid "Info"
+#~ msgstr ""
+

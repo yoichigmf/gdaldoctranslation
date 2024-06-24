@@ -1,0 +1,113 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/dds.rst:5
+msgid "DDS -- DirectDraw Surface"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:11
+msgid ""
+"The DirectDraw Surface file format (uses the filename extension DDS), "
+"from Microsoft, is a standard for storing data compressed with the lossy "
+"S3 Texture Compression (S3TC) algorithm. The DDS format and compression "
+"are provided by the crunch library."
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:17
+msgid ""
+"Support for reading has been added in GDAL 3.1. Previous versions have "
+"write-only support."
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:20
+msgid ""
+"The driver supports the following texture formats: DXT1, DXT1A, DXT3 "
+"(default), DXT5 and ETC1. You can set the texture format using the "
+"creation option FORMAT."
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:24
+msgid ""
+"The driver supports the following compression quality: SUPERFAST, FAST, "
+"NORMAL (default), BETTER and UBER. You can set the compression quality "
+"using the creation option QUALITY."
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:28
+msgid ""
+"More information about `Crunch Lib "
+"<https://github.com/BinomialLLC/crunch>`__ (see below for build "
+"instructions of a working fork of that repository)"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:31
+msgid "NOTE: Implemented as :source_file:`frmts/dds/ddsdataset.cpp`."
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:34
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:40
+msgid "Build instructions"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:42
+msgid ""
+"Building crunch can be a bit difficult. The `build_fixes` branch of "
+"https://github.com/rouault/crunch/ includes a CMake build system, as well"
+" as a few fixes that are not found in the upstream repository"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:47
+msgid "Build crunch"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:50
+#: ../../source/drivers/raster/dds.rst:77
+msgid "Linux"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:62
+#: ../../source/drivers/raster/dds.rst:84
+msgid "Windows"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:74
+msgid "Build GDAL against crunch"
+msgstr ""
+
+#: ../../source/drivers/raster/dds.rst:86
+msgid "In nmake.local, add the following lines:"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "DDS"
+#~ msgstr ""
+
+#~ msgid "Build dependencies"
+#~ msgstr ""
+
+#~ msgid "Crunch Lib"
+#~ msgstr ""
+

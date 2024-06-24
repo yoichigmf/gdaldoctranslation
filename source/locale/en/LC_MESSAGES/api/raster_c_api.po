@@ -1,0 +1,130 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/raster_c_api.rst:5
+msgid "gdal.h: Raster C API"
+msgstr ""
+
+#~ msgid "Defines"
+#~ msgstr ""
+
+#~ msgid "Typedefs"
+#~ msgstr ""
+
+#~ msgid "Param pszFuncName"
+#~ msgstr ""
+
+#~ msgid "Param pUserData"
+#~ msgstr ""
+
+#~ msgid "Param papszFunctionArgs"
+#~ msgstr ""
+
+#~ msgid "Param nInBands"
+#~ msgstr ""
+
+#~ msgid "Param eInDT"
+#~ msgstr ""
+
+#~ msgid "Param padfInNoData"
+#~ msgstr ""
+
+#~ msgid "Param pnOutBands"
+#~ msgstr ""
+
+#~ msgid "Param peOutDT"
+#~ msgstr ""
+
+#~ msgid "Param ppadfOutNoData"
+#~ msgstr ""
+
+#~ msgid "Param pszVRTPath"
+#~ msgstr ""
+
+#~ msgid "Param ppWorkingData"
+#~ msgstr ""
+
+#~ msgid "Return"
+#~ msgstr ""
+
+#~ msgid "Param pWorkingData"
+#~ msgstr ""
+
+#~ msgid "Param nBufXSize"
+#~ msgstr ""
+
+#~ msgid "Param nBufYSize"
+#~ msgstr ""
+
+#~ msgid "Param pInBuffer"
+#~ msgstr ""
+
+#~ msgid "Param nInBufferSize"
+#~ msgstr ""
+
+#~ msgid "Param pOutBuffer"
+#~ msgstr ""
+
+#~ msgid "Param nOutBufferSize"
+#~ msgstr ""
+
+#~ msgid "Param eOutDT"
+#~ msgstr ""
+
+#~ msgid "Param nOutBands"
+#~ msgstr ""
+
+#~ msgid "Param padfOutNoData"
+#~ msgstr ""
+
+#~ msgid "Param dfSrcXOff"
+#~ msgstr ""
+
+#~ msgid "Param dfSrcYOff"
+#~ msgstr ""
+
+#~ msgid "Param dfSrcXSize"
+#~ msgstr ""
+
+#~ msgid "Param dfSrcYSize"
+#~ msgstr ""
+
+#~ msgid "Param adfSrcGT"
+#~ msgstr ""
+
+#~ msgid "Param papszExtra"
+#~ msgstr ""
+
+#~ msgid "Enums"
+#~ msgstr ""
+
+#~ msgid "Functions"
+#~ msgstr ""
+
+#~ msgid "パラメータ"
+#~ msgstr ""
+
+#~ msgid "戻り値"
+#~ msgstr ""
+
+#~ msgid "Public Members"
+#~ msgstr ""
+

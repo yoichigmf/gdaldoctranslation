@@ -1,0 +1,470 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:5
+msgid "RFC 96: Deferred C++ plugin loading"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:8
+msgid "Author:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:8
+msgid "Even Rouault"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:9
+msgid "Contact:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:9
+msgid "even.rouault @ spatialys.com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:10
+msgid "Started:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:10
+msgid "2023-Nov-01"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:11
+msgid "Status:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:11
+msgid "Adopted, implemented"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:12
+msgid "Target:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:12
+msgid "GDAL 3.9"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:16
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:18
+msgid ""
+"This RFC adds a mechanism to defer the loading of C++ plugin drivers to "
+"the point where their executable code is actually needed, and converts a "
+"number of relevant drivers to use that mechanism. The aim is to allow for"
+" more modular GDAL builds, while improving the performance of plugin "
+"loading."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:23
+msgid ""
+"It mostly targets in-tree plugin drivers, but it also provides a way for "
+"out-of-tree plugin drivers to benefit from deferred loading capabilities,"
+" provided libgdal is built in a specific way"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:28
+msgid "Context and motivation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:30
+msgid "There are currently two ways of loading a GDAL C++ driver:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:32
+msgid ""
+"embedded in the core libgdal library. This is the default behavior for "
+"drivers in the official GDAL source repository."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:35
+msgid ""
+"available in a shared library (.so, .dll, .dylib) in a directory where it"
+" is dynamically loaded when GDALAllRegister() is called. This is what "
+"out-of-tree drivers use, or in-tree drivers if enabling the "
+"[GDAL|OGR]_ENABLE_DRIVER_FOO_PLUGIN=ON or GDAL_ENABLE_PLUGINS=ON CMake "
+"options (cf https://gdal.org/development/building_from_source.html#build-"
+"drivers-as-plugins) to build them as plugins."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:42
+msgid ""
+"For packagers/distributors, the second option is convenient for in-tree "
+"drivers that depend on external libraries that are big and/or have a big "
+"number of dependencies (libparquet, etc) and that would substantially "
+"increase the size of the core libgdal library, or which have licenses "
+"more restrictive than the MIT license used by libgdal."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:48
+msgid ""
+"However, there is a penalty at GDALAllRegister() time. For example, on "
+"Linux, it takes ~ 300 ms to complete for a build with 126 plugins, which "
+"is a substantial time for short lived GDAL-based processes (for example a"
+" script which would run gdalinfo or ogrinfo on many files). This time is "
+"entirely spent in the dlopen() method of the operating system and there "
+"is, to the best of our knowledge, nothing we can do to reduce it... "
+"besides limiting the amount of dynamic loading (attempts have been made "
+"to load plugins in parallel in multiple threads, but this does not "
+"improve total loading time) For developers, that plugin loading phase is "
+"actually considerably slower, of the order of ten seconds or more, when "
+"debugging GDAL under GDB with many plugin drivers."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:60
+msgid ""
+"Furthermore, loading drivers that are not needed also involves some "
+"startup/teardown code of external libraries to be run, as well as more "
+"virtual memory to be consumed. Hence this proposal of deferring the "
+"actual loading of the shared library of the plugins until it is really "
+"needed."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:66
+msgid "Design constraints"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:68
+msgid "We want the new mechanism to be opt-in and fully backwards compatible:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:70
+msgid "to still allow out-of-tree drivers."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:72
+msgid ""
+"to still allow in-tree drivers, that are compatible of being built as "
+"plugins, to be built in libgdal core, or as plugins depending on the "
+"CMake variables."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:75
+msgid "to progressively convert existing in-tree drivers to use it."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:77
+msgid ""
+"to provide the capability to out-of-tree drivers to optionally benefit "
+"from the new capability, provided they build GDAL with the code needed to"
+" declared a plugin proxy driver."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:82
+msgid "Details"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:84
+msgid ""
+"The main idea if that drivers using the new capability will register a "
+"proxy driver (of type GDALPluginDriverProxy, or extending it) with a new "
+"GDALDriverManager::DeclareDeferredPluginDriver() method."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:134
+msgid ""
+"The proxy driver uses the metadata items that have been set on it to "
+"declare a minimum set of capabilities (GDAL_DCAP_RASTER, "
+"GDAL_DCAP_MULTIDIM_RASTER, GDAL_DCAP_VECTOR, GDAL_DCAP_OPEN, etc.) to "
+"which it can answer directly, and which are the ones used by GDALOpen() "
+"to open a dataset. For other metadata items, it will fallback to loading "
+"the actual driver and forward the requests to it."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:152
+msgid ""
+"DeclareDeferredPluginDriver() method will also keep track of the plugin "
+"filename to avoid automatically loading it in the "
+"GDALDriverManager::AutoLoadDrivers() method (that method will only load "
+"out-of-tree drivers or in-tree drivers that have not been converted to "
+"use DeclareDeferredPluginDriver())."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:157
+msgid ""
+"The main point is that drivers set the Identify() method on the proxy "
+"driver. That Identify() method must be compiled in libgdal itself, and "
+"thus be defined in a C++ file that does not depend on any external "
+"library. Similarly for the GetSubdatasetInfoFunc() optional method."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:162
+msgid ""
+"When loading the actual driver, the "
+"GDALPluginDriverProxy::GetRealDriver() method will check that all "
+"information set in its metadata is consistent with the actual metadata of"
+" the underlying driver, and will warn when there are differences."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:167
+msgid ""
+"GDALDataset::Open(), Create(), CreateCopy() methods are modified to not "
+"use directly the pfnOpen, pfnCreate, pfnCreateCopy callbacks (that would "
+"be the ones of the proxy driver, and thus nullptr), but to call new "
+"GetOpenCallback()/ GetCreateCallback()/GetCreateCopyCallback() methods "
+"that the GDALProxyDriver class overloads to return the function pointers "
+"of the real driver, once it has loaded it."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:174
+msgid ""
+"The DeclareDeferredPluginDriver() method checks if the file of the plugin"
+" exists before registering it. If it is not available, a CPLDebug() "
+"message is emitted. This allows to build a \"universal\" core libgdal, "
+"with plugins that can be optionally available at runtime."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:179
+msgid ""
+"Cherry-on-the-cake: GDALOpen() will given an explicit error message if it"
+" identifies a dataset to a plugin that is not available at runtime. "
+"Example::"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:188
+msgid ""
+"For each driver supporting deferred plugin loading, GDALAllRegister() "
+"must be modified to call a driver-specific function that calls "
+"GDALDriverManager::DeclareDeferredPluginDriver() (see example in below "
+"paragraph). This code path is enabled only when the driver is built as "
+"plugin."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:196
+msgid "Example of changes to do on a simplified driver"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:198
+msgid ""
+"In the :file:`CMakeLists.txt` file of a driver, the new option "
+"CORE_SOURCES can be passed to ``add_gdal_driver()`` to define source "
+"file(s) that must be built in libgdal, even when the driver is built as a"
+" plugin."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:214
+msgid "A typical :file:`mydrivercore.h`` header will declare the identify method:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:227
+msgid ""
+"And :file:`mydrivercore.cpp` will contain the implementation of the "
+"identify method, a ``FOODriverSetCommonMetadata()`` method (with most of "
+"the content of the normal driver registration method, except for function"
+" pointers such as pfnOpen, pfnCreate, pfnCreateCopy or "
+"pfnCreateMultiDimensional), as well as a ``DeclareDeferredXXXPlugin()`` "
+"method that will be called by GDALAllRegister() when the driver is built "
+"as a plugin (the PLUGIN_FILENAME macro is automatically set by the CMake "
+"scripts with the filename of the plugin, e.g. \"gdal_FOO.so\"):"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:268
+msgid ""
+"The GDALRegisterFoo() method itself, which is defined in the plugin code,"
+" calls ``FOODriverSetCommonMetadata``, and defines the pfnOpen, "
+"pfnCreate, pfnCreateCopy, pfnCreateMultiDimensional callbacks when they "
+"exist:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:290
+msgid "The modified :file:`gdalallregister.cpp` file will look like:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:315
+msgid "Out-of-tree deferred loaded plugins"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:317
+msgid ""
+"Out-of-tree drivers can also benefit from the deferred loading "
+"capability, provided libgdal is built with CMake variable(s) pointing to "
+"external code containing the code for registering a proxy driver."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:321
+msgid "This can be done with the following CMake option:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:325
+msgid ""
+"The pointed file must declare a ``void "
+"DeclareDeferred<driver_name>(void)`` method with C linkage that takes "
+"care of creating a GDALPluginDriverProxy instance and calling "
+"GDALDriverManager::DeclareDeferredPluginDriver() on it."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:330
+msgid "Limitations"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:332
+msgid ""
+"One could imagine a further enhancement for out-of-tree plugins where "
+"they would be accompanied by a sidecar text file that would for example "
+"declare the driver capabilities, as well as a limited implementation of "
+"the identify method as a regular expression. But that is out-of-scope of "
+"this RFC."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:338
+msgid ""
+"Changes in the loading of OGR Python drivers (see :ref:`rfc-76`) are also"
+" out-of-scope of this RFC (they will continue to be loaded at "
+":cpp:func:`GDALAllRegister` time)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:343
+msgid "Candidate implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:345
+msgid ""
+"A candidate implementation has been started to implement all the core "
+"mechanism, and convert the Parquet, netCDF and HDF5 drivers. The HDF5 "
+"plugin is actually a good stress test for the deferred loading mechanism,"
+" since it incorporates 4 drivers (HDF5, HDF5Image, BAG and S102) in the "
+"same shared object. The plan is to update progressively all in-tree "
+"drivers that depend on third-party libraries (that is the one that are "
+"built as plugins when setting the GDAL_ENABLE_PLUGINS=YES CMake options)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:353
+msgid ""
+"Tests have also been done with QGIS (with the changes at "
+"https://github.com/qgis/QGIS/pull/55115) to check that the declared set "
+"of metadata items in GDALPluginDriverFeatures is sufficient to avoid "
+"loading of the actual drivers at QGIS startup (they are only loaded when "
+"a dataset of the format handled by the driver is identified)"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:360
+msgid "Backward compatibility"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:362
+msgid "Expected to be backward compatible for most practical purposes."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:364
+msgid ""
+"Drivers that would request a driver instance with GDALGetDriverByName() "
+"may now get a GDALPluginDriverProxy instance instead of the \"real\" "
+"driver instance. This is usually not an issue as few drivers subclass "
+"GDALDriver, but that issue was hit on the PostGISRasterDriver that did "
+"subclass it. The solution was to store the real PostGISRasterDriver "
+"instance when it is built in a global variable, and use that global "
+"variable instead of the one returned by GDALGetDriverByName()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:371
+msgid ""
+"Another potential issue is that if external code would directly use the "
+"pfnOpen, pfnCreate, pfnCreateCopy, etc. function pointers of a GDALDriver"
+" instance, it would see them null before the actual driver is loading, "
+"but direct access to those function pointers has never been documented "
+"(instead users should use GDALOpen(), GDALCreate(), GDALCreateCopy() "
+"etc), and is not expected to be done by code external to libgdal core."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:378
+msgid ""
+"However, the candidate implementation hits an issue with the way the GDAL"
+" CondaForge builds work currently. At time of writing, the GDAL "
+"CondaForge build recipee does:"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:382
+msgid ""
+"a regular GDAL build without Arrow/Parquet dependency (and thus without "
+"the driver), whose libgdal.so goes in to the libgdal package."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:384
+msgid "installs libarrow and libparquet"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:385
+msgid ""
+"does an incremental GDAL build with -DOGR_ENABLE_DRIVER_FOO_PLUGIN=ON to "
+"generate ogr_Arrow.so and ogr_Parquet.so. However with the above new "
+"mechanism, this will result in libgdal to be modified to have a "
+"DeclareDeferredOGRParquetPlugin function, as well as including the "
+"identification method of the Parquet plugin. But that modified libgdal.so"
+" is discarded currently, and the ogr_Parquet.so plugin then depends on a "
+"identify method that is not implemented."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:392
+msgid ""
+"The initial idea was that the build recipee would have to be modified to "
+"produce all artifacts (libgdal.so and libparquet.so) at a single time, "
+"and dispatch them appropriately in libgdal and libgdal-arrow-parquet "
+"packages, rather than doing two builds. However, CondaForge builds "
+"support several libarrow versions, and produce thus different "
+"Arrow/Parquet plugins, so this approach would not be practical."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:399
+msgid ""
+"To solve this, the following idea has been implemented. Extract from the "
+"updated :ref:`building_from_source` document::"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:479
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:481
+msgid ""
+":ref:`raster_driver_tut` and :ref:`vector_driver_tut` will be updated to "
+"point to this RFC. :ref:`building_from_source` will receive the new "
+"paragraph mentioned above."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:486
+msgid "Testing"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:488
+msgid ""
+"A C++ test will be added testing that for one of the updated drivers, the"
+" plugin is loaded in a deferred way in situations where this is expected,"
+" and is not loaded in other situations."
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:493
+msgid "Related issues and PRs"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:495
+msgid "https://github.com/OSGeo/gdal/pull/8695: candidate implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:498
+msgid "Voting history"
+msgstr ""
+
+#: ../../source/development/rfc/rfc96_deferred_plugin_loading.rst:500
+msgid "+1 from PSC members KurtS, HowardB, JukkaR, JavierJS and EvenR"
+msgstr ""
+

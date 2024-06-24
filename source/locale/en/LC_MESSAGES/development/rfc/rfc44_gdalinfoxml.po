@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:5
+msgid "RFC 44: Add Parseable Output Formats for ogrinfo and gdalinfo"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:7
+msgid "Authors: Dan \"Ducky\" Little, Faza Mahamood"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:9
+msgid "Contacts: danlittle at yahoo dot com, fazamhd at live dot com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:11
+msgid "Status: Development. gdalinfo -json implemented in GDAL 2.0"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:16
+msgid "Add XML and JSON output to the ogrinfo and gdalinfo utilities."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:19
+msgid "Background"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:21
+msgid ""
+"ogrinfo and gdalinfo are incredibly useful metadata gathering tools. "
+"Their native text-based output formats, however, are not easily parseable"
+" by common external tools. Both XML and JSON are easily parsed and adding"
+" those output formats would substantially increase the utility for those "
+"looking to add the ogrinfo and gdalinfo utilities to a scripting stack."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:29
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:31
+msgid ""
+"An example implementation can be seen at the following github fork "
+"`https://github.com/theduckylittle/gdal/blob/trunk/gdal/apps/ogrinfo.cpp "
+"<https://github.com/theduckylittle/gdal/blob/trunk/gdal/apps/ogrinfo.cpp>`__"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:34
+msgid ""
+"To add the XML output to each utility will require \"breaking up\" the "
+"main loop into contingent chunks. All diagnostic messages will also need "
+"to be moved to STDERR to ensure that output on STDOUT is always "
+"parseable. The XML representation will be constructed using the MiniXML "
+"library built into GDAL."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:41
+msgid "Proposed json format for gdalinfo"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:314
+msgid "Impacted drivers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:316
+msgid "None."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:319
+msgid "Impacted utilities"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:321
+msgid "gdalinfo"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:323
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:328
+msgid "Adds a \"-xml\" output option."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:324
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:329
+msgid "Adds a \"-json\" output option."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:326
+msgid "ogrinfo"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:332
+msgid "Backward Compatibility"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:334
+msgid ""
+"This change has no impact on backward compatibility at the C API/ABI and "
+"C++ API/ABI levels. Default output will remain the same. The new XML "
+"output will only effect users who specify \"-xml\" or \"-json\" on the "
+"command line."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:340
+msgid "Testing"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:342
+msgid ""
+"The Python autotest suite will be extended to test the new XML/JSON "
+"outputs and existing tests will be modified to check STDERR for "
+"diagnostic messages."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:347
+msgid "Ticket"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:349
+msgid "No tickets."
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:352
+msgid "Voting history"
+msgstr ""
+
+#: ../../source/development/rfc/rfc44_gdalinfoxml.rst:354
+msgid "Proposed."
+msgstr ""
+

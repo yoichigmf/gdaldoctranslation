@@ -1,0 +1,475 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:5
+msgid "RFC 45: GDAL datasets and raster bands as virtual memory mappings"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:7
+msgid "Authors: Even Rouault"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:9
+msgid "Contact: even dot rouault at spatialys.com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:11
+msgid "Status: Adopted, implemented"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:16
+msgid ""
+"This document proposes additions to GDAL so that image data of GDAL "
+"datasets and raster bands can be seen as virtual memory mappings, for "
+"hopefully simpler usage."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:21
+msgid "Rationale"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:23
+msgid ""
+"When one wants to read or write image data from/into a GDAL dataset or "
+"raster band, one must use the RasterIO() interface for the regions of "
+"interest that are read or written. For small images, the most convenient "
+"solution is usually to read/write the whole image in a single request "
+"where the region of interest is the full raster extent. For larger "
+"images, particularly when they do not fit entirely in RAM, this is not "
+"possible, and if one wants to operate on the whole image, one must use a "
+"windowing strategy to avoid memory issues : typically by proceeding "
+"scanline (or group of scanlines) by scanline, or by blocks for tiled "
+"images. This can make the writing of algorithms more complicated when "
+"they need to access a neighbourhood of pixels around each pixel of "
+"interest, since the size of this extra window must be taken into account,"
+" leading to overlapping regions of interests. Nothing that cannot be "
+"solved, but that requires some additional thinking that distracts from "
+"the followed main purpose."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:39
+msgid ""
+"The proposed addition of this RFC is to make the image data appear as a "
+"single array accessed with a pointer, without being limited by the size "
+"of RAM with respect to the size of the dataset (excepted limitations "
+"imposed by the CPU architecture and the operating system)"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:45
+msgid "Technical solution"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:48
+msgid "Low-level machinery : cpl_virtualmem.h"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:50
+msgid ""
+"The low-level machinery to support this new capability is a CPLVirtualMem"
+" object that represents an area of virtual memory ( on Linux, an area of "
+"virtual memory allocated by the mmap() function ). This virtual memory "
+"area is initially just reserved in terms of virtual memory space, but has"
+" no actual allocation in physical memory. This reserved virtual memory "
+"space is protected with an access permission that cause any attempt to "
+"access it to result in an exception - a page fault, that on POSIX systems"
+" triggers a SIGSEGV signal (segmentation fault). Fortunately, "
+"segmentation faults can be caught by the software with a signal handler. "
+"When such a segmentation fault occurs, our specialized signal handler "
+"will check if it occurs in a virtual memory region under its "
+"responsibility and, if so, it will proceed to fill the part (a \"page\") "
+"of the virtual memory area that has been accessed with sensible values "
+"(thanks to a user provided callback). It will then set appropriate "
+"permissions to the page (read-only or read-write), before attempting "
+"again the instruction that triggered the segmentation fault. From the "
+"point of view of the user code that accesses the memory mapping, this is "
+"completely transparent, and this is equivalent as if the whole virtual "
+"memory area had been filled from the start."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:70
+msgid ""
+"For very large mappings that are larger than RAM, this would still cause "
+"disk swapping to occur at a certain point. To avoid that, the "
+"segmentation fault handler will evict the least recently used pages, once"
+" a threshold defined at the creation of the CPLVirtualMem object has been"
+" reached."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:76
+msgid ""
+"For write support, another callback can be passed. It will be called "
+"before a page is evicted so that user code has a chance to flush its "
+"content to a more persistent storage."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:80
+msgid ""
+"We also offer an alternative way of creating a CPLVirtualMem object, by "
+"using memory file mapping mechanisms. This may be used by \"raw\" "
+"datasets (EHdr driver for example) where the organization of data on disk"
+" directly matches the organization of a in-memory array."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:86
+msgid "High-level usage"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:88
+msgid "Four new API are introduced (detailed in further section):"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:90
+msgid ""
+"GDALDatasetGetVirtualMem() : takes almost the same arguments as "
+"GDALDatasetRasterIO(), with the notable exception of a pData buffer. It "
+"returns a CPLVirtualMem\\* object, from which the base address of the "
+"virtual memory mapping can be obtained with CPLVirtualMemGetAddr()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:98
+msgid ""
+"GDALRasterBandGetVirtualMem(): equivalent of GDALDatasetGetVirtualMem() "
+"that operates on a raster band object rather than a dataset object."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:102
+msgid ""
+"GDALDatasetGetTiledVirtualMem(): this is a rather original API. Instead "
+"of presenting a 2D view of the image data (i.e. organized rows by rows), "
+"the mapping exposes it as an array of tiles, which is more suitable, "
+"performance wise, when the dataset is itself tiled."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:109
+msgid ""
+"When they are several bands, 3 different organizations of band components"
+" are possible. To the best of our knowledge, there is no standard way of "
+"calling those organizations, which consequently will be best illustrated "
+"by the following schemas :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:-1
+#: ../../source/development/rfc/rfc45_virtualmem.rst:114
+msgid "TIP / Tile Interleaved by Pixel"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:-1
+#: ../../source/development/rfc/rfc45_virtualmem.rst:119
+msgid "BIT / Band Interleaved by Tile"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:-1
+#: ../../source/development/rfc/rfc45_virtualmem.rst:124
+msgid "BSQ / Band SeQuential organization"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:129
+msgid ""
+"GDALRasterBandGetTiledVirtualMem(): equivalent of "
+"GDALDatasetGetTiledVirtualMem() that operates on a raster band object "
+"rather than a dataset object."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:133
+msgid ""
+"GDALGetVirtualMemAuto(): simplified version of "
+"GDALRasterBandGetVirtualMem() where the user only specifies the access "
+"mode. The pixel spacing and line spacing are returned by the function. "
+"This is implemented as a virtual method at the GDALRasterBand level, so "
+"that drivers have a chance of overriding the base implementation. The "
+"base implementation just uses GDALRasterBandGetVirtualMem(). Overridden "
+"implementation may use the memory file mapping mechanism instead. Such "
+"implementations will be done in the RawRasterBand object and in the "
+"GeoTIFF driver."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:144
+msgid "Details of new API"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:149
+msgid "Implemented by cpl_virtualmem.cpp"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:503
+msgid "Implemented by gdalvirtualmem.cpp"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:972
+msgid "Implemented by gdalrasterband.cpp"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1045
+msgid "Portability"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1047
+msgid ""
+"The CPLVirtualMem low-level machinery is only implemented for Linux now. "
+"It assumes that returning from a SIGSEGV handler is possible, which is a "
+"blatant violation of POSIX, but in practice it seems that most POSIX (and"
+" non POSIX such as Windows) systems should be able to resume execution "
+"after a segmentation fault."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1053
+msgid ""
+"Porting to other POSIX operating systems such as MacOSX should be doable "
+"with moderate effort. Windows has API that offer similar capabilities as "
+"POSIX API with VirtualAlloc(), VirtualProtect() and "
+"SetUnhandledExceptionFilter(), although the porting would undoubtly "
+"require more effort."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1059
+msgid ""
+"The existence of `libsigsegv <http://www.gnu.org/software/libsigsegv>`__ "
+"that run on various OS is an evidence on its capacity of being ported to "
+"other platforms."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1063
+msgid ""
+"The trickiest part is ensuring that things will work reliably when two "
+"concurrent threads that try to access the same initially unmapped page. "
+"Without special care, one thread could manage to access the page that is "
+"being filled by the other thread, before it is completely filled. On "
+"Linux this can be easily avoided with the mremap() call. When a page is "
+"filled, we don't actually pass the target page to the user callback, but "
+"a temporary page. When the callback has finished its job, this temporary "
+"page is mremap()'ed to its target location, which is an atomic operation."
+" An alternative implementation for POSIX systems that don't have this "
+"mremap() call has been tested : any declared threads that can access the "
+"memory mapping are paused before the temporary page is memcpy'ed to its "
+"target location, and are resumed afterwards. This requires threads to "
+"priorly declare their \"interest\" for a memory mapping with "
+"CPLVirtualMemDeclareThread(). Pausing a thread is interestingly non-"
+"obvious : the solution found to do so is to send it a SIGUSR1 signal and "
+"make it wait in a signal handler for this SIGUSR1 signal... It has not "
+"been investigated if/how this could be done on Windows. "
+"CPLVirtualMemIsAccessThreadSafe() has been introduced for that purpose."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1083
+msgid ""
+"As far as CPLVirtualMemFileMapNew() is concerned, memory file mapping on "
+"POSIX systems with mmap() should be portable. Windows has "
+"CreateFileMapping() and MapViewOfFile() API that have similar "
+"capabilities as mmap()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1089
+msgid "Performance"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1091
+msgid ""
+"No miraculous performance gain should be expected from this new "
+"capability, when compared to code that carefully uses GDALRasterIO(). "
+"Handling segmentation faults has a cost ( the operating system catches a "
+"hardware exception, then calls the user program segmentation fault "
+"handler, which does the normal GDAL I/O operations, and plays with page "
+"mappings and permissions which invalidate some CPU caches, etc... ). "
+"However, when a page has been realized, access to it should be really "
+"fast, so with appropriate access patterns and cache size, good "
+"performance should be expected."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1101
+msgid ""
+"It should also be noted that in the current implementation, the "
+"realization of pages is done in a serialized way, that is to say if 2 "
+"threads which use 2 different memory mappings cause a segmentation fault "
+"at the same time, they will not be dealt by 2 different threads, but one "
+"after the other one."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1107
+msgid ""
+"The overhead of virtual memory objects returned by GetVirtualMemAuto(), "
+"when using the memory file mapping, should be lesser than the manual "
+"management of page faults. However, GDAL has no control of the strategy "
+"used by the operating system to cache pages."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1113
+msgid "Limitations"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1115
+msgid ""
+"The maximum size of the virtual memory space (and thus a virtual memory "
+"mapping) depends on the CPU architecture and OS limitations :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1118
+msgid "on Linux AMD64, 128 TB."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1119
+msgid "on Linux x86, 2 GB."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1120
+msgid "On Windows AMD64 (unsupported by the current implementation), 8 TB."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1121
+msgid "On Windows x86 (unsupported by the current implementation), 2 GB."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1123
+msgid ""
+"Clearly, the main interest of this new functionality is for AMD64 "
+"platforms."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1126
+msgid ""
+"On a Linux AMD64 machine with 4 GB RAM, the Python binding of "
+"GDALDatasetGetTiledVirtualMem() has been successfully used to access "
+"random points on the new `Europe 3'' DEM dataset "
+"<http://www.eea.europa.eu/data-and-maps/data/eu-dem/#tab-original-"
+"data>`__, which is a 20 GB compressed GeoTIFF ( and 288000 \\* 180000 \\*"
+" 4 = 193 GB uncompressed )"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1134
+msgid "Related thoughts"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1136
+msgid ""
+"Some issues with system calls such as read() or write(), or easier multi-"
+"threading could potentially be solved by making a FUSE (File system in "
+"USEr space) driver that would expose a GDAL dataset as a file, and the "
+"mmap()'ing the file itself. However FUSE drivers are only available on "
+"POSIX OS, and need root privilege to be mounted (a FUSE filesystem does "
+"not need root privilege to run, but the mounting operation does)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1145
+msgid "Open questions"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1147
+msgid ""
+"Due to the fact that it currently only works on Linux, should we mark the"
+" API as experimental for now ?"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1151
+msgid "Backward compatibility issues"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1153
+msgid ""
+"C/C++ API --> compatible (new API). C ABI --> compatible (new API). C++ "
+"ABI --> incompatibility because GDALRasterBand has a new virtual method."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1157
+msgid "Updated drivers"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1159
+msgid ""
+"The RawRasterBand object and GeoTIFF drivers will be updated to implement"
+" GetVirtualMemAuto() and offer memory file mapping when possible (see "
+"above documented restrictions on when this is possible)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1163
+msgid ""
+"In future steps, other drivers such as the VRT driver (for "
+"VRTRawRasterBand) could also offer a specialized implementation of "
+"GetVirtualMemAuto()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1168
+msgid "SWIG bindings"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1170
+msgid ""
+"The high level API (dataset and raster band) API is available in Python "
+"bindings."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1173
+msgid ""
+"GDALDatasetGetVirtualMem() is mapped as Dataset.GetVirtualArray(), which "
+"returns a NumPy array."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1192
+msgid "Similarly for GDALDatasetGetTiledVirtualMem() :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1213
+msgid "And the Band object has the following 3 methods :"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1243
+msgid ""
+"Note: dataset/Band.GetVirtualMem()/GetTiledVirtualMem() methods are also "
+"available. They return a VirtualMem python object that has a GetAddr() "
+"method that returns a Python memoryview object (Python 2.7 or later "
+"required). However, using such object does not seem practical for non-"
+"Byte data types."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1250
+msgid "Test Suite"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1252
+msgid ""
+"The autotest suite will be extended to test the Python API of this RFC. "
+"It will also test the specialized implementations of GetVirtualMemAuto() "
+"in RawRasterBand and the GeoTIFF drivers. In autotest/cpp, a "
+"test_virtualmem.cpp file tests concurrent access to the same pages by 2 "
+"threads."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1259
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1261
+msgid ""
+"Implementation will be done by Even Rouault in GDAL/OGR trunk. The "
+"proposed implementation is attached as a `patch "
+"<http://trac.osgeo.org/gdal/attachment/wiki/rfc45_virtualmem/virtualmem.patch>`__."
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1266
+msgid "Voting history"
+msgstr ""
+
+#: ../../source/development/rfc/rfc45_virtualmem.rst:1268
+msgid "+1 from EvenR, FrankW, DanielM and JukkaR"
+msgstr ""
+

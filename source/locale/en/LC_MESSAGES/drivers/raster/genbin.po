@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/genbin.rst:5
+msgid "GenBin -- Generic Binary (.hdr labelled)"
+msgstr ""
+
+#: ../../source/drivers/raster/genbin.rst:11
+msgid ""
+"This driver supporting reading \"Generic Binary\" files labelled with a "
+".hdr file, but distinct from the more common ESRI labelled .hdr format "
+"(EHdr driver). The origin of this format is not entirely clear. The .hdr "
+"files supported by this driver are look something like this:"
+msgstr ""
+
+#: ../../source/drivers/raster/genbin.rst:25
+msgid ""
+"Pixel data types of U8, U16, S16, F32, F64, and U1 (bit) are supported. "
+"Georeferencing and coordinate system information should be supported when"
+" provided."
+msgstr ""
+
+#: ../../source/drivers/raster/genbin.rst:29
+msgid "NOTE: Implemented as :source_file:`frmts/raw/genbindataset.cpp`."
+msgstr ""
+
+#: ../../source/drivers/raster/genbin.rst:32
+msgid "Driver capabilities"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "GenBin"
+#~ msgstr ""
+

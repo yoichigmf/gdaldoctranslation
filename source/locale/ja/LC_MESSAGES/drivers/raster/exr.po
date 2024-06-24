@@ -1,0 +1,108 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/exr.rst:5
+msgid "EXR -- Extended Dynamic Range Image File Format"
+msgstr ""
+
+#: ../../source/drivers/raster/exr.rst:13
+msgid ""
+"OpenEXR is a high dynamic range raster file format. The driver supports "
+"reading and writing images in that format."
+msgstr ""
+
+#: ../../source/drivers/raster/exr.rst:16
+msgid ""
+"Georeferencing is written as a WKT CRS string and a 3x3 geotransform "
+"matrix in EXR header metadata."
+msgstr ""
+
+#: ../../source/drivers/raster/exr.rst:19
+msgid "\"Deep images\" are not supported."
+msgstr ""
+
+#: ../../source/drivers/raster/exr.rst:22
+msgid "Creation Options"
+msgstr ""
+
+#: ../../source/drivers/raster/exr.rst:102
+msgid "Driver capabilities"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "EXR"
+#~ msgstr ""
+
+#~ msgid "Build dependencies"
+#~ msgstr ""
+
+#~ msgid "libopenexr"
+#~ msgstr ""
+
+#~ msgid "``HALF`` corresponds to a IEEE-754 16-bit floating point value."
+#~ msgstr ""
+
+#~ msgid "``FLOAT`` corresponds to a IEEE-754 32-bit floating point value."
+#~ msgstr ""
+
+#~ msgid "``UINT`` corresponds to a 32-bit unsigned integer value."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "If not specified, the following GDAL "
+#~ "data types will be mapped as "
+#~ "following:"
+#~ msgstr ""
+
+#~ msgid "``Byte`` ==> HALF"
+#~ msgstr ""
+
+#~ msgid "``Int16`` ==> HALF (potentially lossy)"
+#~ msgstr ""
+
+#~ msgid "``UInt16`` ==> HALF (potentially lossy)"
+#~ msgstr ""
+
+#~ msgid "``Int32`` ==> FLOAT (potentially lossy)"
+#~ msgstr ""
+
+#~ msgid "``UInt32`` ==> UINT"
+#~ msgstr ""
+
+#~ msgid "``Float32`` ==> FLOAT"
+#~ msgstr ""
+
+#~ msgid "``Float64`` ==> FLOAT (generally lossy)"
+#~ msgstr ""
+
+#~ msgid "Supports Create()"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "With the caveat, that it is only"
+#~ " for tiled data, and each tile "
+#~ "must be written at most once, and"
+#~ " written tiles cannot be read back"
+#~ " before dataset closing."
+#~ msgstr ""
+

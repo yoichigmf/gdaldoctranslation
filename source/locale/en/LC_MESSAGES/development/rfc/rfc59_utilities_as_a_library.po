@@ -1,0 +1,182 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:5
+msgid "RFC 59 : GDAL/OGR utilities as a library"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:7
+msgid "Authors: Faza Mahamood"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:9
+msgid "Contact: fazamhd at gmail dot com"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:11
+msgid "Status: Retracted in favor of :ref:`rfc-59.1`"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:14
+msgid "Summary"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:16
+msgid ""
+"This RFC defines new function for each GDAL utility. The new utility "
+"functions can be used to work on in-memory datasets. The utility code is "
+"modified to call the new function. This RFC gives a general frame and "
+"principles, demonstrated with gdalinfo, but aimed at being extended with "
+"other utilities."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:23
+msgid "Rationale"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:25
+msgid ""
+"There is need for calling GDAL utilities from the code. But this involves"
+" using system calls and cannot work on in-memory datasets."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:29
+msgid "Changes"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:31
+msgid ""
+"New library libgdalutils is created. Both Unix and Windows build have "
+"been modified to take into account the new lib. The GDAL utilities are "
+"modified to use the new functions. New header file gdal_utils.h is "
+"created which contains the public declarations of GDAL utilities. The "
+"current header(still in progress) can be found `here "
+"<https://github.com/fazam/gdal/blob/gdalinfo/gdal/apps/gdal_utils.h>`__."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:64
+msgid "SWIG bindings (Python / Java / C# / Perl) changes"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:66
+msgid ""
+"For Python bindings only, new functions Info(), Translate() and Warp() "
+"are added in the gdal module which uses the new GDALInfo(), "
+"GDALTranslate() and GDALWarp() function respectively. Translate() is "
+"added in the ogr module which uses the new OGR2OGR() function."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:71
+msgid ""
+"gdal.Info() can be used either with setting the attributes of "
+"gdal.InfoOptions() or inlined arguments of gdal.Info()."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:151
+msgid "Utilities"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:153
+msgid "Utilities are modified to call the respective function."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:156
+msgid "Documentation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:158
+msgid "All new methods/functions are documented."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:161
+msgid "Test Suite"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:163
+msgid ""
+"gdal.Info method is tested in test_gdalinfo_lib.py. gdal.Translate method"
+" is tested in test_gdal_translate_lib.py. gdal.Warp method is tested in "
+"test_gdalwarp_lib.py. ogr.Translate method is tested in "
+"test_ogr2ogr_lib.py."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:169
+msgid "Compatibility Issues"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:171
+msgid ""
+"None expected. Command line utilities will keep the same interface. It "
+"will be checked by ensuring their tests in autotest/utilities still pass."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:176
+msgid "Open question"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:178
+msgid ""
+"What name should be given for librarified ogr2ogr? OGR2OGR() or "
+"OGRTranslate() ?"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:181
+msgid ""
+"The order of arguments in GDALTranslate(), GDALWarp() and OGR2OGR() is "
+"currently dest then source(s)."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:194
+msgid ""
+"It is similar to GDALCreateCopy(const char\\* pszDestFilename, "
+"GDALDatasetH hSrcDS, ....), so at least there's a form of consistency at "
+"the API level. Any comments?"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:199
+msgid "Related ticket"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:202
+msgid "Implementation"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:204
+msgid "Implementation will be done by Faza Mahamood."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:206
+msgid ""
+"The proposed implementation lies in the \"gdalinfo\" branch of the "
+"`https://github.com/fazam/gdal/tree/gdalinfo "
+"<https://github.com/fazam/gdal/tree/gdalinfo>`__."
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:209
+msgid ""
+"The list of changes : `https://github.com/fazam/gdal/compare/gdalinfo "
+"<https://github.com/fazam/gdal/compare/gdalinfo>`__"
+msgstr ""
+
+#: ../../source/development/rfc/rfc59_utilities_as_a_library.rst:213
+msgid "Voting history"
+msgstr ""
+

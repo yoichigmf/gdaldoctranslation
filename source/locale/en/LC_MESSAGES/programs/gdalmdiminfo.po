@@ -1,0 +1,128 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/programs/gdalmdiminfo.rst:5
+msgid "gdalmdiminfo"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:11
+msgid "Reports structure and content of a multidimensional dataset."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:16
+msgid "Synopsis"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:26
+msgid "Description"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:28
+msgid ""
+":program:`gdalmdiminfo` program lists various information about a GDAL "
+"supported multidimensional raster dataset as JSON output. It follows the "
+"following `JSON schema "
+"<https://github.com/OSGeo/gdal/blob/master/data/gdalmdiminfo_output.schema.json>`_"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:32
+msgid "The following command line parameters can appear in any order"
+msgstr ""
+
+#: ../../source/programs/options/help.rst:3
+msgid "Show this help message and exit"
+msgstr ""
+
+#: ../../source/programs/options/help_general.rst:3
+msgid ""
+"Gives a brief usage message for the generic GDAL commandline options and "
+"exit."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:40
+msgid "Most verbose output. Report attribute data types and array values."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:44
+msgid "Outputs on a single line without any indentation."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:48
+msgid "Name of the array used to restrict the output to the specified array."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:52
+msgid ""
+"Number of values in each dimension that is used to limit the display of "
+"array values. By default, unlimited. Only taken into account if used with"
+" -detailed."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:58
+msgid ""
+"Dataset open option (format specific). This option may be used several "
+"times."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:63
+msgid ""
+"Option passed to :cpp:func:`GDALGroup::GetMDArrayNames` to filter "
+"reported arrays. Such option is format specific. Consult driver "
+"documentation. This option may be used several times."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:69
+msgid ""
+"Read and display image statistics. Force computation if no statistics are"
+" stored in an image."
+msgstr ""
+
+#: ../../source/programs/options/if.rst:3
+msgid ""
+"Format/driver name to be attempted to open the input file(s). It is "
+"generally not necessary to specify it, but it can be used to skip "
+"automatic driver detection, when it fails to select the appropriate "
+"driver. This option can be repeated several times to specify several "
+"candidate drivers. Note that it does not force those drivers to open the "
+"dataset. In particular, some drivers have requirements on file "
+"extensions."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:78
+msgid "C API"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:80
+msgid "This utility is also callable from C with :cpp:func:`GDALMultiDimInfo`."
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:83
+msgid "Examples"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:85
+msgid "Display general structure1"
+msgstr ""
+
+#: ../../source/programs/gdalmdiminfo.rst:194
+msgid "Display detailed information about a given array"
+msgstr ""
+

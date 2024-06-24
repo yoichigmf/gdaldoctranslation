@@ -1,0 +1,75 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/vector/sosi.rst:5
+msgid "Norwegian SOSI Standard"
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:11
+msgid "This driver requires the FYBA library."
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:14
+msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:16
+msgid ""
+"Starting with GDAL 3.1, the following open options can be specified "
+"(typically with the -oo name=value parameters of ogrinfo or ogr2ogr):"
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:29
+msgid "Examples"
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:31
+msgid ""
+"This example will convert a sosi file to a shape a file where all "
+"duplicate fields in a feature will be appended with a comma between."
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:37
+msgid ""
+"This example will convert a sosi file to a shape a file where only "
+"duplicates for BEITEBRUKERID and OPPHAV will appended with a comma "
+"between."
+msgstr ""
+
+#: ../../source/drivers/vector/sosi.rst:43
+msgid ""
+"This example will convert a sosi file to a shape a file where for "
+"BEITEBRUKERID and OPPHAV will be appended with a semicolon and comma "
+"between"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "SOSI"
+#~ msgstr ""
+
+#~ msgid "Build dependencies"
+#~ msgstr ""
+
+#~ msgid "FYBA library"
+#~ msgstr ""
+

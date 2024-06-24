@@ -1,0 +1,169 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/vector/ntf.rst:4
+msgid "UK .NTF"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:10
+msgid ""
+"The National Transfer Format, mostly used by the UK Ordnance Survey, is "
+"supported for read access."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:13
+msgid ""
+"This driver treats a directory as a dataset and attempts to merge all the"
+" .NTF files in the directory, producing a layer for each type of feature "
+"(but generally not for each source file). Thus a directory containing "
+"several Landline files will have three layers (LANDLINE_POINT, "
+"LANDLINE_LINE and LANDLINE_NAME) regardless of the number of landline "
+"files."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:20
+msgid ""
+"NTF features are always returned with the British National Grid "
+"coordinate system. This may be inappropriate for NTF files written by "
+"organizations other than the UK Ordnance Survey."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:25
+msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:32
+msgid "See Also"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:34
+msgid ""
+"`General UK NTF Information "
+"<https://web.archive.org/web/20130730111701/http://home.gdal.org/projects/ntf/index.html>`__"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:38
+msgid "Implementation Notes"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:41
+msgid "Products (and Layers) Supported"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:104
+msgid ""
+"The dataset as a whole will also have a FEATURE_CLASSES layer containing "
+"a pure table relating FEAT_CODE numbers with feature class names "
+"(FC_NAME). This applies to all products in the dataset. A few layer types"
+" (such as the Code Point, and Address Point products) don't include "
+"feature classes. Some products use features classes that are not defined "
+"in the file, and so they will not appear in the FEATURE_CLASSES layer."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:112
+msgid "Product Schemas"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:114
+msgid ""
+"The approach taken in this reader is to treat one file, or a directory of"
+" files as a single dataset. All files in the dataset are scanned on open."
+" For each particular product (listed above) a set of layers are created; "
+"however, these layers may be extracted from several files of the same "
+"product."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:120
+msgid ""
+"The layers are based on a low level feature type in the NTF file, but "
+"will generally contain features of many different feature codes "
+"(FEAT_CODE attribute). Different features within a given layer may have a"
+" variety of attributes in the file; however, the schema is established "
+"based on the union of all attributes possible within features of a "
+"particular type (i.e. POINT) of that product family (i.e. OSCAR Network)."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:128
+msgid ""
+"If an NTF product is read that doesn't match one of the known schema's it"
+" will go through a different generic handler which has only layers of "
+"type GENERIC_POINT and GENERIC_LINE. The features only have a FEAT_CODE "
+"attribute."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:133
+msgid ""
+"Details of what layers of what products have what attributes can be found"
+" in the NTFFileReader::EstablishLayers() method at the end of "
+"ntf_estlayers.cpp. This file also contains all the product specific "
+"translation code."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:139
+msgid "Special Attributes"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:180
+msgid "Generic Products"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:182
+msgid ""
+"In situations where a file is not identified as being part of an existing"
+" known product it will be treated generically. In this case the entire "
+"dataset is scanned to establish what features have what attributes. "
+"Because of this, opening a generic dataset can be much slower than "
+"opening a recognised dataset. Based on this scan a list of generic "
+"features (layers) are defined from the following set:"
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:199
+msgid ""
+"Generic products are primarily handled by the ntf_generic.cpp module "
+"whereas specific products are handled in ntf_estlayers.cpp."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:202
+msgid ""
+"Because some data products (OSNI datasets) not from the Ordnance Survey "
+"were found to have record groups in unusual orders compared to what the "
+"UK Ordnance Survey does, it was found necessary to cache all the records "
+"of level 3 and higher generic products, and construct record groups by id"
+" reference from within this cache rather than depending on convenient "
+"record orderings. This is accomplished by the NTFFileReader \"indexing\" "
+"capability near the bottom of ntffilereader.cpp. Because of this in "
+"memory indexing accessing generic datasets can be much more memory "
+"intensive than accessing known data products, though it isn't necessary "
+"for generic level 1 and 2 products."
+msgstr ""
+
+#: ../../source/drivers/vector/ntf.rst:213
+msgid ""
+"It is possible to force a known product to be treated as generic by "
+"setting the FORCE_GENERIC option to \"ON\" using "
+"OGRNTFDataSource::SetOptionsList() as is demonstrated in ntfdump.cpp. "
+"This may also be accomplished from outside OGR applications by setting "
+"the OGR_NTF_OPTIONS environment variable to \"FORCE_GENERIC=ON\"."
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+

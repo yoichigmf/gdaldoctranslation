@@ -1,0 +1,94 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/osgeo.gdal.rst:2
+msgid "osgeo.gdal module"
+msgstr ""
+
+#~ msgid "ベースクラス: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALAsyncReaderShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALEDTComponentHS class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALTransformerInfoShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALMajorObjectShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ StatBuf class."
+#~ msgstr ""
+
+#~ msgid "int"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "mode"
+#~ msgstr ""
+
+#~ msgid "GIntBig"
+#~ msgstr ""
+
+#~ msgid "mtime"
+#~ msgstr ""
+
+#~ msgid "size"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ Statistics class."
+#~ msgstr ""
+
+#~ msgid "double"
+#~ msgstr ""
+
+#~ msgid "max"
+#~ msgstr ""
+
+#~ msgid "mean"
+#~ msgstr ""
+
+#~ msgid "min"
+#~ msgstr ""
+
+#~ msgid "std_dev"
+#~ msgstr ""
+
+#~ msgid "valid_count"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ VSILFILE class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ CPLVirtualMemShadow class."
+#~ msgstr ""
+
+#~ msgid "Iterate over a directory."
+#~ msgstr ""
+
+#~ msgid "recursionLevel = -1 means unlimited level of recursion."
+#~ msgstr ""
+

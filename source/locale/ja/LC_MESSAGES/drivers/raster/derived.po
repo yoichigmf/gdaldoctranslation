@@ -1,0 +1,131 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/drivers/raster/derived.rst:5
+msgid "DERIVED -- Derived subdatasets driver"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:11
+msgid ""
+"This driver allows accessing subdatasets derived from a given dataset. "
+"Those derived datasets have the same projection reference, geo-transform "
+"and metadata than the original dataset, but derives new pixel values "
+"using gdal pixel functions."
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:17
+msgid "Available functions"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:19
+msgid "Available derived datasets are:"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:21
+msgid "AMPLITUDE: Amplitude of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:22
+msgid "PHASE: Phase of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:23
+msgid "REAL: Real part of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:24
+msgid "IMAG: Imaginary part of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:25
+msgid "CONJ: Conjugate of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:26
+msgid "INTENSITY: Intensity (squared amplitude) of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:27
+msgid "LOGAMPLITUDE: Log10 of amplitude of pixels from input bands"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:29
+msgid "Note: for non-complex data types, only LOGAMPLITUDE will be listed."
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:31
+msgid ""
+"A typical use is to directly access amplitude, phase or log-amplitude of "
+"any complex dataset."
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:35
+msgid "Accessing derived subdatasets"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:37
+msgid ""
+"Derived subdatasets are stored in the DERIVED_SUBDATASETS metadata "
+"domain, and can be accessed using the following syntax:"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:44
+msgid ""
+"where function is one of AMPLITUDE, PHASE, REAL, IMAG, CONJ, INTENSITY, "
+"LOGAMPLITUDE. So as to ensure numerical precision, all derived "
+"subdatasets bands will have Float64 or CFloat64 precision (depending on "
+"the function used)."
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:49
+msgid "For instance:"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:164
+msgid "Listing available subdatasets"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:166
+msgid ""
+"Available subdatasets are reported in the DERIVED_SUBDATASETS metadata "
+"domain. Only functions that make sense will be reported for a given "
+"dataset, which means that AMPLITUDE, PHASE, REAL, IMAG, CONJ and "
+"INTENSITY will only be reported if the dataset has at least one complex "
+"band. Nevertheless, even if not reported, those derived datasets are "
+"still reachable with the syntax presented above."
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:247
+msgid "See Also:"
+msgstr ""
+
+#: ../../source/drivers/raster/derived.rst:249
+msgid ""
+":ref:`Using Derived Bands part of the GDAL VRT tutorial "
+"<vrt_derived_bands>`"
+msgstr ""
+
+#~ msgid "Driver short name"
+#~ msgstr ""
+
+#~ msgid "DERIVED"
+#~ msgstr ""
+

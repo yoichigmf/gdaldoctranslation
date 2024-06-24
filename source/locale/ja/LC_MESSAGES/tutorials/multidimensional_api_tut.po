@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ja\n"
+"Language-Team: ja <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:5
+msgid "Multidimensional raster API tutorial"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:8
+msgid "Read the content of an array"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:11
+msgid "In C++"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:53
+msgid "In C"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:131
+msgid "In Python"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:141
+msgid "If NumPy is available:"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:153
+msgid "Other examples"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:155
+msgid "Test scripts from the GDAL autotest suite"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:157
+msgid ""
+":ref:`MEM <raster.mem>` driver: "
+":source_file:`autotest/gdrivers/memmultidim.py`"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:158
+msgid ""
+":ref:`netCDF <raster.netcdf>` driver: "
+":source_file:`autotest/gdrivers/netcdf_multidim.py`"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:159
+msgid ""
+":ref:`HDF5 <raster.hdf5>` driver: "
+":source_file:`autotest/gdrivers/hdf5multidim.py`"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:160
+msgid ""
+":ref:`VRT <raster.vrt>` driver: "
+":source_file:`autotest/gdrivers/vrtmultidim.py`"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:161
+msgid ""
+":ref:`gdalmdiminfo` tests: "
+":source_file:`autotest/utilities/test_gdalmdiminfo_lib.py`"
+msgstr ""
+
+#: ../../source/tutorials/multidimensional_api_tut.rst:162
+msgid ""
+":ref:`gdalmdimtranslate` tests: "
+":source_file:`autotest/utilities/test_gdalmdimtranslate_lib.py`"
+msgstr ""
+

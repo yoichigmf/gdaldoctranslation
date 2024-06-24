@@ -1,0 +1,459 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 1998-2024
+# This file is distributed under the same license as the GDAL package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: GDAL \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.14.0\n"
+
+#: ../../source/api/python/osgeo.ogr.rst:2
+msgid "osgeo.ogr module"
+msgstr ""
+
+#~ msgid "ベースクラス: :py:class:`~osgeo.ogr.MajorObject`"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRDataSourceShadow class."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRLayerH OGR_DS_CopyLayer(OGRDataSourceH hDS, "
+#~ "OGRLayerH hSrcLayer, const char *pszNewName,"
+#~ " char **papszOptions)"
+#~ msgstr ""
+
+#~ msgid "Duplicate an existing layer."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function creates a new layer, "
+#~ "duplicate the field definitions of the"
+#~ " source layer and then duplicate each"
+#~ " features of the source layer. The"
+#~ " papszOptions argument can be used to"
+#~ " control driver specific creation options."
+#~ " These options are normally documented "
+#~ "in the format specific documentation. "
+#~ "The source layer may come from "
+#~ "another dataset."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetCopyLayer() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "Parameters:"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source where to create the new layer"
+#~ msgstr ""
+
+#~ msgid "hSrcLayer:  handle to the source layer."
+#~ msgstr ""
+
+#~ msgid "pszNewName:  the name of the layer to create."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "papszOptions:  a StringList of name=value "
+#~ "options. Options are driver specific."
+#~ msgstr ""
+
+#~ msgid "a handle to the layer, or NULL if an error occurs."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRLayerH OGR_DS_CreateLayer(OGRDataSourceH hDS, "
+#~ "const char *pszName, OGRSpatialReferenceH "
+#~ "hSpatialRef, OGRwkbGeometryType eType, char "
+#~ "**papszOptions)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function attempts to create a "
+#~ "new layer on the data source with"
+#~ " the indicated name, coordinate system, "
+#~ "geometry type."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The papszOptions argument can be used"
+#~ " to control driver specific creation "
+#~ "options. These options are normally "
+#~ "documented in the format specific "
+#~ "documentation."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetCreateLayer() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  The dataset handle."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pszName:  the name for the new "
+#~ "layer. This should ideally not match "
+#~ "any existing layer on the datasource."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hSpatialRef:  handle to the coordinate "
+#~ "system to use for the new layer,"
+#~ " or NULL if no coordinate system "
+#~ "is available. The driver might only "
+#~ "increase the reference counter of the"
+#~ " object to take ownership, and not"
+#~ " make a full copy, so do not"
+#~ " use OSRDestroySpatialReference(), but "
+#~ "OSRRelease() instead when you are done"
+#~ " with the object."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "eType:  the geometry type for the "
+#~ "layer. Use wkbUnknown if there are "
+#~ "no constraints on the types geometry "
+#~ "to be written."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "papszOptions:  a StringList of name=value "
+#~ "options. Options are driver specific, "
+#~ "and driver information can be found "
+#~ "at the following "
+#~ "url:http://www.gdal.org/ogr_formats.html"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NULL is returned on failure, or a"
+#~ " new OGRLayer handle on success. "
+#~ "Example:"
+#~ msgstr ""
+
+#~ msgid "Deletes the layer given an index or layer name"
+#~ msgstr ""
+
+#~ msgid "For backwards compatibility only."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once called, self has effectively been"
+#~ " destroyed.  Do not access. For "
+#~ "backwards compatibility only"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRLayerH OGR_DS_ExecuteSQL(OGRDataSourceH hDS, "
+#~ "const char *pszStatement, OGRGeometryH "
+#~ "hSpatialFilter, const char *pszDialect)"
+#~ msgstr ""
+
+#~ msgid "Execute an SQL statement against the data store."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The result of an SQL query is "
+#~ "either NULL for statements that are "
+#~ "in error, or that have no results"
+#~ " set, or an OGRLayer handle "
+#~ "representing a results set from the "
+#~ "query. Note that this OGRLayer is "
+#~ "in addition to the layers in the"
+#~ " data store and must be destroyed "
+#~ "with OGR_DS_ReleaseResultSet() before the data"
+#~ " source is closed (destroyed)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For more information on the SQL "
+#~ "dialect supported internally by OGR "
+#~ "review theOGR SQL document. Some drivers"
+#~ " (i.e. Oracle and PostGIS) pass the"
+#~ " SQL directly through to the "
+#~ "underlying RDBMS."
+#~ msgstr ""
+
+#~ msgid "Starting with OGR 1.10, theSQLITE dialect can also be used."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetExecuteSQL() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source on which the SQL query is executed."
+#~ msgstr ""
+
+#~ msgid "pszSQLCommand:  the SQL statement to execute."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "hSpatialFilter:  handle to a geometry "
+#~ "which represents a spatial filter. Can"
+#~ " be NULL."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pszDialect:  allows control of the "
+#~ "statement dialect. If set to NULL, "
+#~ "the OGR SQL engine will be used,"
+#~ " except for RDBMS drivers that will"
+#~ " use their dedicated SQL engine, "
+#~ "unless OGRSQL is explicitly passed as"
+#~ " the dialect. Starting with OGR 1.10,"
+#~ " the SQLITE dialect can also be "
+#~ "used."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to a OGRLayer containing "
+#~ "the results of the query. Deallocate "
+#~ "with OGR_DS_ReleaseResultSet()."
+#~ msgstr ""
+
+#~ msgid "OGRSFDriverH OGR_DS_GetDriver(OGRDataSourceH hDS)"
+#~ msgstr ""
+
+#~ msgid "Returns the driver that the dataset was opened with."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NOTE: Starting with GDAL 2.0, it "
+#~ "is NOT safe to cast the returned"
+#~ " handle to OGRSFDriver*. If a C++ "
+#~ "object is needed, the handle should "
+#~ "be cast to GDALDriver*."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALGetDatasetDriver() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the datasource"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NULL if driver info is not "
+#~ "available, or pointer to a driver "
+#~ "owned by the OGRSFDriverManager."
+#~ msgstr ""
+
+#~ msgid "Return the layer given an index or a name"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "OGRLayerH OGR_DS_GetLayerByName(OGRDataSourceH hDS, "
+#~ "const char *pszName)"
+#~ msgstr ""
+
+#~ msgid "Fetch a layer by name."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The returned layer remains owned by "
+#~ "the OGRDataSource and should not be "
+#~ "deleted by the application."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetGetLayerByName() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source from which to get the layer."
+#~ msgstr ""
+
+#~ msgid "pszLayerName:  Layer the layer name of the layer to fetch."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "a handle to the layer, or NULL "
+#~ "if the layer is not found or "
+#~ "an error occurs."
+#~ msgstr ""
+
+#~ msgid "int OGR_DS_GetLayerCount(OGRDataSourceH hDS)"
+#~ msgstr ""
+
+#~ msgid "Get the number of layers in this data source."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetGetLayerCount() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source from which to get the number of layers."
+#~ msgstr ""
+
+#~ msgid "layer count."
+#~ msgstr ""
+
+#~ msgid "const char* OGR_DS_GetName(OGRDataSourceH hDS)"
+#~ msgstr ""
+
+#~ msgid "Returns the name of the data source."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This string should be sufficient to "
+#~ "open the data source if passed to"
+#~ " the same OGRSFDriver that this data"
+#~ " source was opened with, but it "
+#~ "need not be exactly the same "
+#~ "string that was used to open the"
+#~ " data source. Normally this is a "
+#~ "filename."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALGetDescription() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source to get the name from."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "pointer to an internal name string "
+#~ "which should not be modified or "
+#~ "freed by the caller."
+#~ msgstr ""
+
+#~ msgid "int OGR_DS_GetRefCount(OGRDataSourceH hDataSource)"
+#~ msgstr ""
+
+#~ msgid "OGRStyleTableH OGR_DS_GetStyleTable(OGRDataSourceH hDS)"
+#~ msgstr ""
+
+#~ msgid "Get style table."
+#~ msgstr ""
+
+#~ msgid "int OGR_DS_GetSummaryRefCount(OGRDataSourceH hDataSource)"
+#~ msgstr ""
+
+#~ msgid "void OGR_DS_ReleaseResultSet(OGRDataSourceH hDS, OGRLayerH hLayer)"
+#~ msgstr ""
+
+#~ msgid "Release results of OGR_DS_ExecuteSQL()."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This function should only be used "
+#~ "to deallocate OGRLayers resulting from "
+#~ "an OGR_DS_ExecuteSQL() call on the same"
+#~ " OGRDataSource. Failure to deallocate a "
+#~ "results set before destroying the "
+#~ "OGRDataSource may cause errors."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetReleaseResultSet() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  a handle to the data source on which was executed an SQL query."
+#~ msgstr ""
+
+#~ msgid "hLayer:  handle to the result of a previous OGR_DS_ExecuteSQL() call."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "void OGR_DS_SetStyleTable(OGRDataSourceH hDS, "
+#~ "OGRStyleTableH hStyleTable)"
+#~ msgstr ""
+
+#~ msgid "Set style table."
+#~ msgstr ""
+
+#~ msgid "OGRErr OGR_DS_SyncToDisk(OGRDataSourceH hDS)"
+#~ msgstr ""
+
+#~ msgid "Flush pending changes to disk."
+#~ msgstr ""
+
+#~ msgid "See GDALDataset::FlushCache()"
+#~ msgstr ""
+
+#~ msgid "int OGR_DS_TestCapability(OGRDataSourceH hDS, const char *pszCap)"
+#~ msgstr ""
+
+#~ msgid "Test if capability is available."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "One of the following data source "
+#~ "capability names can be passed into "
+#~ "this function, and a TRUE or FALSE"
+#~ " value will be returned indicating "
+#~ "whether or not the capability is "
+#~ "available for this object."
+#~ msgstr ""
+
+#~ msgid "ODsCCreateLayer: True if this datasource can create new layers."
+#~ msgstr ""
+
+#~ msgid "ODsCDeleteLayer: True if this datasource can delete existing layers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "ODsCCreateGeomFieldAfterCreateLayer: True if the "
+#~ "layers of this datasource support "
+#~ "CreateGeomField() just after layer creation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "ODsCCurveGeometries: True if this datasource"
+#~ " supports writing curve geometries. (GDAL"
+#~ " 2.0). In that case, OLCCurveGeometries "
+#~ "must also be declared in layers of"
+#~ " that dataset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The #define macro forms of the "
+#~ "capability names should be used in "
+#~ "preference to the strings themselves to"
+#~ " avoid misspelling."
+#~ msgstr ""
+
+#~ msgid "Deprecated Use GDALDatasetTestCapability() in GDAL 2.0"
+#~ msgstr ""
+
+#~ msgid "hDS:  handle to the data source against which to test the capability."
+#~ msgstr ""
+
+#~ msgid "pszCapability:  the capability to test."
+#~ msgstr ""
+
+#~ msgid "TRUE if capability available otherwise FALSE."
+#~ msgstr ""
+
+#~ msgid "p.q(const).char"
+#~ msgstr ""
+
+#~ msgid "type"
+#~ msgstr ""
+
+#~ msgid "name"
+#~ msgstr ""
+
+#~ msgid "The membership flag"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRDriverShadow class."
+#~ msgstr ""
+
+#~ msgid "ベースクラス: :py:class:`object`"
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRGeomTransformerShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ GDALMajorObjectShadow class."
+#~ msgstr ""
+
+#~ msgid "Proxy of C++ OGRPreparedGeometryShadow class."
+#~ msgstr ""
+
