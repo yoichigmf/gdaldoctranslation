@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/drivers/vector/index.rst:5
 msgid "Vector drivers"
-msgstr ""
+msgstr "ベクタードライバー"
 
 #: ../../source/drivers/vector/driver_summary.rst:11
 msgid "Short name"

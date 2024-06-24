@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/drivers/raster/index.rst:5
 msgid "Raster drivers"
-msgstr ""
+msgstr "ラスタードライバー"
 
 #: ../../source/drivers/raster/driver_summary.rst:11
 msgid "Short name"
