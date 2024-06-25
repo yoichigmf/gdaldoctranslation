@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-25 01:39+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -25,7 +25,7 @@ msgstr "ダウンロード"
 
 #: ../../source/download.rst:10
 msgid "Contents"
-msgstr ""
+msgstr "コンテンツ"
 
 #: ../../source/download.rst:14
 msgid "Current Release"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: ../../source/download.rst:23
 msgid "Past Releases"
-msgstr ""
+msgstr "過去のリリース"
 
 #: ../../source/download.rst:25
 msgid "**2024-02-18** `gdal-3.8.4.tar.gz`_ `3.8.4 Release Notes`_ (`3.8.4 md5`_)"
@@ -211,7 +211,7 @@ msgstr ""
 
 #: ../../source/download.rst:281
 msgid "Development Source"
-msgstr ""
+msgstr "開発ソース"
 
 #: ../../source/download.rst:283
 msgid ""
@@ -233,7 +233,7 @@ msgstr ""
 
 #: ../../source/download.rst:297
 msgid "Binaries"
-msgstr ""
+msgstr "バイナリ"
 
 #: ../../source/download.rst:299
 msgid ""
@@ -250,7 +250,7 @@ msgstr ""
 
 #: ../../source/download.rst:307
 msgid "Windows"
-msgstr ""
+msgstr "Windows"
 
 #: ../../source/download.rst:309
 msgid ""
@@ -268,7 +268,7 @@ msgstr ""
 
 #: ../../source/download.rst:324
 msgid "Conda"
-msgstr ""
+msgstr "Conda"
 
 #: ../../source/download.rst:326
 msgid ""

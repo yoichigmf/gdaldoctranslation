@@ -34,7 +34,7 @@ msgstr ""
 
 #: ../../source/community/code_of_conduct.rst:13
 msgid "Introduction"
-msgstr ""
+msgstr "紹介"
 
 #: ../../source/community/code_of_conduct.rst:15
 msgid ""
