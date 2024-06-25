@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/jp2ecw.rst:5
 msgid "JP2ECW -- ERDAS JPEG2000 (.jp2)"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:7
+msgid "JP2ECW"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:9
+msgid "ECW SDK"
 msgstr ""
 
 #: ../../source/drivers/raster/jp2ecw.rst:11
@@ -121,6 +137,18 @@ msgid ""
 "ECW/JP2 SDK will default all other options to recommended settings based "
 "on the input characteristics. Changing other options can *substantially* "
 "impact decoding speed and compatibility with other JPEG2000 toolkits."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:263
+msgid ""
+"If there are metadata domain whose name starts with \"xml:BOX\\_\", they "
+"will be written each as separate JP2 XML box."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2ecw.rst:266
+msgid ""
+"If there is a metadata domain whose name is \"xml:XMP\", its content will"
+" be written as a JP2 UUID XMP box."
 msgstr ""
 
 #: ../../source/drivers/raster/jp2ecw.rst:277

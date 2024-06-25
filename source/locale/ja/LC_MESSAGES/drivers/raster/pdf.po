@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,23 @@ msgstr ""
 
 #: ../../source/drivers/raster/pdf.rst:5
 msgid "PDF -- Geospatial PDF"
+msgstr ""
+
+#: ../../source/drivers/raster/pdf.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/pdf.rst:7
+msgid "PDF"
+msgstr ""
+
+#: ../../source/drivers/raster/pdf.rst:-1
+#: ../../source/drivers/raster/pdf.rst:665
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/pdf.rst:9
+msgid "none for write support, Poppler/PoDoFo/PDFium for read support"
 msgstr ""
 
 #: ../../source/drivers/raster/pdf.rst:11
@@ -275,10 +292,6 @@ msgstr ""
 
 #: ../../source/drivers/raster/pdf.rst:571
 msgid "Example of a composition XML file:"
-msgstr ""
-
-#: ../../source/drivers/raster/pdf.rst:665
-msgid "Build dependencies"
 msgstr ""
 
 #: ../../source/drivers/raster/pdf.rst:667

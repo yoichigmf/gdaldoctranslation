@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/sqlite.rst:4
 msgid "SQLite / Spatialite RDBMS"
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:6
+msgid "SQLite"
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:8
+msgid "libsqlite3 or libspatialite"
 msgstr ""
 
 #: ../../source/drivers/vector/sqlite.rst:10
@@ -322,8 +338,36 @@ msgstr ""
 msgid "Dataset open options"
 msgstr ""
 
+#: ../../source/drivers/vector/sqlite.rst:267
+msgid ""
+"The other database must be of a type recognized by this driver, so its "
+"geometry blobs are properly recognized (so typically not a GeoPackage "
+"one)"
+msgstr ""
+
 #: ../../source/drivers/vector/sqlite.rst:271
 msgid "Database creation options"
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:289
+msgid ""
+"Please note: OGR must be linked against *libspatialite* in order to "
+"support insert/write on SpatiaLite; if not, *read-only* mode is enforced."
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:293
+msgid ""
+"Attempting to perform any insert/write on SpatiaLite skipping the "
+"appropriate library support simply produces broken (corrupted) DB-files."
+msgstr ""
+
+#: ../../source/drivers/vector/sqlite.rst:297
+msgid ""
+"Important notice: when the underlying *libspatialite* is v.2.3.1 (or any "
+"previous version) any Geometry will be casted to 2D [XY], because earlier"
+" versions of this library are simply able to support 2D [XY] dimensions. "
+"Version 2.4.0 (or any subsequent) is required in order to support 2.5D "
+"[XYZ]."
 msgstr ""
 
 #: ../../source/drivers/vector/sqlite.rst:317

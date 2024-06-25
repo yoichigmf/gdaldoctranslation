@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/nitf.rst:5
 msgid "NITF -- National Imagery Transmission Format"
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:7
+msgid "NITF"
 msgstr ""
 
 #: ../../source/drivers/raster/nitf.rst:17
@@ -122,6 +130,31 @@ msgid ""
 "NITF file header. Use the official field names from the NITF "
 "specification document; do not put the \"NITF\\_\" prefix that is "
 "reported when asking the metadata list."
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:122
+msgid "NC is the default value, and means no compression."
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:123
+msgid ""
+"C3 means JPEG compression and is only available for the CreateCopy() "
+"method. The QUALITY and PROGRESSIVE JPEG-specific creation options can be"
+" used. See the :ref:`raster.jpeg` driver. Multi-block images can be "
+"written."
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:127
+msgid ""
+"M3 is a variation of C3. The only difference is that a block map is "
+"written, which allow for fast seeking to any block."
+msgstr ""
+
+#: ../../source/drivers/raster/nitf.rst:129
+msgid ""
+"C8 means JPEG2000 compression (one block) and is available for "
+"CreateCopy() and/or Create() methods. See below paragraph for "
+"specificities."
 msgstr ""
 
 #: ../../source/drivers/raster/nitf.rst:302

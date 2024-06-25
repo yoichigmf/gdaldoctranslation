@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/heif.rst:5
 msgid "HEIF / HEIC -- ISO/IEC 23008-12:2017 High Efficiency Image File Format"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:9
+msgid "HEIF"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:11
+msgid "libheif (>= 1.1), built against libde265"
 msgstr ""
 
 #: ../../source/drivers/raster/heif.rst:13
@@ -59,6 +75,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/heif.rst:30
 msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:-1
+msgid "Supports VirtualIO"
+msgstr ""
+
+#: ../../source/drivers/raster/heif.rst:32
+msgid "if libheif >= 1.4"
 msgstr ""
 
 #: ../../source/drivers/raster/heif.rst:36

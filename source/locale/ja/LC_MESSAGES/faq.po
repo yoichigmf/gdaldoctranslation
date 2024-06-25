@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,10 +21,10 @@ msgstr ""
 
 #: ../../source/faq.rst:5
 msgid "FAQ"
-msgstr ""
+msgstr "FAQ"
 
 #: ../../source/faq.rst:12
-msgid "Contents"
+msgid "目次"
 msgstr ""
 
 #: ../../source/faq.rst:16
@@ -197,5 +197,8 @@ msgid "See `CITATION`_"
 msgstr ""
 
 #~ msgid "目次"
+#~ msgstr ""
+
+#~ msgid "Contents"
 #~ msgstr ""
 

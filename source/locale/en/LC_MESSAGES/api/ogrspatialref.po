@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,46 @@ msgstr ""
 
 #: ../../source/api/ogrspatialref.rst:5
 msgid "Spatial Reference System C++ API"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Defines"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Functions"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Private Functions"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Private Members"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Public Static Functions"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Public Static Attributes"
+msgstr ""
+
+#: ../../source/api/ogrspatialref.rst
+msgid "Private Static Functions"
 msgstr ""
 
 #~ msgid "Defines"

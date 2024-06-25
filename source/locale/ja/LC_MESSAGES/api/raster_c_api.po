@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,146 @@ msgstr ""
 
 #: ../../source/api/raster_c_api.rst:5
 msgid "gdal.h: Raster C API"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Defines"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Typedefs"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pszFuncName"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pUserData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param papszFunctionArgs"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nInBands"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param eInDT"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param padfInNoData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pnOutBands"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param peOutDT"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param ppadfOutNoData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pszVRTPath"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param ppWorkingData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Return"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pWorkingData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nBufXSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nBufYSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pInBuffer"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nInBufferSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param pOutBuffer"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nOutBufferSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param eOutDT"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param nOutBands"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param padfOutNoData"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param dfSrcXOff"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param dfSrcYOff"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param dfSrcXSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param dfSrcYSize"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param adfSrcGT"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Param papszExtra"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Enums"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Functions"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/raster_c_api.rst
+msgid "Public Members"
 msgstr ""
 
 #~ msgid "Defines"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/parquet.rst:4
 msgid "(Geo)Parquet"
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:8
+msgid "Parquet"
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:10
+msgid "Parquet component of the Apache Arrow C++ library"
 msgstr ""
 
 #: ../../source/drivers/vector/parquet.rst:12
@@ -62,6 +78,37 @@ msgstr ""
 
 #: ../../source/drivers/vector/parquet.rst:59
 msgid "Layer creation options"
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:64
+msgid ""
+"Compression method. Available values depend on how the Parquet library "
+"was compiled. Defaults to SNAPPY when available, otherwise NONE."
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:146
+msgid ""
+"Note however that enabling this option involves creating a temporary "
+"GeoPackage file (in the same directory as the final Parquet file), and "
+"thus requires temporary storage (possibly up to several times the size of"
+" the final Parquet file, depending on Parquet compression) and additional"
+" processing time."
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:152
+msgid ""
+"The efficiency of spatial filtering depends on the ROW_GROUP_SIZE. If it "
+"is too large, too many features that are not spatially close will be "
+"grouped together. If it is too small, the file size will increase, and "
+"extra processing time will be necessary to browse through the row groups."
+msgstr ""
+
+#: ../../source/drivers/vector/parquet.rst:157
+msgid ""
+"Note also that when this option is enabled, the Arrow writing API (which "
+"is for example triggered when using ogr2ogr to convert from Parquet to "
+"Parquet), fallbacks to the generic implementation, which does not support"
+" advanced Arrow types (lists, maps, etc.)."
 msgstr ""
 
 #: ../../source/drivers/vector/parquet.rst:163

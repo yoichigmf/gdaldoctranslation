@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/jp2openjpeg.rst:5
 msgid "JP2OpenJPEG -- JPEG2000 driver based on OpenJPEG library"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:7
+msgid "JP2OpenJPEG"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:9
+msgid "openjpeg >= 2.1"
 msgstr ""
 
 #: ../../source/drivers/raster/jp2openjpeg.rst:12
@@ -132,6 +148,75 @@ msgstr ""
 
 #: ../../source/drivers/raster/jp2openjpeg.rst:122
 msgid "Creation Options"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:350
+msgid ""
+"(OpenJPEG >= 2.3.0) Style of the code-block coding passes. The following "
+"6 independent settings can be combined together (values should be comma "
+"separated):"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:354
+msgid ""
+"*BYPASS* (1): enable selective arithmetic coding bypass (can "
+"substantially improve coding/decoding speed, at the expense of larger "
+"file size)"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:357
+msgid "*RESET* (2): reset context probabilities on coding pass boundaries"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:358
+msgid "*TERMALL* (4): enable termination on each coding pass"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:359
+msgid "*VSC* (8): enable vertically causal context"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:360
+msgid ""
+"*PREDICTABLE* (16): enable predictable termination (helps for error "
+"detection)"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:362
+msgid "*SEGSYM* (32): enable segmentation symbols (helps for error detection)"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:365
+msgid ""
+"Instead of specifying them by text, it is also possible to give the "
+"corresponding numeric value of the global codeblock style, by adding the "
+"selected options (for example \"BYPASS,TERMALL\" is equivalent to "
+"\"5\"=1+4)"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:370
+msgid ""
+"By default, none of them are enabled. Enabling them will generally "
+"increase codestream size, but improve either coding/decoding speed or "
+"resilience/error detection."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:413
+msgid ""
+"If there are metadata domain whose name starts with \"xml:BOX\\_\", they "
+"will be written each as separate JP2 'xml ' box."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:416
+msgid ""
+"If there is a metadata domain whose name is \"xml:XMP\", its content will"
+" be written as a JP2 'uuid' XMP box."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2openjpeg.rst:419
+msgid ""
+"If there is a metadata domain whose name is \"xml:IPR\", its content will"
+" be written as a JP2 'jp2i' box."
 msgstr ""
 
 #: ../../source/drivers/raster/jp2openjpeg.rst:446

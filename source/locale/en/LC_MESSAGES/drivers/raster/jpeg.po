@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/jpeg.rst:5
 msgid "JPEG -- JPEG JFIF File Format"
+msgstr ""
+
+#: ../../source/drivers/raster/jpeg.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/jpeg.rst:7
+msgid "JPEG"
+msgstr ""
+
+#: ../../source/drivers/raster/jpeg.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/jpeg.rst:9
+msgid "(internal libjpeg provided)"
 msgstr ""
 
 #: ../../source/drivers/raster/jpeg.rst:11
@@ -177,6 +193,13 @@ msgid ""
 "YCbCrK colorspace is not supported in creation. If the source dataset has"
 " a nodata mask, it will be appended as a zlib compressed mask to the JPEG"
 " file."
+msgstr ""
+
+#: ../../source/drivers/raster/jpeg.rst:175
+msgid ""
+"Low values result in higher compression ratios, but poorer image quality "
+"with strong blocking artifacts. Values above 95 are not meaningfully "
+"better quality but can be substantially larger."
 msgstr ""
 
 #: ../../source/drivers/raster/jpeg.rst:271

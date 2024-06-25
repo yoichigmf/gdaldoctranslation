@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/plmosaic.rst:5
 msgid "PLMosaic (Planet Labs Mosaics API)"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:7
+msgid "PLMosaic"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:9
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/raster/plmosaic.rst:11
@@ -122,6 +138,10 @@ msgstr ""
 
 #: ../../source/drivers/raster/plmosaic.rst:71
 msgid "The following configuration options are available :"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:-1
+msgid "PL_API_KEY=value: To specify the Planet API key."
 msgstr ""
 
 #: ../../source/drivers/raster/plmosaic.rst:78

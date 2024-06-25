@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -25,6 +25,66 @@ msgstr ""
 
 #: ../../source/api/gdal_alg.rst:8
 msgid "gdal_alg.h"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Defines"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Typedefs"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param pTransformerArg"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param bDstToSrc"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param nPointCount"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param x"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param y"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param z"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Param panSuccess"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Return"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Enums"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Functions"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/gdal_alg.rst
+msgid "Public Members"
 msgstr ""
 
 #~ msgid "Defines"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:5
 msgid "VRT -- GDAL Virtual Format"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:7
+msgid "VRT"
 msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:12
@@ -95,6 +103,25 @@ msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:64
 msgid "The following creations options are supported:"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:76
+msgid ""
+"Setting explicitly the block size is an advanced setting that should only"
+" be used when the user has determined that it is needed. By default the "
+"block size is set to:"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:80
+msgid ""
+"128x128 for a source-based VRT raster band. Unless the VRT is made of a "
+"single source and this single source is not subsetted, in which case the "
+"block size of the unique source will be set as the VRT raster band block "
+"size)"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:84
+msgid "512x128 for a warped VRT."
 msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:87
@@ -1514,7 +1541,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst
-msgid "Parameters"
+msgid "パラメータ"
 msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:1249
@@ -1774,6 +1801,28 @@ msgid ""
 "datasets. To avoid such issues, by default, execution of Python pixel "
 "function will be disabled. The execution policy can be controlled with "
 "the following configuration options:"
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:1550
+msgid ""
+"YES: all VRT scripts are considered as trusted and their Python pixel "
+"functions will be run when pixel operations are involved."
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:1551
+msgid ""
+"NO: all VRT scripts are considered untrusted, and none Python "
+"pixelfunction will be run."
+msgstr ""
+
+#: ../../source/drivers/raster/vrt.rst:1552
+msgid ""
+"TRUSTED_MODULES (default setting): all VRT scripts with inline Python "
+"code in their PixelFunctionCode elements will be considered untrusted and"
+" will not be run. VRT scripts that use a PixelFunctionType of the form "
+"\"module_name.function_name\" will be considered as trusted, only if "
+"\"module_name\" is allowed in the "
+":config:`GDAL_VRT_PYTHON_TRUSTED_MODULES` configuration option."
 msgstr ""
 
 #: ../../source/drivers/raster/vrt.rst:1561
@@ -2441,5 +2490,8 @@ msgstr ""
 #~ " allowed in the "
 #~ ":config:`GDAL_VRT_PYTHON_TRUSTED_MODULES` configuration "
 #~ "option."
+#~ msgstr ""
+
+#~ msgid "Parameters"
 #~ msgstr ""
 

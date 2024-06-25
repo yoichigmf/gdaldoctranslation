@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/pmtiles.rst:5
 msgid "PMTiles -- ProtoMaps Tiles"
+msgstr ""
+
+#: ../../source/drivers/vector/pmtiles.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/pmtiles.rst:9
+msgid "PMTiles"
 msgstr ""
 
 #: ../../source/drivers/vector/pmtiles.rst:13
@@ -80,6 +88,14 @@ msgstr ""
 msgid "The following open options are available:"
 msgstr ""
 
+#: ../../source/drivers/vector/pmtiles.rst:58
+msgid ""
+"Vector tiles are generally produced with a buffer that provides overlaps "
+"between adjacent tiles, and can be used to display them properly. When "
+"using vector tiles as a vector layer source, like in OGR vector model, "
+"this padding is undesirable, hence the default behavior of clipping."
+msgstr ""
+
 #: ../../source/drivers/vector/pmtiles.rst:86
 msgid "Creation issues"
 msgstr ""
@@ -110,6 +126,12 @@ msgstr ""
 
 #: ../../source/drivers/vector/pmtiles.rst:103
 msgid "Dataset creation options"
+msgstr ""
+
+#: ../../source/drivers/vector/pmtiles.rst:129
+msgid ""
+"Maximum zoom level at which tiles are generated. Maximum supported value "
+"is 22."
 msgstr ""
 
 #: ../../source/drivers/vector/pmtiles.rst:186

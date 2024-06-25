@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:4
 msgid "GPX - GPS Exchange Format"
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:6
+msgid "GPX"
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:8
+msgid "(read support needs libexpat)"
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:10
@@ -99,6 +115,28 @@ msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:54
 msgid "The following :ref:`configuration options <configoptions>` are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:67
+#: ../../source/drivers/vector/gpx.rst:101
+msgid "\"track_seg_id\" to \"trksegid\""
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:68
+#: ../../source/drivers/vector/gpx.rst:102
+msgid "\"track_seg_point_id\" to  \"trksegptid\""
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:69
+#: ../../source/drivers/vector/gpx.rst:103
+msgid "\"route_point_id\" to \"rteptid\""
+msgstr ""
+
+#: ../../source/drivers/vector/gpx.rst:71
+#: ../../source/drivers/vector/gpx.rst:105
+msgid ""
+"But note that no particular processing will be done for any extension "
+"field names."
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:89

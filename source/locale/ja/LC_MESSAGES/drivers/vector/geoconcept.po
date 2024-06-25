@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/geoconcept.rst:4
 msgid "GeoConcept text export"
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:6
+msgid "Geoconcept"
 msgstr ""
 
 #: ../../source/drivers/vector/geoconcept.rst:10
@@ -126,6 +134,101 @@ msgstr ""
 
 #: ../../source/drivers/vector/geoconcept.rst:82
 msgid "Dataset Creation Options"
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:98
+msgid ""
+"It is important to note that a GeoConcept export file can hold different "
+"types and associated sub-types."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:101
+msgid ""
+"configuration section : the GCT file starts with ``//#SECTION CONFIG`` "
+"and ends with ``//#ENDSECTION CONFIG``. All the configuration is enclosed"
+" within these marks."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:104
+msgid ""
+"map section : purely for documentation at the time of writing this "
+"document. This section starts with ``//#SECTION MAP`` and ends with "
+"``//#ENDSECTION MAP``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:107
+msgid ""
+"type section : this section defines a class of features. A type has a "
+"name (keyword ``Name``) and an ID (keyword ``ID``). A type holds sub-"
+"types and fields. This section starts with ``//#SECTION TYPE`` and ends "
+"with ``//#ENDSECTION TYPE``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:112
+msgid ""
+"sub-type section : this sub-section defines a kind og features within a "
+"class. A sub-type has a name (keyword ``Name``), an ID (keyword ``ID``), "
+"a type of geometry (keyword ``Kind``) and a dimension. The following "
+"types of geometry are supported : POINT, LINE, POLYGON. The current "
+"release of this driver does not support the TEXT geometry. The dimension "
+"can be 2D, 3DM or 3D. A sub-type holds fields. This section starts with "
+"``//#SECTION SUBTYPE`` and ends with ``//#ENDSECTION SUBTYPE``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:121
+msgid ""
+"fields section : defines user fields. A field has a name (keyword "
+"``Name``), an ID (keyword ``ID``), a type (keyword ``Kind``). The "
+"following types of fields are supported : INT, REAL, MEMO, CHOICE, DATE, "
+"TIME, LENGTH, AREA. This section starts with ``//#SECTION FIELD`` and "
+"ends with ``//#ENDSECTION FIELD``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:128
+msgid "field section : defines type fields. See above."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:130
+msgid ""
+"field section : defines general fields. Out of these, the following rules"
+" apply :"
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:133
+msgid ""
+"private field names start with a '@' : the private fields are "
+"``Identifier``, ``Class``, ``Subclass``, ``Name``, ``NbFields``, ``X``, "
+"``Y``, ``XP``, ``YP``, ``Graphics``, ``Angle``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:136
+msgid ""
+"some private field are mandatory (they must appear in the configuration) "
+": ``Identifier``, ``Class``, ``Subclass``, ``Name``, ``X``, ``Y``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:139
+msgid ""
+"If the sub-type is linear (LINE), then the following fields must be "
+"declared ``XP``, ``YP``."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:141
+msgid ""
+"If the sub-type is linear or polygonal (LINE, POLY), then ``Graphics`` "
+"must be declared."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:143
+msgid ""
+"If the sub-type is ponctual or textual (POINT, TEXT), the ``Angle`` may "
+"be declared."
+msgstr ""
+
+#: ../../source/drivers/vector/geoconcept.rst:146
+msgid ""
+"When this option is not used, the driver manage types and sub-types name "
+"based on either the layer name or on the use of ``-nln`` option."
 msgstr ""
 
 #: ../../source/drivers/vector/geoconcept.rst:150

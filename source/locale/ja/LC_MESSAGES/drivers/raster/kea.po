@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,8 +19,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/drivers/raster/kea.rst:5
+#: ../../source/drivers/raster/kea.rst:5 ../../source/drivers/raster/kea.rst:7
 msgid "KEA"
+msgstr ""
+
+#: ../../source/drivers/raster/kea.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/kea.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/kea.rst:9
+msgid "libkea and libhdf5 libraries"
 msgstr ""
 
 #: ../../source/drivers/raster/kea.rst:11

@@ -28,7 +28,7 @@ msgid "Programs"
 msgstr "プログラム"
 
 #: ../../source/programs/index.rst:8
-msgid "一般情報"
+msgid "General"
 msgstr ""
 
 #: ../../source/programs/index.rst:18
@@ -268,4 +268,7 @@ msgstr "その他ユーティリティ"
 #: ../../source/programs/index.rst:170
 msgid ":ref:`sozip`: Generate a seek-optimized ZIP (SOZip) file"
 msgstr ""
+
+#~ msgid "一般情報"
+#~ msgstr ""
 

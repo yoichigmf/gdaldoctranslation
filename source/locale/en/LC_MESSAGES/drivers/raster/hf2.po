@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/hf2.rst:5
 msgid "HF2 -- HF2/HFZ heightfield raster"
+msgstr ""
+
+#: ../../source/drivers/raster/hf2.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/hf2.rst:7
+msgid "HF2"
 msgstr ""
 
 #: ../../source/drivers/raster/hf2.rst:11

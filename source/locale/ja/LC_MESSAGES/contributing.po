@@ -25,7 +25,7 @@ msgstr "貢献する方法は?"
 
 #: ../../source/contributing/index.rst:7
 msgid "There are several ways for users to contribute to GDAL:"
-msgstr "ユーザーがGDALに貢献する方法は複数あります"
+msgstr "ユーザーがGDALに貢献する方法は複数あります:"
 
 #: ../../source/contributing/index.rst:9
 msgid ":ref:`contributing code<development>` (bug fixes or enhancements)"

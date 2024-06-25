@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -31,8 +31,80 @@ msgstr ""
 msgid "Error Handling"
 msgstr ""
 
+#: of osgeo.gdal.ConfigurePythonLogging:1
+msgid "Configure GDAL to use Python's logging framework"
+msgstr ""
+
 #: ../../source/api/python/general.rst:91
 msgid "File Management"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry:1
+msgid "Proxy of C++ DirEntry class."
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra:1
+msgid "p.p.char"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra osgeo.gdal.DirEntry.mode
+#: osgeo.gdal.DirEntry.modeKnown osgeo.gdal.DirEntry.mtime
+#: osgeo.gdal.DirEntry.mtimeKnown osgeo.gdal.DirEntry.name
+#: osgeo.gdal.DirEntry.size osgeo.gdal.DirEntry.sizeKnown
+msgid "type"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.extra:3
+msgid "extra"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mode:1
+msgid "int"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mode:3
+msgid "mode"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.modeKnown:1 osgeo.gdal.DirEntry.mtimeKnown:1
+#: osgeo.gdal.DirEntry.sizeKnown:1
+msgid "bool"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.modeKnown:3
+msgid "modeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtime:1 osgeo.gdal.DirEntry.size:1
+msgid "GIntBig"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtime:3
+msgid "mtime"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.mtimeKnown:3
+msgid "mtimeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.name:1
+msgid "p.char"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.name:3
+msgid "name"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.size:3
+msgid "size"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.sizeKnown:3
+msgid "sizeKnown"
+msgstr ""
+
+#: of osgeo.gdal.DirEntry.thisown:1
+msgid "The membership flag"
 msgstr ""
 
 #~ msgid "Configure GDAL to use Python's logging framework"

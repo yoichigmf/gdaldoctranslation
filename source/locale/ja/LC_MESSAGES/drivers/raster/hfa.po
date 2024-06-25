@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/hfa.rst:5
 msgid "HFA -- Erdas Imagine .img"
+msgstr ""
+
+#: ../../source/drivers/raster/hfa.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/hfa.rst:7
+msgid "HFA"
 msgstr ""
 
 #: ../../source/drivers/raster/hfa.rst:11
@@ -108,6 +116,19 @@ msgid ""
 "Currently three `runtime configuration options "
 "<http://trac.osgeo.org/gdal/wiki/ConfigOptions>`__ are supported by the "
 "HFA driver:"
+msgstr ""
+
+#: ../../source/drivers/raster/hfa.rst:162
+msgid ""
+"This configuration option can be used when building external overviews "
+"for a base image that is not in Erdas Imagine format. Resulting overview "
+"file will use the rrd structure and have .aux extension."
+msgstr ""
+
+#: ../../source/drivers/raster/hfa.rst:171
+msgid ""
+"Erdas Imagine and older ArcGIS versions may recognize overviews for some "
+"image formats only if they have .rrd extension. In this case use:"
 msgstr ""
 
 #: ../../source/drivers/raster/hfa.rst:194

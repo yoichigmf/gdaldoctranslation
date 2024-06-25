@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/miramon.rst:4
 msgid "MiraMon Vector"
+msgstr ""
+
+#: ../../source/drivers/vector/miramon.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/miramon.rst:8
+msgid "MiraMonVector"
 msgstr ""
 
 #: ../../source/drivers/vector/miramon.rst:12
@@ -471,6 +479,13 @@ msgstr ""
 
 #: ../../source/drivers/vector/miramon.rst:294
 msgid "Layer creation options"
+msgstr ""
+
+#: ../../source/drivers/vector/miramon.rst:315
+msgid ""
+"As at the moment of this release, UTF-8 tables are not editable in the "
+"`MiraD application <https://www.miramon.cat/USA/Prod-MiraD.htm>`__, so it"
+" is recommended to use ANSI instead, if there are no coding problems."
 msgstr ""
 
 #: ../../source/drivers/vector/miramon.rst:327

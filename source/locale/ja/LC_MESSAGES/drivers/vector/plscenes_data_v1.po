@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -117,6 +117,10 @@ msgstr ""
 
 #: ../../source/drivers/vector/plscenes_data_v1.rst:125
 msgid ":copy-config:`PL_API_KEY`"
+msgstr ""
+
+#: ../../source/drivers/raster/plmosaic.rst:-1
+msgid "PL_API_KEY=value: To specify the Planet API key."
 msgstr ""
 
 #: ../../source/drivers/vector/plscenes_data_v1.rst:133

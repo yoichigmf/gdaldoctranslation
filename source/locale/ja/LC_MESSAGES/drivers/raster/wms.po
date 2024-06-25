@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,23 @@ msgstr ""
 
 #: ../../source/drivers/raster/wms.rst:5
 msgid "WMS -- Web Map Services"
+msgstr ""
+
+#: ../../source/drivers/raster/wms.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/wms.rst:7
+#: ../../source/drivers/raster/wms.rst:105
+msgid "WMS"
+msgstr ""
+
+#: ../../source/drivers/raster/wms.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/wms.rst:9
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/raster/wms.rst:11
@@ -623,10 +640,6 @@ msgid ""
 "The GDAL WMS driver has support for several internal 'minidrivers', which"
 " allow access to different web mapping services. Each of these services "
 "may support a different set of options in the Service block."
-msgstr ""
-
-#: ../../source/drivers/raster/wms.rst:105
-msgid "WMS"
 msgstr ""
 
 #: ../../source/drivers/raster/wms.rst:107

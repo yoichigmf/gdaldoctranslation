@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -23,10 +23,26 @@ msgstr ""
 msgid "RasterLite2 - Rasters in SQLite DB"
 msgstr ""
 
+#: ../../source/drivers/raster/rasterlite2.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/rasterlite2.rst:9
+msgid "SQLite"
+msgstr ""
+
 #: ../../source/drivers/raster/rasterlite2.rst:11
 msgid ""
 "The above short name is not a typo. The RasterLite2 functionality is part"
 " of the :ref:`vector.sqlite` driver."
+msgstr ""
+
+#: ../../source/drivers/raster/rasterlite2.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/rasterlite2.rst:14
+msgid "libsqlite3, librasterlite2, libspatialite"
 msgstr ""
 
 #: ../../source/drivers/raster/rasterlite2.rst:16

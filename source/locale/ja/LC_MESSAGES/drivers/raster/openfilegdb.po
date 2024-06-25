@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/openfilegdb.rst:4
 msgid "ESRI File Geodatabase raster (OpenFileGDB)"
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:8
+msgid "OpenFileGDB"
 msgstr ""
 
 #: ../../source/drivers/raster/openfilegdb.rst:12
@@ -93,6 +101,33 @@ msgstr ""
 
 #: ../../source/drivers/raster/openfilegdb.rst:52
 msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:59
+msgid ""
+"In AUTO mode, the driver will expose a dataset nodata mask band, unless "
+"the band data type is Float32 or Float64, in which case a nodata value is"
+" used."
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:62
+msgid ""
+"In MASK mode, the driver will expose a dataset nodata mask band for all "
+"data types."
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:65
+msgid ""
+"In NONE mode, the driver will not expose a nodata mask band or a nodata "
+"value."
+msgstr ""
+
+#: ../../source/drivers/raster/openfilegdb.rst:68
+msgid ""
+"When specifying a numeric nodata value (``nan`` accepted for Float32 or "
+"Float64), it is used as the band nodata value. The nodata value should be"
+" selected outside the range of valid values (but within the range of the "
+"data type)."
 msgstr ""
 
 #: ../../source/drivers/raster/openfilegdb.rst:74

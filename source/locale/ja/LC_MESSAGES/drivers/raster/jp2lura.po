@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/jp2lura.rst:5
 msgid "JP2Lura -- JPEG2000 driver based on Lurawave library"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:7
+msgid "JP2LURA"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:11
+msgid "Lurawave library"
 msgstr ""
 
 #: ../../source/drivers/raster/jp2lura.rst:13
@@ -84,6 +100,18 @@ msgstr ""
 
 #: ../../source/drivers/raster/jp2lura.rst:74
 msgid "Creation Options"
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:323
+msgid ""
+"If there are metadata domain whose name starts with \"xml:BOX\\_\", they "
+"will be written each as separate JP2 'xml ' box."
+msgstr ""
+
+#: ../../source/drivers/raster/jp2lura.rst:326
+msgid ""
+"If there is a metadata domain whose name is \"xml:XMP\", its content will"
+" be written as a JP2 'uuid' XMP box."
 msgstr ""
 
 #: ../../source/drivers/raster/jp2lura.rst:348

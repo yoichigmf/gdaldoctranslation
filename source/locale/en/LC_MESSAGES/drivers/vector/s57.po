@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/s57.rst:4
 msgid "IHO S-57 (ENC)"
+msgstr ""
+
+#: ../../source/drivers/vector/s57.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/s57.rst:6
+msgid "S57"
 msgstr ""
 
 #: ../../source/drivers/vector/s57.rst:10

@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,11 +21,11 @@ msgstr ""
 
 #: ../../source/contributing/index.rst:5
 msgid "How to contribute?"
-msgstr ""
+msgstr "貢献する方法は?"
 
 #: ../../source/contributing/index.rst:7
 msgid "There are several ways for users to contribute to GDAL:"
-msgstr ""
+msgstr "ユーザーがGDALに貢献する方法は複数あります:"
 
 #: ../../source/contributing/index.rst:9
 msgid ":ref:`contributing code<development>` (bug fixes or enhancements)"

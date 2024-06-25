@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,26 @@ msgstr ""
 
 #: ../../source/drivers/vector/ili.rst:4
 msgid "\"INTERLIS 1\" and \"INTERLIS 2\" drivers"
+msgstr ""
+
+#: ../../source/drivers/vector/ili.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/ili.rst:6
+msgid "INTERLIS 1"
+msgstr ""
+
+#: ../../source/drivers/vector/ili.rst:8
+msgid "INTERLIS 2"
+msgstr ""
+
+#: ../../source/drivers/vector/ili.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/ili.rst:10
+msgid "Xerces"
 msgstr ""
 
 #: ../../source/drivers/vector/ili.rst:12

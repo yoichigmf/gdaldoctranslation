@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/basisu.rst:5
 msgid "BASISU -- Basis Universal"
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:9
+msgid "BASISU"
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:11
+msgid "Basis Universal"
 msgstr ""
 
 #: ../../source/drivers/raster/basisu.rst:14
@@ -82,6 +98,16 @@ msgstr ""
 
 #: ../../source/drivers/raster/basisu.rst:53
 msgid "The following creation options are available:"
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:110
+msgid ""
+"Defaults to the maximum number of virtual CPUs available. Can also be "
+"controlled with the :config:`GDAL_NUM_THREADS` configuration option."
+msgstr ""
+
+#: ../../source/drivers/raster/basisu.rst:118
+msgid "Whether to enable MIPMAP generation."
 msgstr ""
 
 #: ../../source/drivers/raster/basisu.rst:128

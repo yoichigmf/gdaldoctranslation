@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/gpkg.rst:4
 msgid "GPKG -- GeoPackage vector"
+msgstr ""
+
+#: ../../source/drivers/vector/gpkg.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/gpkg.rst:6
+msgid "GPKG"
+msgstr ""
+
+#: ../../source/drivers/vector/gpkg.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/gpkg.rst:8
+msgid "libsqlite3"
 msgstr ""
 
 #: ../../source/drivers/vector/gpkg.rst:10
@@ -331,6 +347,12 @@ msgstr ""
 
 #: ../../source/drivers/vector/gpkg.rst:194
 msgid "The following open options are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/gpkg.rst:221
+msgid ""
+"The attached database must be a GeoPackage one too, so that its geometry "
+"blobs are properly recognized (so typically not a Spatialite one)"
 msgstr ""
 
 #: ../../source/drivers/vector/gpkg.rst:247

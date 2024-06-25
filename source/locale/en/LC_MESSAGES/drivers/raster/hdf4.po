@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,26 @@ msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:5
 msgid "HDF4 -- Hierarchical Data Format Release 4 (HDF4)"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:7
+msgid "HDF4"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:9
+msgid "HDF4Image"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:11
+msgid "libdf"
 msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:13
@@ -204,6 +224,13 @@ msgstr ""
 msgid "Creation Options:"
 msgstr ""
 
+#: ../../source/drivers/raster/hdf4.rst:-1
+msgid ""
+"RANK=[2/3]:  Defaults to 3. Create n-dimensional SDS. Currently only 2D "
+"and 3D datasets supported. By default a 3-dimensional dataset will be "
+"created."
+msgstr ""
+
 #: ../../source/drivers/raster/hdf4.rst:219
 msgid "Metadata"
 msgstr ""
@@ -221,6 +248,15 @@ msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:228
 msgid "The following open option is supported:"
+msgstr ""
+
+#: ../../source/drivers/raster/hdf4.rst:-1
+msgid ""
+"LIST_SDS=[AUTO/YES/NO]:  (GDAL >= 3.2) Whether to report Scientific Data "
+"Sets (SDS). By default, when a HDF file contains EOS_SWATH or EOS_GRID, "
+"SDS will not be listed as GDAL subdatasets (as this would cause them to "
+"be reported twice). Listing them can be forced by setting LIST_SDS to "
+"YES."
 msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:241

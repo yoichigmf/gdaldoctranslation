@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -49,16 +49,221 @@ msgstr ""
 msgid "Driver"
 msgstr ""
 
+#: of osgeo.gdal.Driver:1
+msgid "Proxy of C++ GDALDriverShadow class."
+msgstr ""
+
+#: of osgeo.gdal.Driver.HelpTopic:1 osgeo.gdal.Driver.LongName:1
+#: osgeo.gdal.Driver.ShortName:1
+msgid "p.q(const).char"
+msgstr ""
+
+#: of osgeo.gdal.Band.DataType osgeo.gdal.Band.XSize osgeo.gdal.Band.YSize
+#: osgeo.gdal.ColorEntry.c1 osgeo.gdal.ColorEntry.c2 osgeo.gdal.ColorEntry.c3
+#: osgeo.gdal.ColorEntry.c4 osgeo.gdal.Dataset.RasterCount
+#: osgeo.gdal.Dataset.RasterXSize osgeo.gdal.Dataset.RasterYSize
+#: osgeo.gdal.Driver.HelpTopic osgeo.gdal.Driver.LongName
+#: osgeo.gdal.Driver.ShortName osgeo.gdal.GCP.GCPLine osgeo.gdal.GCP.GCPPixel
+#: osgeo.gdal.GCP.GCPX osgeo.gdal.GCP.GCPY osgeo.gdal.GCP.GCPZ
+#: osgeo.gdal.GCP.Id osgeo.gdal.GCP.Info
+msgid "type"
+msgstr ""
+
+#: of osgeo.gdal.Driver.HelpTopic:3
+msgid "HelpTopic"
+msgstr ""
+
+#: of osgeo.gdal.Driver.LongName:3
+msgid "LongName"
+msgstr ""
+
+#: of osgeo.gdal.Driver.ShortName:3
+msgid "ShortName"
+msgstr ""
+
 #: ../../source/api/python/raster_api.rst:36
 msgid "Dataset"
+msgstr ""
+
+#: of osgeo.gdal.Dataset:1
+msgid "Proxy of C++ GDALDatasetShadow class."
+msgstr ""
+
+#: of osgeo.gdal.Dataset.DeleteLayer:1
+msgid "Deletes the layer given an index or layer name"
+msgstr ""
+
+#: of osgeo.gdal.Dataset.GetLayer:1
+msgid "Return the layer given an index or a name"
+msgstr ""
+
+#: of osgeo.gdal.Dataset.GetTiledVirtualMemArray:1
+msgid ""
+"Return a NumPy array for the dataset, seen as a virtual memory mapping "
+"with a tile organization. If there are several bands and "
+"tile_organization = gdal.GTO_TIP, an element is accessed with "
+"array[tiley][tilex][y][x][band]. If there are several bands and "
+"tile_organization = gdal.GTO_BIT, an element is accessed with "
+"array[tiley][tilex][band][y][x]. If there are several bands and "
+"tile_organization = gdal.GTO_BSQ, an element is accessed with "
+"array[band][tiley][tilex][y][x]. If there is only one band, an element is"
+" accessed with array[tiley][tilex][y][x]. Any reference to the array must"
+" be dropped before the last reference to the related dataset is also "
+"dropped."
+msgstr ""
+
+#: of osgeo.gdal.Dataset.GetVirtualMemArray:1
+msgid ""
+"Return a NumPy array for the dataset, seen as a virtual memory mapping. "
+"If there are several bands and band_sequential = True, an element is "
+"accessed with array[band][y][x]. If there are several bands and "
+"band_sequential = False, an element is accessed with array[y][x][band]. "
+"If there is only one band, an element is accessed with array[y][x]. Any "
+"reference to the array must be dropped before the last reference to the "
+"related dataset is also dropped."
+msgstr ""
+
+#: of osgeo.gdal.Band.XSize:1 osgeo.gdal.Band.YSize:1
+#: osgeo.gdal.Dataset.RasterCount:1 osgeo.gdal.Dataset.RasterXSize:1
+#: osgeo.gdal.Dataset.RasterYSize:1
+msgid "int"
+msgstr ""
+
+#: of osgeo.gdal.Dataset.RasterCount:3
+msgid "RasterCount"
+msgstr ""
+
+#: of osgeo.gdal.Dataset.RasterXSize:3
+msgid "RasterXSize"
+msgstr ""
+
+#: of osgeo.gdal.Dataset.RasterYSize:3
+msgid "RasterYSize"
+msgstr ""
+
+#: of osgeo.gdal.Band.ReadAsArray:1 osgeo.gdal.Dataset.ReadAsArray:1
+msgid ""
+"Reading a chunk of a GDAL band into a numpy array. The optional "
+"(buf_xsize,buf_ysize,buf_type) parameters should generally not be "
+"specified if buf_obj is specified. The array is returned"
 msgstr ""
 
 #: ../../source/api/python/raster_api.rst:50
 msgid "Band"
 msgstr ""
 
+#: of osgeo.gdal.Band:1
+msgid "Proxy of C++ GDALRasterBandShadow class."
+msgstr ""
+
+#: of osgeo.gdal.Band.DataType:1
+msgid "GDALDataType"
+msgstr ""
+
+#: of osgeo.gdal.Band.DataType:3
+msgid "DataType"
+msgstr ""
+
+#: of osgeo.gdal.Band.GetTiledVirtualMemArray:1
+msgid ""
+"Return a NumPy array for the band, seen as a virtual memory mapping with "
+"a tile organization. An element is accessed with "
+"array[tiley][tilex][y][x]. Any reference to the array must be dropped "
+"before the last reference to the related dataset is also dropped."
+msgstr ""
+
+#: of osgeo.gdal.Band.GetVirtualMemArray:1
+#: osgeo.gdal.Band.GetVirtualMemAutoArray:1
+msgid ""
+"Return a NumPy array for the band, seen as a virtual memory mapping. An "
+"element is accessed with array[y][x]. Any reference to the array must be "
+"dropped before the last reference to the related dataset is also dropped."
+msgstr ""
+
+#: of osgeo.gdal.Band.XSize:3
+msgid "XSize"
+msgstr ""
+
+#: of osgeo.gdal.Band.YSize:3
+msgid "YSize"
+msgstr ""
+
 #: ../../source/api/python/raster_api.rst:62
 msgid "Other"
+msgstr ""
+
+#: of osgeo.gdal.RasterAttributeTable:1
+msgid "Proxy of C++ GDALRasterAttributeTableShadow class."
+msgstr ""
+
+#: of osgeo.gdal.ColorTable:1
+msgid "Proxy of C++ GDALColorTableShadow class."
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry:1
+msgid "Proxy of C++ GDALColorEntry class."
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry.c1:1 osgeo.gdal.ColorEntry.c2:1
+#: osgeo.gdal.ColorEntry.c3:1 osgeo.gdal.ColorEntry.c4:1
+msgid "short"
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry.c1:3
+msgid "c1"
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry.c2:3
+msgid "c2"
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry.c3:3
+msgid "c3"
+msgstr ""
+
+#: of osgeo.gdal.ColorEntry.c4:3
+msgid "c4"
+msgstr ""
+
+#: of osgeo.gdal.GCP:1
+msgid "Proxy of C++ GDAL_GCP class."
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPLine:1 osgeo.gdal.GCP.GCPPixel:1 osgeo.gdal.GCP.GCPX:1
+#: osgeo.gdal.GCP.GCPY:1 osgeo.gdal.GCP.GCPZ:1
+msgid "double"
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPLine:3
+msgid "GCPLine"
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPPixel:3
+msgid "GCPPixel"
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPX:3
+msgid "GCPX"
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPY:3
+msgid "GCPY"
+msgstr ""
+
+#: of osgeo.gdal.GCP.GCPZ:3
+msgid "GCPZ"
+msgstr ""
+
+#: of osgeo.gdal.GCP.Id:1 osgeo.gdal.GCP.Info:1
+msgid "p.char"
+msgstr ""
+
+#: of osgeo.gdal.GCP.Id:3
+msgid "Id"
+msgstr ""
+
+#: of osgeo.gdal.GCP.Info:3
+msgid "Info"
 msgstr ""
 
 #~ msgid "Proxy of C++ GDALDriverShadow class."

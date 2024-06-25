@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -25,6 +25,18 @@ msgstr ""
 
 #: ../../source/api/gdalattribute_cpp.rst:8
 msgid "GDALAttribute class"
+msgstr ""
+
+#: ../../source/api/gdalattribute_cpp.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../source/api/gdalattribute_cpp.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/gdalattribute_cpp.rst
+msgid "パラメータ"
 msgstr ""
 
 #: ../../source/api/gdalattribute_cpp.rst:15

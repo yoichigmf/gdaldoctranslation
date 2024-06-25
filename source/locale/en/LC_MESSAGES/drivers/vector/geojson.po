@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,7 +20,12 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/drivers/vector/geojson.rst:4
+#: ../../source/drivers/vector/geojson.rst:6
 msgid "GeoJSON"
+msgstr ""
+
+#: ../../source/drivers/vector/geojson.rst:-1
+msgid "Driver short name"
 msgstr ""
 
 #: ../../source/drivers/vector/geojson.rst:10

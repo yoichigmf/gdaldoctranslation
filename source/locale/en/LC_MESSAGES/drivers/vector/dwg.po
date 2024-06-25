@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/dwg.rst:4
 msgid "AutoCAD DWG"
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:6
+msgid "DWG"
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:8
+msgid "Open Design Alliance Teigha library"
 msgstr ""
 
 #: ../../source/drivers/vector/dwg.rst:10
@@ -88,6 +104,45 @@ msgstr ""
 
 #: ../../source/drivers/vector/dwg.rst:41
 msgid "The following :ref:`configuration options <configoptions>` are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:53
+msgid ""
+"A new layer will be available called blocks. It will contain one or more "
+"features for each block defined in the file. In addition to the usual "
+"attributes, they will also have a BlockName attribute indicate what block"
+" they are part of."
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:57
+msgid ""
+"The entities layer will have new attributes BlockName, BlockScale, "
+"BlockAngle and BlockAttributes."
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:59
+msgid ""
+"BlockAttributes will be a list of (tag x value) pairs of all visible "
+"attributes (JSON encoded)."
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:61
+msgid ""
+"block referenced will populate these new fields with the corresponding "
+"information (they are null for all other entities)."
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:63
+msgid ""
+"block references will not have block geometry inlined - instead they will"
+" have a point geometry for the insertion point."
+msgstr ""
+
+#: ../../source/drivers/vector/dwg.rst:66
+msgid ""
+"The intention is that with :config:`DWG_INLINE_BLOCKS` disabled, the "
+"block references will remain as references and the original block "
+"definitions will be available via the blocks layer."
 msgstr ""
 
 #: ../../source/drivers/vector/dwg.rst:89

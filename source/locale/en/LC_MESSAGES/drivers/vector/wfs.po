@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/wfs.rst:4
 msgid "WFS - OGC WFS service"
+msgstr ""
+
+#: ../../source/drivers/vector/wfs.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/wfs.rst:6
+msgid "WFS"
+msgstr ""
+
+#: ../../source/drivers/vector/wfs.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/wfs.rst:8
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/vector/wfs.rst:10

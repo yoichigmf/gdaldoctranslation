@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:4
 msgid "ESRI File Geodatabase vector (OpenFileGDB)"
+msgstr ""
+
+#: ../../source/drivers/vector/openfilegdb.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/openfilegdb.rst:6
+msgid "OpenFileGDB"
 msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:10
@@ -60,6 +68,10 @@ msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:29
 msgid "Driver capabilities"
+msgstr ""
+
+#: ../../source/drivers/vector/openfilegdb.rst:33
+msgid "3.6"
 msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:40
@@ -153,6 +165,12 @@ msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:118
 msgid "Layer Creation Options"
+msgstr ""
+
+#: ../../source/drivers/vector/openfilegdb.rst:144
+msgid ""
+"On reading, this information is exposed in the ALIAS_NAME layer metadata "
+"item (GDAL >= 3.8)."
 msgstr ""
 
 #: ../../source/drivers/vector/openfilegdb.rst:165

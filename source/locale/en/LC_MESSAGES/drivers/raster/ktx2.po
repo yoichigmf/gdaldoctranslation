@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,7 +20,20 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/drivers/raster/ktx2.rst:5
+#: ../../source/drivers/raster/ktx2.rst:9
 msgid "KTX2"
+msgstr ""
+
+#: ../../source/drivers/raster/ktx2.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/ktx2.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/ktx2.rst:11
+msgid "Basis Universal"
 msgstr ""
 
 #: ../../source/drivers/raster/ktx2.rst:14
@@ -83,6 +96,10 @@ msgstr ""
 
 #: ../../source/drivers/raster/ktx2.rst:54
 msgid "The following creation options are available:"
+msgstr ""
+
+#: ../../source/drivers/raster/ktx2.rst:125
+msgid "Whether to enable MIPMAP generation."
 msgstr ""
 
 #: ../../source/drivers/raster/ktx2.rst:135

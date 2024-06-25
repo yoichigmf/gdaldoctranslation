@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/cog.rst:5
 msgid "COG -- Cloud Optimized GeoTIFF generator"
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:9
+msgid "COG"
 msgstr ""
 
 #: ../../source/drivers/raster/cog.rst:13
@@ -50,8 +58,178 @@ msgstr ""
 msgid "General creation options"
 msgstr ""
 
+#: ../../source/drivers/raster/cog.rst:51
+msgid ""
+"``JPEG`` should generally only be used with Byte data (8 bit per "
+"channel). But if GDAL is built with internal libtiff and libjpeg, it is"
+"    possible to read and write TIFF files with 12bit JPEG compressed TIFF"
+" files (seen as UInt16 bands with NBITS=12). See the `\"8 and 12 bit JPEG"
+" in TIFF\" <http://trac.osgeo.org/gdal/wiki/TIFF12BitJPEG>`__ wiki page "
+"for more details. For the COG driver, JPEG compression for 3 or 4-band "
+"images automatically selects the PHOTOMETRIC=YCBCR colorspace with a "
+"4:2:2 subsampling of the Y,Cb,Cr components. For a input dataset (single-"
+"band or 3-band), plus an alpha band, the alpha band will be converted as "
+"a 1-bit DEFLATE compressed mask."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:63
+msgid ""
+"``LZW``, ``DEFLATE`` and ``ZSTD`` compressions can be used with the "
+"PREDICTOR creation option."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:65
+msgid ""
+"``ZSTD`` is available when using internal libtiff and if GDAL built "
+"against libzstd >=1.0, or if built against external libtiff with zstd "
+"support."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:68
+msgid "``LERC`` is available when using internal libtiff."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:70
+msgid "``LERC_ZSTD`` is available when ``LERC`` and ``ZSTD`` are available."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:72
+msgid ""
+"``JXL`` is for JPEG-XL, and is only available when using internal libtiff"
+" and building GDAL against https://github.com/libjxl/libjxl . JXL "
+"compression may only be used on datasets with 4 bands or less. Option "
+"added in GDAL 3.4"
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:84
+msgid ""
+"For DEFLATE/LZMA, 9 is the slowest/higher compression rate (or 12 when "
+"using a libtiff with libdeflate support). The default is 6."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:86
+msgid "For ZSTD, 22 is the slowest/higher compression rate. The default is 9."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:192
+msgid "``YES`` forces BigTIFF."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:193
+msgid "``NO`` forces classic TIFF."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:194
+msgid ""
+"``IF_NEEDED`` will only create a BigTIFF if it is clearly needed (in the "
+"uncompressed case, and image larger than 4GB. So no effect when using a "
+"compression)."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:197
+msgid ""
+"``IF_SAFER`` will create BigTIFF if the resulting file \\*might\\* exceed"
+" 4GB. Note: this is only a heuristics that might not always work "
+"depending on compression ratios."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:201
+msgid ""
+"BigTIFF is a TIFF variant which can contain more than 4GiB of data (size "
+"of classic TIFF is limited by that value). This option is available if "
+"GDAL is built with libtiff library version 4.0 or higher. The default is "
+"IF_NEEDED."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:206
+msgid ""
+"When creating a new GeoTIFF with no compression, GDAL computes in advance"
+" the size of the resulting file. If that computed file size is over 4GiB,"
+" GDAL will automatically decide to create a BigTIFF file. However, when "
+"compression is used, it is not possible in advance to known the final "
+"size of the file, so classical TIFF will be chosen. In that case, the "
+"user must explicitly require the creation of a BigTIFF with BIGTIFF=YES "
+"if the final file is anticipated to be too big for classical TIFF format."
+" If BigTIFF creation is not explicitly asked or guessed and the resulting"
+" file is too big for classical TIFF, libtiff will fail with an error "
+"message like \"TIFFAppendToStrip:Maximum TIFF file size exceeded\"."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:248
+msgid ""
+"``AUTO`` (default): source overviews will be used if present. If not "
+"present, overviews will be automatically generated in the output file."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:252
+msgid ""
+"``IGNORE_EXISTING``: potential existing overviews on the source dataset "
+"will be ignored and new overviews will be automatically generated."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:255
+msgid ""
+"``FORCE_USE_EXISTING``: potential existing overviews on the source will "
+"be used. If there is no source overview, this is equivalent to specifying"
+" ``NONE``."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:259
+msgid ""
+"``NONE``: potential source overviews will be ignored, and no overview "
+"will be generated."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:264
+msgid ""
+"When using the gdal_translate utility, source overviews will not be "
+"available if general options (i.e. options which are not creation "
+"options, like subsetting, etc.) are used."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:279
+msgid ""
+"If not specified, the driver will use all the overviews available in the "
+"source raster, in :co:`OVERVIEWS=AUTO` or ``FORCE_USE_EXISTING`` modes. "
+"In situations where GDAL generates overviews, the default number of "
+"overview levels is such that the dimensions of the smallest overview are "
+"smaller or equal to the :co:`BLOCKSIZE` value."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:290
+msgid ""
+"By default (``AUTO``) the overviews will be created with the same "
+"compression method as the COG."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:322
+msgid "Write support for GeoTIFF 1.1 requires libgeotiff 1.6.0 or later."
+msgstr ""
+
 #: ../../source/drivers/raster/cog.rst:352
 msgid "Reprojection related creation options"
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:364
+msgid ""
+"The tile size indicated in the tiling scheme definition (generally 256 "
+"pixels) will be used, unless the user has specified a value with the "
+":co:`BLOCKSIZE` creation option, in which case the user specified one "
+"will be taken into account (that is if setting a higher value than 256, "
+"the original tiling scheme is modified to take into account the size of "
+"the HiDPi tiles)."
+msgstr ""
+
+#: ../../source/drivers/raster/cog.rst:370
+msgid ""
+"In non-CUSTOM mode, TARGET_SRS, RES and EXTENT options are ignored. "
+"Starting with GDAL 3.2, the value of :co:`TILING_SCHEME` can also be the "
+"filename of a JSON file according to the `OGC Two Dimensional Tile Matrix"
+" Set standard`_, a URL to such file, the radical of a definition file in "
+"the GDAL data directory (e.g. ``FOO`` for a file named ``tms_FOO.json``) "
+"or the inline JSON definition. The list of available tiling schemes can "
+"be obtained by looking at values of the TILING_SCHEME option reported by "
+"``gdalinfo --format COG``."
 msgstr ""
 
 #: ../../source/drivers/raster/cog.rst:439

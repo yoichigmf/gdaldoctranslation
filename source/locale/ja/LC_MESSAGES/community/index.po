@@ -10,7 +10,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
 "Language-Team: ja <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:5
 msgid "Community"
-msgstr ""
+msgstr "コミュニティ"
 
 #: ../../source/community/index.rst:7
 msgid ""
@@ -36,7 +36,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:16
 msgid "Code of Conduct"
-msgstr ""
+msgstr "行動規範"
 
 #: ../../source/community/index.rst:20
 msgid ""
@@ -49,7 +49,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:32
 msgid "Mailing List"
-msgstr ""
+msgstr "メーリングリスト"
 
 #: ../../source/community/index.rst:34
 msgid ""
@@ -78,7 +78,7 @@ msgstr ""
 
 #: ../../source/community/index.rst:54
 msgid "Chat"
-msgstr ""
+msgstr "チャット"
 
 #: ../../source/community/index.rst:56
 msgid ""

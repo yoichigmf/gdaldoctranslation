@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,98 @@ msgstr ""
 
 #: ../../source/api/python/osgeo.osr.rst:2
 msgid "osgeo.osr module"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse:1 osgeo.osr.CRSInfo:1
+msgid "ベースクラス: :py:class:`object`"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse:1
+msgid "Proxy of C++ OSRAreaOfUse class."
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.east_lon_degree:1
+#: osgeo.osr.AreaOfUse.north_lat_degree:1
+#: osgeo.osr.AreaOfUse.south_lat_degree:1 osgeo.osr.AreaOfUse.west_lon_degree:1
+#: osgeo.osr.CRSInfo.east_lon_degree:1 osgeo.osr.CRSInfo.north_lat_degree:1
+#: osgeo.osr.CRSInfo.south_lat_degree:1 osgeo.osr.CRSInfo.west_lon_degree:1
+msgid "double"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.east_lon_degree osgeo.osr.AreaOfUse.name
+#: osgeo.osr.AreaOfUse.north_lat_degree osgeo.osr.AreaOfUse.south_lat_degree
+#: osgeo.osr.AreaOfUse.west_lon_degree osgeo.osr.CRSInfo.area_name
+#: osgeo.osr.CRSInfo.auth_name osgeo.osr.CRSInfo.bbox_valid
+#: osgeo.osr.CRSInfo.code osgeo.osr.CRSInfo.deprecated
+#: osgeo.osr.CRSInfo.east_lon_degree osgeo.osr.CRSInfo.name
+#: osgeo.osr.CRSInfo.north_lat_degree osgeo.osr.CRSInfo.projection_method
+#: osgeo.osr.CRSInfo.south_lat_degree osgeo.osr.CRSInfo.type
+#: osgeo.osr.CRSInfo.type:3 osgeo.osr.CRSInfo.west_lon_degree
+msgid "type"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.east_lon_degree:3 osgeo.osr.CRSInfo.east_lon_degree:3
+msgid "east_lon_degree"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.name:1 osgeo.osr.CRSInfo.area_name:1
+#: osgeo.osr.CRSInfo.auth_name:1 osgeo.osr.CRSInfo.code:1
+#: osgeo.osr.CRSInfo.name:1 osgeo.osr.CRSInfo.projection_method:1
+msgid "p.char"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.name:3 osgeo.osr.CRSInfo.name:3
+msgid "name"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.north_lat_degree:3
+#: osgeo.osr.CRSInfo.north_lat_degree:3
+msgid "north_lat_degree"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.south_lat_degree:3
+#: osgeo.osr.CRSInfo.south_lat_degree:3
+msgid "south_lat_degree"
+msgstr ""
+
+#: of osgeo.osr.AreaOfUse.west_lon_degree:3 osgeo.osr.CRSInfo.west_lon_degree:3
+msgid "west_lon_degree"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo:1
+msgid "Proxy of C++ OSRCRSInfo class."
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.area_name:3
+msgid "area_name"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.auth_name:3
+msgid "auth_name"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.bbox_valid:1 osgeo.osr.CRSInfo.deprecated:1
+msgid "bool"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.bbox_valid:3
+msgid "bbox_valid"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.code:3
+msgid "code"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.deprecated:3
+msgid "deprecated"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.projection_method:3
+msgid "projection_method"
+msgstr ""
+
+#: of osgeo.osr.CRSInfo.type:1
+msgid "OSRCRSType"
 msgstr ""
 
 #~ msgid "ベースクラス: :py:class:`object`"

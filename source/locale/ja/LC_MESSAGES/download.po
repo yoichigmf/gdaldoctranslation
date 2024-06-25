@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
@@ -24,8 +24,8 @@ msgid "Download"
 msgstr "ダウンロード"
 
 #: ../../source/download.rst:10
-msgid "Contents"
-msgstr "コンテンツ"
+msgid "目次"
+msgstr ""
 
 #: ../../source/download.rst:14
 msgid "Current Release"
@@ -376,4 +376,7 @@ msgstr ""
 
 #~ msgid "目次"
 #~ msgstr ""
+
+#~ msgid "Contents"
+#~ msgstr "コンテンツ"
 

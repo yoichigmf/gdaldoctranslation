@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,24 @@ msgstr ""
 
 #: ../../source/drivers/raster/sentinel2.rst:5
 msgid "SENTINEL2 -- Sentinel-2 Products"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:7
+msgid "SENTINEL2"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:-1
+msgid "Driver built-in by default"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:9
+msgid ""
+"This driver is built-in by default, but requires a JPEG2000 capable "
+"driver to read the imagery"
 msgstr ""
 
 #: ../../source/drivers/raster/sentinel2.rst:11
@@ -487,6 +505,16 @@ msgstr ""
 
 #: ../../source/drivers/raster/sentinel2.rst:178
 msgid "The driver can be passed the following open options:"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:188
+msgid ""
+"0 on areas with no tiles, or when the tile data is set to the NODATA or "
+"SATURATED special values,"
+msgstr ""
+
+#: ../../source/drivers/raster/sentinel2.rst:190
+msgid "4095 on areas with valid data."
 msgstr ""
 
 #: ../../source/drivers/raster/sentinel2.rst:192

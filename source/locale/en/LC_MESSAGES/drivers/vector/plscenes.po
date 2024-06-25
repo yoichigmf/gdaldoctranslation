@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/plscenes.rst:4
 msgid "PLScenes (Planet Labs Scenes/Catalog API)"
+msgstr ""
+
+#: ../../source/drivers/vector/plscenes.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/plscenes.rst:6
+msgid "PLScenes"
+msgstr ""
+
+#: ../../source/drivers/vector/plscenes.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/plscenes.rst:8
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/vector/plscenes.rst:10

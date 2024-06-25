@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/eedai.rst:5
 msgid "EEDAI - Google Earth Engine Data API Image"
+msgstr ""
+
+#: ../../source/drivers/raster/eedai.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/eedai.rst:7
+msgid "EEDAI"
+msgstr ""
+
+#: ../../source/drivers/raster/eedai.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/eedai.rst:11
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/raster/eedai.rst:13

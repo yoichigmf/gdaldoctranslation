@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -71,28 +71,5871 @@ msgstr ""
 msgid "Layer"
 msgstr ""
 
+#: of osgeo.ogr.Layer:1
+msgid "Proxy of C++ OGRLayerShadow class."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:1
+msgid ""
+"OGRErr OGR_L_AlterFieldDefn(OGRLayerH hLayer, int iField, OGRFieldDefnH "
+"hNewFieldDefn, int nFlags)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:5
+msgid "Alter the definition of an existing field on a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:7
+msgid ""
+"You must use this to alter the definition of an existing field of a real "
+"layer. Internally the OGRFeatureDefn for the layer will be updated to "
+"reflect the altered field. Applications should never modify the "
+"OGRFeatureDefn used by a layer directly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:12 osgeo.ogr.Layer.CreateField:12
+#: osgeo.ogr.Layer.CreateGeomField:12 osgeo.ogr.Layer.DeleteField:11
+#: osgeo.ogr.Layer.ReorderField:15 osgeo.ogr.Layer.ReorderFields:11
+msgid ""
+"This function should not be called while there are feature objects in "
+"existence that were obtained or created with the previous layer "
+"definition."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:16
+msgid ""
+"Not all drivers support this function. You can query a layer to check if "
+"it supports it with the OLCAlterFieldDefn capability. Some drivers may "
+"only support this method while there are still no features in the layer. "
+"When it is supported, the existing features of the backing file/database "
+"should be updated accordingly. Some drivers might also not support all "
+"update flags."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:23
+msgid "This function is the same as the C++ method OGRLayer::AlterFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:12 osgeo.ogr.Feature.DumpReadable:14
+#: osgeo.ogr.Feature.Equal:13 osgeo.ogr.Feature.FillUnsetWithDefault:11
+#: osgeo.ogr.Feature.GetDefnRef:9 osgeo.ogr.Feature.GetFID:11
+#: osgeo.ogr.Feature.GetFieldAsBinary:12
+#: osgeo.ogr.Feature.GetFieldAsDateTime:15
+#: osgeo.ogr.Feature.GetFieldAsDouble:14
+#: osgeo.ogr.Feature.GetFieldAsDoubleList:13
+#: osgeo.ogr.Feature.GetFieldAsInteger:14
+#: osgeo.ogr.Feature.GetFieldAsInteger64:15
+#: osgeo.ogr.Feature.GetFieldAsInteger64List:13
+#: osgeo.ogr.Feature.GetFieldAsIntegerList:13
+#: osgeo.ogr.Feature.GetFieldAsString:14
+#: osgeo.ogr.Feature.GetFieldAsStringList:15 osgeo.ogr.Feature.GetFieldCount:11
+#: osgeo.ogr.Feature.GetFieldDefnRef:10 osgeo.ogr.Feature.GetFieldIndex:12
+#: osgeo.ogr.Feature.GetGeomFieldCount:11
+#: osgeo.ogr.Feature.GetGeomFieldDefnRef:10
+#: osgeo.ogr.Feature.GetGeomFieldIndex:12 osgeo.ogr.Feature.GetGeomFieldRef:10
+#: osgeo.ogr.Feature.GetGeometryRef:11 osgeo.ogr.Feature.GetNativeData:25
+#: osgeo.ogr.Feature.GetNativeMediaType:15 osgeo.ogr.Feature.GetStyleString:14
+#: osgeo.ogr.Feature.IsFieldNull:9 osgeo.ogr.Feature.IsFieldSet:9
+#: osgeo.ogr.Feature.IsFieldSetAndNotNull:10 osgeo.ogr.Feature.SetFID:14
+#: osgeo.ogr.Feature.SetFieldDoubleList:19
+#: osgeo.ogr.Feature.SetFieldInteger64:20
+#: osgeo.ogr.Feature.SetFieldInteger64List:19
+#: osgeo.ogr.Feature.SetFieldIntegerList:19 osgeo.ogr.Feature.SetFieldNull:10
+#: osgeo.ogr.Feature.SetFieldString:22 osgeo.ogr.Feature.SetFieldStringList:18
+#: osgeo.ogr.Feature.SetFrom:15 osgeo.ogr.Feature.SetFromWithMap:19
+#: osgeo.ogr.Feature.SetGeomField:13 osgeo.ogr.Feature.SetGeomFieldDirectly:15
+#: osgeo.ogr.Feature.SetGeometry:19 osgeo.ogr.Feature.SetGeometryDirectly:20
+#: osgeo.ogr.Feature.SetNativeData:15 osgeo.ogr.Feature.SetNativeMediaType:16
+#: osgeo.ogr.Feature.SetStyleString:14 osgeo.ogr.Feature.UnsetField:9
+#: osgeo.ogr.Feature.Validate:17 osgeo.ogr.FeatureDefn.AddFieldDefn:17
+#: osgeo.ogr.FeatureDefn.AddGeomFieldDefn:19
+#: osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:17
+#: osgeo.ogr.FeatureDefn.GetFieldCount:9 osgeo.ogr.FeatureDefn.GetFieldDefn:10
+#: osgeo.ogr.FeatureDefn.GetFieldIndex:13
+#: osgeo.ogr.FeatureDefn.GetGeomFieldCount:10
+#: osgeo.ogr.FeatureDefn.GetGeomFieldDefn:10
+#: osgeo.ogr.FeatureDefn.GetGeomFieldIndex:14
+#: osgeo.ogr.FeatureDefn.GetGeomType:13 osgeo.ogr.FeatureDefn.GetName:9
+#: osgeo.ogr.FeatureDefn.GetReferenceCount:10
+#: osgeo.ogr.FeatureDefn.IsGeometryIgnored:13 osgeo.ogr.FeatureDefn.IsSame:7
+#: osgeo.ogr.FeatureDefn.IsStyleIgnored:10 osgeo.ogr.FeatureDefn.SetGeomType:19
+#: osgeo.ogr.FeatureDefn.SetGeometryIgnored:13
+#: osgeo.ogr.FeatureDefn.SetStyleIgnored:10
+#: osgeo.ogr.FieldDefn.GetAlternativeNameRef:18
+#: osgeo.ogr.FieldDefn.GetDefault:10 osgeo.ogr.FieldDefn.GetJustify:12
+#: osgeo.ogr.FieldDefn.GetNameRef:10 osgeo.ogr.FieldDefn.GetPrecision:12
+#: osgeo.ogr.FieldDefn.GetSubType:10 osgeo.ogr.FieldDefn.GetType:9
+#: osgeo.ogr.FieldDefn.GetWidth:9
+#: osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:15
+#: osgeo.ogr.FieldDefn.IsIgnored:9 osgeo.ogr.FieldDefn.IsNullable:16
+#: osgeo.ogr.FieldDefn.IsUnique:11 osgeo.ogr.FieldDefn.SetAlternativeName:19
+#: osgeo.ogr.FieldDefn.SetDefault:28 osgeo.ogr.FieldDefn.SetIgnored:9
+#: osgeo.ogr.FieldDefn.SetJustify:12 osgeo.ogr.FieldDefn.SetName:9
+#: osgeo.ogr.FieldDefn.SetNullable:15 osgeo.ogr.FieldDefn.SetPrecision:12
+#: osgeo.ogr.FieldDefn.SetSubType:13 osgeo.ogr.FieldDefn.SetType:12
+#: osgeo.ogr.FieldDefn.SetUnique:16 osgeo.ogr.FieldDefn.SetWidth:9
+#: osgeo.ogr.FieldDefn.justify:13 osgeo.ogr.FieldDefn.precision:13
+#: osgeo.ogr.FieldDefn.type:10 osgeo.ogr.FieldDefn.width:10
+#: osgeo.ogr.Geometry.AssignSpatialReference:24 osgeo.ogr.Geometry.Boundary:17
+#: osgeo.ogr.Geometry.Buffer:25 osgeo.ogr.Geometry.Clone:11
+#: osgeo.ogr.Geometry.CloseRings:11 osgeo.ogr.Geometry.Contains:20
+#: osgeo.ogr.Geometry.ConvexHull:17 osgeo.ogr.Geometry.CoordinateDimension:10
+#: osgeo.ogr.Geometry.Crosses:20 osgeo.ogr.Geometry.DelaunayTriangulation:15
+#: osgeo.ogr.Geometry.Difference:21 osgeo.ogr.Geometry.Disjoint:20
+#: osgeo.ogr.Geometry.Distance:17 osgeo.ogr.Geometry.Distance3D:16
+#: osgeo.ogr.Geometry.Empty:13 osgeo.ogr.Geometry.Equals:19
+#: osgeo.ogr.Geometry.ExportToIsoWkb:17 osgeo.ogr.Geometry.ExportToIsoWkt:15
+#: osgeo.ogr.Geometry.ExportToWkb:19 osgeo.ogr.Geometry.ExportToWkt:17
+#: osgeo.ogr.Geometry.FlattenTo2D:12
+#: osgeo.ogr.Geometry.GetCoordinateDimension:10
+#: osgeo.ogr.Geometry.GetDimension:15 osgeo.ogr.Geometry.GetEnvelope:11
+#: osgeo.ogr.Geometry.GetEnvelope3D:11 osgeo.ogr.Geometry.GetGeometryName:12
+#: osgeo.ogr.Geometry.GetGeometryType:14
+#: osgeo.ogr.Geometry.GetSpatialReference:13 osgeo.ogr.Geometry.Intersection:23
+#: osgeo.ogr.Geometry.Intersects:13 osgeo.ogr.Geometry.Is3D:8
+#: osgeo.ogr.Geometry.IsEmpty:8 osgeo.ogr.Geometry.IsMeasured:9
+#: osgeo.ogr.Geometry.IsRing:12 osgeo.ogr.Geometry.IsSimple:18
+#: osgeo.ogr.Geometry.IsValid:12 osgeo.ogr.Geometry.MakeValid:16
+#: osgeo.ogr.Geometry.Overlaps:21 osgeo.ogr.Geometry.PointOnSurface:16
+#: osgeo.ogr.Geometry.Polygonize:19 osgeo.ogr.Geometry.Segmentize:13
+#: osgeo.ogr.Geometry.Set3D:12 osgeo.ogr.Geometry.SetCoordinateDimension:15
+#: osgeo.ogr.Geometry.SetMeasured:12 osgeo.ogr.Geometry.Simplify:14
+#: osgeo.ogr.Geometry.SimplifyPreserveTopology:15 osgeo.ogr.Geometry.SwapXY:6
+#: osgeo.ogr.Geometry.SymDifference:22 osgeo.ogr.Geometry.Touches:20
+#: osgeo.ogr.Geometry.Transform:22 osgeo.ogr.Geometry.TransformTo:25
+#: osgeo.ogr.Geometry.Union:21 osgeo.ogr.Geometry.UnionCascaded:19
+#: osgeo.ogr.Geometry.Within:20 osgeo.ogr.Geometry.WkbSize:14
+#: osgeo.ogr.Layer.AlterFieldDefn:27 osgeo.ogr.Layer.Clip:34
+#: osgeo.ogr.Layer.CommitTransaction:15 osgeo.ogr.Layer.CreateFeature:16
+#: osgeo.ogr.Layer.CreateField:29 osgeo.ogr.Layer.CreateGeomField:29
+#: osgeo.ogr.Layer.DeleteFeature:15 osgeo.ogr.Layer.DeleteField:24
+#: osgeo.ogr.Layer.Erase:33 osgeo.ogr.Layer.GetExtent:25
+#: osgeo.ogr.Layer.GetFIDColumn:10 osgeo.ogr.Layer.GetFeature:29
+#: osgeo.ogr.Layer.GetFeatureCount:23 osgeo.ogr.Layer.GetGeomType:20
+#: osgeo.ogr.Layer.GetGeometryColumn:16 osgeo.ogr.Layer.GetLayerDefn:13
+#: osgeo.ogr.Layer.GetName:14 osgeo.ogr.Layer.GetNextFeature:32
+#: osgeo.ogr.Layer.GetSpatialFilter:13 osgeo.ogr.Layer.GetSpatialRef:12
+#: osgeo.ogr.Layer.Identity:48 osgeo.ogr.Layer.Intersection:54
+#: osgeo.ogr.Layer.ReorderField:36 osgeo.ogr.Layer.ReorderFields:31
+#: osgeo.ogr.Layer.ResetReading:11 osgeo.ogr.Layer.RollbackTransaction:16
+#: osgeo.ogr.Layer.SetAttributeFilter:25 osgeo.ogr.Layer.SetFeature:15
+#: osgeo.ogr.Layer.SetIgnoredFields:21 osgeo.ogr.Layer.SetNextByIndex:23
+#: osgeo.ogr.Layer.SetSpatialFilter:32 osgeo.ogr.Layer.SetSpatialFilterRect:24
+#: osgeo.ogr.Layer.StartTransaction:21 osgeo.ogr.Layer.SymDifference:42
+#: osgeo.ogr.Layer.SyncToDisk:21 osgeo.ogr.Layer.TestCapability:83
+#: osgeo.ogr.Layer.Union:50 osgeo.ogr.Layer.Update:41
+msgid "Parameters:"
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:29 osgeo.ogr.Layer.DeleteField:26
+#: osgeo.ogr.Layer.GetGeomType:22 osgeo.ogr.Layer.GetName:16
+#: osgeo.ogr.Layer.ReorderField:38 osgeo.ogr.Layer.ReorderFields:33
+msgid "hLayer:  handle to the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:31
+msgid "iField:  index of the field whose definition must be altered."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:33
+msgid "hNewFieldDefn:  new field definition"
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:35
+msgid ""
+"nFlags:  combination of ALTER_NAME_FLAG, ALTER_TYPE_FLAG, "
+"ALTER_WIDTH_PRECISION_FLAG, ALTER_NULLABLE_FLAG and ALTER_DEFAULT_FLAG to"
+" indicate which of the name and/or type and/or width and precision fields"
+" and/or nullability from the new field definition must be taken into "
+"account."
+msgstr ""
+
+#: of osgeo.ogr.Layer.AlterFieldDefn:41 osgeo.ogr.Layer.CommitTransaction:19
+#: osgeo.ogr.Layer.CreateFeature:22 osgeo.ogr.Layer.CreateField:38
+#: osgeo.ogr.Layer.CreateGeomField:38 osgeo.ogr.Layer.DeleteField:30
+#: osgeo.ogr.Layer.ReorderField:46 osgeo.ogr.Layer.ReorderFields:39
+#: osgeo.ogr.Layer.RollbackTransaction:20 osgeo.ogr.Layer.StartTransaction:25
+msgid "OGRERR_NONE on success."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope3D:17 osgeo.ogr.Geometry.Polygonize:26
+#: osgeo.ogr.Geometry.SimplifyPreserveTopology:23
+#: osgeo.ogr.Layer.AlterFieldDefn:43 osgeo.ogr.Layer.DeleteField:32
+#: osgeo.ogr.Layer.ReorderField:48 osgeo.ogr.Layer.ReorderFields:41
+msgid "OGR 1.9.0"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:1
+msgid ""
+"OGRErr OGR_L_Clip(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:5
+msgid "Clip off areas that are not covered by the method layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:7
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are in the input layer and in the method layer. The features in the "
+"result layer have the (possibly clipped) areas of features in the input "
+"layer and the attributes from the same features. The schema of the result"
+" layer can be set by the user or, if it is empty, is initialized to "
+"contain all fields in the input layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:14 osgeo.ogr.Layer.Erase:13
+#: osgeo.ogr.Layer.Identity:19 osgeo.ogr.Layer.Intersection:20
+#: osgeo.ogr.Layer.SymDifference:22 osgeo.ogr.Layer.Union:21
+#: osgeo.ogr.Layer.Update:21
+msgid ""
+"For best performance use the minimum amount of features in the method "
+"layer and copy it into a memory layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:17 osgeo.ogr.Layer.Erase:16
+#: osgeo.ogr.Layer.Identity:22 osgeo.ogr.Layer.Intersection:23
+#: osgeo.ogr.Layer.SymDifference:25 osgeo.ogr.Layer.Union:24
+#: osgeo.ogr.Layer.Update:24
+msgid ""
+"This method relies on GEOS support. Do not use unless the GEOS support is"
+" compiled in.  The recognized list of options is : SKIP_FAILURES=YES/NO. "
+"Set it to YES to go on, even when a feature could not be inserted or a "
+"GEOS call failed."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:22 osgeo.ogr.Layer.Erase:21
+#: osgeo.ogr.Layer.Identity:27 osgeo.ogr.Layer.Intersection:28
+#: osgeo.ogr.Layer.SymDifference:30 osgeo.ogr.Layer.Union:29
+#: osgeo.ogr.Layer.Update:29
+msgid ""
+"PROMOTE_TO_MULTI=YES/NO. Set it to YES to convert Polygons into "
+"MultiPolygons, or LineStrings to MultiLineStrings."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:25 osgeo.ogr.Layer.Erase:24
+#: osgeo.ogr.Layer.Identity:30 osgeo.ogr.Layer.Intersection:31
+#: osgeo.ogr.Layer.SymDifference:33 osgeo.ogr.Layer.Union:32
+#: osgeo.ogr.Layer.Update:32
+msgid ""
+"INPUT_PREFIX=string. Set a prefix for the field names that will be "
+"created from the fields of the input layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:28 osgeo.ogr.Layer.Erase:27
+#: osgeo.ogr.Layer.Identity:33 osgeo.ogr.Layer.Intersection:34
+#: osgeo.ogr.Layer.SymDifference:36 osgeo.ogr.Layer.Union:35
+#: osgeo.ogr.Layer.Update:35
+msgid ""
+"METHOD_PREFIX=string. Set a prefix for the field names that will be "
+"created from the fields of the method layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:31
+msgid "This function is the same as the C++ method OGRLayer::Clip()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:36 osgeo.ogr.Layer.Erase:35
+#: osgeo.ogr.Layer.Identity:50 osgeo.ogr.Layer.Intersection:56
+#: osgeo.ogr.Layer.SymDifference:44 osgeo.ogr.Layer.Union:52
+#: osgeo.ogr.Layer.Update:43
+msgid "pLayerInput:  the input layer. Should not be NULL."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:38 osgeo.ogr.Layer.Erase:37
+#: osgeo.ogr.Layer.Identity:52 osgeo.ogr.Layer.Intersection:58
+#: osgeo.ogr.Layer.SymDifference:46 osgeo.ogr.Layer.Union:54
+#: osgeo.ogr.Layer.Update:45
+msgid "pLayerMethod:  the method layer. Should not be NULL."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:40 osgeo.ogr.Layer.Erase:39
+#: osgeo.ogr.Layer.Identity:54 osgeo.ogr.Layer.Intersection:60
+#: osgeo.ogr.Layer.SymDifference:48 osgeo.ogr.Layer.Union:56
+#: osgeo.ogr.Layer.Update:47
+msgid ""
+"pLayerResult:  the layer where the features resulting from the operation "
+"are inserted. Should not be NULL. See above the note about the schema."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:44 osgeo.ogr.Layer.Erase:43
+#: osgeo.ogr.Layer.Identity:58 osgeo.ogr.Layer.Intersection:64
+#: osgeo.ogr.Layer.SymDifference:52 osgeo.ogr.Layer.Union:60
+#: osgeo.ogr.Layer.Update:51
+msgid "papszOptions:  NULL terminated list of options (may be NULL)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:46 osgeo.ogr.Layer.Erase:45
+#: osgeo.ogr.Layer.Identity:60 osgeo.ogr.Layer.Intersection:66
+#: osgeo.ogr.Layer.SymDifference:54 osgeo.ogr.Layer.Union:62
+#: osgeo.ogr.Layer.Update:53
+msgid ""
+"pfnProgress:  a GDALProgressFunc() compatible callback function for "
+"reporting progress or NULL."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:49 osgeo.ogr.Layer.Erase:48
+#: osgeo.ogr.Layer.Identity:63 osgeo.ogr.Layer.Intersection:69
+#: osgeo.ogr.Layer.SymDifference:57 osgeo.ogr.Layer.Union:65
+#: osgeo.ogr.Layer.Update:56
+msgid "pProgressArg:  argument to be passed to pfnProgress. May be NULL."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:51 osgeo.ogr.Layer.Erase:50
+#: osgeo.ogr.Layer.Identity:65 osgeo.ogr.Layer.Intersection:71
+#: osgeo.ogr.Layer.SymDifference:59 osgeo.ogr.Layer.Union:67
+#: osgeo.ogr.Layer.Update:58
+msgid ""
+"an error code if there was an error or the execution was interrupted, "
+"OGRERR_NONE otherwise."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Clip:54 osgeo.ogr.Layer.Erase:53
+#: osgeo.ogr.Layer.Identity:68 osgeo.ogr.Layer.Intersection:74
+#: osgeo.ogr.Layer.SymDifference:62 osgeo.ogr.Layer.Union:70
+#: osgeo.ogr.Layer.Update:61
+msgid "The first geometry field is always used."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:22 osgeo.ogr.Layer.Clip:56
+#: osgeo.ogr.Layer.Erase:55 osgeo.ogr.Layer.Identity:70
+#: osgeo.ogr.Layer.Intersection:76 osgeo.ogr.Layer.SymDifference:64
+#: osgeo.ogr.Layer.Union:72 osgeo.ogr.Layer.Update:63
+msgid "OGR 1.10"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CommitTransaction:1
+msgid "OGRErr OGR_L_CommitTransaction(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CommitTransaction:4
+msgid ""
+"For datasources which support transactions, CommitTransaction commits a "
+"transaction."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CommitTransaction:7
+msgid ""
+"If no transaction is active, or the commit fails, will return "
+"OGRERR_FAILURE. Datasources which do not support transactions will always"
+" return OGRERR_NONE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CommitTransaction:11
+msgid "This function is the same as the C++ method OGRLayer::CommitTransaction()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CommitTransaction:17 osgeo.ogr.Layer.DeleteFeature:17
+#: osgeo.ogr.Layer.GetFIDColumn:12 osgeo.ogr.Layer.GetGeometryColumn:18
+#: osgeo.ogr.Layer.RollbackTransaction:18 osgeo.ogr.Layer.SetNextByIndex:25
+#: osgeo.ogr.Layer.StartTransaction:23 osgeo.ogr.Layer.SyncToDisk:23
+msgid "hLayer:  handle to the layer"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:1
+msgid "OGRErr OGR_L_CreateFeature(OGRLayerH hLayer, OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:4
+msgid "Create and write a new feature within a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:6
+msgid ""
+"The passed feature is written to the layer as a new feature, rather than "
+"overwriting an existing one. If the feature has a feature id other than "
+"OGRNullFID, then the native implementation may use that as the feature id"
+" of the new feature, but not necessarily. Upon successful return the "
+"passed feature will have been updated with the new feature id."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:13
+msgid "This function is the same as the C++ method OGRLayer::CreateFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:18
+msgid "hLayer:  handle to the layer to write the feature to."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFeature:20
+msgid "hFeat:  the handle of the feature to write to disk."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:1
+msgid ""
+"OGRErr OGR_L_CreateField(OGRLayerH hLayer, OGRFieldDefnH hField, int "
+"bApproxOK)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:5
+msgid "Create a new field on a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:7
+msgid ""
+"You must use this to create new fields on a real layer. Internally the "
+"OGRFeatureDefn for the layer will be updated to reflect the new field. "
+"Applications should never modify the OGRFeatureDefn used by a layer "
+"directly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:16 osgeo.ogr.Layer.CreateGeomField:16
+msgid ""
+"Not all drivers support this function. You can query a layer to check if "
+"it supports it with the OLCCreateField capability. Some drivers may only "
+"support this method while there are still no features in the layer. When "
+"it is supported, the existing features of the backing file/database "
+"should be updated accordingly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:22 osgeo.ogr.Layer.CreateGeomField:22
+msgid ""
+"Drivers may or may not support not-null constraints. If they support "
+"creating fields with not-null constraints, this is generally before "
+"creating any feature to the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:26 osgeo.ogr.Layer.CreateGeomField:26
+msgid "This function is the same as the C++ method OGRLayer::CreateField()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:31 osgeo.ogr.Layer.CreateGeomField:31
+msgid "hLayer:  handle to the layer to write the field definition."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:33
+msgid "hField:  handle of the field definition to write to disk."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateField:35 osgeo.ogr.Layer.CreateGeomField:35
+msgid ""
+"bApproxOK:  If TRUE, the field may be created in a slightly different "
+"form depending on the limitations of the format driver."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateFields:1
+msgid "Create a list of fields on the Layer"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateGeomField:1
+msgid ""
+"OGRErr OGR_L_CreateGeomField(OGRLayerH hLayer, OGRGeomFieldDefnH hField, "
+"int bApproxOK)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateGeomField:5
+msgid "Create a new geometry field on a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateGeomField:7
+msgid ""
+"You must use this to create new geometry fields on a real layer. "
+"Internally the OGRFeatureDefn for the layer will be updated to reflect "
+"the new field. Applications should never modify the OGRFeatureDefn used "
+"by a layer directly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.CreateGeomField:33
+msgid "hField:  handle of the geometry field definition to write to disk."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:16 osgeo.ogr.Layer.CreateGeomField:40
+msgid "OGR 1.11"
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:1
+msgid "OGRErr OGR_L_DeleteFeature(OGRLayerH hLayer, GIntBig nFID)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:4
+msgid "Delete feature from layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:6
+msgid ""
+"The feature with the indicated feature id is deleted from the layer if "
+"supported by the driver. Most drivers do not support feature deletion, "
+"and will return OGRERR_UNSUPPORTED_OPERATION. The OGR_L_TestCapability() "
+"function may be called with OLCDeleteFeature to check if the driver "
+"supports feature deletion."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:12
+msgid "This method is the same as the C++ method OGRLayer::DeleteFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:19
+msgid "nFID:  the feature id to be deleted from the layer"
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteFeature:21 osgeo.ogr.Layer.SetFeature:21
+msgid ""
+"OGRERR_NONE if the operation works, otherwise an appropriate error code "
+"(e.g OGRERR_NON_EXISTING_FEATURE if the feature does not exist)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:1
+msgid "OGRErr OGR_L_DeleteField(OGRLayerH hLayer, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:4
+msgid "Delete an existing field on a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:6
+msgid ""
+"You must use this to delete existing fields on a real layer. Internally "
+"the OGRFeatureDefn for the layer will be updated to reflect the deleted "
+"field. Applications should never modify the OGRFeatureDefn used by a "
+"layer directly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:15
+msgid ""
+"Not all drivers support this function. You can query a layer to check if "
+"it supports it with the OLCDeleteField capability. Some drivers may only "
+"support this method while there are still no features in the layer. When "
+"it is supported, the existing features of the backing file/database "
+"should be updated accordingly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:21
+msgid "This function is the same as the C++ method OGRLayer::DeleteField()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.DeleteField:28
+msgid "iField:  index of the field to delete."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Dereference:1 osgeo.ogr.Layer.Reference:1
+msgid "For backwards compatibility only."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Erase:1
+msgid ""
+"OGRErr OGR_L_Erase(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Erase:5
+msgid "Remove areas that are covered by the method layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Erase:7
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are in the input layer but not in the method layer. The features in the "
+"result layer have attributes from the input layer. The schema of the "
+"result layer can be set by the user or, if it is empty, is initialized to"
+" contain all fields in the input layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Erase:30
+msgid "This function is the same as the C++ method OGRLayer::Erase()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:1
+msgid ""
+"int OGR_L_FindFieldIndex(OGRLayerH hLayer, const char *pszFieldName, int "
+"bExactMatch)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:5
+msgid "Find the index of field in a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:7
+msgid ""
+"The returned number is the index of the field in the layers, or -1 if the"
+" field doesn't exist."
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:10
+msgid ""
+"If bExactMatch is set to FALSE and the field doesn't exists in the given "
+"form the driver might apply some changes to make it match, like those it "
+"might do if the layer was created (eg. like LAUNDER in the OCI driver)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:15
+msgid "This method is the same as the C++ method OGRLayer::FindFieldIndex()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.FindFieldIndex:17
+msgid "field index, or -1 if the field doesn't exist"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:1
+msgid ""
+"OGRErr OGR_L_GetExtent(OGRLayerH hLayer, OGREnvelope *psExtent, int "
+"bForce)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:4
+msgid "Fetch the extent of this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:6
+msgid ""
+"Returns the extent (MBR) of the data in the layer. If bForce is FALSE, "
+"and it would be expensive to establish the extent then OGRERR_FAILURE "
+"will be returned indicating that the extent isn't know. If bForce is TRUE"
+" then some implementations will actually scan the entire layer once to "
+"compute the MBR of all the features in the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:12
+msgid ""
+"Depending on the drivers, the returned extent may or may not take the "
+"spatial filter into account. So it is safer to call OGR_L_GetExtent() "
+"without setting a spatial filter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:16
+msgid ""
+"Layers without any geometry may return OGRERR_FAILURE just indicating "
+"that no meaningful extents could be collected."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:19 osgeo.ogr.Layer.GetFeatureCount:15
+msgid ""
+"Note that some implementations of this method may alter the read cursor "
+"of the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:22
+msgid "This function is the same as the C++ method OGRLayer::GetExtent()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:27
+msgid "hLayer:  handle to the layer from which to get extent."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:29
+msgid "psExtent:  the structure in which the extent value will be returned."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:31
+msgid ""
+"bForce:  Flag indicating whether the extent should be computed even if it"
+" is expensive."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetExtent:34
+msgid "OGRERR_NONE on success, OGRERR_FAILURE if extent not known."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFIDColumn:1
+msgid "const char* OGR_L_GetFIDColumn(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFIDColumn:4
+msgid ""
+"This method returns the name of the underlying database column being used"
+" as the FID column, or \"\" if not supported."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFIDColumn:7
+msgid "This method is the same as the C++ method OGRLayer::GetFIDColumn()"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFIDColumn:14
+msgid "fid column name."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:1
+msgid "OGRFeatureH OGR_L_GetFeature(OGRLayerH hLayer, GIntBig nFeatureId)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:4
+msgid "Fetch a feature by its identifier."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:6
+msgid ""
+"This function will attempt to read the identified feature. The nFID value"
+" cannot be OGRNullFID. Success or failure of this operation is unaffected"
+" by the spatial or attribute filters (and specialized implementations in "
+"drivers should make sure that they do not take into account spatial or "
+"attribute filters)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:12
+msgid ""
+"If this function returns a non-NULL feature, it is guaranteed that its "
+"feature id ( OGR_F_GetFID()) will be the same as nFID."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:15
+msgid ""
+"Use OGR_L_TestCapability(OLCRandomRead) to establish if this layer "
+"supports efficient random access reading via OGR_L_GetFeature(); however,"
+" the call should always work if the feature exists as a fallback "
+"implementation just scans all the features in the layer looking for the "
+"desired feature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:21
+msgid ""
+"Sequential reads (with OGR_L_GetNextFeature()) are generally considered "
+"interrupted by a OGR_L_GetFeature() call."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:24
+msgid "The returned feature should be free with OGR_F_Destroy()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:26
+msgid "This function is the same as the C++ method OGRLayer::GetFeature( )."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:31
+msgid "hLayer:  handle to the layer that owned the feature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:33
+msgid "nFeatureId:  the feature id of the feature to read."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeature:35
+msgid "a handle to a feature now owned by the caller, or NULL on failure."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:1
+msgid "GIntBig OGR_L_GetFeatureCount(OGRLayerH hLayer, int bForce)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:4
+msgid "Fetch the feature count in this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:6
+msgid ""
+"Returns the number of features in the layer. For dynamic databases the "
+"count may not be exact. If bForce is FALSE, and it would be expensive to "
+"establish the feature count a value of -1 may be returned indicating that"
+" the count isn't know. If bForce is TRUE some implementations will "
+"actually scan the entire layer once to count objects."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:13
+msgid "The returned count takes the spatial filter into account."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:18
+msgid "This function is the same as the CPP OGRLayer::GetFeatureCount()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:20
+msgid "Note: since GDAL 2.0, this method returns a GIntBig (previously a int)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:25
+msgid "hLayer:  handle to the layer that owned the features."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:27
+msgid ""
+"bForce:  Flag indicating whether the count should be computed even if it "
+"is expensive."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeatureCount:30
+msgid "feature count, -1 if count not known."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetFeaturesRead:1
+msgid "GIntBig OGR_L_GetFeaturesRead(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:1
+msgid "OGRwkbGeometryType OGR_L_GetGeomType(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:4
+msgid "Return the layer geometry type."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:6
+msgid ""
+"This returns the same result as "
+"OGR_FD_GetGeomType(OGR_L_GetLayerDefn(hLayer)), but for a few drivers, "
+"calling OGR_L_GetGeomType() directly can avoid lengthy layer definition "
+"initialization."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:11
+msgid ""
+"For layers with multiple geometry fields, this method only returns the "
+"geometry type of the first geometry column. For other columns, use "
+"OGR_GFld_GetType(OGR_FD_GetGeomFieldDefn(OGR_L_GetLayerDefn(hLayer), i))."
+" For layers without any geometry field, this method returns wkbNone."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:17
+msgid "This function is the same as the C++ method OGRLayer::GetGeomType()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeomType:24
+msgid "the geometry type"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:24 osgeo.ogr.Geometry.Simplify:22
+#: osgeo.ogr.Geometry.SymDifference:31 osgeo.ogr.Layer.GetGeomType:26
+#: osgeo.ogr.Layer.GetName:20
+msgid "OGR 1.8.0"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeometryColumn:1
+msgid "const char* OGR_L_GetGeometryColumn(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeometryColumn:4
+msgid ""
+"This method returns the name of the underlying database column being used"
+" as the geometry column, or \"\" if not supported."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeometryColumn:7
+msgid ""
+"For layers with multiple geometry fields, this method only returns the "
+"geometry type of the first geometry column. For other columns, use OGR "
+"_GFld_GetNameRef(OGR_FD_GetGeomFieldDefn(OGR_L_GetLayerDefn(hLayer), i))."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeometryColumn:12
+msgid "This method is the same as the C++ method OGRLayer::GetGeometryColumn()"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetGeometryColumn:20
+msgid "geometry column name."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:1
+msgid "OGRFeatureDefnH OGR_L_GetLayerDefn(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:4
+msgid "Fetch the schema information for this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:6
+msgid ""
+"The returned handle to the OGRFeatureDefn is owned by the OGRLayer, and "
+"should not be modified or freed by the application. It encapsulates the "
+"attribute schema of the features of the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:10
+msgid "This function is the same as the C++ method OGRLayer::GetLayerDefn()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:15
+msgid "hLayer:  handle to the layer to get the schema information."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetLayerDefn:17
+msgid "a handle to the feature definition."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetName:1
+msgid "const char* OGR_L_GetName(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetName:4
+msgid "Return the layer name."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetName:6
+msgid ""
+"This returns the same content as "
+"OGR_FD_GetName(OGR_L_GetLayerDefn(hLayer)), but for a few drivers, "
+"calling OGR_L_GetName() directly can avoid lengthy layer definition "
+"initialization."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetName:11
+msgid "This function is the same as the C++ method OGRLayer::GetName()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetName:18
+msgid "the layer name (must not been freed)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:1
+msgid "OGRFeatureH OGR_L_GetNextFeature(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:4
+msgid "Fetch the next available feature from this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:6
+msgid ""
+"The returned feature becomes the responsibility of the caller to delete "
+"with OGR_F_Destroy(). It is critical that all features associated with an"
+" OGRLayer (more specifically an OGRFeatureDefn) be deleted before that "
+"layer/datasource is deleted."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:11
+msgid ""
+"Only features matching the current spatial filter (set with "
+"SetSpatialFilter()) will be returned."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:14
+msgid ""
+"This function implements sequential access to the features of a layer. "
+"The OGR_L_ResetReading() function can be used to start at the beginning "
+"again."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:18
+msgid ""
+"Features returned by OGR_GetNextFeature() may or may not be affected by "
+"concurrent modifications depending on drivers. A guaranteed way of seeing"
+" modifications in effect is to call OGR_L_ResetReading() on layers where "
+"OGR_GetNextFeature() has been called, before reading again. Structural "
+"changes in layers (field addition, deletion, ...) when a read is in "
+"progress may or may not be possible depending on drivers. If a "
+"transaction is committed/aborted, the current sequential reading may or "
+"may not be valid after that operation and a call to OGR_L_ResetReading() "
+"might be needed."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:28
+msgid "This function is the same as the C++ method OGRLayer::GetNextFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:34
+msgid "hLayer:  handle to the layer from which feature are read."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetNextFeature:36
+msgid "a handle to a feature, or NULL if no more features are available."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetRefCount:1
+msgid "int OGR_L_GetRefCount(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:1
+msgid "OGRGeometryH OGR_L_GetSpatialFilter(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:4
+msgid "This function returns the current spatial filter for this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:6
+msgid ""
+"The returned pointer is to an internally owned object, and should not be "
+"altered or deleted by the caller."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:9
+msgid "This function is the same as the C++ method OGRLayer::GetSpatialFilter()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:15
+msgid "hLayer:  handle to the layer to get the spatial filter from."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialFilter:17
+msgid "a handle to the spatial filter geometry."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:1
+msgid "OGRSpatialReferenceH OGR_L_GetSpatialRef(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:4
+msgid "Fetch the spatial reference system for this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:6
+msgid ""
+"The returned object is owned by the OGRLayer and should not be modified "
+"or freed by the application."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:9
+msgid "This function is the same as the C++ method OGRLayer::GetSpatialRef()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:14
+msgid "hLayer:  handle to the layer to get the spatial reference from."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetSpatialRef:16
+msgid "spatial reference, or NULL if there isn't one."
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetStyleTable:1
+msgid "OGRStyleTableH OGR_L_GetStyleTable(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.GetStyleTable:4
+msgid "Get style table."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:1
+msgid ""
+"OGRErr OGR_L_Identity(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:5
+msgid "Identify the features of this layer with the ones from the identity layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:8
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are in the input layer. The features in the result layer have attributes "
+"from both input and method layers. The schema of the result layer can be "
+"set by the user or, if it is empty, is initialized to contain all fields "
+"in input and method layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:14 osgeo.ogr.Layer.SymDifference:17
+#: osgeo.ogr.Layer.Union:16
+msgid ""
+"If the schema of the result is set by user and contains fields that have "
+"the same name as a field in input and in method layer, then the attribute"
+" in the result feature will get the value from the feature of the method "
+"layer (even if it is undefined)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:36 osgeo.ogr.Layer.Intersection:37
+#: osgeo.ogr.Layer.Union:38
+msgid ""
+"USE_PREPARED_GEOMETRIES=YES/NO. Set to NO to not use prepared geometries "
+"to pretest intersection of features of method layer with features of this"
+" layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:40 osgeo.ogr.Layer.Intersection:46
+#: osgeo.ogr.Layer.Union:42
+msgid ""
+"KEEP_LOWER_DIMENSION_GEOMETRIES=YES/NO. Set to NO to skip result features"
+" with lower dimension geometry that would otherwise be added to the "
+"result layer. The default is to add but only if the result layer has an "
+"unknown geometry type."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Identity:45
+msgid "This function is the same as the C++ method OGRLayer::Identity()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:1
+msgid ""
+"OGRErr OGR_L_Intersection(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:6
+msgid "Intersection of two layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:8
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are common between features in the input layer and in the method layer. "
+"The features in the result layer have attributes from both input and "
+"method layers. The schema of the result layer can be set by the user or, "
+"if it is empty, is initialized to contain all fields in the input and "
+"method layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:15
+msgid ""
+"If the schema of the result is set by user and contains fields that have "
+"the same name as a field in input and in method layer, then the attribute"
+" in the result feature will get the value from the feature of the method "
+"layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:41
+msgid ""
+"PRETEST_CONTAINMENT=YES/NO. Set to YES to pretest the containment of "
+"features of method layer within the features of this layer. This will "
+"speed up the method significantly in some cases. Requires that the "
+"prepared geometries are in effect."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Intersection:51
+msgid "This function is the same as the C++ method OGRLayer::Intersection()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:1
+msgid ""
+"OGRErr OGR_L_ReorderField(OGRLayerH hLayer, int iOldFieldPos, int "
+"iNewFieldPos)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:5
+msgid "Reorder an existing field on a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:7
+msgid ""
+"This function is a convenience wrapper of OGR_L_ReorderFields() dedicated"
+" to move a single field."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:10 osgeo.ogr.Layer.ReorderFields:6
+msgid ""
+"You must use this to reorder existing fields on a real layer. Internally "
+"the OGRFeatureDefn for the layer will be updated to reflect the "
+"reordering of the fields. Applications should never modify the "
+"OGRFeatureDefn used by a layer directly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:19
+msgid ""
+"The field definition that was at initial position iOldFieldPos will be "
+"moved at position iNewFieldPos, and elements between will be shuffled "
+"accordingly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:23
+msgid ""
+"For example, let suppose the fields were \"0\",\"1\",\"2\",\"3\",\"4\" "
+"initially. ReorderField(1, 3) will reorder them as "
+"\"0\",\"2\",\"3\",\"1\",\"4\"."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:27 osgeo.ogr.Layer.ReorderFields:22
+msgid ""
+"Not all drivers support this function. You can query a layer to check if "
+"it supports it with the OLCReorderFields capability. Some drivers may "
+"only support this method while there are still no features in the layer. "
+"When it is supported, the existing features of the backing file/database "
+"should be updated accordingly."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:33
+msgid "This function is the same as the C++ method OGRLayer::ReorderField()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:40
+msgid ""
+"iOldFieldPos:  previous position of the field to move. Must be in the "
+"range [0,GetFieldCount()-1]."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderField:43
+msgid ""
+"iNewFieldPos:  new position of the field to move. Must be in the range "
+"[0,GetFieldCount()-1]."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:1
+msgid "OGRErr OGR_L_ReorderFields(OGRLayerH hLayer, int *panMap)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:4
+msgid "Reorder all the fields of a layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:15
+msgid ""
+"panMap is such that,for each field definition at position i after "
+"reordering, its position before reordering was panMap[i]."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:18
+msgid ""
+"For example, let suppose the fields were \"0\",\"1\",\"2\",\"3\",\"4\" "
+"initially. ReorderFields([0,2,3,1,4]) will reorder them as "
+"\"0\",\"2\",\"3\",\"1\",\"4\"."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:28
+msgid "This function is the same as the C++ method OGRLayer::ReorderFields()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ReorderFields:35
+msgid ""
+"panMap:  an array of GetLayerDefn()-> OGRFeatureDefn::GetFieldCount() "
+"elements which is a permutation of [0, GetLayerDefn()-> "
+"OGRFeatureDefn::GetFieldCount()-1]."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ResetReading:1
+msgid "void OGR_L_ResetReading(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.ResetReading:4
+msgid "Reset feature reading to start on the first feature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ResetReading:6
+msgid "This affects GetNextFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ResetReading:8
+msgid "This function is the same as the C++ method OGRLayer::ResetReading()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.ResetReading:13
+msgid "hLayer:  handle to the layer on which features are read."
+msgstr ""
+
+#: of osgeo.ogr.Layer.RollbackTransaction:1
+msgid "OGRErr OGR_L_RollbackTransaction(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.RollbackTransaction:4
+msgid ""
+"For datasources which support transactions, RollbackTransaction will roll"
+" back a datasource to its state before the start of the current "
+"transaction."
+msgstr ""
+
+#: of osgeo.ogr.Layer.RollbackTransaction:8
+msgid ""
+"If no transaction is active, or the rollback fails, will return "
+"OGRERR_FAILURE. Datasources which do not support transactions will always"
+" return OGRERR_NONE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.RollbackTransaction:12
+msgid ""
+"This function is the same as the C++ method "
+"OGRLayer::RollbackTransaction()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:1
+msgid "OGRErr OGR_L_SetAttributeFilter(OGRLayerH hLayer, const char *pszQuery)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:4
+msgid "Set a new attribute query."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:6
+msgid ""
+"This function sets the attribute query string to be used when fetching "
+"features via the OGR_L_GetNextFeature() function. Only features for which"
+" the query evaluates as true will be returned."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:10
+msgid ""
+"The query string should be in the format of an SQL WHERE clause. For "
+"instance \"population > 1000000 and population < 5000000\" where "
+"population is an attribute in the layer. The query format is a restricted"
+" form of SQL WHERE clause as defined \"eq_format=restricted_where\" about"
+" half way through this document:"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:16
+msgid "http://ogdi.sourceforge.net/prop/6.2.CapabilitiesMetadata.html"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:18
+msgid ""
+"Note that installing a query string will generally result in resetting "
+"the current reading position (ala OGR_L_ResetReading())."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:21
+msgid ""
+"This function is the same as the C++ method "
+"OGRLayer::SetAttributeFilter()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:27
+msgid "hLayer:  handle to the layer on which attribute query will be executed."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:30
+msgid ""
+"pszQuery:  query in restricted SQL WHERE format, or NULL to clear the "
+"current query."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetAttributeFilter:33
+msgid ""
+"OGRERR_NONE if successfully installed, or an error code if the query "
+"expression is in error, or some other failure occurs."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:1
+msgid "OGRErr OGR_L_SetFeature(OGRLayerH hLayer, OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:4
+msgid "Rewrite an existing feature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:6
+msgid ""
+"This function will write a feature to the layer, based on the feature id "
+"within the OGRFeature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:9
+msgid ""
+"Use OGR_L_TestCapability(OLCRandomWrite) to establish if this layer "
+"supports random access writing via OGR_L_SetFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:12
+msgid "This function is the same as the C++ method OGRLayer::SetFeature()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:17
+msgid "hLayer:  handle to the layer to write the feature."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetFeature:19
+msgid "hFeat:  the feature to write."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:1
+msgid "OGRErr OGR_L_SetIgnoredFields(OGRLayerH hLayer, const char **papszFields)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:4
+msgid "Set which fields can be omitted when retrieving features from the layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:7
+msgid ""
+"If the driver supports this functionality (testable using OLCIgnoreFields"
+" capability), it will not fetch the specified fields in subsequent calls "
+"to GetFeature() / GetNextFeature() and thus save some processing time "
+"and/or bandwidth."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:12
+msgid ""
+"Besides field names of the layers, the following special fields can be "
+"passed: \"OGR_GEOMETRY\" to ignore geometry and \"OGR_STYLE\" to ignore "
+"layer style."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:16
+msgid "By default, no fields are ignored."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:18
+msgid "This method is the same as the C++ method OGRLayer::SetIgnoredFields()"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:23
+msgid ""
+"papszFields:  an array of field names terminated by NULL item. If NULL is"
+" passed, the ignored list is cleared."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetIgnoredFields:26
+msgid ""
+"OGRERR_NONE if all field names have been resolved (even if the driver "
+"does not support this method)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:1
+msgid "OGRErr OGR_L_SetNextByIndex(OGRLayerH hLayer, GIntBig nIndex)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:4
+msgid "Move read cursor to the nIndex'th feature in the current resultset."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:6
+msgid ""
+"This method allows positioning of a layer such that the GetNextFeature() "
+"call will read the requested feature, where nIndex is an absolute index "
+"into the current result set. So, setting it to 3 would mean the next "
+"feature read with GetNextFeature() would have been the 4th feature to "
+"have been read if sequential reading took place from the beginning of the"
+" layer, including accounting for spatial and attribute filters."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:14
+msgid ""
+"Only in rare circumstances is SetNextByIndex() efficiently implemented. "
+"In all other cases the default implementation which calls ResetReading() "
+"and then calls GetNextFeature() nIndex times is used. To determine if "
+"fast seeking is available on the current layer use the TestCapability() "
+"method with a value of OLCFastSetNextByIndex."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:20
+msgid "This method is the same as the C++ method OGRLayer::SetNextByIndex()"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetNextByIndex:27
+msgid "nIndex:  the index indicating how many steps into the result set to seek."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:28 osgeo.ogr.Layer.SetNextByIndex:30
+msgid "OGRERR_NONE on success or an error code."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:1
+msgid "void OGR_L_SetSpatialFilter(OGRLayerH hLayer, OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:4
+msgid "Set a new spatial filter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:6
+msgid ""
+"This function set the geometry to be used as a spatial filter when "
+"fetching features via the OGR_L_GetNextFeature() function. Only features "
+"that geometrically intersect the filter geometry will be returned."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:11
+msgid ""
+"Currently this test is may be inaccurately implemented, but it is "
+"guaranteed that all features whose envelope (as returned by "
+"OGR_G_GetEnvelope()) overlaps the envelope of the spatial filter will be "
+"returned. This can result in more shapes being returned that should "
+"strictly be the case."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:17
+msgid ""
+"Starting with GDAL 2.3, features with null or empty geometries will never"
+" be considered as matching a spatial filter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:20
+msgid ""
+"This function makes an internal copy of the passed geometry. The passed "
+"geometry remains the responsibility of the caller, and may be safely "
+"destroyed."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:24
+msgid ""
+"For the time being the passed filter geometry should be in the same SRS "
+"as the layer (as returned by OGR_L_GetSpatialRef()). In the future this "
+"may be generalized."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:28
+msgid "This function is the same as the C++ method OGRLayer::SetSpatialFilter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:34
+#: osgeo.ogr.Layer.SetSpatialFilterRect:26
+msgid "hLayer:  handle to the layer on which to set the spatial filter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilter:36
+msgid ""
+"hGeom:  handle to the geometry to use as a filtering region. NULL may be "
+"passed indicating that the current spatial filter should be cleared, but "
+"no new one instituted."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:1
+msgid ""
+"void OGR_L_SetSpatialFilterRect(OGRLayerH hLayer, double dfMinX, double "
+"dfMinY, double dfMaxX, double dfMaxY)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:5
+msgid "Set a new rectangular spatial filter."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:7
+msgid ""
+"This method set rectangle to be used as a spatial filter when fetching "
+"features via the OGR_L_GetNextFeature() method. Only features that "
+"geometrically intersect the given rectangle will be returned."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:11
+msgid ""
+"The x/y values should be in the same coordinate system as the layer as a "
+"whole (as returned by OGRLayer::GetSpatialRef()). Internally this method "
+"is normally implemented as creating a 5 vertex closed rectangular polygon"
+" and passing it to OGRLayer::SetSpatialFilter(). It exists as a "
+"convenience."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:17
+msgid ""
+"The only way to clear a spatial filter set with this method is to call "
+"OGRLayer::SetSpatialFilter(NULL)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:20
+msgid ""
+"This method is the same as the C++ method "
+"OGRLayer::SetSpatialFilterRect()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:28
+msgid "dfMinX:  the minimum X coordinate for the rectangular region."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:30
+msgid "dfMinY:  the minimum Y coordinate for the rectangular region."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:32
+msgid "dfMaxX:  the maximum X coordinate for the rectangular region."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetSpatialFilterRect:34
+msgid "dfMaxY:  the maximum Y coordinate for the rectangular region."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetStyleTable:1
+msgid "void OGR_L_SetStyleTable(OGRLayerH hLayer, OGRStyleTableH hStyleTable)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SetStyleTable:4
+msgid "Set style table."
+msgstr ""
+
+#: of osgeo.ogr.Layer.StartTransaction:1
+msgid "OGRErr OGR_L_StartTransaction(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.StartTransaction:4
+msgid ""
+"For datasources which support transactions, StartTransaction creates a "
+"transaction."
+msgstr ""
+
+#: of osgeo.ogr.Layer.StartTransaction:7
+msgid ""
+"If starting the transaction fails, will return OGRERR_FAILURE. "
+"Datasources which do not support transactions will always return "
+"OGRERR_NONE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.StartTransaction:11
+msgid ""
+"Note: as of GDAL 2.0, use of this API is discouraged when the dataset "
+"offers dataset level transaction with GDALDataset::StartTransaction(). "
+"The reason is that most drivers can only offer transactions at dataset "
+"level, and not layer level. Very few drivers really support transactions "
+"at layer scope."
+msgstr ""
+
+#: of osgeo.ogr.Layer.StartTransaction:17
+msgid "This function is the same as the C++ method OGRLayer::StartTransaction()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SymDifference:1
+msgid ""
+"OGRErr OGR_L_SymDifference(OGRLayerH pLayerInput, OGRLayerH pLayerMethod,"
+" OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SymDifference:6
+msgid "Symmetrical difference of two layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SymDifference:8
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are in either in the input layer or in the method layer but not in both. "
+"The features in the result layer have attributes from both input and "
+"method layers. For features which represent areas that are only in the "
+"input or in the method layer the respective attributes have undefined "
+"values. The schema of the result layer can be set by the user or, if it "
+"is empty, is initialized to contain all fields in the input and method "
+"layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SymDifference:39
+msgid "This function is the same as the C++ method OGRLayer::SymDifference()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:1
+msgid "OGRErr OGR_L_SyncToDisk(OGRLayerH hLayer)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:4
+msgid "Flush pending changes to disk."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:6
+msgid ""
+"This call is intended to force the layer to flush any pending writes to "
+"disk, and leave the disk file in a consistent state. It would not "
+"normally have any effect on read-only datasources."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:10
+msgid ""
+"Some layers do not implement this method, and will still return "
+"OGRERR_NONE. The default implementation just returns OGRERR_NONE. An "
+"error is only returned if an error occurs while attempting to flush to "
+"disk."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:15
+msgid ""
+"In any event, you should always close any opened datasource with "
+"OGR_DS_Destroy() that will ensure all data is correctly flushed."
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:18
+msgid "This method is the same as the C++ method OGRLayer::SyncToDisk()"
+msgstr ""
+
+#: of osgeo.ogr.Layer.SyncToDisk:25
+msgid "OGRERR_NONE if no error occurs (even if nothing is done) or an error code."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:1
+msgid "int OGR_L_TestCapability(OGRLayerH hLayer, const char *pszCap)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:4
+msgid "Test if this layer supported the named capability."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:6
+msgid ""
+"The capability codes that can be tested are represented as strings, but "
+"#defined constants exists to ensure correct spelling. Specific layer "
+"types may implement class specific capabilities, but this can't generally"
+" be discovered by the caller."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:11
+msgid ""
+"OLCRandomRead / \"RandomRead\": TRUE if the GetFeature() method is "
+"implemented in an optimized way for this layer, as opposed to the default"
+" implementation using ResetReading() and GetNextFeature() to find the "
+"requested feature id."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:16
+msgid ""
+"OLCSequentialWrite / \"SequentialWrite\": TRUE if the CreateFeature() "
+"method works for this layer. Note this means that this particular layer "
+"is writable. The same OGRLayer class may returned FALSE for other layer "
+"instances that are effectively read-only."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:21
+msgid ""
+"OLCRandomWrite / \"RandomWrite\": TRUE if the SetFeature() method is "
+"operational on this layer. Note this means that this particular layer is "
+"writable. The same OGRLayer class may returned FALSE for other layer "
+"instances that are effectively read-only."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:26
+msgid ""
+"OLCFastSpatialFilter / \"FastSpatialFilter\": TRUE if this layer "
+"implements spatial filtering efficiently. Layers that effectively read "
+"all features, and test them with the OGRFeature intersection methods "
+"should return FALSE. This can be used as a clue by the application "
+"whether it should build and maintain its own spatial index for features "
+"in this layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:33
+msgid ""
+"OLCFastFeatureCount / \"FastFeatureCount\": TRUE if this layer can return"
+" a feature count (via OGR_L_GetFeatureCount()) efficiently, i.e. without "
+"counting the features. In some cases this will return TRUE until a "
+"spatial filter is installed after which it will return FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:38
+msgid ""
+"OLCFastGetExtent / \"FastGetExtent\": TRUE if this layer can return its "
+"data extent (via OGR_L_GetExtent()) efficiently, i.e. without scanning "
+"all the features. In some cases this will return TRUE until a spatial "
+"filter is installed after which it will return FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:43
+msgid ""
+"OLCFastSetNextByIndex / \"FastSetNextByIndex\": TRUE if this layer can "
+"perform the SetNextByIndex() call efficiently, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:46
+msgid ""
+"OLCCreateField / \"CreateField\": TRUE if this layer can create new "
+"fields on the current layer using CreateField(), otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:49
+msgid ""
+"OLCCreateGeomField / \"CreateGeomField\": (GDAL >= 1.11) TRUE if this "
+"layer can create new geometry fields on the current layer using "
+"CreateGeomField(), otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:53
+msgid ""
+"OLCDeleteField / \"DeleteField\": TRUE if this layer can delete existing "
+"fields on the current layer using DeleteField(), otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:57
+msgid ""
+"OLCReorderFields / \"ReorderFields\": TRUE if this layer can reorder "
+"existing fields on the current layer using ReorderField() or "
+"ReorderFields(), otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:61
+msgid ""
+"OLCAlterFieldDefn / \"AlterFieldDefn\": TRUE if this layer can alter the "
+"definition of an existing field on the current layer using "
+"AlterFieldDefn(), otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:65
+msgid ""
+"OLCDeleteFeature / \"DeleteFeature\": TRUE if the DeleteFeature() method "
+"is supported on this layer, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:68
+msgid ""
+"OLCStringsAsUTF8 / \"StringsAsUTF8\": TRUE if values of OFTString fields "
+"are assured to be in UTF-8 format. If FALSE the encoding of fields is "
+"uncertain, though it might still be UTF-8."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:72
+msgid ""
+"OLCTransactions / \"Transactions\": TRUE if the StartTransaction(), "
+"CommitTransaction() and RollbackTransaction() methods work in a "
+"meaningful way, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:76
+msgid ""
+"OLCCurveGeometries / \"CurveGeometries\": TRUE if this layer supports "
+"writing curve geometries or may return such geometries. (GDAL 2.0)."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:79
+msgid "This function is the same as the C++ method OGRLayer::TestCapability()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:85
+msgid "hLayer:  handle to the layer to get the capability from."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:87
+msgid "pszCap:  the name of the capability to test."
+msgstr ""
+
+#: of osgeo.ogr.Layer.TestCapability:89
+msgid ""
+"TRUE if the layer has the requested capability, or FALSE otherwise. "
+"OGRLayers will return FALSE for any unrecognized capabilities."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Union:1
+msgid ""
+"OGRErr OGR_L_Union(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Union:5
+msgid "Union of two layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Union:7
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are in either in the input layer, in the method layer, or in both. The "
+"features in the result layer have attributes from both input and method "
+"layers. For features which represent areas that are only in the input or "
+"in the method layer the respective attributes have undefined values. The "
+"schema of the result layer can be set by the user or, if it is empty, is "
+"initialized to contain all fields in the input and method layers."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Union:47
+msgid "This function is the same as the C++ method OGRLayer::Union()."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Update:1
+msgid ""
+"OGRErr OGR_L_Update(OGRLayerH pLayerInput, OGRLayerH pLayerMethod, "
+"OGRLayerH pLayerResult, char **papszOptions, GDALProgressFunc "
+"pfnProgress, void *pProgressArg)"
+msgstr ""
+
+#: of osgeo.ogr.Layer.Update:5
+msgid "Update this layer with features from the update layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Update:7
+msgid ""
+"The result layer contains features whose geometries represent areas that "
+"are either in the input layer or in the method layer. The features in the"
+" result layer have areas of the features of the method layer or those "
+"ares of the features of the input layer that are not covered by the "
+"method layer. The features of the result layer get their attributes from "
+"the input layer. The schema of the result layer can be set by the user "
+"or, if it is empty, is initialized to contain all fields in the input "
+"layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Update:16
+msgid ""
+"If the schema of the result is set by user and contains fields that have "
+"the same name as a field in the method layer, then the attribute in the "
+"result feature the originates from the method layer will get the value "
+"from the feature of the method layer."
+msgstr ""
+
+#: of osgeo.ogr.Layer.Update:38
+msgid "This function is the same as the C++ method OGRLayer::Update()."
+msgstr ""
+
 #: ../../source/api/python/vector_api.rst:27
 msgid "Feature"
+msgstr ""
+
+#: of osgeo.ogr.Feature:1
+msgid "Proxy of C++ OGRFeatureShadow class."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:1
+msgid "OGRFeatureH OGR_F_Clone(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:4
+msgid "Duplicate feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:6
+msgid ""
+"The newly created feature is owned by the caller, and will have its own "
+"reference to the OGRFeatureDefn."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:9
+msgid "This function is the same as the C++ method OGRFeature::Clone()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:14
+msgid "hFeat:  handle to the feature to clone."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Clone:16
+msgid "a handle to the new feature, exactly matching this feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Destroy:1 osgeo.ogr.FeatureDefn.Destroy:1
+#: osgeo.ogr.FieldDefn.Destroy:1
+msgid ""
+"Once called, self has effectively been destroyed.  Do not access. For "
+"backwards compatibility only"
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:1
+msgid "void OGR_F_DumpReadable(OGRFeatureH hFeat, FILE *fpOut)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:4
+msgid "Dump this feature in a human readable form."
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:6
+msgid ""
+"This dumps the attributes, and geometry; however, it doesn't definition "
+"information (other than field types and names), nor does it report the "
+"geometry spatial reference system."
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:10
+msgid "This function is the same as the C++ method OGRFeature::DumpReadable()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:16
+msgid "hFeat:  handle to the feature to dump."
+msgstr ""
+
+#: of osgeo.ogr.Feature.DumpReadable:18
+msgid "fpOut:  the stream to write to, such as strout."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:1
+msgid "int OGR_F_Equal(OGRFeatureH hFeat, OGRFeatureH hOtherFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:4
+msgid "Test if two features are the same."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:6
+msgid ""
+"Two features are considered equal if the share them (handle equality) "
+"same OGRFeatureDefn, have the same field values, and the same geometry "
+"(as tested by OGR_G_Equal()) as well as the same feature id."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:10
+msgid "This function is the same as the C++ method OGRFeature::Equal()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:15
+msgid "hFeat:  handle to one of the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:17
+msgid "hOtherFeat:  handle to the other feature to test this one against."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Equal:19
+msgid "TRUE if they are equal, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Feature.ExportToJson:1
+msgid ""
+"Exports a GeoJSON object which represents the Feature. The as_object "
+"parameter determines whether the returned value should be a Python object"
+" instead of a string. Defaults to False. The options parameter is passed "
+"to Geometry.ExportToJson()"
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:1
+msgid ""
+"void OGR_F_FillUnsetWithDefault(OGRFeatureH hFeat, int bNotNullableOnly, "
+"char **papszOptions)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:5
+msgid "Fill unset fields with default values that might be defined."
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:7
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::FillUnsetWithDefault()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:13
+#: osgeo.ogr.Feature.GetNativeData:27 osgeo.ogr.Feature.GetNativeMediaType:17
+#: osgeo.ogr.Feature.SetNativeData:17 osgeo.ogr.Feature.SetNativeMediaType:18
+msgid "hFeat:  handle to the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:15
+msgid ""
+"bNotNullableOnly:  if we should fill only unset fields with a not-null "
+"constraint."
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:18
+msgid "papszOptions:  unused currently. Must be set to NULL."
+msgstr ""
+
+#: of osgeo.ogr.Feature.FillUnsetWithDefault:20
+#: osgeo.ogr.Feature.GetFieldAsInteger64:23
+#: osgeo.ogr.Feature.GetFieldAsInteger64List:25
+#: osgeo.ogr.Feature.SetFieldInteger64:28
+#: osgeo.ogr.Feature.SetFieldInteger64List:29 osgeo.ogr.Feature.Validate:29
+#: osgeo.ogr.FieldDefn.GetDefault:16 osgeo.ogr.FieldDefn.GetSubType:16
+#: osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:21
+#: osgeo.ogr.FieldDefn.IsNullable:22 osgeo.ogr.FieldDefn.SetDefault:34
+#: osgeo.ogr.FieldDefn.SetNullable:21 osgeo.ogr.FieldDefn.SetSubType:19
+#: osgeo.ogr.Geometry.ExportToIsoWkb:30 osgeo.ogr.Geometry.ExportToIsoWkt:25
+msgid "GDAL 2.0"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetDefnRef:1
+msgid "OGRFeatureDefnH OGR_F_GetDefnRef(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetDefnRef:4
+msgid "Fetch feature definition."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetDefnRef:6
+msgid "This function is the same as the C++ method OGRFeature::GetDefnRef()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetDefnRef:11
+msgid "hFeat:  handle to the feature to get the feature definition from."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetDefnRef:13
+msgid "a handle to the feature definition object on which feature depends."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFID:1
+msgid "GIntBig OGR_F_GetFID(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFID:4
+msgid "Get feature identifier."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFID:6
+msgid ""
+"This function is the same as the C++ method OGRFeature::GetFID(). Note: "
+"since GDAL 2.0, this method returns a GIntBig (previously a long)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFID:13
+msgid "hFeat:  handle to the feature from which to get the feature identifier."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFID:16
+msgid "feature id or OGRNullFID if none has been assigned."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:1
+msgid "GByte* OGR_F_GetFieldAsBinary(OGRFeatureH hFeat, int iField, int *pnBytes)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:4
+msgid "Fetch field value as binary."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:6
+msgid "This method only works for OFTBinary and OFTString fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:8
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsBinary()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:14
+#: osgeo.ogr.Feature.GetFieldAsDateTime:17
+#: osgeo.ogr.Feature.GetFieldAsDouble:16
+#: osgeo.ogr.Feature.GetFieldAsDoubleList:15
+#: osgeo.ogr.Feature.GetFieldAsInteger:16
+#: osgeo.ogr.Feature.GetFieldAsInteger64:17
+#: osgeo.ogr.Feature.GetFieldAsInteger64List:15
+#: osgeo.ogr.Feature.GetFieldAsIntegerList:15
+#: osgeo.ogr.Feature.GetFieldAsString:16
+#: osgeo.ogr.Feature.GetFieldAsStringList:17
+#: osgeo.ogr.Feature.SetFieldDoubleList:21
+#: osgeo.ogr.Feature.SetFieldInteger64:22
+#: osgeo.ogr.Feature.SetFieldInteger64List:21
+#: osgeo.ogr.Feature.SetFieldIntegerList:21 osgeo.ogr.Feature.SetFieldString:24
+#: osgeo.ogr.Feature.SetFieldStringList:20
+msgid "hFeat:  handle to the feature that owned the field."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:16
+#: osgeo.ogr.Feature.GetFieldAsDateTime:19
+#: osgeo.ogr.Feature.GetFieldAsDouble:18
+#: osgeo.ogr.Feature.GetFieldAsDoubleList:17
+#: osgeo.ogr.Feature.GetFieldAsInteger:18
+#: osgeo.ogr.Feature.GetFieldAsInteger64:19
+#: osgeo.ogr.Feature.GetFieldAsInteger64List:17
+#: osgeo.ogr.Feature.GetFieldAsIntegerList:17
+#: osgeo.ogr.Feature.GetFieldAsString:18
+#: osgeo.ogr.Feature.GetFieldAsStringList:19
+#: osgeo.ogr.Feature.SetFieldInteger64:24 osgeo.ogr.Feature.SetFieldString:26
+msgid "iField:  the field to fetch, from 0 to GetFieldCount()-1."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:18
+msgid "pnBytes:  location to place count of bytes returned."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsBinary:20
+#: osgeo.ogr.Feature.GetFieldAsStringList:21
+msgid ""
+"the field value. This list is internal, and should not be modified, or "
+"freed. Its lifetime may be very brief."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:1
+msgid ""
+"int OGR_F_GetFieldAsDateTime(OGRFeatureH hFeat, int iField, int *pnYear, "
+"int *pnMonth, int *pnDay, int *pnHour, int *pnMinute, int *pnSecond, int "
+"*pnTZFlag)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:6
+msgid "Fetch field value as date and time."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:8
+msgid ""
+"Currently this method only works for OFTDate, OFTTime and OFTDateTime "
+"fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:11
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsDateTime()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:21
+msgid "pnYear:  (including century)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:23
+msgid "pnMonth:  (1-12)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:25
+msgid "pnDay:  (1-31)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:27
+msgid "pnHour:  (0-23)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:29
+msgid "pnMinute:  (0-59)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:31
+msgid "pnSecond:  (0-59)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:33
+msgid "pnTZFlag:  (0=unknown, 1=localtime, 100=GMT, see data model for details)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:36
+msgid "TRUE on success or FALSE on failure."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDateTime:38
+msgid ""
+"See:  Use OGR_F_GetFieldAsDateTimeEx() for second with millisecond "
+"accuracy."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDouble:1
+msgid "double OGR_F_GetFieldAsDouble(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDouble:4
+msgid "Fetch field value as a double."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDouble:6
+msgid ""
+"OFTString features will be translated using CPLAtof(). OFTInteger fields "
+"will be cast to double. Other field types, or errors will result in a "
+"return value of zero."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDouble:10
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsDouble()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDouble:20
+#: osgeo.ogr.Feature.GetFieldAsInteger:20
+#: osgeo.ogr.Feature.GetFieldAsInteger64:21
+msgid "the field value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:1
+msgid ""
+"const double* OGR_F_GetFieldAsDoubleList(OGRFeatureH hFeat, int iField, "
+"int *pnCount)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:5
+msgid "Fetch field value as a list of doubles."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:7
+msgid "Currently this function only works for OFTRealList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:9
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsDoubleList()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:19
+msgid "pnCount:  an integer to put the list count (number of doubles) into."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsDoubleList:21
+#: osgeo.ogr.Feature.GetFieldAsInteger64List:21
+#: osgeo.ogr.Feature.GetFieldAsIntegerList:21
+msgid ""
+"the field value. This list is internal, and should not be modified, or "
+"freed. Its lifetime may be very brief. If *pnCount is zero on return the "
+"returned pointer may be NULL or non-NULL."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger:1
+msgid "int OGR_F_GetFieldAsInteger(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger:4
+msgid "Fetch field value as integer."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger:6
+msgid ""
+"OFTString features will be translated using atoi(). OFTReal fields will "
+"be cast to integer. Other field types, or errors will result in a return "
+"value of zero."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger:10
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsInteger()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64:1
+msgid "GIntBig OGR_F_GetFieldAsInteger64(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64:4
+msgid "Fetch field value as integer 64 bit."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64:6
+msgid ""
+"OFTInteger are promoted to 64 bit. OFTString features will be translated "
+"using CPLAtoGIntBig(). OFTReal fields will be cast to integer. Other "
+"field types, or errors will result in a return value of zero."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64:11
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsInteger64()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64List:1
+msgid ""
+"const GIntBig* OGR_F_GetFieldAsInteger64List(OGRFeatureH hFeat, int "
+"iField, int *pnCount)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64List:5
+msgid "Fetch field value as a list of 64 bit integers."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64List:7
+msgid "Currently this function only works for OFTInteger64List fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64List:9
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsInteger64List()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsInteger64List:19
+#: osgeo.ogr.Feature.GetFieldAsIntegerList:19
+msgid "pnCount:  an integer to put the list count (number of integers) into."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsIntegerList:1
+msgid ""
+"const int* OGR_F_GetFieldAsIntegerList(OGRFeatureH hFeat, int iField, int"
+" *pnCount)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsIntegerList:5
+msgid "Fetch field value as a list of integers."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsIntegerList:7
+msgid "Currently this function only works for OFTIntegerList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsIntegerList:9
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsIntegerList()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsString:1
+msgid "const char* OGR_F_GetFieldAsString(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsString:4
+msgid "Fetch field value as a string."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsString:6
+msgid ""
+"OFTReal and OFTInteger fields will be translated to string using "
+"sprintf(), but not necessarily using the established formatting rules. "
+"Other field types, or errors will result in a return value of zero."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsString:10
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsString()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsString:20
+msgid ""
+"the field value. This string is internal, and should not be modified, or "
+"freed. Its lifetime may be very brief."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsStringList:1
+msgid "char** OGR_F_GetFieldAsStringList(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsStringList:4
+msgid "Fetch field value as a list of strings."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsStringList:6
+msgid "Currently this method only works for OFTStringList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsStringList:8
+msgid ""
+"The returned list is terminated by a NULL pointer. The number of elements"
+" can also be calculated using CSLCount()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldAsStringList:11
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetFieldAsStringList()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldCount:1
+msgid "int OGR_F_GetFieldCount(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldCount:4
+msgid ""
+"Fetch number of fields on this feature This will always be the same as "
+"the field count for the OGRFeatureDefn."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldCount:7
+msgid "This function is the same as the C++ method OGRFeature::GetFieldCount()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldCount:13
+msgid "hFeat:  handle to the feature to get the fields count from."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldCount:15 osgeo.ogr.FeatureDefn.GetFieldCount:13
+msgid "count of fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:1
+msgid "OGRFieldDefnH OGR_F_GetFieldDefnRef(OGRFeatureH hFeat, int i)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:4
+msgid "Fetch definition for this field."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:6
+msgid "This function is the same as the C++ method OGRFeature::GetFieldDefnRef()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:12 osgeo.ogr.Feature.GetFieldIndex:14
+#: osgeo.ogr.Feature.GetGeomFieldDefnRef:12
+msgid "hFeat:  handle to the feature on which the field is found."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:14
+msgid "i:  the field to fetch, from 0 to GetFieldCount()-1."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldDefnRef:16
+#: osgeo.ogr.Feature.GetGeomFieldDefnRef:16
+msgid ""
+"a handle to the field definition (from the OGRFeatureDefn). This is an "
+"internal reference, and should not be deleted or modified."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:1
+msgid "int OGR_F_GetFieldIndex(OGRFeatureH hFeat, const char *pszName)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:4
+msgid "Fetch the field index given field name."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:6
+msgid "This is a cover for the OGRFeatureDefn::GetFieldIndex() method."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:8
+msgid "This function is the same as the C++ method OGRFeature::GetFieldIndex()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:16
+msgid "pszName:  the name of the field to search for."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetFieldIndex:18
+msgid "the field index, or -1 if no matching field is found."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:1
+msgid "int OGR_F_GetGeomFieldCount(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:4
+msgid ""
+"Fetch number of geometry fields on this feature This will always be the "
+"same as the geometry field count for the OGRFeatureDefn."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:7
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetGeomFieldCount()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:13
+msgid "hFeat:  handle to the feature to get the geometry fields count from."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:15
+#: osgeo.ogr.FeatureDefn.GetGeomFieldCount:14
+msgid "count of geometry fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldCount:17
+#: osgeo.ogr.Feature.GetGeomFieldDefnRef:19
+#: osgeo.ogr.Feature.GetGeomFieldIndex:21 osgeo.ogr.Feature.GetGeomFieldRef:19
+#: osgeo.ogr.Feature.SetGeomFieldDirectly:27
+#: osgeo.ogr.FeatureDefn.AddGeomFieldDefn:26
+#: osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:25
+#: osgeo.ogr.FeatureDefn.GetGeomFieldCount:16
+#: osgeo.ogr.FeatureDefn.GetGeomFieldDefn:21
+msgid "GDAL 1.11"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldDefnRef:1
+msgid "OGRGeomFieldDefnH OGR_F_GetGeomFieldDefnRef(OGRFeatureH hFeat, int i)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldDefnRef:4
+msgid "Fetch definition for this geometry field."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldDefnRef:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetGeomFieldDefnRef()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldDefnRef:14
+msgid "i:  the field to fetch, from 0 to GetGeomFieldCount()-1."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:1
+msgid "int OGR_F_GetGeomFieldIndex(OGRFeatureH hFeat, const char *pszName)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:4
+msgid "Fetch the geometry field index given geometry field name."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:6
+msgid "This is a cover for the OGRFeatureDefn::GetGeomFieldIndex() method."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:8
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::GetGeomFieldIndex()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:14
+msgid "hFeat:  handle to the feature on which the geometry field is found."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:16
+msgid "pszName:  the name of the geometry field to search for."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldIndex:18
+msgid "the geometry field index, or -1 if no matching geometry field is found."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:1
+msgid "OGRGeometryH OGR_F_GetGeomFieldRef(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:4 osgeo.ogr.Feature.GetGeometryRef:4
+msgid "Fetch a handle to feature geometry."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:6
+msgid "This function is the same as the C++ method OGRFeature::GetGeomFieldRef()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:12 osgeo.ogr.Feature.GetGeometryRef:13
+msgid "hFeat:  handle to the feature to get geometry from."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:14
+msgid "iField:  geometry field to get."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeomFieldRef:16 osgeo.ogr.Feature.GetGeometryRef:15
+msgid "a handle to internal feature geometry. This object should not be modified."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeometryRef:1
+msgid "OGRGeometryH OGR_F_GetGeometryRef(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetGeometryRef:6
+msgid ""
+"This function is essentially the same as the C++ method "
+"OGRFeature::GetGeometryRef() (the only difference is that this C function"
+" honours OGRGetNonLinearGeometriesEnabledFlag())"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:1
+msgid "const char* OGR_F_GetNativeData(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:4
+msgid "Returns the native data for the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:6 osgeo.ogr.Feature.SetNativeData:6
+msgid ""
+"The native data is the representation in a \"natural\" form that comes "
+"from the driver that created this feature, or that is aimed at an output "
+"driver. The native data may be in different format, which is indicated by"
+" OGR_F_GetNativeMediaType()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:11
+msgid ""
+"Note that most drivers do not support storing the native data in the "
+"feature object, and if they do, generally the NATIVE_DATA open option "
+"must be passed at dataset opening."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:15
+msgid ""
+"The \"native data\" does not imply it is something more performant or "
+"powerful than what can be obtained with the rest of the API, but it may "
+"be useful in round-tripping scenarios where some characteristics of the "
+"underlying format are not captured otherwise by the OGR abstraction."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:21
+msgid "This function is the same as the C++ method OGRFeature::GetNativeData()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:29
+msgid "a string with the native data, or NULL if there is none."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:31
+#: osgeo.ogr.Feature.GetNativeMediaType:21 osgeo.ogr.Feature.SetNativeData:22
+#: osgeo.ogr.Feature.SetNativeMediaType:23
+#: osgeo.ogr.Geometry.CoordinateDimension:17 osgeo.ogr.Geometry.Is3D:14
+#: osgeo.ogr.Geometry.IsMeasured:15 osgeo.ogr.Geometry.Set3D:18
+#: osgeo.ogr.Geometry.SetMeasured:19
+msgid "GDAL 2.1"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeData:33
+#: osgeo.ogr.Feature.GetNativeMediaType:23 osgeo.ogr.Feature.SetNativeData:24
+#: osgeo.ogr.Feature.SetNativeMediaType:25
+msgid "See: https://trac.osgeo.org/gdal/wiki/rfc60_improved_roundtripping_in_ogr"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeMediaType:1
+msgid "const char* OGR_F_GetNativeMediaType(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeMediaType:4
+msgid "Returns the native media type for the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeMediaType:6
+#: osgeo.ogr.Feature.SetNativeMediaType:7
+msgid ""
+"The native media type is the identifier for the format of the native "
+"data. It follows the IANA RFC 2045 "
+"(seehttps://en.wikipedia.org/wiki/Media_type), e.g. "
+"\"application/vnd.geo+json\" for JSon."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeMediaType:11
+msgid "This function is the same as the C function OGR_F_GetNativeMediaType()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetNativeMediaType:19
+msgid "a string with the native media type, or NULL if there is none."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:1
+msgid "const char* OGR_F_GetStyleString(OGRFeatureH hFeat)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:4
+msgid "Fetch style string for this feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:6
+msgid ""
+"Set the OGR Feature Style Specification for details on the format of this"
+" string, and ogr_featurestyle.h for services available to parse it."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:10
+msgid "This function is the same as the C++ method OGRFeature::GetStyleString()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:16
+msgid "hFeat:  handle to the feature to get the style from."
+msgstr ""
+
+#: of osgeo.ogr.Feature.GetStyleString:18
+msgid ""
+"a reference to a representation in string format, or NULL if there isn't "
+"one."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:1
+msgid "int OGR_F_IsFieldNull(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:4
+msgid "Test if a field is null."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:6
+msgid "This function is the same as the C++ method OGRFeature::IsFieldNull()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:11 osgeo.ogr.Feature.IsFieldSet:11
+#: osgeo.ogr.Feature.IsFieldSetAndNotNull:12 osgeo.ogr.Feature.SetFieldNull:12
+#: osgeo.ogr.Feature.UnsetField:11
+msgid "hFeat:  handle to the feature on which the field is."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:13 osgeo.ogr.Feature.IsFieldSet:13
+#: osgeo.ogr.Feature.IsFieldSetAndNotNull:14
+msgid "iField:  the field to test."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:15
+msgid "TRUE if the field is null, otherwise false."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldNull:17
+#: osgeo.ogr.Feature.IsFieldSetAndNotNull:18 osgeo.ogr.Feature.SetFieldNull:16
+#: osgeo.ogr.Geometry.Distance3D:24
+msgid "GDAL 2.2"
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSet:1
+msgid "int OGR_F_IsFieldSet(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSet:4
+msgid "Test if a field has ever been assigned a value or not."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSet:6
+msgid "This function is the same as the C++ method OGRFeature::IsFieldSet()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSet:15
+msgid "TRUE if the field has been set, otherwise false."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSetAndNotNull:1
+msgid "int OGR_F_IsFieldSetAndNotNull(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSetAndNotNull:4
+msgid "Test if a field is set and not null."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSetAndNotNull:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::IsFieldSetAndNotNull()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.IsFieldSetAndNotNull:16
+msgid "TRUE if the field is set and not null, otherwise false."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:1
+msgid "OGRErr OGR_F_SetFID(OGRFeatureH hFeat, GIntBig nFID)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:4
+msgid "Set the feature identifier."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:6
+msgid ""
+"For specific types of features this operation may fail on illegal "
+"features ids. Generally it always succeeds. Feature ids should be greater"
+" than or equal to zero, with the exception of OGRNullFID (-1) indicating "
+"that the feature id is unknown."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:11
+msgid "This function is the same as the C++ method OGRFeature::SetFID()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:16
+msgid "hFeat:  handle to the feature to set the feature id to."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:18
+msgid "nFID:  the new feature identifier value to assign."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFID:20
+msgid "On success OGRERR_NONE, or on failure some other value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetField:1
+msgid "SetField(self, int id, int year, int month, int day, int hour, int minute,"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetField:2
+msgid "int second, int tzflag)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetField:3
+msgid "SetField(self, char name, int year, int month, int day, int hour,"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetField:4
+msgid "int minute, int second, int tzflag)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:1
+msgid ""
+"void OGR_F_SetFieldDoubleList(OGRFeatureH hFeat, int iField, int nCount, "
+"const double *padfValues)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:5
+msgid "Set field to list of doubles value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:7
+msgid ""
+"This function currently on has an effect of OFTIntegerList, "
+"OFTInteger64List, OFTRealList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:10
+#: osgeo.ogr.Feature.SetFieldInteger64:11
+#: osgeo.ogr.Feature.SetFieldInteger64List:10
+#: osgeo.ogr.Feature.SetFieldIntegerList:10 osgeo.ogr.Feature.SetFieldString:13
+#: osgeo.ogr.Feature.SetFieldStringList:9
+msgid "This function is the same as the C++ method OGRFeature::SetField()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:12
+#: osgeo.ogr.Feature.SetFieldInteger64:13
+#: osgeo.ogr.Feature.SetFieldInteger64List:12
+#: osgeo.ogr.Feature.SetFieldIntegerList:12 osgeo.ogr.Feature.SetFieldString:15
+#: osgeo.ogr.Feature.SetFieldStringList:11 osgeo.ogr.Feature.SetGeometry:12
+#: osgeo.ogr.Feature.SetGeometryDirectly:13
+msgid ""
+"This method has only an effect on the in-memory feature object. If this "
+"object comes from a layer and the modifications must be serialized back "
+"to the datasource, OGR_L_SetFeature() must be used afterwards. Or if this"
+" is a new feature, OGR_L_CreateFeature() must be used afterwards."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:23
+#: osgeo.ogr.Feature.SetFieldInteger64List:23
+#: osgeo.ogr.Feature.SetFieldIntegerList:23
+#: osgeo.ogr.Feature.SetFieldStringList:22
+msgid "iField:  the field to set, from 0 to GetFieldCount()-1."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:25
+#: osgeo.ogr.Feature.SetFieldInteger64List:25
+#: osgeo.ogr.Feature.SetFieldIntegerList:25
+msgid "nCount:  the number of values in the list being assigned."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldDoubleList:27
+msgid "padfValues:  the values to assign."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64:1
+msgid ""
+"void OGR_F_SetFieldInteger64(OGRFeatureH hFeat, int iField, GIntBig "
+"nValue)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64:4
+msgid "Set field to 64 bit integer value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64:6
+msgid ""
+"OFTInteger, OFTInteger64 and OFTReal fields will be set directly. "
+"OFTString fields will be assigned a string representation of the value, "
+"but not necessarily taking into account formatting constraints on this "
+"field. Other field types may be unaffected."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64:26
+msgid "nValue:  the value to assign."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64List:1
+msgid ""
+"void OGR_F_SetFieldInteger64List(OGRFeatureH hFeat, int iField, int "
+"nCount, const GIntBig *panValues)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64List:5
+msgid "Set field to list of 64 bit integers value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64List:7
+#: osgeo.ogr.Feature.SetFieldIntegerList:7
+msgid ""
+"This function currently on has an effect of OFTIntegerList, "
+"OFTInteger64List and OFTRealList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldInteger64List:27
+#: osgeo.ogr.Feature.SetFieldIntegerList:27
+msgid "panValues:  the values to assign."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldIntegerList:1
+msgid ""
+"void OGR_F_SetFieldIntegerList(OGRFeatureH hFeat, int iField, int nCount,"
+" const int *panValues)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldIntegerList:5
+msgid "Set field to list of integers value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldNull:1
+msgid "void OGR_F_SetFieldNull(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldNull:4
+msgid "Clear a field, marking it as null."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldNull:6
+msgid "This function is the same as the C++ method OGRFeature::SetFieldNull()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldNull:14
+msgid "iField:  the field to set to null."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldString:1
+msgid ""
+"void OGR_F_SetFieldString(OGRFeatureH hFeat, int iField, const char "
+"*pszValue)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldString:5
+msgid "Set field to string value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldString:7
+msgid ""
+"OFTInteger fields will be set based on an atoi() conversion of the "
+"string. OFTInteger64 fields will be set based on an CPLAtoGIntBig() "
+"conversion of the string. OFTReal fields will be set based on an "
+"CPLAtof() conversion of the string. Other field types may be unaffected."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldString:28
+msgid "pszValue:  the value to assign."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldStringList:1
+msgid ""
+"void OGR_F_SetFieldStringList(OGRFeatureH hFeat, int iField, CSLConstList"
+" papszValues)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldStringList:5
+msgid "Set field to list of strings value."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldStringList:7
+msgid "This function currently on has an effect of OFTStringList fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFieldStringList:24
+msgid ""
+"papszValues:  the values to assign. List of NUL-terminated string, ending"
+" with a NULL pointer."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:1
+msgid ""
+"OGRErr OGR_F_SetFrom(OGRFeatureH hFeat, OGRFeatureH hOtherFeat, int "
+"bForgiving)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:4 osgeo.ogr.Feature.SetFromWithMap:5
+msgid "Set one feature from another."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:6
+msgid ""
+"Overwrite the contents of this feature from the geometry and attributes "
+"of another. The hOtherFeature does not need to have the same "
+"OGRFeatureDefn. Field values are copied by corresponding field names. "
+"Field types do not have to exactly match. OGR_F_SetField*() function "
+"conversion rules will be applied as needed."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:12 osgeo.ogr.Feature.SetFromWithMap:16
+msgid "This function is the same as the C++ method OGRFeature::SetFrom()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:17 osgeo.ogr.Feature.SetFromWithMap:21
+msgid "hFeat:  handle to the feature to set to."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:19 osgeo.ogr.Feature.SetFromWithMap:23
+msgid ""
+"hOtherFeat:  handle to the feature from which geometry, and field values "
+"will be copied."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:22 osgeo.ogr.Feature.SetFromWithMap:32
+msgid ""
+"bForgiving:  TRUE if the operation should continue despite lacking output"
+" fields matching some of the source fields."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFrom:25 osgeo.ogr.Feature.SetFromWithMap:35
+msgid ""
+"OGRERR_NONE if the operation succeeds, even if some values are not "
+"transferred, otherwise an error code."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFromWithMap:1
+msgid ""
+"OGRErr OGR_F_SetFromWithMap(OGRFeatureH hFeat, OGRFeatureH hOtherFeat, "
+"int bForgiving, const int *panMap)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFromWithMap:7
+msgid ""
+"Overwrite the contents of this feature from the geometry and attributes "
+"of another. The hOtherFeature does not need to have the same "
+"OGRFeatureDefn. Field values are copied according to the provided indices"
+" map. Field types do not have to exactly match. OGR_F_SetField*() "
+"function conversion rules will be applied as needed. This is more "
+"efficient than OGR_F_SetFrom() in that this doesn't lookup the fields by "
+"their names. Particularly useful when the field names don't match."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetFromWithMap:26
+msgid ""
+"panMap:  Array of the indices of the destination feature's fields stored "
+"at the corresponding index of the source feature's fields. A value of -1 "
+"should be used to ignore the source's field. The array should not be NULL"
+" and be as long as the number of fields in the source feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:1
+msgid ""
+"OGRErr OGR_F_SetGeomField(OGRFeatureH hFeat, int iField, OGRGeometryH "
+"hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:4 osgeo.ogr.Feature.SetGeomFieldDirectly:5
+msgid "Set feature geometry of a specified geometry field."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:6 osgeo.ogr.Feature.SetGeometry:6
+msgid ""
+"This function updates the features geometry, and operate exactly as "
+"SetGeometryDirectly(), except that this function does not assume "
+"ownership of the passed geometry, but instead makes a copy of it."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:10
+msgid "This function is the same as the C++ OGRFeature::SetGeomField()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:15 osgeo.ogr.Feature.SetGeometry:21
+msgid "hFeat:  handle to the feature on which new geometry is applied to."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:17
+#: osgeo.ogr.Feature.SetGeomFieldDirectly:19
+msgid "iField:  geometry field to set."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:19
+#: osgeo.ogr.Feature.SetGeomFieldDirectly:21 osgeo.ogr.Feature.SetGeometry:23
+#: osgeo.ogr.Feature.SetGeometryDirectly:24
+msgid "hGeom:  handle to the new geometry to apply to feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomField:21 osgeo.ogr.Feature.SetGeometry:25
+#: osgeo.ogr.Feature.SetGeometryDirectly:26
+msgid ""
+"OGRERR_NONE if successful, or OGR_UNSUPPORTED_GEOMETRY_TYPE if the "
+"geometry type is illegal for the OGRFeatureDefn (checking not yet "
+"implemented)."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomFieldDirectly:1
+msgid ""
+"OGRErr OGR_F_SetGeomFieldDirectly(OGRFeatureH hFeat, int iField, "
+"OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomFieldDirectly:7
+msgid ""
+"This function updates the features geometry, and operate exactly as "
+"SetGeomField(), except that this function assumes ownership of the passed"
+" geometry (even in case of failure of that function)."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomFieldDirectly:11
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::SetGeomFieldDirectly."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomFieldDirectly:17
+#: osgeo.ogr.Feature.SetGeometryDirectly:22
+msgid "hFeat:  handle to the feature on which to apply the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeomFieldDirectly:23
+msgid ""
+"OGRERR_NONE if successful, or OGRERR_FAILURE if the index is invalid, or "
+"OGR_UNSUPPORTED_GEOMETRY_TYPE if the geometry type is illegal for the "
+"OGRFeatureDefn (checking not yet implemented)."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometry:1
+msgid "OGRErr OGR_F_SetGeometry(OGRFeatureH hFeat, OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometry:4 osgeo.ogr.Feature.SetGeometryDirectly:4
+msgid "Set feature geometry."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometry:10
+msgid "This function is the same as the C++ OGRFeature::SetGeometry()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometryDirectly:1
+msgid "OGRErr OGR_F_SetGeometryDirectly(OGRFeatureH hFeat, OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometryDirectly:6
+msgid ""
+"This function updates the features geometry, and operate exactly as "
+"SetGeometry(), except that this function assumes ownership of the passed "
+"geometry (even in case of failure of that function)."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetGeometryDirectly:10
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::SetGeometryDirectly."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeData:1
+msgid "void OGR_F_SetNativeData(OGRFeatureH hFeat, const char *pszNativeData)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeData:4
+msgid "Sets the native data for the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeData:11
+msgid "This function is the same as the C++ method OGRFeature::SetNativeData()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeData:19
+msgid "pszNativeData:  a string with the native data, or NULL if there is none."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeMediaType:1
+msgid ""
+"void OGR_F_SetNativeMediaType(OGRFeatureH hFeat, const char "
+"*pszNativeMediaType)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeMediaType:5
+msgid "Sets the native media type for the feature."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeMediaType:12
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeature::SetNativeMediaType()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetNativeMediaType:20
+msgid ""
+"pszNativeMediaType:  a string with the native media type, or NULL if "
+"there is none."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:1
+msgid "void OGR_F_SetStyleString(OGRFeatureH hFeat, const char *pszStyle)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:4
+msgid "Set feature style string."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:6
+msgid ""
+"This method operate exactly as OGR_F_SetStyleStringDirectly() except that"
+" it does not assume ownership of the passed string, but instead makes a "
+"copy of it."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:10
+msgid "This function is the same as the C++ method OGRFeature::SetStyleString()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:16
+msgid "hFeat:  handle to the feature to set style to."
+msgstr ""
+
+#: of osgeo.ogr.Feature.SetStyleString:18
+msgid "pszStyle:  the style string to apply to this feature, cannot be NULL."
+msgstr ""
+
+#: of osgeo.ogr.Feature.UnsetField:1
+msgid "void OGR_F_UnsetField(OGRFeatureH hFeat, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.UnsetField:4
+msgid "Clear a field, marking it as unset."
+msgstr ""
+
+#: of osgeo.ogr.Feature.UnsetField:6
+msgid "This function is the same as the C++ method OGRFeature::UnsetField()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.UnsetField:13
+msgid "iField:  the field to unset."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:1
+msgid "int OGR_F_Validate(OGRFeatureH hFeat, int nValidateFlags, int bEmitError)"
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:4
+msgid "Validate that a feature meets constraints of its schema."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:6
+msgid "The scope of test is specified with the nValidateFlags parameter."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:8
+msgid ""
+"Regarding OGR_F_VAL_WIDTH, the test is done assuming the string width "
+"must be interpreted as the number of UTF-8 characters. Some drivers might"
+" interpret the width as the number of bytes instead. So this test is "
+"rather conservative (if it fails, then it will fail for all "
+"interpretations)."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:14
+msgid "This function is the same as the C++ method OGRFeature::Validate()."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:19
+msgid "hFeat:  handle to the feature to validate."
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:21
+msgid ""
+"nValidateFlags:  OGR_F_VAL_ALL or combination of OGR_F_VAL_NULL, "
+"OGR_F_VAL_GEOM_TYPE, OGR_F_VAL_WIDTH and "
+"OGR_F_VAL_ALLOW_NULL_WHEN_DEFAULT with '|' operator"
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:25
+msgid "bEmitError:  TRUE if a CPLError() must be emitted when a check fails"
+msgstr ""
+
+#: of osgeo.ogr.Feature.Validate:27
+msgid "TRUE if all enabled validation tests pass."
 msgstr ""
 
 #: ../../source/api/python/vector_api.rst:35
 msgid "Geometry"
 msgstr ""
 
+#: of osgeo.ogr.Geometry:1
+msgid "Proxy of C++ OGRGeometryShadow class."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:1
+msgid ""
+"void OGR_G_AssignSpatialReference(OGRGeometryH hGeom, "
+"OGRSpatialReferenceH hSRS)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:5
+msgid "Assign spatial reference to this object."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:7
+msgid ""
+"Any existing spatial reference is replaced, but under no circumstances "
+"does this result in the object being reprojected. It is just changing the"
+" interpretation of the existing geometry. Note that assigning a spatial "
+"reference increments the reference count on the OGRSpatialReference, but "
+"does not copy it."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:13
+msgid ""
+"Starting with GDAL 2.3, this will also assign the spatial reference to "
+"potential sub-geometries of the geometry ( OGRGeometryCollection, "
+"OGRCurvePolygon/OGRPolygon, OGRCompoundCurve, OGRPolyhedralSurface and "
+"their derived classes)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:18
+msgid "This is similar to the SFCOM IGeometry::put_SpatialReference() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:20
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::assignSpatialReference."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:26
+msgid "hGeom:  handle on the geometry to apply the new spatial reference system."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.AssignSpatialReference:29
+msgid "hSRS:  handle on the new spatial reference system to apply."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:1
+msgid "OGRGeometryH OGR_G_Boundary(OGRGeometryH hTarget)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:4
+msgid "Compute boundary."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:6
+msgid ""
+"A new geometry object is created and returned containing the boundary of "
+"the geometry on which the method is invoked."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:9
+msgid "This function is the same as the C++ method OGR_G_Boundary()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:11 osgeo.ogr.Geometry.Buffer:19
+#: osgeo.ogr.Geometry.Centroid:18 osgeo.ogr.Geometry.Contains:14
+#: osgeo.ogr.Geometry.ConvexHull:11 osgeo.ogr.Geometry.Crosses:14
+#: osgeo.ogr.Geometry.Difference:15 osgeo.ogr.Geometry.Disjoint:14
+#: osgeo.ogr.Geometry.Distance:11 osgeo.ogr.Geometry.Intersection:17
+#: osgeo.ogr.Geometry.Overlaps:15 osgeo.ogr.Geometry.Polygonize:13
+#: osgeo.ogr.Geometry.Simplify:8 osgeo.ogr.Geometry.SimplifyPreserveTopology:9
+#: osgeo.ogr.Geometry.SymDifference:16 osgeo.ogr.Geometry.Touches:14
+#: osgeo.ogr.Geometry.Union:15 osgeo.ogr.Geometry.UnionCascaded:13
+#: osgeo.ogr.Geometry.Within:14
+msgid ""
+"This function is built on the GEOS library, check it for the definition "
+"of the geometry operation. If OGR is built without the GEOS library, this"
+" function will always fail, issuing a CPLE_NotSupported error."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:19
+msgid "hTarget:  The Geometry to calculate the boundary of."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Boundary:21 osgeo.ogr.Geometry.ConvexHull:21
+#: osgeo.ogr.Geometry.Polygonize:23
+msgid ""
+"a handle to a newly allocated geometry now owned by the caller, or NULL "
+"on failure."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:1
+msgid ""
+"OGRGeometryH OGR_G_Buffer(OGRGeometryH hTarget, double dfDist, int "
+"nQuadSegs)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:4
+msgid "Compute buffer of geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:6
+msgid ""
+"Builds a new geometry containing the buffer region around the geometry on"
+" which it is invoked. The buffer is a polygon containing the region "
+"within the buffer distance of the original geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:10
+msgid ""
+"Some buffer sections are properly described as curves, but are converted "
+"to approximate polygons. The nQuadSegs parameter can be used to control "
+"how many segments should be used to define a 90 degree curve - a quadrant"
+" of a circle. A value of 30 is a reasonable default. Large values result "
+"in large numbers of vertices in the resulting buffer geometry while small"
+" numbers reduce the accuracy of the result."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:17
+msgid "This function is the same as the C++ method OGRGeometry::Buffer()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:27
+msgid "hTarget:  the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:29
+msgid ""
+"dfDist:  the buffer distance to be applied. Should be expressed into the "
+"same unit as the coordinates of the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:32
+msgid ""
+"nQuadSegs:  the number of segments used to approximate a 90 degree "
+"(quadrant) of curvature."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Buffer:35
+msgid "the newly created geometry, or NULL if an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:1
+msgid "int OGR_G_Centroid(OGRGeometryH hGeom, OGRGeometryH hCentroidPoint)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:4
+msgid "Compute the geometry centroid."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:6
+msgid ""
+"The centroid location is applied to the passed in OGRPoint object. The "
+"centroid is not necessarily within the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:9
+msgid ""
+"This method relates to the SFCOM ISurface::get_Centroid() method however "
+"the current implementation based on GEOS can operate on other geometry "
+"types such as multipoint, linestring, geometrycollection such as "
+"multipolygons. OGC SF SQL 1.1 defines the operation for surfaces "
+"(polygons). SQL/MM-Part 3 defines the operation for surfaces and "
+"multisurfaces (multipolygons)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:16
+msgid "This function is the same as the C++ method OGRGeometry::Centroid()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Centroid:23
+msgid "OGRERR_NONE on success or OGRERR_FAILURE on error."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:1
+msgid "OGRGeometryH OGR_G_Clone(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:4
+msgid "Make a copy of this object."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:6
+msgid "This function relates to the SFCOM IGeometry::clone() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:8
+msgid "This function is the same as the CPP method OGRGeometry::clone()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:13
+msgid "hGeom:  handle on the geometry to clone from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Clone:15
+msgid ""
+"a handle on the copy of the geometry with the spatial reference system as"
+" the original."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CloseRings:1
+msgid "void OGR_G_CloseRings(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CloseRings:4
+msgid "Force rings to be closed."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CloseRings:6
+msgid ""
+"If this geometry, or any contained geometries has polygon rings that are "
+"not closed, they will be closed by adding the starting point at the end."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CloseRings:13
+msgid "hGeom:  handle to the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:1
+msgid "int OGR_G_Contains(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:4 osgeo.ogr.Geometry.Within:4
+msgid "Test for containment."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:6
+msgid "Tests if this geometry contains the other geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:8 osgeo.ogr.Geometry.Crosses:8
+#: osgeo.ogr.Geometry.Difference:9 osgeo.ogr.Geometry.Disjoint:8
+#: osgeo.ogr.Geometry.Intersection:10 osgeo.ogr.Geometry.Overlaps:9
+#: osgeo.ogr.Geometry.SymDifference:9 osgeo.ogr.Geometry.Touches:8
+#: osgeo.ogr.Geometry.Union:9 osgeo.ogr.Geometry.UnionCascaded:6
+#: osgeo.ogr.Geometry.Within:8
+msgid ""
+"Geometry validity is not checked. In case you are unsure of the validity "
+"of the input geometries, call IsValid() before, otherwise the result "
+"might be wrong."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:12
+msgid "This function is the same as the C++ method OGRGeometry::Contains()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:22 osgeo.ogr.Geometry.Crosses:22
+#: osgeo.ogr.Geometry.Disjoint:22 osgeo.ogr.Geometry.Overlaps:23
+#: osgeo.ogr.Geometry.Touches:22 osgeo.ogr.Geometry.Within:22
+msgid "hThis:  the geometry to compare."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:24 osgeo.ogr.Geometry.Crosses:24
+#: osgeo.ogr.Geometry.Disjoint:24 osgeo.ogr.Geometry.Overlaps:25
+#: osgeo.ogr.Geometry.Touches:24 osgeo.ogr.Geometry.Within:24
+msgid "hOther:  the other geometry to compare."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Contains:26
+msgid "TRUE if hThis contains hOther geometry, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ConvexHull:1
+msgid "OGRGeometryH OGR_G_ConvexHull(OGRGeometryH hTarget)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ConvexHull:4
+msgid "Compute convex hull."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ConvexHull:6
+msgid ""
+"A new geometry object is created and returned containing the convex hull "
+"of the geometry on which the method is invoked."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ConvexHull:9
+msgid "This function is the same as the C++ method OGRGeometry::ConvexHull()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ConvexHull:19
+msgid "hTarget:  The Geometry to calculate the convex hull of."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CoordinateDimension:1
+msgid "int OGR_G_CoordinateDimension(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CoordinateDimension:4
+#: osgeo.ogr.Geometry.GetCoordinateDimension:4
+msgid "Get the dimension of the coordinates in this geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CoordinateDimension:6
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::CoordinateDimension()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CoordinateDimension:12
+#: osgeo.ogr.Geometry.GetCoordinateDimension:12
+msgid ""
+"hGeom:  handle on the geometry to get the dimension of the coordinates "
+"from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.CoordinateDimension:15
+msgid "this will return 2 for XY, 3 for XYZ and XYM, and 4 for XYZM data."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Crosses:1
+msgid "int OGR_G_Crosses(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Crosses:4
+msgid "Test for crossing."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Crosses:6
+msgid "Tests if this geometry and the other geometry are crossing."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Crosses:12
+msgid "This function is the same as the C++ method OGRGeometry::Crosses()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Crosses:26
+msgid "TRUE if they are crossing, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:1
+msgid ""
+"OGRGeometryH OGR_G_DelaunayTriangulation(OGRGeometryH hThis, double "
+"dfTolerance, int bOnlyEdges)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:5
+msgid "Return a Delaunay triangulation of the vertices of the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:7
+msgid ""
+"This function is the same as the C++ method "
+"OGRGeometry::DelaunayTriangulation()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:10
+msgid ""
+"This function is built on the GEOS library, v3.4 or above. If OGR is "
+"built without the GEOS library, this function will always fail, issuing a"
+" CPLE_NotSupported error."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:17
+#: osgeo.ogr.Geometry.Difference:23 osgeo.ogr.Geometry.Intersection:25
+#: osgeo.ogr.Geometry.Simplify:16
+#: osgeo.ogr.Geometry.SimplifyPreserveTopology:17
+#: osgeo.ogr.Geometry.SymDifference:24 osgeo.ogr.Geometry.Union:23
+#: osgeo.ogr.Geometry.UnionCascaded:21
+msgid "hThis:  the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:19
+msgid "dfTolerance:  optional snapping tolerance to use for improved robustness"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:22
+msgid ""
+"bOnlyEdges:  if TRUE, will return a MULTILINESTRING, otherwise it will "
+"return a GEOMETRYCOLLECTION containing triangular POLYGONs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:25
+msgid ""
+"the geometry resulting from the Delaunay triangulation or NULL if an "
+"error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.DelaunayTriangulation:28
+msgid "OGR 2.1"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:1
+msgid "OGRGeometryH OGR_G_Difference(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:4
+msgid "Compute difference."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:6
+msgid ""
+"Generates a new geometry which is the region of this geometry with the "
+"region of the other geometry removed."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:13
+msgid "This function is the same as the C++ method OGRGeometry::Difference()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:25 osgeo.ogr.Geometry.Intersection:27
+#: osgeo.ogr.Geometry.SymDifference:26 osgeo.ogr.Geometry.Union:25
+msgid "hOther:  the other geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Difference:27
+msgid ""
+"a new geometry representing the difference or NULL if the difference is "
+"empty or an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Disjoint:1
+msgid "int OGR_G_Disjoint(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Disjoint:4
+msgid "Test for disjointness."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Disjoint:6
+msgid "Tests if this geometry and the other geometry are disjoint."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Disjoint:12
+msgid "This function is the same as the C++ method OGRGeometry::Disjoint()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Disjoint:26
+msgid "TRUE if they are disjoint, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:1
+msgid "double OGR_G_Distance(OGRGeometryH hFirst, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:4
+msgid "Compute distance between two geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:6
+msgid ""
+"Returns the shortest distance between the two geometries. The distance is"
+" expressed into the same unit as the coordinates of the geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:9
+msgid "This function is the same as the C++ method OGRGeometry::Distance()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:19 osgeo.ogr.Geometry.Distance3D:18
+msgid "hFirst:  the first geometry to compare against."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:21 osgeo.ogr.Geometry.Distance3D:20
+msgid "hOther:  the other geometry to compare against."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance:23 osgeo.ogr.Geometry.Distance3D:26
+msgid "the distance between the geometries or -1 if an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:1
+msgid "double OGR_G_Distance3D(OGRGeometryH hFirst, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:4
+msgid "Returns the 3D distance between two geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:6
+msgid ""
+"The distance is expressed into the same unit as the coordinates of the "
+"geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:9
+msgid ""
+"This method is built on the SFCGAL library, check it for the definition "
+"of the geometry operation. If OGR is built without the SFCGAL library, "
+"this method will always return -1.0"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:13
+msgid "This function is the same as the C++ method OGRGeometry::Distance3D()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Distance3D:22
+msgid "distance between the two geometries"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:1
+msgid "void OGR_G_Empty(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:3
+msgid "Clear geometry information."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:5
+msgid ""
+"This restores the geometry to its initial state after construction, and "
+"before assignment of actual geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:8
+msgid "This function relates to the SFCOM IGeometry::Empty() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:10
+msgid "This function is the same as the CPP method OGRGeometry::empty()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Empty:15
+msgid "hGeom:  handle on the geometry to empty."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:1
+msgid "int OGR_G_Equals(OGRGeometryH hGeom, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:4
+msgid "Returns TRUE if two geometries are equivalent."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:6
+msgid "This operation implements the SQL/MM ST_OrderingEquals() operation."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:8
+msgid ""
+"The comparison is done in a structural way, that is to say that the "
+"geometry types must be identical, as well as the number and ordering of "
+"sub-geometries and vertices. Or equivalently, two geometries are "
+"considered equal by this method if their WKT/WKB representation is equal."
+" Note: this must be distinguished for equality in a spatial way (which is"
+" the purpose of the ST_Equals() operation)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:15
+msgid "This function is the same as the CPP method OGRGeometry::Equals() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:21 osgeo.ogr.Geometry.Intersects:15
+msgid "hGeom:  handle on the first geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:23
+msgid "hOther:  handle on the other geometry to test against."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Equals:25
+msgid "TRUE if equivalent or FALSE otherwise."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:1
+msgid ""
+"OGRErr OGR_G_ExportToIsoWkb(OGRGeometryH hGeom, OGRwkbByteOrder eOrder, "
+"unsigned char *pabyDstBuffer)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:5
+msgid ""
+"Convert a geometry into SFSQL 1.2 / ISO SQL/MM Part 3 well known binary "
+"format."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:8
+msgid ""
+"This function relates to the SFCOM IWks::ExportToWKB() method. It exports"
+" the SFSQL 1.2 and ISO SQL/MM Part 3 extended dimension (Z&M) WKB types."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:12
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::exportToWkb(OGRwkbByteOrder, unsigned char *, OGRwkbVariant)"
+" with eWkbVariant = wkbVariantIso."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:19 osgeo.ogr.Geometry.ExportToWkb:21
+msgid "hGeom:  handle on the geometry to convert to a well know binary data from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:22 osgeo.ogr.Geometry.ExportToWkb:24
+msgid ""
+"eOrder:  One of wkbXDR or wkbNDR indicating MSB or LSB byte order "
+"respectively."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:25 osgeo.ogr.Geometry.ExportToWkb:27
+msgid ""
+"pabyDstBuffer:  a buffer into which the binary representation is written."
+" This buffer must be at least OGR_G_WkbSize() byte in size."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkb:28 osgeo.ogr.Geometry.ExportToIsoWkt:23
+#: osgeo.ogr.Geometry.ExportToWkb:30 osgeo.ogr.Geometry.ExportToWkt:25
+msgid "Currently OGRERR_NONE is always returned."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:1
+msgid "OGRErr OGR_G_ExportToIsoWkt(OGRGeometryH hGeom, char **ppszSrcText)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:4
+msgid ""
+"Convert a geometry into SFSQL 1.2 / ISO SQL/MM Part 3 well known text "
+"format."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:7
+msgid ""
+"This function relates to the SFCOM IWks::ExportToWKT() method. It exports"
+" the SFSQL 1.2 and ISO SQL/MM Part 3 extended dimension (Z&M) WKB types."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:11
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::exportToWkt(wkbVariantIso)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:17 osgeo.ogr.Geometry.ExportToWkt:19
+msgid "hGeom:  handle on the geometry to convert to a text format from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToIsoWkt:19 osgeo.ogr.Geometry.ExportToWkt:21
+msgid ""
+"ppszSrcText:  a text buffer is allocated by the program, and assigned to "
+"the passed pointer. After use, *ppszDstText should be freed with "
+"CPLFree()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkb:1
+msgid ""
+"OGRErr OGR_G_ExportToWkb(OGRGeometryH hGeom, OGRwkbByteOrder eOrder, "
+"unsigned char *pabyDstBuffer)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkb:5
+msgid "Convert a geometry well known binary format."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkb:7
+msgid "This function relates to the SFCOM IWks::ExportToWKB() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkb:9
+msgid ""
+"For backward compatibility purposes, it exports the Old-style 99-402 "
+"extended dimension (Z) WKB types for types Point, LineString, Polygon, "
+"MultiPoint, MultiLineString, MultiPolygon and GeometryCollection. For "
+"other geometry types, it is equivalent to OGR_G_ExportToIsoWkb()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkb:14
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::exportToWkb(OGRwkbByteOrder, unsigned char *, OGRwkbVariant)"
+" with eWkbVariant = wkbVariantOldOgc."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkt:1
+msgid "OGRErr OGR_G_ExportToWkt(OGRGeometryH hGeom, char **ppszSrcText)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkt:4
+msgid "Convert a geometry into well known text format."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkt:6
+msgid "This function relates to the SFCOM IWks::ExportToWKT() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkt:8
+msgid ""
+"For backward compatibility purposes, it exports the Old-style 99-402 "
+"extended dimension (Z) WKB types for types Point, LineString, Polygon, "
+"MultiPoint, MultiLineString, MultiPolygon and GeometryCollection. For "
+"other geometry types, it is equivalent to OGR_G_ExportToIsoWkt()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.ExportToWkt:13
+msgid "This function is the same as the CPP method OGRGeometry::exportToWkt()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.FlattenTo2D:1
+msgid "void OGR_G_FlattenTo2D(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.FlattenTo2D:4
+msgid "Convert geometry to strictly 2D."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.FlattenTo2D:6
+msgid "In a sense this converts all Z coordinates to 0.0."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.FlattenTo2D:8
+msgid "This function is the same as the CPP method OGRGeometry::flattenTo2D()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.FlattenTo2D:14
+msgid "hGeom:  handle on the geometry to convert."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetBoundary:1
+msgid "OGRGeometryH OGR_G_GetBoundary(OGRGeometryH hTarget)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetBoundary:4
+msgid "Compute boundary (deprecated)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetBoundary:6 osgeo.ogr.Geometry.SymmetricDifference:6
+msgid "Deprecated"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetBoundary:8
+msgid "See:   OGR_G_Boundary()"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetCoordinateDimension:1
+msgid "int OGR_G_GetCoordinateDimension(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetCoordinateDimension:6
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::getCoordinateDimension()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetCoordinateDimension:15
+msgid ""
+"Deprecated use OGR_G_CoordinateDimension(), OGR_G_Is3D(), or "
+"OGR_G_IsMeasured()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetCoordinateDimension:18
+msgid "this will return 2 or 3."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:1
+msgid "int OGR_G_GetDimension(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:4
+msgid "Get the dimension of this geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:6
+msgid ""
+"This function corresponds to the SFCOM IGeometry::GetDimension() method. "
+"It indicates the dimension of the geometry, but does not indicate the "
+"dimension of the underlying space (as indicated by "
+"OGR_G_GetCoordinateDimension() function)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:11
+msgid "This function is the same as the CPP method OGRGeometry::getDimension()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:17
+msgid "hGeom:  handle on the geometry to get the dimension from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetDimension:19
+msgid "0 for points, 1 for lines and 2 for surfaces."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope:1
+msgid "void OGR_G_GetEnvelope(OGRGeometryH hGeom, OGREnvelope *psEnvelope)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope:4
+msgid ""
+"Computes and returns the bounding envelope for this geometry in the "
+"passed psEnvelope structure."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope:7 osgeo.ogr.Geometry.GetEnvelope3D:7
+msgid "This function is the same as the CPP method OGRGeometry::getEnvelope()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope:13 osgeo.ogr.Geometry.GetEnvelope3D:13
+msgid "hGeom:  handle of the geometry to get envelope from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope:15 osgeo.ogr.Geometry.GetEnvelope3D:15
+msgid "psEnvelope:  the structure in which to place the results."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope3D:1
+msgid "void OGR_G_GetEnvelope3D(OGRGeometryH hGeom, OGREnvelope3D *psEnvelope)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetEnvelope3D:4
+msgid ""
+"Computes and returns the bounding envelope (3D) for this geometry in the "
+"passed psEnvelope structure."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:1
+msgid "const char* OGR_G_GetGeometryName(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:4
+msgid "Fetch WKT name for geometry type."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:6
+msgid "There is no SFCOM analog to this function."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:8
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::getGeometryName()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:14
+msgid "hGeom:  handle on the geometry to get name from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryName:16
+msgid "name used for this geometry type in well known text format."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:1
+msgid "OGRwkbGeometryType OGR_G_GetGeometryType(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:4
+msgid "Fetch geometry type."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:6
+msgid ""
+"Note that the geometry type may include the 2.5D flag. To get a 2D "
+"flattened version of the geometry type apply the wkbFlatten() macro to "
+"the return result."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:10
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::getGeometryType()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:16
+msgid "hGeom:  handle on the geometry to get type from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetGeometryType:18
+msgid "the geometry type code."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:1
+msgid "OGRSpatialReferenceH OGR_G_GetSpatialReference(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:4
+msgid "Returns spatial reference system for geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:6
+msgid ""
+"This function relates to the SFCOM IGeometry::get_SpatialReference() "
+"method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:9
+msgid ""
+"This function is the same as the CPP method "
+"OGRGeometry::getSpatialReference()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:15
+msgid "hGeom:  handle on the geometry to get spatial reference from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.GetSpatialReference:17
+msgid "a reference to the spatial reference geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersection:1
+msgid "OGRGeometryH OGR_G_Intersection(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersection:4
+msgid "Compute intersection."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersection:6
+msgid ""
+"Generates a new geometry which is the region of intersection of the two "
+"geometries operated on. The OGR_G_Intersects() function can be used to "
+"test if two geometries intersect."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersection:14
+msgid "This function is the same as the C++ method OGRGeometry::Intersection()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersection:29
+msgid ""
+"a new geometry representing the intersection or NULL if there is no "
+"intersection or an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:1
+msgid "int OGR_G_Intersects(OGRGeometryH hGeom, OGRGeometryH hOtherGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:4
+msgid "Do these features intersect?"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:6
+msgid ""
+"Determines whether two geometries intersect. If GEOS is enabled, then "
+"this is done in rigorous fashion otherwise TRUE is returned if the "
+"envelopes (bounding boxes) of the two geometries overlap."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:10
+msgid "This function is the same as the CPP method OGRGeometry::Intersects."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:17
+msgid "hOtherGeom:  handle on the other geometry to test against."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Intersects:19
+msgid "TRUE if the geometries intersect, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Is3D:1
+msgid "int OGR_G_Is3D(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Is3D:3
+msgid "See whether this geometry has Z coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Is3D:5
+msgid "This function is the same as the CPP method OGRGeometry::Is3D()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Is3D:10
+msgid "hGeom:  handle on the geometry to check whether it has Z coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Is3D:12
+msgid "TRUE if the geometry has Z coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsEmpty:1
+msgid "int OGR_G_IsEmpty(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsEmpty:3
+msgid "Test if the geometry is empty."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsEmpty:5
+msgid "This method is the same as the CPP method OGRGeometry::IsEmpty()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsEmpty:10 osgeo.ogr.Geometry.IsRing:14
+#: osgeo.ogr.Geometry.IsSimple:20 osgeo.ogr.Geometry.IsValid:14
+msgid "hGeom:  The Geometry to test."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsEmpty:12 osgeo.ogr.Geometry.IsRing:16
+#: osgeo.ogr.Geometry.IsValid:16
+msgid "TRUE if the geometry has no points, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsMeasured:1
+msgid "int OGR_G_IsMeasured(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsMeasured:4
+msgid "See whether this geometry is measured."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsMeasured:6
+msgid "This function is the same as the CPP method OGRGeometry::IsMeasured()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsMeasured:11
+msgid "hGeom:  handle on the geometry to check whether it is measured."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsMeasured:13
+msgid "TRUE if the geometry has M coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsRing:1
+msgid "int OGR_G_IsRing(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsRing:3
+msgid "Test if the geometry is a ring."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsRing:5
+msgid "This function is the same as the C++ method OGRGeometry::IsRing()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsRing:7 osgeo.ogr.Geometry.IsValid:7
+msgid ""
+"This function is built on the GEOS library, check it for the definition "
+"of the geometry operation. If OGR is built without the GEOS library, this"
+" function will always return FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:1
+msgid "int OGR_G_IsSimple(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:4
+msgid "Returns TRUE if the geometry is simple."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:6
+msgid ""
+"Returns TRUE if the geometry has no anomalous geometric points, such as "
+"self intersection or self tangency. The description of each instantiable "
+"geometric class will include the specific conditions that cause an "
+"instance of that class to be classified as not simple."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:11
+msgid ""
+"This function is the same as the C++ method OGRGeometry::IsSimple() "
+"method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:14
+msgid ""
+"If OGR is built without the GEOS library, this function will always "
+"return FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsSimple:22
+msgid "TRUE if object is simple, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsValid:1
+msgid "int OGR_G_IsValid(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsValid:3
+msgid "Test if the geometry is valid."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.IsValid:5
+msgid "This function is the same as the C++ method OGRGeometry::IsValid()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:1
+msgid "OGRGeometryH OGR_G_MakeValid(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:4
+msgid "Attempts to make an invalid geometry valid without losing vertices."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:6
+msgid "Already-valid geometries are cloned without further intervention."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:8
+msgid "This function is the same as the C++ method OGRGeometry::MakeValid()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:10
+msgid ""
+"This function is built on the GEOS >= 3.8 library, check it for the "
+"definition of the geometry operation. If OGR is built without the GEOS >="
+" 3.8 library, this function will return a clone of the input geometry if "
+"it is valid, or NULL if it is invalid"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:18
+msgid "hGeom:  The Geometry to make valid."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:20
+msgid "a newly allocated geometry now owned by the caller, or NULL on failure."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.MakeValid:23
+msgid "GDAL 3.0"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Overlaps:1
+msgid "int OGR_G_Overlaps(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Overlaps:4
+msgid "Test for overlap."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Overlaps:6
+msgid ""
+"Tests if this geometry and the other geometry overlap, that is their "
+"intersection has a non-zero area."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Overlaps:13
+msgid "This function is the same as the C++ method OGRGeometry::Overlaps()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Overlaps:27
+msgid "TRUE if they are overlapping, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:1
+msgid "OGRGeometryH OGR_G_PointOnSurface(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:4
+msgid "Returns a point guaranteed to lie on the surface."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:6
+msgid ""
+"This method relates to the SFCOM ISurface::get_PointOnSurface() method "
+"however the current implementation based on GEOS can operate on other "
+"geometry types than the types that are supported by SQL/MM-Part 3 : "
+"surfaces (polygons) and multisurfaces (multipolygons)."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:11
+msgid ""
+"This method is built on the GEOS library, check it for the definition of "
+"the geometry operation. If OGR is built without the GEOS library, this "
+"method will always fail, issuing a CPLE_NotSupported error."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:18
+msgid "hGeom:  the geometry to operate on."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.PointOnSurface:20
+msgid "a point guaranteed to lie on the surface or NULL if an error occurred."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Polygonize:1
+msgid "OGRGeometryH OGR_G_Polygonize(OGRGeometryH hTarget)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Polygonize:4
+msgid "Polygonizes a set of sparse edges."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Polygonize:6
+msgid ""
+"A new geometry object is created and returned containing a collection of "
+"reassembled Polygons: NULL will be returned if the input collection "
+"doesn't corresponds to a MultiLinestring, or when reassembling Edges into"
+" Polygons is impossible due to topological inconsistencies."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Polygonize:11
+msgid "This function is the same as the C++ method OGRGeometry::Polygonize()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Polygonize:21
+msgid "hTarget:  The Geometry to be polygonized."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:1
+msgid "void OGR_G_Segmentize(OGRGeometryH hGeom, double dfMaxLength)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:4
+msgid "Modify the geometry such it has no segment longer then the given distance."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:7
+msgid ""
+"Interpolated points will have Z and M values (if needed) set to 0. "
+"Distance computation is performed in 2d only."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:10
+msgid "This function is the same as the CPP method OGRGeometry::segmentize()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:15
+msgid "hGeom:  handle on the geometry to segmentize"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Segmentize:17
+msgid "dfMaxLength:  the maximum distance between 2 points after segmentization"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Set3D:1
+msgid "void OGR_G_Set3D(OGRGeometryH hGeom, int bIs3D)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Set3D:4
+msgid "Add or remove the Z coordinate dimension."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Set3D:6
+msgid ""
+"This method adds or removes the explicit Z coordinate dimension. Removing"
+" the Z coordinate dimension of a geometry will remove any existing Z "
+"values. Adding the Z dimension to a geometry collection, a compound "
+"curve, a polygon, etc. will affect the children geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Set3D:14
+msgid "hGeom:  handle on the geometry to set or unset the Z dimension."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Set3D:16
+msgid "bIs3D:  Should the geometry have a Z dimension, either TRUE or FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:1
+msgid "void OGR_G_SetCoordinateDimension(OGRGeometryH hGeom, int nNewDimension)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:4
+msgid "Set the coordinate dimension."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:6
+msgid ""
+"This method sets the explicit coordinate dimension. Setting the "
+"coordinate dimension of a geometry to 2 should zero out any existing Z "
+"values. Setting the dimension of a geometry collection, a compound curve,"
+" a polygon, etc. will affect the children geometries. This will also "
+"remove the M dimension if present before this call."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:12
+msgid "Deprecated use OGR_G_Set3D() or OGR_G_SetMeasured()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:17
+msgid "hGeom:  handle on the geometry to set the dimension of the coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetCoordinateDimension:20
+msgid "nNewDimension:  New coordinate dimension value, either 2 or 3."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetMeasured:1
+msgid "void OGR_G_SetMeasured(OGRGeometryH hGeom, int bIsMeasured)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetMeasured:4
+msgid "Add or remove the M coordinate dimension."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetMeasured:6
+msgid ""
+"This method adds or removes the explicit M coordinate dimension. Removing"
+" the M coordinate dimension of a geometry will remove any existing M "
+"values. Adding the M dimension to a geometry collection, a compound "
+"curve, a polygon, etc. will affect the children geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetMeasured:14
+msgid "hGeom:  handle on the geometry to set or unset the M dimension."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SetMeasured:16
+msgid ""
+"bIsMeasured:  Should the geometry have a M dimension, either TRUE or "
+"FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Simplify:1
+msgid "OGRGeometryH OGR_G_Simplify(OGRGeometryH hThis, double dTolerance)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Simplify:4
+msgid "Compute a simplified geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Simplify:6
+msgid "This function is the same as the C++ method OGRGeometry::Simplify()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Simplify:18
+#: osgeo.ogr.Geometry.SimplifyPreserveTopology:19
+msgid "dTolerance:  the distance tolerance for the simplification."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Simplify:20
+#: osgeo.ogr.Geometry.SimplifyPreserveTopology:21
+msgid "the simplified geometry or NULL if an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SimplifyPreserveTopology:1
+msgid ""
+"OGRGeometryH OGR_G_SimplifyPreserveTopology(OGRGeometryH hThis, double "
+"dTolerance)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SimplifyPreserveTopology:4
+msgid "Simplify the geometry while preserving topology."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SimplifyPreserveTopology:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRGeometry::SimplifyPreserveTopology()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SwapXY:1
+msgid "void OGR_G_SwapXY(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SwapXY:3
+msgid "Swap x and y coordinates."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SwapXY:8
+msgid "hGeom:  geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SwapXY:10
+msgid "OGR 2.3.0"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymDifference:1
+msgid "OGRGeometryH OGR_G_SymDifference(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymDifference:4
+msgid "Compute symmetric difference."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymDifference:6
+msgid ""
+"Generates a new geometry which is the symmetric difference of this "
+"geometry and the other geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymDifference:13
+msgid ""
+"This function is the same as the C++ method "
+"OGRGeometry::SymmetricDifference()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymDifference:28
+msgid ""
+"a new geometry representing the symmetric difference or NULL if the "
+"difference is empty or an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymmetricDifference:1
+msgid ""
+"OGRGeometryH OGR_G_SymmetricDifference(OGRGeometryH hThis, OGRGeometryH "
+"hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymmetricDifference:4
+msgid "Compute symmetric difference (deprecated)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.SymmetricDifference:8
+msgid "See:  OGR_G_SymmetricDifference()"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Touches:1
+msgid "int OGR_G_Touches(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Touches:4
+msgid "Test for touching."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Touches:6
+msgid "Tests if this geometry and the other geometry are touching."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Touches:12
+msgid "This function is the same as the C++ method OGRGeometry::Touches()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Touches:26
+msgid "TRUE if they are touching, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:1
+msgid ""
+"OGRErr OGR_G_Transform(OGRGeometryH hGeom, OGRCoordinateTransformationH "
+"hTransform)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:4
+msgid "Apply arbitrary coordinate transformation to geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:6 osgeo.ogr.Geometry.TransformTo:6
+msgid ""
+"This function will transform the coordinates of a geometry from their "
+"current spatial reference system to a new target spatial reference "
+"system. Normally this means reprojecting the vectors, but it could "
+"include datum shifts, and changes of units."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:11
+msgid ""
+"Note that this function does not require that the geometry already have a"
+" spatial reference system. It will be assumed that they can be treated as"
+" having the source spatial reference system of the "
+"OGRCoordinateTransformation object, and the actual SRS of the geometry "
+"will be ignored. On successful completion the output OGRSpatialReference "
+"of the OGRCoordinateTransformation will be assigned to the geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:19
+msgid "This function is the same as the CPP method OGRGeometry::transform."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:24 osgeo.ogr.Geometry.TransformTo:27
+msgid "hGeom:  handle on the geometry to apply the transform to."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Transform:26
+msgid "hTransform:  handle on the transformation to apply."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:1
+msgid "OGRErr OGR_G_TransformTo(OGRGeometryH hGeom, OGRSpatialReferenceH hSRS)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:4
+msgid "Transform geometry to new spatial reference system."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:11
+msgid ""
+"This function will only work if the geometry already has an assigned "
+"spatial reference system, and if it is transformable to the target "
+"coordinate system."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:15
+msgid ""
+"Because this function requires internal creation and initialization of an"
+" OGRCoordinateTransformation object it is significantly more expensive to"
+" use this function to transform many geometries than it is to create the "
+"OGRCoordinateTransformation in advance, and call transform() with that "
+"transformation. This function exists primarily for convenience when only "
+"transforming a single geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:22
+msgid "This function is the same as the CPP method OGRGeometry::transformTo."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:29
+msgid "hSRS:  handle on the spatial reference system to apply."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.TransformTo:31
+msgid "OGRERR_NONE on success, or an error code."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Union:1
+msgid "OGRGeometryH OGR_G_Union(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Union:4
+msgid "Compute union."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Union:6
+msgid ""
+"Generates a new geometry which is the region of union of the two "
+"geometries operated on."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Union:13
+msgid "This function is the same as the C++ method OGRGeometry::Union()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Union:27 osgeo.ogr.Geometry.UnionCascaded:23
+msgid "a new geometry representing the union or NULL if an error occurs."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.UnionCascaded:1
+msgid "OGRGeometryH OGR_G_UnionCascaded(OGRGeometryH hThis)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.UnionCascaded:4
+msgid "Compute union using cascading."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.UnionCascaded:10
+msgid "This function is the same as the C++ method OGRGeometry::UnionCascaded()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Within:1
+msgid "int OGR_G_Within(OGRGeometryH hThis, OGRGeometryH hOther)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Within:6
+msgid "Tests if this geometry is within the other geometry."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Within:12
+msgid "This function is the same as the C++ method OGRGeometry::Within()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.Within:26
+msgid "TRUE if hThis is within hOther, otherwise FALSE."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:1
+msgid "int OGR_G_WkbSize(OGRGeometryH hGeom)"
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:3
+msgid "Returns size of related binary representation."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:5
+msgid ""
+"This function returns the exact number of bytes required to hold the well"
+" known binary representation of this geometry object. Its computation may"
+" be slightly expensive for complex geometries."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:9
+msgid "This function relates to the SFCOM IWks::WkbSize() method."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:11
+msgid "This function is the same as the CPP method OGRGeometry::WkbSize()."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:16
+msgid "hGeom:  handle on the geometry to get the binary size from."
+msgstr ""
+
+#: of osgeo.ogr.Geometry.WkbSize:18
+msgid "size of binary representation in bytes."
+msgstr ""
+
 #: ../../source/api/python/vector_api.rst:93
 msgid "FeatureDefn"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn:1
+msgid "Proxy of C++ OGRFeatureDefnShadow class."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:1
+msgid "void OGR_FD_AddFieldDefn(OGRFeatureDefnH hDefn, OGRFieldDefnH hNewField)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:4
+#: osgeo.ogr.FeatureDefn.AddGeomFieldDefn:5
+msgid "Add a new field definition to the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:6
+msgid ""
+"To add a new field definition to a layer definition, do not use this "
+"function directly, but use OGR_L_CreateField() instead."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:9
+msgid ""
+"This function should only be called while there are no OGRFeature objects"
+" in existence based on this OGRFeatureDefn. The OGRFieldDefn passed in is"
+" copied, and remains the responsibility of the caller."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:13
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::AddFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:19
+msgid "hDefn:  handle to the feature definition to add the field definition to."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddFieldDefn:22
+msgid "hNewField:  handle to the new field definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:1
+msgid ""
+"void OGR_FD_AddGeomFieldDefn(OGRFeatureDefnH hDefn, OGRGeomFieldDefnH "
+"hNewGeomField)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:7
+msgid ""
+"To add a new field definition to a layer definition, do not use this "
+"function directly, but use OGR_L_CreateGeomField() instead."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:10
+msgid ""
+"This function should only be called while there are no OGRFeature objects"
+" in existence based on this OGRFeatureDefn. The OGRGeomFieldDefn passed "
+"in is copied, and remains the responsibility of the caller."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:15
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::AddGeomFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:21
+msgid ""
+"hDefn:  handle to the feature definition to add the geometry field "
+"definition to."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.AddGeomFieldDefn:24
+msgid "hNewGeomField:  handle to the new field definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:1
+msgid "OGRErr OGR_FD_DeleteGeomFieldDefn(OGRFeatureDefnH hDefn, int iGeomField)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:4
+msgid "Delete an existing geometry field definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:6
+msgid ""
+"To delete an existing geometry field definition from a layer definition, "
+"do not use this function directly, but use OGR_L_DeleteGeomField() "
+"instead ( not implemented yet)."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:10
+msgid ""
+"This method should only be called while there are no OGRFeature objects "
+"in existence based on this OGRFeatureDefn."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:13
+msgid ""
+"This method is the same as the C++ method "
+"OGRFeatureDefn::DeleteGeomFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:19
+msgid "hDefn:  handle to the feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:21
+msgid "iGeomField:  the index of the geometry field definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.DeleteGeomFieldDefn:23
+msgid "OGRERR_NONE in case of success."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldCount:1
+msgid "int OGR_FD_GetFieldCount(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldCount:4
+msgid "Fetch number of fields on the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldCount:6
+msgid "This function is the same as the C++ OGRFeatureDefn::GetFieldCount()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldCount:11
+#: osgeo.ogr.FeatureDefn.GetGeomFieldCount:12
+msgid "hDefn:  handle to the feature definition to get the fields count from."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:1
+msgid "OGRFieldDefnH OGR_FD_GetFieldDefn(OGRFeatureDefnH hDefn, int iField)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:4
+msgid "Fetch field definition of the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::GetFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:12
+#: osgeo.ogr.FeatureDefn.GetGeomFieldDefn:12
+msgid "hDefn:  handle to the feature definition to get the field definition from."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:15
+msgid "iField:  the field to fetch, between 0 and GetFieldCount()-1."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldDefn:17
+#: osgeo.ogr.FeatureDefn.GetGeomFieldDefn:18
+msgid ""
+"a handle to an internal field definition object or NULL if invalid index."
+" This object should not be modified or freed by the application."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:1
+msgid "int OGR_FD_GetFieldIndex(OGRFeatureDefnH hDefn, const char *pszFieldName)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:4
+msgid "Find field by name."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:6
+msgid ""
+"The field index of the first field matching the passed field name (case "
+"insensitively) is returned."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:9
+msgid "This function is the same as the C++ method OGRFeatureDefn::GetFieldIndex."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:15
+#: osgeo.ogr.FeatureDefn.GetGeomFieldIndex:16
+msgid "hDefn:  handle to the feature definition to get field index from."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:17
+msgid "pszFieldName:  the field name to search for."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetFieldIndex:19
+msgid "the field index, or -1 if no match found."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldCount:1
+msgid "int OGR_FD_GetGeomFieldCount(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldCount:4
+msgid "Fetch number of geometry fields on the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldCount:6
+msgid "This function is the same as the C++ OGRFeatureDefn::GetGeomFieldCount()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldDefn:1
+msgid ""
+"OGRGeomFieldDefnH OGR_FD_GetGeomFieldDefn(OGRFeatureDefnH hDefn, int "
+"iGeomField)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldDefn:4
+msgid "Fetch geometry field definition of the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldDefn:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::GetGeomFieldDefn()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldDefn:15
+msgid ""
+"iGeomField:  the geometry field to fetch, between 0 and "
+"GetGeomFieldCount() - 1."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:1
+msgid ""
+"int OGR_FD_GetGeomFieldIndex(OGRFeatureDefnH hDefn, const char "
+"*pszGeomFieldName)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:5
+msgid "Find geometry field by name."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:7
+msgid ""
+"The geometry field index of the first geometry field matching the passed "
+"field name (case insensitively) is returned."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:10
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::GetGeomFieldIndex."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:18
+msgid "pszGeomFieldName:  the geometry field name to search for."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomFieldIndex:20
+msgid "the geometry field index, or -1 if no match found."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:1
+msgid "OGRwkbGeometryType OGR_FD_GetGeomType(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:4
+msgid "Fetch the geometry base type of the passed feature definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:6
+msgid "This function is the same as the C++ method OGRFeatureDefn::GetGeomType()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:9
+msgid ""
+"Starting with GDAL 1.11, this method returns "
+"GetGeomFieldDefn(0)->GetType()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:15
+msgid "hDefn:  handle to the feature definition to get the geometry type from."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetGeomType:18
+msgid "the base type for all geometry related to this definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetName:1
+msgid "const char* OGR_FD_GetName(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetName:4
+msgid "Get name of the OGRFeatureDefn passed as an argument."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetName:6
+msgid "This function is the same as the C++ method OGRFeatureDefn::GetName()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetName:11
+msgid "hDefn:  handle to the feature definition to get the name from."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetName:13
+msgid "the name. This name is internal and should not be modified, or freed."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetReferenceCount:1
+msgid "int OGR_FD_GetReferenceCount(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetReferenceCount:4
+msgid "Fetch current reference count."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetReferenceCount:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::GetReferenceCount()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetReferenceCount:12
+#: osgeo.ogr.FeatureDefn.IsGeometryIgnored:15
+#: osgeo.ogr.FeatureDefn.SetGeometryIgnored:15
+#: osgeo.ogr.FeatureDefn.SetStyleIgnored:12
+msgid "hDefn:  handle to the feature definition on witch OGRFeature are based on."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.GetReferenceCount:15
+msgid "the current reference count."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsGeometryIgnored:1
+msgid "int OGR_FD_IsGeometryIgnored(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsGeometryIgnored:4
+msgid "Determine whether the geometry can be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsGeometryIgnored:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::IsGeometryIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsGeometryIgnored:9
+msgid ""
+"Starting with GDAL 1.11, this method returns "
+"GetGeomFieldDefn(0)->IsIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsGeometryIgnored:18
+#: osgeo.ogr.FeatureDefn.IsStyleIgnored:15 osgeo.ogr.FieldDefn.IsIgnored:13
+msgid "ignore state"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:1
+msgid "int OGR_FD_IsSame(OGRFeatureDefnH hFDefn, OGRFeatureDefnH hOtherFDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:4
+msgid "Test if the feature definition is identical to the other one."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:9
+msgid ""
+"hFDefn:  handle to the feature definition on witch OGRFeature are based "
+"on."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:12
+msgid "hOtherFDefn:  handle to the other feature definition to compare to."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsSame:14
+msgid "TRUE if the feature definition is identical to the other one."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsStyleIgnored:1
+msgid "int OGR_FD_IsStyleIgnored(OGRFeatureDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsStyleIgnored:4
+msgid "Determine whether the style can be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsStyleIgnored:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::IsStyleIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.IsStyleIgnored:12
+msgid "hDefn:  handle to the feature definition on which OGRFeature are based on."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:1
+msgid "void OGR_FD_SetGeomType(OGRFeatureDefnH hDefn, OGRwkbGeometryType eType)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:4
+msgid ""
+"Assign the base geometry type for the passed layer (the same as the "
+"feature definition)."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:7
+msgid ""
+"All geometry objects using this type must be of the defined type or a "
+"derived type. The default upon creation is wkbUnknown which allows for "
+"any geometry type. The geometry type should generally not be changed "
+"after any OGRFeatures have been created against this definition."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:12
+msgid "This function is the same as the C++ method OGRFeatureDefn::SetGeomType()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:15
+msgid "Starting with GDAL 1.11, this method calls GetGeomFieldDefn(0)->SetType()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:21
+msgid ""
+"hDefn:  handle to the layer or feature definition to set the geometry "
+"type to."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeomType:24
+msgid "eType:  the new type to assign."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeometryIgnored:1
+msgid "void OGR_FD_SetGeometryIgnored(OGRFeatureDefnH hDefn, int bIgnore)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeometryIgnored:4
+msgid "Set whether the geometry can be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeometryIgnored:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::SetGeometryIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeometryIgnored:9
+msgid ""
+"Starting with GDAL 1.11, this method calls "
+"GetGeomFieldDefn(0)->SetIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetGeometryIgnored:18
+#: osgeo.ogr.FeatureDefn.SetStyleIgnored:15
+msgid "bIgnore:  ignore state"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetStyleIgnored:1
+msgid "void OGR_FD_SetStyleIgnored(OGRFeatureDefnH hDefn, int bIgnore)"
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetStyleIgnored:4
+msgid "Set whether the style can be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FeatureDefn.SetStyleIgnored:6
+msgid ""
+"This function is the same as the C++ method "
+"OGRFeatureDefn::SetStyleIgnored()."
 msgstr ""
 
 #: ../../source/api/python/vector_api.rst:101
 msgid "FieldDefn"
 msgstr ""
 
+#: of osgeo.ogr.FieldDefn:1
+msgid "Proxy of C++ OGRFieldDefnShadow class."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:1
+msgid "const char* OGR_Fld_GetAlternativeNameRef(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:4
+msgid "Fetch the alternative name (or \"alias\") for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:6
+#: osgeo.ogr.FieldDefn.SetAlternativeName:7
+msgid ""
+"The alternative name is an optional attribute for a field which can "
+"provide a more user-friendly, descriptive name of a field which is not "
+"subject to the usual naming constraints defined by the data provider."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:10
+#: osgeo.ogr.FieldDefn.SetAlternativeName:11
+msgid ""
+"This is a metadata style attribute only: the alternative name cannot be "
+"used in place of the actual field name during SQL queries or other field "
+"name dependent API calls."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:14
+msgid ""
+"This function is the same as the CPP method "
+"OGRFieldDefn::GetAlternativeNameRef()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:20
+#: osgeo.ogr.FieldDefn.GetDefault:12 osgeo.ogr.FieldDefn.GetNameRef:12
+#: osgeo.ogr.FieldDefn.SetDefault:30
+msgid "hDefn:  handle to the field definition."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:22
+msgid "the alternative name of the field definition."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetAlternativeNameRef:24
+#: osgeo.ogr.FieldDefn.IsUnique:17 osgeo.ogr.FieldDefn.SetAlternativeName:26
+#: osgeo.ogr.FieldDefn.SetUnique:22
+msgid "GDAL 3.2"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetDefault:1
+msgid "const char* OGR_Fld_GetDefault(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetDefault:4
+msgid "Get default field value."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetDefault:6
+msgid "This function is the same as the C++ method OGRFieldDefn::GetDefault()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetDefault:14
+msgid "default field value or NULL."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:1
+msgid "OGRJustification OGR_Fld_GetJustify(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:4 osgeo.ogr.FieldDefn.justify:5
+msgid "Get the justification for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:6 osgeo.ogr.FieldDefn.justify:7
+msgid "This function is the same as the CPP method OGRFieldDefn::GetJustify()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:9 osgeo.ogr.FieldDefn.SetJustify:6
+#: osgeo.ogr.FieldDefn.justify:10
+msgid "Note: no driver is know to use the concept of field justification."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:14 osgeo.ogr.FieldDefn.justify:15
+msgid "hDefn:  handle to the field definition to get justification from."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetJustify:16 osgeo.ogr.FieldDefn.justify:17
+msgid "the justification."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetNameRef:1
+msgid "const char* OGR_Fld_GetNameRef(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetNameRef:4
+msgid "Fetch name of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetNameRef:6
+msgid "This function is the same as the CPP method OGRFieldDefn::GetNameRef()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetNameRef:14
+msgid "the name of the field definition."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:1
+msgid "int OGR_Fld_GetPrecision(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:4 osgeo.ogr.FieldDefn.precision:5
+msgid "Get the formatting precision for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:6 osgeo.ogr.FieldDefn.SetPrecision:6
+#: osgeo.ogr.FieldDefn.precision:7
+msgid "This should normally be zero for fields of types other than OFTReal."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:8 osgeo.ogr.FieldDefn.precision:9
+msgid "This function is the same as the CPP method OGRFieldDefn::GetPrecision()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:14 osgeo.ogr.FieldDefn.precision:15
+msgid "hDefn:  handle to the field definition to get precision from."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetPrecision:16 osgeo.ogr.FieldDefn.precision:17
+msgid "the precision."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetSubType:1
+msgid "OGRFieldSubType OGR_Fld_GetSubType(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetSubType:4
+msgid "Fetch subtype of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetSubType:6
+msgid "This function is the same as the CPP method OGRFieldDefn::GetSubType()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetSubType:12
+msgid "hDefn:  handle to the field definition to get subtype from."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetSubType:14
+msgid "field subtype."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetType:1
+msgid "OGRFieldType OGR_Fld_GetType(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetType:4 osgeo.ogr.FieldDefn.type:5
+msgid "Fetch type of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetType:6 osgeo.ogr.FieldDefn.type:7
+msgid "This function is the same as the CPP method OGRFieldDefn::GetType()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetType:11 osgeo.ogr.FieldDefn.type:12
+msgid "hDefn:  handle to the field definition to get type from."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetType:13 osgeo.ogr.FieldDefn.type:14
+msgid "field type."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetWidth:1
+msgid "int OGR_Fld_GetWidth(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetWidth:4 osgeo.ogr.FieldDefn.width:5
+msgid "Get the formatting width for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetWidth:6 osgeo.ogr.FieldDefn.width:7
+msgid "This function is the same as the CPP method OGRFieldDefn::GetWidth()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetWidth:11 osgeo.ogr.FieldDefn.width:12
+msgid "hDefn:  handle to the field definition to get width from."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.GetWidth:13 osgeo.ogr.FieldDefn.width:14
+msgid "the width, zero means no specified width."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:1
+msgid "int OGR_Fld_IsDefaultDriverSpecific(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:4
+msgid "Returns whether the default value is driver specific."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:6
+msgid ""
+"Driver specific default values are those that are not NULL, a numeric "
+"value, a literal value enclosed between single quote characters, "
+"CURRENT_TIMESTAMP, CURRENT_TIME, CURRENT_DATE or datetime literal value."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:11
+msgid ""
+"This function is the same as the C++ method "
+"OGRFieldDefn::IsDefaultDriverSpecific()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:17
+#: osgeo.ogr.FieldDefn.IsIgnored:11 osgeo.ogr.FieldDefn.IsNullable:18
+#: osgeo.ogr.FieldDefn.IsUnique:13 osgeo.ogr.FieldDefn.SetIgnored:11
+#: osgeo.ogr.FieldDefn.SetNullable:17 osgeo.ogr.FieldDefn.SetUnique:18
+msgid "hDefn:  handle to the field definition"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsDefaultDriverSpecific:19
+msgid "TRUE if the default value is driver specific."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsIgnored:1
+msgid "int OGR_Fld_IsIgnored(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsIgnored:4
+msgid "Return whether this field should be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsIgnored:6
+msgid "This method is the same as the C++ method OGRFieldDefn::IsIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:1
+msgid "int OGR_Fld_IsNullable(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:4
+msgid "Return whether this field can receive null values."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:6
+msgid "By default, fields are nullable."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:8
+msgid ""
+"Even if this method returns FALSE (i.e not-nullable field), it doesn't "
+"mean that OGRFeature::IsFieldSet() will necessary return TRUE, as fields "
+"can be temporary unset and null /not-null validation is usually done when"
+" OGRLayer::CreateFeature()/SetFeature() is called."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:13
+msgid "This method is the same as the C++ method OGRFieldDefn::IsNullable()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsNullable:20
+msgid "TRUE if the field is authorized to be null."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsUnique:1
+msgid "int OGR_Fld_IsUnique(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsUnique:4
+msgid "Return whether this field has a unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsUnique:6
+msgid "By default, fields have no unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsUnique:8
+msgid "This method is the same as the C++ method OGRFieldDefn::IsUnique()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.IsUnique:15
+msgid "TRUE if the field has a unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetAlternativeName:1
+msgid ""
+"void OGR_Fld_SetAlternativeName(OGRFieldDefnH hDefn, const char "
+"*pszAlternativeName)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetAlternativeName:5
+msgid "Reset the alternative name (or \"alias\") for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetAlternativeName:15
+msgid ""
+"This function is the same as the CPP method "
+"OGRFieldDefn::SetAlternativeName()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetAlternativeName:21
+msgid ""
+"hDefn:  handle to the field definition to apply the new alternative name "
+"to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetAlternativeName:24
+msgid "pszAlternativeName:  the new alternative name to apply."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:1
+msgid "void OGR_Fld_SetDefault(OGRFieldDefnH hDefn, const char *pszDefault)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:4
+msgid "Set default field value."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:6
+msgid ""
+"The default field value is taken into account by drivers (generally those"
+" with a SQL interface) that support it at field creation time. OGR will "
+"generally not automatically set the default field value to null fields by"
+" itself when calling OGRFeature::CreateFeature() / "
+"OGRFeature::SetFeature(), but will let the low-level layers to do the "
+"job. So retrieving the feature from the layer is recommended."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:13
+msgid ""
+"The accepted values are NULL, a numeric value, a literal value enclosed "
+"between single quote characters (and inner single quote characters "
+"escaped by repetition of the single quote character), CURRENT_TIMESTAMP, "
+"CURRENT_TIME, CURRENT_DATE or a driver specific expression (that might be"
+" ignored by other drivers). For a datetime literal value, format should "
+"be 'YYYY/MM/DD HH:MM:SS[.sss]' (considered as UTC time)."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:21
+msgid ""
+"Drivers that support writing DEFAULT clauses will advertise the "
+"GDAL_DCAP_DEFAULT_FIELDS driver metadata item."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:24
+msgid "This function is the same as the C++ method OGRFieldDefn::SetDefault()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetDefault:32
+msgid "pszDefault:  new default field value or NULL pointer."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetIgnored:1
+msgid "void OGR_Fld_SetIgnored(OGRFieldDefnH hDefn, int ignore)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetIgnored:4
+msgid "Set whether this field should be omitted when fetching features."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetIgnored:6
+msgid "This method is the same as the C++ method OGRFieldDefn::SetIgnored()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetIgnored:13
+msgid "ignore:  ignore state"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetJustify:1
+msgid "void OGR_Fld_SetJustify(OGRFieldDefnH hDefn, OGRJustification eJustify)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetJustify:4
+msgid "Set the justification for this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetJustify:8
+msgid "This function is the same as the CPP method OGRFieldDefn::SetJustify()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetJustify:14
+msgid "hDefn:  handle to the field definition to set justification to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetJustify:16
+msgid "eJustify:  the new justification."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetName:1
+msgid "void OGR_Fld_SetName(OGRFieldDefnH hDefn, const char *pszName)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetName:4
+msgid "Reset the name of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetName:6
+msgid "This function is the same as the CPP method OGRFieldDefn::SetName()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetName:11
+msgid "hDefn:  handle to the field definition to apply the new name to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetName:13
+msgid "pszName:  the new name to apply."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:1
+msgid "void OGR_Fld_SetNullable(OGRFieldDefnH hDefn, int bNullableIn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:4
+msgid "Set whether this field can receive null values."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:6
+msgid ""
+"By default, fields are nullable, so this method is generally called with "
+"FALSE to set a not-null constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:9
+msgid ""
+"Drivers that support writing not-null constraint will advertise the "
+"GDAL_DCAP_NOTNULL_FIELDS driver metadata item."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:12
+msgid "This method is the same as the C++ method OGRFieldDefn::SetNullable()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetNullable:19
+msgid "bNullableIn:  FALSE if the field must have a not-null constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetPrecision:1
+msgid "void OGR_Fld_SetPrecision(OGRFieldDefnH hDefn, int nPrecision)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetPrecision:4
+msgid "Set the formatting precision for this field in characters."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetPrecision:8
+msgid "This function is the same as the CPP method OGRFieldDefn::SetPrecision()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetPrecision:14
+msgid "hDefn:  handle to the field definition to set precision to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetPrecision:16
+msgid "nPrecision:  the new precision."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:1
+msgid "void OGR_Fld_SetSubType(OGRFieldDefnH hDefn, OGRFieldSubType eSubType)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:4
+msgid "Set the subtype of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:6 osgeo.ogr.FieldDefn.SetType:6
+msgid ""
+"This should never be done to an OGRFieldDefn that is already part of an "
+"OGRFeatureDefn."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:9
+msgid "This function is the same as the CPP method OGRFieldDefn::SetSubType()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:15 osgeo.ogr.FieldDefn.SetType:14
+msgid "hDefn:  handle to the field definition to set type to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetSubType:17
+msgid "eSubType:  the new field subtype."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetType:1
+msgid "void OGR_Fld_SetType(OGRFieldDefnH hDefn, OGRFieldType eType)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetType:4
+msgid "Set the type of this field."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetType:9
+msgid "This function is the same as the CPP method OGRFieldDefn::SetType()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetType:16
+msgid "eType:  the new field type."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:1
+msgid "void OGR_Fld_SetUnique(OGRFieldDefnH hDefn, int bUniqueIn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:4
+msgid "Set whether this field has a unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:6
+msgid ""
+"By default, fields have no unique constraint, so this method is generally"
+" called with TRUE to set a unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:9
+msgid ""
+"Drivers that support writing unique constraint will advertise the "
+"GDAL_DCAP_UNIQUE_FIELDS driver metadata item. field can receive null "
+"values."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:13
+msgid "This method is the same as the C++ method OGRFieldDefn::SetUnique()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetUnique:20
+msgid "bUniqueIn:  TRUE if the field must have a unique constraint."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetWidth:1
+msgid "void OGR_Fld_SetWidth(OGRFieldDefnH hDefn, int nNewWidth)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetWidth:4
+msgid "Set the formatting width for this field in characters."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetWidth:6
+msgid "This function is the same as the CPP method OGRFieldDefn::SetWidth()."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetWidth:11
+msgid "hDefn:  handle to the field definition to set width to."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.SetWidth:13
+msgid "nNewWidth:  the new width."
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.justify:1
+msgid ""
+"GetJustify(FieldDefn self) -> OGRJustification OGRJustification "
+"OGR_Fld_GetJustify(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.name:1
+msgid "GetName(FieldDefn self) -> char const *"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.precision:1
+msgid ""
+"GetPrecision(FieldDefn self) -> int int "
+"OGR_Fld_GetPrecision(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.type:1
+msgid ""
+"GetType(FieldDefn self) -> OGRFieldType OGRFieldType "
+"OGR_Fld_GetType(OGRFieldDefnH hDefn)"
+msgstr ""
+
+#: of osgeo.ogr.FieldDefn.width:1
+msgid "GetWidth(FieldDefn self) -> int int OGR_Fld_GetWidth(OGRFieldDefnH hDefn)"
+msgstr ""
+
 #: ../../source/api/python/vector_api.rst:113
 msgid "GeomFieldDefn"
 msgstr ""
 
+#: of osgeo.ogr.GeomFieldDefn:1
+msgid "Proxy of C++ OGRGeomFieldDefnShadow class."
+msgstr ""
+
+#: of osgeo.ogr.GeomFieldDefn.name:1
+msgid "GetName(GeomFieldDefn self) -> char const *"
+msgstr ""
+
+#: of osgeo.ogr.GeomFieldDefn.srs:1
+msgid "GetSpatialRef(GeomFieldDefn self) -> SpatialReference"
+msgstr ""
+
+#: of osgeo.ogr.GeomFieldDefn.type:1
+msgid "GetType(GeomFieldDefn self) -> OGRwkbGeometryType"
+msgstr ""
+
 #: ../../source/api/python/vector_api.rst:121
 msgid "FieldDomain"
+msgstr ""
+
+#: of osgeo.ogr.FieldDomain:1
+msgid "Proxy of C++ OGRFieldDomainShadow class."
 msgstr ""
 
 #: ../../source/api/python/vector_api.rst:135
@@ -101,6 +5944,10 @@ msgstr ""
 
 #: ../../source/api/python/vector_api.rst:143
 msgid "StyleTable"
+msgstr ""
+
+#: of osgeo.ogr.StyleTable:1
+msgid "Proxy of C++ OGRStyleTableShadow class."
 msgstr ""
 
 #~ msgid "Proxy of C++ OGRLayerShadow class."

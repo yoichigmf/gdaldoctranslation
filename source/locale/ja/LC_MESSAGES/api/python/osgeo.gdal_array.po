@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,70 @@ msgstr ""
 
 #: ../../source/api/python/osgeo.gdal_array.rst:2
 msgid "osgeo.gdal\\_array module"
+msgstr ""
+
+#: of osgeo.gdal_array.BandReadAsArray:1
+msgid ""
+"Pure python implementation of reading a chunk of a GDAL file into a numpy"
+" array.  Used by the gdal.Band.ReadAsArray method."
+msgstr ""
+
+#: of osgeo.gdal_array.BandWriteArray:1
+msgid ""
+"Pure python implementation of writing a chunk of a GDAL file from a numpy"
+" array.  Used by the gdal.Band.WriteArray method."
+msgstr ""
+
+#: of osgeo.gdal_array.CopyDatasetInfo:1
+msgid ""
+"Copy georeferencing information and metadata from one dataset to another."
+" src: input dataset dst: output dataset - It can be a ROI - xoff, yoff:  "
+"dst's offset with respect to src in pixel/line."
+msgstr ""
+
+#: of osgeo.gdal_array.CopyDatasetInfo:6
+msgid "Notes: Destination dataset must have update access.  Certain formats"
+msgstr ""
+
+#: of osgeo.gdal_array.CopyDatasetInfo:7
+msgid "do not support creation of geotransforms and/or gcps."
+msgstr ""
+
+#: of osgeo.gdal_array.DatasetReadAsArray:1
+msgid ""
+"Pure python implementation of reading a chunk of a GDAL file into a numpy"
+" array.  Used by the gdal.Dataset.ReadAsArray method."
+msgstr ""
+
+#: of osgeo.gdal_array.DatasetWriteArray:1
+msgid ""
+"Pure python implementation of writing a chunk of a GDAL file from a numpy"
+" array.  Used by the gdal.Dataset.WriteArray method."
+msgstr ""
+
+#: of osgeo.gdal_array.RATReadArray:1
+msgid ""
+"Pure Python implementation of reading a chunk of the RAT into a numpy "
+"array. Called from RasterAttributeTable.ReadAsArray"
+msgstr ""
+
+#: of osgeo.gdal_array.RATWriteArray:1
+msgid ""
+"Pure Python implementation of writing a chunk of the RAT from a numpy "
+"array. Type of array is coerced to one of the types (int, double, string)"
+" supported. Called from RasterAttributeTable.WriteArray"
+msgstr ""
+
+#: of osgeo.gdal_array.VirtualMem:1
+msgid "ベースクラス: :py:class:`object`"
+msgstr ""
+
+#: of osgeo.gdal_array.VirtualMem:1
+msgid "Proxy of C++ CPLVirtualMemShadow class."
+msgstr ""
+
+#: of osgeo.gdal_array.VirtualMem.thisown:1
+msgid "The membership flag"
 msgstr ""
 
 #~ msgid ""

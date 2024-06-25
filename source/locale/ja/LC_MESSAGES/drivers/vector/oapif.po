@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/oapif.rst:4
 msgid "OGC API - Features"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:8
+msgid "OAPIF"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:10
+msgid "libcurl"
 msgstr ""
 
 #: ../../source/drivers/vector/oapif.rst:12
@@ -114,6 +130,12 @@ msgstr ""
 
 #: ../../source/drivers/vector/oapif.rst:75
 msgid "The following options are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/oapif.rst:109
+msgid ""
+"Set to YES to ignore the XML Schema or JSON schema that may be offered by"
+" the server."
 msgstr ""
 
 #: ../../source/drivers/vector/oapif.rst:139

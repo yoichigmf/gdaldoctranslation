@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/vector/gml.rst:4
 msgid "GML - Geography Markup Language"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:6
+msgid "GML"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:8
+msgid "(read support needs Xerces or libexpat)"
 msgstr ""
 
 #: ../../source/drivers/vector/gml.rst:10
@@ -643,6 +659,10 @@ msgstr ""
 msgid "Open options"
 msgstr ""
 
+#: ../../source/drivers/vector/gml.rst:571
+msgid "Whether to consider srsName like EPSG:XXXX as respecting EPSG axis order."
+msgstr ""
+
 #: ../../source/drivers/vector/gml.rst:627
 msgid "Creation Issues"
 msgstr ""
@@ -657,6 +677,50 @@ msgstr ""
 
 #: ../../source/drivers/vector/gml.rst:635
 msgid "Dataset creation options"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:677
+msgid ""
+"*GML2* in order to write GML files that follow GML 2.1.2 (Default before "
+"GDAL 3.4)"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:678
+msgid "*GML3* in order to write GML files that follow GML 3.1.1 SF-0 profile."
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:680
+msgid ""
+"*GML3Deegree* in order to produce a GML 3.1.1 .XSD schema, with a few "
+"variations with respect to what is recommended by GML3 SF-0 profile, but "
+"that will be better accepted by some software (such as Deegree 3)."
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:684
+msgid ""
+"*GML3.2*\\ in order to write GML files that follow GML 3.2.1 SF-0 "
+"profile. (Default since GDAL 3.4)"
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:687
+msgid ""
+"Non-linear geometries can be written. This is only compatible with "
+"selecting on of that above GML3 format variant. Otherwise, such "
+"geometries will be approximating into their closest matching linear "
+"geometry. Note: fields of type StringList, RealList or IntegerList can be"
+" written. This will cause to advertise the SF-1 profile in the .XSD "
+"schema (such types are not supported by SF-0)."
+msgstr ""
+
+#: ../../source/drivers/vector/gml.rst:699
+msgid ""
+"Whether to use the gml:FeatureCollection, instead of creating a dedicated"
+" container element in the target namespace. Only valid for "
+"FORMAT=GML3/GML3.2. Note that gml:FeatureCollection has been deprecated "
+"in GML 3.2, and is not allowed by the OGC 06-049r1 \"Geography Markup "
+"Language (GML) simple features profile\" (for GML 3.1.1) and OGC 10-100r3"
+" \"Geography Markup Language (GML) simple features profile (with "
+"Corrigendum)\" (for GML 3.2) specifications."
 msgstr ""
 
 #: ../../source/drivers/vector/gml.rst:778

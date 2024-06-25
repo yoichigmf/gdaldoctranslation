@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/georaster.rst:5
 msgid "Oracle Spatial GeoRaster"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:7
+msgid "GeoRaster"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:9
+msgid "Oracle client libraries"
 msgstr ""
 
 #: ../../source/drivers/raster/georaster.rst:11
@@ -169,6 +185,26 @@ msgstr ""
 
 #: ../../source/drivers/raster/georaster.rst:110
 msgid "Creation Options"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:255
+msgid ""
+"When this value is set to FALSE, then the bin function to use is the one "
+"generated dynamically as previously described."
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:268
+msgid "A valid function defined in the GeoRaster metadata."
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:269
+msgid "The same bin function generated when :co:`GENSTATS_USEBIN` is FALSE."
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:281
+msgid ""
+"A NODATA value is used for cells whose values are either not known or "
+"meaningless"
 msgstr ""
 
 #: ../../source/drivers/raster/georaster.rst:365

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,22 @@ msgstr ""
 
 #: ../../source/drivers/raster/bag.rst:5
 msgid "BAG -- Bathymetry Attributed Grid"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:7
+msgid "BAG"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:9
+msgid "libhdf5"
 msgstr ""
 
 #: ../../source/drivers/raster/bag.rst:11
@@ -61,6 +77,10 @@ msgstr ""
 msgid "Driver capabilities"
 msgstr ""
 
+#: ../../source/drivers/raster/bag.rst:39
+msgid "This driver supports the :cpp:func:`GDALDriver::Create` operation"
+msgstr ""
+
 #: ../../source/drivers/raster/bag.rst:48
 msgid "Open options"
 msgstr ""
@@ -92,6 +112,216 @@ msgstr ""
 msgid ""
 "The driver has different modes of working which can be controlled by the "
 "MODE open option:"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:83
+msgid ""
+"MODE=LOW_RES_GRID: this is the default mode (unless opening a supergrid)."
+" The driver will expose the low resolution grid, and indicate in the "
+"dataset metadata if the dataset has supergrids (HAS_SUPERGRIDS=TRUE), as "
+"well as the minimum and maximum resolution of those grids."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:88
+msgid ""
+"MODE=LIST_SUPERGRIDS: in this mode, the driver will report the various "
+"supergrids in the subdataset list. It is possible to apply in this mode "
+"additional open options to restrict the search"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:99
+msgid ""
+"MINX=value: Minimum georeferenced X value to use as a filter for the "
+"supergrids to list."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:101
+msgid ""
+"MINY=value: Minimum georeferenced Y value to use as a filter for the "
+"supergrids to list."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:103
+msgid ""
+"MAXX=value: Maximum georeferenced X value to use as a filter for the "
+"supergrids to list."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:105
+msgid ""
+"MAXY=value: Maximum georeferenced Y value to use as a filter for the "
+"supergrids to list."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:107
+msgid ""
+"RES_FILTER_MIN=value: Minimum resolution of supergrids to take into "
+"account (excluded bound)"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:109
+msgid ""
+"RES_FILTER_MAX=value: Maximum resolution of supergrids to take into "
+"account (included bound)"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:112
+msgid ""
+"Opening a supergrid. This mode is triggered by using as a dataset name a "
+"string formatted like BAG:my.bag:supergrid:{y}:{x}, which is the value of"
+" the SUBDATASET_x_NAME metadata items reported by the above described "
+"mode. {y} is the index (starting from 0, from the south of the grid), and"
+" {x} is the index (starting from 0, from the west of the grid) of the "
+"supergrid to open."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:119
+msgid ""
+"MODE=RESAMPLED_GRID: in this mode, the user specify the extent and "
+"resolution of a target grid, and for each cell of this target grid, the "
+"driver will find the nodes of the supergrids that fall into that cell. By"
+" default, it will select the node with the maximum elevation value to "
+"populate the cell value. Or if no node of any supergrid are found, the "
+"cell value will be set to the nodata value. Overviews are reported: note "
+"that, those overviews correspond to resampled grids computed with "
+"different values of the RESX and RESY parameters, but using the same "
+"value population rules (and not nearest neighbour resampling of the full "
+"resolution resampled grid). The last overview level is the low-resolution"
+" grid (if SUPERGRIDS_MASK=NO)"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:132
+msgid "The available open options in this mode are:"
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:134
+msgid ""
+"MINX=value: Minimum georeferenced X value for the resampled grid. By "
+"default, the corresponding value of the low resolution grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:136
+msgid ""
+"MINY=value: Minimum georeferenced Y value for the resampled grid. By "
+"default, the corresponding value of the low resolution grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:138
+msgid ""
+"MAXX=value: Maximum georeferenced X value for the resampled grid. By "
+"default, the corresponding value of the low resolution grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:140
+msgid ""
+"MAXY=value: Maximum georeferenced Y value for the resampled grid. By "
+"default, the corresponding value of the low resolution grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:142
+msgid ""
+"RESX=value: Horizontal resolution. By default, and if RES_STRATEGY is set"
+" to AUTO, this will be the minimum resolution among all the supergrids."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:145
+msgid ""
+"RESY=value: Vertical resolution (positive value). By default, and if "
+"RES_STRATEGY is set to AUTO, this will be the minimum resolution among "
+"all the supergrids."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:148
+msgid ""
+"RES_STRATEGY=AUTO/MIN/MAX/MEAN: Which strategy to apply to set the "
+"resampled grid resolution. By default, if none of RESX, RESY, "
+"RES_FILTER_MIN and RES_FILTER_MAX is specified, the AUTO strategy will "
+"correspond to the MIN strategy: that is the minimum resolution among all "
+"the supergrids is used. If MAX is specified, the maximum resolution among"
+" all the supergrids is used. If MEAN is specified, the mean resolution "
+"among all the supergrids is used. RESX and RESY, if defined, will "
+"override the resolution determined by RES_STRATEGY."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:157
+msgid ""
+"RES_FILTER_MIN=value: Minimum resolution of supergrids to take into "
+"account (excluded bound, except if it is the minimum resolution of "
+"supergrids). By default, the minimum resolution of supergrids available. "
+"If this value is specified and none of RES_STRATEGY, RES_FILTER_MAX, RESX"
+" or RESY is specified, the maximum resolution among all the supergrids "
+"will be used as the resolution for the resampled grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:164
+msgid ""
+"RES_FILTER_MAX=value: Maximum resolution of supergrids to take into "
+"account (included bound). By default, the maximum resolution of "
+"supergrids available. If this value is specified and none of "
+"RES_STRATEGY, RESX or RESY is specified, this will also be used as the "
+"resolution for the resampled grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:169
+msgid ""
+"VALUE_POPULATION=MIN/MAX/MEAN/COUNT: Which value population strategy to "
+"apply to compute the resampled cell values. This default to MAX: the "
+"elevation value of a target cell is the maximum elevation of all "
+"supergrid nodes (potentially filtered with RES_FILTER_MIN and/or "
+"RES_FILTER_MAX) that fall into this cell; the corresponding uncertainty "
+"will be the uncertainty of the source node where this maximum elevation "
+"si reached. If no supergrid node fall into the target cell, the nodata "
+"value is set. The MIN strategy is similar, except that this is the "
+"minimum elevation value among intersecting nodes that is selected. The "
+"MEAN strategy uses the mean value of the elevation of intersecting nodes,"
+" and the maximum uncertainty of those nodes. The COUNT strategy (GDAL >= "
+"3.2) exposes one single UInt32 band where each target cell contains the "
+"count of supergrid nodes that fall into it."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:183
+msgid ""
+"SUPERGRIDS_MASK=YES/NO. Default to NO. If set to YES, instead of the "
+"elevation and uncertainty band, the dataset contains a single Byte band "
+"which is boolean valued. For a target cell, if at least one supergrids "
+"nodes (potentially filtered with RES_FILTER_MIN and/or RES_FILTER_MAX) "
+"falls into the cell, the cell value is set at 255. Otherwise it is set at"
+" 0. This can be used to distinguish if elevation values at nodata are due"
+" to no source supergrid node falling into them, or if that/those "
+"supergrid nodes were themselves at the nodata value."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:192
+msgid "NODATA_VALUE=value. Override the default value, which is usually 1000000."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:195
+msgid ""
+"MODE=INTERPOLATED: (GDAL >= 3.8) in this mode, the user specify the "
+"extent and resolution of a target grid, and for each cell of this target "
+"grid, the driver will interpolate the value from the surrounding nodes of"
+" the supergrid(s) that applies to the cell, using in priority bilinear "
+"interpolation (for a node that falls within a supergrid and when all 4 "
+"surrounding nodes of the supergrid are not at nodata value), and "
+"fallbacks to barycentric interpolation or inverse distance weighting in "
+"other situations."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:204
+msgid ""
+"Overviews are reported. Note that those overviews correspond to resampled"
+" grids computed with different values of the RESX and RESY parameters, "
+"but for performance reasons, the interpolation is still limited to the "
+"immediate neighbours of the target grid in the supergrid(s), which result"
+" in the equivalent of nearest-neighbour downsampling of the full "
+"resolution raster. The last overview level is the low-resolution grid."
+msgstr ""
+
+#: ../../source/drivers/raster/bag.rst:211
+msgid ""
+"The available open options in this mode are MINX, MINY, MAXX, MAXY, RESX,"
+" RESY, RES_STRATEGY, RES_FILTER_MIN, RES_FILTER_MAX and NODATA_VALUE (cf "
+"their above description for the MODE=RESAMPLED_GRID)"
 msgstr ""
 
 #: ../../source/drivers/raster/bag.rst:216

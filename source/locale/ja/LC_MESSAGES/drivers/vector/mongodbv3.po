@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,20 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/drivers/vector/mongodbv3.rst:4
+#: ../../source/drivers/vector/mongodbv3.rst:8
 msgid "MongoDBv3"
+msgstr ""
+
+#: ../../source/drivers/vector/mongodbv3.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/mongodbv3.rst:-1
+msgid "Build dependencies"
+msgstr ""
+
+#: ../../source/drivers/vector/mongodbv3.rst:10
+msgid "Mongo CXX >= 3.4.0 client library"
 msgstr ""
 
 #: ../../source/drivers/vector/mongodbv3.rst:12
@@ -83,6 +96,10 @@ msgstr ""
 
 #: ../../source/drivers/vector/mongodbv3.rst:50
 msgid "The open options available are :"
+msgstr ""
+
+#: ../../source/drivers/vector/mongodbv3.rst:148
+msgid "Whether to use bulk insert for feature creation."
 msgstr ""
 
 #: ../../source/drivers/vector/mongodbv3.rst:151

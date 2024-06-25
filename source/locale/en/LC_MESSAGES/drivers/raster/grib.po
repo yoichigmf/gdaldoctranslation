@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/raster/grib.rst:5
 msgid "GRIB -- WMO General Regularly-distributed Information in Binary form"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:7
+msgid "GRIB"
 msgstr ""
 
 #: ../../source/drivers/raster/grib.rst:11
@@ -175,6 +183,26 @@ msgid ""
 "generating with those defaults."
 msgstr ""
 
+#: ../../source/drivers/raster/grib.rst:190
+msgid "0: Meteorological Products. Default value"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:191
+msgid "1: Hydrological Products"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:192
+msgid "2: Land Surface Products"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:193
+msgid "3, 4: Space Products"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:194
+msgid "10: Oceanographic Product"
+msgstr ""
+
 #: ../../source/drivers/raster/grib.rst:313
 msgid "Data encoding"
 msgstr ""
@@ -193,6 +221,55 @@ msgstr ""
 
 #: ../../source/drivers/raster/grib.rst:323
 msgid "Users can override those defaults with the following creation options are:"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:333
+msgid ""
+"In AUTO mode, COMPLEX_PACKING is selected if input band has a nodata "
+"value. Otherwise if input band datatype is Float32 or Float64, "
+"IEEE_FLOATING_POINT is selected. Otherwise SIMPLE_PACKING is selected."
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:337
+msgid ""
+"`SIMPLE_PACKING "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-0.shtml>`__:"
+" use integer representation internally, with offset and decimal and/or "
+"binary scaling. So can be used for any datatype."
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:340
+msgid ""
+"COMPLEX_PACKING: evolution of SIMPLE_PACKING with nodata handling. By "
+"default, a `non-spatial differencing encoding is used "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-2.shtml>`__,"
+" but if SPATIAL_DIFFERENCING_ORDER=1 or 2, `complex packing with spatial "
+"differencing "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-3.shtml>`__"
+" is used"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:347
+msgid ""
+"`IEEE_FLOATING_POINT "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-4.shtml>`__:"
+" store values as IEEE-754 single or double precision numbers."
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:349
+msgid ""
+"`PNG "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-41.shtml>`__:"
+" uses the same preparation steps as SIMPLE_PACKING but with PNG encoding "
+"of the integer values."
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:352
+msgid ""
+"`JPEG2000 "
+"<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-40.shtml>`__:"
+" uses the same preparation steps as SIMPLE_PACKING but with JPEG2000 "
+"encoding of the integer values."
 msgstr ""
 
 #: ../../source/drivers/raster/grib.rst:409

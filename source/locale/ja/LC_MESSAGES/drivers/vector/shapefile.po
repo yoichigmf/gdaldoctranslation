@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-25 01:39+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -21,6 +21,14 @@ msgstr ""
 
 #: ../../source/drivers/vector/shapefile.rst:4
 msgid "ESRI Shapefile / DBF"
+msgstr ""
+
+#: ../../source/drivers/vector/shapefile.rst:-1
+msgid "Driver short name"
+msgstr ""
+
+#: ../../source/drivers/vector/shapefile.rst:6
+msgid "ESRI Shapefile"
 msgstr ""
 
 #: ../../source/drivers/vector/shapefile.rst:10
@@ -451,6 +459,15 @@ msgstr ""
 
 #: ../../source/drivers/vector/shapefile.rst:410
 msgid "The following :ref:`configuration options <configoptions>` are available:"
+msgstr ""
+
+#: ../../source/drivers/vector/shapefile.rst:423
+msgid ""
+"Starting with GDAL 3.7, for Polygon/MultiPolygon, the default value is "
+"NO, with the effect that the winding order of rings will be determined "
+"from the outer/inner rings of the input Polygon/MultiPolygon, and not as "
+"a post process topological analysis like done in previous GDAL versions, "
+"which could cause troubles for non-planar 3D geometries."
 msgstr ""
 
 #: ../../source/drivers/vector/shapefile.rst:451
