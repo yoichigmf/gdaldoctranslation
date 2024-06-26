@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -187,31 +187,35 @@ msgstr ""
 msgid "Creation Options"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:255
+#: ../../source/drivers/raster/georaster.rst:112
+msgid "|about-creation-options| The following creation options are supported:"
+msgstr ""
+
+#: ../../source/drivers/raster/georaster.rst:258
 msgid ""
 "When this value is set to FALSE, then the bin function to use is the one "
 "generated dynamically as previously described."
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:268
+#: ../../source/drivers/raster/georaster.rst:271
 msgid "A valid function defined in the GeoRaster metadata."
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:269
+#: ../../source/drivers/raster/georaster.rst:272
 msgid "The same bin function generated when :co:`GENSTATS_USEBIN` is FALSE."
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:281
+#: ../../source/drivers/raster/georaster.rst:284
 msgid ""
 "A NODATA value is used for cells whose values are either not known or "
 "meaningless"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:365
+#: ../../source/drivers/raster/georaster.rst:368
 msgid "Importing GeoRaster"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:367
+#: ../../source/drivers/raster/georaster.rst:370
 msgid ""
 "During the process of importing raster into a GeoRaster object it is "
 "possible to give the driver a simple SQL table definition and also a SQL "
@@ -220,13 +224,13 @@ msgid ""
 "example does that:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:381
+#: ../../source/drivers/raster/georaster.rst:384
 msgid ""
 "Note that the create option DESCRIPTION requires to inform table name (in"
 " bold). And column name (underlined) should match the description:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:390
+#: ../../source/drivers/raster/georaster.rst:393
 msgid ""
 "If the table \"landsat\" exist, the option \"DESCRIPTION\" is ignored. "
 "The driver can only update one GeoRaster column per run of "
@@ -235,7 +239,7 @@ msgid ""
 "able to specify a name and value of their choice."
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:401
+#: ../../source/drivers/raster/georaster.rst:404
 msgid ""
 "If no information is given about where to store the raster the driver "
 "will create (if doesn't exist already) a default table named GDAL_IMPORT "
@@ -243,65 +247,65 @@ msgid ""
 "RDT, the RID will be given automatically by the server, example:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:411
+#: ../../source/drivers/raster/georaster.rst:414
 msgid "Exporting GeoRaster"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:413
+#: ../../source/drivers/raster/georaster.rst:416
 msgid "A GeoRaster can be identified by a Where clause or by a pair of RDT & RID:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:421
+#: ../../source/drivers/raster/georaster.rst:424
 msgid "Cross schema access"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:423
+#: ../../source/drivers/raster/georaster.rst:426
 msgid ""
 "As long as the user was granted full access the GeoRaster table and the "
 "Raster Data Table, e.g.:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:432
+#: ../../source/drivers/raster/georaster.rst:435
 msgid ""
 "It is possible to an user access to extract and load GeoRaster from "
 "another user/schema by informing the schema name as showed here:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:435
+#: ../../source/drivers/raster/georaster.rst:438
 msgid "Browsing:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:443
+#: ../../source/drivers/raster/georaster.rst:446
 msgid "Extracting:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:450
+#: ../../source/drivers/raster/georaster.rst:453
 msgid ""
 "Note: On the above example that accessing by RDT/RID doesn't need schame "
 "name as long as the users is granted full access to both tables."
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:454
+#: ../../source/drivers/raster/georaster.rst:457
 msgid "Loading:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:463
+#: ../../source/drivers/raster/georaster.rst:466
 msgid "General use of GeoRaster"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:465
+#: ../../source/drivers/raster/georaster.rst:468
 msgid ""
 "GeoRaster can be used in any GDAL command line tool with all the "
 "available options. Like a image subset extraction or re-project:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:475
+#: ../../source/drivers/raster/georaster.rst:478
 msgid ""
 "Two different GeoRaster can be used as input and output on the same "
 "operation:"
 msgstr ""
 
-#: ../../source/drivers/raster/georaster.rst:482
+#: ../../source/drivers/raster/georaster.rst:485
 msgid ""
 "Applications that use GDAL can theoretically read and write from "
 "GeoRaster just like any other format but most of then are more inclined "

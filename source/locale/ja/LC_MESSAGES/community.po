@@ -22,7 +22,7 @@ msgstr ""
 #: ../../source/community/code_of_conduct.rst:5
 #: ../../source/community/index.rst:16
 msgid "Code of Conduct"
-msgstr "コードオブコンダクト"
+msgstr "行動規範"
 
 #: ../../source/community/code_of_conduct.rst:7
 msgid ""

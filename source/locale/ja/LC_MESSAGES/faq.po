@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -40,8 +40,8 @@ msgid ""
 "It is sometimes pronounced \"goo-doll\" (a bit like goo-gle), while "
 "others pronounce it \"gee-doll,\" and others pronounce it \"gee-dall.\""
 msgstr ""
-"これは時々 \"goo-doll\" (少し goo-gleに似てます), と発音されます, また "
-"他の人場合 \"gee-doll,\" や \"gee-dall.\" と発音されることがあります"
+"これは時々 \"goo-doll\" (少し goo-gleに似てます), と発音されます, また 他の人場合 \"gee-doll,\" や "
+"\"gee-dall.\" と発音されることがあります"
 
 #: ../../source/faq.rst:22
 msgid ""
@@ -80,7 +80,7 @@ msgstr ""
 
 #: ../../source/faq.rst:35
 msgid "What does CPL stand for?"
-msgstr ""
+msgstr "CPLとは何の略ですか？"  
 
 #: ../../source/faq.rst:37
 msgid ""
@@ -121,7 +121,7 @@ msgstr ""
 
 #: ../../source/faq.rst:54
 msgid "See :ref:`license`"
-msgstr ""
+msgstr "参照 :ref:`license`"
 
 #: ../../source/faq.rst:57
 msgid "What operating systems does GDAL-OGR run on?"
@@ -136,11 +136,11 @@ msgstr ""
 
 #: ../../source/faq.rst:62
 msgid "Is there a graphical user interface to GDAL/OGR?"
-msgstr ""
+msgstr "GDL/OGRにはグラフィカルユーザーインターフェースがありますか？"
 
 #: ../../source/faq.rst:64
 msgid "See :ref:`software_using_gdal`:"
-msgstr ""
+msgstr "参照 :ref:`software_using_gdal`:"
 
 #: ../../source/faq.rst:72
 msgid "What compiler can I use to build GDAL/OGR?"
@@ -164,7 +164,7 @@ msgstr ""
 
 #: ../../source/faq.rst:81
 msgid "See :ref:`community`"
-msgstr ""
+msgstr "参照 :ref:`community`"
 
 #: ../../source/faq.rst:83
 msgid ""
@@ -205,5 +205,5 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Contents"
-#~ msgstr ""
+#~ msgstr "目次"
 

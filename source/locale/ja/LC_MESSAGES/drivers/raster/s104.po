@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -83,7 +83,11 @@ msgstr ""
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:45
+#: ../../source/drivers/raster/s104.rst:39
+msgid "|about-open-options| The following open options are supported:"
+msgstr ""
+
+#: ../../source/drivers/raster/s104.rst:48
 msgid ""
 "This is the default behavior of most GDAL formats, but the native "
 "organization of the data in S-104 products is to have the first line of "
@@ -92,29 +96,29 @@ msgid ""
 " term of the geotransform matrix will be positive)"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:52
+#: ../../source/drivers/raster/s104.rst:55
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:54
+#: ../../source/drivers/raster/s104.rst:57
 msgid "Implemented as :source_file:`frmts/hdf5/s104dataset.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:55
+#: ../../source/drivers/raster/s104.rst:58
 msgid ""
 "`S-104 Bathymetric Surface Product Specification "
 "<https://registry.iho.int/productspec/view.do?idx=198&product_ID=S-104&statusS=5&domainS=20&category=product_ID&searchValue=S-104>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:56
+#: ../../source/drivers/raster/s104.rst:59
 msgid ":ref:`BAG driver <raster.bag>`"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:57
+#: ../../source/drivers/raster/s104.rst:60
 msgid ":ref:`S-102 driver <raster.s102>`"
 msgstr ""
 
-#: ../../source/drivers/raster/s104.rst:58
+#: ../../source/drivers/raster/s104.rst:61
 msgid ":ref:`S-111 driver <raster.s111>`"
 msgstr ""
 

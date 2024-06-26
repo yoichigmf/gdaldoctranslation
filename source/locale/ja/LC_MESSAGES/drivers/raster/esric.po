@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -203,10 +203,18 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/esric.rst:143
+msgid "Open options"
+msgstr ""
+
+#: ../../source/drivers/raster/esric.rst:145
+msgid "|about-open-options| The following open options are available:"
+msgstr ""
+
+#: ../../source/drivers/raster/esric.rst:162
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/esric.rst:144
+#: ../../source/drivers/raster/esric.rst:163
 msgid "Implemented as :source_file:`frmts/esric/esric_dataset.cpp`."
 msgstr ""
 

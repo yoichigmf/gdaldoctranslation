@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -68,16 +68,22 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/blx.rst:40
-msgid "Creation Issues"
+msgid "Creation Options"
 msgstr ""
 
 #: ../../source/drivers/raster/blx.rst:42
-msgid "Creation Options:"
+msgid "|about-creation-options| The following creation options are supported:"
 msgstr ""
 
 #~ msgid "Driver short name"
 #~ msgstr ""
 
 #~ msgid "BLX"
+#~ msgstr ""
+
+#~ msgid "Creation Issues"
+#~ msgstr ""
+
+#~ msgid "Creation Options:"
 #~ msgstr ""
 

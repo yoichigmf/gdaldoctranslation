@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -46,7 +46,7 @@ msgid "Configuration options"
 msgstr ""
 
 #: ../../source/drivers/vector/wasp.rst:25
-msgid "The following :ref:`configuration options <configoptions>` are available:"
+msgid "|about-config-options| The following configuration options are available:"
 msgstr ""
 
 #: ../../source/drivers/vector/wasp.rst:61
@@ -60,5 +60,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "WAsP"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following :ref:`configuration options "
+#~ "<configoptions>` are available:"
 #~ msgstr ""
 

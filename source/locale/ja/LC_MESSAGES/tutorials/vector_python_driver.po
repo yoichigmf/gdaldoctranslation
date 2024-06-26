@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -233,7 +233,7 @@ msgid "That class must define the following methods:"
 msgstr ""
 
 #: ../../source/tutorials/vector_python_driver.rst
-msgid "パラメータ"
+msgid "Parameters"
 msgstr ""
 
 #: ../../source/tutorials/vector_python_driver.rst:126
@@ -260,7 +260,7 @@ msgid "Open options."
 msgstr ""
 
 #: ../../source/tutorials/vector_python_driver.rst
-msgid "戻り値"
+msgid "Returns"
 msgstr ""
 
 #: ../../source/tutorials/vector_python_driver.rst:131

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -25,11 +25,11 @@ msgstr "ベクタードライバー"
 
 #: ../../source/drivers/vector/driver_summary.rst:11
 msgid "Short name"
-msgstr ""
+msgstr "短縮名称"
 
 #: ../../source/drivers/vector/driver_summary.rst:12
 msgid "Long name"
-msgstr ""
+msgstr "名称"
 
 #: ../../source/drivers/vector/driver_summary.rst:13
 msgid "Creation"
@@ -175,6 +175,7 @@ msgstr ""
 #: ../../source/drivers/vector/driver_summary.rst:424
 #: ../../source/drivers/vector/driver_summary.rst:429
 #: ../../source/drivers/vector/driver_summary.rst:438
+#: ../../source/drivers/vector/driver_summary.rst:444
 msgid "**Yes**"
 msgstr ""
 
@@ -256,6 +257,7 @@ msgstr ""
 #: ../../source/drivers/vector/driver_summary.rst:433
 #: ../../source/drivers/vector/driver_summary.rst:434
 #: ../../source/drivers/vector/driver_summary.rst:439
+#: ../../source/drivers/vector/driver_summary.rst:443
 msgid "No"
 msgstr ""
 
@@ -1069,6 +1071,18 @@ msgstr ""
 
 #: ../../source/drivers/vector/driver_summary.rst:437
 msgid "MS Office Open XML spreadsheet"
+msgstr ""
+
+#: ../../source/drivers/vector/driver_summary.rst:441
+msgid ":ref:`XODR <vector.xodr>`"
+msgstr ""
+
+#: ../../source/drivers/vector/driver_summary.rst:442
+msgid "OpenDRIVE Road Description Format"
+msgstr ""
+
+#: ../../source/drivers/vector/driver_summary.rst:445
+msgid "libOpenDRIVE >= 0.5.0, GEOS"
 msgstr ""
 
 #: ../../source/drivers/vector/index.rst:18

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -189,7 +189,13 @@ msgstr ""
 msgid "Layer Creation Options"
 msgstr ""
 
-#: ../../source/drivers/vector/mysql.rst:161
+#: ../../source/drivers/vector/mysql.rst:106
+msgid ""
+"|about-layer-creation-options| The following layer creation options are "
+"supported:"
+msgstr ""
+
+#: ../../source/drivers/vector/mysql.rst:164
 msgid ""
 "The following example datasource name opens the database schema "
 "*westholland* with password *psv9570* for userid *root* on the port "
@@ -198,7 +204,7 @@ msgid ""
 " a layer for use."
 msgstr ""
 
-#: ../../source/drivers/vector/mysql.rst:171
+#: ../../source/drivers/vector/mysql.rst:174
 msgid ""
 "The following example uses ogr2ogr to create copy the world_borders layer"
 " from a shapefile into a MySQL table. It overwrites a table with the "
@@ -206,7 +212,7 @@ msgid ""
 "geometry column name to *SHAPE2*."
 msgstr ""
 
-#: ../../source/drivers/vector/mysql.rst:180
+#: ../../source/drivers/vector/mysql.rst:183
 msgid ""
 "The following example uses ogrinfo to return some summary information "
 "about the borders2 layer in the test database."

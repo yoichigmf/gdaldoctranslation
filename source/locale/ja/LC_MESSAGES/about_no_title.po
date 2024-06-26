@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 00:52+0900\n"
+"POT-Creation-Date: 2024-06-26 18:27+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/about_no_title.rst:3
+#: ../../source/about_no_title.rst:1
 msgid ""
 "GDAL is a translator library for raster and vector geospatial data "
 "formats that is released under an MIT style Open Source :ref:`license` by"
@@ -27,19 +27,46 @@ msgid ""
 "single raster abstract data model and single vector abstract data model "
 "to the calling application for all supported formats. It also comes with "
 "a variety of useful command line utilities for data translation and "
-"processing. The `NEWS`_ page describes the April 2024 GDAL/OGR 3.8.5 "
+"processing. The `NEWS`_ page describes the May 2024 GDAL/OGR 3.9.0 "
 "release."
 msgstr ""
+"GDAL はラスターとベクターの空間データ形式をを変換するライブラリです。これは MIT スタイル :ref:`license` の "
+"オープンソースとして `Open Source Geospatial Foundation`_ から公開されています. "
+"ライブラリとしてのGDALはすべてのサポートする形式をアプリケーションから単一のラスタ抽象データモデルか単一のベクター抽象モデルとして利用する機能を提供しています。またGDALではデータ変換やデータ加工をするための多彩で便利なコマンドラインユーティリティを提供しています。"
+"  `NEWS`_ ページには 2024 5月の GDAL/OGR 3.9.0 リリースについての情報があります。"
 
 #: ../../source/about_no_title.rst:-1
 msgid "OSGeo project"
 msgstr "OSGeoプロジェクト"
 
-#: ../../source/about_no_title.rst:12
+#: ../../source/about_no_title.rst:10
 msgid "See :ref:`software_using_gdal`"
 msgstr "参照 :ref:`software_using_gdal`"
 
-#: ../../source/about_no_title.rst:-1
+#: ../../source/about_no_title.rst:16
+msgid ""
+"You may quote GDAL in publications by using the following Digital Object "
+"Identifier: |DOI|"
+msgstr ""
+
+#: ../../source/about_no_title.rst
 msgid "DOI 10.5281/zenodo.5884351"
 msgstr ""
+
+#~ msgid ""
+#~ "GDAL is a translator library for "
+#~ "raster and vector geospatial data "
+#~ "formats that is released under an "
+#~ "MIT style Open Source :ref:`license` by"
+#~ " the `Open Source Geospatial Foundation`_."
+#~ " As a library, it presents a "
+#~ "single raster abstract data model and"
+#~ " single vector abstract data model to"
+#~ " the calling application for all "
+#~ "supported formats. It also comes with"
+#~ " a variety of useful command line "
+#~ "utilities for data translation and "
+#~ "processing. The `NEWS`_ page describes "
+#~ "the April 2024 GDAL/OGR 3.8.5 release."
+#~ msgstr ""
 

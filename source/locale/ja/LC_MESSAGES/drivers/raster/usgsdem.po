@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -96,10 +96,10 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/usgsdem.rst:59
-msgid "Creation Options:"
+msgid "|about-creation-options| The following creation options are supported:"
 msgstr ""
 
-#: ../../source/drivers/raster/usgsdem.rst:145
+#: ../../source/drivers/raster/usgsdem.rst:146
 msgid ""
 "Example: The following would generate a single CDED50K tile, extracting "
 "from the larger DEM coverage yk_3arcsec for a tile with the top left "
@@ -108,11 +108,11 @@ msgid ""
 "fields."
 msgstr ""
 
-#: ../../source/drivers/raster/usgsdem.rst:158
+#: ../../source/drivers/raster/usgsdem.rst:159
 msgid "NOTE: Implemented as :source_file:`frmts/usgsdem/usgsdemdataset.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/usgsdem.rst:160
+#: ../../source/drivers/raster/usgsdem.rst:161
 msgid ""
 "The USGS DEM reading code in GDAL was derived from the importer in the "
 "`VTP <http://www.vterrain.org/>`__ software. The export capability was "
@@ -124,5 +124,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "USGSDEM"
+#~ msgstr ""
+
+#~ msgid "Creation Options:"
 #~ msgstr ""
 

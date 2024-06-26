@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/programs/rgb2pct.rst:5
-msgid "rgb2pct.py"
+msgid "rgb2pct"
 msgstr ""
 
 #: ../../source/programs/rgb2pct.rst:9
@@ -44,6 +44,12 @@ msgid ""
 "maximize output image visual quality."
 msgstr ""
 
+#: ../../source/programs/rgb2pct.rst:32
+msgid ""
+"rgb2pct is a Python utility, and is only available if GDAL Python "
+"bindings are available."
+msgstr ""
+
 #: ../../source/programs/options/help.rst:3
 msgid "Show this help message and exit"
 msgstr ""
@@ -54,13 +60,13 @@ msgid ""
 "exit."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:36
+#: ../../source/programs/rgb2pct.rst:40
 msgid ""
 "Select the number of colors in the generated color table.  Defaults to "
 "256.  Must be between 2 and 256."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:41
+#: ../../source/programs/rgb2pct.rst:45
 msgid ""
 "Extract the color table from <palette_file> instead of computing it. Can "
 "be used to have a consistent color table for multiple files. The "
@@ -68,7 +74,7 @@ msgid ""
 "with a palette or a color file in a supported format (txt, qml, qlr)."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:48
+#: ../../source/programs/rgb2pct.rst:52
 msgid ""
 "Select the output format. Starting with GDAL 2.3, if not specified, the "
 "format is guessed from the extension (previously was GTiff). Use the "
@@ -76,25 +82,19 @@ msgid ""
 "should be used."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:55
+#: ../../source/programs/rgb2pct.rst:59
 msgid "The input RGB file."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:59
+#: ../../source/programs/rgb2pct.rst:63
 msgid "The output pseudo-colored file that will be created."
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:61
-msgid ""
-"NOTE: rgb2pct.py is a Python script, and will only work if GDAL was built"
-" with Python support."
-msgstr ""
-
-#: ../../source/programs/rgb2pct.rst:64
+#: ../../source/programs/rgb2pct.rst:66
 msgid "Example"
 msgstr ""
 
-#: ../../source/programs/rgb2pct.rst:66
+#: ../../source/programs/rgb2pct.rst:68
 msgid ""
 "If it is desired to hand create the palette, likely the simplest text "
 "format is the GDAL VRT format.  In the following example a VRT was "
@@ -102,4 +102,13 @@ msgid ""
 "colors 238/238/238/255, 237/237/237/255, 236/236/236/255 and "
 "229/229/229/255."
 msgstr ""
+
+#~ msgid "rgb2pct.py"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NOTE: rgb2pct.py is a Python script, "
+#~ "and will only work if GDAL was "
+#~ "built with Python support."
+#~ msgstr ""
 

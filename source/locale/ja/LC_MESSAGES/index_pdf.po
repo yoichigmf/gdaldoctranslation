@@ -21,9 +21,9 @@ msgstr ""
 
 #: ../../source/index_pdf.rst:7
 msgid "User"
-msgstr ""
+msgstr "ユーザー"
 
 #: ../../source/index_pdf.rst:5
 msgid "GDAL"
-msgstr ""
+msgstr "GDAL"
 

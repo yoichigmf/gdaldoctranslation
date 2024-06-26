@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -122,32 +122,36 @@ msgstr ""
 
 #: ../../source/drivers/raster/grib.rst:96
 msgid ""
-"This paragraph lists the configuration options that can be set to alter "
-"the default behavior of the GRIB driver."
+"|about-config-options| This paragraph lists the configuration options "
+"that can be set to alter the default behavior of the GRIB driver."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:124
+#: ../../source/drivers/raster/grib.rst:125
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:148
+#: ../../source/drivers/raster/grib.rst:127
+msgid "|about-open-options| The following open options are supported:"
+msgstr ""
+
+#: ../../source/drivers/raster/grib.rst:152
 msgid "GRIB2 write support"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:150
+#: ../../source/drivers/raster/grib.rst:154
 msgid ""
 "GRIB2 write support is available since GDAL 2.3.0, through the "
 "CreateCopy() / gdal_translate interface."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:153
+#: ../../source/drivers/raster/grib.rst:157
 msgid ""
 "Each band of the input dataset is translated as a GRIB2 message, and all "
 "of them are concatenated in a single file, conforming to the usual "
 "practice."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:157
+#: ../../source/drivers/raster/grib.rst:161
 msgid ""
 "The input dataset must be georeferenced, and the supported projections "
 "are: Geographic Longitude/Latitude, Mercator 1SP/2SP, Transverse "
@@ -155,7 +159,7 @@ msgid ""
 "Conic Equal Area and Lambert Azimuthal Equal Area."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:162
+#: ../../source/drivers/raster/grib.rst:166
 msgid ""
 "A number of creation options are available as detailed in below sections."
 " Those creation options are valid for all bands. But it is possible to "
@@ -165,11 +169,11 @@ msgid ""
 "BAND_1_PDS_PDTN"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:170
+#: ../../source/drivers/raster/grib.rst:174
 msgid "Product identification and definition"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:172
+#: ../../source/drivers/raster/grib.rst:176
 msgid ""
 "Users are strongly advised to provide necessary information to "
 "appropriately fill the `Section 0 / \"Indicator\" "
@@ -180,34 +184,34 @@ msgid ""
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_sect4.shtml>`__"
 " with the following creation options. Otherwise, GDAL will fill with "
 "default values, but readers might have trouble exploiting GRIB2 datasets "
-"generating with those defaults."
+"generating with those defaults. |about-creation-options|"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:190
+#: ../../source/drivers/raster/grib.rst:195
 msgid "0: Meteorological Products. Default value"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:191
+#: ../../source/drivers/raster/grib.rst:196
 msgid "1: Hydrological Products"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:192
+#: ../../source/drivers/raster/grib.rst:197
 msgid "2: Land Surface Products"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:193
+#: ../../source/drivers/raster/grib.rst:198
 msgid "3, 4: Space Products"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:194
+#: ../../source/drivers/raster/grib.rst:199
 msgid "10: Oceanographic Product"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:313
+#: ../../source/drivers/raster/grib.rst:318
 msgid "Data encoding"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:315
+#: ../../source/drivers/raster/grib.rst:320
 msgid ""
 "In GRIB2, a number of data encoding schemes exist (see `Section 5 / "
 "\"Data representation section\" "
@@ -219,18 +223,18 @@ msgid ""
 "options."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:323
+#: ../../source/drivers/raster/grib.rst:328
 msgid "Users can override those defaults with the following creation options are:"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:333
+#: ../../source/drivers/raster/grib.rst:338
 msgid ""
 "In AUTO mode, COMPLEX_PACKING is selected if input band has a nodata "
 "value. Otherwise if input band datatype is Float32 or Float64, "
 "IEEE_FLOATING_POINT is selected. Otherwise SIMPLE_PACKING is selected."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:337
+#: ../../source/drivers/raster/grib.rst:342
 msgid ""
 "`SIMPLE_PACKING "
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-0.shtml>`__:"
@@ -238,7 +242,7 @@ msgid ""
 "binary scaling. So can be used for any datatype."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:340
+#: ../../source/drivers/raster/grib.rst:345
 msgid ""
 "COMPLEX_PACKING: evolution of SIMPLE_PACKING with nodata handling. By "
 "default, a `non-spatial differencing encoding is used "
@@ -249,14 +253,14 @@ msgid ""
 " is used"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:347
+#: ../../source/drivers/raster/grib.rst:352
 msgid ""
 "`IEEE_FLOATING_POINT "
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-4.shtml>`__:"
 " store values as IEEE-754 single or double precision numbers."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:349
+#: ../../source/drivers/raster/grib.rst:354
 msgid ""
 "`PNG "
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-41.shtml>`__:"
@@ -264,7 +268,7 @@ msgid ""
 "of the integer values."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:352
+#: ../../source/drivers/raster/grib.rst:357
 msgid ""
 "`JPEG2000 "
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_temp5-40.shtml>`__:"
@@ -272,11 +276,11 @@ msgid ""
 "encoding of the integer values."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:409
+#: ../../source/drivers/raster/grib.rst:414
 msgid "Data units"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:411
+#: ../../source/drivers/raster/grib.rst:416
 msgid ""
 "Internally GRIB stores values in the units of the international system "
 "(ie Metric system). So temperatures must be stored as Kelvin degrees. But"
@@ -290,11 +294,11 @@ msgid ""
 "control that behavior using the :co:`INPUT_UNIT` creation option:"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:430
+#: ../../source/drivers/raster/grib.rst:435
 msgid "GRIB2 to GRIB2 conversions"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:432
+#: ../../source/drivers/raster/grib.rst:437
 msgid ""
 "If GRIB2 to GRIB2 translation is done with gdal_translate (or "
 "CreateCopy()), the GRIB_DISCIPLINE, GRIB_IDS, GRIB_PDS_PDTN and "
@@ -302,49 +306,49 @@ msgid ""
 "dataset are used by default (unless creation options override them)."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:437
+#: ../../source/drivers/raster/grib.rst:442
 msgid ""
 "DECIMAL_SCALE_FACTOR and NBITS will also be attempted to be retrieved "
 "from the GRIB special metadata domain."
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:441
+#: ../../source/drivers/raster/grib.rst:446
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:451
+#: ../../source/drivers/raster/grib.rst:456
 msgid "See Also:"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:453
+#: ../../source/drivers/raster/grib.rst:458
 msgid ""
 "`NOAA NWS NDFD \"degrib\" GRIB2 Decoder "
 "<https://www.weather.gov/mdl/degrib_archive>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:455
+#: ../../source/drivers/raster/grib.rst:460
 msgid ""
 "`NOAA NWS NCEP g2clib grib decoding library "
 "<http://www.nco.ncep.noaa.gov/pmb/codes/GRIB2/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:457
+#: ../../source/drivers/raster/grib.rst:462
 msgid ""
 "`WMO GRIB1 Format Documents <http://www.wmo.int/pages/prog/www/WDM/Guides"
 "/Guide-binary-2.html>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:459
+#: ../../source/drivers/raster/grib.rst:464
 msgid ""
 "`NCEP WMO GRIB2 Documentation "
 "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:463
+#: ../../source/drivers/raster/grib.rst:468
 msgid "Credits"
 msgstr ""
 
-#: ../../source/drivers/raster/grib.rst:465
+#: ../../source/drivers/raster/grib.rst:470
 msgid ""
 "Support for GRIB2 write capabilities has been funded by Meteorological "
 "Service of Canada."
@@ -423,5 +427,30 @@ msgstr ""
 #~ " uses the same preparation steps as"
 #~ " SIMPLE_PACKING but with JPEG2000 encoding"
 #~ " of the integer values."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "This paragraph lists the configuration "
+#~ "options that can be set to alter"
+#~ " the default behavior of the GRIB "
+#~ "driver."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Users are strongly advised to provide"
+#~ " necessary information to appropriately "
+#~ "fill the `Section 0 / \"Indicator\" "
+#~ "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_sect0.shtml>`__,"
+#~ " `Section 1 / \"Identification section\""
+#~ " "
+#~ "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_sect1.shtml>`__"
+#~ " and `Section 4 / \"Product "
+#~ "definition section\" "
+#~ "<http://www.nco.ncep.noaa.gov/pmb/docs/grib2/grib2_doc/grib2_sect4.shtml>`__"
+#~ " with the following creation options. "
+#~ "Otherwise, GDAL will fill with default"
+#~ " values, but readers might have "
+#~ "trouble exploiting GRIB2 datasets generating"
+#~ " with those defaults."
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -89,28 +89,28 @@ msgid "Open options"
 msgstr ""
 
 #: ../../source/drivers/vector/xlsx.rst:45
-msgid "The following open options are available:"
+msgid "|about-open-options| The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/xlsx.rst:70
+#: ../../source/drivers/vector/xlsx.rst:71
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/vector/xlsx.rst:72
-msgid "The following :ref:`configuration options <configoptions>` are available:"
+#: ../../source/drivers/vector/xlsx.rst:73
+msgid "|about-config-options| The following configuration options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/xlsx.rst:95
+#: ../../source/drivers/vector/xlsx.rst:96
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/xlsx.rst:97
+#: ../../source/drivers/vector/xlsx.rst:98
 msgid ""
 "Transform CSV file input.csv to an Office Open XML file output.xlsx. The "
 "spreadsheet will contain one sheet with name \"input\"."
 msgstr ""
 
-#: ../../source/drivers/vector/xlsx.rst:104
+#: ../../source/drivers/vector/xlsx.rst:105
 msgid ""
 "Add the contents of CSV file input2.csv to the OOXML file output.xlsx "
 "created in the first example. The spreadsheet will now contain two "
@@ -127,5 +127,13 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "libexpat"
+#~ msgstr ""
+
+#~ msgid "The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following :ref:`configuration options "
+#~ "<configoptions>` are available:"
 #~ msgstr ""
 

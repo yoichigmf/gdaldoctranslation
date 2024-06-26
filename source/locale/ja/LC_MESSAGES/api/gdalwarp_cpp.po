@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-23 04:43+0900\n"
+"POT-Creation-Date: 2024-06-26 18:20+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,64 +19,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/api/gdalwarp_cpp.rst:5
+#: ../../source/api/gdalwarp_cpp.rst:10
 msgid "Warper C++ API"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Defines"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Typedefs"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Enums"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "パラメータ"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "戻り値"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Public Members"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Public Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Public Static Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Protected Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Private Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Private Members"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Private Static Functions"
-msgstr ""
-
-#: ../../source/api/gdalwarp_cpp.rst
-msgid "Friends"
 msgstr ""
 
 #~ msgid "Defines"

@@ -24,7 +24,7 @@ msgid "Download"
 msgstr ""
 
 #: ../../source/download.rst:10
-msgid "Contebts"
+msgid "目次"
 msgstr ""
 
 #: ../../source/download.rst:14
@@ -378,5 +378,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Contents"
+#~ msgstr ""
+
+#~ msgid "Contebts"
 #~ msgstr ""
 

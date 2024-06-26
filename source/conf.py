@@ -29,7 +29,7 @@ gettext_compact = False
 
 locale_dirs = ['locale/']
 
-language = 'ja'
+language = 'en'
 
 extensions = [
      "breathe",
