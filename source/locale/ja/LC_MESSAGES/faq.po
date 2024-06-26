@@ -29,7 +29,7 @@ msgstr "目次"
 
 #: ../../source/faq.rst:16
 msgid "What does GDAL stand for?"
-msgstr "GDAL とは何の略ですか？"
+msgstr "GDALとは何の略ですか？"
 
 #: ../../source/faq.rst:18
 msgid "GDAL - Geospatial Data Abstraction Library"
@@ -40,7 +40,7 @@ msgid ""
 "It is sometimes pronounced \"goo-doll\" (a bit like goo-gle), while "
 "others pronounce it \"gee-doll,\" and others pronounce it \"gee-dall.\""
 msgstr ""
-"これは時々 \"goo-doll\" (少し goo-gleに似てます）, と発音されます, また "
+"これは時々 \"goo-doll\" (少し goo-gleに似てます), と発音されます, また "
 "他の人場合 \"gee-doll,\" や \"gee-dall.\" と発音されることがあります"
 
 #: ../../source/faq.rst:22
@@ -51,11 +51,11 @@ msgid ""
 msgstr ""
 "`これを <https://soundcloud.com/danabauer/how-do-you-pronounce-"
 "gdal#t=00:02:58>`__ 聞いて下さい。 Frank Warmerdam がこれをどう発音したかと "
-"頭字語の歴史."
+"GDALの頭字語の歴史について聞くことができます."
 
 #: ../../source/faq.rst:25
 msgid "What is this OGR stuff?"
-msgstr ""
+msgstr "OGRとは何ですか"
 
 #: ../../source/faq.rst:27
 msgid ""
@@ -66,7 +66,7 @@ msgstr ""
 
 #: ../../source/faq.rst:30
 msgid "What does OGR stand for?"
-msgstr ""
+msgstr "OGRとは何の略ですか？"
 
 #: ../../source/faq.rst:32
 msgid ""
