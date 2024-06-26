@@ -24,12 +24,12 @@ msgid "FAQ"
 msgstr "FAQ"
 
 #: ../../source/faq.rst:12
-msgid "目次"
-msgstr ""
+msgid "Contents"
+msgstr "目次"
 
 #: ../../source/faq.rst:16
 msgid "What does GDAL stand for?"
-msgstr ""
+msgstr "GDAL とは何の略ですか？"
 
 #: ../../source/faq.rst:18
 msgid "GDAL - Geospatial Data Abstraction Library"

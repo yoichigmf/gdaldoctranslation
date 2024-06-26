@@ -24,7 +24,7 @@ msgid "Download"
 msgstr ""
 
 #: ../../source/download.rst:10
-msgid "目次"
+msgid "Contebts"
 msgstr ""
 
 #: ../../source/download.rst:14

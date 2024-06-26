@@ -24,7 +24,7 @@ msgid "FAQ"
 msgstr ""
 
 #: ../../source/faq.rst:12
-msgid "目次"
+msgid "Contents"
 msgstr ""
 
 #: ../../source/faq.rst:16
