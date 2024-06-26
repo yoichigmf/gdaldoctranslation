@@ -40,6 +40,8 @@ msgid ""
 "It is sometimes pronounced \"goo-doll\" (a bit like goo-gle), while "
 "others pronounce it \"gee-doll,\" and others pronounce it \"gee-dall.\""
 msgstr ""
+"これは時々 \"goo-doll\" (少し goo-gleに似てます）, と発音されます, また "
+"他の人場合 \"gee-doll,\" や \"gee-dall.\" と発音されることがあります"
 
 #: ../../source/faq.rst:22
 msgid ""
@@ -47,6 +49,9 @@ msgid ""
 "gdal#t=00:02:58>`__ how Frank Warmerdam prounounces it and the history "
 "behind the acronym."
 msgstr ""
+"`これを <https://soundcloud.com/danabauer/how-do-you-pronounce-"
+"gdal#t=00:02:58>`__ 聞いて下さい。 Frank Warmerdam がこれをどう発音したかと "
+"頭字語の歴史."
 
 #: ../../source/faq.rst:25
 msgid "What is this OGR stuff?"
