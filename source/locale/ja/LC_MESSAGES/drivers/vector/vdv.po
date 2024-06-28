@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -72,7 +72,7 @@ msgid "Driver capabilities"
 msgstr ""
 
 #: ../../source/drivers/vector/vdv.rst:41
-msgid "Creation issues"
+msgid "Creations issues"
 msgstr ""
 
 #: ../../source/drivers/vector/vdv.rst:43
@@ -85,35 +85,31 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/vector/vdv.rst:49
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are available:"
+msgid "The following dataset creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/vdv.rst:59
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"available:"
+#: ../../source/drivers/vector/vdv.rst:58
+msgid "The following layer creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/vdv.rst:152
+#: ../../source/drivers/vector/vdv.rst:150
 msgid "Links"
 msgstr ""
 
-#: ../../source/drivers/vector/vdv.rst:154
+#: ../../source/drivers/vector/vdv.rst:152
 msgid ""
 "`VDV-451 file format <https://www.vdv.de/vdv-"
 "schrift-451.pdfx?forced=false>`__ (German)"
 msgstr ""
 
-#: ../../source/drivers/vector/vdv.rst:157
+#: ../../source/drivers/vector/vdv.rst:155
 msgid ""
 "`VDV-452 data model "
 "<https://www.vdv.de/service/downloads_onp.aspx?id=4328&forced=false>`__ "
 "(German)"
 msgstr ""
 
-#: ../../source/drivers/vector/vdv.rst:159
+#: ../../source/drivers/vector/vdv.rst:157
 msgid ""
 "`Austrian INTREST data format "
 "<https://gip.gv.at/assets/downloads/1908_dokumentation_gipat_ogd.pdf>`__ "
@@ -133,5 +129,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following layer creation options are available:"
+#~ msgstr ""
+
+#~ msgid "Creation issues"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "available:"
 #~ msgstr ""
 

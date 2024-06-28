@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -596,8 +596,8 @@ msgstr ""
 
 #: ../../source/programs/gdal_grid.rst:492
 msgid ""
-"Or just use :ref:`gdal_merge`, to combine the one-band files into a "
-"single one:"
+"Or just :ref:`gdal_merge`, to combine the one-band files into a single "
+"one:"
 msgstr ""
 
 #: ../../source/programs/gdal_grid.rst:501
@@ -634,5 +634,11 @@ msgstr ""
 #~ "Or just :ref:`gdal_merge`, to combine "
 #~ "the one-band files into a single"
 #~ " one:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Or just use :ref:`gdal_merge`, to "
+#~ "combine the one-band files into a"
+#~ " single one:"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -95,40 +95,32 @@ msgstr ""
 #: ../../source/drivers/vector/esrijson.rst:51
 msgid ""
 "Starting with GDAL 2.3, the URL/filename/text might be prefixed with "
-"ESRIJSON: to avoid any ambiguity with other drivers. Alternatively, "
-"starting with GDAL 3.10, specifying the ``-if ESRIJSON`` option to "
-"command line utilities accepting it, or ``ESRIJSON`` as the only value of"
-" the ``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, also forces the "
-"driver to recognize the passed URL/filename/text."
+"ESRIJSON: to avoid any ambiguity with other drivers."
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:60
+#: ../../source/drivers/vector/esrijson.rst:55
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:62
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/esrijson.rst:73
+#: ../../source/drivers/vector/esrijson.rst:65
 msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:75
+#: ../../source/drivers/vector/esrijson.rst:67
 msgid ""
 "Read the result of a FeatureService request against a GeoServices REST "
 "server (note that this server does not support paging):"
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:83
+#: ../../source/drivers/vector/esrijson.rst:75
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:85
+#: ../../source/drivers/vector/esrijson.rst:77
 msgid ":ref:`GeoJSON driver <vector.geojson>`"
 msgstr ""
 
-#: ../../source/drivers/vector/esrijson.rst:86
+#: ../../source/drivers/vector/esrijson.rst:78
 msgid ""
 "`GeoServices REST Specification <http://www.esri.com/industries/landing-"
 "pages/geoservices/geoservices.html>`__"
@@ -145,5 +137,22 @@ msgstr ""
 #~ "URL/filename/text might be prefixed with "
 #~ "ESRIJSON: to avoid any ambiguity with"
 #~ " other drivers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 2.3, the "
+#~ "URL/filename/text might be prefixed with "
+#~ "ESRIJSON: to avoid any ambiguity with"
+#~ " other drivers. Alternatively, starting "
+#~ "with GDAL 3.10, specifying the ``-if "
+#~ "ESRIJSON`` option to command line "
+#~ "utilities accepting it, or ``ESRIJSON`` "
+#~ "as the only value of the "
+#~ "``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, "
+#~ "also forces the driver to recognize "
+#~ "the passed URL/filename/text."
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
 #~ msgstr ""
 

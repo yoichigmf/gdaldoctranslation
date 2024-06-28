@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -175,45 +175,39 @@ msgstr ""
 msgid "Layer Creation Options"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:108
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/mssqlspatial.rst:216
+#: ../../source/drivers/vector/mssqlspatial.rst:213
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:218
-msgid "|about-config-options| The following configuration options are available:"
+#: ../../source/drivers/vector/mssqlspatial.rst:215
+msgid "The following :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:284
+#: ../../source/drivers/vector/mssqlspatial.rst:281
 msgid "Transaction support"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:286
+#: ../../source/drivers/vector/mssqlspatial.rst:283
 msgid "The driver implements transactions at the dataset level, per :ref:`rfc-54`"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:289
+#: ../../source/drivers/vector/mssqlspatial.rst:286
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:291
+#: ../../source/drivers/vector/mssqlspatial.rst:288
 msgid "Creating a layer from an OGR data source"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:299
+#: ../../source/drivers/vector/mssqlspatial.rst:296
 msgid "Connecting to a layer and dump the contents"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:307
+#: ../../source/drivers/vector/mssqlspatial.rst:304
 msgid "Connecting with username/password"
 msgstr ""
 
-#: ../../source/drivers/vector/mssqlspatial.rst:313
+#: ../../source/drivers/vector/mssqlspatial.rst:310
 msgid "Connecting with username/password stored in environment variables"
 msgstr ""
 
@@ -232,5 +226,16 @@ msgstr ""
 #~ msgid ""
 #~ "The following :ref:`configuration options "
 #~ "<configoptions>` are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
 #~ msgstr ""
 

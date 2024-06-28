@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -94,7 +94,7 @@ msgstr ""
 #: ../../source/drivers/raster/gtiff.rst:57
 msgid ""
 "By default, information is fetched in following order (first listed is "
-"the highest priority): PAM (Persistent Auxiliary metadata) .aux.xml "
+"the most prioritary): PAM (Persistent Auxiliary metadata) .aux.xml "
 "sidecar file, INTERNAL (GeoTIFF keys and tags), TABFILE (.tab), WORLDFILE"
 " (.tfw, .tifw/.tiffw or .wld), XML (.xml)"
 msgstr ""
@@ -105,15 +105,15 @@ msgid ""
 "be changed with the :config:`GDAL_GEOREF_SOURCES` configuration option "
 "(or :oo:`GEOREF_SOURCES` open option) whose value is a comma-separated "
 "list of the following keywords : PAM, INTERNAL, TABFILE, WORLDFILE, XML "
-"(added in 3.7), NONE. Earlier mentioned sources take priority over later "
-"ones. A non mentioned source will be ignored."
+"(added in 3.7), NONE. First mentioned sources are the most prioritary "
+"over the next ones. A non mentioned source will be ignored."
 msgstr ""
 
 #: ../../source/drivers/raster/gtiff.rst:69
 msgid ""
 "For example setting it to \"WORLDFILE,PAM,INTERNAL\" will make a "
-"geotransformation matrix from a potential worldfile priority over PAM or "
-"GeoTIFF."
+"geotransformation matrix from a potential worldfile prioritary over PAM "
+"or GeoTIFF."
 msgstr ""
 
 #: ../../source/drivers/raster/gtiff.rst:73
@@ -509,41 +509,37 @@ msgstr ""
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:307
-msgid "|about-open-options| This driver supports the following open options:"
-msgstr ""
-
 #: ../../source/drivers/raster/gtiff.rst:-1
 msgid ""
-"NUM_THREADS=[<number_of_threads>/ALL_CPUS]:  (GDAL >= 2.1) Enable multi-"
-"threaded compression by specifying the number of worker threads. Worth it"
-" for slow compression algorithms such as DEFLATE or LZMA. Default is "
-"compression in the main thread. Starting with GDAL 3.6, this option also "
-"enables multi-threaded decoding when RasterIO() requests intersect "
-"several tiles/strips. The GDAL_NUM_THREADS configuration option can also "
-"be used as an alternative to setting the open option."
+"NUM_THREADS=[<number_of_threads>/ALL_CPUS]: Enable multi-threaded "
+"compression by specifying the number of worker threads. Worth it for slow"
+" compression algorithms such as DEFLATE or LZMA. Default is compression "
+"in the main thread. Starting with GDAL 3.6, this option also enables "
+"multi-threaded decoding when RasterIO() requests intersect several "
+"tiles/strips. The GDAL_NUM_THREADS configuration option can also be used "
+"as an alternative to setting the open option."
 msgstr ""
 
 #: ../../source/drivers/raster/gtiff.rst:-1
 msgid ""
 "GEOREF_SOURCES=comma-separated list with one or several of PAM, INTERNAL,"
-" TABFILE, WORLDFILE or XML (XML added in 3.7):  (GDAL >= 2.2) Define "
-"which georeferencing sources are allowed and their priority order. See "
+" TABFILE, WORLDFILE or XML (XML added in 3.7): Define which "
+"georeferencing sources are allowed and their priority order. See "
 "Georeferencing paragraph."
 msgstr ""
 
 #: ../../source/drivers/raster/gtiff.rst:-1
 msgid ""
-"SPARSE_OK=[TRUE/FALSE]:  (GDAL >= 2.2)  Defaults to FALSE. Should empty "
-"blocks be omitted on disk? When this option is set, any attempt of "
-"writing a block whose all pixels are 0 or the nodata value will cause it "
-"not to be written at all (unless there is a corresponding block already "
-"allocated in the file). Sparse files have 0 tile/strip offsets for blocks"
-" never written and save space; however, most non-GDAL packages cannot "
-"read such files."
+"SPARSE_OK=[TRUE/FALSE]:  Defaults to FALSE. Should empty blocks be "
+"omitted on disk? When this option is set, any attempt of writing a block "
+"whose all pixels are 0 or the nodata value will cause it not to be "
+"written at all (unless there is a corresponding block already allocated "
+"in the file). Sparse files have 0 tile/strip offsets for blocks never "
+"written and save space; however, most non-GDAL packages cannot read such "
+"files."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:344
+#: ../../source/drivers/raster/gtiff.rst:341
 msgid ""
 "**IGNORE_COG_LAYOUT_BREAK=YES/NO** (GDAL >= 3.8): Updating a COG (Cloud "
 "Optimized GeoTIFF) file generally breaks part of the optimizations, but "
@@ -554,11 +550,11 @@ msgid ""
 "mode, and is ignored on regular (Geo)TIFF files."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:354
+#: ../../source/drivers/raster/gtiff.rst:351
 msgid "Creation Issues"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:356
+#: ../../source/drivers/raster/gtiff.rst:353
 msgid ""
 "GeoTIFF files can be created with any GDAL defined band type, including "
 "the complex types. Created files may have any number of bands. Files of "
@@ -571,29 +567,23 @@ msgid ""
 "and reading, by storing them in the GDAL internal metadata TIFF tag."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:367
+#: ../../source/drivers/raster/gtiff.rst:364
 msgid ""
 "The TIFF format only supports R,G,B components for palettes / color "
 "tables. Thus on writing the alpha information will be silently discarded."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:371
+#: ../../source/drivers/raster/gtiff.rst:368
 msgid ""
 "You may want to read hints to `generate and read cloud optimized GeoTIFF "
 "files <https://trac.osgeo.org/gdal/wiki/CloudOptimizedGeoTIFF>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:375
+#: ../../source/drivers/raster/gtiff.rst:372
 msgid "Creation Options"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:377
-msgid ""
-"|about-creation-options| This driver supports the following creation "
-"options:"
-msgstr ""
-
-#: ../../source/drivers/raster/gtiff.rst:449
+#: ../../source/drivers/raster/gtiff.rst:443
 msgid ""
 "``JPEG`` should generally only be used with Byte data (8 bit per "
 "channel). Better compression for RGB images can be obtained by using the "
@@ -601,7 +591,7 @@ msgid ""
 "components."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:453
+#: ../../source/drivers/raster/gtiff.rst:447
 msgid ""
 "Starting with GDAL 3.4, if GDAL is built with its internal libtiff, read "
 "and write support for JPEG-in-TIFF compressed images with 12-bit sample "
@@ -612,26 +602,26 @@ msgid ""
 " libjpeg-6b or external libjpeg (like libjpeg-turbo)"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:461
+#: ../../source/drivers/raster/gtiff.rst:455
 msgid ""
 "``CCITTFAX3``, ``CCITTFAX4`` or ``CCITRLE`` compression should only be "
 "used with 1bit (NBITS=1) data"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:463
+#: ../../source/drivers/raster/gtiff.rst:457
 msgid ""
 "``LZW``, ``DEFLATE`` and ``ZSTD`` compressions can be used with the "
 "PREDICTOR creation option."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:465
+#: ../../source/drivers/raster/gtiff.rst:459
 msgid ""
 "``ZSTD`` is available since GDAL 2.3 when using internal libtiff and if "
 "GDAL built against libzstd >=1.0, or if built against external libtiff "
 "with zstd support."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:468
+#: ../../source/drivers/raster/gtiff.rst:462
 msgid ""
 "``LERC`` and ``LERC_DEFLATE`` are available only when using internal "
 "libtiff for GDAL < 3.3.0. Since GDAL 3.3.0, LERC compression is also "
@@ -639,11 +629,11 @@ msgid ""
 "itself against https://github.com/esri/lerc"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:472
+#: ../../source/drivers/raster/gtiff.rst:466
 msgid "``LERC_ZSTD`` is available when ``LERC`` and ``ZSTD`` are available."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:474
+#: ../../source/drivers/raster/gtiff.rst:468
 msgid ""
 "``JXL`` is for JPEG-XL, and is only available when using internal libtiff"
 " and building GDAL against https://github.com/libjxl/libjxl . Supported "
@@ -652,24 +642,24 @@ msgid ""
 "(the default) on datasets with 4 bands or less."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:479
+#: ../../source/drivers/raster/gtiff.rst:473
 msgid "``NONE`` is the default."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:527
+#: ../../source/drivers/raster/gtiff.rst:521
 msgid ""
 "Low values result in higher compression ratios, but poorer image quality "
 "with strong blocking artifacts. Values above 95 are not meaningfully "
 "better quality but can be substantially larger."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:540
+#: ../../source/drivers/raster/gtiff.rst:534
 msgid ""
 "0: JpegTables is not written. Each strip/tile contains its own "
 "quantization tables and use optimized Huffman coding."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:542
+#: ../../source/drivers/raster/gtiff.rst:536
 msgid ""
 "1: JpegTables is written with only the quantization tables. Each "
 "strip/tile refers to those quantized tables and use optimized Huffman "
@@ -677,7 +667,7 @@ msgid ""
 "consequently is the default."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:546
+#: ../../source/drivers/raster/gtiff.rst:540
 msgid ""
 "2: JpegTables is written with only the default Huffman tables. Each "
 "strip/tile refers to those Huffman tables (thus no optimized Huffman "
@@ -685,7 +675,7 @@ msgid ""
 " has no anticipated practical value."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:550
+#: ../../source/drivers/raster/gtiff.rst:544
 msgid ""
 "3: JpegTables is written with the quantization and default Huffman "
 "tables. Each strip/tile refers to those tables (thus no optimized Huffman"
@@ -693,53 +683,53 @@ msgid ""
 " 1, but this should only occur in rare circumstances."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:673
+#: ../../source/drivers/raster/gtiff.rst:667
 msgid ""
 "With ``GDALGeoTIFF`` (the default) various GDAL custom tags may be "
 "written."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:675
+#: ../../source/drivers/raster/gtiff.rst:669
 msgid "With ``GeoTIFF`` only GeoTIFF tags will be added to the baseline."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:676
+#: ../../source/drivers/raster/gtiff.rst:670
 msgid ""
 "With ``BASELINE`` no GDAL or GeoTIFF tags will be written. BASELINE is "
 "occasionally useful when writing files to be read by applications "
 "intolerant of unrecognized tags."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:686
+#: ../../source/drivers/raster/gtiff.rst:680
 msgid "``YES`` forces BigTIFF."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:687
+#: ../../source/drivers/raster/gtiff.rst:681
 msgid "``NO`` forces classic TIFF."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:688
+#: ../../source/drivers/raster/gtiff.rst:682
 msgid ""
 "``IF_NEEDED`` will only create a BigTIFF if it is clearly needed (in the "
 "uncompressed case, and image larger than 4GB. So no effect when using a "
 "compression)."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:691
+#: ../../source/drivers/raster/gtiff.rst:685
 msgid ""
 "``IF_SAFER`` will create BigTIFF if the resulting file \\*might\\* exceed"
 " 4GB. Note: this is only a heuristic that might not always work depending"
 " on compression ratios."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:695
+#: ../../source/drivers/raster/gtiff.rst:689
 msgid ""
 "BigTIFF is a TIFF variant which can contain more than 4GiB of data (size "
 "of classic TIFF is limited by that value). This option is available if "
 "GDAL is built with libtiff library version 4.0 or higher."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:700
+#: ../../source/drivers/raster/gtiff.rst:694
 msgid ""
 "When creating a new GeoTIFF with no compression, GDAL computes in advance"
 " the size of the resulting file. If that computed file size is over 4GiB,"
@@ -754,22 +744,22 @@ msgid ""
 "file size exceeded\"."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:774
+#: ../../source/drivers/raster/gtiff.rst:768
 msgid "Write support for GeoTIFF 1.1 requires libgeotiff 1.6.0 or later."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:777
+#: ../../source/drivers/raster/gtiff.rst:771
 msgid "Subdatasets"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:779
+#: ../../source/drivers/raster/gtiff.rst:773
 msgid ""
 "Multi-page TIFF files are exposed as subdatasets. On opening, a "
 "subdataset name is GTIFF_DIR:{index}:filename.tif, where {index} starts "
 "at 1."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:783
+#: ../../source/drivers/raster/gtiff.rst:777
 msgid ""
 "Starting with GDAL 3.0, subdataset creation is possible by using the "
 "APPEND_SUBDATASET=YES creation option. The filename passed to Create() / "
@@ -777,7 +767,7 @@ msgid ""
 "Creating overviews on a multi-page TIFF is not supported."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:788
+#: ../../source/drivers/raster/gtiff.rst:782
 msgid ""
 "Starting with GDAL 3.2, read-only access to subdataset overviews and "
 "masks is possible provided that they are referenced by their parent IFD "
@@ -785,11 +775,11 @@ msgid ""
 "<https://www.awaresystems.be/imaging/tiff/tifftags/subifds.html>`__ tag."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:793
+#: ../../source/drivers/raster/gtiff.rst:787
 msgid "About JPEG compression of RGB images"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:795
+#: ../../source/drivers/raster/gtiff.rst:789
 msgid ""
 "When translating a RGB image to JPEG-In-TIFF, using PHOTOMETRIC=YCBCR can"
 " make the size of the image typically 2 to 3 times smaller than the "
@@ -798,17 +788,17 @@ msgid ""
 "libtiff will fail to compress the data."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:801
+#: ../../source/drivers/raster/gtiff.rst:795
 msgid ""
 "Note also that the dimensions of the tiles or strips must be a multiple "
 "of 8 for PHOTOMETRIC=RGB or 16 for PHOTOMETRIC=YCBCR"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:805
+#: ../../source/drivers/raster/gtiff.rst:799
 msgid "Lossless conversion of JPEG into JPEG-in-TIFF"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:807
+#: ../../source/drivers/raster/gtiff.rst:801
 msgid ""
 "The conversion of a JPEG file (but *not* a JPEG-in-TIFF file) to a JPEG-"
 "in-TIFF file without decompression and compression cycles, and thus "
@@ -816,59 +806,59 @@ msgid ""
 "the CreateCopy() API), if all the following conditions are met:"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:812
+#: ../../source/drivers/raster/gtiff.rst:806
 msgid ""
 "the source dataset is a JPEG file (or a VRT with a JPEG as a single "
 "SimpleSource)"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:813
+#: ../../source/drivers/raster/gtiff.rst:807
 msgid "the target dataset is a JPEG-in-TIFF file"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:814
+#: ../../source/drivers/raster/gtiff.rst:808
 msgid "no explicitly target JPEG quality is specified"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:815
+#: ../../source/drivers/raster/gtiff.rst:809
 msgid "no change in colorspace is specified"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:816
+#: ../../source/drivers/raster/gtiff.rst:810
 msgid "no sub-windowing is requested"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:817
+#: ../../source/drivers/raster/gtiff.rst:811
 msgid "and more generally, no change that alters pixel values"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:819
+#: ../../source/drivers/raster/gtiff.rst:813
 msgid ""
 "The generation of a tiled JPEG-in-TIFF from the original JPEG image is "
 "possible. Explicit assignment of target SRS and bounds are also possible."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:822
+#: ../../source/drivers/raster/gtiff.rst:816
 msgid "So, the following commands will use the lossless copy method :"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:833
+#: ../../source/drivers/raster/gtiff.rst:827
 msgid ""
 "whereas the following commands will *not* (and thus cause JPEG "
 "decompression and compression):"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:844
+#: ../../source/drivers/raster/gtiff.rst:838
 msgid "Streaming operations"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:846
+#: ../../source/drivers/raster/gtiff.rst:840
 msgid ""
 "The GeoTIFF driver can support reading or writing TIFF files (with some "
 "restrictions detailed below) in a streaming compatible way."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:850
+#: ../../source/drivers/raster/gtiff.rst:844
 msgid ""
 "When reading a file from /vsistdin/, a named pipe (on Unix), or if "
 "forcing streamed reading by setting the :config:`TIFF_READ_STREAMING` "
@@ -889,7 +879,7 @@ msgid ""
 "GDAL raster copy routine will assume."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:868
+#: ../../source/drivers/raster/gtiff.rst:862
 msgid ""
 "If the order is not the one described above, the UNORDERED_BLOCKS=YES "
 "dataset metadata item will be set in the TIFF metadata domain. Each block"
@@ -900,7 +890,7 @@ msgid ""
 "reading order for image blocks."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:876
+#: ../../source/drivers/raster/gtiff.rst:870
 msgid ""
 "The files that are streamed into the GeoTIFF driver may be compressed, "
 "even if the GeoTIFF driver cannot produce such files in streamable output"
@@ -908,7 +898,7 @@ msgid ""
 "for streamed reading)."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:881
+#: ../../source/drivers/raster/gtiff.rst:875
 msgid ""
 "When writing a file to /vsistdout/, a named pipe (on Unix), or when "
 "defining the :co:`STREAMABLE_OUTPUT=YES` creation option, the "
@@ -922,15 +912,15 @@ msgid ""
 " above paragraph, otherwise errors will be reported."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:892
+#: ../../source/drivers/raster/gtiff.rst:886
 msgid "Some examples :"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:898
+#: ../../source/drivers/raster/gtiff.rst:892
 msgid "or"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:906
+#: ../../source/drivers/raster/gtiff.rst:900
 msgid ""
 "Note: not all utilities are compatible with such input or output "
 "streaming operations, and even those which may deal with such files may "
@@ -939,23 +929,23 @@ msgid ""
 " order of the streamed input."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:913
+#: ../../source/drivers/raster/gtiff.rst:907
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:915
+#: ../../source/drivers/raster/gtiff.rst:909
 msgid ""
-"|about-config-options| This paragraph lists the configuration options "
-"that can be set to alter the default behavior of the GTiff driver."
+"This paragraph lists the configuration options that can be set to alter "
+"the default behavior of the GTiff driver."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1012
+#: ../../source/drivers/raster/gtiff.rst:1005
 msgid ""
 ":config:`USE_RRD`: Can be set to TRUE to force external overviews in the "
 "RRD format."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1097
+#: ../../source/drivers/raster/gtiff.rst:1090
 msgid ""
 ":config:`GDAL_NUM_THREADS` enables multi-threaded compression by "
 "specifying the number of worker threads. Worth it for slow compression "
@@ -966,97 +956,97 @@ msgid ""
 "requests intersect several tiles/strips."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1156
+#: ../../source/drivers/raster/gtiff.rst:1121
 msgid "Codec Recommendations"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1160
+#: ../../source/drivers/raster/gtiff.rst:1125
 msgid "LZW"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1162
+#: ../../source/drivers/raster/gtiff.rst:1127
 msgid "If you don't know what to choose, choose this one."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1165
+#: ../../source/drivers/raster/gtiff.rst:1130
 msgid "DEFLATE"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1167
+#: ../../source/drivers/raster/gtiff.rst:1132
 msgid ""
 "The most commonly supported TIFF codec, especially with older non-geo "
 "software."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1170
+#: ../../source/drivers/raster/gtiff.rst:1135
 msgid "LERC"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1172
+#: ../../source/drivers/raster/gtiff.rst:1137
 msgid ""
 "Used for storing quantized floating point data. "
 "https://github.com/esri/lerc"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1176
+#: ../../source/drivers/raster/gtiff.rst:1141
 msgid "ZSTD"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1178
+#: ../../source/drivers/raster/gtiff.rst:1143
 msgid "Smaller and faster than DEFLATE, but not as commonly supported."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1181
+#: ../../source/drivers/raster/gtiff.rst:1146
 msgid "WEBP"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1183
+#: ../../source/drivers/raster/gtiff.rst:1148
 msgid "A smaller and faster JPEG."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1186
+#: ../../source/drivers/raster/gtiff.rst:1151
 msgid "JXL"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1188
+#: ../../source/drivers/raster/gtiff.rst:1153
 msgid "Next-gen JPG from the JPG group."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1192
+#: ../../source/drivers/raster/gtiff.rst:1157
 msgid "LZMA"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1194
+#: ../../source/drivers/raster/gtiff.rst:1159
 msgid "Slow but storage efficient."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1197
+#: ../../source/drivers/raster/gtiff.rst:1162
 msgid "CCITTRLE/CCITTFAX3/CCITTFAX4"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1199
+#: ../../source/drivers/raster/gtiff.rst:1164
 msgid "Did you happen to have fax files from the 1990s? Use these."
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1202
+#: ../../source/drivers/raster/gtiff.rst:1167
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1204
+#: ../../source/drivers/raster/gtiff.rst:1169
 msgid "`GeoTIFF Information Page <https://trac.osgeo.org/geotiff>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1205
+#: ../../source/drivers/raster/gtiff.rst:1170
 msgid "`libtiff Page <http://www.simplesystems.org/libtiff/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1206
+#: ../../source/drivers/raster/gtiff.rst:1171
 msgid ""
 "`Details on BigTIFF file format "
 "<http://www.awaresystems.be/imaging/tiff/bigtiff.html>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/gtiff.rst:1208
+#: ../../source/drivers/raster/gtiff.rst:1173
 msgid ":ref:`raster.cog` driver"
 msgstr ""
 
@@ -1338,5 +1328,93 @@ msgstr ""
 #~ "options that can be set to alter"
 #~ " the default behavior of the GTiff"
 #~ " driver."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "By default, information is fetched in"
+#~ " following order (first listed is the"
+#~ " highest priority): PAM (Persistent "
+#~ "Auxiliary metadata) .aux.xml sidecar file, "
+#~ "INTERNAL (GeoTIFF keys and tags), "
+#~ "TABFILE (.tab), WORLDFILE (.tfw, .tifw/.tiffw"
+#~ " or .wld), XML (.xml)"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 2.2, the allowed "
+#~ "sources and their priority order can "
+#~ "be changed with the "
+#~ ":config:`GDAL_GEOREF_SOURCES` configuration option "
+#~ "(or :oo:`GEOREF_SOURCES` open option) whose"
+#~ " value is a comma-separated list "
+#~ "of the following keywords : PAM, "
+#~ "INTERNAL, TABFILE, WORLDFILE, XML (added "
+#~ "in 3.7), NONE. Earlier mentioned sources"
+#~ " take priority over later ones. A "
+#~ "non mentioned source will be ignored."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For example setting it to "
+#~ "\"WORLDFILE,PAM,INTERNAL\" will make a "
+#~ "geotransformation matrix from a potential "
+#~ "worldfile priority over PAM or GeoTIFF."
+#~ msgstr ""
+
+#~ msgid "|about-open-options| This driver supports the following open options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "NUM_THREADS=[<number_of_threads>/ALL_CPUS]:  (GDAL >= "
+#~ "2.1) Enable multi-threaded compression "
+#~ "by specifying the number of worker "
+#~ "threads. Worth it for slow compression"
+#~ " algorithms such as DEFLATE or LZMA."
+#~ " Default is compression in the main"
+#~ " thread. Starting with GDAL 3.6, this"
+#~ " option also enables multi-threaded "
+#~ "decoding when RasterIO() requests intersect"
+#~ " several tiles/strips. The GDAL_NUM_THREADS "
+#~ "configuration option can also be used"
+#~ " as an alternative to setting the "
+#~ "open option."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "GEOREF_SOURCES=comma-separated list with one"
+#~ " or several of PAM, INTERNAL, "
+#~ "TABFILE, WORLDFILE or XML (XML added "
+#~ "in 3.7):  (GDAL >= 2.2) Define "
+#~ "which georeferencing sources are allowed "
+#~ "and their priority order. See "
+#~ "Georeferencing paragraph."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "SPARSE_OK=[TRUE/FALSE]:  (GDAL >= 2.2)  "
+#~ "Defaults to FALSE. Should empty blocks"
+#~ " be omitted on disk? When this "
+#~ "option is set, any attempt of "
+#~ "writing a block whose all pixels "
+#~ "are 0 or the nodata value will "
+#~ "cause it not to be written at "
+#~ "all (unless there is a corresponding "
+#~ "block already allocated in the file)."
+#~ " Sparse files have 0 tile/strip "
+#~ "offsets for blocks never written and "
+#~ "save space; however, most non-GDAL "
+#~ "packages cannot read such files."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-creation-options| This driver "
+#~ "supports the following creation options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| This paragraph "
+#~ "lists the configuration options that can"
+#~ " be set to alter the default "
+#~ "behavior of the GTiff driver."
 #~ msgstr ""
 

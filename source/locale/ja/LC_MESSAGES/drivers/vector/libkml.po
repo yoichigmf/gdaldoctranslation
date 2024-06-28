@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -108,36 +108,36 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/vector/libkml.rst:73
-msgid "Dataset creation options"
+msgid "Datasource creation options"
 msgstr ""
 
 #: ../../source/drivers/vector/libkml.rst:75
 msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"can be used to generate a `<atom:Author> "
+"The following datasource creation options can be used to generate a "
+"`<atom:Author> "
 "<https://developers.google.com/kml/documentation/kmlreference#atomauthor>`__"
 " element at the top Document level."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:95
-msgid "Additional dataset creation options affecting the top Document level:"
+#: ../../source/drivers/vector/libkml.rst:94
+msgid "Additional datasource creation options affecting the top Document level:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:117
+#: ../../source/drivers/vector/libkml.rst:116
 msgid "Container properties"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:119
+#: ../../source/drivers/vector/libkml.rst:118
 msgid ""
 "The following dataset creation options can be used to set container "
 "options :"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:148
+#: ../../source/drivers/vector/libkml.rst:147
 msgid "List style"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:150
+#: ../../source/drivers/vector/libkml.rst:149
 msgid ""
 "The following dataset creation options can be used to control how the "
 "main folder (folder of layers) appear in the Places panel of the Earth "
@@ -146,11 +146,11 @@ msgid ""
 " element:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:171
+#: ../../source/drivers/vector/libkml.rst:170
 msgid "Balloon style"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:173
+#: ../../source/drivers/vector/libkml.rst:172
 msgid ""
 "If a style *foo* is defined, it is possible to add a `<BalloonStyle> "
 "<https://developers.google.com/kml/documentation/kmlreference#balloonstyle>`__"
@@ -158,11 +158,11 @@ msgid ""
 "**foo_BALLOONSTYLE_TEXT** elements."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:179
+#: ../../source/drivers/vector/libkml.rst:178
 msgid "NetworkLinkControl"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:181
+#: ../../source/drivers/vector/libkml.rst:180
 msgid ""
 "A `<NetworkLinkControl> "
 "<https://developers.google.com/kml/documentation/kmlreference#networklinkcontrol>`__"
@@ -170,11 +170,11 @@ msgid ""
 " option is specified:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:235
+#: ../../source/drivers/vector/libkml.rst:234
 msgid "Update documents"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:237
+#: ../../source/drivers/vector/libkml.rst:236
 msgid ""
 "When defining the dataset creation option **UPDATE_TARGETHREF**, a "
 "NetworkLinkControl KML file with an `<Update> "
@@ -183,7 +183,7 @@ msgid ""
 "<https://developers.google.com/kml/documentation/updates>`__."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:243
+#: ../../source/drivers/vector/libkml.rst:242
 msgid ""
 "The CreateFeature() operation on a layer will be translated as a "
 "`<Create> "
@@ -191,14 +191,14 @@ msgid ""
 "element."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:247
+#: ../../source/drivers/vector/libkml.rst:246
 msgid ""
 "The SetFeature() operation on a layer will be translated as a `<Change> "
 "<https://developers.google.com/kml/documentation/kmlreference#change>`__ "
 "element."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:251
+#: ../../source/drivers/vector/libkml.rst:250
 msgid ""
 "The DeleteFeature() operation on a layer will be translated as a "
 "`<Delete> "
@@ -206,11 +206,11 @@ msgid ""
 "element."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:256
+#: ../../source/drivers/vector/libkml.rst:255
 msgid "Layer"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:258
+#: ../../source/drivers/vector/libkml.rst:257
 msgid ""
 ":cpp:class:`OGRLayer` are mapped to kml files as a `<Document> "
 "<https://developers.google.com/kml/documentation/kmlreference#document>`__"
@@ -219,12 +219,12 @@ msgid ""
 " and in kmz files or directories as a separate kml file."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:266
-#: ../../source/drivers/vector/libkml.rst:519
+#: ../../source/drivers/vector/libkml.rst:265
+#: ../../source/drivers/vector/libkml.rst:515
 msgid "Style"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:268
+#: ../../source/drivers/vector/libkml.rst:267
 msgid ""
 "Layer style tables can not be read from or written to a kml layer that is"
 " a `<Folder> "
@@ -234,37 +234,36 @@ msgid ""
 " that is the layer."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:276
+#: ../../source/drivers/vector/libkml.rst:275
 msgid "Schema"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:278
+#: ../../source/drivers/vector/libkml.rst:277
 msgid ""
 "Read and write of `<Schema> "
 "<https://developers.google.com/kml/documentation/kmlreference#schema>`__ "
 "is supported for .kml files, .kmz files, and directories."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:283
+#: ../../source/drivers/vector/libkml.rst:282
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:285
+#: ../../source/drivers/vector/libkml.rst:284
 msgid ""
-"|about-layer-creation-options| The following layer creation options can "
-"be used to generate a `<LookAt> "
+"The following layer creation options can be used to generate a `<LookAt> "
 "<https://developers.google.com/kml/documentation/kmlreference#lookat>`__ "
 "element at the layer level."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:305
+#: ../../source/drivers/vector/libkml.rst:303
 msgid ""
 "Alternatively, a `<Camera> "
 "<https://developers.google.com/kml/documentation/kmlreference#camera>`__ "
 "element can be generated."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:325
+#: ../../source/drivers/vector/libkml.rst:323
 msgid ""
 "A `<Region> "
 "<https://developers.google.com/kml/documentation/kmlreference#region>`__ "
@@ -274,30 +273,26 @@ msgid ""
 "spatial extent of the features being written in the layer."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:376
+#: ../../source/drivers/vector/libkml.rst:374
 msgid ""
 "A `<ScreenOverlay> "
 "<https://developers.google.com/kml/documentation/kmlreference#screenoverlay>`__"
 " element can be added to display a logo, a legend, etc..."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:405
+#: ../../source/drivers/vector/libkml.rst:403
 msgid ""
 "The following option controls whether layers are written as a Document or"
 " a Folder:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:417
+#: ../../source/drivers/vector/libkml.rst:415
 msgid ""
 "The following layer creation options can be used to set container options"
 " :"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:445
-msgid "Do not confuse them with the same named dataset creation options."
-msgstr ""
-
-#: ../../source/drivers/vector/libkml.rst:447
+#: ../../source/drivers/vector/libkml.rst:443
 msgid ""
 "The following layer creation options can be used to control how the "
 "folder of a layer appear in the Places panel of the Earth browser, trough"
@@ -306,32 +301,32 @@ msgid ""
 " element:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:468
+#: ../../source/drivers/vector/libkml.rst:464
 msgid "Feature"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:470
+#: ../../source/drivers/vector/libkml.rst:466
 msgid ""
 "An :cpp:class:`OGRFeature` generally translates to kml as a `<Placemark> "
 "<https://developers.google.com/kml/documentation/kmlreference#placemark>`__,"
 " and vice-versa."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:475
+#: ../../source/drivers/vector/libkml.rst:471
 msgid ""
 "If the model field is defined, a `<Model> "
 "<https://developers.google.com/kml/documentation/kmlreference#model>`__ "
 "object within the Placemark will be generated."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:479
+#: ../../source/drivers/vector/libkml.rst:475
 msgid ""
 "If the networklink field is defined, a `<NetworkLink> "
 "<https://developers.google.com/kml/documentation/kmlreference#networklink>`__"
 " will be generated. Other networklink fields are optional."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:483
+#: ../../source/drivers/vector/libkml.rst:479
 msgid ""
 "If the photooverlay field is defined, a `<PhotoOverlay> "
 "<https://developers.google.com/kml/documentation/kmlreference#photooverlay>`__"
@@ -341,7 +336,7 @@ msgid ""
 " field is optional."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:490
+#: ../../source/drivers/vector/libkml.rst:486
 msgid ""
 "In case the PhotoOverlay is a big image, it is highly recommended to tile"
 " it and generate overview levels, as explained in the `PhotoOverlay "
@@ -352,7 +347,7 @@ msgid ""
 "imagepyramid_gridorigin fields should be set."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:498
+#: ../../source/drivers/vector/libkml.rst:494
 msgid ""
 "Placemark, Model, NetworkLink and PhotoOverlay objects can have an "
 "associated camera if the camera_longitude, camera_latitude, "
@@ -360,7 +355,7 @@ msgid ""
 " are defined."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:503
+#: ../../source/drivers/vector/libkml.rst:499
 msgid ""
 "KML `<GroundOverlay> "
 "<https://developers.google.com/kml/documentation/kmlreference#groundoverlay>`__"
@@ -369,11 +364,11 @@ msgid ""
 "FALSE). For such elements, there are icon and drawOrder fields."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:508
+#: ../../source/drivers/vector/libkml.rst:504
 msgid "The following configuration options affect reading of features:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:521
+#: ../../source/drivers/vector/libkml.rst:517
 msgid ""
 "Style Strings at the feature level are Mapped to KML as either a `<Style>"
 " <https://developers.google.com/kml/documentation/kmlreference#style>`__ "
@@ -383,11 +378,11 @@ msgid ""
 "<https://developers.google.com/kml/documentation/kmlreference#placemark>`__."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:528
+#: ../../source/drivers/vector/libkml.rst:524
 msgid "The following configuration options affect handling of styles:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:556
+#: ../../source/drivers/vector/libkml.rst:552
 msgid ""
 "When writing a kml, if there exist 2 styles of the form "
 "\"astylename_normal\" and \"astylename_highlight\" (where astylename is "
@@ -395,11 +390,11 @@ msgid ""
 " called \"astylename\"."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:562
+#: ../../source/drivers/vector/libkml.rst:558
 msgid "Fields"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:564
+#: ../../source/drivers/vector/libkml.rst:560
 msgid ""
 "OGR fields (feature attributes) are mapped to kml with `<Schema> "
 "<https://developers.google.com/kml/documentation/kmlreference#schema>`__;"
@@ -408,29 +403,28 @@ msgid ""
 " except for some special fields as noted below."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:572
+#: ../../source/drivers/vector/libkml.rst:568
 msgid ""
 "It is also possible to export fields as `<Data> "
 "<https://developers.google.com/kml/documentation/kmlreference#data>`__ "
 "elements using the following configuration option:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:581
+#: ../../source/drivers/vector/libkml.rst:577
 msgid ""
 "A rich set of :ref:`configuration options <configoptions>` are available "
 "to define how fields in input and output, map to a KML `<Placemark> "
 "<https://developers.google.com/kml/documentation/kmlreference#placemark>`__."
 " For example, if you want a field called 'Cities' to map to the `<name> "
 "<https://developers.google.com/kml/documentation/kmlreference#name>`__; "
-"tag in KML, you can set a configuration option. Note these are "
-"independent of layer creation and dataset creation options' `<name>`."
+"tag in KML, you can set a configuration option."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:910
+#: ../../source/drivers/vector/libkml.rst:905
 msgid "Geometry"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:912
+#: ../../source/drivers/vector/libkml.rst:907
 msgid ""
 "Translation of :cpp:class:`OGRGeometry` to KML Geometry is pretty "
 "straightforward with only a couple of exceptions. Point to `<Point> "
@@ -458,15 +452,15 @@ msgid ""
 "content."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:937
+#: ../../source/drivers/vector/libkml.rst:932
 msgid "The following configuration options control geometry translation:"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:949
+#: ../../source/drivers/vector/libkml.rst:944
 msgid "VSI Virtual File System API support"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:951
+#: ../../source/drivers/vector/libkml.rst:946
 msgid ""
 "The driver supports reading and writing to files managed by VSI Virtual "
 "File System API, which include \"regular\" files, as well as files in the"
@@ -474,25 +468,19 @@ msgid ""
 "domains."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:956
+#: ../../source/drivers/vector/libkml.rst:951
 msgid "Writing to /dev/stdout or /vsistdout/ is also supported."
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:959
-msgid "Examples"
+#: ../../source/drivers/vector/libkml.rst:954
+msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/libkml.rst:961
+#: ../../source/drivers/vector/libkml.rst:956
 msgid ""
 "The following bash script will build a :ref:`csv <vector.csv>` file and a"
 " :ref:`vrt <vector.vrt>` file, and then translate them to KML using "
 ":ref:`ogr2ogr` into a .kml file with timestamps and styling."
-msgstr ""
-
-#: ../../source/drivers/vector/libkml.rst:1069
-msgid ""
-"The following example shows how the three levels of `<name>` in LIBKML "
-"relate to their controlling options:"
 msgstr ""
 
 #~ msgid "Driver short name"
@@ -545,5 +533,55 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Example"
+#~ msgstr ""
+
+#~ msgid "Dataset creation options"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options can "
+#~ "be used to generate a `<atom:Author> "
+#~ "<https://developers.google.com/kml/documentation/kmlreference#atomauthor>`__"
+#~ " element at the top Document level."
+#~ msgstr ""
+
+#~ msgid "Additional dataset creation options affecting the top Document level:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options can be"
+#~ " used to generate a `<LookAt> "
+#~ "<https://developers.google.com/kml/documentation/kmlreference#lookat>`__"
+#~ " element at the layer level."
+#~ msgstr ""
+
+#~ msgid "Do not confuse them with the same named dataset creation options."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "A rich set of :ref:`configuration "
+#~ "options <configoptions>` are available to "
+#~ "define how fields in input and "
+#~ "output, map to a KML `<Placemark> "
+#~ "<https://developers.google.com/kml/documentation/kmlreference#placemark>`__."
+#~ " For example, if you want a "
+#~ "field called 'Cities' to map to "
+#~ "the `<name> "
+#~ "<https://developers.google.com/kml/documentation/kmlreference#name>`__;"
+#~ " tag in KML, you can set a "
+#~ "configuration option. Note these are "
+#~ "independent of layer creation and "
+#~ "dataset creation options' `<name>`."
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The following example shows how the "
+#~ "three levels of `<name>` in LIBKML "
+#~ "relate to their controlling options:"
 #~ msgstr ""
 

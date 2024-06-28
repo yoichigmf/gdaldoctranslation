@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/programs/ogrmerge.rst:5
-msgid "ogrmerge"
+msgid "ogrmerge.py"
 msgstr ""
 
 #: ../../source/programs/ogrmerge.rst:9
@@ -41,9 +41,9 @@ msgstr ""
 
 #: ../../source/programs/ogrmerge.rst:40
 msgid ""
-":program:`ogrmerge` takes as input several vector datasets, each of them "
-"having one or several vector layers, and copies them into a target "
-"dataset."
+":program:`ogrmerge.py` script takes as input several vector datasets, "
+"each of them having one or several vector layers, and copy them in a "
+"target dataset."
 msgstr ""
 
 #: ../../source/programs/ogrmerge.rst:44
@@ -71,12 +71,6 @@ msgid ""
 "potential manual editing of it and :program:`ogr2ogr` can be done."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:61
-msgid ""
-"ogrmerge is a Python utility, and is only available if GDAL Python "
-"bindings are available."
-msgstr ""
-
 #: ../../source/programs/options/help.rst:3
 msgid "Show this help message and exit"
 msgstr ""
@@ -87,26 +81,26 @@ msgid ""
 "exit."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:69
+#: ../../source/programs/ogrmerge.rst:65
 msgid "Output dataset name. Required."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:73
+#: ../../source/programs/ogrmerge.rst:69
 msgid "One or several input vector datasets. Required"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:77
+#: ../../source/programs/ogrmerge.rst:73
 msgid ""
 "Select the output format. Starting with GDAL 2.3, if not specified, the "
 "format is guessed from the extension (previously was ESRI Shapefile). Use"
 " the short format name"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:84
+#: ../../source/programs/ogrmerge.rst:80
 msgid "If specified, all input vector layers will be merged into a single one."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:88
+#: ../../source/programs/ogrmerge.rst:84
 msgid ""
 "Name of the output vector layer (in single mode, and the default is "
 "\"merged\"), or template to name the output vector layers in default mode"
@@ -115,56 +109,56 @@ msgid ""
 "computed from the input layer being processed:"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:94
+#: ../../source/programs/ogrmerge.rst:90
 msgid ""
 "``{AUTO_NAME}``: equivalent to ``{DS_BASENAME}_{LAYER_NAME}`` if both "
 "values are different, or ``{LAYER_NAME}`` when they are identical (case "
 "of shapefile)."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:97
+#: ../../source/programs/ogrmerge.rst:93
 msgid "``{DS_NAME}``: name of the source dataset"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:98
+#: ../../source/programs/ogrmerge.rst:94
 msgid "``{DS_BASENAME}``: base name of the source dataset"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:99
+#: ../../source/programs/ogrmerge.rst:95
 msgid "``{DS_INDEX}``: index of the source dataset"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:100
+#: ../../source/programs/ogrmerge.rst:96
 msgid "``{LAYER_NAME}``: name of the source layer"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:101
+#: ../../source/programs/ogrmerge.rst:97
 msgid "``{LAYER_INDEX}``: index of the source layer"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:105
+#: ../../source/programs/ogrmerge.rst:101
 msgid "Open an existing dataset in update mode."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:109
+#: ../../source/programs/ogrmerge.rst:105
 msgid ""
 "Overwrite the existing dataset if it already exists (for file based "
 "datasets)"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:114
+#: ../../source/programs/ogrmerge.rst:110
 msgid ""
 "Open an existing dataset in update mode, and if output layers already "
 "exist, append the content of input layers to them."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:119
+#: ../../source/programs/ogrmerge.rst:115
 msgid ""
 "Open an existing dataset in update mode, and if output layers already "
 "exist, replace their content with the one of the input layer."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:125
+#: ../../source/programs/ogrmerge.rst:121
 msgid ""
 "Only take into account input layers whose geometry type match the type(s)"
 " specified. Valid values for geom_type_name are GEOMETRY, POINT, "
@@ -173,37 +167,37 @@ msgid ""
 "MULTISURFACE, CURVE, SURFACE, TRIANGLE, POLYHEDRALSURFACE and TIN."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:133
+#: ../../source/programs/ogrmerge.rst:129
 msgid "Dataset creation option (format specific)"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:137
+#: ../../source/programs/ogrmerge.rst:133
 msgid "Layer creation option (format specific)"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:141
+#: ../../source/programs/ogrmerge.rst:137
 msgid "Assign an output SRS"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:145
+#: ../../source/programs/ogrmerge.rst:141
 msgid "Reproject/transform to this SRS on output"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:149
+#: ../../source/programs/ogrmerge.rst:145
 msgid "Override source SRS"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:153
+#: ../../source/programs/ogrmerge.rst:149
 msgid ""
 "Display progress on terminal. Only works if input layers have the \"fast "
 "feature count\" capability."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:158
+#: ../../source/programs/ogrmerge.rst:154
 msgid "Continue after a failure, skipping the failed feature."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:162
+#: ../../source/programs/ogrmerge.rst:158
 msgid ""
 "Only used with :option:`-single`. Determines how the schema of the target"
 " layer is built from the schemas of the input layers. May be FirstLayer "
@@ -212,14 +206,14 @@ msgid ""
 "of all the common fields from all source layers. Defaults to Union."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:171
+#: ../../source/programs/ogrmerge.rst:167
 msgid ""
 "Only used with :option:`-single`. If specified, the schema of the target "
 "layer will be extended with a new field 'name', whose content is "
 "determined by -src_layer_field_content."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:177
+#: ../../source/programs/ogrmerge.rst:173
 msgid ""
 "Only used with :option:`-single`. If specified, the schema of the target "
 "layer will be extended with a new field (whose name is given by "
@@ -228,19 +222,19 @@ msgid ""
 "``layer_name_template`` is the same as for :option:`-nln`."
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:184
+#: ../../source/programs/ogrmerge.rst:180
 msgid "Examples"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:186
+#: ../../source/programs/ogrmerge.rst:182
 msgid "Create a VRT with a layer for each input shapefiles"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:192
+#: ../../source/programs/ogrmerge.rst:188
 msgid "Same, but creates a GeoPackage file"
 msgstr ""
 
-#: ../../source/programs/ogrmerge.rst:198
+#: ../../source/programs/ogrmerge.rst:194
 msgid ""
 "Concatenate the content of france.shp and germany.shp in merged.shp, and "
 "adds a 'country' field to each feature whose value is 'france' or "
@@ -256,5 +250,21 @@ msgstr ""
 #~ "them having one or several vector "
 #~ "layers, and copy them in a target"
 #~ " dataset."
+#~ msgstr ""
+
+#~ msgid "ogrmerge"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":program:`ogrmerge` takes as input several "
+#~ "vector datasets, each of them having "
+#~ "one or several vector layers, and "
+#~ "copies them into a target dataset."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "ogrmerge is a Python utility, and "
+#~ "is only available if GDAL Python "
+#~ "bindings are available."
 #~ msgstr ""
 

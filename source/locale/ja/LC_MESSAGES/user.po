@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-29 00:52+0900\n"
+"POT-Creation-Date: 2024-06-29 04:11+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -171,25 +171,25 @@ msgid ""
 "\"[.some_arbitrary_name]\"), and whose first key is \"path\"."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:155
+#: ../../source/user/configoptions.rst:154
 msgid "Global configuration options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:158
+#: ../../source/user/configoptions.rst:157
 msgid "Logging"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:176
+#: ../../source/user/configoptions.rst:175
 msgid ""
 "At the commandline this can also be set with --debug <value> as well as "
 "with --config CPL_DEBUG <value>."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:203
+#: ../../source/user/configoptions.rst:202
 msgid "Performance and caching"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:258
+#: ../../source/user/configoptions.rst:257
 msgid ""
 "Number of datasets that can be opened simultaneously by the GDALProxyPool"
 " mechanism (used by VRT for example). Can be increased to get better "
@@ -199,7 +199,7 @@ msgid ""
 "currently clamped between 2 and 1000."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:270
+#: ../../source/user/configoptions.rst:269
 #, python-format
 msgid ""
 "The value can also be suffixed with ``MB`` or ``GB`` to respectively "
@@ -207,30 +207,30 @@ msgid ""
 "usable physical RAM minus the :config:`GDAL_CACHEMAX` value."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:279
+#: ../../source/user/configoptions.rst:278
 msgid ""
 "Size of the swath when copying raster data from one dataset to another "
 "one (in bytes). Should not be smaller than :config:`GDAL_CACHEMAX`."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:293
+#: ../../source/user/configoptions.rst:292
 msgid ""
 "If set to EMPTY_DIR, only the file that is being opened will be seen when"
 " a GDAL driver will request sibling files, so this is a way to disable "
 "loading side-car/auxiliary files."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:313
+#: ../../source/user/configoptions.rst:312
 msgid ""
 "When enabled, this cache is used for most I/O in GDAL, including local "
 "files."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:324
+#: ../../source/user/configoptions.rst:323
 msgid "Driver management"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:331
+#: ../../source/user/configoptions.rst:330
 msgid ""
 "This option can be used to unregister one or several GDAL drivers. This "
 "can be useful when a driver tries to open a dataset that it should not "
@@ -240,14 +240,14 @@ msgid ""
 " short name of the GDAL drivers to unregister."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:338
+#: ../../source/user/configoptions.rst:337
 msgid ""
 "This option must be set before calling :cpp:func:`GDALAllRegister`, or an"
 " explicit call to :cpp:func:`GDALDriverManager::AutoSkipDrivers` will be "
 "required."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:355
+#: ../../source/user/configoptions.rst:354
 msgid ""
 "This function will automatically load drivers from shared libraries. It "
 "searches the \"driver path\" for .so (or .dll) files that start with the "
@@ -257,7 +257,7 @@ msgid ""
 "or failing that to call GDALRegisterMe()."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:362
+#: ../../source/user/configoptions.rst:361
 msgid ""
 "There are a few rules for the driver path. If the ``GDAL_DRIVER_PATH`` "
 "environment variable it set, it is taken to be a list of directories to "
@@ -267,54 +267,54 @@ msgid ""
 "UNIX and $(BINDIR)\\gdalplugins on Windows."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:369
+#: ../../source/user/configoptions.rst:368
 msgid ""
 "Auto loading can be completely disabled by setting the "
 "``GDAL_DRIVER_PATH`` config option to \"disable\"."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:372
+#: ../../source/user/configoptions.rst:371
 msgid ""
 "This option must be set before calling :cpp:func:`GDALAllRegister`, or an"
 " explicit call to :cpp:func:`GDALDriverManager::AutoLoadDrivers` will be "
 "required."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:382
+#: ../../source/user/configoptions.rst:381
 msgid "General options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:390
+#: ../../source/user/configoptions.rst:389
 msgid ""
 "This option is read by the GDAL and OGR driver registration functions. It"
 " is used to expand EPSG codes into their description in the OSR model "
 "(WKT based)."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:394
+#: ../../source/user/configoptions.rst:393
 msgid ""
 "On some builds (Unix), the value can be hard-coded at compilation time to"
 " point to the path after installation (/usr/share/gdal/data for example)."
 " On Windows platform, this option must be generally declared."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:488
+#: ../../source/user/configoptions.rst:487
 msgid ""
 "Can be set to YES to use Erdas Imagine format (.aux) as overview format. "
 "See :program:`gdaladdo` documentation."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:499
+#: ../../source/user/configoptions.rst:498
 msgid "Vector related options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:509
+#: ../../source/user/configoptions.rst:508
 msgid ""
 "The approximation of arcs as linestrings is done by splitting the arcs "
 "into subarcs of no more than the angle specified by this option."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:534
+#: ../../source/user/configoptions.rst:533
 msgid ""
 "``DEFAULT``: perform a full analysis of the topological relationships "
 "between all rings, classifying them as shells or holes and associating "
@@ -323,7 +323,7 @@ msgid ""
 "result will be the same as with :config:`OGR_ORGANIZE_POLYGONS=SKIP`."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:540
+#: ../../source/user/configoptions.rst:539
 msgid ""
 "``ONLY_CCW``: assume that rings with clockwise orientation represent "
 "shells and rings with counterclockwise orientation represent holes. "
@@ -331,7 +331,7 @@ msgid ""
 "each hole. The Shapefile driver defaults to this method."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:545
+#: ../../source/user/configoptions.rst:544
 msgid ""
 "``CCW_INNER_JUST_AFTER_CW_OUTER``: assume that rings with clockwise "
 "orientation represent shells and rings with counterclockwise orientation "
@@ -339,7 +339,7 @@ msgid ""
 " associated."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:550
+#: ../../source/user/configoptions.rst:549
 msgid ""
 "``SKIP``: avoid attempting to classify rings as shells or holes. A single"
 " geometry (Polygon/MultiPolygon/CurvePolygon/MultiSurface) will be "
@@ -347,29 +347,29 @@ msgid ""
 "elements are present, a GeometryCollection will be returned."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:570
+#: ../../source/user/configoptions.rst:569
 msgid ""
 "Those XML based drivers should write UTF8 content. If they are provided "
 "with non UTF8 content, they will replace each non-ASCII character by '?' "
 "when OGR_FORCE_ASCII=YES."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:574
+#: ../../source/user/configoptions.rst:573
 msgid ""
 "Set to NO to preserve the content, but beware that the resulting XML file"
 " will not be valid and will require manual edition of the encoding in the"
 " XML header."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:593
+#: ../../source/user/configoptions.rst:592
 msgid "Networking options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:602
+#: ../../source/user/configoptions.rst:601
 msgid "For example:"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:858
+#: ../../source/user/configoptions.rst:870
 msgid ""
 "When using NTLM, you can set the domain by prepending it to the user name"
 " and separating the domain and name with a forward (/) or backward slash "
@@ -378,22 +378,22 @@ msgid ""
 "authentication."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:885
+#: ../../source/user/configoptions.rst:897
 msgid ""
 "GDAL respects the environment variables http_proxy, ftp_proxy, all_proxy "
 "etc, if any of those are set. GDAL_HTTP_PROXY option does however "
 "override any possibly set environment variables."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:930
+#: ../../source/user/configoptions.rst:943
 msgid "Persistent Auxiliary Metadata (PAM) options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:950
+#: ../../source/user/configoptions.rst:963
 msgid "PROJ options"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:959
+#: ../../source/user/configoptions.rst:972
 msgid ""
 "This option can be used to control the behavior of gdalwarp when warping "
 "global datasets or when transforming from/to polar projections, which "
@@ -401,7 +401,7 @@ msgid ""
 "http://trac.osgeo.org/gdal/ticket/2305."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:963
+#: ../../source/user/configoptions.rst:976
 msgid ""
 "The background is that PROJ does not guarantee that converting from "
 "src_srs to dst_srs and then from dst_srs to src_srs will yield to the "
@@ -409,7 +409,7 @@ msgid ""
 "target bounding box of gdalwarp, or to visual artifacts."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:968
+#: ../../source/user/configoptions.rst:981
 msgid ""
 "If CHECK_WITH_INVERT_PROJ option is not set, gdalwarp will check that the"
 " the computed coordinates of the edges of the target image are in the "
@@ -419,11 +419,11 @@ msgid ""
 "result with the invert projection."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:974
+#: ../../source/user/configoptions.rst:987
 msgid "If set to NO, gdalwarp will not attempt to use the invert projection."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:981
+#: ../../source/user/configoptions.rst:994
 msgid ""
 "Used in combination with :config:`CHECK_WITH_INVERT_PROJ=TRUE`. Define "
 "the acceptable threshold used to check if the roundtrip from src_srs to "
@@ -432,15 +432,15 @@ msgid ""
 "degrees for a geographic SRS, meters for a projected SRS)"
 msgstr ""
 
-#: ../../source/user/configoptions.rst:994
+#: ../../source/user/configoptions.rst:1007
 msgid ""
 "Can be set to YES to remove points that cannot be reprojected. This can "
 "for example help reproject lines that have an extremity at a pole, when "
 "the reprojection does not support coordinates at poles."
 msgstr ""
 
-#: ../../source/user/configoptions.rst:1058
-msgid "List of configuration options and where they apply"
+#: ../../source/user/configoptions.rst:1071
+msgid "List of configuration options and where they are documented"
 msgstr ""
 
 #: ../../source/user/coordinate_epoch.rst:5
@@ -622,29 +622,34 @@ msgid ""
 ":program:`gdalwarp` and :program:`ogr2ogr` have a ``-s_coord_epoch`` "
 "option to be used together with ``-s_srs`` (resp. ``-t_coord_epoch`` "
 "option to be used together with ``-t_srs``) to override/set the "
-"coordinate epoch of the source (resp. target) CRS. ``-s_coord_epoch`` and"
-" ``-t_coord_epoch`` are currently mutually exclusive, due to lack of "
-"support for transformations between two dynamic CRS."
+"coordinate epoch of the source (resp. target) CRS."
 msgstr ""
 
-#: ../../source/user/coordinate_epoch.rst:176
+#: ../../source/user/coordinate_epoch.rst:174
+msgid ""
+"Before PROJ 9.4, ``-s_coord_epoch`` and ``-t_coord_epoch`` were mutually "
+"exclusive, due to lack of support for transformations between two dynamic"
+" CRS."
+msgstr ""
+
+#: ../../source/user/coordinate_epoch.rst:177
 msgid ""
 ":program:`gdalwarp` preserves the coordinate epoch in the output SRS when"
 " appropriate."
 msgstr ""
 
-#: ../../source/user/coordinate_epoch.rst:180
+#: ../../source/user/coordinate_epoch.rst:181
 msgid "Support in coordinate transformation"
 msgstr ""
 
-#: ../../source/user/coordinate_epoch.rst:182
+#: ../../source/user/coordinate_epoch.rst:183
 msgid ""
 "The :cpp:class:`OGRCoordinateTransformation` class can perform time-"
 "dependent transformations between a static and dynamic CRS based on the "
 "coordinate epoch passed per vertex."
 msgstr ""
 
-#: ../../source/user/coordinate_epoch.rst:186
+#: ../../source/user/coordinate_epoch.rst:187
 msgid ""
 "It can also take into account the coordinate epoch associated with a "
 "dynamic CRS, when doing time-dependent transformations between a static "
@@ -653,7 +658,7 @@ msgid ""
 " epoch associated with the source or target CRS."
 msgstr ""
 
-#: ../../source/user/coordinate_epoch.rst:192
+#: ../../source/user/coordinate_epoch.rst:193
 msgid ""
 "If a per-vertex time is specified, it overrides the one associated with "
 "the CRS."
@@ -705,64 +710,58 @@ msgstr ""
 msgid "ogrmerge"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:27
-msgid ""
-"For the full list see :ref:`Programs <programs>` and note the ones that "
-"end in ``.py``."
-msgstr ""
-
-#: ../../source/user/gdal_python_utilities.rst:31
+#: ../../source/user/gdal_python_utilities.rst:28
 msgid "Developers"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:33
+#: ../../source/user/gdal_python_utilities.rst:30
 msgid "Read the :ref:`gdal-utils project charter <rfc-78>`."
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:35
+#: ../../source/user/gdal_python_utilities.rst:32
 msgid "Clone or download the gdal project: https://github.com/OSGeo/gdal/"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:37
+#: ../../source/user/gdal_python_utilities.rst:34
 msgid ""
 "In your IDE set gdal-utils as the root folder, `.../swig/python/gdal-"
 "utils <https://github.com/OSGeo/gdal/tree/master/swig/python/gdal-"
 "utils/>`__."
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:40
+#: ../../source/user/gdal_python_utilities.rst:37
 msgid ""
 "**./osgeo_utils** - contains the Programs (those scripts that have launch"
 " wrappers created by pip and added to PYTHONHOME/Scripts)"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:43
+#: ../../source/user/gdal_python_utilities.rst:40
 msgid ""
 "**./osgeo_utils/samples** - working python scripts but not typically "
 "available in path (run them with ``python3 "
 "path/to/samples/something.py``)"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:47
+#: ../../source/user/gdal_python_utilities.rst:44
 msgid ""
 "Improve the docs by editing the RST pages in `.../doc/source "
 "<https://github.com/OSGeo/gdal/tree/master/doc/source>`__ which generate "
 "the web pages:"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:51
+#: ../../source/user/gdal_python_utilities.rst:48
 msgid "https://gdal.org/api/index.html#python-api"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:52
+#: ../../source/user/gdal_python_utilities.rst:49
 msgid "https://gdal.org/programs/index.html#programs"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:53
+#: ../../source/user/gdal_python_utilities.rst:50
 msgid "https://gdal.org/api/python_samples.html"
 msgstr ""
 
-#: ../../source/user/gdal_python_utilities.rst:55
+#: ../../source/user/gdal_python_utilities.rst:52
 msgid ""
 "Contribute changes with `Pull Requests "
 "<https://github.com/OSGeo/gdal/pulls>`__ from your fork to main GDAL "
@@ -1241,27 +1240,39 @@ msgstr ""
 
 #: ../../source/user/multithreading.rst:34
 msgid ""
+"The reason is that most implementations of GDALDataset or GDALRasterBand "
+"are stateful. A GDALDataset typically owns a file handle, and performs "
+"seek/read operations on it, thus not allowing concurrent access. Block "
+"cache related structures for a given GDALDataset are not thread-safe. "
+"Drivers also often implement lazy initialization strategies to access "
+"various metadata which are resolved only the first time the method to "
+"access them is invoked. Drivers may also rely on third-party libraries "
+"that expose objects that are not thread-safe."
+msgstr ""
+
+#: ../../source/user/multithreading.rst:43
+msgid ""
 "Those restrictions apply to the C and C++ ABI, and all languages bindings"
 " (unless they would take special precautions to serialize calls)"
 msgstr ""
 
-#: ../../source/user/multithreading.rst:38
+#: ../../source/user/multithreading.rst:47
 msgid "GDAL block cache and multi-threading"
 msgstr ""
 
-#: ../../source/user/multithreading.rst:40
+#: ../../source/user/multithreading.rst:49
 msgid ""
-"The current design of the GDAL raster block cache make it appropriate to "
-"read several datasets from several threads. However performance issues "
-"may arise when writing several datasets from several threads, due to lock"
-" contention in the global structures of the block cache mechanism."
+"The current design of the GDAL raster block cache allows concurrent reads"
+" of several datasets. However performance issues may arise when writing "
+"several datasets from several threads, due to lock contention in the "
+"global structures of the block cache mechanism."
 msgstr ""
 
-#: ../../source/user/multithreading.rst:46
+#: ../../source/user/multithreading.rst:54
 msgid "RAM fragmentation and multi-threading"
 msgstr ""
 
-#: ../../source/user/multithreading.rst:48
+#: ../../source/user/multithreading.rst:56
 msgid ""
 "It has been observed that scenarios that involve multi-threading reading "
 "or writing of raster datasets are prone to cause a high RAM usage, in "
@@ -1271,18 +1282,18 @@ msgid ""
 " used."
 msgstr ""
 
-#: ../../source/user/multithreading.rst:54
+#: ../../source/user/multithreading.rst:62
 msgid ""
 "For example, with Debian/Ubuntu distributions, this can be done by "
 "installing the ``libtcmalloc-minimal4`` package and running the binary "
 "that executes GDAL with:"
 msgstr ""
 
-#: ../../source/user/multithreading.rst:63
+#: ../../source/user/multithreading.rst:71
 msgid "GDAL and multi-processing"
 msgstr ""
 
-#: ../../source/user/multithreading.rst:65
+#: ../../source/user/multithreading.rst:73
 msgid ""
 "POSIX fork() API should not be called during the middle of a GDAL "
 "operation, otherwise some structures like mutexes might appear to be "
@@ -1721,10 +1732,10 @@ msgstr ""
 #: ../../source/user/virtual_file_systems.rst:79
 #: ../../source/user/virtual_file_systems.rst:168
 #: ../../source/user/virtual_file_systems.rst:195
-#: ../../source/user/virtual_file_systems.rst:1078
-#: ../../source/user/virtual_file_systems.rst:1096
-#: ../../source/user/virtual_file_systems.rst:1207
-#: ../../source/user/virtual_file_systems.rst:1289
+#: ../../source/user/virtual_file_systems.rst:1092
+#: ../../source/user/virtual_file_systems.rst:1110
+#: ../../source/user/virtual_file_systems.rst:1221
+#: ../../source/user/virtual_file_systems.rst:1303
 msgid "Examples:"
 msgstr ""
 
@@ -3370,7 +3381,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/user/ogr_sql_dialect.rst:545
-#: ../../source/user/sql_sqlite_dialect.rst:159
+#: ../../source/user/sql_sqlite_dialect.rst:161
 msgid "Feature id (FID)"
 msgstr ""
 
@@ -3385,15 +3396,15 @@ msgid ""
 msgstr ""
 
 #: ../../source/user/ogr_sql_dialect.rst:554
-#: ../../source/user/sql_sqlite_dialect.rst:169
-#: ../../source/user/sql_sqlite_dialect.rst:177
+#: ../../source/user/sql_sqlite_dialect.rst:171
+#: ../../source/user/sql_sqlite_dialect.rst:179
 msgid ""
 "The field wildcard expansions will not include the feature id, but it may"
 " be explicitly included using a syntax like:"
 msgstr ""
 
 #: ../../source/user/ogr_sql_dialect.rst:562
-#: ../../source/user/sql_sqlite_dialect.rst:119
+#: ../../source/user/sql_sqlite_dialect.rst:120
 msgid "Geometry field"
 msgstr ""
 
@@ -3404,19 +3415,19 @@ msgid ""
 "explicitly but it is still possible to do so. Common use case is when "
 "geometry is the only field that is needed. In this case the name of the "
 "geometry field to be used in the SQL statement is the name returned by "
-":cpp:func:`OGRLayer::GetGeometryColumn`. If the method returns an empty "
-"string then a special name \"_ogr_geometry_\" must be used. The name "
-"begins with an underscore and SQL syntax requires that it must appear "
-"between double quotes. In addition the command line interpreter may "
-"require that double quotes are escaped and the final SELECT statement "
-"could look like:"
+":cpp:func:`OGRLayer::GetGeometryColumn`, and also \"Geometry Column = "
+"...\" in :program:`ogrinfo` output. If the method returns an empty string"
+" then a special name \"_ogr_geometry_\" must be used. The name begins "
+"with an underscore and SQL syntax requires that it must appear between "
+"double quotes. In addition the command line interpreter may require that "
+"double quotes are escaped and the final SELECT statement could look like:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:579
+#: ../../source/user/ogr_sql_dialect.rst:580
 msgid "OGR_GEOMETRY"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:581
+#: ../../source/user/ogr_sql_dialect.rst:582
 msgid ""
 "Some of the data sources (like MapInfo tab) can handle geometries of "
 "different types within the same layer. The ``OGR_GEOMETRY`` special field"
@@ -3426,28 +3437,28 @@ msgid ""
 " the geometries like:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:592
+#: ../../source/user/ogr_sql_dialect.rst:593
 msgid "OGR_GEOM_WKT"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:594
+#: ../../source/user/ogr_sql_dialect.rst:595
 msgid ""
 "The Well Known Text representation of the geometry can also be used as a "
 "special field. To select the WKT of the geometry ``OGR_GEOM_WKT`` might "
 "be included in the select list, like:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:602
+#: ../../source/user/ogr_sql_dialect.rst:603
 msgid ""
 "Using the ``OGR_GEOM_WKT`` and the ``LIKE`` operator in the WHERE clause "
 "we can get similar effect as using OGR_GEOMETRY:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:611
+#: ../../source/user/ogr_sql_dialect.rst:612
 msgid "OGR_GEOM_AREA"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:613
+#: ../../source/user/ogr_sql_dialect.rst:614
 msgid ""
 "The ``OGR_GEOM_AREA`` special field returns the area of the feature's "
 "geometry computed by the OGRSurface::get_Area() method. For "
@@ -3456,16 +3467,16 @@ msgid ""
 "0.0."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:618
+#: ../../source/user/ogr_sql_dialect.rst:619
 msgid "For example, to select only polygon features larger than a given area:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:625
+#: ../../source/user/ogr_sql_dialect.rst:626
 msgid "OGR_STYLE"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:627
-#: ../../source/user/sql_sqlite_dialect.rst:193
+#: ../../source/user/ogr_sql_dialect.rst:628
+#: ../../source/user/sql_sqlite_dialect.rst:195
 msgid ""
 "The ``OGR_STYLE`` special field represents the style string of the "
 "feature returned by OGRFeature::GetStyleString(). By using this field and"
@@ -3473,11 +3484,26 @@ msgid ""
 "style. For example we can select the annotation features as:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:637
+#: ../../source/user/ogr_sql_dialect.rst:638
+msgid ""
+"It is possible to use the ``OGR_STYLE`` field name as a special field "
+"name in the field selection as an alternate way of setting the "
+":cpp:func:`OGRFeature::SetStyleString` value, typically by aliasing "
+"another field or a string literal."
+msgstr ""
+
+#: ../../source/user/ogr_sql_dialect.rst:647
+msgid ""
+"By default, the OGR_STYLE field will still be visible as a regular field."
+" If this is undesirable, starting with GDAL 3.10, it can be hidden by "
+"adding the HIDDEN keyword at the end of the field specification."
+msgstr ""
+
+#: ../../source/user/ogr_sql_dialect.rst:657
 msgid "CREATE INDEX"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:639
+#: ../../source/user/ogr_sql_dialect.rst:659
 msgid ""
 "Some OGR SQL drivers support creating of attribute indexes.  Currently "
 "this includes the Shapefile driver.  An index accelerates very simple "
@@ -3486,53 +3512,53 @@ msgid ""
 "nation_id field of the nation table a command like this would be used:"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:650
+#: ../../source/user/ogr_sql_dialect.rst:670
 msgid "Index Limitations"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:652
+#: ../../source/user/ogr_sql_dialect.rst:672
 msgid ""
 "Indexes are not maintained dynamically when new features are added to or "
 "removed from a layer."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:653
+#: ../../source/user/ogr_sql_dialect.rst:673
 msgid ""
 "Very long strings (longer than 256 characters?) cannot currently be "
 "indexed."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:654
+#: ../../source/user/ogr_sql_dialect.rst:674
 msgid ""
 "To recreate an index it is necessary to drop all indexes on a layer and "
 "then recreate all the indexes."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:655
+#: ../../source/user/ogr_sql_dialect.rst:675
 msgid ""
 "Indexes are not used in any complex queries.   Currently the only query "
 "the will accelerate is a simple \"field = value\" query."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:658
+#: ../../source/user/ogr_sql_dialect.rst:678
 msgid "DROP INDEX"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:660
+#: ../../source/user/ogr_sql_dialect.rst:680
 msgid ""
 "The OGR SQL DROP INDEX command can be used to drop all indexes on a "
 "particular table, or just the index for a particular column."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:669
+#: ../../source/user/ogr_sql_dialect.rst:689
 msgid "ALTER TABLE"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:671
+#: ../../source/user/ogr_sql_dialect.rst:691
 msgid "The following OGR SQL ALTER TABLE commands can be used."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:673
+#: ../../source/user/ogr_sql_dialect.rst:693
 msgid ""
 "-\"ALTER TABLE tablename ADD [COLUMN] columnname columntype\" to add a "
 "new field. Supported if the layer declares the OLCCreateField capability."
@@ -3545,17 +3571,17 @@ msgid ""
 " field. Supported if the layer declares the OLCDeleteField capability."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:678
+#: ../../source/user/ogr_sql_dialect.rst:698
 msgid ""
 "The columntype value follows the syntax of the types supported by the "
 "CAST operator described above."
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:688
+#: ../../source/user/ogr_sql_dialect.rst:708
 msgid "DROP TABLE"
 msgstr ""
 
-#: ../../source/user/ogr_sql_dialect.rst:690
+#: ../../source/user/ogr_sql_dialect.rst:710
 msgid ""
 "The OGR SQL DROP TABLE command can be used to delete a table. This is "
 "only supported on datasources that declare the ODsCDeleteLayer "
@@ -3650,7 +3676,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/user/raster_data_model.rst:10
-#: ../../source/user/vector_data_model.rst:125
+#: ../../source/user/vector_data_model.rst:123
 msgid "Dataset"
 msgstr ""
 
@@ -4585,14 +4611,14 @@ msgid ""
 "from the master database."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:73
+#: ../../source/user/sql_sqlite_dialect.rst:74
 msgid ""
 "The column names that can be used in the result column list, in WHERE, "
 "JOIN, ... clauses are the field names of the layers. Expressions, SQLite "
 "functions, spatial functions, etc... can also be used."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:78
+#: ../../source/user/sql_sqlite_dialect.rst:79
 msgid ""
 "The conditions on fields expressed in WHERE clauses, or in JOINs are "
 "translated, as far as possible, as attribute filters that are applied on "
@@ -4600,17 +4626,17 @@ msgid ""
 "secondary table is not indexed on the key field being used."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:84
+#: ../../source/user/sql_sqlite_dialect.rst:85
 msgid "LIKE operator"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:86
+#: ../../source/user/sql_sqlite_dialect.rst:87
 msgid ""
 "In SQLite, the LIKE operator is case insensitive, unless ``PRAGMA "
 "case_sensitive_like = 1`` has been issued."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:89
+#: ../../source/user/sql_sqlite_dialect.rst:90
 msgid ""
 "Starting with GDAL 3.9, GDAL installs a custom LIKE comparison, such that"
 " UTF-8 characters are taken into account by ``LIKE`` and ``ILIKE`` "
@@ -4625,11 +4651,11 @@ msgid ""
 "<https://en.wikipedia.org/wiki/Greek_and_Coptic>`__ Unicode categories."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:100
+#: ../../source/user/sql_sqlite_dialect.rst:101
 msgid "Delimited identifiers"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:102
+#: ../../source/user/sql_sqlite_dialect.rst:103
 msgid ""
 "If names of layers or attributes are reserved keywords in SQL like 'FROM'"
 " or they begin with a number or underscore they must be handled as "
@@ -4638,14 +4664,14 @@ msgid ""
 "needed."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:111
+#: ../../source/user/sql_sqlite_dialect.rst:112
 msgid ""
 "When SQL statements are used in the command shell and the statement "
 "itself is put between double quotes, the internal double quotes must be "
 "escaped with \\\\"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:121
+#: ../../source/user/sql_sqlite_dialect.rst:122
 msgid ""
 "The ``GEOMETRY`` special field represents the geometry of the feature "
 "returned by OGRFeature::GetGeometryRef(). It can be explicitly specified "
@@ -4653,25 +4679,26 @@ msgid ""
 "the * wildcard is used."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:126
+#: ../../source/user/sql_sqlite_dialect.rst:127
 msgid ""
 "For OGR layers that have a non-empty geometry column name (generally for "
 "RDBMS datasources), as returned by OGRLayer::GetGeometryColumn(), the "
 "name of the geometry special field in the SQL statement will be the name "
 "of the geometry column of the underlying OGR layer. If the name of the "
 "geometry column in the source layer is empty, like with shapefiles etc., "
-"the name to use in the SQL statement is always \"geometry\"."
+"the name to use in the SQL statement is always \"geometry\". Here we'll "
+"use it case-insensitively (as all field names are in a SELECT statement):"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:136
-#: ../../source/user/sql_sqlite_dialect.rst:148
-#: ../../source/user/sql_sqlite_dialect.rst:214
-#: ../../source/user/sql_sqlite_dialect.rst:341
-#: ../../source/user/sql_sqlite_dialect.rst:352
+#: ../../source/user/sql_sqlite_dialect.rst:138
+#: ../../source/user/sql_sqlite_dialect.rst:150
+#: ../../source/user/sql_sqlite_dialect.rst:216
+#: ../../source/user/sql_sqlite_dialect.rst:343
+#: ../../source/user/sql_sqlite_dialect.rst:354
 msgid "returns:"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:161
+#: ../../source/user/sql_sqlite_dialect.rst:163
 msgid ""
 "The feature id is a special property of a feature and not treated as an "
 "attribute of the feature.  In some cases it is convenient to be able to "
@@ -4679,25 +4706,25 @@ msgid ""
 " do so use the name ``rowid``."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:166
+#: ../../source/user/sql_sqlite_dialect.rst:168
 msgid ""
 "Starting with GDAL 3.8, if the layer has a named FID column "
 "(:cpp:func:`OGRLayer::GetFIDColumn` != \"\"), this name may also be used."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:184
+#: ../../source/user/sql_sqlite_dialect.rst:186
 msgid "It is of course possible to rename it:"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:191
+#: ../../source/user/sql_sqlite_dialect.rst:193
 msgid "OGR_STYLE special field"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:203
+#: ../../source/user/sql_sqlite_dialect.rst:205
 msgid "Spatialite SQL functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:205
+#: ../../source/user/sql_sqlite_dialect.rst:207
 msgid ""
 "When GDAL/OGR is build with support for the `Spatialite <https://www"
 ".gaia-gis.it/fossil/libspatialite/index>`_ library, a lot of `extra SQL "
@@ -4706,7 +4733,7 @@ msgid ""
 "column fields, WHERE clauses, etc...."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:230
+#: ../../source/user/sql_sqlite_dialect.rst:232
 msgid ""
 "Note that due to the loose typing mechanism of SQLite, if a geometry "
 "expression returns a NULL value for the first row, this will generally "
@@ -4715,40 +4742,40 @@ msgid ""
 "are returned first:"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:240
+#: ../../source/user/sql_sqlite_dialect.rst:242
 msgid "OGR datasource SQL functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:242
+#: ../../source/user/sql_sqlite_dialect.rst:244
 msgid ""
 "The ``ogr_datasource_load_layers(datasource_name[, update_mode[, "
 "prefix]])`` function can be used to automatically load all the layers of "
 "a datasource as :ref:`VirtualOGR tables <vector.sqlite>`."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:258
+#: ../../source/user/sql_sqlite_dialect.rst:260
 msgid "OGR layer SQL functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:260
+#: ../../source/user/sql_sqlite_dialect.rst:262
 msgid ""
 "The following SQL functions are available and operate on a layer name : "
 "``ogr_layer_Extent()``, ``ogr_layer_SRID()``, "
 "``ogr_layer_GeometryType()`` and ``ogr_layer_FeatureCount()``"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:278
+#: ../../source/user/sql_sqlite_dialect.rst:280
 msgid "OGR compression functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:280
+#: ../../source/user/sql_sqlite_dialect.rst:282
 msgid ""
 "``ogr_deflate(text_or_blob[, compression_level])`` returns a binary blob "
 "compressed with the ZLib deflate algorithm. See "
 ":cpp:func:`CPLZLibDeflate`"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:283
+#: ../../source/user/sql_sqlite_dialect.rst:285
 msgid ""
 "``ogr_inflate(compressed_blob)`` returns the decompressed binary blob, "
 "from a blob compressed with the ZLib deflate algorithm. If the "
@@ -4756,22 +4783,22 @@ msgid ""
 " VARCHAR). See CPLZLibInflate()."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:289
+#: ../../source/user/sql_sqlite_dialect.rst:291
 msgid "Other functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:291
+#: ../../source/user/sql_sqlite_dialect.rst:293
 msgid ""
 "The ``hstore_get_value()`` function can be used to extract a value "
 "associate to a key from a HSTORE string, formatted like "
 "\"key=>value,other_key=>other_value,...\""
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:301
+#: ../../source/user/sql_sqlite_dialect.rst:303
 msgid "Raster related functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:303
+#: ../../source/user/sql_sqlite_dialect.rst:305
 msgid ""
 "The ``gdal_get_pixel_value()`` function (added in GDAL 3.7) can be used "
 "to extract the value of a pixel in a GDAL dataset. It requires the "
@@ -4779,44 +4806,44 @@ msgid ""
 "(for security reasons)."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:307
+#: ../../source/user/sql_sqlite_dialect.rst:309
 msgid "It takes 5 arguments:"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:309
+#: ../../source/user/sql_sqlite_dialect.rst:311
 msgid "a string with the dataset name"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:310
+#: ../../source/user/sql_sqlite_dialect.rst:312
 msgid "a band number (numbering starting at 1)"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:311
+#: ../../source/user/sql_sqlite_dialect.rst:313
 msgid ""
 "a string being \"georef\" to indicate that subsequent values will be "
 "georeferenced coordinates, or \"pixel\" to indicate that subsequent "
 "values will be in column, line pixel space"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:314
+#: ../../source/user/sql_sqlite_dialect.rst:316
 msgid "georeferenced X value or column number"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:315
+#: ../../source/user/sql_sqlite_dialect.rst:317
 msgid "georeferenced Y value or line number"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:324
+#: ../../source/user/sql_sqlite_dialect.rst:326
 msgid "OGR geocoding functions"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:326
+#: ../../source/user/sql_sqlite_dialect.rst:328
 msgid ""
 "The following SQL functions are available : ``ogr_geocode(...)`` and "
 "``ogr_geocode_reverse(...)``."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:328
+#: ../../source/user/sql_sqlite_dialect.rst:330
 msgid ""
 "``ogr_geocode(name_to_geocode [, field_to_return [, option1 [, option2, "
 "...]]])`` where name_to_geocode is a literal or a column name that must "
@@ -4828,13 +4855,13 @@ msgid ""
 "understood by :cpp:func:`OGRGeocodeCreateSession` or OGRGeocode()."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:335
+#: ../../source/user/sql_sqlite_dialect.rst:337
 msgid ""
 "This function internally uses the OGRGeocode() API. Refer to it for more "
 "details."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:387
+#: ../../source/user/sql_sqlite_dialect.rst:389
 msgid ""
 "``ogr_geocode_reverse(longitude, latitude, field_to_return [, option1 [, "
 "option2, ...]])`` where longitude, latitude is the coordinate to query. "
@@ -4846,24 +4873,24 @@ msgid ""
 "OGRGeocodeReverse()."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:394
+#: ../../source/user/sql_sqlite_dialect.rst:396
 msgid ""
 "``ogr_geocode_reverse(geometry, field_to_return [, option1 [, option2, "
 "...]])`` is also accepted as an alternate syntax where geometry is a "
 "(Spatialite) point geometry."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:397
+#: ../../source/user/sql_sqlite_dialect.rst:399
 msgid ""
 "This function internally uses the :cpp:func:`OGRGeocodeReverse` API. "
 "Refer to it for more details."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:400
+#: ../../source/user/sql_sqlite_dialect.rst:402
 msgid "Spatialite spatial index"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:402
+#: ../../source/user/sql_sqlite_dialect.rst:404
 msgid ""
 "Spatialite spatial index mechanism can be triggered by making sure a "
 "spatial index virtual table is mentioned in the SQL (of the form "
@@ -4872,22 +4899,22 @@ msgid ""
 "will be built to be used to speed up the spatial queries."
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:407
+#: ../../source/user/sql_sqlite_dialect.rst:409
 msgid ""
 "For example, a spatial intersection between 2 layers, by using a spatial "
 "index on one of the layers to limit the number of actual geometry "
 "intersection computations :"
 msgstr ""
 
-#: ../../source/user/sql_sqlite_dialect.rst:419
+#: ../../source/user/sql_sqlite_dialect.rst:421
 msgid "or more elegantly :"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:7
+#: ../../source/user/vector_data_model.rst:5
 msgid "Vector Data Model"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:9
+#: ../../source/user/vector_data_model.rst:7
 msgid ""
 "This page documents the classes used to handle vector data. Many data "
 "types and method names are based on the OGC Simple Features data model, "
@@ -4897,15 +4924,15 @@ msgid ""
 "vector data."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:13
+#: ../../source/user/vector_data_model.rst:11
 msgid "Class Overview"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:15
+#: ../../source/user/vector_data_model.rst:13
 msgid "The following classes form the core of the vector data model:"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:17
+#: ../../source/user/vector_data_model.rst:15
 msgid ""
 "Geometry (:ref:`ogr_geometry.h <ogrgeometry_cpp>`): The geometry classes "
 "(:cpp:class:`OGRGeometry`, etc) encapsulate the OGC vector data types. "
@@ -4914,42 +4941,42 @@ msgid ""
 "(projection)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:18
+#: ../../source/user/vector_data_model.rst:16
 msgid ""
 "Spatial Reference (:ref:`ogr_spatialref.h <ogrspatialref>`): An "
 ":cpp:class:`OGRSpatialReference` encapsulates the definition of a "
 "projection and datum."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:19
+#: ../../source/user/vector_data_model.rst:17
 msgid ""
 "Feature (:ref:`ogr_feature.h <ogrfeature_cpp>`): The "
 ":cpp:class:`OGRFeature` encapsulates the definition of a whole feature, "
 "that is a set of geometries and attributes relating to a single entity."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:20
+#: ../../source/user/vector_data_model.rst:18
 msgid ""
 "Feature Class Definition (:ref:`ogr_feature.h <ogrfeature_cpp>`): The "
 ":cpp:class:`OGRFeatureDefn` class captures the schema (set of field "
 "definitions) for a group of related features (normally a whole layer)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:21
+#: ../../source/user/vector_data_model.rst:19
 msgid ""
 "Layer (:ref:`ogrsf_frmts.h <ogrlayer_cpp>`): :cpp:class:`OGRLayer` is an "
 "abstract class representing a layer of features in a "
 ":cpp:class:`GDALDataset`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:22
+#: ../../source/user/vector_data_model.rst:20
 msgid ""
 "Dataset (:ref:`gdal_priv.h <gdaldataset_cpp>`): A "
 ":cpp:class:`GDALDataset` is an abstract base class representing a file or"
 " database containing one or more :cpp:class:`OGRLayer` objects."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:23
+#: ../../source/user/vector_data_model.rst:21
 msgid ""
 "Drivers (:ref:`gdal_priv.h <gdaldriver_cpp>`): A :cpp:class:`GDALDriver` "
 "represents a translator for a specific format, capable of opening and "
@@ -4957,11 +4984,11 @@ msgid ""
 "are managed by the :cpp:class:`GDALDriverManager`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:26
+#: ../../source/user/vector_data_model.rst:24
 msgid "Geometry"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:28
+#: ../../source/user/vector_data_model.rst:26
 msgid ""
 "Individual geometry classes are used to represent the different types of "
 "vector geometry. All the geometry classes derive from "
@@ -4979,13 +5006,13 @@ msgid ""
 ":cpp:class:`OGRMultiCurve` and :cpp:class:`OGRMultiSurface`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:32
+#: ../../source/user/vector_data_model.rst:30
 msgid ""
 "Any of the above geometry classes can store coordinates in two (XY), "
 "three (XYZ or XYM), or four (XYZM) dimensions."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:34
+#: ../../source/user/vector_data_model.rst:32
 msgid ""
 "Additional intermediate classes contain functionality that is used by "
 "multiple geometry types. These include :cpp:class:`OGRCurve` (base class "
@@ -4999,7 +5026,7 @@ msgstr ""
 msgid "Diagram of OGRGeometry and subclasses"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:39
+#: ../../source/user/vector_data_model.rst:37
 msgid ""
 "The :cpp:class:`OGRGeometryFactory` is used to convert well known text "
 "(WKT) and well known binary (WKB) format data into the appropriate "
@@ -5007,7 +5034,7 @@ msgid ""
 "formats for representing all the types of simple features geometries."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:41
+#: ../../source/user/vector_data_model.rst:39
 msgid ""
 "The :cpp:class:`OGRGeometry` includes a reference to an "
 ":cpp:class:`OGRSpatialReference` object, defining the spatial reference "
@@ -5016,7 +5043,7 @@ msgid ""
 ":cpp:class:`OGRGeometry` objects using it."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:43
+#: ../../source/user/vector_data_model.rst:41
 msgid ""
 "While it is theoretically possible to derive other or more specific "
 "geometry classes from the existing :cpp:class:`OGRGeometry` classes, this"
@@ -5025,11 +5052,11 @@ msgid ""
 ":cpp:class:`OGRGeometryFactory` without modifying it."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:46
+#: ../../source/user/vector_data_model.rst:44
 msgid "Compatibility issues with non-linear geometries"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:48
+#: ../../source/user/vector_data_model.rst:46
 msgid ""
 "Generic mechanisms have been introduced so that creating or modifying a "
 "feature with a non-linear geometry in a layer of a driver that does not "
@@ -5038,7 +5065,7 @@ msgid ""
 ":ref:`configoptions_vector`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:50
+#: ../../source/user/vector_data_model.rst:48
 msgid ""
 "On the other side, when retrieving data from the OGR C API, the "
 ":cpp:func:`OGRSetNonLinearGeometriesEnabledFlag` function can be used, so"
@@ -5046,11 +5073,11 @@ msgid ""
 "their linear approximation if necessary."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:53
+#: ../../source/user/vector_data_model.rst:51
 msgid "Spatial Reference"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:55
+#: ../../source/user/vector_data_model.rst:53
 msgid ""
 "The :cpp:class:`OGRSpatialReference` class is intended to store an "
 "OpenGIS Spatial Reference System definition. Currently local, geographic "
@@ -5060,7 +5087,7 @@ msgid ""
 "versions."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:57
+#: ../../source/user/vector_data_model.rst:55
 msgid ""
 "The spatial coordinate system data model is inherited from the OpenGIS "
 "Well Known Text format. A simple form of this is defined in the Simple "
@@ -5071,18 +5098,18 @@ msgid ""
 "with the earlier simple features form."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:59
+#: ../../source/user/vector_data_model.rst:57
 msgid ""
 "There is also an associated :cpp:class:`OGRCoordinateTransformation` "
 "class that encapsulates use of |PROJ| for converting between different "
 "coordinate systems."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:62
+#: ../../source/user/vector_data_model.rst:60
 msgid "Feature / Feature Definition"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:64
+#: ../../source/user/vector_data_model.rst:62
 msgid ""
 "The :cpp:class:`OGRGeometry` captures the geometry of a vector feature. "
 "The :cpp:class:`OGRFeature` contains geometry, and adds feature "
@@ -5091,7 +5118,7 @@ msgid ""
 " :cpp:class:`OGRFeature`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:66
+#: ../../source/user/vector_data_model.rst:64
 msgid ""
 "The set of attributes (:cpp:class:`OGRFieldDefn`), their types, names and"
 " so forth is represented via the :cpp:class:`OGRFeatureDefn` class. One "
@@ -5100,7 +5127,7 @@ msgid ""
 " that type (or feature class)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:68
+#: ../../source/user/vector_data_model.rst:66
 msgid ""
 "The feature id (FID) of a feature is intended to be a unique identifier "
 "for the feature within the layer it is a member of. Freestanding "
@@ -5111,7 +5138,7 @@ msgid ""
 "a string."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:70
+#: ../../source/user/vector_data_model.rst:68
 msgid ""
 "The :cpp:class:`OGRFeatureDefn` also contains an indicator of the types "
 "of geometry allowed for that feature class (returned as an "
@@ -5123,7 +5150,7 @@ msgid ""
 "a common attribute schema."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:72
+#: ../../source/user/vector_data_model.rst:70
 msgid ""
 "Several geometry fields (:cpp:class:`OGRGeomFieldDefn`) can be associated"
 " with an :cpp:class:`OGRFeatureDefn`. Each geometry field has its own "
@@ -5132,17 +5159,17 @@ msgid ""
 "returned by :cpp:func:`OGRGeomFieldDefn::GetSpatialRef`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:74
+#: ../../source/user/vector_data_model.rst:72
 msgid ""
 "The :cpp:class:`OGRFeatureDefn` also contains a feature class name "
 "(normally used as a layer name)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:77
+#: ../../source/user/vector_data_model.rst:75
 msgid "Field Definitions"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:79
+#: ../../source/user/vector_data_model.rst:77
 msgid ""
 "The behavior of each field in a feature class is defined by a shared "
 ":cpp:class:`OGRFieldDefn`. The :cpp:class:`OGRFieldDefn` specifies the "
@@ -5153,7 +5180,7 @@ msgid ""
 ":cpp:enumerator:`OGRFieldSubType::OFSTBoolean`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:84
+#: ../../source/user/vector_data_model.rst:82
 msgid ""
 "The :cpp:class:`OGRFieldDefn` can also track whether a field is allowed "
 "to be null (:cpp:func:`OGRFieldDefn::IsNullable`), whether its value must"
@@ -5163,11 +5190,11 @@ msgid ""
 "manually specified."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:87
+#: ../../source/user/vector_data_model.rst:85
 msgid "Field Domains"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:89
+#: ../../source/user/vector_data_model.rst:87
 msgid ""
 "Some formats support the use of field domains that describe the values "
 "that can be stored in a given attribute field. An "
@@ -5179,40 +5206,40 @@ msgid ""
 "that violate a field's associated :cpp:class:`OGRFieldDomain`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:92
+#: ../../source/user/vector_data_model.rst:90
 msgid "Available types of :cpp:class:`OGRFieldDomain` include:"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:94
+#: ../../source/user/vector_data_model.rst:92
 msgid ""
 ":cpp:class:`OGRCodedFieldDomain`, which constrains values those present "
 "in a specified enumeration"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:95
+#: ../../source/user/vector_data_model.rst:93
 msgid ""
 ":cpp:class:`OGRRangeFieldDomain`, which constrains values to a specified "
 "range"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:96
+#: ../../source/user/vector_data_model.rst:94
 msgid ""
 ":cpp:class:`OGRGlobFieldDomain`, which constrains values to those "
 "matching a specified pattern"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:98
+#: ../../source/user/vector_data_model.rst:96
 msgid ""
 "Additionally, an :cpp:class:`OGRFieldDomain` may define policies "
 "describing the values that should be assigned to domain-controlled fields"
 " when features are split or merged."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:101
+#: ../../source/user/vector_data_model.rst:99
 msgid "Layer"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:103
+#: ../../source/user/vector_data_model.rst:101
 msgid ""
 "An :cpp:class:`OGRLayer` represents a layer of features within a data "
 "source. All features in an :cpp:class:`OGRLayer` share a common schema "
@@ -5223,7 +5250,7 @@ msgid ""
 "or the result of a database query."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:105
+#: ../../source/user/vector_data_model.rst:103
 msgid ""
 "The :cpp:class:`OGRLayer` includes methods for sequential and random "
 "reading and writing. Read access (via the "
@@ -5238,7 +5265,7 @@ msgid ""
 "(:cpp:func:`OGRLayer::SetIgnoredFields`)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:107
+#: ../../source/user/vector_data_model.rst:105
 msgid ""
 "Starting with GDAL 3.6, as an alternative to getting features through "
 "``GetNextFeature``, it is possible to retrieve them by batches, with a "
@@ -5247,7 +5274,7 @@ msgid ""
 ":ref:`vector_api_tut_arrow_stream`)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:109
+#: ../../source/user/vector_data_model.rst:107
 msgid ""
 "An :cpp:class:`OGRLayer` may also store an :cpp:class:`OGRStyleTable` "
 "that provides a set of styles that may be used by features in the layer. "
@@ -5255,7 +5282,7 @@ msgid ""
 " :ref:`ogr_feature_style`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:111
+#: ../../source/user/vector_data_model.rst:109
 msgid ""
 "One flaw in the current OGR architecture is that the spatial and "
 "attribute filters are set directly on the :cpp:class:`OGRLayer` which is "
@@ -5264,7 +5291,7 @@ msgid ""
 "one time with different spatial filters on each."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:116
+#: ../../source/user/vector_data_model.rst:114
 msgid ""
 "Another question that might arise is why the :cpp:class:`OGRLayer` and "
 ":cpp:class:`OGRFeatureDefn` classes are distinct. An "
@@ -5273,14 +5300,14 @@ msgid ""
 " two reasons:"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:118
+#: ../../source/user/vector_data_model.rst:116
 msgid ""
 "As defined now :cpp:class:`OGRFeature` and :cpp:class:`OGRFeatureDefn` "
 "don't depend on :cpp:class:`OGRLayer`, so they can exist independently in"
 " memory without regard to a particular layer in a data store."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:119
+#: ../../source/user/vector_data_model.rst:117
 msgid ""
 "The SF CORBA model does not have a concept of a layer with a single fixed"
 " schema the way that the SFCOM and SFSQL models do. The fact that "
@@ -5289,7 +5316,7 @@ msgid ""
 "implementing SFCORBA support using OGR."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:121
+#: ../../source/user/vector_data_model.rst:119
 msgid ""
 "The :cpp:class:`OGRLayer` class is an abstract base class. An "
 "implementation is expected to be subclassed for each file format driver "
@@ -5297,7 +5324,7 @@ msgid ""
 ":cpp:class:`GDALDataset`, and aren't instantiated or destroyed directly."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:127
+#: ../../source/user/vector_data_model.rst:125
 msgid ""
 "A :cpp:class:`GDALDataset` represents a set of :cpp:class:`OGRLayer` "
 "objects. This usually represents a single file, set of files, database or"
@@ -5305,7 +5332,7 @@ msgid ""
 "which it owns but can return references to."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:129
+#: ../../source/user/vector_data_model.rst:127
 msgid ""
 ":cpp:class:`GDALDataset` is an abstract base class. An implementation is "
 "expected to be subclassed for each file format driver implemented. "
@@ -5315,14 +5342,14 @@ msgid ""
 " source, but does not normally result in deletion of that file."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:131
+#: ../../source/user/vector_data_model.rst:129
 msgid ""
 "A :cpp:class:`GDALDataset` has a name (usually a filename or database "
 "connection string) that can be used to reopen the data source with a "
 ":cpp:class:`GDALDriver`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:133
+#: ../../source/user/vector_data_model.rst:131
 msgid ""
 "The :cpp:class:`GDALDataset` also has support for executing a datasource "
 "specific command, normally a form of SQL. This is accomplished via the "
@@ -5332,14 +5359,14 @@ msgid ""
 "statement against any datasource (see :ref:`ogr_sql_sqlite_dialect`.)"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:135
+#: ../../source/user/vector_data_model.rst:133
 msgid ""
 "When using some drivers, the :cpp:class:`GDALDataset` also offers a "
 "mechanism for to start, commit, and rollback transactions when "
 "interacting with the underlying data store."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:138
+#: ../../source/user/vector_data_model.rst:136
 msgid ""
 "A :cpp:class:`GDALDataset` may also be aware of relationships between "
 "layers (e.g., a foreign key relationship between database tables). "
@@ -5347,7 +5374,7 @@ msgid ""
 ":cpp:class:`GDALRelationshp`."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:142
+#: ../../source/user/vector_data_model.rst:140
 msgid ""
 "Earlier versions of GDAL represented vector datasets using the "
 ":cpp:class:`OGRDataSource` class. This class has been maintained for "
@@ -5355,11 +5382,11 @@ msgid ""
 ":cpp:class:`GDALDataset` for vector data."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:145
+#: ../../source/user/vector_data_model.rst:143
 msgid "Drivers"
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:147
+#: ../../source/user/vector_data_model.rst:145
 msgid ""
 "A :cpp:class:`GDALDriver` object is instantiated for each file format "
 "supported. The :cpp:class:`GDALDriver` objects are registered with the "
@@ -5367,7 +5394,7 @@ msgid ""
 "to open new datasets."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:149
+#: ../../source/user/vector_data_model.rst:147
 msgid ""
 "It is intended that a new :cpp:class:`GDALDriver` object is instantiated "
 "and define function pointers for operations like Identify(), Open() for "
@@ -5375,7 +5402,7 @@ msgid ""
 ":cpp:class:`GDALDataset`, and :cpp:class:`OGRLayer` classes)."
 msgstr ""
 
-#: ../../source/user/vector_data_model.rst:151
+#: ../../source/user/vector_data_model.rst:149
 msgid ""
 "On application startup registration functions are normally called for "
 "each desired file format. These functions instantiate the appropriate "
@@ -5988,53 +6015,60 @@ msgstr ""
 
 #: ../../source/user/virtual_file_systems.rst:382
 msgid ""
+"retry_codes=``ALL`` or comma-separated list of HTTP error codes. Setting "
+"this option overrides the behavior of the :config:`GDAL_HTTP_RETRY_CODES`"
+" configuration option. (GDAL >= 3.10)"
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:383
+msgid ""
 "list_dir=yes/no: whether an attempt to read the file list of the "
 "directory where the file is located should be done. Default to YES."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:383
+#: ../../source/user/virtual_file_systems.rst:384
 msgid "useragent=value: HTTP UserAgent header"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:384
+#: ../../source/user/virtual_file_systems.rst:385
 msgid "referer=value: HTTP Referer header"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:385
+#: ../../source/user/virtual_file_systems.rst:386
 msgid "cookie=value: HTTP Cookie header"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:386
+#: ../../source/user/virtual_file_systems.rst:387
 msgid ""
 "header_file=value: Filename that contains one or several \"Header: "
 "Value\" lines"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:387
+#: ../../source/user/virtual_file_systems.rst:388
 msgid "unsafessl=yes/no"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:388
+#: ../../source/user/virtual_file_systems.rst:389
 msgid "low_speed_time=value"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:389
+#: ../../source/user/virtual_file_systems.rst:390
 msgid "low_speed_limit=value"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:390
+#: ../../source/user/virtual_file_systems.rst:391
 msgid "proxy=value"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:391
+#: ../../source/user/virtual_file_systems.rst:392
 msgid "proxyauth=value"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:392
+#: ../../source/user/virtual_file_systems.rst:393
 msgid "proxyuserpwd=value"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:393
+#: ../../source/user/virtual_file_systems.rst:394
 msgid ""
 "pc_url_signing=yes/no: whether to use the URL signing mechanism of "
 "Microsoft Planetary Computer "
@@ -6044,13 +6078,13 @@ msgid ""
 "``VSICURL_PC_URL_SIGNING`` set to ``YES``."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:394
+#: ../../source/user/virtual_file_systems.rst:395
 msgid ""
 "pc_collection=name: name of the collection of the dataset for Planetary "
 "Computer URL signing. Only used when pc_url_signing=yes. (GDAL >= 3.5.2)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:396
+#: ../../source/user/virtual_file_systems.rst:397
 msgid ""
 "Partial downloads (requires the HTTP server to support random reading) "
 "are done with a 16 KB granularity by default. Starting with GDAL 2.3, the"
@@ -6061,7 +6095,7 @@ msgid ""
 "improve download performance."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:398
+#: ../../source/user/virtual_file_systems.rst:399
 msgid ""
 "In addition, a global least-recently-used cache of 16 MB shared among all"
 " downloaded content is used, and content in it may be reused after a file"
@@ -6071,7 +6105,7 @@ msgid ""
 "configuration option :config:`CPL_VSIL_CURL_CACHE_SIZE` (in bytes)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:400
+#: ../../source/user/virtual_file_systems.rst:401
 msgid ""
 "When increasing the value of :config:`CPL_VSIL_CURL_CHUNK_SIZE` to "
 "optimize sequential reading, it is recommended to increase "
@@ -6079,7 +6113,7 @@ msgid ""
 ":config:`CPL_VSIL_CURL_CHUNK_SIZE`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:402
+#: ../../source/user/virtual_file_systems.rst:403
 msgid ""
 "Starting with GDAL 2.3, the :config:`GDAL_INGESTED_BYTES_AT_OPEN` "
 "configuration option can be set to impose the number of bytes read in one"
@@ -6087,8 +6121,8 @@ msgid ""
 "geotiff with a large header)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:404
-#: ../../source/user/virtual_file_systems.rst:454
+#: ../../source/user/virtual_file_systems.rst:405
+#: ../../source/user/virtual_file_systems.rst:455
 msgid ""
 "The :config:`GDAL_HTTP_PROXY` (for both HTTP and HTTPS protocols), "
 ":config:`GDAL_HTTPS_PROXY` (for HTTPS protocol only), "
@@ -6098,8 +6132,8 @@ msgid ""
 "``CURLOPT_PROXYAUTH`` options."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:406
-#: ../../source/user/virtual_file_systems.rst:456
+#: ../../source/user/virtual_file_systems.rst:407
+#: ../../source/user/virtual_file_systems.rst:457
 msgid ""
 "Starting with GDAL 2.1.3, the :config:`CURL_CA_BUNDLE` or "
 ":config:`SSL_CERT_FILE` configuration options can be used to set the path"
@@ -6107,14 +6141,14 @@ msgid ""
 "will use a file in a system location)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:408
+#: ../../source/user/virtual_file_systems.rst:409
 msgid ""
 "Starting with GDAL 2.3, additional HTTP headers can be sent by setting "
 "the :config:`GDAL_HTTP_HEADER_FILE` configuration option to point to a "
 "filename of a text file with \"key: value\" HTTP headers."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:410
+#: ../../source/user/virtual_file_systems.rst:411
 msgid ""
 "As an alternative, starting with GDAL 3.6, the "
 ":config:`GDAL_HTTP_HEADERS` configuration option can also be used to "
@@ -6122,7 +6156,7 @@ msgid ""
 "and more, when combined with ``--debug``."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:414
+#: ../../source/user/virtual_file_systems.rst:415
 msgid ""
 "Starting with GDAL 2.3, the :config:`GDAL_HTTP_MAX_RETRY` (number of "
 "attempts) and :config:`GDAL_HTTP_RETRY_DELAY` (in seconds) configuration "
@@ -6130,64 +6164,64 @@ msgid ""
 "errors 429, 502, 503 or 504."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:416
+#: ../../source/user/virtual_file_systems.rst:417
 msgid ""
 "Starting with GDAL 3.6, the following configuration options control the "
 "TCP keep-alive functionality (cf https://daniel.haxx.se/blog/2020/02/10"
 "/curl-ootw-keepalive-time/ for a detailed explanation):"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:418
+#: ../../source/user/virtual_file_systems.rst:419
 msgid ""
 ":config:`GDAL_HTTP_TCP_KEEPALIVE` = YES/NO. whether to enable TCP keep-"
 "alive. Defaults to NO"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:419
+#: ../../source/user/virtual_file_systems.rst:420
 msgid ""
 ":config:`GDAL_HTTP_TCP_KEEPIDLE` = integer, in seconds. Keep-alive idle "
 "time. Defaults to 60. Only taken into account if "
 "GDAL_HTTP_TCP_KEEPALIVE=YES."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:420
+#: ../../source/user/virtual_file_systems.rst:421
 msgid ""
 ":config:`GDAL_HTTP_TCP_KEEPINTVL` = integer, in seconds. Interval time "
 "between keep-alive probes. Defaults to 60. Only taken into account if "
 "GDAL_HTTP_TCP_KEEPALIVE=YES."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:422
+#: ../../source/user/virtual_file_systems.rst:423
 msgid ""
 "Starting with GDAL 3.7, the following configuration options control "
 "support for SSL client certificates:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:424
+#: ../../source/user/virtual_file_systems.rst:425
 msgid ""
 ":config:`GDAL_HTTP_SSLCERT` = filename. Filename of the the SSL client "
 "certificate. Cf https://curl.se/libcurl/c/CURLOPT_SSLCERT.html"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:425
+#: ../../source/user/virtual_file_systems.rst:426
 msgid ""
 ":config:`GDAL_HTTP_SSLCERTTYPE` = string. Format of the SSL certificate: "
 "\"PEM\" or \"DER\". Cf https://curl.se/libcurl/c/CURLOPT_SSLCERTTYPE.html"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:426
+#: ../../source/user/virtual_file_systems.rst:427
 msgid ""
 ":config:`GDAL_HTTP_SSLKEY` = filename. Private key file for TLS and SSL "
 "client certificate. Cf https://curl.se/libcurl/c/CURLOPT_SSLKEY.html"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:427
+#: ../../source/user/virtual_file_systems.rst:428
 msgid ""
 ":config:`GDAL_HTTP_KEYPASSWD` = string. Passphrase to private key. Cf "
 "https://curl.se/libcurl/c/CURLOPT_KEYPASSWD.html"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:429
+#: ../../source/user/virtual_file_systems.rst:430
 msgid ""
 "More generally options of :cpp:func:`CPLHTTPFetch` available through "
 "configuration options are available. Starting with GDAL 3.7, the above "
@@ -6195,7 +6229,7 @@ msgid ""
 " :cpp:func:`VSISetPathSpecificOption`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:433
+#: ../../source/user/virtual_file_systems.rst:434
 msgid ""
 "The file can be cached in RAM by setting the configuration option "
 ":config:`VSI_CACHE` to ``TRUE``. The cache size defaults to 25 MB, but "
@@ -6204,7 +6238,7 @@ msgid ""
 "when the file handle is closed."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:435
+#: ../../source/user/virtual_file_systems.rst:436
 msgid ""
 "Starting with GDAL 2.3, the :config:`CPL_VSIL_CURL_NON_CACHED` "
 "configuration option can be set to values like "
@@ -6215,7 +6249,7 @@ msgid ""
 "Alternatively, :cpp:func:`VSICurlClearCache` can be used."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:437
+#: ../../source/user/virtual_file_systems.rst:438
 msgid ""
 "Starting with GDAL 2.1, ``/vsicurl/`` will try to query directly "
 "redirected URLs to Amazon S3 signed URLs during their validity period, so"
@@ -6223,26 +6257,26 @@ msgid ""
 " configuration option :config:`CPL_VSIL_CURL_USE_S3_REDIRECT` to ``NO``."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:439
-#: ../../source/user/virtual_file_systems.rst:460
+#: ../../source/user/virtual_file_systems.rst:440
+#: ../../source/user/virtual_file_systems.rst:461
 msgid ""
 ":cpp:func:`VSIStatL` will return the size in st_size member and file "
 "nature- file or directory - in st_mode member (the later only reliable "
 "with FTP resources for now)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:441
+#: ../../source/user/virtual_file_systems.rst:442
 msgid ""
 ":cpp:func:`VSIReadDir` should be able to parse the HTML directory listing"
 " returned by the most popular web servers, such as Apache and Microsoft "
 "IIS."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:446
+#: ../../source/user/virtual_file_systems.rst:447
 msgid "/vsicurl_streaming/ (http/https/ftp files: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:448
+#: ../../source/user/virtual_file_systems.rst:449
 msgid ""
 "/vsicurl_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of files streamed through HTTP/FTP web protocols, "
@@ -6250,7 +6284,7 @@ msgid ""
 "against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:450
+#: ../../source/user/virtual_file_systems.rst:451
 msgid ""
 "Although this file handler is able seek to random offsets in the file, "
 "this will not be efficient. If you need efficient random access and that "
@@ -6258,7 +6292,7 @@ msgid ""
 " <vsicurl>` file system handler instead."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:452
+#: ../../source/user/virtual_file_systems.rst:453
 msgid ""
 "Recognized filenames are of the form "
 ":file:`/vsicurl_streaming/http[s]://path/to/remote/resource` or "
@@ -6266,7 +6300,7 @@ msgid ""
 ":file:`path/to/remote/resource` is the URL of a remote resource."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:458
+#: ../../source/user/virtual_file_systems.rst:459
 msgid ""
 "The file can be cached in RAM by setting the configuration option "
 ":config:`VSI_CACHE` to ``TRUE``. The cache size defaults to 25 MB, but "
@@ -6274,11 +6308,11 @@ msgid ""
 ":config:`VSI_CACHE_SIZE` (in bytes)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:465
+#: ../../source/user/virtual_file_systems.rst:466
 msgid "/vsis3/ (AWS S3 files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:467
+#: ../../source/user/virtual_file_systems.rst:468
 msgid ""
 "/vsis3/ is a file system handler that allows on-the-fly random reading of"
 " (primarily non-public) files available in AWS S3 buckets, without prior "
@@ -6286,7 +6320,7 @@ msgid ""
 "libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:469
+#: ../../source/user/virtual_file_systems.rst:470
 msgid ""
 "It also allows sequential writing of files. No seeks or read operations "
 "are then allowed, so in particular direct writing of GeoTIFF files with "
@@ -6300,56 +6334,56 @@ msgid ""
 "(empty) directories with :cpp:func:`VSIRmdir` are also possible."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:473
+#: ../../source/user/virtual_file_systems.rst:474
 msgid ""
 "Recognized filenames are of the form :file:`/vsis3/bucket/key`, where "
 "``bucket`` is the name of the S3 bucket and ``key`` is the S3 object "
 "\"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:475
-#: ../../source/user/virtual_file_systems.rst:676
-#: ../../source/user/virtual_file_systems.rst:790
-#: ../../source/user/virtual_file_systems.rst:921
-#: ../../source/user/virtual_file_systems.rst:977
-#: ../../source/user/virtual_file_systems.rst:1105
+#: ../../source/user/virtual_file_systems.rst:476
+#: ../../source/user/virtual_file_systems.rst:690
+#: ../../source/user/virtual_file_systems.rst:804
+#: ../../source/user/virtual_file_systems.rst:935
+#: ../../source/user/virtual_file_systems.rst:991
+#: ../../source/user/virtual_file_systems.rst:1119
 msgid "The generalities of :ref:`/vsicurl/ <vsicurl>` apply."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:477
+#: ../../source/user/virtual_file_systems.rst:478
 msgid "The following configuration options are specific to the /vsis3/ handler:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:532
+#: ../../source/user/virtual_file_systems.rst:533
 msgid ""
 "Path to file with identity token for use for authentication via the "
 "`AssumeRoleWithWebIdentity API "
 "<https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRoleWithWebIdentity.html>`_."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:608
-#: ../../source/user/virtual_file_systems.rst:744
-#: ../../source/user/virtual_file_systems.rst:847
+#: ../../source/user/virtual_file_systems.rst:609
+#: ../../source/user/virtual_file_systems.rst:758
+#: ../../source/user/virtual_file_systems.rst:861
 msgid ""
 "Several authentication methods are possible, and are attempted in the "
 "following order:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:610
+#: ../../source/user/virtual_file_systems.rst:611
 msgid ""
 "If :config:`AWS_NO_SIGN_REQUEST=YES` configuration option is set, request"
 " signing is disabled. This option might be used for buckets with public "
 "access rights. Available since GDAL 2.3"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:611
+#: ../../source/user/virtual_file_systems.rst:612
 msgid ""
 "The :config:`AWS_SECRET_ACCESS_KEY` and :config:`AWS_ACCESS_KEY_ID` "
 "configuration options can be set. The :config:`AWS_SESSION_TOKEN` "
 "configuration option must be set when temporary credentials are used."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:612
+#: ../../source/user/virtual_file_systems.rst:613
 msgid ""
 "Starting with GDAL 2.3, alternate ways of providing credentials similar "
 "to what the \"aws\" command line utility or Boto3 support can be used. If"
@@ -6362,14 +6396,14 @@ msgid ""
 "\"default\")."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:613
+#: ../../source/user/virtual_file_systems.rst:614
 msgid ""
 "The ``~/.aws/config`` or ``%UserProfile%/.aws/config`` file may also be "
 "used (or the file pointer by :config:`AWS_CONFIG_FILE`) to retrieve "
 "credentials and the AWS region."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:614
+#: ../../source/user/virtual_file_systems.rst:615
 msgid ""
 "Starting with GDAL 3.6, if :config:`AWS_ROLE_ARN` and "
 ":config:`AWS_WEB_IDENTITY_TOKEN_FILE` are defined we will rely on "
@@ -6379,13 +6413,13 @@ msgid ""
 "accounts.html)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:615
+#: ../../source/user/virtual_file_systems.rst:616
 msgid ""
 "If none of the above method succeeds, instance profile credentials will "
 "be retrieved when GDAL is used on EC2 instances (cf :ref:`vsis3_imds`)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:617
+#: ../../source/user/virtual_file_systems.rst:618
 msgid ""
 "On writing, the file is uploaded using the S3 multipart upload API. The "
 "size of chunks is set to 50 MB by default, allowing creating files up to "
@@ -6399,14 +6433,14 @@ msgid ""
 "instead of the multipart upload API."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:619
-#: ../../source/user/virtual_file_systems.rst:863
+#: ../../source/user/virtual_file_systems.rst:620
+#: ../../source/user/virtual_file_systems.rst:877
 msgid ""
 "Since GDAL 3.1, the :cpp:func:`VSIRename` operation is supported (first "
 "doing a copy of the original file and then deleting it)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:621
+#: ../../source/user/virtual_file_systems.rst:622
 msgid ""
 "Since GDAL 3.1, the :cpp:func:`VSIRmdirRecursive` operation is supported "
 "(using batch deletion method). The "
@@ -6416,7 +6450,7 @@ msgid ""
 " option in the :ref:`GDAL configuration file <gdal_configuration_file>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:623
+#: ../../source/user/virtual_file_systems.rst:624
 msgid ""
 "The :config:`CPL_VSIS3_CREATE_DIR_OBJECT` configuration option can be set"
 " to NO to prevent the :cpp:func:`VSIMkdir` operation from creating an "
@@ -6426,7 +6460,7 @@ msgid ""
 "applications that do not expect such empty objects."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:626
+#: ../../source/user/virtual_file_systems.rst:627
 msgid ""
 "Starting with GDAL 3.5, profiles that use IAM role assumption (see "
 "https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-role.html)"
@@ -6436,11 +6470,11 @@ msgid ""
 "supported currently."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:631
+#: ../../source/user/virtual_file_systems.rst:632
 msgid "/vsis3/ and AWS Instance Metadata Service (IMDS)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:633
+#: ../../source/user/virtual_file_systems.rst:634
 msgid ""
 "On EC2 instances, GDAL will try to use the `IMDSv2 "
 "<https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configuring-"
@@ -6452,7 +6486,7 @@ msgid ""
 "the authentication step)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:635
+#: ../../source/user/virtual_file_systems.rst:636
 msgid ""
 "There are known issues when running inside a Docker instance in a EC2 "
 "instance that require extra configuration of the instance. For example, "
@@ -6461,11 +6495,11 @@ msgid ""
 "retrieval.html#imds-considerations>`__"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:637
+#: ../../source/user/virtual_file_systems.rst:638
 msgid "There are several ways to do this. One way is to run this command: ::"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:645
+#: ../../source/user/virtual_file_systems.rst:646
 msgid ""
 "Another is to set the HttpPutResponseHopLimit metadata on an "
 "AutoScalingGroup LaunchTemplate: - "
@@ -6474,7 +6508,7 @@ msgid ""
 "properties-ec2-launchtemplate-metadataoptions.html"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:649
+#: ../../source/user/virtual_file_systems.rst:650
 msgid ""
 "Another possibility is to start the Docker container with host networking"
 " (``--network=host``), although this breaks isolation of containers by "
@@ -6482,11 +6516,45 @@ msgid ""
 "implications <https://stackoverflow.com/a/57051970/40785>`__."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:654
+#: ../../source/user/virtual_file_systems.rst:653
+msgid "Configuring /vsis3/ with Minio"
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:655
+msgid ""
+"The following configuration options can be set to access a `Minio Docker "
+"image <https://min.io/docs/minio/container/index.html>`__"
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:658
+msgid "AWS_VIRTUAL_HOSTING=FALSE"
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:659
+msgid "AWS_HTTPS=NO"
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:660
+msgid "AWS_S3_ENDPOINT=\"localhost:9000\""
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:661
+msgid "AWS_REGION=\"us-east-1\""
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:662
+msgid "AWS_SECRET_ACCESS_KEY=\"your_secret_access_key\""
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:663
+msgid "AWS_ACCESS_KEY_ID=\"your_access_key\""
+msgstr ""
+
+#: ../../source/user/virtual_file_systems.rst:668
 msgid "/vsis3_streaming/ (AWS S3 files: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:656
+#: ../../source/user/virtual_file_systems.rst:670
 msgid ""
 "/vsis3_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of (primarily non-public) files available in AWS S3 "
@@ -6494,24 +6562,24 @@ msgid ""
 "be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:658
+#: ../../source/user/virtual_file_systems.rst:672
 msgid ""
 "Recognized filenames are of the form :file:`/vsis3_streaming/bucket/key` "
 "where ``bucket`` is the name of the S3 bucket and ``key`` is the S3 "
 "object \"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:660
+#: ../../source/user/virtual_file_systems.rst:674
 msgid ""
 "Authentication options, and read-only features, are identical to "
 ":ref:`/vsis3/ <vsis3>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:667
+#: ../../source/user/virtual_file_systems.rst:681
 msgid "/vsigs/ (Google Cloud Storage files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:669
+#: ../../source/user/virtual_file_systems.rst:683
 msgid ""
 "/vsigs/ is a file system handler that allows on-the-fly random reading of"
 " (primarily non-public) files available in Google Cloud Storage buckets, "
@@ -6519,7 +6587,7 @@ msgid ""
 "against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:671
+#: ../../source/user/virtual_file_systems.rst:685
 msgid ""
 "Starting with GDAL 2.3, it also allows sequential writing of files. No "
 "seeks or read operations are then allowed, so in particular direct "
@@ -6534,45 +6602,45 @@ msgid ""
 "possible."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:674
+#: ../../source/user/virtual_file_systems.rst:688
 msgid ""
 "Recognized filenames are of the form :file:`/vsigs/bucket/key` where "
 "``bucket`` is the name of the bucket and ``key`` is the object \"key\", "
 "i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:678
+#: ../../source/user/virtual_file_systems.rst:692
 msgid "The following configuration options are specific to the /vsigs/ handler:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:746
+#: ../../source/user/virtual_file_systems.rst:760
 msgid ""
 "If :config:`GS_NO_SIGN_REQUEST=YES` configuration option is set, request "
 "signing is disabled. This option might be used for buckets with public "
 "access rights. Available since GDAL 3.4"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:747
+#: ../../source/user/virtual_file_systems.rst:761
 msgid ""
 "The :config:`GS_SECRET_ACCESS_KEY` and :config:`GS_ACCESS_KEY_ID` "
 "configuration options can be set for AWS-style authentication"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:748
+#: ../../source/user/virtual_file_systems.rst:762
 msgid ""
 "The :config:`GDAL_HTTP_HEADER_FILE` configuration option to point to a "
 "filename of a text file with \"key: value\" headers. Typically, it must "
 "contain a \"Authorization: Bearer XXXXXXXXX\" line."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:749
+#: ../../source/user/virtual_file_systems.rst:763
 msgid ""
 "(GDAL >= 3.7) The :config:`GDAL_HTTP_HEADERS` configuration option can "
 "also be set. It must contain at least a line starting with "
 "\"Authorization:\" to be used as an authentication method."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:750
+#: ../../source/user/virtual_file_systems.rst:764
 msgid ""
 "(GDAL >= 2.3) The :config:`GS_OAUTH2_REFRESH_TOKEN` configuration option "
 "can be set to use OAuth2 client authentication. See "
@@ -6584,7 +6652,7 @@ msgid ""
 "defined both for gdal_auth.py and later execution of /vsigs)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:751
+#: ../../source/user/virtual_file_systems.rst:765
 msgid ""
 "(GDAL >= 2.3) The :config:`GOOGLE_APPLICATION_CREDENTIALS` configuration "
 "option can be set to point to a JSON file containing OAuth2 service "
@@ -6599,14 +6667,14 @@ msgid ""
 "\"https://www.googleapis.com/auth/devstorage.read_only\" if needed."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:752
+#: ../../source/user/virtual_file_systems.rst:766
 msgid ""
 "(GDAL >= 3.4.2) The :config:`GOOGLE_APPLICATION_CREDENTIALS` "
 "configuration option can be set to point to a JSON file containing OAuth2"
 " user credentials (``type: authorized_user``)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:753
+#: ../../source/user/virtual_file_systems.rst:767
 msgid ""
 "(GDAL >= 2.3) Variant of the previous method. The "
 ":config:`GS_OAUTH2_PRIVATE_KEY` (or :config:`GS_OAUTH2_PRIVATE_KEY_FILE` "
@@ -6626,7 +6694,7 @@ msgid ""
 "\"https://www.googleapis.com/auth/devstorage.read_only\" if needed."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:754
+#: ../../source/user/virtual_file_systems.rst:768
 msgid ""
 "(GDAL >= 2.3) An alternate way of providing credentials similar to what "
 "the \"gsutil\" command line utility or Boto3 support can be used. If the "
@@ -6639,7 +6707,7 @@ msgid ""
 "entry for OAuth2 client authentication."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:755
+#: ../../source/user/virtual_file_systems.rst:769
 msgid ""
 "(GDAL >= 2.3) Finally if none of the above method succeeds, the code will"
 " check if the current machine is a Google Compute Engine instance, and if"
@@ -6649,17 +6717,17 @@ msgid ""
 "to the boot logs), you can set :config:`CPL_MACHINE_IS_GCE` to ``YES``."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:757
+#: ../../source/user/virtual_file_systems.rst:771
 msgid ""
 "Since GDAL 3.1, the Rename() operation is supported (first doing a copy "
 "of the original file and then deleting it)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:764
+#: ../../source/user/virtual_file_systems.rst:778
 msgid "/vsigs_streaming/ (Google Cloud Storage files: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:766
+#: ../../source/user/virtual_file_systems.rst:780
 msgid ""
 "/vsigs_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of files (primarily non-public) files available in "
@@ -6667,24 +6735,24 @@ msgid ""
 "It requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:768
+#: ../../source/user/virtual_file_systems.rst:782
 msgid ""
 "Recognized filenames are of the form :file:`/vsigs_streaming/bucket/key` "
 "where ``bucket`` is the name of the bucket and ``key`` is the object "
 "\"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:770
+#: ../../source/user/virtual_file_systems.rst:784
 msgid ""
 "Authentication options, and read-only features, are identical to "
 ":ref:`/vsigs/ <vsigs>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:777
+#: ../../source/user/virtual_file_systems.rst:791
 msgid "/vsiaz/ (Microsoft Azure Blob files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:779
+#: ../../source/user/virtual_file_systems.rst:793
 msgid ""
 "/vsiaz/ is a file system handler that allows on-the-fly random reading of"
 " (primarily non-public) files available in Microsoft Azure Blob "
@@ -6692,13 +6760,13 @@ msgid ""
 "to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:781
+#: ../../source/user/virtual_file_systems.rst:795
 msgid ""
 "See :ref:`/vsiadls/ <vsiadls>` for a related filesystem for Azure Data "
 "Lake Storage Gen2."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:783
+#: ../../source/user/virtual_file_systems.rst:797
 msgid ""
 "It also allows sequential writing of files. No seeks or read operations "
 "are then allowed, so in particular direct writing of GeoTIFF files with "
@@ -6711,7 +6779,7 @@ msgid ""
 "blob will be created (with a maximum file size of 195 GB)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:786
+#: ../../source/user/virtual_file_systems.rst:800
 msgid ""
 "Deletion of files with :cpp:func:`VSIUnlink`, creation of directories "
 "with :cpp:func:`VSIMkdir` and deletion of (empty) directories with "
@@ -6728,28 +6796,28 @@ msgid ""
 ":cpp:func:`VSIRmdir` invocation."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:788
+#: ../../source/user/virtual_file_systems.rst:802
 msgid ""
 "Recognized filenames are of the form :file:`/vsiaz/container/key`, where "
 "``container`` is the name of the container and ``key`` is the object "
 "\"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:792
+#: ../../source/user/virtual_file_systems.rst:806
 msgid "The following configuration options are specific to the /vsiaz/ handler:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:849
+#: ../../source/user/virtual_file_systems.rst:863
 msgid "The :config:`AZURE_STORAGE_CONNECTION_STRING` configuration option"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:851
+#: ../../source/user/virtual_file_systems.rst:865
 msgid ""
 "The :config:`AZURE_STORAGE_ACCOUNT` configuration option is set to "
 "specify the account name AND"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:853
+#: ../../source/user/virtual_file_systems.rst:867
 msgid ""
 "(GDAL >= 3.5) The :config:`AZURE_STORAGE_ACCESS_TOKEN` configuration "
 "option is set to specify the access token, that will be included in a "
@@ -6758,20 +6826,20 @@ msgid ""
 " (MSAL)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:854
+#: ../../source/user/virtual_file_systems.rst:868
 msgid ""
 "The :config:`AZURE_STORAGE_ACCESS_KEY` configuration option is set to "
 "specify the secret key."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:855
+#: ../../source/user/virtual_file_systems.rst:869
 msgid ""
 "The :config:`AZURE_NO_SIGN_REQUEST=YES` configuration option is set, so "
 "as to disable any request signing. This option might be used for accounts"
 " with public access rights. Available since GDAL 3.2"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:856
+#: ../../source/user/virtual_file_systems.rst:870
 msgid ""
 "The :config:`AZURE_STORAGE_SAS_TOKEN` configuration option (``AZURE_SAS``"
 " if GDAL < 3.5) is set to specify a Shared Access Signature. This SAS is "
@@ -6782,7 +6850,7 @@ msgid ""
 " Available since GDAL 3.2"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:857
+#: ../../source/user/virtual_file_systems.rst:871
 msgid ""
 "The current machine is a Azure Virtual Machine with Azure Active "
 "Directory permissions assigned to it (see https://docs.microsoft.com/en-"
@@ -6790,7 +6858,7 @@ msgid ""
 "configure-portal-windows-vm). Available since GDAL 3.3."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:859
+#: ../../source/user/virtual_file_systems.rst:873
 msgid ""
 "Authentication using Azure Active Directory Workload Identity (using "
 "AZURE_TENANT_ID, AZURE_CLIENT_ID, AZURE_FEDERATED_TOKEN_FILE and "
@@ -6798,7 +6866,7 @@ msgid ""
 "Kubernetes, is available since GDAL 3.7.2"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:861
+#: ../../source/user/virtual_file_systems.rst:875
 msgid ""
 "Starting with GDAL 3.5, the `configuration file "
 "<https://github.com/MicrosoftDocs/azure-docs-cli/blob/main/docs-ref-"
@@ -6808,17 +6876,17 @@ msgid ""
 "``key`` or ``account`` + ``sas_token``"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:865
+#: ../../source/user/virtual_file_systems.rst:879
 msgid ""
 "Since GDAL 3.3, the :cpp:func:`VSIGetFileMetadata` and "
 ":cpp:func:`VSISetFileMetadata` operations are supported."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:872
+#: ../../source/user/virtual_file_systems.rst:886
 msgid "/vsiaz_streaming/ (Microsoft Azure Blob files: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:874
+#: ../../source/user/virtual_file_systems.rst:888
 msgid ""
 "/vsiaz_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of files (primarily non-public) files available in "
@@ -6826,7 +6894,7 @@ msgid ""
 "entire file. It requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:876
+#: ../../source/user/virtual_file_systems.rst:890
 msgid ""
 "Recognized filenames are of the form "
 ":file:`/vsiaz_streaming/container/key` where ``container`` is the name of"
@@ -6834,17 +6902,17 @@ msgid ""
 "potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:878
+#: ../../source/user/virtual_file_systems.rst:892
 msgid ""
 "Authentication options, and read-only features, are identical to "
 ":ref:`/vsiaz/ <vsiaz>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:885
+#: ../../source/user/virtual_file_systems.rst:899
 msgid "/vsiadls/ (Microsoft Azure Data Lake Storage Gen2)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:887
+#: ../../source/user/virtual_file_systems.rst:901
 msgid ""
 "/vsiadls/ is a file system handler that allows on-the-fly random reading "
 "of (primarily non-public) files available in Microsoft Azure Data Lake "
@@ -6852,7 +6920,7 @@ msgid ""
 "requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:892
+#: ../../source/user/virtual_file_systems.rst:906
 msgid ""
 "It has similar capabilities as :ref:`/vsiaz/ <vsiaz>`, and in particular "
 "uses the same configuration options for authentication. Its advantages "
@@ -6862,42 +6930,42 @@ msgid ""
 "/en-us/azure/storage/blobs/data-lake-storage-introduction>`__"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:898
+#: ../../source/user/virtual_file_systems.rst:912
 msgid "The main enhancements over /vsiaz/ are:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:900
+#: ../../source/user/virtual_file_systems.rst:914
 msgid ""
 "True directory support (no need for the artificial "
 ":file:`.gdal_marker_for_dir` empty file that is used for /vsiaz/ to have "
 "empty directories)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:902
+#: ../../source/user/virtual_file_systems.rst:916
 msgid "One-call recursive directory deletion with :cpp:func:`VSIRmdirRecursive`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:903
+#: ../../source/user/virtual_file_systems.rst:917
 msgid "Atomic renaming with :cpp:func:`VSIRename`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:904
+#: ../../source/user/virtual_file_systems.rst:918
 msgid ""
 ":cpp:func:`VSIGetFileMetadata` support for the \"STATUS\" and \"ACL\" "
 "metadata domains"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:905
+#: ../../source/user/virtual_file_systems.rst:919
 msgid ""
 ":cpp:func:`VSISetFileMetadata` support for the \"PROPERTIES\" and \"ACL\""
 " metadata domains"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:912
+#: ../../source/user/virtual_file_systems.rst:926
 msgid "/vsioss/ (Alibaba Cloud OSS files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:914
+#: ../../source/user/virtual_file_systems.rst:928
 msgid ""
 "/vsioss/ is a file system handler that allows on-the-fly random reading "
 "of (primarily non-public) files available in Alibaba Cloud Object Storage"
@@ -6905,9 +6973,9 @@ msgid ""
 "requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:916
-#: ../../source/user/virtual_file_systems.rst:972
-#: ../../source/user/virtual_file_systems.rst:1102
+#: ../../source/user/virtual_file_systems.rst:930
+#: ../../source/user/virtual_file_systems.rst:986
+#: ../../source/user/virtual_file_systems.rst:1116
 msgid ""
 "It also allows sequential writing of files. No seeks or read operations "
 "are then allowed, so in particular direct writing of GeoTIFF files with "
@@ -6921,19 +6989,19 @@ msgid ""
 " with :cpp:func:`VSIRmdir` are also possible."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:919
+#: ../../source/user/virtual_file_systems.rst:933
 msgid ""
 "Recognized filenames are of the form :file:`/vsioss/bucket/key` where "
 "``bucket`` is the name of the OSS bucket and ``key`` is the OSS object "
 "\"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:923
-#: ../../source/user/virtual_file_systems.rst:979
+#: ../../source/user/virtual_file_systems.rst:937
+#: ../../source/user/virtual_file_systems.rst:993
 msgid "The following configuration options are specific to the /vsioss/ handler:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:946
+#: ../../source/user/virtual_file_systems.rst:960
 msgid ""
 "The :config:`OSS_SECRET_ACCESS_KEY` and :config:`OSS_ACCESS_KEY_ID` "
 "configuration options must be set. The :config:`OSS_ENDPOINT` "
@@ -6943,7 +7011,7 @@ msgid ""
 "the appropriate endpoint."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:948
+#: ../../source/user/virtual_file_systems.rst:962
 msgid ""
 "On writing, the file is uploaded using the OSS multipart upload API. The "
 "size of chunks is set to 50 MB by default, allowing creating files up to "
@@ -6956,11 +7024,11 @@ msgid ""
 "simple PUT request is used instead of the multipart upload API."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:955
+#: ../../source/user/virtual_file_systems.rst:969
 msgid "/vsioss_streaming/ (Alibaba Cloud OSS files: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:957
+#: ../../source/user/virtual_file_systems.rst:971
 msgid ""
 "/vsioss_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of files (primarily non-public) files available in "
@@ -6969,24 +7037,24 @@ msgid ""
 "libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:959
+#: ../../source/user/virtual_file_systems.rst:973
 msgid ""
 "Recognized filenames are of the form :file:`/vsioss_streaming/bucket/key`"
 " where ``bucket`` is the name of the bucket and ``key`` is the object "
 "\"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:961
+#: ../../source/user/virtual_file_systems.rst:975
 msgid ""
 "Authentication options, and read-only features, are identical to "
 ":ref:`/vsioss/ <vsioss>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:968
+#: ../../source/user/virtual_file_systems.rst:982
 msgid "/vsiswift/ (OpenStack Swift Object Storage)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:970
+#: ../../source/user/virtual_file_systems.rst:984
 msgid ""
 "/vsiswift/ is a file system handler that allows on-the-fly random reading"
 " of (primarily non-public) files available in OpenStack Swift Object "
@@ -6994,20 +7062,20 @@ msgid ""
 "requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:975
+#: ../../source/user/virtual_file_systems.rst:989
 msgid ""
 "Recognized filenames are of the form :file:`/vsiswift/bucket/key` where "
 "``bucket`` is the name of the swift bucket and ``key`` is the swift "
 "object \"key\", i.e. a filename potentially containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1001
+#: ../../source/user/virtual_file_systems.rst:1015
 msgid ""
 "Three authentication methods are possible, and are attempted in the "
 "following order:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1003
+#: ../../source/user/virtual_file_systems.rst:1017
 msgid ""
 "The :config:`SWIFT_STORAGE_URL` and :config:`SWIFT_AUTH_TOKEN` "
 "configuration options are set respectively to the storage URL (e.g "
@@ -7015,7 +7083,7 @@ msgid ""
 "token authorization token."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1004
+#: ../../source/user/virtual_file_systems.rst:1018
 msgid ""
 "The :config:`SWIFT_AUTH_V1_URL`, :config:`SWIFT_USER` and "
 ":config:`SWIFT_KEY` configuration options are set respectively to the "
@@ -7025,7 +7093,7 @@ msgid ""
 " authorization token mentioned in the first authentication method."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1005
+#: ../../source/user/virtual_file_systems.rst:1019
 msgid ""
 "Authentication with Keystone v3 is using the same options as python-"
 "swiftclient, see https://docs.openstack.org/python-"
@@ -7033,67 +7101,67 @@ msgid ""
 "(>= 3.1) supports the following options:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1007
-#: ../../source/user/virtual_file_systems.rst:1018
+#: ../../source/user/virtual_file_systems.rst:1021
+#: ../../source/user/virtual_file_systems.rst:1032
 msgid "`OS_IDENTITY_API_VERSION=3`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1008
-#: ../../source/user/virtual_file_systems.rst:1020
+#: ../../source/user/virtual_file_systems.rst:1022
+#: ../../source/user/virtual_file_systems.rst:1034
 msgid "`OS_AUTH_URL`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1009
+#: ../../source/user/virtual_file_systems.rst:1023
 msgid "`OS_USERNAME`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1010
+#: ../../source/user/virtual_file_systems.rst:1024
 msgid "`OS_PASSWORD`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1011
+#: ../../source/user/virtual_file_systems.rst:1025
 msgid "`OS_USER_DOMAIN_NAME`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1012
+#: ../../source/user/virtual_file_systems.rst:1026
 msgid "`OS_PROJECT_NAME`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1013
+#: ../../source/user/virtual_file_systems.rst:1027
 msgid "`OS_PROJECT_DOMAIN_NAME`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1014
-#: ../../source/user/virtual_file_systems.rst:1023
+#: ../../source/user/virtual_file_systems.rst:1028
+#: ../../source/user/virtual_file_systems.rst:1037
 msgid "`OS_REGION_NAME`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1016
+#: ../../source/user/virtual_file_systems.rst:1030
 msgid ""
 "Application Credential Authentication via Keystone v3, GDAL (>= 3.3.1) "
 "supports application-credential authentication with the following "
 "options:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1019
+#: ../../source/user/virtual_file_systems.rst:1033
 msgid "`OS_AUTH_TYPE=v3applicationcredential`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1021
+#: ../../source/user/virtual_file_systems.rst:1035
 msgid "`OS_APPLICATION_CREDENTIAL_ID`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1022
+#: ../../source/user/virtual_file_systems.rst:1036
 msgid "`OS_APPLICATION_CREDENTIAL_SECRET`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1025
+#: ../../source/user/virtual_file_systems.rst:1039
 msgid ""
 "This file system handler also allows sequential writing of files (no "
 "seeks or read operations are then allowed)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1027
+#: ../../source/user/virtual_file_systems.rst:1041
 msgid ""
 "In some versions of OpenStack Swift, the access to large (segmented) "
 "files fails unless they are explicitly marked as static large objects, "
@@ -7105,11 +7173,11 @@ msgid ""
 "https://docs.openstack.org/swift/latest/api/large_objects.html."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1034
+#: ../../source/user/virtual_file_systems.rst:1048
 msgid "/vsiswift_streaming/ (OpenStack Swift Object Storage: streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1036
+#: ../../source/user/virtual_file_systems.rst:1050
 msgid ""
 "/vsiswift_streaming/ is a file system handler that allows on-the-fly "
 "sequential reading of files (primarily non-public) files available in "
@@ -7117,7 +7185,7 @@ msgid ""
 " the entire file. It requires GDAL to be built against libcurl."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1038
+#: ../../source/user/virtual_file_systems.rst:1052
 msgid ""
 "Recognized filenames are of the form "
 ":file:`/vsiswift_streaming/bucket/key` where ``bucket`` is the name of "
@@ -7125,17 +7193,17 @@ msgid ""
 " containing subdirectories."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1040
+#: ../../source/user/virtual_file_systems.rst:1054
 msgid ""
 "Authentication options, and read-only features, are identical to "
 ":ref:`/vsiswift/ <vsiswift>`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1047
+#: ../../source/user/virtual_file_systems.rst:1061
 msgid "/vsihdfs/ (Hadoop File System)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1049
+#: ../../source/user/virtual_file_systems.rst:1063
 msgid ""
 "/vsihdfs/ is a file system handler that provides read access to HDFS. "
 "This handler requires GDAL to have been built with Java support (CMake "
@@ -7144,96 +7212,96 @@ msgid ""
 "handler is currently only available on Unix-like systems."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1055
+#: ../../source/user/virtual_file_systems.rst:1069
 msgid ""
 "Note: support for the HTTP REST API (webHdfs) is also available with "
 ":ref:`vsiwebhdfs`"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1057
+#: ../../source/user/virtual_file_systems.rst:1071
 msgid ""
 "The LD_LIBRARY_PATH and CLASSPATH environment variables must be typically"
 " set up as following."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1067
+#: ../../source/user/virtual_file_systems.rst:1081
 msgid ""
 "Failure to properly define the CLASSPATH will result in hard crashes in "
 "the native libhdfs."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1070
+#: ../../source/user/virtual_file_systems.rst:1084
 msgid "Relevant Hadoop documentation links:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1072
+#: ../../source/user/virtual_file_systems.rst:1086
 msgid ""
 "`C API libhdfs <https://hadoop.apache.org/docs/stable/hadoop-project-dist"
 "/hadoop-hdfs/LibHdfs.html>`__"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1073
+#: ../../source/user/virtual_file_systems.rst:1087
 msgid ""
 "`HDFS Users Guide <https://hadoop.apache.org/docs/stable/hadoop-project-"
 "dist/hadoop-hdfs/HdfsUserGuide.html>`__"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1074
+#: ../../source/user/virtual_file_systems.rst:1088
 msgid ""
 "`Hadoop: Setting up a Single Node Cluster "
 "<https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-"
 "common/SingleCluster.html>`__"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1076
+#: ../../source/user/virtual_file_systems.rst:1090
 msgid ""
 "Recognized filenames are of the form :file:`/vsihdfs/hdfsUri` where "
 "``hdfsUri`` is a valid HDFS URI."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1090
+#: ../../source/user/virtual_file_systems.rst:1104
 msgid "/vsiwebhdfs/ (Web Hadoop File System REST API)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1092
+#: ../../source/user/virtual_file_systems.rst:1106
 msgid ""
 "/vsiwebhdfs/ is a file system handler that provides read and write access"
 " to HDFS through its HTTP REST API."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1094
+#: ../../source/user/virtual_file_systems.rst:1108
 msgid ""
 "Recognized filenames are of the form "
 ":file:`/vsiwebhdfs/http://hostname:port/webhdfs/v1/path/to/filename`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1107
+#: ../../source/user/virtual_file_systems.rst:1121
 msgid "The following configuration options are available:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1131
+#: ../../source/user/virtual_file_systems.rst:1145
 msgid ""
 "This file system handler also allows sequential writing of files (no "
 "seeks or read operations are then allowed)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1138
+#: ../../source/user/virtual_file_systems.rst:1152
 msgid "/vsistdin/ (standard input streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1140
+#: ../../source/user/virtual_file_systems.rst:1154
 msgid ""
 "/vsistdin/ is a file handler that allows reading from the standard input "
 "stream."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1142
+#: ../../source/user/virtual_file_systems.rst:1156
 msgid ""
 "The filename syntax must be only :file:`/vsistdin/`, (not e.g., "
 "/vsistdin/path/to/f.csv , but \"/vsistdin?buffer_limit=value\" is OK.)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1145
+#: ../../source/user/virtual_file_systems.rst:1159
 msgid ""
 "The file operations available are of course limited to Read() and forward"
 " Seek(). Full seek in the first MB of a file is possible, and it is "
@@ -7241,60 +7309,60 @@ msgid ""
 "this first megabyte is possible multiple times in the same process."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1150
+#: ../../source/user/virtual_file_systems.rst:1164
 msgid ""
 "The size of the in-memory cache can be controlled with the "
 ":config:`CPL_VSISTDIN_BUFFER_LIMIT` configuration option:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1160
+#: ../../source/user/virtual_file_systems.rst:1174
 msgid "The \"/vsistdin?buffer_limit=value\" syntax can also be used."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1162
+#: ../../source/user/virtual_file_systems.rst:1176
 msgid ""
 "/vsistdin filenames can be combined with other file system. For example, "
 "to read a file within a potentially big ZIP file streamed to "
 "gdal_translate:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1173
+#: ../../source/user/virtual_file_systems.rst:1187
 msgid "/vsistdout/ (standard output streaming)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1175
+#: ../../source/user/virtual_file_systems.rst:1189
 msgid ""
 "/vsistdout/ is a file handler that allows writing into the standard "
 "output stream."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1177
+#: ../../source/user/virtual_file_systems.rst:1191
 msgid "The filename syntax must be only :file:`/vsistdout/`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1179
+#: ../../source/user/virtual_file_systems.rst:1193
 msgid "The file operations available are of course limited to Write()."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1181
+#: ../../source/user/virtual_file_systems.rst:1195
 msgid ""
 "A variation of this file system exists as the "
 ":file:`/vsistdout_redirect/` file system handler, where the output "
 "function can be defined with :cpp:func:`VSIStdoutSetRedirection`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1186
+#: ../../source/user/virtual_file_systems.rst:1200
 msgid "/vsimem/ (in-memory files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1188
+#: ../../source/user/virtual_file_systems.rst:1202
 msgid ""
 "/vsimem/ is a file handler that allows block of memory to be treated as "
 "files. All portions of the file system underneath the base path "
 ":file:`/vsimem/` will be handled by this driver."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1190
+#: ../../source/user/virtual_file_systems.rst:1204
 msgid ""
 "Normal VSI*L functions can be used freely to create and destroy memory "
 "arrays, treating them as if they were real file system objects. Some "
@@ -7304,11 +7372,11 @@ msgid ""
 ":cpp:func:`VSIFileFromMemBuffer` and :cpp:func:`VSIGetMemFileBuffer`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1192
+#: ../../source/user/virtual_file_systems.rst:1206
 msgid "Directory related functions are supported."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1194
+#: ../../source/user/virtual_file_systems.rst:1208
 msgid ""
 "/vsimem/ files are visible within the same process. Multiple threads can "
 "access the same underlying file in read mode, provided they used "
@@ -7317,24 +7385,24 @@ msgid ""
 "of calling code)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1199
+#: ../../source/user/virtual_file_systems.rst:1213
 msgid "/vsisubfile/ (portions of files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1201
+#: ../../source/user/virtual_file_systems.rst:1215
 msgid ""
 "The /vsisubfile/ virtual file system handler allows access to subregions "
 "of files, treating them as a file on their own to the virtual file system"
 " functions (VSIFOpenL(), etc)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1203
+#: ../../source/user/virtual_file_systems.rst:1217
 msgid ""
 "A special form of the filename is used to indicate a subportion of "
 "another file: :file:`/vsisubfile/<offset>[_<size>],<filename>`."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1205
+#: ../../source/user/virtual_file_systems.rst:1219
 msgid ""
 "The size parameter is optional. Without it the remainder of the file from"
 " the start offset as treated as part of the subfile. Otherwise only "
@@ -7343,7 +7411,7 @@ msgid ""
 " The <offset> and <size> values are in bytes."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1214
+#: ../../source/user/virtual_file_systems.rst:1228
 msgid ""
 "Unlike the /vsimem/ or conventional file system handlers, there is no "
 "meaningful support for filesystem operations for creating new files, "
@@ -7352,11 +7420,11 @@ msgid ""
 " on the file handle returned by :cpp:func:`VSIFOpenL` operate properly."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1219
+#: ../../source/user/virtual_file_systems.rst:1233
 msgid "/vsisparse/ (sparse files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1221
+#: ../../source/user/virtual_file_systems.rst:1235
 msgid ""
 "The /vsisparse/ virtual file handler allows a virtual file to be composed"
 " from chunks of data in other files, potentially with large spaces in the"
@@ -7368,21 +7436,21 @@ msgid ""
 "files on different file systems as one large virtual file."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1223
+#: ../../source/user/virtual_file_systems.rst:1237
 msgid ""
 "The file referenced by /vsisparse/ should be an XML control file "
 "formatted something like:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1257
+#: ../../source/user/virtual_file_systems.rst:1271
 msgid "Hopefully the values and semantics are fairly obvious."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1263
+#: ../../source/user/virtual_file_systems.rst:1277
 msgid "/vsicached/ (File caching)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1265
+#: ../../source/user/virtual_file_systems.rst:1279
 msgid ""
 "The :cpp:func:`VSICreateCachedFile` function takes a virtual file handle "
 "and returns a new handle that caches read-operations on the input file "
@@ -7391,13 +7459,13 @@ msgid ""
 "of blocks of 32KB each (default size)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1267
+#: ../../source/user/virtual_file_systems.rst:1281
 msgid ""
 "This is mostly useful for files accessible through slow local/operating-"
 "system-mounted filesystems."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1269
+#: ../../source/user/virtual_file_systems.rst:1283
 msgid ""
 "That is implicitly used by a number of the above mentioned file systems "
 "(namely the default one for standard file system operations, and the "
@@ -7405,26 +7473,26 @@ msgid ""
 "configuration option is set to ``YES``."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1271
+#: ../../source/user/virtual_file_systems.rst:1285
 msgid ""
 "The default size of caching for each file is 25 MB (25 MB for each file "
 "that is cached), and can be controlled with the ``VSI_CACHE_SIZE`` "
 "configuration option (value in bytes)."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1273
+#: ../../source/user/virtual_file_systems.rst:1287
 msgid ""
 "The :cpp:class:`VSICachedFile` class only handles read operations at that"
 " time, and will error out on write operations."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1275
+#: ../../source/user/virtual_file_systems.rst:1289
 msgid ""
 "Starting with GDAL 3.8, a ``/vsicached?`` virtual file system also exists"
 " to cache a particular file."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1277
+#: ../../source/user/virtual_file_systems.rst:1291
 msgid ""
 "The syntax is the following one: "
 "``/vsicached?[option_i=val_i&]*file=<filename>`` where each option name "
@@ -7435,43 +7503,117 @@ msgid ""
 "files, list directory content, can work properly."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1284
+#: ../../source/user/virtual_file_systems.rst:1298
 msgid "Currently supported options are:"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1286
+#: ../../source/user/virtual_file_systems.rst:1300
 msgid ""
 "``chunk_size=<value>`` where value is the` size of the chunk size in "
 "bytes. ``KB`` or ``MB`` suffixes can be also appended (without space "
 "after the numeric value). The maximum supported value is 1 GB."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1287
+#: ../../source/user/virtual_file_systems.rst:1301
 msgid ""
 "``cache_size=<value>`` where value is the size of the cache size in "
 "bytes, for each file. ``KB`` or ``MB`` suffixes can be also appended."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1291
+#: ../../source/user/virtual_file_systems.rst:1305
 msgid "``/vsicached?chunk_size=1MB&file=/home/even/byte.tif``"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1292
+#: ../../source/user/virtual_file_systems.rst:1306
 msgid "``/vsicached?file=./byte.tif``"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1298
+#: ../../source/user/virtual_file_systems.rst:1312
 msgid "/vsicrypt/ (encrypted files)"
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1300
+#: ../../source/user/virtual_file_systems.rst:1314
 msgid ""
 "/vsicrypt/ is a special file handler is installed that allows "
 "reading/creating/update encrypted files on the fly, with random access "
 "capabilities."
 msgstr ""
 
-#: ../../source/user/virtual_file_systems.rst:1302
+#: ../../source/user/virtual_file_systems.rst:1316
 msgid "Refer to :cpp:func:`VSIInstallCryptFileHandler` for more details."
 msgstr ""
+
+#~ msgid "List of configuration options and where they apply"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":program:`gdalwarp` and :program:`ogr2ogr` have "
+#~ "a ``-s_coord_epoch`` option to be used"
+#~ " together with ``-s_srs`` (resp. "
+#~ "``-t_coord_epoch`` option to be used "
+#~ "together with ``-t_srs``) to override/set "
+#~ "the coordinate epoch of the source "
+#~ "(resp. target) CRS. ``-s_coord_epoch`` and "
+#~ "``-t_coord_epoch`` are currently mutually "
+#~ "exclusive, due to lack of support "
+#~ "for transformations between two dynamic "
+#~ "CRS."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For the full list see :ref:`Programs "
+#~ "<programs>` and note the ones that "
+#~ "end in ``.py``."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The current design of the GDAL "
+#~ "raster block cache make it appropriate"
+#~ " to read several datasets from "
+#~ "several threads. However performance issues"
+#~ " may arise when writing several "
+#~ "datasets from several threads, due to"
+#~ " lock contention in the global "
+#~ "structures of the block cache mechanism."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The OGR SQL dialect adds the "
+#~ "geometry field of the datasource to "
+#~ "the result set by default. Users "
+#~ "do not need to select the geometry"
+#~ " explicitly but it is still possible"
+#~ " to do so. Common use case is"
+#~ " when geometry is the only field "
+#~ "that is needed. In this case the"
+#~ " name of the geometry field to "
+#~ "be used in the SQL statement is"
+#~ " the name returned by "
+#~ ":cpp:func:`OGRLayer::GetGeometryColumn`. If the "
+#~ "method returns an empty string then "
+#~ "a special name \"_ogr_geometry_\" must "
+#~ "be used. The name begins with an"
+#~ " underscore and SQL syntax requires "
+#~ "that it must appear between double "
+#~ "quotes. In addition the command line "
+#~ "interpreter may require that double "
+#~ "quotes are escaped and the final "
+#~ "SELECT statement could look like:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For OGR layers that have a non-"
+#~ "empty geometry column name (generally "
+#~ "for RDBMS datasources), as returned by"
+#~ " OGRLayer::GetGeometryColumn(), the name of "
+#~ "the geometry special field in the "
+#~ "SQL statement will be the name of"
+#~ " the geometry column of the "
+#~ "underlying OGR layer. If the name "
+#~ "of the geometry column in the "
+#~ "source layer is empty, like with "
+#~ "shapefiles etc., the name to use "
+#~ "in the SQL statement is always "
+#~ "\"geometry\"."
+#~ msgstr ""
 

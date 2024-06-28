@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -240,48 +240,38 @@ msgstr ""
 msgid "Dataset open options"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:156
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/pg.rst:238
+#: ../../source/drivers/vector/pg.rst:235
 msgid "Dataset Creation Options"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:240
+#: ../../source/drivers/vector/pg.rst:237
 msgid "None"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:243
+#: ../../source/drivers/vector/pg.rst:240
 msgid "Layer Creation Options"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:245
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/pg.rst:396
+#: ../../source/drivers/vector/pg.rst:390
 msgid "Configuration Options"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:398
-msgid "|about-config-options| The following configuration options are available:"
+#: ../../source/drivers/vector/pg.rst:392
+msgid "The following :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:407
+#: ../../source/drivers/vector/pg.rst:401
 msgid ""
 "At time of writing, PgPoolII is not compatible with COPY mode as used by "
 "the OGR PostgreSQL driver. Thus you should force PG_USE_COPY=NO when "
 "using PgPoolII."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:479
+#: ../../source/drivers/vector/pg.rst:453
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:481
+#: ../../source/drivers/vector/pg.rst:455
 msgid ""
 "Simple translation of a shapefile into PostgreSQL. The table 'abc' will "
 "be created with the features from abc.shp and attributes from abc.dbf. "
@@ -289,7 +279,7 @@ msgid ""
 "must not already exist."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:490
+#: ../../source/drivers/vector/pg.rst:464
 msgid ""
 "This second example loads a political boundaries layer from VPF (via the "
 ":ref:`OGDI driver <vector.ogdi>`), and renames the layer from the cryptic"
@@ -297,53 +287,53 @@ msgid ""
 "desired name exists it is overwritten."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:501
+#: ../../source/drivers/vector/pg.rst:475
 msgid "Export a single Postgres table to GeoPackage:"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:509
+#: ../../source/drivers/vector/pg.rst:483
 msgid "Export many Postgres tables to GeoPackage:"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:517
+#: ../../source/drivers/vector/pg.rst:491
 msgid "Export a whole Postgres database to GeoPackage:"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:526
+#: ../../source/drivers/vector/pg.rst:500
 msgid "Load a single layer GeoPackage into Postgres:"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:536
+#: ../../source/drivers/vector/pg.rst:510
 msgid ""
 "In this example we merge tiger line data from two different directories "
 "of tiger files into one table. Note that the second invocation uses "
 "-append and no :lco:`OVERWRITE=yes`."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:547
+#: ../../source/drivers/vector/pg.rst:521
 msgid ""
 "This example shows using ogrinfo to evaluate an SQL query statement "
 "within PostgreSQL. More sophisticated PostGIS specific queries may also "
 "be used via the -sql commandline switch to ogrinfo."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:555
+#: ../../source/drivers/vector/pg.rst:529
 msgid ""
 "This example shows using ogrinfo to list PostgreSQL/PostGIS layers on a "
 "different host."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:562
+#: ../../source/drivers/vector/pg.rst:536
 msgid ""
 "This example shows use of :oo:`PRELUDE_STATEMENTS` and "
 ":oo:`CLOSING_STATEMENTS` as destination open options of ogr2ogr."
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:570
+#: ../../source/drivers/vector/pg.rst:544
 msgid "FAQs"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:572
+#: ../../source/drivers/vector/pg.rst:546
 msgid ""
 "**Why can't I see my tables? PostGIS is installed and I have data** You "
 "must have permissions on all tables you want to read *and* "
@@ -355,27 +345,27 @@ msgid ""
 " --config PG_LIST_ALL_TABLES YES PG:xxxxx``)"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:583
+#: ../../source/drivers/vector/pg.rst:557
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:585
+#: ../../source/drivers/vector/pg.rst:559
 msgid ":ref:`Advanced OGR PostgreSQL driver Information <vector.pg_advanced>`"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:586
+#: ../../source/drivers/vector/pg.rst:560
 msgid ":ref:`OGR PostgreSQL SQL Dump driver Page <vector.pgdump>`"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:587
+#: ../../source/drivers/vector/pg.rst:561
 msgid "`PostgreSQL Home Page <http://www.postgresql.org/>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:588
+#: ../../source/drivers/vector/pg.rst:562
 msgid "`PostGIS <http://postgis.net/>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/pg.rst:589
+#: ../../source/drivers/vector/pg.rst:563
 msgid ""
 "`PostGIS / OGR Wiki Examples Page "
 "<http://trac.osgeo.org/postgis/wiki/UsersWikiOGR>`__"
@@ -404,5 +394,19 @@ msgstr ""
 #~ msgid ""
 #~ "The following :ref:`configuration options "
 #~ "<configoptions>` are available:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
 #~ msgstr ""
 

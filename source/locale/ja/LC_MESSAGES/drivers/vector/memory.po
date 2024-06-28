@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -83,14 +83,18 @@ msgid "Layer creation options"
 msgstr ""
 
 #: ../../source/drivers/vector/memory.rst:48
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"available:"
+msgid "The following layer creation options are available:"
 msgstr ""
 
 #~ msgid "Driver short name"
 #~ msgstr ""
 
 #~ msgid "The following layer creation options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "available:"
 #~ msgstr ""
 

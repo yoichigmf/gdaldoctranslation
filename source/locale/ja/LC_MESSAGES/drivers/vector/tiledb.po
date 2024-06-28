@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -202,38 +202,34 @@ msgid "Open options"
 msgstr ""
 
 #: ../../source/drivers/vector/tiledb.rst:101
-msgid "|about-open-options| The following open options are available:"
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:138
+#: ../../source/drivers/vector/tiledb.rst:137
 msgid "Dataset creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:140
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are available:"
+#: ../../source/drivers/vector/tiledb.rst:139
+msgid "The following dataset creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:160
+#: ../../source/drivers/vector/tiledb.rst:158
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:162
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"available:"
+#: ../../source/drivers/vector/tiledb.rst:160
+msgid "The following layer options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:238
+#: ../../source/drivers/vector/tiledb.rst:235
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:240
+#: ../../source/drivers/vector/tiledb.rst:237
 msgid "`TileDB home page <https://tiledb.io/>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/tiledb.rst:242
+#: ../../source/drivers/vector/tiledb.rst:239
 msgid ":ref:`TileDB raster <raster.tiledb>` documentation page"
 msgstr ""
 
@@ -256,5 +252,20 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following layer options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "available:"
 #~ msgstr ""
 

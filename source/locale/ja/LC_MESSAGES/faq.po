@@ -99,7 +99,7 @@ msgstr ""
 
 #: ../../source/faq.rst:42
 msgid "When was the GDAL project started?"
-msgstr ""
+msgstr "GDALプロジェクトはいつ始まりましたか？"
 
 #: ../../source/faq.rst:44
 msgid ""
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ../../source/faq.rst:47
 msgid "Is GDAL/OGR proprietary software?"
-msgstr ""
+msgstr "GDAL/OGRはプロプライエタリソフトウェアですか？"
 
 #: ../../source/faq.rst:49
 msgid "No, GDAL/OGR is a Free and Open Source Software."
@@ -117,7 +117,7 @@ msgstr ""
 
 #: ../../source/faq.rst:52
 msgid "What license does GDAL/OGR use?"
-msgstr ""
+msgstr "GDAL/OGRはどのライセンスを使用していますか？"
 
 #: ../../source/faq.rst:54
 msgid "See :ref:`license`"
@@ -125,7 +125,7 @@ msgstr "参照 :ref:`license`"
 
 #: ../../source/faq.rst:57
 msgid "What operating systems does GDAL-OGR run on?"
-msgstr ""
+msgstr "GDAL-OGRはどのオペレーティングシステムで動作しますか？"
 
 #: ../../source/faq.rst:59
 msgid ""
@@ -144,7 +144,7 @@ msgstr "参照 :ref:`software_using_gdal`:"
 
 #: ../../source/faq.rst:72
 msgid "What compiler can I use to build GDAL/OGR?"
-msgstr ""
+msgstr "GDAL-OGRをビルドするためにどのコンパイラを使用できますか？"
 
 #: ../../source/faq.rst:74
 msgid ""

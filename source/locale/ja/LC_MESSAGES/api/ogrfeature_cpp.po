@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,39 +19,55 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/api/ogrfeature_cpp.rst:10
+#: ../../source/api/ogrfeature_cpp.rst:5
 msgid "OGRFeature C++ API"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:13
+#: ../../source/api/ogrfeature_cpp.rst:8
 msgid "OGRFeature class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:20
+#: ../../source/api/ogrfeature_cpp.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../source/api/ogrfeature_cpp.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/ogrfeature_cpp.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/ogrfeature_cpp.rst
+msgid "Public Static Functions"
+msgstr ""
+
+#: ../../source/api/ogrfeature_cpp.rst:15
 msgid "OGRFeatureDefn class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:27
+#: ../../source/api/ogrfeature_cpp.rst:22
 msgid "OGRFieldDefn class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:34
+#: ../../source/api/ogrfeature_cpp.rst:29
 msgid "OGRGeomFieldDefn class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:41
+#: ../../source/api/ogrfeature_cpp.rst:36
 msgid "OGRFieldDomain class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:48
+#: ../../source/api/ogrfeature_cpp.rst:43
 msgid "OGRCodedFieldDomain class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:55
+#: ../../source/api/ogrfeature_cpp.rst:50
 msgid "OGRRangeFieldDomain class"
 msgstr ""
 
-#: ../../source/api/ogrfeature_cpp.rst:62
+#: ../../source/api/ogrfeature_cpp.rst:57
 msgid "OGRGlobFieldDomain class"
 msgstr ""
 

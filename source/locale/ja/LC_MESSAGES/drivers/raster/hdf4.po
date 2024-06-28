@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -221,7 +221,7 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:208
-msgid "|about-creation-options| The following creation options are supported:"
+msgid "Creation Options:"
 msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:-1
@@ -231,23 +231,23 @@ msgid ""
 "created."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:220
+#: ../../source/drivers/raster/hdf4.rst:219
 msgid "Metadata"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:222
+#: ../../source/drivers/raster/hdf4.rst:221
 msgid ""
 "All HDF4 attributes are transparently translated as GDAL metadata. In the"
 " HDF file attributes may be assigned assigned to the whole file as well "
 "as to particular subdatasets."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:227
+#: ../../source/drivers/raster/hdf4.rst:226
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:229
-msgid "|about-open-options| The following open option is supported:"
+#: ../../source/drivers/raster/hdf4.rst:228
+msgid "The following open option is supported:"
 msgstr ""
 
 #: ../../source/drivers/raster/hdf4.rst:-1
@@ -259,21 +259,21 @@ msgid ""
 "YES."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:243
+#: ../../source/drivers/raster/hdf4.rst:241
 msgid "Multidimensional API support"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:247
+#: ../../source/drivers/raster/hdf4.rst:245
 msgid ""
 "The HDF4 driver supports the :ref:`multidim_raster_data_model` for "
 "reading operations."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:251
+#: ../../source/drivers/raster/hdf4.rst:249
 msgid "Driver building"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:253
+#: ../../source/drivers/raster/hdf4.rst:251
 msgid ""
 "This driver built on top of NCSA HDF library, so you need one to compile "
 "GDAL with HDF4 support. You may search your operating system distribution"
@@ -281,63 +281,63 @@ msgid ""
 "the NCSA HDF Home Page (see links below)."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:258
+#: ../../source/drivers/raster/hdf4.rst:256
 msgid ""
 "Please note, that NCSA HDF library compiled with several defaults which "
 "is defined in *hlimits.h* file. For example, *hlimits.h* defines the "
 "maximum number of opened files:"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:266
+#: ../../source/drivers/raster/hdf4.rst:264
 msgid ""
 "If you need open more HDF4 files simultaneously you should change this "
 "value and rebuild HDF4 library (and relink GDAL if using static HDF "
 "libraries)."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:271
+#: ../../source/drivers/raster/hdf4.rst:269
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:273
+#: ../../source/drivers/raster/hdf4.rst:271
 msgid ""
 "Implemented as :source_file:`frmts/hdf4/hdf4dataset.cpp` and "
 ":source_file:`frmts/hdf4/hdf4imagedataset.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:275
+#: ../../source/drivers/raster/hdf4.rst:273
 msgid "`The HDF Group <http://www.hdfgroup.org/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:276
+#: ../../source/drivers/raster/hdf4.rst:274
 msgid ""
 "Sources of the data in HDF4 and HDF4-EOS formats: `Earth Observing System"
 " Data Gateway <http://edcimswww.cr.usgs.gov/pub/imswelcome/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:280
+#: ../../source/drivers/raster/hdf4.rst:278
 msgid "Documentation to individual products, supported by this driver:"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:282
+#: ../../source/drivers/raster/hdf4.rst:280
 msgid ""
 "`Geo-Referencing ASTER L1B Data "
 "<http://edcdaac.usgs.gov/aster/ASTER_GeoRef_FINAL.pdf>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:284
+#: ../../source/drivers/raster/hdf4.rst:282
 msgid ""
 "`ASTER Standard Data Product Specifications Document "
 "<http://asterweb.jpl.nasa.gov/documents/ASTERHigherLevelUserGuideVer2May01.pdf>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:286
+#: ../../source/drivers/raster/hdf4.rst:284
 msgid ""
 "`MODIS Level 1B Product Information and Status "
 "<http://www.mcst.ssai.biz/mcstweb/L1B/product.html>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/hdf4.rst:288
+#: ../../source/drivers/raster/hdf4.rst:286
 msgid ""
 "`MODIS Ocean User's Guide <http://modis-"
 "ocean.gsfc.nasa.gov/userguide.html>`__"
@@ -381,5 +381,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following open option is supported:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open option is supported:"
 #~ msgstr ""
 

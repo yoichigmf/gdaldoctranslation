@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:27+0900\n"
+"POT-Creation-Date: 2024-06-29 04:11+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Yoichi Kayama <yoichi.kayama@gmail.com>\n"
 "Language: ja\n"
@@ -43,7 +43,7 @@ msgid "Current Release"
 msgstr "カレントリリース"
 
 #: ../../source/download.rst:21
-msgid "**2024-05-10** `gdal-3.9.0.tar.gz`_ `3.9.0 Release Notes`_ (`3.9.0 md5`_)"
+msgid "**2024-06-26** `gdal-3.9.1.tar.gz`_ `3.9.1 Release Notes`_ (`3.9.1 md5`_)"
 msgstr ""
 
 #: ../../source/download.rst:28
@@ -528,5 +528,10 @@ msgstr ""
 #~ "different configurations can be found at"
 #~ " `https://github.com/OSGeo/gdal/tree/master/docker "
 #~ "<https://github.com/OSGeo/gdal/tree/master/docker>`_"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "**2024-05-10** `gdal-3.9.0.tar.gz`_ `3.9.0 Release"
+#~ " Notes`_ (`3.9.0 md5`_)"
 #~ msgstr ""
 

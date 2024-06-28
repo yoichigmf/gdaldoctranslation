@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -130,24 +130,22 @@ msgid "Creation Issues"
 msgstr ""
 
 #: ../../source/drivers/vector/jml.rst:70
-msgid ""
-"|about-layer-creation-options| The JML writer supports the following "
-"*layer* creation options:"
+msgid "The JML writer supports the following *layer* creation options:"
 msgstr ""
 
-#: ../../source/drivers/vector/jml.rst:89
+#: ../../source/drivers/vector/jml.rst:88
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/jml.rst:91
+#: ../../source/drivers/vector/jml.rst:90
 msgid ":ref:`ogr_feature_style`"
 msgstr ""
 
-#: ../../source/drivers/vector/jml.rst:94
+#: ../../source/drivers/vector/jml.rst:93
 msgid "Credits"
 msgstr ""
 
-#: ../../source/drivers/vector/jml.rst:96
+#: ../../source/drivers/vector/jml.rst:95
 msgid ""
 "The author wishes to thank Jukka Rahkonen for funding the development of "
 "this driver."
@@ -166,5 +164,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The JML writer supports the following *layer* creation options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The JML"
+#~ " writer supports the following *layer* "
+#~ "creation options:"
 #~ msgstr ""
 

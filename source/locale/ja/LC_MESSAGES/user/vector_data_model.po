@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/user/vector_data_model.rst:7
 msgid "Vector Data Model"
-msgstr ""
+msgstr "ベクターデータモデル"
 
 #: ../../source/user/vector_data_model.rst:9
 msgid ""

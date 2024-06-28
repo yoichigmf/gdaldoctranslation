@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -49,19 +49,19 @@ msgstr ""
 
 #: ../../source/drivers/raster/dted.rst:28
 msgid ""
-"|about-config-options| This paragraph lists the configuration options "
-"that can be set to alter the default behavior of the DTED driver."
+"This paragraph lists the configuration options that can be set to alter "
+"the default behavior of the DTED driver."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:65
+#: ../../source/drivers/raster/dted.rst:64
 msgid "Read Issues"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:68
+#: ../../source/drivers/raster/dted.rst:67
 msgid "Read speed"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:70
+#: ../../source/drivers/raster/dted.rst:69
 msgid ""
 "Elevation data in DTED files are organized per columns. This data "
 "organization doesn't fit very well with some scanline oriented algorithms"
@@ -72,11 +72,11 @@ msgid ""
 "you need to do processing on a whole file."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:79
+#: ../../source/drivers/raster/dted.rst:78
 msgid "Georeferencing Issues"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:87
+#: ../../source/drivers/raster/dted.rst:86
 msgid ""
 "The DTED specification (`MIL-PRF-89020B <http://earth-"
 "info.nga.mil/publications/specs/printed/89020B/89020B.pdf>`__) states "
@@ -87,29 +87,29 @@ msgid ""
 "situation."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:89
+#: ../../source/drivers/raster/dted.rst:88
 msgid ""
 "If the horizontal datum specified in the DTED file is WGS84, the DTED "
 "driver will report WGS 84 as SRS."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:91
+#: ../../source/drivers/raster/dted.rst:90
 msgid ""
 "If the horizontal datum specified in the DTED file is WGS72, the DTED "
 "driver will report WGS 72 as SRS and issue a warning."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:93
+#: ../../source/drivers/raster/dted.rst:92
 msgid ""
 "If the horizontal datum specified in the DTED file is neither WGS84 nor "
 "WGS72, the DTED driver will report WGS 84 as SRS and issue a warning."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:98
+#: ../../source/drivers/raster/dted.rst:97
 msgid "Checksum Issues"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:100
+#: ../../source/drivers/raster/dted.rst:99
 msgid ""
 "The default behavior of the DTED driver is to ignore the checksum while "
 "reading data from the files. However, you may specify the environment "
@@ -120,22 +120,22 @@ msgid ""
 "the data do not match, an error will be issued."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:109
+#: ../../source/drivers/raster/dted.rst:108
 msgid "Creation Issues"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:111
+#: ../../source/drivers/raster/dted.rst:110
 msgid ""
 "The DTED driver does support creating new files, but the input data must "
 "be exactly formatted as a Level 0, 1 or 2 cell. That is the size, and "
 "bounds must be appropriate for a cell."
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:116
+#: ../../source/drivers/raster/dted.rst:115
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/dted.rst:118
+#: ../../source/drivers/raster/dted.rst:117
 msgid "Implemented as :source_file:`frmts/dted/dteddataset.cpp`."
 msgstr ""
 
@@ -150,5 +150,12 @@ msgstr ""
 #~ "options that can be set to alter"
 #~ " the default behavior of the DTED "
 #~ "driver."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| This paragraph "
+#~ "lists the configuration options that can"
+#~ " be set to alter the default "
+#~ "behavior of the DTED driver."
 #~ msgstr ""
 

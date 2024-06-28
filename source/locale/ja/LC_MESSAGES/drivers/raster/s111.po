@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -92,11 +92,7 @@ msgstr ""
 msgid "Open options"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:43
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/s111.rst:52
+#: ../../source/drivers/raster/s111.rst:49
 msgid ""
 "This is the default behavior of most GDAL formats, but the native "
 "organization of the data in S-111 products is to have the first line of "
@@ -105,29 +101,29 @@ msgid ""
 " term of the geotransform matrix will be positive)"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:59
+#: ../../source/drivers/raster/s111.rst:56
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:61
+#: ../../source/drivers/raster/s111.rst:58
 msgid "Implemented as :source_file:`frmts/hdf5/s111dataset.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:62
+#: ../../source/drivers/raster/s111.rst:59
 msgid ""
 "`S-111 Bathymetric Surface Product Specification "
 "<https://registry.iho.int/productspec/view.do?idx=178&product_ID=S-111&statusS=5&domainS=20&category=product_ID&searchValue=S-111>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:63
+#: ../../source/drivers/raster/s111.rst:60
 msgid ":ref:`BAG driver <raster.bag>`"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:64
+#: ../../source/drivers/raster/s111.rst:61
 msgid ":ref:`S-102 driver <raster.s102>`"
 msgstr ""
 
-#: ../../source/drivers/raster/s111.rst:65
+#: ../../source/drivers/raster/s111.rst:62
 msgid ":ref:`S-104 driver <raster.s104>`"
 msgstr ""
 
@@ -154,5 +150,8 @@ msgstr ""
 #~ "setting this option to NO (in "
 #~ "which case the 6th term of the "
 #~ "geotransform matrix will be positive)"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
 #~ msgstr ""
 

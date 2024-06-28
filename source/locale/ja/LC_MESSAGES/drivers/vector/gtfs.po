@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -75,23 +75,15 @@ msgid ""
 "``/vsizip/path/to/the.zip`` filename prefixed with ``GTFS:``)"
 msgstr ""
 
-#: ../../source/drivers/vector/gtfs.rst:32
-msgid ""
-"Alternatively, starting with GDAL 3.10, specifying the ``-if GTFS`` "
-"option to command line utilities accepting it, or ``GTFS`` as the only "
-"value of the ``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, also "
-"forces the driver to recognize the passed filename."
-msgstr ""
-
-#: ../../source/drivers/vector/gtfs.rst:38
+#: ../../source/drivers/vector/gtfs.rst:33
 msgid "Driver capabilities"
 msgstr ""
 
-#: ../../source/drivers/vector/gtfs.rst:44
+#: ../../source/drivers/vector/gtfs.rst:39
 msgid "Links"
 msgstr ""
 
-#: ../../source/drivers/vector/gtfs.rst:46
+#: ../../source/drivers/vector/gtfs.rst:41
 msgid "`GTFS Wikipedia page <https://en.wikipedia.org/wiki/GTFS>`__"
 msgstr ""
 
@@ -99,5 +91,15 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "GTFS"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Alternatively, starting with GDAL 3.10, "
+#~ "specifying the ``-if GTFS`` option to"
+#~ " command line utilities accepting it, "
+#~ "or ``GTFS`` as the only value of"
+#~ " the ``papszAllowedDrivers`` of "
+#~ ":cpp:func:`GDALOpenEx`, also forces the driver"
+#~ " to recognize the passed filename."
 #~ msgstr ""
 

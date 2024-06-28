@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -173,16 +173,14 @@ msgid "Creation Options"
 msgstr ""
 
 #: ../../source/drivers/vector/kml.rst:94
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are supported:"
+msgid "The following dataset creation options are supported:"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:128
+#: ../../source/drivers/vector/kml.rst:127
 msgid "VSI Virtual File System API support"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:130
+#: ../../source/drivers/vector/kml.rst:129
 msgid ""
 "The driver supports reading and writing to files managed by VSI Virtual "
 "File System API, which include \"regular\" files, as well as files in the"
@@ -190,29 +188,29 @@ msgid ""
 "domains."
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:135
+#: ../../source/drivers/vector/kml.rst:134
 msgid "Writing to /dev/stdout or /vsistdout/ is also supported."
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:138
+#: ../../source/drivers/vector/kml.rst:137
 msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:140
+#: ../../source/drivers/vector/kml.rst:139
 msgid ""
 "The ogr2ogr utility can be used to dump the results of a PostGIS query to"
 " KML:"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:147
+#: ../../source/drivers/vector/kml.rst:146
 msgid "How to dump contents of .kml file as OGR sees it:"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:154
+#: ../../source/drivers/vector/kml.rst:153
 msgid "Caveats"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:156
+#: ../../source/drivers/vector/kml.rst:155
 msgid ""
 "Google Earth seems to have some limits regarding the number of "
 "coordinates in complex geometries like polygons. If the problem appears, "
@@ -227,19 +225,19 @@ msgid ""
 "getting-started/browse_thread/thread/e6995b8073e69c41>`__ thread."
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:170
+#: ../../source/drivers/vector/kml.rst:169
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:172
+#: ../../source/drivers/vector/kml.rst:171
 msgid "`KML Specification <https://developers.google.com/kml/?csw=1>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:173
+#: ../../source/drivers/vector/kml.rst:172
 msgid "`KML Tutorial <https://developers.google.com/kml/documentation/kml_tut>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/kml.rst:175
+#: ../../source/drivers/vector/kml.rst:174
 msgid ":ref:`LIBKML driver <vector.libkml>` An alternative GDAL KML driver"
 msgstr ""
 
@@ -256,5 +254,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following dataset creation options are supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "supported:"
 #~ msgstr ""
 

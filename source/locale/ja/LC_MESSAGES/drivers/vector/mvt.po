@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -154,14 +154,14 @@ msgid "Opening options"
 msgstr ""
 
 #: ../../source/drivers/vector/mvt.rst:163
-msgid "|about-open-options| The following open options are available:"
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:214
+#: ../../source/drivers/vector/mvt.rst:213
 msgid "Creation issues"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:216
+#: ../../source/drivers/vector/mvt.rst:215
 msgid ""
 "Tiles are generated with WebMercator (EPSG:3857) projection by default "
 "(custom tiling schemes can be defined with the TILING_SCHEME option). "
@@ -169,89 +169,77 @@ msgid ""
 "level ranges a given layer is written."
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:221
+#: ../../source/drivers/vector/mvt.rst:220
 msgid ""
 "Part of the conversion is multi-threaded by default, using as many "
 "threads as there are cores. The number of threads used can be controlled "
 "with the :config:`GDAL_NUM_THREADS` configuration option."
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:226
+#: ../../source/drivers/vector/mvt.rst:225
 msgid "Dataset creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:228
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/mvt.rst:269
+#: ../../source/drivers/vector/mvt.rst:265
 msgid ""
 "Maximum zoom level at which tiles are generated. Maximum supported value "
 "is 22."
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:370
+#: ../../source/drivers/vector/mvt.rst:366
 msgid "Layer configuration"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:372
+#: ../../source/drivers/vector/mvt.rst:368
 msgid ""
 "The above mentioned CONF dataset creation option can be set to a string "
-"whose value is a JSON serialized document such as the below one:"
+"whose value is a JSon serialized document such as the below one:"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:391
+#: ../../source/drivers/vector/mvt.rst:387
 msgid ""
 "*boundaries_lod0* and *boundaries_lod1* are the name of the OGR layers "
 "that are created into the target MVT dataset. They are mapped to the MVT "
 "target layer *boundaries*."
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:395
+#: ../../source/drivers/vector/mvt.rst:391
 msgid ""
 "It is also possible to get the same behavior with the below layer "
 "creation options, although that is not convenient in the ogr2ogr use "
 "case."
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:400
+#: ../../source/drivers/vector/mvt.rst:396
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:402
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/mvt.rst:430
+#: ../../source/drivers/vector/mvt.rst:423
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:440
+#: ../../source/drivers/vector/mvt.rst:433
 msgid "See Also:"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:442
+#: ../../source/drivers/vector/mvt.rst:435
 msgid ""
 "`Mapbox Vector Tile Specification <https://github.com/mapbox/vector-tile-"
 "spec>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:444
+#: ../../source/drivers/vector/mvt.rst:437
 msgid ":ref:`MBTiles <raster.mbtiles>` driver"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:445
+#: ../../source/drivers/vector/mvt.rst:438
 msgid ""
 "`tippecanoe <https://github.com/mapbox/tippecanoe>`__: Builds vector "
 "tilesets from large (or small) collections of GeoJSON, Geobuf, or CSV "
 "features"
 msgstr ""
 
-#: ../../source/drivers/vector/mvt.rst:448
+#: ../../source/drivers/vector/mvt.rst:441
 msgid ""
 "`Links to tools dealing with Mapbox Vector Tiles "
 "<https://github.com/mapbox/awesome-vector-tiles>`__"
@@ -284,5 +272,28 @@ msgstr ""
 #~ " string whose value is a JSon "
 #~ "serialized document such as the below"
 #~ " one:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above mentioned CONF dataset "
+#~ "creation option can be set to a"
+#~ " string whose value is a JSON "
+#~ "serialized document such as the below"
+#~ " one:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
 #~ msgstr ""
 

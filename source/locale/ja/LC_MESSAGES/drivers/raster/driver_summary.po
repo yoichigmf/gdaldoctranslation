@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -28,11 +28,11 @@ msgid "Long name"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:13
-msgid "Creation (1)"
+msgid "Creation"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:14
-msgid "Copy (2)"
+msgid "Copy"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:15
@@ -1317,11 +1317,12 @@ msgid ":ref:`JP2KAK <raster.jp2kak>`"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:456
-msgid "JPEG 2000 (based on Kakadu SDK)"
+msgid "JPEG-2000 (based on Kakadu)"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:460
-msgid "Kakadu SDK"
+#: ../../source/drivers/raster/driver_summary.rst:496
+msgid "Kakadu library"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:461
@@ -1391,10 +1392,6 @@ msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:492
 msgid "JPIP Streaming"
-msgstr ""
-
-#: ../../source/drivers/raster/driver_summary.rst:496
-msgid "Kakadu library"
 msgstr ""
 
 #: ../../source/drivers/raster/driver_summary.rst:497
@@ -2116,14 +2113,6 @@ msgstr ""
 msgid "ZMap Plus Grid"
 msgstr ""
 
-#: ../../source/drivers/raster/driver_summary.rst:1002
-msgid "(1): Creation refers to implementing :cpp:func:`GDALCreate`."
-msgstr ""
-
-#: ../../source/drivers/raster/driver_summary.rst:1003
-msgid "(2): Copy refers to implementing :cpp:func:`GDALCreateCopy`."
-msgstr ""
-
 #~ msgid "Creation"
 #~ msgstr ""
 
@@ -2131,5 +2120,23 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "JPEG-2000 (based on Kakadu)"
+#~ msgstr ""
+
+#~ msgid "Creation (1)"
+#~ msgstr ""
+
+#~ msgid "Copy (2)"
+#~ msgstr ""
+
+#~ msgid "JPEG 2000 (based on Kakadu SDK)"
+#~ msgstr ""
+
+#~ msgid "Kakadu SDK"
+#~ msgstr ""
+
+#~ msgid "(1): Creation refers to implementing :cpp:func:`GDALCreate`."
+#~ msgstr ""
+
+#~ msgid "(2): Copy refers to implementing :cpp:func:`GDALCreateCopy`."
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -70,72 +70,62 @@ msgid ""
 "Arrow IPC stream, especially if the extension is not ``.arrows``, and the"
 " metadata section is large. Prefixing the filename with "
 "``ARROW_IPC_STREAM:`` (e.g \"ARROW_IPC_STREAM:/vsistdin/\") will cause "
-"the driver to unconditionally open the file as a streaming IPC format. "
-"Alternatively, starting with GDAL 3.10, specifying the ``-if ARROW`` "
-"option to command line utilities accepting it, or ``ARROW`` as the only "
-"value of the ``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, also "
-"forces the driver to recognize the passed filename."
+"the driver to unconditionally open the file as a streaming IPC format."
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:39
+#: ../../source/drivers/vector/arrow.rst:35
 msgid ""
 "This driver also supports geometry columns using the GeoArrow "
 "specification."
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:41
+#: ../../source/drivers/vector/arrow.rst:37
 msgid ""
 "The driver should be considered experimental as the GeoArrow "
 "specification is not finalized yet."
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:44
+#: ../../source/drivers/vector/arrow.rst:40
 msgid "Driver capabilities"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:53
+#: ../../source/drivers/vector/arrow.rst:49
 msgid "Creation issues"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:55
+#: ../../source/drivers/vector/arrow.rst:51
 msgid "The driver supports creating only a single layer in a dataset."
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:58
+#: ../../source/drivers/vector/arrow.rst:54
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:60
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/arrow.rst:111
+#: ../../source/drivers/vector/arrow.rst:104
 msgid "Conda-forge package"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:113
+#: ../../source/drivers/vector/arrow.rst:106
 msgid ""
 "The driver can be installed as a plugin for the ``libgdal`` conda-forge "
 "package with:"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:121
+#: ../../source/drivers/vector/arrow.rst:114
 msgid "Links"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:123
+#: ../../source/drivers/vector/arrow.rst:116
 msgid ""
 "`Feather File Format "
 "<https://arrow.apache.org/docs/python/feather.html>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:125
+#: ../../source/drivers/vector/arrow.rst:118
 msgid "`GeoArrow specification <https://github.com/geopandas/geo-arrow-spec>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/arrow.rst:127
+#: ../../source/drivers/vector/arrow.rst:120
 msgid "Related driver: :ref:`Parquet driver <vector.parquet>`"
 msgstr ""
 
@@ -173,5 +163,42 @@ msgstr ""
 #~ "\"ARROW_IPC_STREAM:/vsistdin/\") will cause the "
 #~ "driver to unconditionally open the file"
 #~ " as a streaming IPC format."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Streaming IPC format: for sending an "
+#~ "arbitrary length sequence of record "
+#~ "batches. The format must generally be"
+#~ " processed from start to end, and "
+#~ "does not require random access. That "
+#~ "format is not generally materialized as"
+#~ " a file. If it is, the "
+#~ "recommended extension is ``.arrows`` (with "
+#~ "a trailing s). But the driver can"
+#~ " support regular files as well as "
+#~ "the /vsistdin/ and /vsistdout/ streaming "
+#~ "files. On opening, it might difficult"
+#~ " for the driver to detect that "
+#~ "the content is specifically a Arrow "
+#~ "IPC stream, especially if the extension"
+#~ " is not ``.arrows``, and the metadata"
+#~ " section is large. Prefixing the "
+#~ "filename with ``ARROW_IPC_STREAM:`` (e.g "
+#~ "\"ARROW_IPC_STREAM:/vsistdin/\") will cause the "
+#~ "driver to unconditionally open the file"
+#~ " as a streaming IPC format. "
+#~ "Alternatively, starting with GDAL 3.10, "
+#~ "specifying the ``-if ARROW`` option to"
+#~ " command line utilities accepting it, "
+#~ "or ``ARROW`` as the only value of"
+#~ " the ``papszAllowedDrivers`` of "
+#~ ":cpp:func:`GDALOpenEx`, also forces the driver"
+#~ " to recognize the passed filename."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
 #~ msgstr ""
 

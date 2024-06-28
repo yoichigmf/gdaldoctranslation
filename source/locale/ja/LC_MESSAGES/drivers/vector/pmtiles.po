@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -85,10 +85,10 @@ msgid "Opening options"
 msgstr ""
 
 #: ../../source/drivers/vector/pmtiles.rst:50
-msgid "|about-open-options| The following open options are available:"
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:59
+#: ../../source/drivers/vector/pmtiles.rst:58
 msgid ""
 "Vector tiles are generally produced with a buffer that provides overlaps "
 "between adjacent tiles, and can be used to display them properly. When "
@@ -96,25 +96,25 @@ msgid ""
 "this padding is undesirable, hence the default behavior of clipping."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:87
+#: ../../source/drivers/vector/pmtiles.rst:86
 msgid "Creation issues"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:89
+#: ../../source/drivers/vector/pmtiles.rst:88
 msgid ""
 "Tiles are generated with WebMercator (EPSG:3857) projection. Several "
 "layers can be written. It is possible to decide at which zoom level "
 "ranges a given layer is written."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:93
+#: ../../source/drivers/vector/pmtiles.rst:92
 msgid ""
 "Part of the conversion is multi-threaded by default, using as many "
 "threads as there are cores. The number of threads used can be controlled "
 "with the :config:`GDAL_NUM_THREADS` configuration option."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:97
+#: ../../source/drivers/vector/pmtiles.rst:96
 msgid ""
 "The driver implements also a direct translation mode when using "
 ":program:`ogr2ogr` with a MBTiles vector dataset as input and a PMTiles "
@@ -124,67 +124,55 @@ msgid ""
 "them by discretizing geometry coordinates."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:104
+#: ../../source/drivers/vector/pmtiles.rst:103
 msgid "Dataset creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:106
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/pmtiles.rst:133
+#: ../../source/drivers/vector/pmtiles.rst:129
 msgid ""
 "Maximum zoom level at which tiles are generated. Maximum supported value "
 "is 22."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:190
+#: ../../source/drivers/vector/pmtiles.rst:186
 msgid "Layer configuration"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:192
+#: ../../source/drivers/vector/pmtiles.rst:188
 msgid ""
 "The above mentioned CONF dataset creation option can be set to a string "
-"whose value is a JSON serialized document such as the below one:"
+"whose value is a JSon serialized document such as the below one:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:211
+#: ../../source/drivers/vector/pmtiles.rst:207
 msgid ""
 "*boundaries_lod0* and *boundaries_lod1* are the name of the OGR layers "
 "that are created into the target MVT dataset. They are mapped to the MVT "
 "target layer *boundaries*."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:215
+#: ../../source/drivers/vector/pmtiles.rst:211
 msgid ""
 "It is also possible to get the same behavior with the below layer "
 "creation options, although that is not convenient in the ogr2ogr use "
 "case."
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:220
+#: ../../source/drivers/vector/pmtiles.rst:216
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:222
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/pmtiles.rst:250
+#: ../../source/drivers/vector/pmtiles.rst:243
 msgid "/vsipmtiles/ virtual file system"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:252
+#: ../../source/drivers/vector/pmtiles.rst:245
 msgid ""
 "The /vsipmtiles/ virtual file system offers a view of the content of a "
 "PMTiles dataset has a file hierarchy, with the following structure:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:263
+#: ../../source/drivers/vector/pmtiles.rst:256
 msgid ""
 "The :source_file:`swig/python/gdal-utils/osgeo_utils/samples/gdal_ls.py` "
 "and :source_file:`swig/python/gdal-utils/osgeo_utils/samples/gdal_cp.py` "
@@ -192,53 +180,36 @@ msgid ""
 "dataset"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:268
+#: ../../source/drivers/vector/pmtiles.rst:261
 msgid "Listing the content of a dataset:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:274
-#: ../../source/drivers/vector/pmtiles.rst:296
+#: ../../source/drivers/vector/pmtiles.rst:267
+#: ../../source/drivers/vector/pmtiles.rst:289
 msgid "outputs:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:290
+#: ../../source/drivers/vector/pmtiles.rst:283
 msgid "Displaying the metadata JSON file:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:334
+#: ../../source/drivers/vector/pmtiles.rst:327
 msgid "Extracting all content in a local directory:"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:341
-msgid "Examples"
-msgstr ""
-
-#: ../../source/drivers/vector/pmtiles.rst:342
-msgid ""
-"Simple translation of a single shapefile into PMTiles. Dataset creation "
-"options (dsco) MINZOOM and MAXZOOM specifies tile zoom levels. ::"
-msgstr ""
-
-#: ../../source/drivers/vector/pmtiles.rst:347
-msgid ""
-"Merge all PostgreSQL/PostGIS tables in a schema into a single PMTiles "
-"file. PostgreSQL table names are used as layer names. Dataset creation "
-"options (dsco) MINZOOM and MAXZOOM specifies tile zoom levels. ::"
-msgstr ""
-
-#: ../../source/drivers/vector/pmtiles.rst:354
+#: ../../source/drivers/vector/pmtiles.rst:335
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:356
+#: ../../source/drivers/vector/pmtiles.rst:337
 msgid "`PMTiles specification <https://github.com/protomaps/PMTiles>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:357
+#: ../../source/drivers/vector/pmtiles.rst:338
 msgid ":ref:`Mapbox Vector tiles driver <vector.mvt>`"
 msgstr ""
 
-#: ../../source/drivers/vector/pmtiles.rst:358
+#: ../../source/drivers/vector/pmtiles.rst:339
 msgid ":ref:`MBTiles driver <raster.mbtiles>`"
 msgstr ""
 
@@ -274,5 +245,47 @@ msgstr ""
 #~ " string whose value is a JSon "
 #~ "serialized document such as the below"
 #~ " one:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above mentioned CONF dataset "
+#~ "creation option can be set to a"
+#~ " string whose value is a JSON "
+#~ "serialized document such as the below"
+#~ " one:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid "Examples"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Simple translation of a single shapefile"
+#~ " into PMTiles. Dataset creation options "
+#~ "(dsco) MINZOOM and MAXZOOM specifies "
+#~ "tile zoom levels. ::"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Merge all PostgreSQL/PostGIS tables in a"
+#~ " schema into a single PMTiles file."
+#~ " PostgreSQL table names are used as"
+#~ " layer names. Dataset creation options "
+#~ "(dsco) MINZOOM and MAXZOOM specifies "
+#~ "tile zoom levels. ::"
 #~ msgstr ""
 

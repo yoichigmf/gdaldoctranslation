@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,8 +19,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/api/gdaldimension_cpp.rst:10
+#: ../../source/api/gdaldimension_cpp.rst:5
 msgid "GDALDimension C++ API"
+msgstr ""
+
+#: ../../source/api/gdaldimension_cpp.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../source/api/gdaldimension_cpp.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/gdaldimension_cpp.rst
+msgid "戻り値"
 msgstr ""
 
 #~ msgid "Public Functions"

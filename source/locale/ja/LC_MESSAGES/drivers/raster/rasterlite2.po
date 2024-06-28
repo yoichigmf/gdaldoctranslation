@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -121,59 +121,55 @@ msgstr ""
 msgid "Creation options"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:68
-msgid "|about-creation-options| The following creation options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/rasterlite2.rst:144
+#: ../../source/drivers/raster/rasterlite2.rst:141
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:146
+#: ../../source/drivers/raster/rasterlite2.rst:143
 msgid "Reading a RasterLite2 database with a single coverage:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:152
+#: ../../source/drivers/raster/rasterlite2.rst:149
 msgid ""
 "Listing the subdatasets corresponding to the coverages of a RasterLite2 "
 "database with several coverages:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:159
+#: ../../source/drivers/raster/rasterlite2.rst:156
 msgid "Reading a subdataset corresponding to a coverage:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:165
+#: ../../source/drivers/raster/rasterlite2.rst:162
 msgid "Creating a RasterLite2 dataset from a grayscale image:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:171
+#: ../../source/drivers/raster/rasterlite2.rst:168
 msgid ""
 "Creating a RasterLite2 dataset from a RGB image, and using JPEG "
 "compression:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:178
+#: ../../source/drivers/raster/rasterlite2.rst:175
 msgid ""
 "Adding a RasterLite2 coverage to an existing SpatiaLite/RasterLite2 "
 "database:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:185
+#: ../../source/drivers/raster/rasterlite2.rst:182
 msgid "Adding pyramids to a coverage:"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:192
+#: ../../source/drivers/raster/rasterlite2.rst:189
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:194
+#: ../../source/drivers/raster/rasterlite2.rst:191
 msgid ""
 "`Rasterlite2 home page <https://www.gaia-"
 "gis.it/fossil/librasterlite2/index>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/rasterlite2.rst:196
+#: ../../source/drivers/raster/rasterlite2.rst:193
 msgid ":ref:`OGR SQLite driver <vector.sqlite>`"
 msgstr ""
 
@@ -187,5 +183,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "libsqlite3, librasterlite2, libspatialite"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
 #~ msgstr ""
 

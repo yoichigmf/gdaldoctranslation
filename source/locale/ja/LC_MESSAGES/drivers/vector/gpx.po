@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -114,26 +114,26 @@ msgid "Configuration options"
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:54
-msgid "|about-config-options| The following configuration options are available:"
+msgid "The following :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:67
-#: ../../source/drivers/vector/gpx.rst:102
+#: ../../source/drivers/vector/gpx.rst:101
 msgid "\"track_seg_id\" to \"trksegid\""
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:68
-#: ../../source/drivers/vector/gpx.rst:103
+#: ../../source/drivers/vector/gpx.rst:102
 msgid "\"track_seg_point_id\" to  \"trksegptid\""
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:69
-#: ../../source/drivers/vector/gpx.rst:104
+#: ../../source/drivers/vector/gpx.rst:103
 msgid "\"route_point_id\" to \"rteptid\""
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:71
-#: ../../source/drivers/vector/gpx.rst:106
+#: ../../source/drivers/vector/gpx.rst:105
 msgid ""
 "But note that no particular processing will be done for any extension "
 "field names."
@@ -144,44 +144,44 @@ msgid "Open options"
 msgstr ""
 
 #: ../../source/drivers/vector/gpx.rst:93
-msgid "|about-open-options| The following open options are available:"
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:124
+#: ../../source/drivers/vector/gpx.rst:123
 msgid "Encoding issues"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:126
+#: ../../source/drivers/vector/gpx.rst:125
 msgid "Expat library supports reading the following built-in encodings :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:128
+#: ../../source/drivers/vector/gpx.rst:127
 msgid "US-ASCII"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:129
+#: ../../source/drivers/vector/gpx.rst:128
 msgid "UTF-8"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:130
+#: ../../source/drivers/vector/gpx.rst:129
 msgid "UTF-16"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:131
+#: ../../source/drivers/vector/gpx.rst:130
 msgid "ISO-8859-1"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:132
+#: ../../source/drivers/vector/gpx.rst:131
 msgid "Windows-1252"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:134
+#: ../../source/drivers/vector/gpx.rst:133
 msgid ""
 "The content returned by OGR will be encoded in UTF-8, after the "
 "conversion from the encoding mentioned in the file header is."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:140
+#: ../../source/drivers/vector/gpx.rst:139
 msgid ""
 "If your GPX file is not encoded in one of the previous encodings, it will"
 " not be parsed by the GPX driver. You may convert it into one of the "
@@ -189,30 +189,30 @@ msgid ""
 "accordingly the *encoding* parameter value in the XML header."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:142
+#: ../../source/drivers/vector/gpx.rst:141
 msgid "When writing a GPX file, the driver expects UTF-8 content to be passed in."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:146
+#: ../../source/drivers/vector/gpx.rst:145
 msgid "Extensions element reading"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:148
+#: ../../source/drivers/vector/gpx.rst:147
 msgid ""
 "If the *<extensions>* element is detected in a GPX file, OGR will expose "
 "the content of its sub elements as fields. Complex content of sub "
 "elements will be exposed as an XML blob."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:152
+#: ../../source/drivers/vector/gpx.rst:151
 msgid "The following sequence GPX content :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:171
+#: ../../source/drivers/vector/gpx.rst:170
 msgid "will be interpreted in the OGR SF model as :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:188
+#: ../../source/drivers/vector/gpx.rst:187
 msgid ""
 "Note : the GPX driver will output content of the extensions element only "
 "if it is found in the first records of the GPX file. If extensions appear"
@@ -220,53 +220,53 @@ msgid ""
 ":config:`GPX_USE_EXTENSIONS` configuration option."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:192
+#: ../../source/drivers/vector/gpx.rst:191
 msgid "Creation Issues"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:194
+#: ../../source/drivers/vector/gpx.rst:193
 msgid ""
 "On export all layers are written to a single GPX file. Update of existing"
 " files is not currently supported."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:197
+#: ../../source/drivers/vector/gpx.rst:196
 msgid ""
 "If the output file already exits, the writing will not occur. You have to"
 " delete the existing file first."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:200
+#: ../../source/drivers/vector/gpx.rst:199
 msgid "Supported geometries :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:202
+#: ../../source/drivers/vector/gpx.rst:201
 msgid "Features of type wkbPoint/wkbPoint25D are written in the *wpt* element."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:204
+#: ../../source/drivers/vector/gpx.rst:203
 msgid ""
 "Features of type wkbLineString/wkbLineString25D are written in the *rte* "
 "element."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:206
+#: ../../source/drivers/vector/gpx.rst:205
 msgid ""
 "Features of type wkbMultiLineString/wkbMultiLineString25D are written in "
 "the *trk* element."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:208
+#: ../../source/drivers/vector/gpx.rst:207
 msgid "Other type of geometries are not supported."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:210
+#: ../../source/drivers/vector/gpx.rst:209
 msgid ""
 "For route points and tracks points, if there is a Z coordinate, it is "
 "used to fill the elevation element of the corresponding points."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:213
+#: ../../source/drivers/vector/gpx.rst:212
 msgid ""
 "If a layer is named \"track_points\" with wkbPoint/wkbPoint25D "
 "geometries, the tracks in the GPX file will be built from the sequence of"
@@ -284,39 +284,27 @@ msgid ""
 " the <name> element of the route."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:229
+#: ../../source/drivers/vector/gpx.rst:228
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:231
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/gpx.rst:253
+#: ../../source/drivers/vector/gpx.rst:249
 msgid "Dataset creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:255
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/gpx.rst:296
+#: ../../source/drivers/vector/gpx.rst:289
 msgid ""
 "Dataset creation options to fill the top <metadata> element have been "
 "added in GDAL 3.7:"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:339
+#: ../../source/drivers/vector/gpx.rst:332
 msgid ""
 "Waypoints, routes and tracks must be written into that order to be valid "
 "against the XML Schema."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:342
+#: ../../source/drivers/vector/gpx.rst:335
 msgid ""
 "When translating from a source dataset, it may be necessary to rename the"
 " field names from the source dataset to the expected GPX attribute names,"
@@ -325,51 +313,51 @@ msgid ""
 "utility."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:349
+#: ../../source/drivers/vector/gpx.rst:342
 msgid "Issues when translating to Shapefile"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:351
+#: ../../source/drivers/vector/gpx.rst:344
 msgid ""
 "When translating the *track_points* layer to a Shapefile, the field names"
 " \"track_seg_id\" and \"track_seg_point_id\" are truncated to 10 "
 "characters in the .DBF file, thus leading to duplicate names."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:355
+#: ../../source/drivers/vector/gpx.rst:348
 msgid ""
 "To avoid this, you can define the :config:`GPX_SHORT_NAMES` configuration"
 " option to TRUE."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:358
+#: ../../source/drivers/vector/gpx.rst:351
 msgid "To translate the track_points layer of a GPX file to a set of shapefiles :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:365
+#: ../../source/drivers/vector/gpx.rst:358
 msgid ""
 "Shapefile does not support fields of type DateTime. It only supports "
 "fields of type Date. So by default, you will lose the hour:minute:second "
 "part of the *Time* elements of a GPX file."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:369
+#: ../../source/drivers/vector/gpx.rst:362
 msgid ""
 "You can use the OGR SQL CAST operator to convert the *time* field to a "
 "string :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:376
+#: ../../source/drivers/vector/gpx.rst:369
 msgid ""
 "There is a more convenient way to select all fields and ask for the "
 "conversion of the ones of a given type to strings:"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:385
+#: ../../source/drivers/vector/gpx.rst:378
 msgid "VSI Virtual File System API support"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:387
+#: ../../source/drivers/vector/gpx.rst:380
 msgid ""
 "The driver supports reading and writing to files managed by VSI Virtual "
 "File System API, which include \"regular\" files, as well as files in the"
@@ -377,54 +365,54 @@ msgid ""
 "domains."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:392
+#: ../../source/drivers/vector/gpx.rst:385
 msgid "Writing to /dev/stdout or /vsistdout/ is also supported."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:395
+#: ../../source/drivers/vector/gpx.rst:388
 msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:397
+#: ../../source/drivers/vector/gpx.rst:390
 msgid "The ogrinfo utility can be used to dump the content of a GPX datafile :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:403
+#: ../../source/drivers/vector/gpx.rst:396
 msgid "The ogr2ogr utility can be used to do GPX to GPX translation :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:412
+#: ../../source/drivers/vector/gpx.rst:405
 msgid ""
 "Note : in the case of GPX to GPX translation, you need to specify the "
 "layer names, in order to discard the route_points and track_points "
 "layers."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:416
+#: ../../source/drivers/vector/gpx.rst:409
 msgid "Use of the *<extensions>* tag for output :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:422
+#: ../../source/drivers/vector/gpx.rst:415
 msgid "which will give an output like the following one :"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:446
+#: ../../source/drivers/vector/gpx.rst:439
 msgid ""
 "Use of -sql option to remap field names to the ones allowed by the GPX "
 "schema:"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:454
+#: ../../source/drivers/vector/gpx.rst:447
 msgid "FAQ"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:456
+#: ../../source/drivers/vector/gpx.rst:449
 msgid ""
 "How to solve \"ERROR 6: Cannot create GPX layer XXXXXX with unknown "
 "geometry type\" ?"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:459
+#: ../../source/drivers/vector/gpx.rst:452
 msgid ""
 "This error happens when the layer to create does not expose a precise "
 "geometry type, but just a generic wkbUnknown type. This is for example "
@@ -433,15 +421,15 @@ msgid ""
 " MULTILINESTRING)."
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:466
+#: ../../source/drivers/vector/gpx.rst:459
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:468
+#: ../../source/drivers/vector/gpx.rst:461
 msgid "`Home page for GPX format <http://www.topografix.com/gpx.asp>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/gpx.rst:469
+#: ../../source/drivers/vector/gpx.rst:462
 msgid "`GPX 1.1 format documentation <http://www.topografix.com/GPX/1/1/>`__"
 msgstr ""
 
@@ -478,5 +466,25 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "supported:"
 #~ msgstr ""
 

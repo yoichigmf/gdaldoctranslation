@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -75,22 +75,18 @@ msgstr ""
 #: ../../source/drivers/vector/topojson.rst:35
 msgid ""
 "Starting with GDAL 2.3, the URL/filename/text might be prefixed with "
-"TopoJSON: to avoid any ambiguity with other drivers. Alternatively, "
-"starting with GDAL 3.10, specifying the ``-if TopoJSON`` option to "
-"command line utilities accepting it, or ``TopoJSON`` as the only value of"
-" the ``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, also forces the "
-"driver to recognize the passed URL/filename/text."
+"TopoJSON: to avoid any ambiguity with other drivers."
 msgstr ""
 
-#: ../../source/drivers/vector/topojson.rst:43
+#: ../../source/drivers/vector/topojson.rst:39
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/topojson.rst:45
+#: ../../source/drivers/vector/topojson.rst:41
 msgid ":ref:`GeoJSON driver <vector.geojson>`"
 msgstr ""
 
-#: ../../source/drivers/vector/topojson.rst:46
+#: ../../source/drivers/vector/topojson.rst:42
 msgid ""
 "`TopoJSON Format Specification <https://github.com/topojson/topojson-"
 "specification/blob/master/README.md>`__"
@@ -107,5 +103,19 @@ msgstr ""
 #~ "URL/filename/text might be prefixed with "
 #~ "TopoJSON: to avoid any ambiguity with"
 #~ " other drivers."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Starting with GDAL 2.3, the "
+#~ "URL/filename/text might be prefixed with "
+#~ "TopoJSON: to avoid any ambiguity with"
+#~ " other drivers. Alternatively, starting "
+#~ "with GDAL 3.10, specifying the ``-if "
+#~ "TopoJSON`` option to command line "
+#~ "utilities accepting it, or ``TopoJSON`` "
+#~ "as the only value of the "
+#~ "``papszAllowedDrivers`` of :cpp:func:`GDALOpenEx`, "
+#~ "also forces the driver to recognize "
+#~ "the passed URL/filename/text."
 #~ msgstr ""
 

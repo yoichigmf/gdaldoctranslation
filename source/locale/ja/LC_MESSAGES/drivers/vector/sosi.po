@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -49,8 +49,8 @@ msgstr ""
 
 #: ../../source/drivers/vector/sosi.rst:16
 msgid ""
-"|about-open-options| Starting with GDAL 3.1, the following open options "
-"can be specified:"
+"Starting with GDAL 3.1, the following open options can be specified "
+"(typically with the -oo name=value parameters of ogrinfo or ogr2ogr):"
 msgstr ""
 
 #: ../../source/drivers/vector/sosi.rst:29
@@ -94,5 +94,11 @@ msgstr ""
 #~ " open options can be specified "
 #~ "(typically with the -oo name=value "
 #~ "parameters of ogrinfo or ogr2ogr):"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-open-options| Starting with GDAL"
+#~ " 3.1, the following open options can"
+#~ " be specified:"
 #~ msgstr ""
 

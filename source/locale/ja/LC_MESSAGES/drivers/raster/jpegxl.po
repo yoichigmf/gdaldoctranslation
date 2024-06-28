@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -100,14 +100,14 @@ msgid "Open Options"
 msgstr ""
 
 #: ../../source/drivers/raster/jpegxl.rst:55
-msgid "|about-open-options| The following open options are available:"
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:68
+#: ../../source/drivers/raster/jpegxl.rst:67
 msgid "Creation Options"
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:70
+#: ../../source/drivers/raster/jpegxl.rst:69
 msgid ""
 "With libjxl 0.6.1, only 1 (greyscale), 2 band (greyscale + alpha), 3 band"
 " (RGB) or 4 band (RGBA) source images are supported. With later libjxl "
@@ -115,7 +115,7 @@ msgid ""
 "Byte, UInt16 and Float32."
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:75
+#: ../../source/drivers/raster/jpegxl.rst:74
 msgid ""
 "When copying from a (regular) JPEG file, and not specifying lossy "
 "compression options, its content is re-encoded in a lossless way, and "
@@ -123,19 +123,19 @@ msgid ""
 "JPEGXL codestream."
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:79
-msgid "|about-creation-options| The following creation options are available:"
+#: ../../source/drivers/raster/jpegxl.rst:78
+msgid "The following creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:193
+#: ../../source/drivers/raster/jpegxl.rst:191
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:195
+#: ../../source/drivers/raster/jpegxl.rst:193
 msgid "`JPEG-XL home page <https://jpeg.org/jpegxl/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/jpegxl.rst:196
+#: ../../source/drivers/raster/jpegxl.rst:194
 msgid "`libjxl <https://github.com/libjxl/libjxl/>`__"
 msgstr ""
 
@@ -155,5 +155,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following creation options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are available:"
 #~ msgstr ""
 

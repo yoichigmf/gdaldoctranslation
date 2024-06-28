@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -67,8 +67,8 @@ msgstr ""
 
 #: ../../source/drivers/vector/vfk.rst:30
 msgid ""
-"|about-open-options| Starting with GDAL 2.3, the following open options "
-"can be specified:"
+"Starting with GDAL 2.3, the following open options can be specified "
+"(typically with the ``-oo name=value`` parameters of ogrinfo or ogr2ogr):"
 msgstr ""
 
 #: ../../source/drivers/vector/vfk.rst:52
@@ -76,7 +76,7 @@ msgid "Configuration options"
 msgstr ""
 
 #: ../../source/drivers/vector/vfk.rst:54
-msgid "|about-config-options| The following configuration options are available:"
+msgid "Several :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
 #: ../../source/drivers/vector/vfk.rst:98
@@ -208,5 +208,16 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Several :ref:`configuration options <configoptions>` are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-open-options| Starting with GDAL"
+#~ " 2.3, the following open options can"
+#~ " be specified:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
 #~ msgstr ""
 

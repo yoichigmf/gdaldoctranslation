@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -129,19 +129,15 @@ msgstr ""
 msgid "Dataset open options"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:64
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/odbc.rst:78
+#: ../../source/drivers/vector/odbc.rst:75
 msgid "Driver capabilities"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:83
+#: ../../source/drivers/vector/odbc.rst:80
 msgid "Access Databases (.MDB) support"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:85
+#: ../../source/drivers/vector/odbc.rst:82
 msgid ""
 "On Windows provided that the \"Microsoft Access Driver (\\*.mdb)\" ODBC "
 "driver is installed, non-spatial MS Access Databases (not Personal "
@@ -149,14 +145,14 @@ msgid ""
 "filenames."
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:90
+#: ../../source/drivers/vector/odbc.rst:87
 msgid ""
 "On Linux opening non-spatial MS Access Databases using the ODBC driver is"
 " possible via installation of unixODBC and mdbtools. See :ref:`MDB "
 "<vector.pgeo>` for instructions on how to enable this."
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:94
+#: ../../source/drivers/vector/odbc.rst:91
 msgid ""
 "The driver supports either .mdb or .accdb extensions for Microsoft Access"
 " databases. Additionally, it also supports opening files with the ESRI "
@@ -164,28 +160,28 @@ msgid ""
 "extension)."
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:100
+#: ../../source/drivers/vector/odbc.rst:97
 msgid "Creation Issues"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:102
+#: ../../source/drivers/vector/odbc.rst:99
 msgid ""
 "Currently the ODBC OGR driver is read-only, so new features, tables and "
 "datasources cannot normally be created by OGR applications. This "
 "limitation may be removed in the future."
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:107
+#: ../../source/drivers/vector/odbc.rst:104
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:109
+#: ../../source/drivers/vector/odbc.rst:106
 msgid ""
 "`MSDN ODBC API Reference <http://msdn.microsoft.com/en-"
 "us/library/ms714562(VS.85).aspx>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/odbc.rst:111
+#: ../../source/drivers/vector/odbc.rst:108
 msgid ":ref:`PGeo driver <vector.pgeo>`"
 msgstr ""
 
@@ -199,5 +195,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "ODBC library"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
 #~ msgstr ""
 

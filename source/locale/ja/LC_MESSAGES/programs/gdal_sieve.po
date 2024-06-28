@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/programs/gdal_sieve.rst:5
-msgid "gdal_sieve"
+msgid "gdal_sieve.py"
 msgstr ""
 
 #: ../../source/programs/gdal_sieve.rst:9
@@ -37,10 +37,10 @@ msgstr ""
 
 #: ../../source/programs/gdal_sieve.rst:25
 msgid ""
-":program:`gdal_sieve` removes raster polygons smaller than a provided "
-"threshold size (in pixels) and replaces them with the pixel value of the "
-"largest neighbour polygon. The result can be written back to the existing"
-" raster band, or copied into a new file."
+":program:`gdal_sieve.py` script removes raster polygons smaller than a "
+"provided threshold size (in pixels) and replaces them with the pixel "
+"value of the largest neighbour polygon. The result can be written back to"
+" the existing raster band, or copied into a new file."
 msgstr ""
 
 #: ../../source/programs/gdal_sieve.rst:30
@@ -56,12 +56,6 @@ msgid ""
 ":cpp:func:`GDALSieveFilter` docs."
 msgstr ""
 
-#: ../../source/programs/gdal_sieve.rst:39
-msgid ""
-"gdal_retile is a Python utility, and is only available if GDAL Python "
-"bindings are available."
-msgstr ""
-
 #~ msgid "gdal_sieve.py"
 #~ msgstr ""
 
@@ -74,5 +68,24 @@ msgstr ""
 #~ "result can be written back to the"
 #~ " existing raster band, or copied into"
 #~ " a new file."
+#~ msgstr ""
+
+#~ msgid "gdal_sieve"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":program:`gdal_sieve` removes raster polygons "
+#~ "smaller than a provided threshold size"
+#~ " (in pixels) and replaces them with"
+#~ " the pixel value of the largest "
+#~ "neighbour polygon. The result can be "
+#~ "written back to the existing raster "
+#~ "band, or copied into a new file."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "gdal_retile is a Python utility, and "
+#~ "is only available if GDAL Python "
+#~ "bindings are available."
 #~ msgstr ""
 

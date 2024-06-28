@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -102,15 +102,11 @@ msgstr ""
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/vector/idb.rst:58
-msgid "|about-config-options| The following configuration options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/idb.rst:67
+#: ../../source/drivers/vector/idb.rst:64
 msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/idb.rst:69
+#: ../../source/drivers/vector/idb.rst:66
 msgid ""
 "This example shows using ogrinfo to list Informix DataBlade layers on a "
 "different host."
@@ -123,5 +119,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Informix DataBlade"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are supported:"
 #~ msgstr ""
 

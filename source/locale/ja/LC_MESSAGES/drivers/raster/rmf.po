@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -80,27 +80,19 @@ msgstr ""
 msgid "Open Options"
 msgstr ""
 
-#: ../../source/drivers/raster/rmf.rst:46
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/rmf.rst:57
+#: ../../source/drivers/raster/rmf.rst:53
 msgid "Creation Options"
 msgstr ""
 
-#: ../../source/drivers/raster/rmf.rst:59
-msgid "|about-creation-options| The following creation options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/rmf.rst:112
+#: ../../source/drivers/raster/rmf.rst:105
 msgid "See Also:"
 msgstr ""
 
-#: ../../source/drivers/raster/rmf.rst:114
+#: ../../source/drivers/raster/rmf.rst:107
 msgid "Implemented as :source_file:`frmts/rmf/rmfdataset.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/rmf.rst:115
+#: ../../source/drivers/raster/rmf.rst:108
 msgid "`\"Panorama\" GIS homepage <http://www.gisinfo.ru/index_en.htm>`__"
 msgstr ""
 
@@ -108,5 +100,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "RMF"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -55,15 +55,11 @@ msgstr ""
 msgid "Creation Options"
 msgstr ""
 
-#: ../../source/drivers/raster/r.rst:31
-msgid "|about-creation-options| The following creation options are available:"
-msgstr ""
-
-#: ../../source/drivers/raster/r.rst:48
+#: ../../source/drivers/raster/r.rst:45
 msgid "See Also:"
 msgstr ""
 
-#: ../../source/drivers/raster/r.rst:50
+#: ../../source/drivers/raster/r.rst:47
 msgid "`R Project <http://www.r-project.org/>`__"
 msgstr ""
 
@@ -71,5 +67,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "R"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are available:"
 #~ msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -97,30 +97,30 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/basisu.rst:53
-msgid "|about-creation-options| The following creation options are available:"
+msgid "The following creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/basisu.rst:111
+#: ../../source/drivers/raster/basisu.rst:110
 msgid ""
 "Defaults to the maximum number of virtual CPUs available. Can also be "
 "controlled with the :config:`GDAL_NUM_THREADS` configuration option."
 msgstr ""
 
-#: ../../source/drivers/raster/basisu.rst:119
+#: ../../source/drivers/raster/basisu.rst:118
 msgid "Whether to enable MIPMAP generation."
 msgstr ""
 
-#: ../../source/drivers/raster/basisu.rst:129
+#: ../../source/drivers/raster/basisu.rst:128
 msgid "Build instructions"
 msgstr ""
 
-#: ../../source/drivers/raster/basisu.rst:131
+#: ../../source/drivers/raster/basisu.rst:130
 msgid ""
 "Building basisu as a library requires currently building the `cmake` "
 "branch of the https://github.com/rouault/basis_universal/tree/cmake fork."
 msgstr ""
 
-#: ../../source/drivers/raster/basisu.rst:143
+#: ../../source/drivers/raster/basisu.rst:142
 msgid ""
 "Once basisu is built, GDAL CMake options must be configured by pointing "
 "the basisu install prefix in the ``CMAKE_PREFIX_PATH`` variable or "
@@ -150,5 +150,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following creation options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are available:"
 #~ msgstr ""
 

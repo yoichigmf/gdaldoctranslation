@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -82,28 +82,28 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/gif.rst:40
-msgid "|about-creation-options| The following creation options are supported:"
+msgid "Creation Options:"
 msgstr ""
 
-#: ../../source/drivers/raster/gif.rst:55
+#: ../../source/drivers/raster/gif.rst:54
 msgid ""
 "GDAL's internal GIF support is implemented based on source from the "
 "giflib 4.1.6 library (written by Gershon Elbor, Eric Raymond and Toshio "
 "Kuratomi), hence generating LZW compressed GIF."
 msgstr ""
 
-#: ../../source/drivers/raster/gif.rst:59
+#: ../../source/drivers/raster/gif.rst:58
 msgid ""
 "The driver was written with the financial support of the `DM Solutions "
 "Group <http://www.dmsolutions.ca/>`__, and `CIET International "
 "<http://www.ciet.org/>`__."
 msgstr ""
 
-#: ../../source/drivers/raster/gif.rst:64
+#: ../../source/drivers/raster/gif.rst:63
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/gif.rst:66
+#: ../../source/drivers/raster/gif.rst:65
 msgid "`giflib Home Page <http://sourceforge.net/projects/giflib/>`__"
 msgstr ""
 
@@ -120,5 +120,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Creation Options:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
 #~ msgstr ""
 

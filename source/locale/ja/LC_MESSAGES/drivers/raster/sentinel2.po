@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -504,75 +504,75 @@ msgid "Open options"
 msgstr ""
 
 #: ../../source/drivers/raster/sentinel2.rst:178
-msgid "|about-open-options| The driver can be passed the following open options:"
+msgid "The driver can be passed the following open options:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:189
+#: ../../source/drivers/raster/sentinel2.rst:188
 msgid ""
 "0 on areas with no tiles, or when the tile data is set to the NODATA or "
 "SATURATED special values,"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:191
+#: ../../source/drivers/raster/sentinel2.rst:190
 msgid "4095 on areas with valid data."
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:193
+#: ../../source/drivers/raster/sentinel2.rst:192
 msgid ""
 "Note: above open options can also be specified as configuration options, "
 "by prefixing the open option name with SENTINEL2\\_ (e.g. "
 "SENTINEL2_ALPHA)."
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:198
+#: ../../source/drivers/raster/sentinel2.rst:197
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:200
+#: ../../source/drivers/raster/sentinel2.rst:199
 msgid "Opening the main metadata file of a Sentinel2 product:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:257
+#: ../../source/drivers/raster/sentinel2.rst:256
 msgid "Opening the .zip file directly:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:263
+#: ../../source/drivers/raster/sentinel2.rst:262
 msgid "Opening the 10 meters resolution bands of a L1C subdataset:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:337
+#: ../../source/drivers/raster/sentinel2.rst:336
 msgid "Conversion of a L1C subdataset to tiled GeoTIFF"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:345
+#: ../../source/drivers/raster/sentinel2.rst:344
 msgid "Generating blank overviews for a L1C subdataset:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:351
+#: ../../source/drivers/raster/sentinel2.rst:350
 msgid ""
 "Creating a VRT file from the subdataset (can be convenient to have the "
 "subdatasets as files):"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:359
+#: ../../source/drivers/raster/sentinel2.rst:358
 msgid "Opening the 10 meters resolution bands of a L1B subdataset:"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:455
+#: ../../source/drivers/raster/sentinel2.rst:454
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:457
+#: ../../source/drivers/raster/sentinel2.rst:456
 msgid "`Sentinels Scientific Data Hub <https://scihub.esa.int/>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:458
+#: ../../source/drivers/raster/sentinel2.rst:457
 msgid ""
 "`Sentinel 2 User guide <https://sentinels.copernicus.eu/web/sentinel"
 "/user-guides/sentinel-2-msi>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:460
+#: ../../source/drivers/raster/sentinel2.rst:459
 msgid ""
 "`Sentinel 2 User Handbook <https://sentinels.copernicus.eu/web/sentinel"
 "/user-guides/document-"
@@ -580,11 +580,11 @@ msgid ""
 "handbook>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:464
+#: ../../source/drivers/raster/sentinel2.rst:463
 msgid "Credits"
 msgstr ""
 
-#: ../../source/drivers/raster/sentinel2.rst:466
+#: ../../source/drivers/raster/sentinel2.rst:465
 msgid ""
 "This driver has been developed by `Spatialys <http://spatialys.com>`__ "
 "with funding from `Centre National d'Etudes Spatiales (CNES) "
@@ -616,5 +616,10 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The driver can be passed the following open options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-open-options| The driver can "
+#~ "be passed the following open options:"
 #~ msgstr ""
 

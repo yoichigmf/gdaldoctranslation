@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -260,37 +260,25 @@ msgstr ""
 msgid "Dataset creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/dgnv8.rst:119
-msgid ""
-"|about-dataset-creation-options| The following dataset creation options "
-"are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/dgnv8.rst:204
+#: ../../source/drivers/vector/dgnv8.rst:201
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/dgnv8.rst:206
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/dgnv8.rst:221
+#: ../../source/drivers/vector/dgnv8.rst:215
 msgid "Building"
 msgstr ""
 
-#: ../../source/drivers/vector/dgnv8.rst:223
+#: ../../source/drivers/vector/dgnv8.rst:217
 msgid ""
 "See :ref:`ODA platform support <vector.oda>` for building GDAL with ODA "
 "support."
 msgstr ""
 
-#: ../../source/drivers/vector/dgnv8.rst:232
+#: ../../source/drivers/vector/dgnv8.rst:226
 msgid ":ref:`DGN (v7) driver <vector.dgn>`"
 msgstr ""
 
-#: ../../source/drivers/vector/dgnv8.rst:233
+#: ../../source/drivers/vector/dgnv8.rst:227
 msgid ":ref:`ogr_feature_style`"
 msgstr ""
 
@@ -304,5 +292,17 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "Open Design Alliance Teigha library"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "following dataset creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
 #~ msgstr ""
 

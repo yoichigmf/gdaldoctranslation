@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -85,25 +85,21 @@ msgstr ""
 msgid "Layer open options"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:40
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/elasticsearch.rst:147
+#: ../../source/drivers/vector/elasticsearch.rst:144
 msgid "Elasticsearch vs OGR concepts"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:149
+#: ../../source/drivers/vector/elasticsearch.rst:146
 msgid ""
 "Each mapping type inside a Elasticsearch index will be considered as a "
 "OGR layer. A Elasticsearch document is considered as a OGR feature."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:153
+#: ../../source/drivers/vector/elasticsearch.rst:150
 msgid "Field definitions"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:155
+#: ../../source/drivers/vector/elasticsearch.rst:152
 msgid ""
 "Fields are dynamically mapped from the input OGR data source. However, "
 "the driver will take advantage of advanced options within Elasticsearch "
@@ -111,7 +107,7 @@ msgid ""
 "<http://code.google.com/p/ogr2elasticsearch/wiki/ModifyingtheIndex>`__."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:160
+#: ../../source/drivers/vector/elasticsearch.rst:157
 msgid ""
 "The mapping file allows you to modify the mapping according to the "
 "`Elasticsearch field-specific types "
@@ -121,11 +117,11 @@ msgid ""
 " with text fields within Elasticsearch."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:172
+#: ../../source/drivers/vector/elasticsearch.rst:169
 msgid "Geometry types"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:174
+#: ../../source/drivers/vector/elasticsearch.rst:171
 msgid ""
 "In GDAL 2.0 and earlier, the driver was limited in the geometry it "
 "handles: even if polygons were provided as input, they were stored as "
@@ -139,17 +135,17 @@ msgid ""
 "approximated to their linear equivalents)."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:186
+#: ../../source/drivers/vector/elasticsearch.rst:183
 msgid "Filtering"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:188
+#: ../../source/drivers/vector/elasticsearch.rst:185
 msgid ""
 "The driver will forward any spatial filter set with SetSpatialFilter() to"
 " the server."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:191
+#: ../../source/drivers/vector/elasticsearch.rst:188
 msgid ""
 "Starting with GDAL 2.2, SQL attribute filters set with "
 "SetAttributeFilter() are converted to `Elasticsearch filter syntax "
@@ -158,40 +154,40 @@ msgid ""
 "spatial filter."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:196
+#: ../../source/drivers/vector/elasticsearch.rst:193
 msgid ""
 "It is also possible to directly use a Elasticsearch filter by setting the"
-" string passed to SetAttributeFilter() as a JSON serialized object, e.g."
+" string passed to SetAttributeFilter() as a JSon serialized object, e.g."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:204
+#: ../../source/drivers/vector/elasticsearch.rst:201
 msgid ""
-"Note: if defining directly an Elastic Search JSON filter, the spatial "
+"Note: if defining directly an Elastic Search JSon filter, the spatial "
 "filter specified through SetSpatialFilter() will be ignored, and must "
-"thus be included in the JSON filter if needed."
+"thus be included in the JSon filter if needed."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:209
+#: ../../source/drivers/vector/elasticsearch.rst:206
 msgid "Paging"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:211
+#: ../../source/drivers/vector/elasticsearch.rst:208
 msgid ""
 "Features are retrieved from the server by chunks of 100. This can be "
 "altered with the BATCH_SIZE open option."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:215
+#: ../../source/drivers/vector/elasticsearch.rst:212
 msgid "Schema"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:217
+#: ../../source/drivers/vector/elasticsearch.rst:214
 msgid ""
 "When reading a Elastic Search index/type, OGR must establish the schema "
 "of attribute and geometry fields, since OGR has a fixed schema concept."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:220
+#: ../../source/drivers/vector/elasticsearch.rst:217
 msgid ""
 "In the general case, OGR will read the mapping definition and the first "
 "100 documents (can be altered with the "
@@ -200,11 +196,11 @@ msgid ""
 "values."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:225
+#: ../../source/drivers/vector/elasticsearch.rst:222
 msgid ""
 "It is also possible to set the :oo:`JSON_FIELD=YES` open option so that a"
 " \\_json special field is added to the OGR schema. When reading Elastic "
-"Search documents as OGR features, the full JSON version of the document "
+"Search documents as OGR features, the full JSon version of the document "
 "will be stored in the \\_json field. This might be useful in case of "
 "complex documents or with data types that do not translate well in OGR "
 "data types. On creation/update of documents, if the \\_json field is "
@@ -212,11 +208,11 @@ msgid ""
 "ignored)."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:235
+#: ../../source/drivers/vector/elasticsearch.rst:232
 msgid "Feature ID"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:237
+#: ../../source/drivers/vector/elasticsearch.rst:234
 msgid ""
 "Elastic Search have a special \\_id field that contains the unique ID of "
 "the document. This field is returned as an OGR field, but cannot be used "
@@ -228,20 +224,20 @@ msgid ""
 " all."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:247
+#: ../../source/drivers/vector/elasticsearch.rst:244
 msgid "ExecuteSQL() interface"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:249
+#: ../../source/drivers/vector/elasticsearch.rst:246
 msgid ""
 "Starting with GDAL 2.2, SQL requests, involving a single layer, with "
 "WHERE and ORDER BY statements will be translated as Elasticsearch "
 "queries."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:253
+#: ../../source/drivers/vector/elasticsearch.rst:250
 msgid ""
-"Otherwise, if specifying \"ES\" as the dialect of ExecuteSQL(), a JSON "
+"Otherwise, if specifying \"ES\" as the dialect of ExecuteSQL(), a JSon "
 "string with a serialized `Elastic Search filter "
 "<https://www.elastic.co/guide/en/elasticsearch/reference/current/query-"
 "dsl-filters.html>`__ can be passed. The search will be done on all "
@@ -252,28 +248,28 @@ msgid ""
 "provenance of the features."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:263
+#: ../../source/drivers/vector/elasticsearch.rst:260
 msgid ""
 "The following filter can be used to restrict the search to the \"poly\" "
 "index and its \"FeatureCollection\" type mapping (Elasticsearch 1.X and "
 "2.X)"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:283
+#: ../../source/drivers/vector/elasticsearch.rst:280
 msgid "For Elasticsearch 5.X (works also with 2.X) :"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:303
+#: ../../source/drivers/vector/elasticsearch.rst:300
 msgid ""
 "Aggregations are not supported through the ExecuteSQL() interface, but "
 "through the below described mechanism."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:309
+#: ../../source/drivers/vector/elasticsearch.rst:306
 msgid "Aggregations"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:313
+#: ../../source/drivers/vector/elasticsearch.rst:310
 msgid ""
 "The driver can support issuing aggregation requests to an index. "
 "ElasticSearch aggregations can potentially be rather complex, so the "
@@ -284,11 +280,11 @@ msgid ""
 "value is a JSON serialized object whose members are:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:321
+#: ../../source/drivers/vector/elasticsearch.rst:318
 msgid "``index`` (required): the name of the index to query."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:323
+#: ../../source/drivers/vector/elasticsearch.rst:320
 msgid ""
 "``geometry_field`` (optional): the path to the geometry field on which to"
 " do `geohash grid aggregation "
@@ -302,13 +298,13 @@ msgid ""
 "free license."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:331
+#: ../../source/drivers/vector/elasticsearch.rst:328
 msgid ""
-"``geohash_grid`` (optional): a JSON object, describing a few "
+"``geohash_grid`` (optional): a JSon object, describing a few "
 "characteristics of the geohash_grid, that can have the following members:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:334
+#: ../../source/drivers/vector/elasticsearch.rst:331
 msgid ""
 "``size`` (optional): maximum number of geohash buckets to return per "
 "query. The default is 10,000. If ``precision`` is specified and the "
@@ -316,7 +312,7 @@ msgid ""
 "results, by sorting by decreasing number of documents matched."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:339
+#: ../../source/drivers/vector/elasticsearch.rst:336
 msgid ""
 "``precision`` (optional): string length of the geohashes used to define "
 "cells/buckets in the results, in the [1,12] range. A geohash of size 1 "
@@ -326,55 +322,55 @@ msgid ""
 "that the theoretical number of buckets returned does not exceed ``size``."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:346
+#: ../../source/drivers/vector/elasticsearch.rst:343
 msgid ""
-"``fields`` (optional): a JSON object, describing which additional "
+"``fields`` (optional): a JSon object, describing which additional "
 "statistical fields should be added, that can have the following members:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:349
+#: ../../source/drivers/vector/elasticsearch.rst:346
 msgid ""
 "``min`` (optional): array with the paths to index properties on which to "
 "compute the minimum during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:352
+#: ../../source/drivers/vector/elasticsearch.rst:349
 msgid ""
 "``max`` (optional): array with the paths to index properties on which to "
 "compute the maximum  during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:355
+#: ../../source/drivers/vector/elasticsearch.rst:352
 msgid ""
 "``avg`` (optional): array with the paths to index properties on which to "
 "compute the average during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:358
+#: ../../source/drivers/vector/elasticsearch.rst:355
 msgid ""
 "``sum`` (optional): array with the paths to index properties on which to "
 "compute the sum during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:361
+#: ../../source/drivers/vector/elasticsearch.rst:358
 msgid ""
 "``count`` (optional): array with the paths to index properties on which "
 "to compute the value_count during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:364
+#: ../../source/drivers/vector/elasticsearch.rst:361
 msgid ""
 "``stats`` (optional): array with the paths to index properties on which "
 "to compute all the above indicators during aggegation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:367
+#: ../../source/drivers/vector/elasticsearch.rst:364
 msgid ""
 "When using a GeoJSON mapping, the path to an index property is typically "
 "``property.some_name``."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:370
+#: ../../source/drivers/vector/elasticsearch.rst:367
 msgid ""
 "When specifying the :oo:`AGGREGATION` open option, a single read-only "
 "layer called ``aggregation`` will be returned. A spatial filter can be "
@@ -382,63 +378,63 @@ msgid ""
 "prior to aggregation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:374
+#: ../../source/drivers/vector/elasticsearch.rst:371
 msgid ""
 "An example of a potential value for the :oo:`AGGREGATION` open option can"
 " be:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:392
+#: ../../source/drivers/vector/elasticsearch.rst:389
 msgid ""
 "It will return a layer with a Point geometry field and the following "
 "fields:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:394
+#: ../../source/drivers/vector/elasticsearch.rst:391
 msgid ""
 "``key`` of type String: the value of the geohash of the corresponding "
 "bucket"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:395
+#: ../../source/drivers/vector/elasticsearch.rst:392
 msgid ""
 "``doc_count`` of type Integer64: the number of matching documents in the "
 "bucket"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:396
+#: ../../source/drivers/vector/elasticsearch.rst:393
 msgid "``field_a_min`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:397
+#: ../../source/drivers/vector/elasticsearch.rst:394
 msgid "``field_b_min`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:398
+#: ../../source/drivers/vector/elasticsearch.rst:395
 msgid "``field_c_min`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:399
+#: ../../source/drivers/vector/elasticsearch.rst:396
 msgid "``field_c_max`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:400
+#: ../../source/drivers/vector/elasticsearch.rst:397
 msgid "``field_c_avg`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:401
+#: ../../source/drivers/vector/elasticsearch.rst:398
 msgid "``field_c_sum`` of type Real"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:402
+#: ../../source/drivers/vector/elasticsearch.rst:399
 msgid "``field_c_count`` of type Integer64"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:405
+#: ../../source/drivers/vector/elasticsearch.rst:402
 msgid "Multi-target layers"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:409
+#: ../../source/drivers/vector/elasticsearch.rst:406
 msgid ""
 "The GetLayerByName() method accepts a layer name that can be a comma-"
 "separated list of indices, potentially combined with the '*' wildcard "
@@ -450,47 +446,47 @@ msgid ""
 "layers share the same schema."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:417
+#: ../../source/drivers/vector/elasticsearch.rst:414
 msgid "Getting metadata"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:419
+#: ../../source/drivers/vector/elasticsearch.rst:416
 msgid "Getting feature count is efficient."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:421
+#: ../../source/drivers/vector/elasticsearch.rst:418
 msgid ""
 "Getting extent is efficient, only on geometry columns mapped to "
 "Elasticsearch type geo_point. On geo_shape fields, feature retrieval of "
 "the whole layer is done, which might be slow."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:426
+#: ../../source/drivers/vector/elasticsearch.rst:423
 msgid "Write support"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:428
+#: ../../source/drivers/vector/elasticsearch.rst:425
 msgid "Index/type creation and deletion is possible."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:430
+#: ../../source/drivers/vector/elasticsearch.rst:427
 msgid ""
 "Write support is only enabled when the datasource is opened in update "
 "mode."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:433
+#: ../../source/drivers/vector/elasticsearch.rst:430
 msgid ""
 "When inserting a new feature with CreateFeature() in non-bulk mode, and "
 "if the command is successful, OGR will fetch the returned \\_id and use "
 "it for the SetFeature() operation."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:438
+#: ../../source/drivers/vector/elasticsearch.rst:435
 msgid "Spatial reference system"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:440
+#: ../../source/drivers/vector/elasticsearch.rst:437
 msgid ""
 "Geometries stored in Elastic Search are supposed to be referenced as "
 "longitude/latitude over WGS84 datum (EPSG:4326). On creation, the driver "
@@ -499,58 +495,58 @@ msgid ""
 "EPSG:4326."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:447
+#: ../../source/drivers/vector/elasticsearch.rst:444
 msgid "Layer creation options"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:449
+#: ../../source/drivers/vector/elasticsearch.rst:446
 msgid ""
-"|about-layer-creation-options| Starting with GDAL 2.1, the driver "
-"supports the following layer creation options:"
+"Starting with GDAL 2.1, the driver supports the following layer creation "
+"options:"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:622
+#: ../../source/drivers/vector/elasticsearch.rst:618
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:624
+#: ../../source/drivers/vector/elasticsearch.rst:620
 msgid ""
-"|about-config-options| The following (deprecated) configuration options "
+"The following (deprecated) :ref:`configuration options <configoptions>` "
 "are available. Starting with GDAL 2.1, layer creation options are also "
 "available and should be preferred (see above):"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:664
+#: ../../source/drivers/vector/elasticsearch.rst:659
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:666
+#: ../../source/drivers/vector/elasticsearch.rst:661
 msgid "**Open the local store:**"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:672
+#: ../../source/drivers/vector/elasticsearch.rst:667
 msgid "**Open a remote store:**"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:678
+#: ../../source/drivers/vector/elasticsearch.rst:673
 msgid "**Filtering on a Elastic Search field:**"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:684
+#: ../../source/drivers/vector/elasticsearch.rst:679
 msgid ""
 "**Using \"match\" query on Windows:** On Windows the query must be "
 "between double quotes and double quotes inside the query must be escaped."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:692
+#: ../../source/drivers/vector/elasticsearch.rst:687
 msgid "**Basic aggregation:**"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:698
+#: ../../source/drivers/vector/elasticsearch.rst:693
 msgid "**Load an Elasticsearch index with a shapefile:**"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:704
+#: ../../source/drivers/vector/elasticsearch.rst:699
 msgid ""
 "**Create a Mapping File:** The mapping file allows you to modify the "
 "mapping according to the `Elasticsearch field-specific types "
@@ -560,20 +556,20 @@ msgid ""
 " with text fields."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:715
-#: ../../source/drivers/vector/elasticsearch.rst:728
-#: ../../source/drivers/vector/elasticsearch.rst:743
-#: ../../source/drivers/vector/elasticsearch.rst:756
+#: ../../source/drivers/vector/elasticsearch.rst:710
+#: ../../source/drivers/vector/elasticsearch.rst:723
+#: ../../source/drivers/vector/elasticsearch.rst:738
+#: ../../source/drivers/vector/elasticsearch.rst:751
 msgid "or (GDAL >= 2.1):"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:721
+#: ../../source/drivers/vector/elasticsearch.rst:716
 msgid ""
 "**Read the Mapping File:** Reads the mapping file during the "
 "transformation"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:734
+#: ../../source/drivers/vector/elasticsearch.rst:729
 msgid ""
 "**Bulk Uploading (for larger datasets):** Bulk loading helps when "
 "uploading a lot of data. The integer value is the number of bytes that "
@@ -581,25 +577,25 @@ msgid ""
 "<https://www.elastic.co/guide/en/elasticsearch/guide/current/bulk.html#_how_big_is_too_big>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:749
+#: ../../source/drivers/vector/elasticsearch.rst:744
 msgid ""
 "**Overwrite the current Index:** If specified, this will overwrite the "
 "current index. Otherwise, the data will be appended."
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:763
+#: ../../source/drivers/vector/elasticsearch.rst:758
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:765
+#: ../../source/drivers/vector/elasticsearch.rst:760
 msgid "`Home page for Elasticsearch <http://elasticsearch.org/>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:766
+#: ../../source/drivers/vector/elasticsearch.rst:761
 msgid "`Examples Wiki <http://code.google.com/p/ogr2elasticsearch/w/list>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/elasticsearch.rst:767
+#: ../../source/drivers/vector/elasticsearch.rst:762
 msgid "`Google Group <http://groups.google.com/group/ogr2elasticsearch>`__"
 msgstr ""
 
@@ -694,5 +690,89 @@ msgstr ""
 #~ "Starting with GDAL 2.1, layer creation"
 #~ " options are also available and "
 #~ "should be preferred (see above):"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is also possible to directly "
+#~ "use a Elasticsearch filter by setting"
+#~ " the string passed to SetAttributeFilter()"
+#~ " as a JSON serialized object, e.g."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Note: if defining directly an Elastic"
+#~ " Search JSON filter, the spatial "
+#~ "filter specified through SetSpatialFilter() "
+#~ "will be ignored, and must thus be"
+#~ " included in the JSON filter if "
+#~ "needed."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "It is also possible to set the "
+#~ ":oo:`JSON_FIELD=YES` open option so that "
+#~ "a \\_json special field is added "
+#~ "to the OGR schema. When reading "
+#~ "Elastic Search documents as OGR "
+#~ "features, the full JSON version of "
+#~ "the document will be stored in the"
+#~ " \\_json field. This might be useful"
+#~ " in case of complex documents or "
+#~ "with data types that do not "
+#~ "translate well in OGR data types. "
+#~ "On creation/update of documents, if the"
+#~ " \\_json field is present and set,"
+#~ " its content will be used directly"
+#~ " (other fields will be ignored)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Otherwise, if specifying \"ES\" as the"
+#~ " dialect of ExecuteSQL(), a JSON "
+#~ "string with a serialized `Elastic Search"
+#~ " filter "
+#~ "<https://www.elastic.co/guide/en/elasticsearch/reference/current"
+#~ "/query-dsl-filters.html>`__ can be passed."
+#~ " The search will be done on all"
+#~ " indices and types, unless the filter"
+#~ " itself restricts the search. The "
+#~ "returned layer will be a union of"
+#~ " the types returned by the "
+#~ ":oo:`FEATURE_COUNT_TO_ESTABLISH_FEATURE_DEFN` first "
+#~ "documents. It will also contain the "
+#~ "\\_index and \\_type special fields to"
+#~ " indicate the provenance of the "
+#~ "features."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``geohash_grid`` (optional): a JSON object,"
+#~ " describing a few characteristics of "
+#~ "the geohash_grid, that can have the "
+#~ "following members:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "``fields`` (optional): a JSON object, "
+#~ "describing which additional statistical fields"
+#~ " should be added, that can have "
+#~ "the following members:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| Starting "
+#~ "with GDAL 2.1, the driver supports "
+#~ "the following layer creation options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "(deprecated) configuration options are "
+#~ "available. Starting with GDAL 2.1, layer"
+#~ " creation options are also available "
+#~ "and should be preferred (see above):"
 #~ msgstr ""
 

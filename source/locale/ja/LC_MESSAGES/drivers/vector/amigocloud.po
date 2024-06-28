@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -182,77 +182,75 @@ msgid "Layer creation options"
 msgstr ""
 
 #: ../../source/drivers/vector/amigocloud.rst:108
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"available:"
+msgid "The following layer creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:125
+#: ../../source/drivers/vector/amigocloud.rst:124
 msgid "Configuration options"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:127
-msgid "|about-config-options| The following configuration options are available:"
+#: ../../source/drivers/vector/amigocloud.rst:126
+msgid "The following :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:140
+#: ../../source/drivers/vector/amigocloud.rst:139
 msgid "Examples"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:142
+#: ../../source/drivers/vector/amigocloud.rst:141
 msgid "Different ways to provide AmigoCloud API token:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:155
+#: ../../source/drivers/vector/amigocloud.rst:154
 msgid "Show list of datasets."
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:166
+#: ../../source/drivers/vector/amigocloud.rst:165
 msgid "Accessing data from a list of datasets:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:172
+#: ../../source/drivers/vector/amigocloud.rst:171
 msgid "Creating and populating a table from a shapefile:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:178
+#: ../../source/drivers/vector/amigocloud.rst:177
 msgid "Append the data to an existing table (dataset id: 12345) from a shapefile:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:184
+#: ../../source/drivers/vector/amigocloud.rst:183
 msgid "or"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:190
+#: ../../source/drivers/vector/amigocloud.rst:189
 msgid ""
 "Overwriting the data of an existing table (dataset id: 12345) with data "
 "from a shapefile:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:197
+#: ../../source/drivers/vector/amigocloud.rst:196
 msgid ""
 "Delete existing dataset (dataset id: 12345) and create a new one with "
 "data from a shapefile:"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:204
+#: ../../source/drivers/vector/amigocloud.rst:203
 msgid ""
 "Overwriting the data of an existing table (dataset id: 12345) with data "
 "from a shapefile. Filter the only the records with values of the field "
 "\"visited_on\" after 2017-08-20"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:213
+#: ../../source/drivers/vector/amigocloud.rst:212
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:215
+#: ../../source/drivers/vector/amigocloud.rst:214
 msgid ""
 "`AmigoCloud API Token management "
 "<https://www.amigocloud.com/accounts/tokens>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/amigocloud.rst:216
+#: ../../source/drivers/vector/amigocloud.rst:215
 msgid "`AmigoCloud API Browser <https://www.amigocloud.com/api/v1/>`__"
 msgstr ""
 
@@ -271,5 +269,16 @@ msgstr ""
 #~ msgid ""
 #~ "The following :ref:`configuration options "
 #~ "<configoptions>` are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
 #~ msgstr ""
 

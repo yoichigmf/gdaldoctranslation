@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -64,28 +64,24 @@ msgid "Creation Options"
 msgstr ""
 
 #: ../../source/drivers/raster/pcidsk.rst:31
-msgid "|about-creation-options| The following creation options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/pcidsk.rst:34
 msgid ""
 "Note that PCIDSK files are always produced pixel interleaved, even though"
 " other organizations are supported for read."
 msgstr ""
 
-#: ../../source/drivers/raster/pcidsk.rst:58
+#: ../../source/drivers/raster/pcidsk.rst:55
 msgid "Driver capabilities"
 msgstr ""
 
-#: ../../source/drivers/raster/pcidsk.rst:69
+#: ../../source/drivers/raster/pcidsk.rst:66
 msgid "See Also:"
 msgstr ""
 
-#: ../../source/drivers/raster/pcidsk.rst:71
+#: ../../source/drivers/raster/pcidsk.rst:68
 msgid "Implemented as :source_file:`frmts/pcidsk/pcidskdataset2.cpp`."
 msgstr ""
 
-#: ../../source/drivers/raster/pcidsk.rst:72
+#: ../../source/drivers/raster/pcidsk.rst:69
 msgid ""
 "`PCIDSK SDK "
 "<https://web.archive.org/web/20130730111701/http://home.gdal.org/projects/pcidsk/index.html>`__"
@@ -95,5 +91,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "PCIDSK"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
 #~ msgstr ""
 

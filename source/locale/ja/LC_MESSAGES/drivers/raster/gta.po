@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -58,15 +58,11 @@ msgstr ""
 msgid "Creation options"
 msgstr ""
 
-#: ../../source/drivers/raster/gta.rst:28
-msgid "|about-creation-options| The following creation options are supported:"
-msgstr ""
-
-#: ../../source/drivers/raster/gta.rst:39
+#: ../../source/drivers/raster/gta.rst:36
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/gta.rst:41
+#: ../../source/drivers/raster/gta.rst:38
 msgid "`GTA home page <http://gta.nongnu.org>`__"
 msgstr ""
 
@@ -80,5 +76,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "libgta"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
 #~ msgstr ""
 

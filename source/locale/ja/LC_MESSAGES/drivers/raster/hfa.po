@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -77,44 +77,45 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/hfa.rst:50
-msgid "|about-creation-options| The following creation options are supported:"
+msgid "Creation Options:"
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:128
+#: ../../source/drivers/raster/hfa.rst:127
 msgid ""
 "Erdas Imagine supports external creation of overviews (with gdaladdo for "
 "instance). To force them to be created in an .rrd file (rather than "
 "inside the original .img) set the global config option HFA_USE_RRD=YES)."
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:132
+#: ../../source/drivers/raster/hfa.rst:131
 msgid ""
 "Layer names can be set and retrieved with the "
 "GDALSetDescription/GDALGetDescription calls on the Raster Band objects."
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:135
+#: ../../source/drivers/raster/hfa.rst:134
 msgid "Some HFA band metadata exported to GDAL metadata:"
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:137
+#: ../../source/drivers/raster/hfa.rst:136
 msgid "LAYER_TYPE - layer type (athematic, ... )"
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:138
+#: ../../source/drivers/raster/hfa.rst:137
 msgid ""
 "OVERVIEWS_ALGORITHM - layer overviews algorithm ('IMAGINE 2X2 "
 "Resampling', 'IMAGINE 4X4 Resampling', and others)"
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:142
+#: ../../source/drivers/raster/hfa.rst:141
 msgid "Configuration Options"
 msgstr ""
 
-#: ../../source/drivers/raster/hfa.rst:144
+#: ../../source/drivers/raster/hfa.rst:143
 msgid ""
-"|about-config-options| Currently the following configuration options are "
-"supported by the HFA driver:"
+"Currently three `runtime configuration options "
+"<http://trac.osgeo.org/gdal/wiki/ConfigOptions>`__ are supported by the "
+"HFA driver:"
 msgstr ""
 
 #: ../../source/drivers/raster/hfa.rst:162
@@ -179,5 +180,14 @@ msgstr ""
 #~ "Currently three `runtime configuration options"
 #~ " <http://trac.osgeo.org/gdal/wiki/ConfigOptions>`__ are "
 #~ "supported by the HFA driver:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are supported:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| Currently the "
+#~ "following configuration options are supported"
+#~ " by the HFA driver:"
 #~ msgstr ""
 

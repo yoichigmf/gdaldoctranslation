@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -110,36 +110,33 @@ msgid "Configuration options"
 msgstr ""
 
 #: ../../source/drivers/raster/mbtiles.rst:66
-msgid "|about-config-options| The following configuration option is available:"
+#: ../../source/drivers/raster/mbtiles.rst:76
+msgid "The following open options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:75
+#: ../../source/drivers/raster/mbtiles.rst:74
 msgid "Opening options"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:77
-msgid "|about-open-options| The following open options are available:"
-msgstr ""
-
-#: ../../source/drivers/raster/mbtiles.rst:80
-#: ../../source/drivers/raster/mbtiles.rst:260
+#: ../../source/drivers/raster/mbtiles.rst:78
+#: ../../source/drivers/raster/mbtiles.rst:257
 msgid "Raster and vector:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:118
-#: ../../source/drivers/raster/mbtiles.rst:279
+#: ../../source/drivers/raster/mbtiles.rst:116
+#: ../../source/drivers/raster/mbtiles.rst:276
 msgid "Raster only:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:160
+#: ../../source/drivers/raster/mbtiles.rst:158
 msgid "Vector only:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:180
+#: ../../source/drivers/raster/mbtiles.rst:178
 msgid "Raster creation issues"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:182
+#: ../../source/drivers/raster/mbtiles.rst:180
 msgid ""
 "Depending of the number of bands of the input dataset and the tile format"
 " selected, the driver will do the necessary conversions to be compatible "
@@ -149,20 +146,20 @@ msgid ""
 "appropriate zoom level."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:189
+#: ../../source/drivers/raster/mbtiles.rst:187
 msgid ""
 "Fully transparent tiles will not be written to the database, as allowed "
 "by the format."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:192
+#: ../../source/drivers/raster/mbtiles.rst:190
 msgid ""
 "The driver implements the Create() and IWriteBlock() methods, so that "
 "arbitrary writing of raster blocks is possible, enabling the direct use "
 "of MBTiles as the output dataset of utilities such as gdalwarp."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:196
+#: ../../source/drivers/raster/mbtiles.rst:194
 msgid ""
 "On creation, raster blocks can be written only if the geotransformation "
 "matrix has been set with SetGeoTransform() This is effectively needed to "
@@ -170,7 +167,7 @@ msgid ""
 "pixel resolution, dataset and tile dimensions."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:201
+#: ../../source/drivers/raster/mbtiles.rst:199
 msgid ""
 "Technical/implementation note: in the general case, GDAL blocks do not "
 "exactly match a single MBTiles tile. In which case, each GDAL block will "
@@ -187,25 +184,25 @@ msgid ""
 "transparent to the user of GDAL API/utilities"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:216
+#: ../../source/drivers/raster/mbtiles.rst:214
 msgid "Tile formats"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:218
+#: ../../source/drivers/raster/mbtiles.rst:216
 msgid ""
 "MBTiles can store tiles in PNG, JPEG or WEBP (since 3.8). Support for "
 "those tile formats depend if the underlying drivers are available in "
 "GDAL. By default, GDAL will PNG tiles."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:222
+#: ../../source/drivers/raster/mbtiles.rst:220
 msgid ""
 "It is possible to select the tile format by setting the creation/open "
 "option TILE_FORMAT to one of PNG, PNG8, JPEG or WEBP. When using JPEG, "
 "the alpha channel will not be stored."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:226
+#: ../../source/drivers/raster/mbtiles.rst:224
 msgid ""
 "PNG8 can be selected to use 8-bit PNG with a color table up to 256 "
 "colors. On creation, an optimized color table is computed for each tile. "
@@ -221,11 +218,11 @@ msgid ""
 "tiles will be stored as 32-bit PNG."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:240
+#: ../../source/drivers/raster/mbtiles.rst:238
 msgid "Vector creation issues"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:242
+#: ../../source/drivers/raster/mbtiles.rst:240
 msgid ""
 "Tiles are generated with WebMercator (EPSG:3857) projection. It is "
 "possible to decide at which zoom level ranges a given layer is written. "
@@ -236,149 +233,143 @@ msgid ""
 "also that existing vector layers can't be edited."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:250
+#: ../../source/drivers/raster/mbtiles.rst:248
 msgid ""
 "Part of the conversion is multi-threaded by default, using as many "
 "threads as there are cores. The number of threads used can be controlled "
 "with the :config:`GDAL_NUM_THREADS` configuration option."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:255
+#: ../../source/drivers/raster/mbtiles.rst:253
 msgid "Creation options"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:257
-msgid "|about-creation-options| The following creation options are available:"
+#: ../../source/drivers/raster/mbtiles.rst:255
+msgid "The following creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:344
+#: ../../source/drivers/raster/mbtiles.rst:341
 msgid "Vector only (GDAL >= 2.3):"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:442
+#: ../../source/drivers/raster/mbtiles.rst:439
 msgid "Layer configuration (vector)"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:444
+#: ../../source/drivers/raster/mbtiles.rst:441
 msgid ""
 "The above mentioned CONF dataset creation option can be set to a string "
-"whose value is a JSON serialized document such as the below one:"
+"whose value is a JSon serialized document such as the below one:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:463
+#: ../../source/drivers/raster/mbtiles.rst:460
 msgid ""
 "*boundaries_lod0* and *boundaries_lod1* are the name of the OGR layers "
 "that are created into the target MVT dataset. They are mapped to the MVT "
 "target layer *boundaries*."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:467
+#: ../../source/drivers/raster/mbtiles.rst:464
 msgid ""
 "It is also possible to get the same behavior with the below layer "
 "creation options, although that is not convenient in the ogr2ogr use "
 "case."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:472
+#: ../../source/drivers/raster/mbtiles.rst:469
 msgid "Layer creation options (vector)"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:474
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"available:"
-msgstr ""
-
-#: ../../source/drivers/raster/mbtiles.rst:502
+#: ../../source/drivers/raster/mbtiles.rst:496
 msgid "Overviews (raster)"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:504
+#: ../../source/drivers/raster/mbtiles.rst:498
 msgid ""
 "gdaladdo / BuildOverviews() can be used to compute overviews. Only power-"
 "of-two overview factors (2,4,8,16,...) are supported."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:507
+#: ../../source/drivers/raster/mbtiles.rst:501
 msgid ""
 "If more overview levels are specified than available, the extra ones are "
 "silently ignored."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:510
+#: ../../source/drivers/raster/mbtiles.rst:504
 msgid ""
 "Overviews can also be cleared with the -clean option of gdaladdo (or "
 "BuildOverviews() with nOverviews=0)"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:514
+#: ../../source/drivers/raster/mbtiles.rst:508
 msgid "Vector tiles"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:516
+#: ../../source/drivers/raster/mbtiles.rst:510
 msgid ""
 "Starting with GDAL 2.3, the MBTiles driver can read MBTiles files "
 "containing vector tiles conforming to the Mapbox Vector Tile format "
 "(format=pbf)."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:520
+#: ../../source/drivers/raster/mbtiles.rst:514
 msgid ""
 "The driver requires the 'metadata' table to contain a name='json' entry, "
 "that has a 'vector_layers' array describing layers and their schema. See "
 ":ref:`metadata.json <mvt_metadata_json>`"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:524
+#: ../../source/drivers/raster/mbtiles.rst:518
 msgid ""
 "Note: The driver will make no effort of stitching together geometries for"
 " features that overlap several tiles."
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:528
+#: ../../source/drivers/raster/mbtiles.rst:522
 msgid "Examples:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:530
+#: ../../source/drivers/raster/mbtiles.rst:524
 msgid "Accessing a remote MBTiles raster :"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:536
-#: ../../source/drivers/raster/mbtiles.rst:598
+#: ../../source/drivers/raster/mbtiles.rst:530
+#: ../../source/drivers/raster/mbtiles.rst:592
 msgid "Output:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:591
+#: ../../source/drivers/raster/mbtiles.rst:585
 msgid "Reading pixel attributes encoded according to the UTFGrid specification :"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:612
+#: ../../source/drivers/raster/mbtiles.rst:606
 msgid "Converting a dataset to MBTiles and adding overviews :"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:619
+#: ../../source/drivers/raster/mbtiles.rst:613
 msgid "Opening a vector MBTiles:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:639
+#: ../../source/drivers/raster/mbtiles.rst:633
 msgid "Converting a GeoPackage to a Vector tile MBTILES:"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:646
+#: ../../source/drivers/raster/mbtiles.rst:640
 msgid "See Also"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:648
+#: ../../source/drivers/raster/mbtiles.rst:642
 msgid "`MBTiles specification <https://github.com/mapbox/mbtiles-spec>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:649
+#: ../../source/drivers/raster/mbtiles.rst:643
 msgid ""
 "`UTFGrid specification <https://github.com/mapbox/utfgrid-"
 "spec/blob/master/1.0/utfgrid.md>`__"
 msgstr ""
 
-#: ../../source/drivers/raster/mbtiles.rst:651
+#: ../../source/drivers/raster/mbtiles.rst:645
 msgid ":ref:`Mapbox Vector tiles driver <vector.mvt>`"
 msgstr ""
 
@@ -403,5 +394,28 @@ msgstr ""
 #~ " string whose value is a JSon "
 #~ "serialized document such as the below"
 #~ " one:"
+#~ msgstr ""
+
+#~ msgid "|about-config-options| The following configuration option is available:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "The above mentioned CONF dataset "
+#~ "creation option can be set to a"
+#~ " string whose value is a JSON "
+#~ "serialized document such as the below"
+#~ " one:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "available:"
 #~ msgstr ""
 

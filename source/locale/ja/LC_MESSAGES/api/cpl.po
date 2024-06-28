@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,67 +19,540 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/api/cpl.rst:10
+#: ../../source/api/cpl.rst:5
 msgid "Common Portability Library C API"
 msgstr ""
 
-#: ../../source/api/cpl.rst:13
+#: ../../source/api/cpl.rst:8
 msgid "cpl_conv.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:19
+#: ../../source/api/cpl.rst
+msgid "Defines"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Typedefs"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Functions"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "パラメータ"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "戻り値"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Public Members"
+msgstr ""
+
+#: ../../source/api/cpl.rst:14
 msgid "cpl_csv.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:25
+#: ../../source/api/cpl.rst
+msgid "Enums"
+msgstr ""
+
+#: ../../source/api/cpl.rst:20
 msgid "cpl_compressor.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:31
+#: ../../source/api/cpl.rst
+msgid "Param input_data"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param input_size"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param output_data"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param output_size"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param options"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param compressor_user_data"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Return"
+msgstr ""
+
+#: ../../source/api/cpl.rst:26
 msgid "cpl_error.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:37
+#: ../../source/api/cpl.rst
+msgid "Public Functions"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Private Members"
+msgstr ""
+
+#: ../../source/api/cpl.rst:32
 msgid "cpl_http.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:43
+#: ../../source/api/cpl.rst
+msgid "Param pszURL"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param papszOptions"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pfnProgress"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pProgressArg"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pfnWrite"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pWriteArg"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pUserData"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Public Types"
+msgstr ""
+
+#: ../../source/api/cpl.rst:38
 msgid "cpl_minixml.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:49
+#: ../../source/api/cpl.rst:44
 msgid "cpl_multiproc.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:55
+#: ../../source/api/cpl.rst:50
 msgid "cpl_port.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:61
+#: ../../source/api/cpl.rst:56
 msgid "cpl_progress.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:67
+#: ../../source/api/cpl.rst:62
 msgid "cpl_string.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:73
+#: ../../source/api/cpl.rst
+msgid "Public Static Functions"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Private Functions"
+msgstr ""
+
+#: ../../source/api/cpl.rst:68
 msgid "cpl_time.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:79
+#: ../../source/api/cpl.rst:74
 msgid "cpl_virtualmem.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:85
+#: ../../source/api/cpl.rst
+msgid "Param ctxt"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param nOffset"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pPageToFill"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param nToFill"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param pPageToBeEvicted"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param nToBeEvicted"
+msgstr ""
+
+#: ../../source/api/cpl.rst:80
 msgid "cpl_vsi_error.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:91
+#: ../../source/api/cpl.rst:86
 msgid "cpl_vsi.h"
 msgstr ""
 
-#: ../../source/api/cpl.rst:98
+#: ../../source/api/cpl.rst
+msgid "Param pFile"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param nRanges"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param panOffsets"
+msgstr ""
+
+#: ../../source/api/cpl.rst
+msgid "Param panSizes"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsisubfile/ virtual file handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsisubfile/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsicurl/ HTTP/FTP file system handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsicurl/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 1.8.0"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsicurl_streaming/ HTTP/FTP file system handler (requires "
+"libcurl)."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsicurl_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 1.10"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsis3/ Amazon S3 file system handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsis3/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 2.1"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsis3_streaming/ Amazon S3 file system handler (requires "
+"libcurl)."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsis3_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsigs/ Google Cloud Storage file system handler (requires "
+"libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsigs/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 2.2"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsigs_streaming/ Google Cloud Storage file system handler "
+"(requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsigs_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiaz/ Microsoft Azure Blob file system handler (requires "
+"libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiaz/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 2.3"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiaz_streaming/ Microsoft Azure Blob file system handler "
+"(requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiaz_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiaz/ Microsoft Azure Data Lake Storage Gen2 file system "
+"handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiadls/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 3.3"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsioss/ Alibaba Cloud Object Storage Service (OSS) file system "
+"handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsioss/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiaz_streaming/ Alibaba Cloud Object Storage Service (OSS) "
+"(requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsioss_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiswift/ OpenStack Swif Object Storage (Swift) file system "
+"handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiswift/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiswift_streaming/ OpenStack Swif Object Storage (Swift) file "
+"system handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiswift_streaming/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsi7z/ 7zip file system handler (requires libarchive)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsi7z/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 3.7"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsirar/ RAR file system handler (requires libarchive)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsirar/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install GZip file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A special file handler is installed that allows reading on-the-fly and "
+"writing in GZip (.gz) files."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"All portions of the file system underneath the base path \"/vsigzip/\" "
+"will be handled by this driver."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsigzip/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 1.6.0"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install ZIP file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A special file handler is installed that allows reading on-the-fly in ZIP"
+" (.zip) archives."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"All portions of the file system underneath the base path \"/vsizip/\" "
+"will be handled by this driver."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsizip/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsistdin/ file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A special file handler is installed that allows reading from the standard"
+" input stream."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"The file operations available are of course limited to Read() and forward"
+" Seek() (full seek in the first MB of a file by default)."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Starting with GDAL 3.6, this limit can be configured either by setting "
+"the CPL_VSISTDIN_BUFFER_LIMIT configuration option to a number of bytes "
+"(can be -1 for unlimited), or using the \"/vsistdin?buffer_limit=value\" "
+"filename."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsistdin/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"Install /vsiwebhdfs/ WebHDFS (Hadoop File System) REST API file system "
+"handler (requires libcurl)"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsiwebhdfs/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 2.4"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsistdout/ file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A special file handler is installed that allows writing to the standard "
+"output stream."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "The file operations available are of course limited to Write()."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A variation of this file system exists as the /vsistdout_redirect/ file "
+"system handler, where the output function can be defined with "
+"VSIStdoutSetRedirection()."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsistdout/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsisparse/ virtual file handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsisparse/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsitar/ file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"A special file handler is installed that allows reading on-the-fly in TAR"
+" (regular .tar, or compressed .tar.gz/.tgz) archives."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid ""
+"All portions of the file system underneath the base path \"/vsitar/\" "
+"will be handled by this driver."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsitar/ documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Install /vsicached? file system handler."
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "See /vsicached? documentation"
+msgstr ""
+
+#: ../../<breathe>:-1
+msgid "Since  GDAL 3.8.0"
+msgstr ""
+
+#: ../../source/api/cpl.rst:93
 msgid ":ref:`cpl_cpp_api`."
 msgstr ""
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -222,38 +222,28 @@ msgid "Configuration options"
 msgstr ""
 
 #: ../../source/drivers/vector/oci.rst:127
-msgid "|about-config-options| The following configuration options are available:"
+msgid "The following :ref:`configuration options <configoptions>` are available:"
 msgstr ""
 
 #: ../../source/drivers/vector/oci.rst:136
 msgid "Layer Creation Options"
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:138
-msgid ""
-"|about-layer-creation-options| The following layer creation options are "
-"supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/oci.rst:292
+#: ../../source/drivers/vector/oci.rst:289
 msgid "Layer Open Options"
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:294
-msgid "|about-open-options| The following open options are supported:"
-msgstr ""
-
-#: ../../source/drivers/vector/oci.rst:314
+#: ../../source/drivers/vector/oci.rst:308
 msgid "Example"
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:316
+#: ../../source/drivers/vector/oci.rst:310
 msgid ""
 "Simple translation of a shapefile into Oracle. The table 'ABC' will be "
 "created with the features from abc.shp and attributes from abc.dbf."
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:323
+#: ../../source/drivers/vector/oci.rst:317
 msgid ""
 "This second example loads a political boundaries layer from VPF (via the "
 ":ref:`OGDI driver <vector.ogdi>`), and renames the layer from the cryptic"
@@ -261,29 +251,29 @@ msgid ""
 "desired name exists it is overwritten."
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:334
+#: ../../source/drivers/vector/oci.rst:328
 msgid ""
 "This example shows using ogrinfo to evaluate an SQL query statement "
 "within Oracle. More sophisticated Oracle Spatial specific queries may "
 "also be used via the -sql commandline switch to ogrinfo."
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:342
+#: ../../source/drivers/vector/oci.rst:336
 msgid "This example shows hows to list information about an Oracle view."
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:348
+#: ../../source/drivers/vector/oci.rst:342
 msgid ""
 "This example shows hows to convert certain columns from an Oracle view to"
 " a GeoPackage file, explicitly assigning the layer name and the "
 "coordinate reference system, and converting timestamps to UTC."
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:357
+#: ../../source/drivers/vector/oci.rst:351
 msgid "Credits"
 msgstr ""
 
-#: ../../source/drivers/vector/oci.rst:359
+#: ../../source/drivers/vector/oci.rst:353
 msgid ""
 "I would like to thank `SRC, LLC <http://www.extendthereach.com/>`__ for "
 "its financial support of the development of this driver."
@@ -304,5 +294,19 @@ msgstr ""
 #~ msgid ""
 #~ "The following :ref:`configuration options "
 #~ "<configoptions>` are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-config-options| The following "
+#~ "configuration options are available:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-layer-creation-options| The "
+#~ "following layer creation options are "
+#~ "supported:"
+#~ msgstr ""
+
+#~ msgid "|about-open-options| The following open options are supported:"
 #~ msgstr ""
 

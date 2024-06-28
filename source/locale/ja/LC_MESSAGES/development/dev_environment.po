@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -19,23 +19,65 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.14.0\n"
 
-#: ../../source/development/dev_environment.rst:5
+#: ../../source/development/dev_environment.rst:7
 msgid "Setting up a development environment"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:8
+#: ../../source/development/dev_environment.rst:12
 msgid "Build requirements"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:10
-msgid "See :ref:`build_requirements`"
+#: ../../source/development/dev_environment.rst:14
+msgid "The minimum requirements to build GDAL are:"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:13
+#: ../../source/development/dev_environment.rst:16
+msgid ""
+"CMake >= 3.16, and an associated build system (make, ninja, Visual "
+"Studio, etc.)"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:17
+msgid "C99 compiler"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:18
+msgid "C++17 compiler since GDAL 3.9 (C++11 in previous versions)"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:19
+msgid "PROJ >= 6.3.1"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:21
+msgid "Additional requirements to run the GDAL test suite are:"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:23
+msgid "SWIG >= 4, for building bindings to other programming languages"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:24
+msgid "Python >= 3.8"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:25
+msgid "Python packages listed in `autotest/requirements.txt`"
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:27
+msgid ""
+"A number of optional libraries are also strongly recommended for most "
+"builds: SQLite3, expat, libcurl, zlib, libtiff, libgeotiff, libpng, "
+"libjpeg, etc. Consult :ref:`raster_drivers` and :ref:`vector_drivers` "
+"pages for information on dependencies of optional drivers."
+msgstr ""
+
+#: ../../source/development/dev_environment.rst:33
 msgid "Vagrant"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:15
+#: ../../source/development/dev_environment.rst:35
 msgid ""
 "`Vagrant <https://www.vagrantup.com>`_ is a tool that works with a "
 "virtualization product such as VirtualBox to create a reproducible "
@@ -44,14 +86,14 @@ msgid ""
 "dependencies."
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:19
+#: ../../source/development/dev_environment.rst:39
 msgid ""
 "Once Vagrant has been installed and the GDAL source downloaded, the "
 "virtual machine can be set up by running the following from the source "
 "root directory:"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:27
+#: ../../source/development/dev_environment.rst:47
 msgid ""
 "The source root directory is exposed inside the virtual machine at "
 "``/vagrant``, so changes made to GDAL source files on the host are seen "
@@ -59,31 +101,31 @@ msgid ""
 "connect to the VM and re-run the build command:"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:36
+#: ../../source/development/dev_environment.rst:56
 msgid ""
 "Note that the following directories on the host will be created (and can "
 "be removed if the Vagrant environment is no longer needed):"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:39
+#: ../../source/development/dev_environment.rst:59
 msgid ""
 "``../apt-cache/ubuntu/jammy64``: contains a cache of Ubuntu packages of "
 "the VM, to allow faster VM reconstruction"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:41
+#: ../../source/development/dev_environment.rst:61
 msgid "``build_vagrant``: CMake build directory"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:42
+#: ../../source/development/dev_environment.rst:62
 msgid "``ccache_vagrant``: CCache directory"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:45
+#: ../../source/development/dev_environment.rst:65
 msgid "Docker"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:47
+#: ../../source/development/dev_environment.rst:67
 msgid ""
 "The Linux environments used for building and testing GDAL on GitHub "
 "Actions are defined by Docker images that can be pulled to any machine "
@@ -94,50 +136,50 @@ msgid ""
 "that is used in GitHub Actions:"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:65
+#: ../../source/development/dev_environment.rst:85
 msgid ""
 "To avoid built objects being owned by root, it may be desirable to add "
 "``-u $(id -u):$(id -g) -v /etc/passwd:/etc/passwd`` to the ``docker run``"
 " command above."
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:69
+#: ../../source/development/dev_environment.rst:89
 msgid "Building on Windows with Conda dependencies and Visual Studio"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:71
+#: ../../source/development/dev_environment.rst:91
 msgid ""
 "It is less appropriate for Debug builds of GDAL, than other methods, such"
 " as using vcpkg."
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:74
+#: ../../source/development/dev_environment.rst:94
 msgid "Install git"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:76
+#: ../../source/development/dev_environment.rst:96
 msgid "Install `git <https://git-scm.com/download/win>`_"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:79
+#: ../../source/development/dev_environment.rst:99
 msgid "Install miniconda"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:81
+#: ../../source/development/dev_environment.rst:101
 msgid ""
 "Install `miniconda <https://repo.anaconda.com/miniconda/Miniconda3"
 "-latest-Windows-x86_64.exe>`_"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:84
+#: ../../source/development/dev_environment.rst:104
 msgid "Install GDAL dependencies"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:86
+#: ../../source/development/dev_environment.rst:106
 msgid "Start a Conda enabled console and assuming there is a c:\\\\dev directory"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:103
+#: ../../source/development/dev_environment.rst:123
 msgid ""
 "The ``compilers`` package will install ``vs2017_win-64`` (at time of "
 "writing) to set the appropriate environment for cmake to pick up. It is "
@@ -145,57 +187,20 @@ msgid ""
 "is to be used."
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:108
+#: ../../source/development/dev_environment.rst:128
 msgid "Checkout GDAL sources"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:116
+#: ../../source/development/dev_environment.rst:136
 msgid "Build GDAL"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:118
+#: ../../source/development/dev_environment.rst:138
 msgid "From a Conda enabled console"
 msgstr ""
 
-#: ../../source/development/dev_environment.rst:132
+#: ../../source/development/dev_environment.rst:152
 msgid "Run GDAL tests"
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:144
-msgid "Setting development environment variables"
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:146
-msgid ""
-"Once GDAL has been built, a number of environment variables must be set "
-"to be able to execute C++ or Python utilities of the build directory, or "
-"run tests."
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:149
-msgid "This can be done by sourcing the following from the build directory:"
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:155
-msgid ""
-"(with adjustments to the above path if the build directory is not a "
-"subdirectory of the GDAL source root)."
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:157
-msgid ""
-"For Windows, a similar ``scripts/setdevenv.bat`` script exists (it "
-"currently assumes a Release build)."
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:159
-msgid ""
-"To verify that environment variables have been set correctly, you can "
-"check the version of a GDAL binary:"
-msgstr ""
-
-#: ../../source/development/dev_environment.rst:166
-msgid "and the Python bindings:"
 msgstr ""
 
 #~ msgid "The minimum requirements to build GDAL are:"
@@ -236,5 +241,45 @@ msgstr ""
 #~ "Consult :ref:`raster_drivers` and "
 #~ ":ref:`vector_drivers` pages for information on"
 #~ " dependencies of optional drivers."
+#~ msgstr ""
+
+#~ msgid "See :ref:`build_requirements`"
+#~ msgstr ""
+
+#~ msgid "Setting development environment variables"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "Once GDAL has been built, a number"
+#~ " of environment variables must be set"
+#~ " to be able to execute C++ or"
+#~ " Python utilities of the build "
+#~ "directory, or run tests."
+#~ msgstr ""
+
+#~ msgid "This can be done by sourcing the following from the build directory:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "(with adjustments to the above path "
+#~ "if the build directory is not a"
+#~ " subdirectory of the GDAL source "
+#~ "root)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "For Windows, a similar "
+#~ "``scripts/setdevenv.bat`` script exists (it "
+#~ "currently assumes a Release build)."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "To verify that environment variables "
+#~ "have been set correctly, you can "
+#~ "check the version of a GDAL "
+#~ "binary:"
+#~ msgstr ""
+
+#~ msgid "and the Python bindings:"
 #~ msgstr ""
 

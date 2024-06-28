@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/programs/gdal_pansharpen.rst:5
-msgid "gdal_pansharpen"
+msgid "gdal_pansharpen.py"
 msgstr ""
 
 #: ../../source/programs/gdal_pansharpen.rst:9
@@ -41,19 +41,13 @@ msgstr ""
 
 #: ../../source/programs/gdal_pansharpen.rst:33
 msgid ""
-":program:`gdal_pansharpen` performs a pan-sharpening operation. It can "
-"create a \"classic\" output dataset (such as GeoTIFF), or a VRT dataset "
-"describing the pan-sharpening operation."
+"The :program:`gdal_pansharpen.py` script performs a pan-sharpening "
+"operation. It can create a \"classic\" output dataset (such as GeoTIFF), "
+"or a VRT dataset describing the pan-sharpening operation."
 msgstr ""
 
 #: ../../source/programs/gdal_pansharpen.rst:37
 msgid "More details can be found in the :ref:`gdal_vrttut_pansharpen` section."
-msgstr ""
-
-#: ../../source/programs/gdal_pansharpen.rst:41
-msgid ""
-"gdal_pansharpen is a Python utility, and is only available if GDAL Python"
-" bindings are available."
 msgstr ""
 
 #: ../../source/programs/options/help.rst:3
@@ -66,14 +60,14 @@ msgid ""
 "exit."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:47
+#: ../../source/programs/gdal_pansharpen.rst:43
 msgid ""
 "Select the output format. Starting with GDAL 2.3, if not specified, the "
 "format is guessed from the extension (previously was ``GTiff``). Use the "
 "short format name. ``VRT`` can also be used."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:53
+#: ../../source/programs/gdal_pansharpen.rst:49
 msgid ""
 "Select band *band* from the input spectral bands for output. Bands are "
 "numbered from 1 in the order spectral bands are specified. Multiple "
@@ -81,37 +75,37 @@ msgid ""
 "spectral bands are set for output."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:60
+#: ../../source/programs/gdal_pansharpen.rst:56
 msgid ""
 "Specify a weight for the computation of the pseudo panchromatic value. "
 "There must be as many -w switches as input spectral bands."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:65
+#: ../../source/programs/gdal_pansharpen.rst:61
 msgid "Select a resampling algorithm. ``cubic`` is the default."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:69
+#: ../../source/programs/gdal_pansharpen.rst:65
 msgid ""
 "Specify number of threads to use to do the resampling and pan-sharpening "
 "itself. Can be an integer number or ``ALL_CPUS``."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:74
+#: ../../source/programs/gdal_pansharpen.rst:70
 msgid ""
 "Specify the bit depth of the panchromatic and spectral bands (e.g. 12). "
 "If not specified, the NBITS metadata item from the panchromatic band will"
 " be used if it exists."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:80
+#: ../../source/programs/gdal_pansharpen.rst:76
 msgid ""
 "Specify nodata value for bands. Used for the resampling and pan-"
 "sharpening computation itself. If not set, deduced from the input bands, "
 "provided they have a consistent setting."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:86
+#: ../../source/programs/gdal_pansharpen.rst:82
 msgid ""
 "Select behavior when bands have not the same extent. See "
 "*SpatialExtentAdjustment* documentation in :ref:`gdal_vrttut_pansharpen` "
@@ -137,15 +131,15 @@ msgid ""
 "documentation for legal creation options for each format."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:94
+#: ../../source/programs/gdal_pansharpen.rst:90
 msgid "Suppress progress monitor and other non-error output."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:98
+#: ../../source/programs/gdal_pansharpen.rst:94
 msgid "Dataset with panchromatic band (first band will be used)."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:102
+#: ../../source/programs/gdal_pansharpen.rst:98
 msgid ""
 "Dataset with one or several spectral bands. If the band option is not "
 "specified, all bands of the datasets are taken into account. Otherwise, "
@@ -153,35 +147,35 @@ msgid ""
 " times."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:109
+#: ../../source/programs/gdal_pansharpen.rst:105
 msgid "Output dataset"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:111
+#: ../../source/programs/gdal_pansharpen.rst:107
 msgid "Bands should be in the same projection."
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:114
+#: ../../source/programs/gdal_pansharpen.rst:110
 msgid "Example"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:116
+#: ../../source/programs/gdal_pansharpen.rst:112
 msgid "With spectral bands in a single dataset :"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:122
+#: ../../source/programs/gdal_pansharpen.rst:118
 msgid "With a few spectral bands from a single dataset, reordered :"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:128
+#: ../../source/programs/gdal_pansharpen.rst:124
 msgid "With spectral bands in several datasets :"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:134
+#: ../../source/programs/gdal_pansharpen.rst:130
 msgid "Specify weights:"
 msgstr ""
 
-#: ../../source/programs/gdal_pansharpen.rst:140
+#: ../../source/programs/gdal_pansharpen.rst:136
 msgid ""
 "Specify RGB bands from a RGBNir multispectral dataset while computing the"
 " pseudo panchromatic intensity on the 4 RGBNir bands:"
@@ -197,5 +191,22 @@ msgstr ""
 #~ "(such as GeoTIFF), or a VRT "
 #~ "dataset describing the pan-sharpening "
 #~ "operation."
+#~ msgstr ""
+
+#~ msgid "gdal_pansharpen"
+#~ msgstr ""
+
+#~ msgid ""
+#~ ":program:`gdal_pansharpen` performs a pan-"
+#~ "sharpening operation. It can create a"
+#~ " \"classic\" output dataset (such as "
+#~ "GeoTIFF), or a VRT dataset describing"
+#~ " the pan-sharpening operation."
+#~ msgstr ""
+
+#~ msgid ""
+#~ "gdal_pansharpen is a Python utility, and"
+#~ " is only available if GDAL Python "
+#~ "bindings are available."
 #~ msgstr ""
 

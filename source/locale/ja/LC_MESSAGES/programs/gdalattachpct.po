@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -20,7 +20,7 @@ msgstr ""
 "Generated-By: Babel 2.14.0\n"
 
 #: ../../source/programs/gdalattachpct.rst:5
-msgid "gdalattachpct"
+msgid "gdalattachpct.py"
 msgstr ""
 
 #: ../../source/programs/gdalattachpct.rst:9
@@ -41,12 +41,6 @@ msgid ""
 "a color table file to another raster."
 msgstr ""
 
-#: ../../source/programs/gdalattachpct.rst:28
-msgid ""
-"gdalattachpct is a Python utility, and is only available if GDAL Python "
-"bindings are available."
-msgstr ""
-
 #: ../../source/programs/options/help.rst:3
 msgid "Show this help message and exit"
 msgstr ""
@@ -57,26 +51,32 @@ msgid ""
 "exit."
 msgstr ""
 
-#: ../../source/programs/gdalattachpct.rst:36
+#: ../../source/programs/gdalattachpct.rst:32
 msgid ""
 "Select the output format. Starting with GDAL 2.3, if not specified, the "
 "format is guessed from the extension (previously was GTiff). Use the "
 "short format name."
 msgstr ""
 
-#: ../../source/programs/gdalattachpct.rst:42
+#: ../../source/programs/gdalattachpct.rst:38
 msgid ""
 "Extract the color table from <palette_file>. The<palette_file> must be "
 "either a raster file in a GDAL supported format with a palette or a color"
 " file in a supported format (txt, qml, qlr)."
 msgstr ""
 
-#: ../../source/programs/gdalattachpct.rst:48
+#: ../../source/programs/gdalattachpct.rst:44
 msgid "The input file."
 msgstr ""
 
-#: ../../source/programs/gdalattachpct.rst:52
+#: ../../source/programs/gdalattachpct.rst:48
 msgid "The output RGB file that will be created."
+msgstr ""
+
+#: ../../source/programs/gdalattachpct.rst:50
+msgid ""
+"NOTE: gdalattachpct.py is a Python script, and will only work if GDAL was"
+" built with Python support."
 msgstr ""
 
 #~ msgid "gdalattachpct.py"
@@ -86,5 +86,14 @@ msgstr ""
 #~ "NOTE: gdalattachpct.py is a Python "
 #~ "script, and will only work if GDAL"
 #~ " was built with Python support."
+#~ msgstr ""
+
+#~ msgid "gdalattachpct"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "gdalattachpct is a Python utility, and"
+#~ " is only available if GDAL Python "
+#~ "bindings are available."
 #~ msgstr ""
 

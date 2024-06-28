@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -95,24 +95,24 @@ msgid ""
 msgstr ""
 
 #: ../../source/drivers/raster/ktx2.rst:54
-msgid "|about-creation-options| The following creation options are available:"
+msgid "The following creation options are available:"
 msgstr ""
 
-#: ../../source/drivers/raster/ktx2.rst:126
+#: ../../source/drivers/raster/ktx2.rst:125
 msgid "Whether to enable MIPMAP generation."
 msgstr ""
 
-#: ../../source/drivers/raster/ktx2.rst:136
+#: ../../source/drivers/raster/ktx2.rst:135
 msgid "Build instructions"
 msgstr ""
 
-#: ../../source/drivers/raster/ktx2.rst:138
+#: ../../source/drivers/raster/ktx2.rst:137
 msgid ""
 "Building basisu as a library requires currently building the `cmake` "
 "branch of the https://github.com/rouault/basis_universal/tree/cmake fork."
 msgstr ""
 
-#: ../../source/drivers/raster/ktx2.rst:150
+#: ../../source/drivers/raster/ktx2.rst:149
 msgid ""
 "Once basisu is built, GDAL CMake options must be configured by pointing "
 "the basisu install prefix in the ``CMAKE_PREFIX_PATH`` variable or "
@@ -132,5 +132,8 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The following creation options are available:"
+#~ msgstr ""
+
+#~ msgid "|about-creation-options| The following creation options are available:"
 #~ msgstr ""
 

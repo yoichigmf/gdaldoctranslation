@@ -21,7 +21,7 @@ msgstr ""
 
 #: ../../source/user/raster_data_model.rst:5
 msgid "Raster Data Model"
-msgstr ""
+msgstr "ラスターデータモデル"
 
 #: ../../source/user/raster_data_model.rst:7
 msgid ""
@@ -31,7 +31,7 @@ msgstr ""
 
 #: ../../source/user/raster_data_model.rst:10
 msgid "Dataset"
-msgstr ""
+msgstr "データセット"
 
 #: ../../source/user/raster_data_model.rst:12
 msgid ""

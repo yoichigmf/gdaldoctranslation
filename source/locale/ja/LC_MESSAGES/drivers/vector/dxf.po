@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: GDAL \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-26 18:20+0900\n"
+"POT-Creation-Date: 2024-06-23 04:43+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: ja\n"
@@ -543,23 +543,21 @@ msgid "color (c); angle (a); anchor point (p)"
 msgstr ""
 
 #: ../../source/drivers/vector/dxf.rst:334
-msgid ""
-"|about-dataset-creation-options| The driver supports the following "
-"dataset creation options:"
+msgid "The dataset creation supports the following dataset creation options:"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:349
+#: ../../source/drivers/vector/dxf.rst:348
 msgid ""
 "The header and trailer templates can be complete DXF files. The driver "
 "will scan them and only extract the needed portions (portion before or "
 "after the ENTITIES section)."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:354
+#: ../../source/drivers/vector/dxf.rst:353
 msgid "Block References"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:356
+#: ../../source/drivers/vector/dxf.rst:355
 msgid ""
 "It is possible to export a \"blocks\" layer to DXF in addition to the "
 "\"entities\" layer in order to produce actual DXF BLOCKs definitions in "
@@ -568,19 +566,19 @@ msgid ""
 "conditions apply:"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:362
+#: ../../source/drivers/vector/dxf.rst:361
 msgid ""
 "A \"blocks\" layer may be created, and it must be created before the "
 "entities layer."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:364
+#: ../../source/drivers/vector/dxf.rst:363
 msgid ""
 "The entities in the blocks layer should have the Block field populated. "
 "(Note, in GDAL 2.2.x and earlier this attribute was called BlockName.)"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:367
+#: ../../source/drivers/vector/dxf.rst:366
 msgid ""
 "Objects to be written as INSERTs in the entities layer should have a "
 "POINT geometry, and the BlockName field set. You may also set BlockAngle,"
@@ -590,14 +588,14 @@ msgid ""
 "situation the position of the POINT geometry is ignored."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:373
+#: ../../source/drivers/vector/dxf.rst:372
 msgid ""
 "If a block (name) is already defined in the template header, that will be"
 " used regardless of whether a new definition was provided in the blocks "
 "layer."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:377
+#: ../../source/drivers/vector/dxf.rst:376
 msgid ""
 "The intention is that a simple translation from DXF to DXF with "
 ":config:`DXF_INLINE_BLOCKS` set to FALSE will approximately reproduce the"
@@ -605,11 +603,11 @@ msgid ""
 "exploding them."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:383
+#: ../../source/drivers/vector/dxf.rst:382
 msgid "Layer Definitions"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:385
+#: ../../source/drivers/vector/dxf.rst:384
 msgid ""
 "When writing entities, if populated the Layer field is used to set the "
 "written entities layer. If the layer is not already defined in the "
@@ -617,17 +615,17 @@ msgid ""
 "from the definition of the default layer (\"0\")."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:391
+#: ../../source/drivers/vector/dxf.rst:390
 msgid "Linetype Definitions"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:393
+#: ../../source/drivers/vector/dxf.rst:392
 msgid ""
 "When writing linestring geometries, the following rules apply with regard"
 " to linetype (dash pattern) definitions."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:396
+#: ../../source/drivers/vector/dxf.rst:395
 msgid ""
 "If the Linetype field is set on a written feature, and that linetype is "
 "already defined in the template header, then it will be referenced from "
@@ -636,14 +634,14 @@ msgid ""
 "value is written."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:401
+#: ../../source/drivers/vector/dxf.rst:400
 msgid ""
 "If the Linetype field is set, but the linetype is not defined in the "
 "header template, then a definition will be added if the feature has an "
 "OGR style string with a PEN tool and a \"p\" pattern setting."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:404
+#: ../../source/drivers/vector/dxf.rst:403
 msgid ""
 "If the feature has no Linetype field set, but it does have an OGR style "
 "string with a PEN tool with a \"p\" pattern set, then an automatically "
@@ -652,25 +650,25 @@ msgid ""
 " linetype scale if required."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:410
+#: ../../source/drivers/vector/dxf.rst:409
 msgid ""
 "The intention is that \"dot dash\" style patterns will be preserved when "
 "written to DXF and that specific linetypes can be predefined in the "
 "header template, and referenced using the Linetype field if desired."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:414
+#: ../../source/drivers/vector/dxf.rst:413
 msgid ""
 "It is assumed that patterns are using \"g\" (georeferenced) units for "
 "defining the line pattern. If not, the scaling of the DXF patterns is "
 "likely to be wrong - potentially very wrong."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:419
+#: ../../source/drivers/vector/dxf.rst:418
 msgid "Units"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:421
+#: ../../source/drivers/vector/dxf.rst:420
 msgid ""
 "GDAL writes DXF files with measurement units set to \"Imperial - "
 "Inches\". If you need to change the units, edit the `$MEASUREMENT "
@@ -683,23 +681,23 @@ msgid ""
 " template."
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:432
+#: ../../source/drivers/vector/dxf.rst:431
 msgid "See also"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:434
+#: ../../source/drivers/vector/dxf.rst:433
 msgid ""
 "`List of known issues "
 "<https://github.com/OSGeo/gdal/blob/master/ogr/ogrsf_frmts/dxf/KNOWN_ISSUES.md>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:437
+#: ../../source/drivers/vector/dxf.rst:436
 msgid ""
 "`AutoCAD 2000 DXF Reference "
 "<http://www.autodesk.com/techpubs/autocad/acad2000/dxf/>`__"
 msgstr ""
 
-#: ../../source/drivers/vector/dxf.rst:440
+#: ../../source/drivers/vector/dxf.rst:439
 msgid ""
 "`AutoCAD 2014 DXF Reference "
 "<http://images.autodesk.com/adsk/files/autocad_2014_pdf_dxf_reference_enu.pdf>`__"
@@ -722,5 +720,11 @@ msgstr ""
 #~ msgstr ""
 
 #~ msgid "The dataset creation supports the following dataset creation options:"
+#~ msgstr ""
+
+#~ msgid ""
+#~ "|about-dataset-creation-options| The "
+#~ "driver supports the following dataset "
+#~ "creation options:"
 #~ msgstr ""
 
