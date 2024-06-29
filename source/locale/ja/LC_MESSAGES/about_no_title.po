@@ -49,6 +49,8 @@ msgid ""
 "You may quote GDAL in publications by using the following Digital Object "
 "Identifier: |DOI|"
 msgstr ""
+"以下のデジタルオブジェクト識別子を利用して出版物でGDALを引用することができます "
+": |DOI|"
 
 #: ../../source/about_no_title.rst
 msgid "DOI 10.5281/zenodo.5884351"

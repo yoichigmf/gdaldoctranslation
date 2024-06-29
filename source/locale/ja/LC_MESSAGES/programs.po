@@ -31,7 +31,7 @@ msgstr "以下のテーブルはコマンドラインユーティリティの引
 
 #: ../../source/programs/argument_syntax.rst:13
 msgid "Notation"
-msgstr ""
+msgstr "表記"
 
 #: ../../source/programs/argument_syntax.rst:14
 #: ../../source/programs/gdal-config.rst:28
@@ -75,7 +75,7 @@ msgstr ""
 #: ../../source/programs/pct2rgb.rst:22 ../../source/programs/rgb2pct.rst:22
 #: ../../source/programs/sozip.rst:36
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/argument_syntax.rst:16
 msgid "Text without brackets or braces"

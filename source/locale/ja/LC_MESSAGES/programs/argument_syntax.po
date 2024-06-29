@@ -31,11 +31,11 @@ msgstr ""
 
 #: ../../source/programs/argument_syntax.rst:13
 msgid "Notation"
-msgstr ""
+msgstr "表記"
 
 #: ../../source/programs/argument_syntax.rst:14
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/argument_syntax.rst:16
 msgid "Text without brackets or braces"

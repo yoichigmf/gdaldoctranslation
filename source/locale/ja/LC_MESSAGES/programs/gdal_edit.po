@@ -25,15 +25,15 @@ msgstr ""
 
 #: ../../source/programs/gdal_edit.rst:9
 msgid "Edit in place various information of an existing GDAL dataset."
-msgstr ""
+msgstr "既存のGDALデータセット内部の様々な情報を編集します。"
 
 #: ../../source/programs/gdal_edit.rst:14
 msgid "Synopsis"
-msgstr ""
+msgstr "概要"
 
 #: ../../source/programs/gdal_edit.rst:31
 msgid "Description"
-msgstr ""
+msgstr "説明"
 
 #: ../../source/programs/gdal_edit.rst:33
 msgid ""
